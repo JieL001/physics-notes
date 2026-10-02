@@ -96,3 +96,9 @@ DONE pages=258-262, blocks=23, figs=26, unclear=16。没有重复页，crop_batc
 1. p258 传动装置区的字难辨：「T分=60r秒针+」「f_B带 链条」「自行车 主(划去字)动轮 / 受地f向前」「受主动轮?方向」，以及「晾衣?架模型」「余力勾股定理」。
 2. p261 手写草算在图4右侧被页边截断（C₂=90?/r 等），「C₁=V₂cotθ」疑笔误（已加 CHECK），「45°」后有一个难辨小字，红笔「(−7)」「−2」。
 3. p260 末行 ω=√(g/(r′cosα)) 与上式不自洽（已加 CHECK）；p259 末行写到页边被截断；p262 两处小疑点（「½」后疑缺 m、「>」可能是「≥」，已加 CHECK）。
+
+## p263–267
+DONE pages=263-267, blocks=24 (263:5, 264:3, 265:6, 266:4, 267:6), figs=35, unclear=6; crop_batch contact sheets checked (6 crops adjusted) and texcheck_all gives ALL OK. No page was a duplicate of another.
+1. p264-01 has two "5mg" with an overwritten digit (could be 6mg). p264-03 has tan53° that is handwritten like 57°.
+2. p263-02 has an inserted small "向外" whose position is unclear. In p263-03 (rod model) the F拉 arrow is drawn ↓.
+3. p267-05 has a sign problem in "−V₁T=…" and one unreadable glyph after "匀加速". p266-03 has a final N formula missing a square.

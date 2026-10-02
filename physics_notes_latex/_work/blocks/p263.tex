@@ -1,0 +1,79 @@
+%%%PAGE 263 rot=0 legibility=good summary=圆周运动：等效重力场临界速度、水平面转弯（汽车/倾斜路面）、杆模型、绳不松弛临界与脱离角
+%%%BLOCK id=263-01 ch=04 sec=竖直面圆周运动·等效重力场 kind=method alt=09 cont=prev y=0.00-0.31
+%FIG p263_a 0.06 0.005 0.18 0.115
+\notefig[0.25]{figures/p263_a.png}
+$\downarrow$ $E=\dfrac{2mg}{q}$
+\[
+\left\{\begin{aligned}
+&mg+qE+F=\dfrac{mv^2}{L}\\
+&T\ge 0\qquad V_{\text{上}}\ge\sqrt{3gL}
+\end{aligned}\right.
+\]
+% CHECK: 第一式写 F、条件写 T≥0，应为同一个量（绳的拉力）
+\[ G'=3mg,\qquad g'=3g,\qquad V_{\text{下}}\ge\sqrt{15gL} \]
+% CHECK: g'=3g 中“3”前有涂改痕迹
+
+（图注：等效最高点）
+%FIG p263_b 0.03 0.108 0.205 0.215
+\notefig[0.3]{figures/p263_b.png}
+\[ \sqrt2\,mg+F=\dfrac{mv^2}{L}\qquad F\ge 0 \]
+\[ V\ge\sqrt{\sqrt2\,gL} \]
+%FIG p263_c 0.09 0.22 0.22 0.315
+\notefig[0.25]{figures/p263_c.png}
+\[ mg\left(L+\dfrac{\sqrt2}{2}L\right)+qE\,\dfrac{\sqrt2}{2}L=\dfrac12m\left(V_0^2-V^2\right) \]
+%%%END
+%%%BLOCK id=263-02 ch=04 sec=水平面圆周运动·转弯 kind=method alt=02 cont=none y=0.32-0.59
+\textbf{水平面圆周运动}\quad 必有侧\textsuperscript{向外}向滑动趋势
+% CHECK: “向外”为行上方的插入小字，插入位置约在“侧”“向”之间，语义待核（可能想表达“必有向外侧滑的趋势”）
+
+\textbf{汽车转弯}\quad 水平路面上：
+%FIG p263_d 0.17 0.388 0.285 0.466
+\notefig[0.25]{figures/p263_d.png}
+\[ f=\dfrac{mv^2}{r}\le\mu mg\qquad v\le\sqrt{\mu gR} \]
+
+\textbf{倾斜路面上}\quad 无侧滑趋势\quad $V_0$.
+%FIG p263_e 0.335 0.485 0.495 0.59
+\notefig[0.3]{figures/p263_e.png}
+\begin{align*}
+N\sin\alpha&=\dfrac{mv_0^2}{R}\\
+N\cos\alpha&=mg
+\end{align*}
+\[ V_0=\sqrt{gR\tan\alpha}\qquad\text{与 }\mu\text{ 无关} \]
+%%%END
+%%%BLOCK id=263-03 ch=04 sec=竖直面圆周运动·杆模型 kind=method alt=none cont=none y=0.60-0.78
+\textbf{杆模型}
+%FIG p263_f 0.06 0.635 0.285 0.72
+\notefig[0.3]{figures/p263_f.png}
+以向下为正
+\[ mg+F=\dfrac{mv^2}{R}\qquad F\text{向下} \]
+\[ mg-(-F)=\dfrac{mv^2}{R}\qquad F\text{向上} \]
+\[
+\left\{\begin{aligned}
+&0\le v<\sqrt{gR}\quad\text{推力}\quad v\uparrow\ \text{推力}\downarrow\\
+&v>\sqrt{gR}\quad\ \ v\uparrow\ F_{\text{拉}}\downarrow
+\end{aligned}\right.
+\]
+% CHECK: v>√(gR) 时 F拉 随 v 增大应增大，原稿箭头画的是 ↓
+%FIG p263_g 0.70 0.615 0.885 0.72
+\notefig[0.3]{figures/p263_g.png}
+\[ F=\dfrac{mv^2}{R}-mg \]
+%%%END
+%%%BLOCK id=263-04 ch=04 sec=竖直面圆周运动·绳模型临界 kind=method alt=none cont=none y=0.80-0.92
+\textbf{绳不松弛}\quad $N=0$ 临界.
+%FIG p263_h 0.07 0.86 0.155 0.92
+\notefig[0.25]{figures/p263_h.png}
+\[ V_0\le\sqrt{2gL} \]
+\[ V_0\ge\sqrt{5gL} \]
+%%%END
+%%%BLOCK id=263-05 ch=04 sec=竖直面圆周运动·脱离临界 kind=method alt=06 cont=none y=0.92-1.00
+%FIG p263_i 0.09 0.93 0.285 1.0
+\notefig[0.3]{figures/p263_i.png}
+\[ V_0=\sqrt{\dfrac{7}{2}gR} \]
+\begin{align*}
+mg\sin\alpha&=\dfrac{mv^2}{R}\\
+-mgR(1+\sin\alpha)&=\dfrac12m\left(gR\sin\alpha-\dfrac{7}{2}gR\right)
+\end{align*}
+% CHECK: 第二式 mg 后的 R 与左括号重叠，按能量关系取 R
+\[ \Rightarrow\ \alpha=30^\circ \]
+%%%END
+%%%PAGEEND 263

@@ -1,0 +1,92 @@
+%%%PAGE 265 rot=0 legibility=good summary=平抛运动的斜面/圆弧面类型（垂直落至、切入、抛上斜面、抛入圆弧面、圆心角与速偏角）；三类光滑斜面下滑时间比较（等高、同底、等时圆）
+%%%BLOCK id=265-01 ch=04 sec=平抛运动·斜面问题 kind=method alt=none cont=none y=0.00-0.09
+\textbf{垂直落至斜面}
+%FIG p265_a 0.00 0.00 0.21 0.085
+\notefig[0.25]{figures/p265_a.png}
+\begin{align*}
+&V_x=V_0\\
+&V_y=gt\\
+&V=\sqrt{V_x^2+V_y^2}
+\end{align*}
+\[ \tan\theta=\dfrac{V_0}{V_y}=\dfrac{V_0}{gt}\qquad t=\dfrac{V_0}{g\tan\theta} \]
+%%%END
+%%%BLOCK id=265-02 ch=04 sec=平抛运动·斜面问题 kind=method alt=none cont=none y=0.09-0.21
+\textbf{切入斜面}
+%FIG p265_b 0.00 0.085 0.19 0.145
+\notefig[0.25]{figures/p265_b.png}
+%FIG p265_c 0.085 0.12 0.27 0.215
+\notefig[0.3]{figures/p265_c.png}
+\begin{align*}
+&t=\dfrac{V_1}{a_1}\qquad V_1^2=2a_1d\qquad t=\dfrac{V_0\tan\theta}{g}\qquad d=\dfrac{V_0^2\sin\theta\tan\theta}{2g}\\
+&V_y=gt=\dfrac{V_0\tan\theta}{g}
+\end{align*}
+% CHECK: V_y=gt=V_0 tanθ/g 末尾分母多一个 g（应为 V_y=gt=V_0 tanθ）；t=V_1/a_1 中的 V_1、a_1 字迹偏小
+%%%END
+%%%BLOCK id=265-03 ch=04 sec=平抛运动·斜面问题 kind=method alt=none cont=none y=0.21-0.33
+\textbf{抛上斜面}
+%FIG p265_d 0.00 0.21 0.26 0.285
+\notefig[0.3]{figures/p265_d.png}
+\[
+\left\{\begin{aligned}
+x&=V_0t\\
+y&=\dfrac12gt^2\\
+x_{\text{合}}&=\sqrt{x^2+y^2}
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+\tan\theta&=\dfrac{y}{x}=\dfrac{gt}{2V_0}\\
+t&=\dfrac{2V_0\tan\theta}{g}
+\end{aligned}
+\]
+%%%END
+%%%BLOCK id=265-04 ch=04 sec=平抛运动·抛入圆弧面 kind=method alt=none cont=none y=0.33-0.47
+\textbf{抛入圆弧面}
+%FIG p265_e 0.03 0.358 0.238 0.465
+\notefig[0.3]{figures/p265_e.png}
+\[
+\left\{\begin{aligned}
+h&=\dfrac12gt^2\\
+R\pm\sqrt{R^2-h^2}&=V_0t
+\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=265-05 ch=04 sec=平抛运动·圆心角与速偏角 kind=method alt=none cont=none y=0.49-0.74
+%FIG p265_f 0.05 0.49 0.33 0.60
+\notefig[0.4]{figures/p265_f.png}
+\textbf{圆心角 $=$ 速偏角}
+%FIG p265_g 0.09 0.595 0.29 0.745 soft
+\notefig[0.3]{figures/p265_g.png}
+%%%END
+%%%BLOCK id=265-06 ch=03 sec=斜面·下滑时间比较 kind=method alt=01 cont=none y=0.77-1.00
+\textbf{三类光滑斜面下滑时间比较}
+\begin{itemize}
+\item \textbf{等高斜面}\quad $L=\frac12at^2$\quad $a=g\sin\theta$\quad $L=\dfrac{h}{\sin\theta}$
+
+$t=\dfrac{1}{\sin\theta}\sqrt{\dfrac{2h}{g}}$
+
+$\theta$ 越小 时间越长
+%FIG p265_h 0.05 0.924 0.195 0.972
+\notefig[0.25]{figures/p265_h.png}
+$t_1>t_2>t_3$
+\item \textbf{同底斜面}\quad $L=\frac12at^2$\quad $a=g\sin\theta$\quad $L=\dfrac{d}{\cos\theta}$
+
+$t=\sqrt{\dfrac{4d}{g\sin2\theta}}$
+%FIG p265_i 0.51 0.848 0.64 0.906
+\notefig[0.25]{figures/p265_i.png}
+$\theta=45^\circ$ 时 $t_{\min}$
+
+关于 $45^\circ$ 对称 $t$ 相等
+%FIG p265_j 0.33 0.952 0.41 1.0
+\notefig[0.25]{figures/p265_j.png}
+$t_1=t_3>t_2$
+\item \textbf{同圆周的斜面}——等时圆
+\begin{itemize}
+\item 同顶：$\sin\theta\,2R=\frac12g\sin\theta\,t^2$\quad $t_1=t_2=t_3$
+\item 同底\quad $t_1=t_2=t_3$
+\item 双圆内斜面\quad $t_1=t_2=t_3$
+\end{itemize}
+%FIG p265_k 0.59 0.918 0.865 1.0
+\notefig[0.4]{figures/p265_k.png}
+\end{itemize}
+%%%END
+%%%PAGEEND 265

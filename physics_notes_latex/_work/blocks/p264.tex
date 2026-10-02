@@ -1,0 +1,71 @@
+%%%PAGE 264 rot=0 legibility=good summary=竖直面圆周运动例题（人拉球，求人对地压力范围）；沿圆弧脱离条件；双绳水平圆周运动的临界角速度分析
+%%%BLOCK id=264-01 ch=04 sec=竖直面圆周运动·综合例题 kind=problem alt=none cont=none y=0.02-0.34
+\begin{problem}[例]
+%FIG p264_a 0.15 0.02 0.28 0.115
+\notefig[0.25]{figures/p264_a.png}
+\begin{solution}
+%FIG p264_b 0.125 0.14 0.25 0.215
+\notefig[0.25]{figures/p264_b.png}
+\begin{align*}
+&T+mg\cos\theta=\dfrac{mv^2}{R}\\
+&mg(1-\cos\theta)=\dfrac12mv^2-\dfrac12m(gR)
+\end{align*}
+\[ T=3mg(1-\cos\theta) \]
+对人\ $N=Mg-T\cos\theta=Mg-3mg(1-\cos\theta)\cos\theta$
+
+$\ge Mg-3mg\cdot\dfrac14=Mg-\dfrac34mg$
+
+$T_{\max}-mg=\dfrac{mV_{\text{下}}^2}{R}$\qquad $V_{\text{下}}=\sqrt{5gR}$
+
+对人、$N=Mg+\dfrac{mv^2}{R}=Mg+5mg$
+
+故人对地压力 $N\in\left[Mg-\dfrac34mg,\ Mg+5mg\right]$
+% CHECK: 两处“5mg”的“5”字形有涂改/重叠（第二处尤其明显，可能是 6）；按 T_max=mg+5mg=6mg 推算，N 或应为 Mg+6mg
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=264-02 ch=04 sec=竖直面圆周运动·脱离临界 kind=method alt=none cont=none y=0.34-0.47
+是否可以沿圆弧到 $N$ 点？
+%FIG p264_c 0.10 0.358 0.34 0.412
+\notefig[0.4]{figures/p264_c.png}
+\begin{itemize}
+\item $V_0=\sqrt{gR}$ 时平抛
+\item $V_0=0$ 时
+\end{itemize}
+\[
+\left\{\begin{aligned}
+&mg\sin\alpha=\dfrac{mv^2}{R}\\
+&mg(1-\sin\alpha)\,\unclear{R}=\dfrac12mv^2
+\end{aligned}\right.
+\qquad \sin\alpha=\dfrac23
+\]
+% CHECK: 第二式 ")" 后的符号像 F，应为 R（mgR(1-sinα)=½mv²）
+\unclear{处}脱离.
+%%%END
+%%%BLOCK id=264-03 ch=04 sec=水平面圆周运动·双绳 kind=method alt=none cont=none y=0.49-1.00
+\textbf{双绳竖直平面内做水平圆周运动}
+%FIG p264_d 0.07 0.526 0.22 0.64
+\notefig[0.25]{figures/p264_d.png}
+① OA绷紧 OB恰好松弛无张力
+\[ mg\tan37^\circ=m\omega_1^2d\qquad d=L\sin37^\circ\qquad \omega_1=\sqrt{\dfrac{5g}{4L}} \]
+② OB绷紧 OA恰好伸直无张力
+\[ mg\tan\unclear{53}^\circ=m\omega_2^2d\qquad \omega_2=\sqrt{\dfrac{20g}{9L}} \]
+% CHECK: 手写像 tan57°，按图中 53° 及 ω_2=√(20g/9L) 取 53
+OA紧 OB松 $\xrightarrow{\ \omega_1\ }$ OA OB都紧 $\xrightarrow{\ \omega_2\ }$ OB紧 OA松.（图中以弧线分段，分界点标 $\omega_1$、$\omega_2$）
+
+%FIG p264_e 0.04 0.745 0.175 0.86
+\notefig[0.25]{figures/p264_e.png}
+\[ mg\tan\alpha=m\omega_1^2d\qquad \omega_1=\sqrt{\dfrac{3g}{4d}} \]
+OA紧 OB松 $\xrightarrow{\ \omega_1\ }$ $F_A$ 不变，$F_B\uparrow$
+
+%FIG p264_f 0.02 0.865 0.19 0.995
+\notefig[0.25]{figures/p264_f.png}
+\[
+\left\{\begin{aligned}
+&T_1\sin\alpha+T_2\sin\beta=m\omega^2d\\
+&T_1\cos\alpha=T_2\cos\beta+mg
+\end{aligned}\right.
+\qquad \omega\uparrow\quad T_1\uparrow\quad T_2\uparrow
+\]
+%%%END
+%%%PAGEEND 264

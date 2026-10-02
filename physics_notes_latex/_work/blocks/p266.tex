@@ -1,0 +1,78 @@
+%%%PAGE 266 rot=0 legibility=good summary=斜面传送带综合题（痕迹长度、能量与摩擦生热）；动滑轮连接体；弧形槽模型的动量能量综合；圆周运动脱离后抛体的方程组
+%%%BLOCK id=266-01 ch=06 sec=功能关系·传送带摩擦生热 kind=problem alt=03,01 cont=none y=0.00-0.40
+\begin{problem}
+%FIG p266_a 0.10 0.01 0.48 0.125
+\notefig[0.45]{figures/p266_a.png}
+（图中标注：$m=0.5\unit{kg}$，$L=10.25\unit{m}$，$V=10\unit{m/s}$，$\mu=0.5$，$37^\circ$）
+\begin{solution}
+\begin{tabular}{@{}ll@{}}
+$a_1=10\unit{m/s^2}$ & $a_2=2\unit{m/s^2}$\\
+$g\sin\theta+\mu g\cos\theta$ & $g\sin\theta-\mu g\cos\theta$
+\end{tabular}
+
+$t_1=\dfrac{V_0}{a_1}=1\unit{s}$\qquad $S_1=\dfrac12V_0t_1=5\unit{m}$
+
+$L-S_1=V_0t_2+\dfrac12a_2t_2^2$\qquad $t_2=0.5\unit{s}$
+
+$\Delta x_1=V_0t_1-x_1=5\unit{m}$ % CHECK: 首个“=”手写似“-”，按上下文取“=”
+
+$\Delta x_2=x_2-V_0t_2=0.25\unit{m}$
+
+$\Delta x_1>\Delta x_2$
+
+故痕迹长度为 $5\unit{m}$
+
+\[ W_{\text{带对块}}=fx_1-fx_2=\Delta E_{\text{机}}=\Delta E_K+\Delta E_p \]
+\[ W_{\text{电机对带}}=fV_0t_1-fV_0t_2=10\unit{J}=\Delta E_{\text{电}}=\Delta E_{\text{机}}+Q \]
+\[ Q=f\times\overset{L-S_1}{5.25\unit{m}}=10.5\unit{J} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=266-02 ch=03 sec=连接体·动滑轮 kind=problem alt=none cont=none y=0.41-0.62
+\begin{problem}
+%FIG p266_b 0.085 0.405 0.2 0.575
+\notefig[0.25]{figures/p266_b.png}
+（图中标注：$u=0$） % CHECK: 手写像 u=0，可能是 μ=0（滑轮光滑）或 v=0
+
+开始时静止，现对 B 施加一向下大小为 $mg$ 的恒力 $F$
+
+A 和滑轮总重 $2m$
+\begin{solution}
+施力后，对 B 由牛二：$F+mg-T=ma$
+
+对 A 及动滑轮：$2T-2mg=2m\,\dfrac{a}{2}$
+
+解得：$a=\dfrac23g$\qquad $T=\dfrac43mg$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=266-03 ch=07 sec=动量守恒·圆弧槽模型 kind=problem alt=06,04 cont=none y=0.66-0.82
+\begin{problem}
+%FIG p266_c 0.075 0.66 0.225 0.73
+\notefig[0.3]{figures/p266_c.png}
+\begin{solution}
+\begin{align*}
+&mgR=\dfrac12mV_1^2+\dfrac12MV_2^2\\
+&mV=MV_2\\
+&N-mg=\dfrac{m(V_1+V_2)^2}{R}
+\end{align*}
+% CHECK: 第二式左边 V 疑为 V_1
+\[ N=mg+\dfrac{m}{R}\left[\sqrt{\dfrac{2gR}{M+m}}\left(\sqrt{M}+\sqrt{\dfrac{m}{M}}\right)\right] \]
+% CHECK: 方括号后疑缺平方（N-mg=m(V_1+V_2)^2/R）；括号内 √(m/M) 疑为 m/√M；右括号手写为“)”
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=266-04 ch=04 sec=竖直面圆周运动·脱离临界 kind=derivation alt=06 cont=none y=0.82-1.00
+%FIG p266_d 0.04 0.81 0.215 0.905
+\notefig[0.3]{figures/p266_d.png}
+\[
+\left\{\begin{aligned}
+&-mgR\sin\alpha=\dfrac12m\left(v^2-v_0^2\right)\\
+&mg\sin\alpha=\dfrac{mv^2}{\unclear{R}}\\
+&v\sin\alpha\,t=R\cos\alpha\\
+&R\sin\alpha=v\cos\alpha\,t-\dfrac12gt^2
+\end{aligned}\right.
+\]
+% CHECK: 第二式分母手写像 v，应为 R；最后一行紧贴页面底边，可能被裁切，其后或还有内容
+%%%END
+%%%PAGEEND 266
