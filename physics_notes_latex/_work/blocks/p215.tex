@@ -1,0 +1,80 @@
+%%%PAGE 215 rot=0 legibility=good summary=电表改装：条件与扩程公式、电流表电压表混用、错改、改装电表的表盘读数、并联改装表的示数与偏转比较
+%%%BLOCK id=215-01 ch=10 sec=电表改装·扩程原理 kind=knowledge alt=none cont=none y=0.03-0.24
+\textbf{电表改装} % 标题被椭圆圈住
+
+条件（左大括号）：
+\begin{itemize}
+\item 量程不够
+\item 内阻已知。（准确值）。
+\item 有定值电阻（电阻箱）。
+\end{itemize}
+
+\textcircled{A} 扩大 $n$ 倍\quad 并个 $\dfrac{R_A}{n-1}$
+
+\textcircled{V} 扩大 $n$ 倍\quad 串个 $(n-1)R_V$。
+%%%END
+%%%BLOCK id=215-02 ch=10 sec=电表改装·电流表电压表混用 kind=method alt=none cont=none y=0.25-0.41
+\textcircled{A}\,\textcircled{V}\ 混用 % “混用”被椭圆圈住，右侧大括号分两种情形
+
+%FIG p215_a 0.255 0.255 0.355 0.32
+\notefig[0.25]{figures/p215_a.png}
+
+\textcircled{A}当电压表。$U=I_AR_A$。\quad 条件\ 电阻：准确已知
+
+%FIG p215_b 0.21 0.345 0.37 0.385
+\notefig[0.25]{figures/p215_b.png}
+
+\textcircled{V}当电流表。$I=\dfrac{U}{R_V}$\quad 电表\ 内阻不变量程变
+%%%END
+%%%BLOCK id=215-03 ch=10 sec=电表改装·错改 kind=note alt=none cont=none y=0.40-0.50
+\textbf{错改} % “错改”被椭圆圈住
+
+%FIG p215_c 0.135 0.40 0.26 0.49
+\notefig[0.25]{figures/p215_c.png}
+
+%FIG p215_d 0.32 0.435 0.53 0.48
+\notefig[0.25]{figures/p215_d.png}
+
+电表 量程不变 内阻变。
+%%%END
+%%%BLOCK id=215-04 ch=10 sec=电表改装·改装电表的表盘 kind=method alt=none cont=none y=0.50-0.93
+改装电表的表盘。
+
+刻度看比例。
+
+%FIG p215_e 0.025 0.612 0.235 0.705
+\notefig[0.25]{figures/p215_e.png}
+
+$200\unit{\mu A}\to 1\unit{mA}$
+
+若重置表盘
+
+分度值 $=0.02\unit{mA}\to 0.78\unit{mA}$
+
+若不重置表盘
+
+分度值 $=4\unit{\mu A}$。
+
+$\to 156\unit{\mu A}\times 5$ 倍 $=780\unit{\mu A}=0.780\unit{mA}$
+%%%END
+%%%BLOCK id=215-05 ch=10 sec=电表改装·并联改装表的示数与偏转 kind=method alt=none cont=none y=0.58-0.76
+示数看 $U,I$。
+
+%FIG p215_f 0.30 0.62 0.70 0.755
+\notefig[0.4]{figures/p215_f.png}
+
+表头相同，改装倍数不同\quad 哪个读数大。
+
+$I_{\text{上}}<I_{\text{下}}$。
+%%%END
+%%%BLOCK id=215-06 ch=10 sec=电表改装·并联改装表的示数与偏转 kind=method alt=none cont=none y=0.58-0.80
+偏转看构造（内部）。
+
+哪个表偏转更大
+
+%FIG p215_g 0.65 0.665 0.87 0.785
+\notefig[0.25]{figures/p215_g.png}
+
+一样大。
+%%%END
+%%%PAGEEND 215

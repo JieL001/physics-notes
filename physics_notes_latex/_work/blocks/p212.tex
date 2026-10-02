@@ -1,0 +1,73 @@
+%%%PAGE 212 rot=0 legibility=good summary=半偏法测电表内阻(限流半偏、分压半偏、系统误差)；双表测电表内阻(双安、双伏及改进电路)
+%%%BLOCK id=212-01 ch=10 sec=半偏法测电表内阻·限流半偏 kind=method exp=1 alt=none cont=none y=0.07-0.32
+\textbf{半偏法测电表内阻}
+
+%FIG p212_a 0.09 0.103 0.375 0.235
+\notefig[0.28]{figures/p212_a.png}
+
+$R_g=2R_1$，并联分流
+
+\noindent 断$S_1,S_2$，调$R$到最大\\
+闭$S_1$，调$R$使 \textcircled{G} 满偏\\
+闭$S_2$，调$R'$使 \textcircled{G} 半偏\\
+$r_g=R'$
+
+调$R_1\uparrow$时 $I_{R_1,G\text{\unclear{差}}}\downarrow$ \quad $I_{R_1}>I_g$ \quad $R_{\text{测}}<r_{g\text{真}}$
+
+限流半偏小偏小
+
+$R_{\text{滑}}$要大，$E$要大。
+%%%END
+%%%BLOCK id=212-02 ch=10 sec=半偏法测电表内阻·系统误差 kind=knowledge exp=1 alt=none cont=none y=0.25-0.34
+大内大，小外\unclear{大}。 % CHECK: 常见口诀为“大内大，小外小”，末字疑为“小”
+
+系统误差：
+\begin{itemize}
+\item 大内阻表头分压半偏\quad 偏大
+\item 小内阻表头限流半偏\quad 偏小
+\end{itemize}
+%%%END
+%%%BLOCK id=212-03 ch=10 sec=半偏法测电表内阻·分压半偏 kind=method exp=1 alt=none cont=none y=0.34-0.57
+%FIG p212_b 0.10 0.345 0.358 0.49
+\notefig[0.27]{figures/p212_b.png}
+
+串联分压\quad $\frac13V\Rightarrow R_g=\frac12R_1$，
+
+$E<R_{\text{滑}}I_g$\quad 选使最接近
+
+调$R_1\uparrow$时 $U_{R_1,G}\uparrow$ \quad $U_{R_1}>U_g$ \quad $R_{\text{测}}>r_{g\text{真}}$
+
+分压半偏大偏大。
+
+$R_1\gg R_0$。
+
+$U_{\text{分}}=\text{\unclear{总}}E$ \quad $R_{\text{滑}}$不动，分压就不变]
+%%%END
+%%%BLOCK id=212-04 ch=10 sec=双表测电表内阻 kind=method exp=1 alt=none cont=none y=0.65-0.97
+\textbf{双表测电表内阻}
+
+%FIG p212_c 0.04 0.685 0.245 0.79
+\notefig[0.25]{figures/p212_c.png}
+
+$I_1r_1=I_2r_2$
+
+%FIG p212_d 0.44 0.70 0.64 0.79
+\notefig[0.25]{figures/p212_d.png}
+
+\[\frac{U_1}{r_1}=\frac{U_2}{r_2}\]
+
+%FIG p212_e 0.03 0.797 0.25 0.935
+\notefig[0.25]{figures/p212_e.png}
+
+$A_2$量程应大于$A_1$，
+
+\[I_2=I_1+\frac{I_1r_1}{R_0}\]
+
+%FIG p212_f 0.44 0.795 0.65 0.925
+\notefig[0.25]{figures/p212_f.png}
+
+\[U_2=U_1+\frac{U_1}{r_1}R_0\]
+
+即可测电表又能测电阻 % CHECK: 疑为“既可测电表又能测电阻”
+%%%END
+%%%PAGEEND 212

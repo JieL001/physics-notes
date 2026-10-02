@@ -1,0 +1,65 @@
+%%%PAGE 213 rot=0 legibility=good summary=测电阻的几种方法(替换法、双U双I、单U单I、电桥法)；滑动变阻器分压/限流接法的选择与作用
+%%%BLOCK id=213-01 ch=10 sec=测电阻·替换法 kind=method exp=1 alt=none cont=none y=0.05-0.16
+\textbf{替换法测电阻}
+
+%FIG p213_a 0.09 0.08 0.29 0.15
+\notefig[0.25]{figures/p213_a.png}
+
+调节 $R_{\text{滑}}$ 使 $I_1=I_2$ 则 $R_x=R_0$。
+
+\hspace{2em}或 $U_1=U_2$
+%%%END
+%%%BLOCK id=213-02 ch=10 sec=测电阻·双U双I法 kind=method exp=1 alt=none cont=none y=0.15-0.30
+\textbf{双$U$双$I$法}
+
+%FIG p213_b 0.07 0.175 0.28 0.24
+\notefig[0.25]{figures/p213_b.png}
+
+\[\frac{U_1}{R_1}=\frac{U_2}{R_2}\]
+
+%FIG p213_c 0.34 0.19 0.53 0.25
+\notefig[0.25]{figures/p213_c.png}
+
+\[I_1R_1=I_2R_2\]
+%%%END
+%%%BLOCK id=213-03 ch=10 sec=测电阻·单U单I法 kind=method exp=1 alt=none cont=none y=0.30-0.41
+\textbf{单$U$单$I$法}
+
+%FIG p213_d 0.08 0.32 0.345 0.40
+\notefig[0.27]{figures/p213_d.png}
+
+测 2 次。
+%%%END
+%%%BLOCK id=213-04 ch=10 sec=测电阻·电桥法 kind=method exp=1 alt=none cont=none y=0.42-0.72
+\textbf{电桥法}
+
+%FIG p213_e 0.16 0.428 0.42 0.562
+\notefig[0.3]{figures/p213_e.png}
+
+\begin{center}
+\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{@{}lll@{}}
+若 $\dfrac{R_1}{R_2}<\dfrac{R_3}{R_x}$ & 若 $\dfrac{R_1}{R_2}>\dfrac{R_3}{R_x}$ & 若 $\dfrac{R_1}{R_2}=\dfrac{R_3}{R_x}$\\
+则 $U_1<U_1'$ & 则 $U_1>U_1'$ & 则 $U_1=U_1'$\\
+$\varphi_A>\varphi_B$ & $\varphi_A<\varphi_B$ & $\varphi_A=\varphi_B$\\
+$i$ 从 $A\to B$ & $i$ 从 $B\to A$。 & $AB$ 无电流
+\end{tabular}
+\end{center}
+%%%END
+%%%BLOCK id=213-05 ch=10 sec=滑动变阻器·分压限流接法选择 kind=method exp=1 alt=none cont=none y=0.76-0.83
+$R_{\text{测}}$ 大于 $3R_{\text{滑}}$ 用分压\quad 优：从 $0$ 开始，$R_{\text{测}}\gg R_{\text{滑}}$ 可线性调节。\quad 劣：费电费线。
+
+小于 $3R_{\text{滑}}$ 用限流\quad 优：省电省线。\quad 劣：无法从 $0$ 开始
+%%%END
+%%%BLOCK id=213-06 ch=10 sec=滑动变阻器·作用 kind=knowledge exp=1 alt=none cont=none y=0.85-0.95
+\textbf{滑变的作用}
+\begin{itemize}
+\item 保护电路
+  \begin{itemize}
+  \item 分压式：开关闭合前，短路测量电阻
+  \item 限流式：开关闭合前，滑变阻值调到最大
+  \end{itemize}
+\item 调节 $U$ 和 $I$。
+\end{itemize}
+%%%END
+%%%PAGEEND 213

@@ -1,0 +1,81 @@
+%%%PAGE 211 rot=0 legibility=good summary=测电源E、r实验：方程组法(伏安/伏阻/安阻)、补偿电路消系统误差、定值电阻的应用、内外接改进与修正公式、特殊伏阻法与特殊安阻法
+%%%BLOCK id=211-01 ch=10 sec=测电动势和内阻·方程组法 kind=formula exp=1 alt=none cont=none y=0.03-0.19
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{@{}c c c c@{}}
+ & 伏安法 & 伏阻法 & 安阻法\\
+方程组法 &
+$\left\{\begin{array}{l} E=\underline{U_1}+\underline{I_1}r\\ E=\underline{U_2}+\underline{I_2}r\end{array}\right.$ &
+$\begin{array}{l} U_1=E\cdot\dfrac{R_1}{R_1+r}\\[6pt] U_2=E\,\dfrac{R_2}{R_2+r}\end{array}$ &
+$\begin{array}{l} E=I_1(R_1+r)\\ E=I_2(R_2+r)\end{array}$
+\end{tabular}
+\end{center}
+%%%END
+%%%BLOCK id=211-02 ch=10 sec=测电动势和内阻·消除系统误差 kind=method exp=1 alt=none cont=none y=0.23-0.37
+%FIG p211_a 0.08 0.225 0.39 0.365
+\notefig[0.31]{figures/p211_a.png}
+
+$i_1$ $i_2$ 抵消。无误差（\unclear{除了表所带系统误差}）
+
+$E_1=E_2$
+
+$r_1=r_2$
+%%%END
+%%%BLOCK id=211-03 ch=10 sec=测电动势和内阻·定值电阻的应用 kind=method exp=1 alt=none cont=none y=0.39-0.57
+定值电阻在测电源 $E$、$r$ 实验中的应用。
+
+%FIG p211_b 0.07 0.455 0.60 0.565
+\notefig[0.5]{figures/p211_b.png}
+
+图旁标注（自上而下，依次在 $R_1$、$R_2$、$R_3$ 所在行右侧）：
+\begin{itemize}
+\item 看成滑变的一部分。
+\item 改装电表
+\item 看成电源内阻的一部分
+\end{itemize}
+%%%END
+%%%BLOCK id=211-04 ch=10 sec=测电动势和内阻·内外接改进 kind=method exp=1 alt=none cont=none y=0.57-0.71
+\textbf{改进}（左侧大括号）：
+\begin{itemize}
+\item 内外均\unclear{结}法，
+\item \underline{内接$\to E$准确} % 红笔划线
+\item \underline{外接$\to I_0$准确} \quad \underline{$I_0=\dfrac{E}{r}\to r$ 准确值} % 红笔划线（两段：“外接…准确”与“$I_0=E/r\to r$准确值”）
+\item \underline{A内V外法} % 红笔波浪线
+\end{itemize}
+%%%END
+%%%BLOCK id=211-05 ch=10 sec=测电动势和内阻·内外接修正公式 kind=formula exp=1 alt=none cont=none y=0.72-0.79
+\[
+\text{已知 }R_A\to\text{内接}\
+\left\{\begin{array}{l} E_{\text{测}}=E_{\text{真}}\\ r_{\text{测}}=r_{\text{真}}+R_A \end{array}\right.
+\qquad
+\text{已知 }R_V\to\text{外接}\
+\left\{\begin{array}{l} E_{\text{测}}=E_{\text{真}}\dfrac{R_V}{R_V+r}\\[8pt] r_{\text{测}}=\dfrac{r_{\text{真}}R_V}{R_V+r_{\text{真}}} \end{array}\right.
+\]
+%%%END
+%%%BLOCK id=211-06 ch=10 sec=测电动势和内阻·特殊伏阻法 kind=method exp=1 alt=none cont=none y=0.83-1.00
+\textbf{一种特殊的伏阻法}
+
+%FIG p211_c 0.04 0.862 0.545 0.955
+\notefig[0.5]{figures/p211_c.png}
+
+（箭头上方：\unclear{看作…}；箭头下方：\unclear{就在电源里}）
+
+\[
+U=\frac{E R_0}{R_0+r+R}
+\qquad
+\frac{1}{U}=\frac{1}{ER_0}\cdot R+\frac{R_0+r}{ER_0}
+\]
+%%%END
+%%%BLOCK id=211-07 ch=10 sec=测电动势和内阻·特殊安阻法 kind=method exp=1 alt=none cont=none y=0.83-1.00
+\textbf{一种特殊的安阻法}
+
+%FIG p211_d 0.60 0.865 0.762 0.932
+\notefig[0.25]{figures/p211_d.png}
+
+%FIG p211_e 0.765 0.865 0.925 0.958
+\notefig[0.25]{figures/p211_e.png}
+
+\[ E=I(R+r) \]
+\[ IR=-r\cdot I+E \]
+%%%END
+%%%PAGEEND 211
