@@ -1,0 +1,58 @@
+%%%PAGE 283 rot=0 legibility=good summary=粘贴的两列简谐波叠加题（波峰重合）及手写解答；恒力F1作用t0后反向F2作用nt0回到原处的推导；带电小球先E1后E2时电势能变化
+%%%BLOCK id=283-01 ch=08 sec=波的叠加·波峰重合 kind=problem alt=none cont=none y=0.00-0.43
+% 题干为粘贴的印刷题条（粘贴条上下行有错位，此处按语义顺序转录）；手写在“中沿x轴传播”“轴正向”“乙沿x轴负向传播”“二者振动方向一致”下画了线
+（图上方手写标题）\unclear{常规解法}
+
+%FIG p283_a 0.545 0.0 0.95 0.105
+\notefig[0.5]{figures/p283_a.png}
+
+\begin{problem}[19.（6分）]
+甲、乙两列简谐横波在同一介质中传播的波速均为 $v=2\unit{m/s}$。当甲单独传播时，在空间中某质点引起的振动位移随时间变化关系如图（a）所示，当乙单独传播时，在空间中某质点引起的振动位移随时间化关系如图（b）所示。% 印刷原文此处漏“变”字
+现使两列波同时在该介质中沿 $x$ 轴传播，甲沿 $x$ 轴正向、乙沿 $x$ 轴负向传播，二者振动方向一致，在 $t=0$ 时刻，平衡位置坐标 $x=8\unit{cm}$ 的点正好位于偏离平衡位置 $+8\unit{cm}$ 处。
+
+（1）$t=0$ 时，求介质中偏离平衡位置位移为 $+8\unit{cm}$ 的所有质点的 $x$ 坐标
+
+（2）求 $x=8\unit{cm}$ 的点下一次出现偏离平衡位置 $+8\unit{cm}$ 的时间 $t_1$ 及之后介质中有质点出现偏离平衡位置 $+8\unit{cm}$ 的最短时间 $t_2$
+
+\begin{solution}
+[\unclear{找公倍数}]
+
+（1）甲\quad $T_1=0.4\unit{s}$\quad $\lambda_1=vT_1=80\unit{cm}$\quad 甲波峰 $x=8+80m\ (\unit{cm})$\quad $(m=0,\pm1,\pm2,\cdots)$
+
+\hspace{1.6em}乙\quad $T_2=0.5\unit{s}$\quad $\lambda_2=vT_2=100\unit{cm}$\quad 乙波峰 $x=8+100n\ (\unit{cm})$\quad $(n=0,\pm1,\pm2,\cdots)$
+
+\hspace{1.6em}$\therefore$ 甲乙同时波峰对应 $x=8+400k\ (\unit{cm})$\quad $(k=0,\pm1,\pm2,\cdots)$
+
+（2）甲波峰每隔 $0.4\unit{s}$ 到达 $x=8\unit{cm}$，乙波峰每隔 $0.5\unit{s}$ 到该处
+
+\hspace{1.6em}故 $x=8\unit{cm}$ 点下一次出现同时波峰用时 $t_1=2\unit{s}$
+
+\hspace{1.6em}$t=0$ 时甲乙波峰除了重叠处以外，最近的波峰相距 $20\unit{cm}$
+
+\hspace{1.6em}$\therefore$ 下一次有质点出现偏离平衡位置 $+8\unit{cm}$ 的时间为 $t_2=\dfrac{\Delta x}{2v}=0.05\unit{s}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=283-02 ch=03 sec=往返运动·反向恒力回到原处 kind=method alt=09,06,01 cont=none y=0.49-0.72
+$F_1$ 作用物体 $t_0$ 后，$F_2$ 为反向的力作用 $nt_0$ 后物体回到原处。$F_1:F_2=$
+\begin{gather*}
+\tfrac12 a_1t_0^2+(a_1t_0)\,nt_0-\tfrac12 a_2(nt_0)^2=0\\
+\tfrac12 a_1+na_1-\tfrac12 n^2a_2=0\\
+\left(\tfrac12+n\right)a_1=\tfrac12 n^2a_2\\
+\frac{a_1}{a_2}=\frac{\frac12 n^2}{\frac12+n}=\frac{n^2}{2n+1}
+\end{gather*}
+% 以下一行写在上述推导右侧
+\[ W_1:W_2=n^2:2n+1 \]
+% 右侧另有一处形似“井”字加钩的小符号（位于推导右侧，约x=0.70,y=0.67），含义不明
+%%%END
+%%%BLOCK id=283-03 ch=09 sec=电场中功能关系·电势能变化 kind=note alt=03 cont=none y=0.72-0.83
+%FIG p283_b 0.04 0.722 0.24 0.762
+\notefig[0.25]{figures/p283_b.png}
+
+从 $t=0$ 到 $t=2t_0$ 内，小球电势能先↓后↑再↓
+
+先 $E_1$ → $t_0$
+
+后 $E_2$ ← $2t_0$
+%%%END
+%%%PAGEEND 283

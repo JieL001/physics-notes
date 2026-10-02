@@ -1,0 +1,78 @@
+%%%PAGE 287 rot=0 legibility=good summary=太空电梯笔记（地球引力加速度与自转向心加速度随r变化、r0=6.6R、支持力F_N随r变化）；粘贴的绸带斜面题（21题）及手写解答（共同加速度、动摩擦因数条件、m物块用时）
+%%%BLOCK id=287-01 ch=05 sec=同步卫星·太空电梯 kind=derivation alt=04 cont=none y=0.00-0.34
+\textbf{太空电梯}
+
+%FIG p287_a 0.09 0.032 0.30 0.13 soft
+\notefig[0.25]{figures/p287_a.png}
+
+A：地球引力对航天员加速度与 $r$ 反比
+
+B：地球自转产生向心加速度的 $r$ 反比% CHECK: B 行末手写与 A 行相同（像“反比”），但自转向心加速度应与 r 成正比
+
+$r$ 为航天员离地心距离。
+
+$R=6400\unit{km}$\quad $\omega_{\text{地自}}=7.3\times10^{-5}\unit{rad/s}$
+
+$r_0=6.6R$（同步卫星轨道半径）\quad 此时 $F_{\text{人地}}=0$。
+
+在 $r=R$ 处 $v$ 小于第一宇宙速度。
+
+\begin{gather*}
+\frac{GMm}{r^2}-F_N=m\omega^2r\\
+F_N=\frac{GMm}{r^2}-m\omega^2r\qquad r\uparrow\ F_N\downarrow\\
+r=r_0\ \text{时}\quad \frac{GMm}{r^2}=m\omega^2r\quad F_N=0\\
+r>r_0\ \text{时}\quad \frac{GMm}{r^2}+F_N=m\omega^2r\quad F_N\ \text{反向}\uparrow\\
+r\uparrow\quad F\ \text{先}\downarrow\text{到0后反向}\uparrow
+\end{gather*}
+%%%END
+%%%BLOCK id=287-02 ch=03 sec=斜面·绸带与物块 kind=problem alt=02,01 cont=none y=0.34-0.98
+% 题干为粘贴的印刷题（右缘被裁）；手写在“α=37°”“L1=5.25m”“L2=9m”“M=1.5kg”“m=1kg”“中点上”“μ相等”上画了方框，对“绸带与斜面间无摩擦”“动摩擦因数”“它们共同运动的加速度大小为多少”画了下划线
+% 题干(2)(3)之间页边有一处难辨的潦草笔迹
+\begin{problem}[21.（2+2+4=8）]
+如图所示，倾角为 $\alpha=37^\circ$，腰长为 $L_1=5.25\unit{m}$ 的光滑等腰三角形斜面固定在水平面上，一长 $L_2=9\unit{m}$ 的轻质绸带跨过斜面的顶端对称铺放在斜面的两侧，绸带与斜面间无摩擦。现将质量分别为 $M=1.5\unit{kg}$、$m=1\unit{kg}$ 的小物块同时轻放在斜面两侧的绸带的中点上，两物块与绸带间的动摩擦因数 $\mu$ 相等，且最大静摩擦力\unclear{与}滑动摩擦力大小相等。若将小物块视为质点，（$\sin37^\circ=0.6$，$g=10\unit{m/s^2}$）问：% 行末被裁：“M=1.5kg”后的分隔符、“最大静摩擦力”后的“与”均为推测
+
+（1）若物块 $M$、$m$ 与绸带不发生相对滑动，它们共同运动的加速度大小为多少？且此时 $M$、$m$ 与绸带间摩擦力大小为多少？
+
+（2）欲使物块 $M$、$m$ 与绸带不发生相对滑动，物块与绸带间的动摩擦因数需要满足什么条件？
+
+（3）若 $\mu=0.75$，$m$ 物块从释放到斜面底端用时为多少？
+
+（题干(2)(3)之间页边潦草笔迹）\unclear{…}
+
+%FIG p287_b 0.005 0.619 0.46 0.72
+\notefig[0.45]{figures/p287_b.png}
+
+\begin{solution}
+（题干(1)下方手写，被划去）\struck{$15\cdot0.6-10\cdot0.6=2.5a$}
+
+（1）$Mg\sin\alpha-mg\sin\alpha=(M+m)a_1$
+
+\hspace{1.6em}$a_1=1.2\unit{m/s^2}$
+
+（2）$f-mg\sin\alpha=ma_1$
+
+\hspace{1.6em}$\mu mg\cos\alpha-mg\sin\alpha\ge ma_1$
+
+\hspace{1.6em}$\mu=\dfrac{1.2+6}{10\cdot0.8}=\dfrac{7.2}{8}=0.9$% CHECK: 此行手写为“=”，由上一行不等号看应为 μ≥0.9；分母 10 与 0.8 之间手写无运算符
+
+（3）对 $M$ 和绸带：
+
+\hspace{1.6em}$Mg\sin\alpha-\mu mg\cos\alpha=Ma_2$
+
+\hspace{1.6em}$15\,\unclear{\frac{3}{5}}-\unclear{\frac{3}{4}}\,8=1.5a$% CHECK: 两个分数的分子手写像 9 和 6，按算式 15·3/5−3/4·8=1.5a 读作 3
+
+\hspace{1.6em}$a=2\unit{m/s^2}$
+
+\hspace{1.6em}$t_1=\sqrt{\dfrac{4.5}{2}}=\dfrac{3}{2}\unit{s}$% 根号前有一个涂黑的小圈状笔迹
+
+对 $m$\quad $a=g\sin\alpha=6\unit{m/s^2}$
+
+\hspace{1.6em}$t_2=\sqrt{\dfrac{2\left(L_1-\unclear{\frac{4.5}{2}}\right)}{a}}$
+
+\hspace{1.6em}$=\sqrt{\dfrac{2(5.25-2.25)}{6}}=\sqrt{1}=1\unit{s}$
+
+故物块从释放到斜面底端用时为 $1\unit{s}$% CHECK: 末尾手写像“1s”（或“15”）；按 t_1=1.5 s 与 t_2=1 s 合计应为 2.5 s
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 287

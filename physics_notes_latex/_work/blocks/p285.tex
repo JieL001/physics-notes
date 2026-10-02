@@ -1,0 +1,85 @@
+%%%PAGE 285 rot=0 legibility=fair summary=多条零散笔记：电偏转/复合场/磁偏转、圆心确定、光电效应方程、核反应放能、非完全弹性碰撞、面积速度、叠放圆柱受力与做功、多用电表估读、纸带读数、平抛竖直方向逐差、曲杆轨迹（页面上缘被裁、左下角被折页遮挡）
+%%%BLOCK id=285-01 ch=11 sec=带电粒子在电磁场中的运动·三类场 kind=summary alt=09 cont=none y=0.00-0.07
+% 页面上缘被裁，首行只露出下半截；以下三行由左侧一条竖线（大括号）括起，竖线左边为标题
+\unclear{图带规律}
+\begin{itemize}
+\item 电偏转\ \unclear{…}
+\item 复合场\quad $v=\dfrac{E}{B}$
+\item 磁偏转\quad $r=\dfrac{mv}{qB}$
+\end{itemize}
+%%%END
+%%%BLOCK id=285-02 ch=17 sec=光电效应·光电子动能 kind=formula alt=none cont=none y=0.00-0.06
+% 页面上缘被裁，此块上方内容看不到
+\begin{gather*}
+eU_0-W_0=E_K\\
+eU_1+h\nu_1-W_0=E_K
+\end{gather*}
+% CHECK: 第一式“eU_0”也可能是别的写法（字形不清）
+%%%END
+%%%BLOCK id=285-03 ch=11 sec=带电粒子在磁场中的圆周运动·圆心确定 kind=method alt=none cont=none y=0.08-0.12
+初速度垂线\quad 弦长中垂线\quad $V_{\text{初}}$、$V_{\text{末}}$ 的\unclear{角}平分线\quad \fbox{交于圆心}
+%%%END
+%%%BLOCK id=285-04 ch=09 sec=带电粒子在电场中的偏转·示意图 kind=diagram alt=04 cont=none y=0.12-0.19
+%FIG p285_a 0.12 0.115 0.38 0.19 soft
+\notefig[0.3]{figures/p285_a.png}
+%%%END
+%%%BLOCK id=285-05 ch=17 sec=核能·结合能与核反应放能 kind=formula alt=none cont=none y=0.19-0.27
+% 第一个核素的原子序数左侧有一个小圈状记号
+\[ \nuc{A}{Z}{X}\to\nuc{A'}{Z'}{X'}+\nuc{A''}{Z''}{Y'}\qquad \text{放能}=A'E_2+A''E_3-AE_1, \]
+\[ AE_1<A'E_2+A''E_3 \]
+%%%END
+%%%BLOCK id=285-06 ch=07 sec=碰撞·非完全弹性碰撞 kind=note alt=none cont=none y=0.28-0.31
+算不出应注意非完全弹性碰撞\quad $P$ 守恒\quad $E_{\text{机}}$ 不守恒
+%%%END
+%%%BLOCK id=285-07 ch=05 sec=开普勒定律·面积速度 kind=formula alt=none cont=none y=0.31-0.35
+天体转动面积\quad $S=\dfrac12\sqrt{GMr}=\dfrac12\sqrt{\dfrac{GM}{r}}\,v$% CHECK: 末项手写像 v（面积速度应为 S=½rv，可能是 r）
+%%%END
+%%%BLOCK id=285-08 ch=02 sec=叠放物体·静摩擦与做功 kind=derivation alt=06 cont=none y=0.36-0.49
+%FIG p285_b 0.15 0.365 0.335 0.45
+\notefig[0.25]{figures/p285_b.png}
+
+\begin{gather*}
+2F_m\cos60^\circ=mg\qquad F_m=mg\\
+f_m=F_m\cos30^\circ=\frac{\sqrt{3}}{2}mg\\
+\text{B对地压力}\ F_N=m_Bg+\tfrac12 m_Cg=mg\\
+f_{\text{地B}}=f_m\qquad \mu=\frac{\sqrt{3}}{2}
+\end{gather*}
+% CHECK: F_N 一行中 m 的下标手写不清（读作 B、C）
+% 以下三式写在上述各式右侧
+\begin{gather*}
+W-fx+mgh=0\\
+fx=2(\sqrt{3}-1)\mu mgR\\
+W=(2\mu-1)(\unclear{\sqrt{3}}-1)mgR
+\end{gather*}
+% 第二式中 x 右下有一个实心小点（可能是下标0）；第三式根号内手写像 2，按上下文读作 3
+%%%END
+%%%BLOCK id=285-09 ch=10 sec=多用电表·读数 kind=note exp=1 alt=18 cont=none y=0.49-0.52
+多用电表除欧姆表外也要估读
+%%%END
+%%%BLOCK id=285-10 ch=01 sec=打点计时器·纸带处理 kind=note exp=1 alt=18 cont=none y=0.52-0.60
+%FIG p285_c 0.09 0.52 0.31 0.60
+\notefig[0.25]{figures/p285_c.png}
+
+\unclear{读数}\ $x_1=33.7-27.6$
+
+有 $f_{\text{阻}}$，$g$ \unclear{代}大了，导致 \unclear{$t$} 偏大% CHECK: 手写“g代大了”，有阻力时 g（测量值）应偏小，字形不清
+
+看\unclear{疏密}，是左端连重锤。
+%%%END
+%%%BLOCK id=285-11 ch=04 sec=平抛运动·竖直方向匀加速 kind=note exp=1 alt=01 cont=none y=0.62-0.79
+平抛的竖直方向为匀加\unclear{速}
+
+%FIG p285_d 0.10 0.665 0.27 0.785
+\notefig[0.25]{figures/p285_d.png}
+
+\begin{gather*}
+h_1-h_2=h_2-h_3\\
+h_2-h_3=h_3-h_4
+\end{gather*}
+\[ h_1+3H_3=3H_2+h_4 \]% CHECK: 手写 H_3、H_2 为大写，应为 h_3、h_2
+%%%END
+%%%BLOCK id=285-12 ch=04 sec=平抛运动·轨迹与曲杆 kind=note alt=none cont=none y=0.82-0.88
+% 左下角被折页遮挡，“后 E⃗”之后到“y=”之前的内容被遮住
+后 $\vec{E}$\unclear{…}\quad $y=\dfrac{gx^2}{2v_0^2}$ 当符合曲杆轨迹时，$N=0$，是平抛。$mg=\dfrac{mv_0^2}{\rho}$ 曲率半径。
+%%%END
+%%%PAGEEND 285

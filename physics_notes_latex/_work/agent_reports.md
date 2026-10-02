@@ -115,6 +115,12 @@ DONE pages=273,274,275,276,277, blocks=21 (8/6/3/1/3), figs=17, unclear=26, ALL 
 2. p274 页首的贴题（波的起振方向）被页顶截断，"沿y轴正向"的"正"字被下划线压住；"系统中一对…"那段的"相互作用力做功无关"疑缺字，"∵/∴"符号和"路程"小字也不确定。
 3. p273 的"非质点系"末字、"全程时间(哪)还是阶段时间"，以及 p275 的"F安"下标，都是涂写重叠处，已标 `\unclear`。
 
+## p283–287
+DONE pages=283-287, blocks=24, figs=13, unclear=27; crop_batch contact sheets checked (p285_a and p287_a are pencil, so I added `soft`), `texcheck_all` ALL OK.
+1. p285: the top edge is cropped, so the first line is not legible, and the lower-left fold hides the text after "后 E". Several uncertain readings are marked `\unclear`/CHECK: the "图带规律" heading, "读数", "g代大了", "看疏密", the 面积速度 line, and the stacked-cylinder formulas.
+2. p286: the pasted slip's right edge is cut, so question (3) is incomplete. The margin scribbles are only roughly transcribed. The `Q_2` line and the denominator in the `x_{1相}` line are flagged CHECK.
+3. p284/p287: p284's (1) answer is hard to read (√3:6 vs √3:√6). On p287, the B line of 太空电梯 reads "反比", and the final answer reads "1s" where t1+t2 gives 2.5 s (CHECK).
+
 ## p298–300
 DONE pages=298-300, blocks=7 (298:1, 299:5, 300:1), figs=5, unclear=4. texcheck_all returned ALL OK, and the contact sheet showed all five figures complete.
 - p298 is a pasted printed problem (ch=12, no solution on the page); its black-pen boxes, oval and underlines are kept as `\fbox`/`\underline`.
