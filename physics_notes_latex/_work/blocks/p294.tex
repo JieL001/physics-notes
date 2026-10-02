@@ -1,0 +1,69 @@
+%%%PAGE 294 rot=0 legibility=good summary=四道题的解答：平抛落入圆弧面求最小动能；3V精密电压表改装校准；靠墙杆连接体分离与最大速度；斜轨导体棒动量定理
+%%%BLOCK id=294-01 ch=04 sec=平抛·落在曲面上 kind=problem alt=06 cont=none y=0.03-0.40
+\begin{problem}[1]
+%FIG p294_a 0.07 0.06 0.27 0.15
+\notefig[0.3]{figures/p294_a.png}
+
+\begin{solution}
+$v_0$ 越小 $h$ 越高 飞行时间越长
+\begin{align*}
+R\cos\theta&=v_0t\\
+R\sin\theta&=\frac{1}{2}gt^2\\
+mgR\sin\theta&=E_K-\frac{1}{2}mv_0^2\\
+E_K&=mgR\left(\frac{3}{4}\sin\theta+\frac{1}{4\sin\theta}\right)\\
+&>\frac{\sqrt{3}}{2}mgR % CHECK: 原稿为“>”，应为 $\ge$
+\end{align*}
+$P_{\min}=\sqrt{2mE_{k\min}}$\quad 此时 $x=\dfrac{\sqrt{6}}{3}R$\quad $v_0=\sqrt{\dfrac{\sqrt{3}}{3}gR}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=294-02 ch=10 sec=电表改装·电压表 kind=problem exp=1 alt=none cont=none y=0.46-0.65
+\begin{problem}[2]
+3V 精密电压表{\scriptsize（行上方小字：$1000\,\Omega$）}，改表后改装的电压表示数为精密电压表的 0.9 倍 $I_g$\unclear{测不准}）。内阻和 $R_0$ 可能误差，应将电阻调为 $R_0-\dfrac{1000}{11}\,\Omega$ % CHECK: 分母 11 与下方旁注 1000/9 不一致，原样转录
+
+（“应”字下方另有小字：9份）
+
+%FIG p294_b 0.105 0.514 0.265 0.592
+\notefig[0.3]{figures/p294_b.png}
+
+\begin{solution}
+（左侧独立算式）$\dfrac{1000}{9}$
+\begin{align*}
+I_g&=0.9I\\
+R&=\frac{10}{9}R_V
+\end{align*}
+去掉 $\frac{1}{9}$ 份 $R_V$ 即可。
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=294-03 ch=06 sec=机械能守恒·杆连接体 kind=problem alt=04,07 cont=none y=0.64-0.82
+\begin{problem}[3]
+%FIG p294_c 0.03 0.648 0.245 0.775
+\notefig[0.3]{figures/p294_c.png}
+
+\begin{solution}
+分离时 $mgl(1-\sin\alpha)=\dfrac{1}{2}mv^2+\dfrac{1}{2}m\left(\dfrac{v}{\tan\alpha}\right)^2$
+
+$v^2=gl(2-2\sin\alpha)\sin^2\alpha$\quad 当 $\sin\alpha=\dfrac{2}{3}$ 时 $v_A$ 最大，
+
+$I_{\text{墙}}=mv=\ldots$
+
+B 的最大动能为落地时。
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=294-04 ch=12 sec=电磁感应·动量问题 kind=problem alt=07 cont=none y=0.82-1.00
+\begin{problem}[4]
+%FIG p294_d 0.015 0.82 0.27 0.955
+\notefig[0.35]{figures/p294_d.png}
+
+\begin{solution}
+正交\unclear{分解}（弧形箭头指向下式中的 $Blq\cos\alpha$ 项）
+\[
+mg\sin\alpha\, t-Blq\cos\alpha=mv_m-0.
+\]
+安培力需再投影
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 294

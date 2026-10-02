@@ -1,0 +1,66 @@
+%%%PAGE 296 rot=0 legibility=good summary=自感(通电/断电自感电路、理想线圈)；多用电表欧姆挡测R/C/L/D；斜轨导体棒能量守恒与电量、热量分配
+%%%BLOCK id=296-01 ch=12 sec=自感 kind=knowledge alt=none cont=none y=0.03-0.31
+\textbf{自感}\quad \unclear{感}阻碍电流变化\quad $i$增反减同
+
+% 左图线圈旁另有小字标注（字迹不清，形如“R_L+r→0”）
+%FIG p296_a 0.085 0.068 0.335 0.19
+\notefig[0.4]{figures/p296_a.png}
+
+%FIG p296_b 0.455 0.068 0.71 0.19
+\notefig[0.4]{figures/p296_b.png}
+
+\textbf{通电自感}\quad 闭A后亮\quad B立即亮
+
+断电自感\quad AB过一段才熄灭
+
+$I_B>I_A$\quad A闪后逐渐熄灭
+%%%END
+%%%BLOCK id=296-02 ch=12 sec=自感 kind=knowledge alt=none cont=none y=0.31-0.44
+\textbf{理想线圈}
+\begin{itemize}
+\item 通电时相当于电断路 % CHECK: “电断路”，“电”字疑为多写，原样转录
+\item 断电时相当于电源
+\item 稳定时相当于导线
+\end{itemize}
+%%%END
+%%%BLOCK id=296-03 ch=10 sec=多用电表·欧姆挡测元件 kind=knowledge exp=1 alt=none cont=none y=0.43-0.58
+黑接正极\quad 正向电阻
+
+\begin{tabular}{@{}l@{\hspace{2.5em}}l}
+R & 不变 \\
+C & 先向右后向左 \\
+L & 缓慢向右偏 \\
+D & 正负极电阻相差大
+\end{tabular}
+%%%END
+%%%BLOCK id=296-04 ch=12 sec=电磁感应·能量与热量分配 kind=problem alt=06 cont=none y=0.60-0.90
+\begin{problem}
+% 图中标注（已在图里）：R_1、2r、R_2、r（棒）、37°、x_0
+%FIG p296_c 0.075 0.63 0.357 0.81
+\notefig[0.35]{figures/p296_c.png}
+
+\begin{solution}
+% 原稿：$W_f$ 似被划去，其正上方写有 $-\mu mgx_0\cos\alpha$；$W_f$ 与 $mgx_0\sin\alpha$ 之间是一个“·”
+\[
+\overset{-\mu mgx_0\cos\alpha}{W_f}\cdot mgx_0\sin\alpha=\frac{1}{2}mv_{\max}^2+Q
+\] % CHECK: “W_f”与“mgx_0 sinα”之间为“·”，物理上应为“+”
+
+\textbf{电量、热量分配}
+
+求 $Q_{\text{总}}\Rightarrow Q_{\text{外}}$\ \ $\left(\dfrac{Q_{\text{外}}}{Q_{\text{总}}}=\dfrac{R}{R+r}\right)$\ \ $\Rightarrow Q\propto Q_1\ Q_2$ % CHECK: “Q ∝ Q_1 Q_2”中间符号不清
+
+（括号上方小字：与 $R$ 成正比。右侧并列两行小字：与 $R$ 成反比（并联）；与 $R$ 成正比（串联））
+
+并联 $Q$ 与 $R$ 成反比\quad $\dfrac{U^2}{R}$
+
+串联 $Q$ 与 $R$ 成正比
+
+\[
+q=\frac{BLx}{R_{\text{总}}}
+\]
+
+$q_1$、$q_2$ 与电阻成反比。
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 296

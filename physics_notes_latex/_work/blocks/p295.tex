@@ -1,0 +1,55 @@
+%%%PAGE 295 rot=0 legibility=good summary=差值法测电流表内阻电路与公式；光子垂直反弹受力(ma=nΔp/Δt)；实验选点笔记；剪贴的双磁场圆形边界选择题及手写作垂线解法
+%%%BLOCK id=295-01 ch=10 sec=电学实验·差值法测电阻 kind=method exp=1 alt=none cont=none y=0.04-0.31
+% 页眉线上另有一个被两条斜线划过的 G1 圆圈小图（疑为涂改）
+%FIG p295_a 0.11 0.05 0.235 0.085
+\notefig[0.25]{figures/p295_a.png}
+
+% 图中标注（已在图里）：4mA、Ig1、G1、150Ω、R大、使分压、0.6V（两处）、Ig2、G2、6mA
+%FIG p295_b 0.08 0.075 0.34 0.262
+\notefig[0.4]{figures/p295_b.png}
+
+$R_N$、使保护电路
+
+差值法\quad $+$ 偏转 $>\dfrac{1}{3}$ 满偏
+
+\[
+R_{g_1}=\frac{(I_{g_2}-I_{g_1})R_{\text{大}}}{I_{g_1}}
+\]
+%%%END
+%%%BLOCK id=295-02 ch=17 sec=光子动量·光压 kind=derivation alt=07,03 cont=none y=0.33-0.52
+每秒每平\unclear{米}能量 $E$\quad 光子\unclear{垂直}反弹
+\begin{align*}
+p&=\frac{2E_0}{c\Delta t}\\ % CHECK: 分母含 Δt，原样转录（光子动量改变量应为 2E_0/c）
+ma&=n\frac{\Delta p}{\Delta t}=\frac{ES\Delta t}{E_0}\cdot\frac{2E_0}{c\Delta t}
+\end{align*}
+加速度\textsuperscript{大小}写时写成正值。
+%%%END
+%%%BLOCK id=295-03 ch=18 sec=数据处理·选点 kind=note exp=1 alt=none cont=none y=0.53-0.56
+实验\underline{题选点}必选最远点。
+%%%END
+%%%BLOCK id=295-04 ch=11 sec=有界磁场·圆形边界 kind=problem alt=none cont=none y=0.55-0.83
+% 以下题干为剪贴的印刷题（题号被裁掉，仅剩一个“.”），其上有手写划线/圈画/解答
+\begin{problem}
+如图所示，在以 $R_0$ 为半径，$O$ 为圆心的圆形区域内存在磁场，直径 $MN$ 左侧区域存在\underline{一匀强磁场}，方向垂直于纸面向外，磁感应强度大小为 $B_1$；$MN$ 右侧区域也存在一匀强磁场，方向垂直于纸面向里，磁感应强度大小为 $B_2$，有一质量为 $m$，电荷量\underline{为$+q$ 的}带电粒子（不计重力）沿垂直于 $MN$ 的方向从 $P$ 点射入磁场，通过磁场区域后自 $Q$ 点离开磁场，离开磁场时其运动方向仍垂直于 $MN$。已知 $OP$ 与 $MN$ 的夹角为 $\theta_1$，$OQ$ 与 $MN$ 的夹角为 $\theta_2$，粒子在左侧区域磁场中的运动时间为 $t_1$，粒子在右侧区域磁场中的运动时间为 $t_2$，则下列说法\fbox{正确的}是（\quad）
+
+\begin{tabular}{@{}l@{\hspace{3em}}l@{}}
+A. $\dfrac{B_2}{B_1}=\dfrac{\sin\theta_1}{\sin\theta_2}$ & B. $\dfrac{B_2}{B_1}=\dfrac{\sin\theta_2}{\sin\theta_1}$ \\[8pt]
+C. $\dfrac{t_1}{t_2}=\dfrac{\sin\theta_2}{\sin\theta_1}$ & D. $\dfrac{t_1}{t_2}=\dfrac{\sin\theta_1}{\sin\theta_2}$
+\end{tabular}
+% 手写：选项 A 的分子处有一勾状弧线，选项 D 的 t1/t2 上有一道斜线（疑为勾选）
+
+%FIG p295_e 0.76 0.653 0.94 0.812
+\notefig[0.3]{figures/p295_e.png}
+
+\begin{solution}
+手写答案：（A）D\quad $r_1\propto\sin\theta_1$，
+
+作垂线 % 其下有一条弧线伸向右侧
+
+$\sin\theta_2=\dfrac{d_2}{R}$\quad $r_2=\dfrac{d_2}{\sin\alpha}$
+
+$\sin\theta_1=\dfrac{d_1}{R}$\quad $r_1=\dfrac{d_1}{\sin\alpha}$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 295

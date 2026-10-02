@@ -127,6 +127,12 @@ DONE pages=283-287, blocks=24, figs=13, unclear=27; crop_batch contact sheets ch
 2. p286: the pasted slip's right edge is cut, so question (3) is incomplete. The margin scribbles are only roughly transcribed. The `Q_2` line and the denominator in the `x_{1相}` line are flagged CHECK.
 3. p284/p287: p284's (1) answer is hard to read (√3:6 vs √3:√6). On p287, the B line of 太空电梯 reads "反比", and the final answer reads "1s" where t1+t2 gives 2.5 s (CHECK).
 
+## p293–297
+DONE pages=293-297, blocks=19, figs=16, unclear=11, texcheck ALL OK.
+- p293-05: the text "n匝重杆" and "F不乘Φ" are hard to read, and the "Δ" before m in "-nBLq=Δm(v末-v0)" may be a slip for Δp.
+- p294-02: the written denominator is 1000/11, but the side note says 1000/9.
+- p297: the pasted printed problem is torn near the sub-question (2) "Δt" and (3) "W=7J" (both `\unclear`). The pasted strip along the left edge gives only fragment characters, probably the left edge of the problem pasted on p295.
+
 ## p298–300
 DONE pages=298-300, blocks=7 (298:1, 299:5, 300:1), figs=5, unclear=4. texcheck_all returned ALL OK, and the contact sheet showed all five figures complete.
 - p298 is a pasted printed problem (ch=12, no solution on the page); its black-pen boxes, oval and underlines are kept as `\fbox`/`\underline`.
