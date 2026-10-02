@@ -36,3 +36,9 @@ DONE pages=211,212,213,214,215 blocks=29 figs=32 unclear=8，texcheck_all 已 AL
 二次核对 2：p212 “大内大，小外大”的末字疑为“小”，已加 CHECK；“U分=总E”里的字形不确定。
 二次核对 3：p214 “I↑ P↑ T↑ ρ↑ R↑”的第 2 个符号是按物理链条读成 P 的。
 另外 p215_f 图右缘带进一小截邻图导线，p214_d 已并入 p214_c 并删除孤图。
+
+## p185–189
+DONE pages=185-189, blocks=36, figs=15, unclear=32; texcheck_all ALL OK, contact sheet checked.
+- 185/186/187 are the same notebook page photographed three times: 185 and 187 are covered by two different pasted printed sheets, 186 is uncovered. I transcribed the covered text only in p186, so p185 and p187 hold only their sheet content (185: three questions; 187: question 20). They are not marked `dup=`; the header comments explain it.
+- The faint chemistry pencil text at the top right of 186 and 189 sits in the same place on both photos, so I took it as show-through from a sheet underneath. I kept it only as a comment in p186.tex and made no block for it.
+- Please re-check first: the cut-off or scribbled handwriting on 185 and 187 (the pasted sheets are cut off at the right edge, so those lines end in "……"); p188's red-pen notes and half-life formula (blocks 188-08 to 188-09); and p189's partly hidden item numbers (6 and 8) and the garbled "GM_火" (should be earth, M_地) in the item 9 solution.
