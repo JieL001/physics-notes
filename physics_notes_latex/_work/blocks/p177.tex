@@ -1,0 +1,127 @@
+%%%PAGE 177 rot=0 legibility=fair summary=验证动量守恒（平抛法）的装置1/2/3/4：转参思路、原-转-变推导、各装置的验证式
+% 页内另有若干长斜线/竖线连接各块（未转录）
+%%%BLOCK id=177-01 ch=07 sec=验证动量守恒·实验 kind=method exp=1 alt=none cont=none y=0.05-0.13
+\textbf{验证动量守恒}
+
+\hspace{2em}转参.先表达后正比常量都当一
+%%%END
+%%%BLOCK id=177-02 ch=07 sec=验证动量守恒·实验 kind=method exp=1 alt=04 cont=none y=0.13-0.47
+\textbf{装置1}
+
+%FIG p177_a 0.04 0.157 0.395 0.327
+\notefig[0.36]{figures/p177_a.png}
+
+\begin{align*}
+V_1&=\frac{m_1-m_2}{m_1+m_2}V_0<V_0\\
+V_2&=\frac{2m_1}{m_1+m_2}V_0>V_0
+\end{align*}
+
+机械能守恒
+\begin{align*}
+& m_1\,OP^2=m_1\,OM^2+m_2\,ON^2\\
+& \overline{ON}-\overline{OM}=\overline{OP}
+\end{align*}
+
+原：$m_1V_0=m_1V_1+m_2V_2$
+
+转：$h=\dfrac{g}{2V_0^2}s^2$，\quad $V_0^2=\dfrac{g}{2h}s^2\propto s^2$
+
+变$\to$
+\begin{keybox}
+\[m_1S_0=m_1S_1+m_2S_2\]
+\end{keybox}
+
+\begin{keybox}
+\[\frac{m_1}{t_1}=\frac{m_1}{t_1}+\frac{m_2}{t_2}\] % CHECK: 此框位于 m_1S_0 框右侧，无文字说明；手写第一个分母像 t_1（按物理应为 t_0）
+\end{keybox}
+%%%END
+%%%BLOCK id=177-03 ch=07 sec=验证动量守恒·实验 kind=method exp=1 alt=04 cont=none y=0.42-0.66
+\textbf{装置2}
+
+%FIG p177_b 0.092 0.428 0.46 0.545
+\notefig[0.37]{figures/p177_b.png}
+
+原：$m_1V_0=m_1V_1+m_2V_2$
+
+转：$h=\dfrac{g}{2V_0^2}s^2$，\quad $V_0^2=\dfrac{gs^2}{2}\cdot\dfrac{1}{h}\propto\dfrac{1}{h}$，\quad $V_0\propto\dfrac{1}{\sqrt{h}}$
+
+变：
+\begin{keybox}
+\[m_1\frac{1}{\sqrt{h_0}}=m_1\frac{1}{\sqrt{h_1}}+m_2\frac{1}{\sqrt{h_2}}\]
+\end{keybox}
+
+\[\frac{m_1}{\sqrt{h_1}}=\frac{m_2}{\sqrt{h_3}}+\frac{m_2}{\sqrt{h_1}}\] % CHECK: 此式有一箭头自下方「弹碰」指向它；与下方公式对照，左端分母/中间分子疑有笔误
+
+弹碰\quad $\dfrac{m}{\sqrt{h_1}}$\ \unclear{=}\ $\dfrac{m_1}{\ \ }$ % CHECK: 此行潦草，被斜线穿过，右侧分数分母仅见一竖
+
+\[\frac{m_1}{\sqrt{h_1}}=\frac{m_1}{\sqrt{h_3}}+\frac{m_2}{\sqrt{h_1}}\] % CHECK: 左端分母下标手写像 1（按图中 h_1,h_2,h_3 的含义疑为 h_2）
+%%%END
+%%%BLOCK id=177-04 ch=07 sec=验证动量守恒·实验 kind=method exp=1 alt=04 cont=none y=0.66-0.99
+\textbf{装置3}
+
+%FIG p177_c 0.03 0.693 0.37 0.845
+\notefig[0.34]{figures/p177_c.png}
+
+原：$m_1V_0=m_1V_1+m_2V_2$
+
+转：$\theta$为定值
+
+\[
+\left\{
+\begin{aligned}
+& s\cos\theta=V_0t\\
+& \boxed{s\sin\theta=\tfrac{1}{2}gt^2}\\
+& \tan\theta=\frac{gt}{2V_0}
+\end{aligned}
+\right.
+\] % 第二式在原稿中被圈出
+
+\[
+s\cos\theta=V_0\,\frac{2V_0\tan\theta}{g}\qquad V_0^2=\frac{gs\cos\theta}{2\tan\theta}\propto s\qquad V_0\propto\sqrt{s}
+\]
+
+\[
+s\sin\theta=\frac{g}{2V_0^2}s^2\cos^2\theta\qquad V_0\propto\sqrt{s}
+\]
+
+变：
+\begin{keybox}
+\[m_1\sqrt{S_0}=m_1\sqrt{S_1}+m_2\sqrt{S_2}\]
+\end{keybox}
+
+\struck{\unclear{…}}\ $m_1S_0=m_1S_1+m_2S_2$ 弹碰 % CHECK: 页底一行，行首有被涂划的字，行末「弹碰」处有涂改痕迹
+%%%END
+%%%BLOCK id=177-05 ch=07 sec=验证动量守恒·实验 kind=method exp=1 alt=04 cont=none y=0.21-0.75
+\textbf{装置4}
+
+%FIG p177_d 0.55 0.318 0.90 0.49
+\notefig[0.35]{figures/p177_d.png}
+
+\[
+m_1\sqrt{\tan\alpha_B\sin\alpha_B}=m_1\sqrt{\tan\alpha_C\sin\alpha_C}+m_2\sqrt{\sin\alpha_A\tan\alpha_A}
+\] % CHECK: 此式潦草，右两项的下标 C、A 及根号范围为推测
+
+\[R\cos\alpha=\frac{g}{2V_0^2}(R\sin\alpha)^2\]
+
+\[V_0^2\propto\frac{\sin^2\alpha}{\cos\alpha}\]
+
+验证
+\begin{keybox}
+\[
+m_1\sqrt{\frac{\sin^2\alpha_B}{\cos\alpha_B}}=m_1\frac{\sqrt{\sin^2\alpha_C}}{\sqrt{\cos\alpha_C}}+m_2\sqrt{\frac{\sin^2\alpha_A}{\cos\alpha_A}}
+\] % 原稿右侧第二项的根号分别写在分子、分母上
+\end{keybox}
+
+\begin{align*}
+y&=\frac{g}{2V_0^2}x^2\\
+x^2+y^2&=R^2
+\end{align*}
+
+%FIG p177_e 0.66 0.575 0.88 0.666
+\notefig[0.25]{figures/p177_e.png}
+
+\[V_0^2=\frac{g}{2}\cdot\frac{R^2-y^2}{y}\qquad V_0\propto\sqrt{\frac{R-y^2}{y}}\] % CHECK: 根号内手写像 R-y^2（R 的平方可能漏写）
+
+\[y=\frac{g}{2V_0^2}(R^2-y^2)\]
+%%%END
+%%%PAGEEND 177

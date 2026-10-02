@@ -1,0 +1,122 @@
+%%%PAGE 179 rot=0 legibility=good summary=验证牛二a-F图像误差分析、打点纸带求速度、光电门自由落体测g的误差、多种测动摩擦因数μ的方法
+% 页面上方露出的另一页化学笔记（生成0.4mol CO CO2 … 6.72L 等）不属于本页，未转录；页底右下角另有一处折线涂鸦，未转录
+%%%BLOCK id=179-01 ch=03 sec=验证牛顿第二定律·a-F图像 kind=method exp=1 alt=none cont=none y=0.07-0.36
+$a$偏小：没有平衡摩擦力或平衡摩擦力不足
+
+$a$偏大：木板右端垫得太高。
+
+%FIG p179_a 0.04 0.112 0.33 0.21 soft
+\notefig[0.3]{figures/p179_a.png}
+
+$a$-$F$图中$\downarrow$
+\[2F=Ma\qquad k=\frac{2}{m}\qquad M=\frac{2}{k}\] % CHECK: k=2/m 的分母手写像小写 m，按上下文应为 M
+
+注：合力为$2F$。
+
+% 以下四幅 a-F 图从左到右；图(a)线端的标注疑为「平衡了」
+%FIG p179_b 0.075 0.213 0.27 0.287
+\notefig[0.25]{figures/p179_b.png}
+\[a=\frac{1}{m}F\]
+
+%FIG p179_c 0.295 0.215 0.495 0.303
+\notefig[0.25]{figures/p179_c.png}
+\begin{align*}
+F+Mg\sin\theta&=Ma\\
+a&=\frac{F}{m}+g\sin\theta % CHECK: 分母手写像小写 m，按上式应为 M
+\end{align*}
+
+%FIG p179_d 0.515 0.232 0.76 0.322
+\notefig[0.28]{figures/p179_d.png}
+\begin{align*}
+F-Mg\sin\theta&=Ma\\
+a&=\frac{F}{m}-g\sin\theta % CHECK: 分母手写像小写 m，按上式应为 M
+\end{align*}
+
+%FIG p179_e 0.81 0.27 0.97 0.34
+\notefig[0.25]{figures/p179_e.png}
+用钩码重力替代细线拉力（有传感器不需要）
+%%%END
+%%%BLOCK id=179-02 ch=03 sec=验证牛顿第二定律·a-F图像 kind=note exp=1 alt=none cont=none y=0.355-0.385
+取下重物\quad $f\downarrow$\quad $M_{\text{总}}\downarrow$\quad $a\uparrow$
+%%%END
+%%%BLOCK id=179-03 ch=01 sec=打点计时器·瞬时速度 kind=method exp=1 alt=03 cont=none y=0.365-0.44
+$f=50\unit{Hz}$
+
+%FIG p179_f 0.12 0.36 0.31 0.405
+\notefig[0.25]{figures/p179_f.png}
+
+求$V_0=\dfrac{7.21+7.72}{2\times0.04}\times10^{-2}=1.9\unit{m/s}$
+
+$\uparrow$ 每隔1个计时点取1个计数点。
+%%%END
+%%%BLOCK id=179-04 ch=01 sec=自由落体·光电门测g kind=method exp=1 alt=none cont=none y=0.44-0.52
+自由落体求$g$
+
+$V=\dfrac{d}{t}$（瞬时）\qquad $V^2=2gh$\qquad $\therefore g=\dfrac{d^2}{2ht^2}$
+
+\begin{itemize}
+\item 有空气阻力\quad $g-\dfrac{f}{m}=\dfrac{d^2}{2ht^2}$\quad $g=\dfrac{f}{m}+\dfrac{d^2}{2ht^2}$（偏大了）
+\item $h$误测为电磁铁和光电门中心点的位置\quad \fbox{$g$偏小}
+\end{itemize}
+
+球下落时经过光电门时偏离了中心位置（挡光长$<$直径，但代入了直径）\quad \fbox{$g$偏大}
+
+$\mathrm{ms}=10^{-3}\,\mathrm{s}$\quad 用更窄的光电门更准确\raisebox{1.2ex}{\scriptsize\ $d$越小\ }（$V$越接近$V_{\text{瞬}}$越准确）
+%%%END
+%%%BLOCK id=179-05 ch=02 sec=测动摩擦因数·实验 kind=method exp=1 alt=03 cont=none y=0.51-0.60
+\fbox{测$\mu$}
+
+%FIG p179_g 0.01 0.536 0.235 0.598
+\notefig[0.25]{figures/p179_g.png}
+
+能测出$A$与$B$间$\mu=\dfrac{F}{m}$ % CHECK: 手写为 F/m（疑漏 g，应为 F/mg）
+%%%END
+%%%BLOCK id=179-06 ch=03 sec=测动摩擦因数·实验 kind=method exp=1 alt=none cont=none y=0.60-0.66
+%FIG p179_h 0.075 0.596 0.235 0.66
+\notefig[0.25]{figures/p179_h.png}
+
+\begin{align*}
+a&=g\sin\theta-\mu g\cos\theta\quad\text{（只需知斜面倾角）}\\
+\mu&=\frac{g\sin\theta-a}{g\cos\theta}=\tan\theta-\frac{a}{g\cos\theta}
+\end{align*}
+%%%END
+%%%BLOCK id=179-07 ch=06 sec=测动摩擦因数·实验 kind=method exp=1 alt=03 cont=none y=0.66-0.74
+从$A$出发停在$C$处\ 处处同$\mu$\ 求$\mu$
+
+%FIG p179_i 0.09 0.665 0.27 0.725
+\notefig[0.25]{figures/p179_i.png}
+
+\[mgh-\mu mg\,l_{AB}\cos\theta-\mu mg\,S_{BC}\qquad\therefore\mu=\frac{h}{S}\] % CHECK: 第一式末尾未写 "=0"
+\[l_{AB}\cdot\cos\theta=S_{AB}\qquad S_{AB}+S_{BC}=S\]
+%%%END
+%%%BLOCK id=179-08 ch=06 sec=测动摩擦因数·实验 kind=method exp=1 alt=none cont=none y=0.73-0.88
+%FIG p179_j 0.09 0.735 0.30 0.79
+\notefig[0.25]{figures/p179_j.png}
+
+遮光时间为$t$
+
+\begin{align*}
+W_{\text{弹}}&=\frac{1}{2}m\frac{d^2}{t^2}+\mu mgx\\
+\frac{1}{t^2}&=\frac{2W_{\text{弹}}}{d^2}\cdot\frac{1}{m}-\frac{2\mu gx}{d^2}
+\end{align*}
+
+%FIG p179_k 0.685 0.76 0.87 0.86
+\notefig[0.25]{figures/p179_k.png}
+
+\[a=\frac{2\mu gx}{d^2}\qquad\therefore\mu=\frac{ad^2}{2gx}\]
+\[W_{\text{弹}}=\frac{ad^2}{2b}.\]
+%%%END
+%%%BLOCK id=179-09 ch=06 sec=测动摩擦因数·实验 kind=method exp=1 alt=none cont=none y=0.87-0.96
+%FIG p179_l 0.075 0.868 0.345 0.95
+\notefig[0.3]{figures/p179_l.png}
+
+\[mg\,l\sin\theta-\mu mg\,l\cos\theta=\frac{1}{2}m\left(V_B^2-V_A^2\right)\]
+\[\mu=\tan\theta-\frac{V_B^2-V_A^2}{2gl\cos\theta}\quad\text{（用}V_A\ V_B\ \theta\ l\ g\text{表示）}\]
+%%%END
+%%%BLOCK id=179-10 ch=06 sec=测动摩擦因数·实验 kind=method exp=1 alt=03 cont=none y=0.95-1.0
+%FIG p179_m 0.10 0.948 0.255 0.998
+\notefig[0.25]{figures/p179_m.png}
+
+\[\left(\frac{d}{t}\right)^2=2\mu gx\]
+%%%END
+%%%PAGEEND 179
