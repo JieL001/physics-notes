@@ -1,0 +1,103 @@
+%%%PAGE 165 rot=0 legibility=good summary=乒乓球碰桌反弹题(平抛+动量定理)、自耦变压器选择题(匝数看法)、嫦娥五号变轨题(万有引力+机械能守恒+动量守恒)
+%%%BLOCK id=165-01 ch=04 sec=平抛运动·反弹碰撞 kind=problem alt=06,07 cont=none y=0.07-0.41
+\begin{problem}
+% 剪贴印刷题干。左缘（第2、4行起首处）有红笔小字/记号，辨认不清；选项B、C左侧有手写记号；“正确”二字被圈出；题干与选项之间有铅笔手绘的折线（V形）划痕
+\red{\unclear{…}}甲、乙两同学在课外活动时进行乒乓球比赛，已知乒乓球的质量为 $m$ 且可视为质点，球桌的长度为 $L$，甲同学在球桌左边缘上方高 $H$ 处沿水平方向发球，在桌面上反弹后恰好过网，之后乒乓球落在球桌的右边缘上。乒乓球第一次落在桌面上时的水平位移为 $\frac{3}{8}L$，已知第一次与桌面接触的过程乒乓球与桌面相互作用的时间为 $t$，接触前后水平方向速度不变，重力加速度大小为 $g$，不计摩擦和空气阻力。下列说法正确的是
+\begin{enumerate}[label=\Alph*.,leftmargin=2em,itemsep=0pt]
+\item 乒乓球第一次与桌面接触过程中损失的能量为 \unclear{$\frac{2}{3}mgH$} % 分数上有一道斜划，分母看不清
+\item 乒乓球第一次与桌面接触后反弹上升的最大高度为 $\frac{25}{36}H$
+\item 第一次与桌面接触的过程中，乒乓球受到桌面提供的平均作用力为 $\dfrac{11m\sqrt{2gH}}{6t}+mg$
+\item 球网的高度为 \struck{$\frac{5}{9}H$} % 印刷选项D被斜线划去
+\end{enumerate}
+%FIG p165_a 0.36 0.205 0.545 0.30
+\notefig[0.3]{figures/p165_a.png}
+手写（淡铅笔，图右上方）：BC
+\begin{solution}
+$V_{y_1}=\sqrt{2gH}$
+
+$V_{y_2}=\sqrt{2gh}$
+
+由动量定理\quad $-\bar{F}t+mgt=-mV_{y_2}-mV_{y_1}$
+
+\[
+\bar{F}=\frac{11m\sqrt{2gH}}{6t}+mg
+\]
+
+由运动学公式 网高\unclear{$\frac{4}{9}H$} 可建\unclear{系}
+
+两次平抛
+\[
+\left\{\begin{aligned}
+v_0\sqrt{\frac{2H}{g}}&=\frac{3}{8}L\\
+2v_0\sqrt{\frac{2h}{g}}&=\frac{5}{8}L
+\end{aligned}\right.
+\qquad h=\frac{25}{36}L\qquad \Delta E_{\text{损}}=\frac{11}{36}mgH
+\]
+% CHECK: h=25/36 L 一处原稿末尾写作 L（据上下文应为 H）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=165-02 ch=13 sec=变压器·自耦变压器 kind=problem alt=10 cont=none y=0.41-0.72
+\begin{problem}
+% 剪贴印刷题干。“可以在滑动变阻器中点以下范围内滑动”处有铅笔波浪线；“正确”二字被圈出；选项C右侧有铅笔勾；题干右侧有一笔手写“C”形弧线（疑为答案C）；图中~u 旁手写 220V，环形线圈上有红笔绕线
+如图所示为一自耦变压器，输入端 $a$、$b$ 间接有 $u=220\sqrt{2}\sin 100\pi t\ \mathrm{V}$ 的交流电压，自耦变压器的总匝数为 1 100，$N$ 为中点，$MN$ 间的匝数为 50，$P_1$ 可以在 $MN$ 间滑动改变副线圈的匝数，$P_2$ 为负载滑动变阻器上的滑动触头，可以在滑动变阻器中点以下范围内滑动，滑动变阻器的总阻值为 $R=20\ \Omega$，原、副线圈分别接有理想交流电流表和理想交流电压表，则在允许调节的范围内，下列说法正确的是
+\begin{enumerate}[label=\Alph*.,leftmargin=2em,itemsep=0pt]
+\item 电压表示数的最小值为 110\struck{$\sqrt{2}$} V % 印刷为 110√2 V，√2 处被笔叉掉
+\item 电流表示数的最大值为 5.5 A
+\item $P_1$ 接 $M$、$P_2$ 移到中点时，滑动变阻器消耗的功率有最大值为 1 440 W
+\item 输入变压器的功率值为 1 440 W % 印刷行下缘被剪边截去一部分，“功率”与“值”之间有笔划
+\end{enumerate}
+%FIG p165_b 0.32 0.4855 0.545 0.552
+\notefig[0.35]{figures/p165_b.png}
+\begin{solution}
+A．$\dfrac{U_1}{U_2}=\dfrac{n_1}{n_2}$\qquad $U_2=\dfrac{1}{2}U_1=110\unit{V}$
+
+B．$\dfrac{U}{U_2'}=\dfrac{n_2}{n_2'}$\qquad $U_2'=\dfrac{\frac{1}{2}n+\Delta n}{n}U_1=120\unit{V}$
+% CHECK: B 式左端分子 U 的下标看不清（疑为 U_2）；各 n 的下标、撇号也较潦草
+
+$I_2=\dfrac{U_2'}{\frac{1}{2}R}=12\unit{A}$\qquad $\dfrac{I_1}{I_2}=\dfrac{\frac{1}{2}n+\Delta n}{n}$\qquad $\therefore I_1=6.54\unit{A}$
+
+C．$P_1$ 接到 $M$　$P_2$ 位于中点时\quad $P_{\text{滑}\,\mathrm{max}}=120\unit{V}\times12\unit{A}=1440\unit{W}$
+
+D．$P_{\text{输入}}=P_{\text{输出}}$\quad 随负载消耗变化而变化
+
+\red{匝数看法}
+%FIG p165_c 0.57 0.49 0.705 0.555
+\notefig[0.25]{figures/p165_c.png}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=165-03 ch=05 sec=卫星变轨·椭圆轨道能量 kind=problem alt=07,06 cont=none y=0.72-0.995
+\begin{problem}
+% 剪贴印刷题干（右侧被黄色便签遮挡，行尾个别字可能被遮）；左缘（(2)问下方）有一手写小字，疑为“变”，辨认不清
+（18 分）我国的月球探测计划“嫦娥工程”分为“绕、落、回”三步。“嫦娥五号”的任务是“回”。“嫦娥五号”发射，经过中途轨道修正和近月制动之后，进入绕月圆轨道$\mathrm{I}$。“嫦娥五号”再次成功变轨进入远月点为 $P$、近月点为 $Q$ 的椭圆形轨道$\mathrm{II}$。如图所示，“嫦娥五号”探测器在 $Q$ 点附近，由大功率发动机制动、减速，以抛物线路径下落到距月面 100 m 高处进行 30 s 悬停避障，之后再缓慢竖直下降到距月面高度仅为数米处，为避免激起更多月尘，关闭发动机，做自由落体运动，落到月球表面。已知引力常量为 $G$，月球的质量为 $M$，月球的半径为 $R$，“嫦娥五号”在轨道$\mathrm{I}$上运动时的质量为 $m_0$，$P$、$Q$ 点与月球表面的距离分别为 $h_1$、$h_2$。
+%FIG p165_d 0.43 0.722 0.535 0.80
+\notefig[0.25]{figures/p165_d.png}
+\begin{enumerate}[label=(\arabic*),leftmargin=2.5em,itemsep=0pt]
+\item 求“嫦娥五号”在圆形轨道$\mathrm{I}$上运动的速度大小；
+\item 已知“嫦娥五号”与月心的距离为 $r$ 时，引力势能为 $E_p=-G\dfrac{Mm}{r}$（取无穷远处引力势能为零），其中 $m$ 为此时“嫦娥五号”的质量。若“嫦娥五号”在轨道$\mathrm{II}$上运动的过程中，动能和引力势能相互转换，它们的总量保持不变。已知“嫦娥五号”经过 $Q$ 点的速度大小为 $v$，请根据能量守恒定律求它经过 $P$ 点时的速度大小。
+\item “嫦娥五号”在 $P$ 点由轨道$\mathrm{I}$变为轨道$\mathrm{II}$的过程中，发动机沿轨道的切线方向瞬间一次性喷出一部分气体，已知喷出的气体相对喷气后“嫦娥五号”的速度大小为 $u$，求喷出的气体的质量。
+\end{enumerate}
+\begin{solution}
+(1) 万有引力提供向心力
+\[
+\frac{GMm_0}{(R+h_1)^2}=\frac{m_0v_1^2}{R+h_1}\qquad v_1=\sqrt{\frac{GM}{R+h_1}}
+\]
+(2) 机械能守恒
+\[
+\frac{1}{2}mv^2-\frac{GMm}{R+h_2}=\frac{1}{2}mv_{\mathrm{II}P}^2-\frac{GMm}{R+h_1}
+\]
+\[
+v_{\mathrm{II}P}=\sqrt{v^2+2GM\left(\frac{1}{R+h_1}-\frac{1}{R+h_2}\right)}
+\]
+(3) 设喷气质量 $\Delta m$，由动量守恒
+\[
+m_0v_1=(m_0-\Delta m)v_{\mathrm{II}P}+\Delta m\,(v_{\mathrm{II}P}+u)
+\]
+\[
+\Delta m=\frac{m_0}{u}\left[\sqrt{\frac{GM}{R+h_1}}-\sqrt{v^2+2GM\left(\frac{1}{R+h_1}-\frac{1}{R+h_2}\right)}\right]
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 165

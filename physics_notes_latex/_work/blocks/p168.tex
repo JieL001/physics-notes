@@ -1,0 +1,104 @@
+%%%PAGE 168 rot=0 legibility=good summary=「数列类物理过程」：小球从H处下落、阻力f=kmg、每次碰地速率不变，用动能定理（法1）与等比数列（法2）求总路程，并求总时间；另附改题（反弹动能为k倍、无阻力）
+%%%BLOCK id=168-01 ch=06 sec=动能定理·多次往返(数列类) kind=problem alt=01,90 cont=none y=0.00-0.77
+\begin{problem}
+\textbf{数列类物理过程}
+
+小球从 $H$ 处静止下落 $\Leftarrow$ $f=kmg$ $(k<1)$\quad 每次碰地后 $v$ 不变\quad 求总路程\unclear{…} % 该行右端被照片边缘截断，末尾还有数字不可见
+\begin{solution}
+\textbf{法1}（原稿圈出）
+\[
+mgH-kmgS=0-0
+\]
+\[
+S=\frac{H}{k}
+\]
+\textbf{法2}（原稿圈出）
+
+step1
+\[
+mgH-kmgH=\frac{1}{2}mv^2
+\]
+\[
+-mgh_1-kmgh_1=0-\frac{1}{2}mv^2
+\]
+\[
+\therefore h_1=\frac{1-k}{1+k}H
+\]
+% 右侧另写：等比数列求和公式
+\[
+S_n=\frac{a_1}{1-q}\qquad (q<1,\ n\to+\infty)
+\]
+step2\quad 易得
+\[
+h_2=\frac{1-k}{1+k}h_1=\left(\frac{1-k}{1+k}\right)^2H
+\]
+step3\quad 综上
+\[
+h_n=\left(\frac{1-k}{1+k}\right)h_{n-1}=\left(\frac{1-k}{1+k}\right)^nH
+\]
+求和
+\[
+S=H+2(h_1+h_2+\cdots+h_n)=H+\frac{2h_1}{1-\frac{1-k}{1+k}}=\frac{H}{k}.
+\]
+\[
+a_{\text{下}}=\frac{mg-kmg}{m}=(1-k)g
+\]
+\[
+a_{\text{上}}=\frac{mg+kmg}{m}=(1+k)g
+\]
+\[
+H=\frac{1}{2}a_{\text{下}}t_0^2
+\]
+\[
+h_1=\frac{1}{2}a_{\text{上}}t_{1\text{上}}^2=\frac{1}{2}a_{\text{下}}t_{1\text{下}}^2
+\]
+\[
+t_{1\text{上}}=\sqrt{\frac{2h_1}{a_{\text{上}}}}=\sqrt{\frac{2(1-k)}{a_{\text{上}}(1+k)}}=\unclear{\dots}\cdot\sqrt{\frac{2qH}{a_{\text{上}}}}
+\]
+% 上式“=”后有一块涂改贴覆盖，其后为“·√(2qH/a_上)”
+\[
+t_{1\text{下}}=\sqrt{\frac{2qH}{a_{\text{下}}}}
+\]
+\[
+\text{易得}\quad t_{2\text{上}}=\sqrt{\frac{2qh_1}{a_{\text{上}}}}=\sqrt{\frac{2q^2H}{a_{\text{上}}}}
+\]
+\[
+t_{2\text{下}}=\sqrt{\frac{2q^2H}{a_{\text{下}}}}
+\]
+\[
+\text{综上}\quad t_{n\text{上}}=\sqrt{\frac{2q^nH}{a_{\text{上}}}}\qquad t_{n\text{下}}=\sqrt{\frac{2q^nH}{a_{\text{下}}}}
+\]
+\[
+t_{\text{上总}}=\sqrt{\frac{2H}{a_{\text{上}}}}\left(\sqrt{q}+\sqrt{q^2}+\cdots+\sqrt{q^n}\right)=\frac{\sqrt{q}}{1-\sqrt{q}}\qquad \text{设}\ \frac{1-k}{1+k}=q
+\]
+% 原稿 t_上总 一行中 √q^2、√q^n 的 2、n 写在字母右下（像下标），按上下文取为指数；分子 √q 上方有一笔多余划痕
+\[
+t_{\text{下总}}=\sqrt{\frac{2H}{a_{\text{下}}}}\left(\sqrt{q}+\sqrt{q^2}+\cdots+\sqrt{q^n}\right)=\frac{\sqrt{q}}{1-\sqrt{q}}
+\]
+\[
+t_{\text{总}}=t_0+t_{\text{上总}}+t_{\text{下总}}=\frac{2\sqrt{q}}{1-\sqrt{q}}+\sqrt{\frac{2H}{(1-k)g}}
+\]
+% CHECK: t_上总、t_下总 的结果与 t_总 中的 2√q/(1-√q) 均未带前置因子 √(2H/a)，原稿如此
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=168-02 ch=06 sec=动能定理·多次往返(数列类) kind=problem alt=90 cont=none y=0.77-0.97
+\begin{problem}
+改：反弹 $E_K'$ 为 $E_K$ 的 $k$ 倍，$f=0$，求总\unclear{…}路程 % “求总”与“路程”之间有涂改贴覆盖
+\begin{solution}
+\[
+mgH=E_K\qquad \therefore h_1=kH
+\]
+\[
+E_{K1}=kE_K\qquad h_2=kh_1
+\]
+\[
+-mgh_1=0-E_{K1}\qquad h_n=kh_{n-1}=k^nH
+\]
+\[
+S=H+2(h_1+h_2+\cdots h_n)=H+\frac{2kH}{1-k}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 168
