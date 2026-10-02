@@ -892,3 +892,117 @@ $\therefore\ B=\dfrac{mv}{qr}+\dfrac{mg\tan\theta}{qv}\ge2\sqrt{\dfrac{m^2g\tan\
 
 不是匀强磁场
 %%%END
+%%%BLOCK id=150-06 ch=11 sec=磁感应强度·定义式 kind=formula alt=none cont=none y=0.72-0.75
+\noindent $B=\dfrac{F}{IL\sin\theta}$　　电生磁　一\unclear{速}二\unclear{垂}三右手% “速”“垂”两字笔迹难辨
+%%%END
+%%%BLOCK id=150-07 ch=11 sec=洛伦兹力分解·分力做功 kind=problem alt=06 cont=none y=0.75-0.90
+% 图中红笔标注：F洛1、V1、V合、F洛2 等；黑笔有 qVB、V、mg；图为地面上的小木块，其周围画有“×”(磁场垂直纸面向里)
+\noindent 洛伦兹力　分力可以做功，合力不做功
+
+\begin{problem}
+%FIG p150_i 0.045 0.776 0.225 0.88
+\notefig[0.25]{figures/p150_i.png}
+使小木块对地分离　求磁场移动速度
+\begin{solution}
+$qVB=mg$　使$B$向左以$V=\dfrac{mg}{qB}$运动
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=158-04 ch=11 sec=复合场·磁流体发电机 kind=problem alt=10,06 cont=none y=0.60-1.00
+% 图：矩形管道，标有 R(与开关串联)、B、V0(流速箭头)、d、L、h，图内文字已在图中
+\begin{problem}
+%FIG p158_f 0.04 0.585 0.262 0.752
+\notefig[0.25]{figures/p158_f.png}
+\noindent 液流，电阻率$\rho$，匀速$V_0$
+
+\noindent ①　$qV_0B=\dfrac{qU_0}{d}$　$\therefore U_0=BdV_0$
+
+\noindent ②　开关闭合前后管道两端压强差.
+\[ \left\{\begin{aligned}
+P_1hd&=f\\
+P_2hd&=f+f_{\text{安}}\\
+F_{\text{安}}&=BIL\quad I=\dfrac{U_0}{R+\dfrac{\rho d}{Lh}}
+\end{aligned}\right.\qquad \Delta P=\dfrac{LdV_0B^2}{LhR+d\rho} \]% CHECK: F_安=BIL 末字原稿形似L，按 ΔP 结果(含d)应为 d
+
+\noindent ③　调整宽和高，使$S=dh$不变，求$P_{R\max}$及此时$\dfrac{d}{h}$值
+\[ P=\dfrac{(BLV_0)^2}{R+\dfrac{\rho d}{Lh}}\qquad P_{\max}=\dfrac{Lh(BLV_0)^2}{2\rho d} \]% CHECK: (BLV_0) 中的 L 原稿字形似 L，按 U_0=BdV_0 应为 d；P_max 分母原稿为 2ρd(按 U_0^2/4r 推算应为 4ρd)
+
+\noindent 当$R=\dfrac{\rho d}{Lh}$时$P_{\max}$　$\dfrac{d}{h}=\dfrac{LR}{\rho}$
+\end{problem}
+%%%END
+%%%BLOCK id=161-01 ch=11 sec=摆线运动·最大速度 kind=derivation alt=none cont=none y=0.04-0.25
+$V_x=ky$ 与 $E$ 无关，求 $V_{\max}$
+
+%FIG p161_a 0.31 0.04 0.60 0.145
+\notefig[0.3]{figures/p161_a.png}
+\[ qEy_m=\tfrac12mV_m^2-\tfrac12mV_0^2 \]
+$V_m=ky_m$\quad \unclear{令}$E=0$\quad 又$V_0=kR_0$\quad 故 \struck{$V_m=kR_0$}\quad $y_0=R_0$
+
+% 下一行 k=(q/m)B 之后有涂改液痕迹
+\[ k=\frac{q}{m}B\qquad V_m^2-\frac{2E}{B}V_m-V_0^2=0\qquad V_m=\frac{E}{B}\pm\sqrt{\left(\frac{E}{B}\right)^2+V_0^2} \]
+%%%END
+%%%BLOCK id=161-02 ch=11 sec=摆线运动·配速法 kind=method alt=none cont=none y=0.25-0.59
+\textbf{〈配速法〉}
+
+%FIG p161_b 0.13 0.27 0.40 0.405
+\notefig[0.3]{figures/p161_b.png}
+\[ V_0=\frac{mg}{qB}\qquad 0=1+(-1). \]
+\[ \text{两个分运动}\left\{\begin{array}{l}\text{向右匀速直线运动}\\ \text{逆时针圆周运动}\end{array}\right.\ \to\ \text{摆线} \]
+
+\textbf{轨迹为摆线}
+\[ V_{\max}=V_0+V_0=\frac{2mg}{qB}\qquad V_{\min}=V_0-V_0=0 \]
+竖直最大位移\quad$mgh=\tfrac12mV_{\max}^2$\quad$h=\dfrac{2m^2g}{q^2B^2}$\quad$R=\dfrac{mV_0}{qB}=\dfrac{m^2g}{q^2B^2}$\quad$\therefore h=2R$ 为直径长度
+
+$T=\dfrac{2\pi m}{qB}$\quad 到最低点时间\quad$t=\dfrac{T}{2}=\dfrac{\pi m}{qB}$
+
+1个周期内前进距离\quad$S=V_0T=\dfrac{2\pi m^2g}{q^2B^2}$
+%%%END
+%%%BLOCK id=161-03 ch=11 sec=摆线运动·洛伦兹力分量冲量 kind=derivation alt=none cont=none y=0.575-0.70
+%FIG p161_c 0.10 0.575 0.285 0.655
+\notefig[0.25]{figures/p161_c.png}
+\[
+mgt\ \left\{\begin{aligned}
+&mgh=\tfrac12mV_2^2-\tfrac12mV_1^2\\
+&qB\Delta x=m\Delta v_y\\
+&qB\Delta y\,\text{\struck{$+mgt$}}=m\Delta v_x
+\end{aligned}\right.
+\]
+〈洛伦兹分力冲\unclear{量}〉 % 末字上有涂改
+%%%END
+%%%BLOCK id=161-04 ch=11 sec=有界磁场·圆约束 kind=method alt=none cont=none y=0.71-0.80
+% 原稿此块被大圈（云形曲线）圈起，左上角“圆约束”三字另有方框
+\begin{keybox}[圆约束]
+两次进磁区圆心\unclear{角}$150^\circ$，经$m$次偏转后再入射
+\[ m\cdot150^\circ=n\cdot360^\circ \]
+\[ m=12\qquad n=5\qquad \text{求最小正整数} \]
+\end{keybox}
+%%%END
+%%%BLOCK id=161-05 ch=11 sec=摆线运动·综合题 kind=problem alt=06,09 cont=none y=0.77-1.00
+\begin{problem}
+%FIG p161_d 0.01 0.76 0.30 0.955
+\notefig[0.3]{figures/p161_d.png}
+静止释放，在最低点曲率半径为$2y_m$ % 此行“静止释放”处有涂改液痕迹
+
+① 求小球运动$P(x,y)$速度
+\begin{solution}
+\[ mgy=\tfrac12mv^2\qquad v=\sqrt{2gh} \]
+\end{solution}
+② 求第一次下降的最大距离$y_m$
+\begin{solution}
+\[ qvB-mg=\frac{mv^2}{R}\qquad v_1=\sqrt{2gy_m} \]
+\[ R=2y_m\qquad \therefore y_m=\frac{2m^2g}{q^2B^2} \]
+\end{solution}
+③ 在竖直方向加一匀强电场$E$（$E>\dfrac{mg}{q}$），求$V_{\max}$ % 原稿“匀强”二字插写在“一”字上方
+\begin{solution}
+\[ (qE-mg)y_m=\tfrac12mV_m^2 \]
+\[ qV_mB\ \unclear{\pm}\ mg+qE=\frac{mV_m^2}{R}\qquad R=2y_m \] % CHECK: 此式中间的符号有涂改（像 + 与 - 叠写）；按解得结果应为 qV_mB+mg-qE=mV_m^2/R
+解得 $V_m=\dfrac{2}{qB}(qE-mg)$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=163-06 ch=11 sec=安培力·圆环张力 kind=derivation alt=12 cont=none y=0.77-0.87
+% 图上标注“超导线圈”、F、BI2R
+%FIG p163_f 0.04 0.77 0.265 0.87
+\notefig[0.3]{figures/p163_f.png}
+\[ 2F_{\text{\unclear{张}}}=BI\,2R\qquad F=BIR \]
+%%%END

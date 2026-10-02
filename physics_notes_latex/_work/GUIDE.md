@@ -7,7 +7,13 @@
 - 你们现在做第一步：**逐页忠实转录**，并给每一“块”内容打上章节标签，之后由别人按标签汇编。所以：**① 一个字都不要漏；② 章节标签要准；③ LaTeX 要能编译。**
 
 ## 1. 工具与**省调用工作流**（每个 agent 的额度有限，工具调用次数越少越好）
+路径按你所在的环境取一组（提示词里会写明是哪一组）：
 ```
+# 云端 Linux 会话（GitHub 仓库 JieL001/physics-notes 的克隆；命令用 python3）
+TOOLS = /home/user/physics-notes/physics_notes_latex/_work/tools
+VIEW  = /tmp/claude-0/-home-user-pp2masdetc/7a27f1ad-3fba-50b0-accf-4a54517bd549/scratchpad/pn/view
+PROJ  = /home/user/physics-notes/physics_notes_latex
+# 本地 Windows（最初的工作目录；命令用 python）
 TOOLS = C:/Users/PC/AppData/Local/Temp/claude/C--Users-PC-Desktop-zuoye-intern/4ab7915c-80d6-4141-b5c1-42a845c952d7/scratchpad/tools
 VIEW  = C:/Users/PC/AppData/Local/Temp/claude/C--Users-PC-Desktop-zuoye-intern/4ab7915c-80d6-4141-b5c1-42a845c952d7/scratchpad/view
 PROJ  = C:/Users/PC/Desktop/zuoye/intern/physics_notes_latex
@@ -92,7 +98,7 @@ PROJ  = C:/Users/PC/Desktop/zuoye/intern/physics_notes_latex
   %FIG p195_a 0.12 0.33 0.42 0.52
   \notefig[0.3]{figures/p195_a.png}
   ```
-  `%FIG 图名 x0 y0 x1 y1`：坐标是**页面比例**（从图上的红色坐标尺读，左上角为原点；x0<x1，y0<y1），要把整幅图连同标注框全，少带无关文字。图名固定 `p{3位页码}_{a,b,c…}`。`\notefig[宽度比例]`：宽度大致取“这张图在原页中的宽度比例”，限制在 0.25–0.85。图中的文字标注已在图里，不必重复转录；图旁/图下的独立文字和公式要转录。图和相关文字放同一块。**不要自己用 TikZ 重画。**
+  `%FIG 图名 x0 y0 x1 y1`：坐标是**页面比例**（从图上的红色坐标尺读，左上角为原点；x0<x1，y0<y1），要把整幅图连同标注框全，少带无关文字。**`%FIG` 行必须单独占一行、顶格写**（写在正文行末尾的不会被裁图工具识别）。用淡铅笔/浅色笔画的图，常规裁图后在联系表里发白、缺线：在该行末尾加 ` soft`（如 `%FIG p164_a 0.17 0.00 0.485 0.09 soft`）再重跑 crop_batch。图名固定 `p{3位页码}_{a,b,c…}`。`\notefig[宽度比例]`：宽度大致取“这张图在原页中的宽度比例”，限制在 0.25–0.85。图中的文字标注已在图里，不必重复转录；图旁/图下的独立文字和公式要转录。图和相关文字放同一块。**不要自己用 TikZ 重画。**
 
 ## 5. 完成前自检（写每页文件时就做，不要事后再读一遍）
 1. 页面上每个角落都覆盖了吗（页边、页脚、行间小字、箭头旁小注、红笔字）？

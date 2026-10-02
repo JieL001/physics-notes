@@ -1,8 +1,20 @@
-import fitz, glob, os, sys, json
+import glob, os, sys, json
+try:
+    import pymupdf as fitz  # PyMuPDF >= 1.24 (plain `import fitz` prints a deprecation notice there)
+except ImportError:
+    import fitz
 
-SCR = r"C:\Users\PC\AppData\Local\Temp\claude\C--Users-PC-Desktop-zuoye-intern\4ab7915c-80d6-4141-b5c1-42a845c952d7\scratchpad"
-PROJ = r"C:\Users\PC\Desktop\zuoye\intern\physics_notes_latex"
+# The tools live in PROJ/_work/tools, so PROJ is found from this file's location (same code on Windows and Linux).
+PROJ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# SCR: scratch folder for page views, contact sheets and compile checks (not part of the project).
+if os.name == "nt":
+    SCR = r"C:\Users\PC\AppData\Local\Temp\claude\C--Users-PC-Desktop-zuoye-intern\4ab7915c-80d6-4141-b5c1-42a845c952d7\scratchpad"
+else:
+    SCR = os.environ.get("PN_SCR", "/tmp/claude-0/-home-user-pp2masdetc/7a27f1ad-3fba-50b0-accf-4a54517bd549/scratchpad/pn")
+# source photos: GitHub repo layout <repo>/source/p001-010.pdf … p291-300.pdf; fallback: the old split chunks in SCR/split
+SRC = os.path.join(os.path.dirname(PROJ), "source")
 VIEW = os.path.join(SCR, "view")
+os.makedirs(VIEW, exist_ok=True)
 FIGS = os.path.join(PROJ, "figures")
 LOG = os.path.join(PROJ, "_work", "crops.jsonl")
 
@@ -12,7 +24,7 @@ ROT_DEFAULT = {72: 270, 209: 270, 239: 270}
 
 def open_page(page):
     k = (page - 1) // 10 + 1
-    f = glob.glob(os.path.join(SCR, "split", f"chunk_{k:02d}_p*.pdf"))[0]
+    f = (glob.glob(os.path.join(SRC, f"p{k * 10 - 9:03d}-*.pdf")) or glob.glob(os.path.join(SCR, "split", f"chunk_{k:02d}_p*.pdf")))[0]
     d = fitz.open(f)
     return d[(page - 1) % 10]
 
@@ -52,8 +64,9 @@ def norm_clip(page, x0, y0, x1, y1, rot=0):
     return fitz.Rect(min(a[0], b[0]), min(a[1], b[1]), max(a[0], b[0]), max(a[1], b[1]))
 
 
-def crop_figure(page, x0, y0, x1, y1, name, rot=None, clean=True, maxw=1500):
-    """crop a (cleaned) figure from the native-resolution photo -> PROJ/figures/name.png ; returns (path, w, h)"""
+def crop_figure(page, x0, y0, x1, y1, name, rot=None, clean=True, maxw=1500, soft=False):
+    """crop a (cleaned) figure from the native-resolution photo -> PROJ/figures/name.png ; returns (path, w, h)
+    soft=True: gentler cleaning for faint pencil / light-ink drawings that the default washes out"""
     import numpy as np, cv2
     rot = ROT_DEFAULT.get(page, 0) if rot is None else rot
     clip = norm_clip(page, x0, y0, x1, y1, rot)
@@ -68,7 +81,8 @@ def crop_figure(page, x0, y0, x1, y1, name, rot=None, clean=True, maxw=1500):
         bg = cv2.GaussianBlur(bg, (ks | 1, ks | 1), 0)
         bg = cv2.resize(bg, (w, h), interpolation=cv2.INTER_LINEAR)
         n = np.clip(img / np.maximum(bg, 1), 0, 1)
-        img = np.clip((n - 0.55) / (0.84 - 0.55), 0, 1) * 255  # paper + faint ruled lines -> white, ink -> black, red stays red
+        lo, hi = (0.70, 0.95) if soft else (0.55, 0.84)
+        img = np.clip((n - lo) / (hi - lo), 0, 1) * 255  # paper + faint ruled lines -> white, ink -> black, red stays red
     img = img.astype(np.uint8)
     if img.shape[1] > maxw:
         sc = maxw / img.shape[1]
@@ -77,5 +91,5 @@ def crop_figure(page, x0, y0, x1, y1, name, rot=None, clean=True, maxw=1500):
     fn = os.path.join(FIGS, f"{name}.png")
     cv2.imwrite(fn, cv2.cvtColor(img, cv2.COLOR_RGB2BGR), [cv2.IMWRITE_PNG_COMPRESSION, 9])
     with open(LOG, "a", encoding="utf8") as f:
-        f.write(json.dumps(dict(page=page, name=name, bbox=[x0, y0, x1, y1], rot=rot)) + chr(10))
+        f.write(json.dumps(dict(page=page, name=name, bbox=[x0, y0, x1, y1], rot=rot, **({"soft": True} if soft else {}))) + chr(10))
     return fn, img.shape[1], img.shape[0]

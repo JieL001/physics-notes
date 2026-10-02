@@ -8,10 +8,18 @@ try:
 except Exception:
     pass
 sys.path.insert(0, os.path.dirname(__file__))
-from common import PROJ
+from common import PROJ, SCR
 
-XE = r"C:\Users\PC\AppData\Local\Programs\MiKTeX\miktex\bin\x64\xelatex.exe"
+XE = r"C:\Users\PC\AppData\Local\Programs\MiKTeX\miktex\bin\x64\xelatex.exe" if os.name == "nt" else "xelatex"
 NL = chr(10)
+
+
+def xe_cmd(texfile):
+    if os.name == "nt":
+        return [XE, "--disable-installer", "-interaction=nonstopmode", texfile]
+    # TeX Live on Linux: ctex's default Fandol fonts lack ⑪–⑳, so use the Noto CJK fontset (the .tex files stay unchanged)
+    job = os.path.splitext(texfile)[0]
+    return [XE, "-interaction=nonstopmode", "-jobname=" + job, r"\PassOptionsToClass{fontset=ubuntu}{ctexbook}\input{" + texfile + "}"]
 
 
 def winpath(p):
@@ -22,7 +30,7 @@ def winpath(p):
 fn = os.path.abspath(winpath(sys.argv[1]))
 full = "--doc" in sys.argv
 tag = hashlib.md5(fn.encode()).hexdigest()[:8]
-wd = os.path.join(PROJ, "_work", "tex", tag)
+wd = os.path.join(PROJ, "_work", "tex", tag) if os.name == "nt" else os.path.join(SCR, "tex", tag)
 os.makedirs(wd, exist_ok=True)
 if full:
     main = fn
@@ -43,7 +51,7 @@ else:
     ])
     open(main, "w", encoding="utf8").write(src)
 try:
-    r = subprocess.run([XE, "--disable-installer", "-interaction=nonstopmode", os.path.basename(main)],
+    r = subprocess.run(xe_cmd(os.path.basename(main)),
                        cwd=cwd, capture_output=True, timeout=240)
 except subprocess.TimeoutExpired:
     print("TIMEOUT (infinite loop or missing-package prompt?)")

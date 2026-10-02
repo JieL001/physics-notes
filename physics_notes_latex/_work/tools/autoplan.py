@@ -6,7 +6,7 @@ try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 except Exception:
     pass
-PROJ = r"C:\Users\PC\Desktop\zuoye\intern\physics_notes_latex"
+PROJ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # tools live in PROJ/_work/tools
 W = os.path.join(PROJ, "_work")
 CH = {"01": "运动的描述与匀变速直线运动", "02": "相互作用——力", "03": "牛顿运动定律", "04": "曲线运动",
       "05": "万有引力与航天", "06": "机械能", "07": "动量", "08": "机械振动与机械波", "09": "静电场",

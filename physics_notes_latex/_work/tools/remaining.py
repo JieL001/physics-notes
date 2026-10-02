@@ -3,7 +3,7 @@
 # _work/units_remaining.json.  Also lists page files that exist but whose figures are missing (interrupted units).
 import sys, os, re, json, glob
 
-PROJ = r"C:\Users\PC\Desktop\zuoye\intern\physics_notes_latex"
+PROJ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # tools live in PROJ/_work/tools
 W = os.path.join(PROJ, "_work")
 size = int(sys.argv[1]) if len(sys.argv) > 1 else 5
 dups = {int(k) for k in json.load(open(os.path.join(W, "dups.json")))}

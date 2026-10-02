@@ -347,6 +347,188 @@ $r$ 可以是等效电动机内阻
 %%%BLOCK id=116-08 ch=10 sec=电表改装 kind=note alt=none cont=none y=0.60-0.63
 \textbf{7．}\fbox{偏角(\unclear{$=$})电流大小} % 原稿此行外有方框
 %%%END
+%%%BLOCK id=139-01 ch=10 sec=电表改装·毫安表改装与校准 kind=problem exp=1 alt=none cont=none y=0.03-0.50
+\begin{problem}[剪贴印刷题·9分]
+图(a)为某同学改装和\fbox{校准}毫安表的电路图，其中虚线框内是毫安表的改装电路。% 原稿“校准”二字被手绘圈出
+%FIG p139_a 0.05 0.048 0.31 0.146
+\notefig[0.4]{figures/p139_a.png}
+%FIG p139_b 0.33 0.07 0.49 0.16
+\notefig[0.3]{figures/p139_b.png}
+
+(1)已知毫安表表头的内阻为\fbox{$100\,\Omega$}，满偏电流为\fbox{$1\,\mathrm{mA}$}；$R_1$ 和 $R_2$ 为阻值固定的电阻。若使用 $a$ 和 $b$ 两个接线柱，电表量程为\fbox{$3\,\mathrm{mA}$}；若使用 $a$ 和 $c$ 两个接线柱，电表量程为\fbox{$10\,\mathrm{mA}$}。由题给条件和数据，可以求出 $R_1=$ \underline{\hspace{0.6em}\struck{35}15\hspace{0.6em}}\,$\Omega$，$R_2=$ \underline{\hspace{0.6em}35\hspace{0.6em}}\,$\Omega$。% 方框与空格里的数字均为手写；R1 空处原稿“35”似被划去后改写 15 (CHECK)
+
+(2)现用一量程为 $3\,\mathrm{mA}$、内阻为 $150\,\Omega$ 的标准电流表\textcircled{A}对改装电表的 $3\,\mathrm{mA}$ 挡进行校准，校准时需选取的刻度为 $0.5$、$1.0$、$1.5$、$2.0$、$2.5$、$3.0\,\mathrm{mA}$。电池的电动势为 $1.5\,\mathrm{V}$，内阻忽略不计；定值电阻 $R_0$ 有两种规格，阻值分别为 $300\,\Omega$ 和 $1\,000\,\Omega$；滑动变阻器 $R$ 有两种规格，最大阻值分别为 $750\,\Omega$ 和 $3\,000\,\Omega$。则 $R_0$ 应选用阻值为 \underline{\hspace{0.4em}\struck{1000}300\hspace{0.4em}}\,$\Omega$ 的电阻，$R$ 应选用最大阻值为 \underline{\hspace{0.6em}3000\hspace{0.6em}}\,$\Omega$ 的滑动变阻器。% 原稿：(2)左侧有手绘括号“(”，“3 000 Ω。”后有“)”将条件括起；R0 空处为涂改，似为 1000 被划去后改写 300 (CHECK)
+
+(3)若电阻 $R_1$ 和 $R_2$ 中有一个因损坏而阻值变为无穷大，利用图(b)的电路可以判断出损坏的电阻。图(b)中的 $R'$ 为保护电阻，虚线框内未画出的电路即为图(a)虚线框内的电路。则图中的 $d$ 点应和接线柱 \underline{\hspace{0.5em}C\hspace{0.5em}}(填“b”或“c”)相连。% 空格内手写 C
+
+\begin{solution}
+\textbf{双极限}% 手写，位于(2)问末尾右侧
+
+最大刻度 $3\,\mathrm{mA}$\quad $\dfrac{E}{I}=500\,\Omega$\quad $R_A=150\,\Omega$\quad $\therefore R_0$ 用 $300\,\Omega$
+
+最小刻度 $0.5\,\mathrm{mA}$\quad $\dfrac{E}{I}=3000\,\Omega$\quad 选 $3000\,\Omega$的
+
+判断理由：闭合开关，若电表指针偏转，则损坏的电阻是 $R_1$；若电表指针不动，则\unclear{损}坏的是 $R_2$% CHECK: “损”字原稿形似“阻”
+
+（(3)题“则图中的 $d$ 点…”一行左侧页边另有手写旁注：\unclear{双限}）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=147-05 ch=10 sec=电功率·电功率公式 kind=formula alt=none cont=none y=0.50-0.65
+% 原稿两行的“任意”二字被同一个长方框框住；第二行 P=I^2R 与冒号之间有一小撇
+\textbf{恒定电流}
+
+\noindent 功率\ $\left\{\begin{tabular}{@{}l@{}}$P=UI$：\fbox{任意}用电器\\$P=I^2R$：\fbox{任意}用电器热功率　电阻为热源\end{tabular}\right.$　　$U=IR$　纯电阻
+%%%END
+%%%BLOCK id=147-06 ch=10 sec=电功率·功率分配 kind=method alt=none cont=none y=0.65-0.98
+\textbf{功率分配}
+
+\noindent 串　$\dfrac{P_1}{P_2}=\dfrac{R_1}{R_2}$
+%FIG p147_b 0.38 0.665 0.545 0.712
+\notefig[0.17]{figures/p147_b.png}
+\noindent $P_{\text{总}}=P_1+P_2$
+
+\noindent 并　$\dfrac{P_1}{P_2}=\dfrac{R_2}{R_1}$
+%FIG p147_c 0.26 0.725 0.58 0.808
+\notefig[0.32]{figures/p147_c.png}
+\noindent $P_{\text{总}}=P_1+P_2$
+
+%FIG p147_d 0.26 0.80 0.575 0.870
+\notefig[0.3]{figures/p147_d.png}
+\noindent \red{$P_{\text{总}}=6P$}　　\red{$1:1:4$}
+
+\noindent \red{总}\ \red{\fbox{\struck{$\dfrac{1\,\Omega}{2}$\ 占\ $2P$}}}% 红框内整体被两条黑色斜线划去，框下另有一条红色弧形箭头
+
+\noindent 总体上看 $\dfrac{1}{2}\,\Omega$ 占 $2P$ $\Rightarrow$ $1\,\Omega$ 占 $4P$
+%%%END
+%%%BLOCK id=148-01 ch=10 sec=电路简化·惠斯通电桥 kind=knowledge alt=none cont=none y=0.0-0.16
+\textbf{电路化简}
+
+\noindent (1)
+%FIG p148_a 0.08 0.013 0.385 0.155
+\notefig[0.3]{figures/p148_a.png}
+\noindent 该图无法化简为串并联
+%%%END
+%%%BLOCK id=148-02 ch=10 sec=电路简化·惠斯通电桥 kind=knowledge alt=none cont=none y=0.17-0.31
+\noindent (2)　惠斯通电桥　$\dfrac{R_1}{R_2}=\dfrac{R_4}{R_5}$　对角线乘积相等
+%FIG p148_b 0.065 0.215 0.41 0.31
+\notefig[0.35]{figures/p148_b.png}
+%%%END
+%%%BLOCK id=148-03 ch=10 sec=电路简化·惠斯通电桥 kind=problem alt=none cont=none y=0.31-0.49
+% 四幅图之间有一条手绘长曲线相连；图内文字(求R_AB、各电阻编号、A/B等)已在图中，右下角的 R_AB 算式在图内也有，下方单独转录
+\begin{problem}
+求 $R_{AB}$
+%FIG p148_c 0.08 0.32 0.98 0.49
+\notefig[0.85]{figures/p148_c.png}
+\begin{solution}
+$R_{AB}=\dfrac{4\times2}{4+2}+1=\dfrac{7}{3}\,\Omega$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=148-04 ch=10 sec=电路简化·节点法 kind=knowledge alt=none cont=none y=0.50-0.80
+% 原稿用手绘括线表示层级：“节点法”→“由2根及以上导线汇交而成的点”；“等电势原理”→“在一根导线上所有点电势相等”；“等电势原理”中的“电”字叠写在“等”“势”之间，“点”后有两个小点
+\noindent \textbf{(3)　节点法}
+\begin{itemize}
+\item 由2根及以上导线汇交而成的点..
+\item 等电势原理：电压$=$电势降
+\begin{itemize}
+\item 在一根导线上所有点电势相等
+\end{itemize}
+\end{itemize}
+%FIG p148_d 0.06 0.70 0.455 0.79
+\notefig[0.4]{figures/p148_d.png}
+%FIG p148_e 0.485 0.70 0.73 0.805
+\notefig[0.25]{figures/p148_e.png}
+%%%END
+%%%BLOCK id=148-05 ch=10 sec=电路简化·节点法 kind=problem alt=none cont=none y=0.79-1.00
+% 左下方电路图各角点标有字母 A/a、B/b、M/b 等，已在图内
+\begin{problem}
+%FIG p148_f 0.02 0.79 0.33 0.977
+\notefig[0.3]{figures/p148_f.png}
+求 $R_{AB}$
+\begin{solution}
+%FIG p148_g 0.42 0.83 0.715 0.97
+\notefig[0.3]{figures/p148_g.png}
+\[ \dfrac{\frac{3}{2}\,\frac{1}{2}}{\frac{3}{2}+\frac{1}{2}}=\dfrac{3}{8}R \]% CHECK: 分子两分数间原稿无运算符，按上下文应为乘积
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=149-01 ch=10 sec=电路简化·节点法 kind=problem alt=none cont=none y=0.0-0.17
+% 原稿“求A1、A2”下方的 0.5A、0.75A 疑为答案；图中各电阻值、A1/A2电流表、3V电源已在图内
+\begin{problem}
+%FIG p149_a 0.02 0.015 0.26 0.17
+\notefig[0.25]{figures/p149_a.png}
+\noindent 求 $A_1$　$A_2$
+
+\noindent $0.5\unit{A}$　$0.75\unit{A}$
+\end{problem}
+%%%END
+%%%BLOCK id=149-02 ch=10 sec=戴维南定理·独立方程 kind=knowledge alt=none cont=none y=0.17-0.26
+% 原稿：“独立方程”右侧第一个大括号含“节点”“回路”两行；其右侧第二个大括号含“任一回路有2个方程”，其下方还有一个小括号括着两行方程
+\noindent 戴维南原理——独立方程——
+\begin{itemize}
+\item 节点　$I_{\text{入}}=I_{\text{出}}$
+\item 回路　$U=0$
+\item 任一回路有2个方程
+\begin{itemize}
+\item $U=IR\ /\ E=U+Ir$
+\item $P=I^2R\ \cdot\ P=UI$
+\end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=149-03 ch=10 sec=含容电路 kind=knowledge alt=none cont=none y=0.24-0.35
+% “隔直”二字上方另有小字(疑为“隔离”)，笔迹难辨；“隔直”下方有横线，并由折线(└)引出下一行；右侧为 q-t 图(充电曲线上升、放电曲线下降，交于一点)
+\noindent 含容电路　通交\underline{\unclear{隔}直}　通高阻低
+
+\noindent \hspace*{2em}$\llcorner$\,与电容器串联的任何用电器（稳定时）不工作
+%FIG p149_b 0.715 0.265 0.91 0.355
+\notefig[0.25]{figures/p149_b.png}
+%%%END
+%%%BLOCK id=149-04 ch=10 sec=基尔霍夫定律 kind=knowledge alt=none cont=none y=0.34-0.51
+% 图中红笔标出各支路电流 I_1~I_5 的方向、节点 a、b 及两个回路的绕行箭头(已在图内)
+\textbf{基尔霍夫定律}
+
+\noindent $\sum I=0$　$\sum\varphi=0$
+%FIG p149_c 0.30 0.355 0.585 0.51
+\notefig[0.3]{figures/p149_c.png}
+\[ \left\{\begin{aligned}
+&I_1=I_2+I_3\\
+&I_3+I_4=I_5\\
+&I_1+I_4=I_2+I_5\\
+&\varphi_0-I_1R_1-I_3R_3+I_4R_4=\varphi_0\\
+&\varphi_0'+I_5R_5+I_3R_3-I_2R_2=\varphi_0'
+\end{aligned}\right. \]
+%%%END
+%%%BLOCK id=149-05 ch=10 sec=戴维南定理·等效电源 kind=knowledge alt=none cont=none y=0.51-0.72
+% 红笔：两个电路图各被红圈圈出，圈下用红色大括号写出等效关系
+\textbf{戴维南原理——等效电源}
+
+\noindent $\left\{\begin{tabular}{@{}l@{}}等效电阻：开路电阻\\[6pt]等效电压：开路电压\end{tabular}\right.$% “开路电阻”中“电”“阻”处笔迹叠写、较糊
+%FIG p149_d 0.44 0.587 0.60 0.654
+\notefig[0.25]{figures/p149_d.png}
+\red{$\left\{\begin{array}{l}r'=r+R\\E'=E\end{array}\right.$}
+%FIG p149_e 0.65 0.595 0.785 0.70
+\notefig[0.25]{figures/p149_e.png}
+\red{$\left\{\begin{array}{l}r'=\dfrac{Rr}{R+r}\\[6pt]E'=\text{\unclear{开}}\,U_R=\dfrac{R}{R+r}E\end{array}\right.$}% “E'=”与“U_R”之间的红色符号形似“开”(开路)，难辨
+%%%END
+%%%BLOCK id=149-06 ch=10 sec=戴维南定理·等效电源 kind=derivation alt=none cont=none y=0.64-0.82
+% 图中两节电池旁标有数字 3 和 5(疑为 E1=3V、E2=5V)；红笔圈出 E1-E2 并标“E等”、在 r1+r2 下划红线并标“r等”
+%FIG p149_f 0.14 0.645 0.285 0.766
+\notefig[0.25]{figures/p149_f.png}
+\[ \left\{\begin{aligned}E&=2\unit{V}\\ r&=r_1+r_2\end{aligned}\right. \]
+\[ \varphi_0+E_1-Ir_1-Ir_2+E_2-IR_0=\varphi_0 \]% CHECK: 原稿此式中 E_2 前为“+”，与下式 I=(E_1-E_2)/(r_1+r_2+R_0) 的符号不一致
+\[ I=\dfrac{\overbrace{E_1-E_2}^{\red{E_{\text{等}}}}}{\underbrace{r_1+r_2}_{\red{r_{\text{等}}}}+R_0} \]
+%%%END
+%%%BLOCK id=149-07 ch=10 sec=戴维南定理·等效电源 kind=derivation alt=none cont=none y=0.76-1.00
+% 原稿末式分子分数处画圈并在圈旁标 E'，分母中 r_1r_2/(r_1+r_2) 处画圈并在圈左标 r'；页面底边附近被截断
+%FIG p149_g 0.085 0.761 0.30 0.893
+\notefig[0.25]{figures/p149_g.png}
+\[ \left\{\begin{aligned}
+&\varphi_0+E_1-I_1r_1-E_2+I_2r_2=\varphi_0\\
+&\varphi_0+E_2-I_2r_2-(I_1+I_2)R_0=\varphi_0
+\end{aligned}\right. \]
+\[ I=\dfrac{E_1r_2+E_2r_1}{r_1r_2+(r_1+r_2)R_0}=\dfrac{\underbrace{\dfrac{E_1r_2+E_2r_1}{r_1+r_2}}_{E'}}{\underbrace{\dfrac{r_1r_2}{r_1+r_2}}_{r'}+R_0} \]
+%%%END
 %%%BLOCK id=195-02 ch=10 sec=电表改装·欧姆表 kind=problem alt=none cont=none y=0.28-0.53
 将微安表改为欧姆表\quad 将两表笔短接，调$R$使满偏。
 

@@ -1,6 +1,6 @@
 # usage: python build_main.py      -> writes PROJ/main.tex from the chapters present in PROJ/chapters/
 import os, re, sys
-PROJ = r"C:\Users\PC\Desktop\zuoye\intern\physics_notes_latex"
+PROJ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # tools live in PROJ/_work/tools
 ORDER = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "90"]
 present = [c for c in ORDER if os.path.exists(os.path.join(PROJ, "chapters", f"ch{c}.tex"))]
 appendix = os.path.exists(os.path.join(PROJ, "chapters", "ch99.tex"))

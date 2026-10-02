@@ -6,7 +6,7 @@ try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 except Exception:
     pass
-PROJ = r"C:\Users\PC\Desktop\zuoye\intern\physics_notes_latex"
+PROJ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # tools live in PROJ/_work/tools
 ch = sys.argv[1]
 blocks = [b for b in json.load(open(os.path.join(PROJ, "_work", "blocks.json"), encoding="utf8")) if b["ch"] == ch]
 
