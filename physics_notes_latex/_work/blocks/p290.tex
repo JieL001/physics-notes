@@ -1,0 +1,81 @@
+%%%PAGE 290 rot=0 legibility=fair summary=粒子在磁场中打板的数量比与平均作用力；剪贴的两道印刷题（圆形磁场+平行板偏转+探测板；平行板电容器中先平抛后入电场的小球）及手写解答（页面右下缘与下缘被裁）
+%%%BLOCK id=290-01 ch=11 sec=带电粒子在磁场中的圆周运动·打板平均作用力 kind=problem alt=07 cont=none y=0.01-0.27
+%FIG p290_a 0.065 0.015 0.29 0.12
+\notefig[0.25]{figures/p290_a.png}
+
+$V_0\sim\in(0,\sqrt{3}V_0)$% CHECK: 首行第一个符号 V 的下标及其后的“~”不确定（也可能是 $V_y\in(0,\sqrt3V_0)$）
+
+每秒 $N_0$ 个粒子射出。\quad $U=\dfrac{mV_0^2}{2q}$\ $\cdot$\ $d=\dfrac{mV_0}{qB_0}$
+
+$V_y\in(V_0,2V_0)$\quad $N=\dfrac{3d-2d}{\underset{\uparrow\,\text{\unclear{能到}}}{4d}-\underset{\uparrow\,\text{\unclear{能到}}}{2d}}N_0=\dfrac12N_0$
+% 分母 4d、2d 下方各有一个向上的箭头指向该项，箭头下各写“能到”（字形不清）
+
+平均作用力\quad $r_3=\dfrac32d$\quad 打在中间% CHECK: “r_3”手写像 γ_3（也可能是 y_3），按上下文读作 r_3
+
+\[ \bar V=\frac{V_1+V_3}{2} \]
+\[ Ft=Nm\bar V=\frac58N_0mV_0 \]
+%%%END
+%%%BLOCK id=290-02 ch=11 sec=圆形磁场·磁聚焦与偏转电场 kind=problem alt=09,07 cont=none y=0.28-0.54
+% 剪贴的印刷题；原稿中被手工框出的词句已用 \fbox 标出（“板间距离”与“也为 r”、“单位时间”与“内发射的粒子数为 n”在原稿中分处两行）；题图上另有手绘的粒子轨迹
+\begin{problem}
+（18分）如图所示，真空中有一半径为 $r$ 的圆形磁场区域，与 $x$ 轴相切于坐标原点 $O$，\fbox{磁感应强度大小为 $B$}，方向\fbox{垂直于纸面向外}，在圆形磁场区域的右侧有两水平放置的正对平行金属板 $M$、$N$，\fbox{板间距离也为 $r$}，\fbox{板长为 $L$}，两板的中间线 $O_2O_3$ 的反向延长线恰好过磁场圆的圆心 $O_1$。在 $O$ 点处有一粒子源，能向磁场中各个方向（纸面内）源源不断发射\fbox{速率相同}、\fbox{质量为 $m$、比荷为 $k$} 且带\fbox{正电}的粒子，\fbox{单位时间内发射的粒子数为 $n$}，沿 $y$ 轴正方向射入磁场的粒子，恰能沿直线 $O_2O_3$ 射入平行金属板间。不计粒子重力、空气阻力及粒子间的相互作用。
+
+(1) 求粒子射入磁场的速率 $v_0$。
+
+(2) 若已知两平行金属板间电场强度 $E=\dfrac{kB^2r^3}{L^2}$，在平行板的右端适当位置固定一平行于 $y$ 轴方向的探测板（图中未画出），使从 $M$、$N$ 板右端射出平行板间的粒子全部打在探测板上，则探测板板长至少为多少？
+
+(3) 在满足第 (2) 问的前提下，若打到探测板上的粒子被全部吸收，求单位时间粒子束对探测板的平均作用力的大小。
+
+%FIG p290_b 0.312 0.398 0.595 0.5
+\notefig[0.3]{figures/p290_b.png}
+\begin{solution}
+(1)\quad $V_0=kBr$
+
+(2)\quad $\left\{\begin{aligned} y&=\tfrac12at^2\\ t&=\tfrac{L}{V_0}\qquad y=\tfrac12r\\ a&=\tfrac{qE}{m}\end{aligned}\right.$
+
+(3)
+\begin{align*}
+V_x&=kBr & \tan\theta&=\frac{V_y}{V_x}=\frac{2\cdot\frac{r}{2}}{L}\\
+V_y&=\frac{r}{L}\,kBr
+\end{align*}
+\[ F=\frac13nm\,\frac{\sqrt{V_x^2+V_y^2}}{2}=\frac{kBr}{6L}\sqrt{r^2+L^2} \]
+% CHECK: 根号内手写像 r³L²，按上下文读作 r²+L²；F 的第一个根号下“2”的位置（√(…)/2 还是 √(…/2)）按结果 1/(6L) 读作 √(…)/2；等号右端未写 nm
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=290-03 ch=09 sec=带电粒子在电场中的运动·先平抛后入电场 kind=problem alt=04 cont=none y=0.54-1.00
+% 剪贴的印刷题；原稿手工圈划：“带正电”下划线，“质量为 m，带电荷量为 q”“速度 v_0 水平抛出”被框出，“正下方离开电场”“匀强电场”下划线，“匀强电场”后另有一条大括号式弧线；剪贴纸下缘还露出一行被裁掉大半的字（疑为第(3)问），无法辨认
+\begin{problem}
+（20分）如图所示，带有等量异种电荷的平行极板电容器两极板 $A$、$B$ 竖直放置，一可视为质点的带正电小球，\fbox{质量为 $m$，带电荷量为 $q$}，从 $A$ 极板上方距离 $h$ 处垂直于极板以\fbox{速度 $v_0$ 水平抛出}，进入电场后做直线运动，恰从 $B$ 板下边缘飞出。若把两极板位置对调，仍从原位置以原来速度抛出小球，小球恰好在进入电场位置的正下方离开电场。电容器内部电场可视为匀强电场\unclear{，}不考虑边界效应，重力加速度为 $g$，忽略空气阻力。求：
+
+(1) 小球进入电场时的位置到左极板的距离 $x_1$ 及进入电场时的速度方向与水平方向夹角 $\theta$ 的正切值；
+
+(2) 极板高度 $L$、板间距离 $d$ 及两板间电压 $U$。\hfill 12\unclear{套}
+
+%FIG p290_c 0.42 0.572 0.568 0.708
+\notefig[0.25]{figures/p290_c.png}
+\begin{solution}
+\[ \tan\theta=\frac{\sqrt{2gh}}{V_0}\qquad x_1=V_0\sqrt{\frac{2h}{g}} \]
+\begin{align*}
+&\text{$E$向右}\quad qEt_2=m(V_{x_1}-V_0)\\
+&\text{$E$向左}\quad V_{x_2}^{\,2}-V_0^2=0\qquad V_{x_2}=-V_0\\
+&\qquad\text{两次竖直方向位移相等\ 故}\ t_1=t_2\\
+&\qquad -qEt_2=m(V_{x_2}-V_0)\\
+&\qquad\qquad\therefore V_{x_1}=3V_0\\
+&\text{由}\ \frac{V_y}{V_{x_1}}=\frac{V_{y_0}}{V_0}\\
+&\qquad\therefore V_y=3V_{y_0}
+\end{align*}
+% CHECK: “故 t_1=t_2”与右侧“∴ t_2=2t_1”表面上矛盾（手写下标可能是 t_2 与 t_2'，即两种情形下场内时间相等），原样转录
+\begin{align*}
+V_y&=g(t_1+t_2)=\underset{V_{y_0}}{\underline{gt_1}}+gt_2=3V_{y_0}\qquad\therefore t_2=2t_1\\
+h+L&=\frac12g(t_1+t_2)^2\\
+L&=8h\\
+x_2&=\frac12(V_0+V_{x_1})t_2=4x_1\\
+d&=x_1+x_2=5V_0\sqrt{\frac{2h}{g}}\qquad\text{又}\ \tan\theta=\frac{mg}{qE}=\frac{mg}{q\frac{U}{d}}\\
+U&=\frac{5mV_0^2}{\text{\unclear{q}}}
+\end{align*}
+% 第一行中 gt_1 下方有一横线，横线下写 V_{y0}（表示 gt_1=V_{y0}）；末行 U 的分母被页面下缘裁断，只露出上半截（按上下文应为 q）
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 290

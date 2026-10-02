@@ -127,6 +127,12 @@ DONE pages=283-287, blocks=24, figs=13, unclear=27; crop_batch contact sheets ch
 2. p286: the pasted slip's right edge is cut, so question (3) is incomplete. The margin scribbles are only roughly transcribed. The `Q_2` line and the denominator in the `x_{1相}` line are flagged CHECK.
 3. p284/p287: p284's (1) answer is hard to read (√3:6 vs √3:√6). On p287, the B line of 太空电梯 reads "反比", and the final answer reads "1s" where t1+t2 gives 2.5 s (CHECK).
 
+## p288–292
+DONE pages=288,289,290,291,292, blocks=24, figs=23, unclear=21（`texcheck_all` 为 ALL OK，23 幅配图已裁出，联系表检查通过）。
+1. p290 手写解答：顶部块首行 `V_0 ~ ∈(0,√3V_0)` 与 `r_3`（可能是 y_3）读得不确定；`F=(1/3)nm√(Vx²+Vy²)/2` 中根号与分母 2 的位置、根号内 `r²+L²` 是按上下文推的；p290 的剪贴题里手工框出的词句用 `\fbox` 标了出来。
+2. p289 的 `x²=g` 上一行（疑为 `无搅3算`）和 `W_f` 等号后的涂改记号、p288 的 `刚能上`、`调初速度没用` 都是 `\unclear`；p289 的 `x²=g` 这块我归到了 ch=08，归类不太有把握。
+3. p292 页面下缘被裁断，最后一行（`2碰 S相=…`）只露出半截，多处写成 `\unclear{…}`；块 292-02 标了 `cont=next`。
+
 ## p293–297
 DONE pages=293-297, blocks=19, figs=16, unclear=11, texcheck ALL OK.
 - p293-05: the text "n匝重杆" and "F不乘Φ" are hard to read, and the "Δ" before m in "-nBLq=Δm(v末-v0)" may be a slip for Δp.

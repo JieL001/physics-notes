@@ -1,0 +1,72 @@
+%%%PAGE 292 rot=0 legibility=fair summary=剪贴的印刷题（斜面上滑块A与静止滑块B的多次弹性碰撞）及手写解答（v-t图、能量损失求和）；另一道电场中A、B多次弹性碰撞的手写题（数据、v-t图、电场力做功）；页面下缘被裁断
+%%%BLOCK id=292-01 ch=07 sec=碰撞·斜面上的多次弹性碰撞 kind=problem alt=03,06 cont=none y=0.00-0.74
+% 题干为剪贴的印刷题；原稿手工框出“倾角为θ”“L_0”“恰好能静止”
+\begin{problem}
+（20分）如图所示，一个足够长的固定斜面顶点为 $O$，\fbox{倾角为 $\theta$}，斜面上的 $P$ 点到 $O$ 点距离为 \fbox{$L_0$}。$A$、$B$ 两滑块均可视为质点。滑块 $B$ 由于摩擦，\fbox{恰好能静止}在 $P$ 点，认为滑块 $B$ 受到的最大静摩擦力等于滑动摩擦力。滑块 $A$ 与斜面间无摩擦，从 $O$ 点静止释放后，滑块 $A$ 与 $B$ 发生第 1 次碰撞，碰撞时间极短且不计能量损失。
+
+(1) 若 $A$、$B$ 两滑块质量均为 $m$，求滑块 $A$ 与 $B$ 第 2 次碰撞位置到 $P$ 点的距离；
+
+(2) 若 $A$、$B$ 两滑块质量分别为 $m_A$、$m_B$，求第 $n$ 次碰撞到第 $n+1$ 次碰撞经历的时间；
+
+(3) 若 $A$、$B$ 两滑块质量分别为 $m_A$、$m_B$，求从开始到第 $n$ 次碰撞时系统损失的机械能。
+
+%FIG p292_a 0.388 0.0 0.585 0.088
+\notefig[0.25]{figures/p292_a.png}
+\begin{solution}
+\[ d=4L_0 \]
+\[ t=2\sqrt{\frac{2L_0}{g\sin\theta}} \]
+
+%FIG p292_b 0.055 0.172 0.44 0.325
+\notefig[0.4]{figures/p292_b.png}
+% 图左侧写有“(1)”“(2)”两个标记（无其他文字）；图中为 v-t 折线，标有 1、2、3 及横轴刻度
+
+(3)
+\begin{align*}
+&\Delta E=\Delta E_{pG}=W_f\\
+V_{B1}&=\frac{2m_AV_0}{m_A+m_B} & \Delta E_1&=m_Bg\sin\theta-\frac{2m_AV_0}{m_A+m_B}\,2\sqrt{\frac{2L_0}{g\sin\theta}}\quad\text{第2次}\\
+V_{B2}&=\frac{4m_AV_0}{m_A+m_B} & \Delta E_2&=m_Bg\sin\theta\,\frac{4m_AV_0}{m_A+m_B}\,2\sqrt{\frac{2L_0}{g\sin\theta}}\\
+&&&\vdots\\
+&& \Delta E_n&=m_Bg\sin\theta\,\frac{2(n-1)m_AV_0}{m_A+m_B}\,2\sqrt{\frac{2L_0}{g\sin\theta}}\quad\text{第 $n$ 次}\\
+&& \Delta E_1+\cdots+\Delta E_n&=\frac{(2n-2+2)(n-1)}{2}\cdot\frac{4m_Bg\sin\theta\,m_AL_0}{m_A+m_B}\\
+&&&=\frac{4n(n-1)m_Am_BgL_0\sin\theta}{m_A+m_B}
+\end{align*}
+% CHECK: ΔE_1 一行中 m_Bg sinθ 与分式之间手写为一短横（疑为乘号，其余各行此处无符号）；ΔE_{pG} 的下标 pG 手写不甚清楚
+
+%FIG p292_c 0.0 0.535 0.47 0.738
+\notefig[0.45]{figures/p292_c.png}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=292-02 ch=07 sec=碰撞·电场中板块多次弹性碰撞 kind=problem alt=03,09,06 cont=next y=0.74-1.00
+% 手写题（无印刷题干）；页面下缘被裁断，最后一行只露出各字的上半截，中间多处无法辨认
+%FIG p292_d 0.085 0.755 0.365 0.845
+\notefig[0.3]{figures/p292_d.png}
+
+$m_A=0.2\,\mathrm{kg}$\quad $m_B=0.6\,\mathrm{kg}$\quad $L=0.8\,\mathrm{m}$，\quad $q=+1.0\times10^{-6}\,\mathrm{C}$
+
+$\mu=0.25$\quad $E=2.0\times10^{6}\,\mathrm{V/m}$。\quad 弹性碰撞。
+
+\begin{align*}
+x_A=x_B&=\frac{V_B+0}{2}\,t\\
+&=0.6\,\mathrm{m}
+\end{align*}
+
+%FIG p292_e 0.636 0.79 0.99 0.906
+\notefig[0.4]{figures/p292_e.png}
+
+从 $A$ 开始\unclear{碰撞} $B$ 时开始到第 $n$ 次碰 $B$ 的过程
+\[ W_{\text{电}}=qE\bigl(L+(n-1)x_A\bigr)=(0.4+1.2n)\,\mathrm{J} \]
+
+对 $A$\quad $Eq=m_Aa_A$\quad $a_A=10\,\mathrm{m/s^2}$ 向右\qquad $V_0=\sqrt{2La}=4\,\mathrm{m/s}$。
+
+$B$ 动后 对 $B$\quad $\mu(m_A+m_B)g=m_Ba_B$\quad $a_B=\dfrac{10}{3}\,\mathrm{m/s^2}$。
+
+1碰\quad $V_{A1}=-\dfrac12V_0=-2\,\mathrm{m/s}$\quad $V_B=\dfrac12V_0=2\,\mathrm{m/s}$
+
+\qquad\quad $t_{B\text{停}}=\dfrac{V_B}{a_B}=0.6\,\mathrm{s}$
+
+$V_{B20}=0$% CHECK: 此式写在“2碰”行上方偏右处，下标“20”手写不确定
+
+2碰\quad $S_{\text{相}}=-4t+\text{\unclear{…}}+\tfrac12\cdot10\,t^2\ \text{\unclear{…}}=0$\quad\unclear{…}\quad $V\ \text{\unclear{…}}=-2+10\times0.4=2\,\mathrm{m/s}$\ (重复上个过程
+%%%END
+%%%PAGEEND 292
