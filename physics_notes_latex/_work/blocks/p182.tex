@@ -1,0 +1,96 @@
+%%%PAGE 182 rot=0 legibility=fair summary=传感器测向心力验证实验、两个气垫导轨光电门验证机械能守恒（含判断导轨水平的方法）、照相法测足球速度（贴题+解答）、测m_A和m_B的连接体实验
+%%%BLOCK id=182-01 ch=04 sec=向心力·传感器实验 kind=method exp=1 alt=none cont=none y=0.00-0.255
+% 页顶一行被拍摄裁切，仅见下半截：大致为“拉(住)的力 T=mω…”，其下有分母 r、T² 等残迹，右侧另有零星残笔
+\unclear{拉住的力 $T=m\omega\cdots$}
+
+%FIG p182_a 0.065 0.01 0.305 0.118
+\notefig[0.3]{figures/p182_a.png}
+
+转 $n$ 圈用时 $t$
+
+$b$烧断前
+\[ F_a=mg\qquad \text{测 }m \]
+\[ T=\frac{t}{n} \]
+\[ r=l_b+\frac{d}{2} \]
+\[ F_{\text{向}}=\frac{4\pi^2n^2F_a}{gt^2}\left(l_b+\frac{d}{2}\right) \]
+\[ v=\frac{2\pi n}{t}\left(l_b+\frac{d}{2}\right) \]
+
+$b$烧断后\quad 瞬间传感器示数为 $F_0$
+\[ F_{\text{向}}=F_0-mg=\frac{F_a}{g}\cdot\frac{v^2}{l_a+\frac{d}{2}}\quad\Rightarrow\ \text{证}\ F_0=F_a\left[\frac{4\pi^2n^2\left(l_b+\frac{d}{2}\right)^2}{gt^2\left(l_a+\frac{d}{2}\right)}+1\right] \]
+% “证”字写在 ⇒ 的下方
+
+若$\uparrow$这个等式成立，则向心力公式得到验证
+%%%END
+%%%BLOCK id=182-02 ch=06 sec=验证机械能守恒·气垫导轨 kind=method exp=1 alt=none cont=none y=0.255-0.425
+%FIG p182_b 0.064 0.262 0.30 0.397
+\notefig[0.35]{figures/p182_b.png}
+% 图中标注 x_1、x_2、光电门、m_1、m_2、尺子（刻度0～5）
+
+遮光片 $d$，经过时用时 $\Delta t$ % 原稿如此（疑漏写“光电门”）
+
+光电门位置 $x_2$，释放时滑块位置 $x_1$，
+\[ m_1g(x_1-x_2)\approx\frac{m_1+m_2}{2}\cdot\frac{d^2}{(\Delta t)^2} \]
+\[ m_1g(x_1-x_2)=\frac12(m_1+m_2)v^2 \]
+\[ v^2=\frac{2m_1g}{m_1+m_2}(x_1-x_2)\qquad\text{过原点的直线} \]
+
+要天平测 $m$
+%%%END
+%%%BLOCK id=182-03 ch=18 sec=气垫导轨·判断导轨水平 kind=method exp=1 alt=03,06 cont=none y=0.425-0.485
+判断气垫导轨水平的方法：接通电源，将滑块静置于气垫导轨上，①不放钩码时，若滑块保持静止②，或轻推滑块，滑块做匀速直线运动则说明导轨水平。 % 原稿“钩码”二字写得像“约码”；圈号①②为小圈号，位置如此
+%%%END
+%%%BLOCK id=182-04 ch=06 sec=验证机械能守恒·气垫导轨 kind=method exp=1 alt=none cont=none y=0.485-0.60
+%FIG p182_c 0.015 0.495 0.34 0.592
+\notefig[0.4]{figures/p182_c.png}
+% 图左侧标注“下降 l ↓ / 用时 t”
+
+\[ mgl=\frac12(m+M)\left(\frac{d}{t}\right)^2 \]
+不用 $m\ll M$
+
+%FIG p182_d 0.52 0.495 0.78 0.602
+\notefig[0.3]{figures/p182_d.png}
+% 图象标题 l-1/t²，纵轴 l，横轴 1/t²，曲线从原点出发略有弯曲
+\[ l-\frac{1}{t^2} \]
+%%%END
+%%%BLOCK id=182-05 ch=01 sec=照相法测足球速度 kind=problem exp=1 alt=06,18 cont=none y=0.60-0.82
+\begin{problem}
+（6 分）某研究小组利用照相方法测量足球的运动速度。研究小组恰好拍摄到一张运动员踢出足球瞬间的相片，如图所示，相片的曝光时间为 $\dfrac{1}{50}\,\mathrm{s}$。他们用刻度尺测量曝光时间内足球在相片中移动的长度 $l=$ \underline{\ 1.6\ }\ \red{1.6}\ \red{(2$-$\unclear{r})}\ $\mathrm{cm}$（只需读到 mm 位）。已知足球的直径 $d=22\,\mathrm{cm}$，质量 $m=450\,\mathrm{g}$，可算出足球的速度 $v=$ \underline{\ 44\ } $\mathrm{m/s}$（计算结果保留两位有效数字）；运动员踢球时对足球做的功 $W=$ \underline{\ $4.4\times10$\ } $\mathrm{J}$（计算结果保留两位有效数字）。
+% 以上为贴在笔记上的印刷题干，下划线处为手写填入；l 空格上方有红笔写的 1.6，其右有红笔圈住的 (2-r)；v、W 空格处另有红笔划痕；W 空格中指数 2 似漏写（下方推导为 4.4×10² J）
+
+%FIG p182_e 0.372 0.628 0.558 0.735
+\notefig[0.3]{figures/p182_e.png}
+% 相片上另有手画的双向箭头及零星笔迹
+
+\begin{solution}
+% 照片右侧手写：被大圆圈住的“比例尺”，其右为“球心\unclear{移动}位移”
+比例尺（大圈）\quad 球心\unclear{移动}位移
+
+球心移动距离 $l=2.1\,\mathrm{cm}-0.5\,\mathrm{cm}=1.6\,\mathrm{cm}$\qquad 比例尺
+
+球在照片中直径 $0.4\,\mathrm{cm}$，实际位移 $l'=\dfrac{22}{0.4}\times1.6\,\mathrm{cm}=88\,\mathrm{cm}$
+
+$\therefore v=\dfrac{l'}{t}=\dfrac{88\times10^{-2}}{0.02}\,\mathrm{m/s}=44\,\mathrm{m/s}$\qquad $W=\dfrac12mv^2=4.4\times10^2\,\mathrm{J}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=182-06 ch=03 sec=连接体·阿特伍德机实验 kind=problem exp=1 alt=none cont=none y=0.82-1.00
+\begin{problem}
+测 $m_A$ $m_B$\quad 法码总质量 $m_0$ % CHECK: “法码”原稿如此，疑为“砝码”
+
+%FIG p182_f 0.005 0.848 0.17 0.995
+\notefig[0.25]{figures/p182_f.png}
+% 图中标注 m_A、m、m_B、m_0-m、h、“遮光条宽为 d”
+
+%FIG p182_g 0.19 0.86 0.44 0.985
+\notefig[0.4]{figures/p182_g.png}
+
+\begin{solution}
+\[ v=\frac{d}{t}\qquad v^2=2ah\qquad a=\frac{d^2}{2ht^2} \]
+\[ (m_A+m)g-(m_B+m_0-m)g=(m_A+m_B+m_0)a \]
+\[ a=\frac{2g}{m_A+m_B+m_0}\,m+\frac{(m_A-m_B-m_0)g}{m_A+m_B+m_0} \]
+\[ k=\frac{2g}{m_A+m_B+m_0}=\frac{2.45}{0.5}\qquad\text{又 }m_0=0.5\,\mathrm{kg} \]
+% 页底被拍摄裁切，最后一行仅见上半截：
+$(m_A-m_B-m_0)\,\unclear{…}$\ \unclear{$a=2.45$ $\therefore$}\ $m_A=2.5\,\mathrm{kg}$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 182

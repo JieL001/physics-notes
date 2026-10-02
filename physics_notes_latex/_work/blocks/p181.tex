@@ -1,0 +1,129 @@
+%%%PAGE 181 rot=0 legibility=fair summary=弹簧弹射小球探究功与速度关系（含误差来源）、力传感器与打点计时器验证机械能守恒、杨氏模量、甲乙系统验证机械能守恒；右上角有一段化学笔记
+%%%BLOCK id=181-01 ch=99 sec=化学·混合气体计算 kind=misc alt=none cont=none y=0.00-0.11
+% 页面右上角叠压着另一页（带 Date. NO. 页眉），这几行是化学笔记，字迹倾斜较乱
+\unclear{0}.4mol\quad $\mathrm{CO}$\quad $\mathrm{CO_2}$
+
+混合气 充分燃烧得 \unclear{O$_2$} 和 $\mathrm{CO_2}$ 混合气体 $\rho=1.429\,\mathrm{g/L}$
+
+$\mathrm{CO}$为 $0.4\times\dfrac{3}{4}\times22.4=6.72\,\mathrm{L}$
+
+\unclear{…$h\rho$\,g/mL}的密度 % 右侧叠压页上的字，位置在“不用测k,m”一行的右上方，字迹很乱
+%%%END
+%%%BLOCK id=181-02 ch=06 sec=探究功与速度变化关系 kind=method exp=1 alt=04 cont=none y=0.04-0.31
+\textbf{探究功与速度变化关系}
+
+\[ E_K=\frac12 k(\Delta x)^2 \]
+% E_K 上方有一个小的“1”和短横线，疑为杂笔；下标 K 原稿如此（可能指弹性势能）
+
+不用测 $k$、$m$，轨道要水平
+
+%FIG p181_a 0.05 0.052 0.36 0.162
+\notefig[0.4]{figures/p181_a.png}
+
+\[
+\left\{\begin{aligned}
+\tfrac12 k(\Delta x)^2&=W\\
+W&=\tfrac12 mv^2\\
+h&=\tfrac12 gt^2\\
+x&=vt
+\end{aligned}\right.
+\]
+
+水平位移与形变量 $x-\Delta x$
+\[ x=\sqrt{\frac{2kh}{mg}}\cdot\Delta x \]
+所得图象是过坐标原点的倾斜直线，说明小球速度的平方与弹簧对球做的功成正比。
+
+\begin{align*}
+h&=\frac12 g\,\frac{x^2}{v^2}=\frac12 g\,\frac{x^2}{k\Delta x^2}\,m\\
+\frac12 mv^2&=\frac12 k\Delta x^2\\
+v^2&=\frac{k\Delta x^2}{m}
+\end{align*}
+% 第二行 ½mv²=½kΔx² 中左右两个 ½ 被一条斜线连着划去（约去）
+
+误差来源：①空气阻力、②\unclear{弹簧质量非零}的影响
+
+③确认落点 $P$ $Q$ $R$ 时的误差。 % 圈号字迹潦草：依次读作③④（也可能是②③）
+
+④$x_1$ $x_2$ $x_3$ 的测量误差。
+%%%END
+%%%BLOCK id=181-03 ch=06 sec=验证机械能守恒 kind=method exp=1 alt=04 cont=none y=0.30-0.50
+\textbf{验证机械能守恒}
+
+%FIG p181_b 0.05 0.318 0.228 0.41
+\notefig[0.28]{figures/p181_b.png}
+
+\unclear{摆}自由静止时示数为 $F_0$，最大示数 $F$。
+
+\[
+\left\{\begin{aligned}
+F-mg&=\frac{mv^2}{L}\\
+mg&=F_0\\
+mgh&=\tfrac12 mv^2
+\end{aligned}\right.
+\]
+\begin{align*}
+F&=mg+\frac{2mgh}{L}\\
+&=F_0+\frac{2F_0h}{L}\\
+&=F_0\left(1+\frac{2h}{L}\right)
+\end{align*}
+
+\begin{keybox}
+只需证 $F_0h=\frac12(F-F_0)L$ % 原稿此式被圈起；末尾的 L 写得像“√/V”，按推导应为 L
+\end{keybox}
+
+不能用弹簧测力计代替传感器（小球机械能不守恒了，\unclear{系}统守恒！）
+
+球选 $\rho$ 大的\quad 不用测 $m$
+%%%END
+%%%BLOCK id=181-04 ch=06 sec=验证机械能守恒 kind=method exp=1 alt=01 cont=none y=0.50-0.69
+%FIG p181_c 0.08 0.515 0.25 0.595
+\notefig[0.28]{figures/p181_c.png}
+
+打点时间间隔为 $T$
+
+到 $B$：
+\[ \Delta E_k=\frac12 mv_B^2=\frac{m(x_3-x_1)^2}{8T^2},\qquad v_B=\frac{x_3-x_1}{2T} \]
+
+%FIG p181_d 0.25 0.573 0.45 0.69
+\notefig[0.3]{figures/p181_d.png}
+
+\[ \Delta E_p=mgx_2 \]
+
+总是有 $\Delta E_k<\Delta E_p$，属于系统误差（多次测量取均值消除不\unclear{了误差时}）
+
+产生误差原因：空气阻力及纸带受到摩擦力
+%%%END
+%%%BLOCK id=181-05 ch=02 sec=弹力·测杨氏模量 kind=knowledge exp=1 alt=18 cont=none y=0.69-0.78
+\textbf{测杨氏模量}\quad $F=kx$\quad $k=Y\dfrac{S}{L}$\quad $Y$单位是 $\mathrm{Pa}$。
+
+$L$为未受拉力时长度，$S$为横截面积。$\leftarrow$ 测直径 $D$ 用螺旋测微器 % “D”写在“测直径”上方行间
+
+\[ Y=\frac{kL}{\pi\dfrac{D^2}{4}} \]
+%%%END
+%%%BLOCK id=181-06 ch=06 sec=验证机械能守恒·连接体系统 kind=problem exp=1 alt=none cont=none y=0.74-1.00
+\begin{problem}
+验机\unclear{守} % 小标题，疑为“验证机械能守恒”的简写
+
+%FIG p181_f 0.038 0.808 0.148 0.903
+\notefig[0.25]{figures/p181_f.png}
+% 图中标注 m_2=150g，m_1=50g
+
+%FIG p181_e 0.165 0.735 0.435 0.89
+\notefig[0.4]{figures/p181_e.png}
+% 纸带图右端写有 dm；图中另有 h_1～h_5 的尺寸标注
+
+$T=0.135\,\mathrm{s}$ % CHECK: 数值 0.135 s 请二次核对
+\[ v_3=\frac{h_5-h_1}{4T} \]
+
+\begin{solution}
+当到3处
+\begin{align*}
+\Delta E_k&=\frac12(m_2+m_1)v_3^2\\
+\Delta E_p&=(m_2-m_1)g(h_3-h_1)\\
+\frac{\Delta E_p-\Delta E_k}{\Delta E_p}&\approx 4.8\%
+\end{align*}
+由此可得：在误差允许的范围内，甲乙组成的系统在运动过程中机械能守恒。
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 181

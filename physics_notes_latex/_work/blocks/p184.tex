@@ -1,0 +1,97 @@
+%%%PAGE 184 rot=0 legibility=fair summary=动量类实验：摆球碰撞+平抛验证动量守恒、恢复系数、消除摩擦后验证动量定理、弹簧弹开的光电门法、气垫导轨碰撞验证动量守恒；页末为验证力的平行四边形定则
+%%%BLOCK id=184-01 ch=07 sec=验证动量守恒·摆球碰撞平抛 kind=method exp=1 alt=04 cont=none y=0.00-0.15
+\textbf{动量类。}
+
+直径为 $d$ 的球 $A$、$B$，如图释放，碰后 $A$ 向右运动 $B$ 球平抛。
+
+%FIG p184_a 0.03 0.035 0.185 0.125
+\notefig[0.25]{figures/p184_a.png}
+% 图中标注：A、m_1、B、m_2、L、α
+
+只需满足
+\[ m_1\sqrt{2\left(L+\frac{d}{2}\right)(1-\cos\alpha)}=m_1\sqrt{2\left(L+\frac{d}{2}\right)(1-\cos\beta)}+m_2\frac{x}{\sqrt{2h}} \]
+% 第二项根号前的“L”形笔画疑为根号左钩，按推导读作 m_1√…
+
+我们就认为碰撞中系统动量守恒
+
+注意动量正负号 % 写在页面右侧空白处，分两行：“注意动量”/“正负号”
+%%%END
+%%%BLOCK id=184-02 ch=07 sec=碰撞·恢复系数 kind=method exp=1 alt=04 cont=none y=0.15-0.26
+%FIG p184_b 0.04 0.155 0.365 0.255
+\notefig[0.4]{figures/p184_b.png}
+% 图中标注：1、2（两球位置）、M、P、N、H
+
+恢复系数
+\[ e=\frac{|v_2-v_1|}{|v_{20}-v_{10}|}=\frac{x_{ON}-x_{OM}}{x_{OP}} \]
+% 等式右上方另写有一个框起的分式：|x_ON - x_OM| / |0 - x_OP|
+\[ \frac{|x_{ON}-x_{OM}|}{|0-x_{OP}|} \]
+
+（$m_1$ 要满足 $m_1>m_2$）
+
+$\approx1$ 说明在误差允许范围内该实验过程中两球间碰撞为弹性碰撞
+%%%END
+%%%BLOCK id=184-03 ch=07 sec=验证动量定理·小车钩码 kind=method exp=1 alt=03 cont=none y=0.26-0.42
+消除 $f$：调节木板高度，直至轻推小车观察到纸带上点迹均匀。
+
+%FIG p184_c 0.029 0.298 0.335 0.414
+\notefig[0.4]{figures/p184_c.png}
+% 图中标注：打点计时器、纸带、m
+
+$I=mg\Delta t$\\
+$\Delta p=m\Delta v$
+
+$\Delta p<I$\quad $\because$ 小车所受拉力大小小于钩码重力大小造成的
+
+\[ mg-\underset{\text{真实}}{T}=ma\qquad a\text{ 用纸带算} \]
+\[ \underset{\text{真实}}{T}=mg-ma \]
+% “T”下方各标有小字“真实”（字形像“直实”）；“a用纸带算”的 a 写得像“の”
+%%%END
+%%%BLOCK id=184-04 ch=07 sec=验证动量守恒·弹簧弹开光电门 kind=method exp=1 alt=06 cont=none y=0.42-0.52
+%FIG p184_d 0.015 0.42 0.285 0.52
+\notefig[0.4]{figures/p184_d.png}
+% 图中标注：d（两处）、t_1、t_2、光电门（两处）、m_A、m_B、A、B（中间弹簧）
+
+自由滑动时，通过两个光电门速度大小相等。
+
+弹簧弹性势能 $\dfrac12m_A\left(\dfrac{d}{t_1}\right)^2+\dfrac12m_B\left(\dfrac{d}{t_2}\right)^2$
+
+验证动量守恒\quad $\dfrac{m_Ad}{t_1}=\dfrac{m_Bd}{t_2}$（动量相等）。
+%%%END
+%%%BLOCK id=184-05 ch=07 sec=验证动量守恒·气垫导轨碰撞 kind=method exp=1 alt=06 cont=none y=0.52-0.66
+\textbf{验证碰撞过程动量守恒。}
+
+%FIG p184_e 0.015 0.553 0.37 0.643
+\notefig[0.45]{figures/p184_e.png}
+% 图中标注：P、m、h、挡光片、Q、M、d、光电门、气垫导轨
+
+$P$ 与挡光片粘在一起
+
+\[ V_0=\sqrt{2gh}\qquad V_{\text{共}}=\frac{d}{t} \]
+\[ mV_0=(m+M)V_{\text{共}} \]
+\[ m\sqrt{2gh}=(m+M)\frac{d}{t} \]
+\[ h=\frac{(M+m)^2d^2}{2m^2gt^2}\qquad h\propto\frac{1}{t^2}\qquad h\text{-}\frac{1}{t^2}\text{是一条过原点的倾斜直线} \]
+%%%END
+%%%BLOCK id=184-06 ch=07 sec=验证动量守恒·气垫导轨双光电门 kind=method exp=1 alt=none cont=none y=0.66-0.82
+%FIG p184_f 0.03 0.675 0.355 0.757
+\notefig[0.45]{figures/p184_f.png}
+% 图中标注：光电门、A、B、两侧箭头，右上角另有“→ 正”（正方向）
+
+$A$ 前后经光电门时间为 $t_1$、$t_2$
+
+$B$ 前后经光电门时间为 $t_3$、$t_4$
+
+动量守恒式：
+\[ \frac{m_1}{t_1}-\frac{m_2}{t_3}=\frac{m_2}{t_4}-\frac{m_1}{t_2} \]
+
+想减小 $d$ 来提高精度\quad 不可行\quad （简化后等式与 $d$ 无关）
+%%%END
+%%%BLOCK id=184-07 ch=02 sec=验证力的平行四边形定则 kind=method exp=1 alt=none cont=none y=0.82-1.00
+\textbf{验\unclear{证力的}平行四边形定则} % “证力的”为标题上方小字插入
+
+%FIG p184_g 0.045 0.87 0.20 0.998
+\notefig[0.25]{figures/p184_g.png}
+% 图中标注：F_1、F_2、F、F_3，底部写有“F理 F真(测?)”
+
+比较 $F$ 与 $F_3$ 的大小与方向，得出结论：在误差允许范围内，力的平行四边形\unclear{法}则成立
+%%%END
+%%%PAGEEND 184

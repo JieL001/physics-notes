@@ -1,0 +1,76 @@
+%%%PAGE 180 rot=0 legibility=good summary=测动摩擦因数的三种实验方案（斜面+小球落地、砂桶木板、光电门）、逐差法求a、弹簧弹性势能实验图象分析
+%%%BLOCK id=180-01 ch=03 sec=测动摩擦因数实验 kind=method exp=1 alt=01 cont=none y=0.02-0.185
+调挡板位置。剪绳，先听到小球落地后听到滑块撞板。调挡板位置，重复上述实验。
+
+%FIG p180_a 0.135 0.025 0.31 0.15
+\notefig[0.3]{figures/p180_a.png}
+
+\[ \frac{a}{g}=\frac{x}{H} \]
+\[ mg\sin\theta-\mu mg\cos\theta=ma \]
+\[ \mu=\tan\theta-\frac{x}{H\cos\theta} \]
+%%%END
+%%%BLOCK id=180-02 ch=03 sec=测动摩擦因数实验 kind=method exp=1 alt=none cont=none y=0.185-0.335
+%FIG p180_b 0.04 0.185 0.345 0.285
+\notefig[0.55]{figures/p180_b.png}
+
+\[
+\left\{\begin{aligned}
+T-\mu Mg&=Ma\\
+mg-T&=ma
+\end{aligned}\right.
+\]
+\[ \mu=\frac{m}{M}-\frac{(m+M)a}{Mg} \]
+
+不需要 $m_{\text{砂}}\ll M_{\text{车}}$ % CHECK: 下标“车”字迹不太清（也可能是“物”），原稿如此
+
+若滑轮位置偏低，细线未调到水平，$\mu$会偏大
+
+这是系统误差（不能通过多次测量消除）
+%%%END
+%%%BLOCK id=180-03 ch=01 sec=打点计时器·逐差法求加速度 kind=formula exp=1 alt=none cont=none y=0.335-0.42
+%FIG p180_c 0.11 0.332 0.62 0.372
+\notefig[0.6]{figures/p180_c.png}
+% 图中 O 与 A 之间画有一个叉
+
+求 $a$：
+\[ a=\frac{x_{DG}-x_{AD}}{(3T)^2}=\frac{x_{OG}-2x_{OD}+x_{OA}}{9T^2}=\frac{x_{OG}-x_{OD}-(x_{OD}-x_{OA})}{9T^2} \]
+%%%END
+%%%BLOCK id=180-04 ch=03 sec=测动摩擦因数实验·光电门 kind=method exp=1 alt=01 cont=none y=0.42-0.60
+%FIG p180_d 0.055 0.415 0.295 0.515
+\notefig[0.3]{figures/p180_d.png}
+
+$\bigstar$ % 原稿此处画有一个星形标记
+\[ Kd=\frac{\Delta\!\left(\dfrac{1}{t}\right)d}{\Delta x}=\frac{\Delta v}{\Delta t}\cdot\frac{\Delta t}{\Delta x}=a\cdot\frac{1}{v} \]
+\[ Kd=\frac{\Delta v}{\Delta x}=\frac{\Delta v}{\Delta t}\cdot\frac{\Delta t}{\Delta x}=\frac{a}{v} \]
+\[ \therefore a=Kdv \]
+
+%FIG p180_e 0.10 0.515 0.385 0.585
+\notefig[0.45]{figures/p180_e.png}
+
+$v_{\text{瞬}}=\dfrac{d}{t}$
+
+沿$BD$方向$\mu$变小
+
+$a=Kdv$\quad $v$越小$a$越小\quad $a=\mu g$\quad $\mu$越小，
+%%%END
+%%%BLOCK id=180-05 ch=06 sec=弹性势能·实验 kind=method exp=1 alt=none cont=none y=0.60-0.95
+\textbf{能量类}
+
+%FIG p180_f 0.065 0.65 0.24 0.812
+\notefig[0.3]{figures/p180_f.png}
+
+\[ E_{\text{弹}}=mg(H-L) \]
+
+%FIG p180_g 0.265 0.687 0.505 0.797
+\notefig[0.4]{figures/p180_g.png}
+
+\[ E_{\text{弹}}=mgax^2 \]
+\[ a=\frac{H-L}{x^2} \]
+
+再做一次实验。\fbox{$H-L<x$} 说明小球上升到最高点，弹簧未恢复原长，处于压缩态（$x$为形变量）
+
+$\Delta E_{\text{弹}}=mg(H-L)<E_{\text{弹}}=mgax^2$ 故在原图象中描出的点在原直线下方 % “在”字原稿写在“故”与“原图象”之间的行间（带插入符）
+
+\fbox{$H-L>x$} 则描点在原直线上方，
+%%%END
+%%%PAGEEND 180

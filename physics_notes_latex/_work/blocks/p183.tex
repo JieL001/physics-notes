@@ -1,0 +1,112 @@
+%%%PAGE 183 rot=0 legibility=fair summary=验证机械能守恒的多种实验：纸带法、光电门自由落体、斜面双光电门、转动杆光电门、误差分析，以及倍增法探究合外力做功与动能变化量的关系；另有描点取点的技巧
+%%%BLOCK id=183-01 ch=06 sec=验证机械能守恒·纸带法 kind=method exp=1 alt=01 cont=none y=0.03-0.25
+% 页面右上角叠压着另一页（带 Date. NO. 页眉），其上的化学笔记（0.4mol CO CO2…混合气体 ρ=1.429 g/L…CO为0.4×3/4×22.4=6.72L…）与 181 页右上角相同，已在 181-01 转录，此处不重复
+%FIG p183_a 0.0 0.03 0.28 0.085
+\notefig[0.35]{figures/p183_a.png}
+% 纸带上的点，标有 D（残）、E、F、G
+
+若要验证机守还要测\unclear{起}点 $O$、$F$ 之间的距离 $L_{OF}$。
+
+\[ v_F=\frac{L_{EF}+L_{FG}}{4T}=\frac{f\,(L_{EF}+L_{FG})}{4} \]
+\[ E_K=\frac12 m\,\frac{(L_{EF}+L_{FG})^2f^2}{16} \]
+
+%FIG p183_b 0.0 0.085 0.19 0.232
+\notefig[0.28]{figures/p183_b.png}
+% 图中标注：纸带、打点计时器、重物
+
+重物 $M$ 越大 $V$ 越小，误差越小 % 原稿如此（$M$、$V$ 可能是质量/体积或 ρ、V）
+%%%END
+%%%BLOCK id=183-02 ch=06 sec=验证机械能守恒·光电门自由落体 kind=problem exp=1 alt=01 cont=none y=0.25-0.40
+\begin{problem}
+%FIG p183_c 0.01 0.238 0.2 0.347
+\notefig[0.28]{figures/p183_c.png}
+% 图中标注：光电门 计时器、h、d=8 mm
+
+$d=8\,\mathrm{mm}$
+
+挡光时间 $t=4.698\,\mathrm{ms}$\quad 释放时重力势能 $0.0110\,\mathrm{J}$\quad 最低点动能 $E_K=0.112\,\mathrm{J}$ % CHECK: 0.0110 J 与 0.112 J 数量级不同，疑为 0.110 J；“势能”二字写在“重力”下方行间
+
+求 $h$
+\begin{solution}
+\[ v=\frac{d}{t}=1.703\,\mathrm{m/s}\qquad mgh=\frac12mv^2\qquad h=\frac{v^2}{2g}=0.15\,\mathrm{m} \]
+该实验不能验证机械能守恒定律\quad 理由：只有初末位置的机械能近似相等，不能说明整个过程机械能始终守恒
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=183-03 ch=18 sec=数据处理·描点作图 kind=method exp=1 alt=none cont=none y=0.40-0.47
+坐标描点时 按等差数列找
+
+选点靠\unclear{…}找最远点
+
+0.3\quad 0.6\quad 0.9\quad 1.2\quad $\cdots$\quad 2.1
+
+0.01\quad 0.02\quad 0.03\quad $\cdots$\quad 0.07
+%%%END
+%%%BLOCK id=183-04 ch=06 sec=验证机械能守恒·斜面双光电门 kind=method exp=1 alt=03 cont=none y=0.47-0.57
+%FIG p183_d 0.016 0.473 0.43 0.566
+\notefig[0.55]{figures/p183_d.png}
+% 图中标注：遮光片 d、小车、光电门1、光电门2、t_1、t_2、s、h、总长度 L
+
+\[ \Delta E_k=\frac12mv_2^2-\frac12mv_1^2\qquad v_2=\frac{d}{t_2}\quad v_1=\frac{d}{t_1} \]
+\[ \Delta E_p=mg\,\frac{s}{L}\,h=mg\,\frac{h}{L}\,s=mgs\sin\theta \]
+%%%END
+%%%BLOCK id=183-05 ch=06 sec=验证机械能守恒·转动杆光电门 kind=method exp=1 alt=04 cont=none y=0.57-0.72
+%FIG p183_e 0.055 0.578 0.34 0.697
+\notefig[0.4]{figures/p183_e.png}
+% 图中标注：O（光滑）、m 均匀杆、A、L、h
+
+过光电门用时 $t$
+
+\[ \Delta E_p=\frac{mgh}{2}\qquad\text{（重心下降 }\tfrac{h}{2}\text{）} \]
+\[ E_K=\frac12m\left(\frac{d}{t}\right)^2 \]
+若 $A$ 在任意时刻速度为 $V_A$，得到任意\unclear{瞬时}动能
+\[ E_K=\frac{mgaV_A^2}{2bd^2} \]
+% CHECK: 分母末尾字形像 L，按推导（1/t²=(b/a)h，E_K=mV_A²/6）应为 d²
+
+%FIG p183_f 0.70 0.575 0.915 0.70
+\notefig[0.3]{figures/p183_f.png}
+% 图象：纵轴 t^{-2}(s^{-2})，横轴 h/m，过原点直线，P 点对应纵坐标 b、横坐标 a
+
+\[ \frac{1}{t^2}=\frac{b}{a}\,h \]
+%%%END
+%%%BLOCK id=183-06 ch=06 sec=验证机械能守恒·误差分析 kind=note exp=1 alt=01 cont=none y=0.72-0.89
+相邻计数点间有 2 个计时点未标出\ldots\ldots
+\[ v=\frac{x_1+x_2}{2\cdot(3T)}=\frac{x_1+x_2}{6T}=\frac{(x_1+x_2)}{6}f \]
+
+\begin{itemize}
+\item 若 $\Delta E_k>\Delta E_p$\quad 桌面不水平，释放侧偏高 \\
+所用交流电 $f$ 低于电火花打点计时器的标称频率（$f$ 代大了） % “电火花”三字叠写，字迹较乱
+\item 若 $\Delta E_k<\Delta E_p$\quad 桌上有摩擦/不光滑 \\
+所用交流电 $f$ 高于电火花打点计时器标称频率（$f$ 代小了）
+\end{itemize}
+
+代入的是标称频率
+%%%END
+%%%BLOCK id=183-07 ch=06 sec=探究合外力做功与动能变化量·倍增法 kind=method exp=1 alt=03 cont=none y=0.85-1.00
+\textbf{倍增法探究合外力做功与动能变化量的关系。}
+
+%FIG p183_g 0.005 0.853 0.28 0.96
+\notefig[0.4]{figures/p183_g.png}
+% 图中标注：D、C、B、A、x（三段）、末端切线水平、O、L、P、A_3、A_2、A_1
+
+从 $A$ 静止释放小物块恰好运动到 $O$ 点
+
+从 $B$ 释放：
+\begin{align*}
+mgx\sin\theta-\mu mg\cos\theta&=\frac12mv_1^2\\
+v_1&=\frac{L}{\sqrt{\dfrac{2PA_1}{g}}}\\
+mgx\sin\theta-\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_1}
+\end{align*}
+% CHECK: 原稿第一行 mgx sinθ − μmg cosθ 的第二项似无 x（下面两行都有 x）
+
+从 $C$、$D$ 释放分别满足：
+\begin{align*}
+2mgx\sin\theta-2\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_2}\\
+3mgx\sin\theta-3\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_3}
+\end{align*}
+
+$1\quad\dfrac12\quad\dfrac13$
+
+当 $PA_1:PA_2:PA_3=6:3:2$ 时 说明 合外力做功与动能变化量成正比。
+%%%END
+%%%PAGEEND 183
