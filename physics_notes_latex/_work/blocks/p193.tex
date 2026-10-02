@@ -1,0 +1,94 @@
+%%%PAGE 193 rot=0 legibility=good summary=MEO/GTO/GEO轨道草图与速度、面积速率比较；质能方程；平轨变垂轨；返回器与超重失重；天琴二号与静止轨道卫星加速度比；游标卡尺
+%%%BLOCK id=193-01 ch=05 sec=卫星轨道·MEO_GTO_GEO kind=diagram alt=none cont=none y=0.0-0.115
+% 页面右上角叠放着另一张纸(化学笔记)的边缘，其上文字(“燃烧得CO和CO2混合气体 ρ=1.429g·L^-1 … CO为0.4·3/4×22.4=6.72L … 为ρ g/ml的密…”等)属相邻页，未转录；页面顶端被裁掉一截，最上一行文字残缺
+%FIG p193_a 0.04 0.0 0.39 0.112
+\notefig[0.4]{figures/p193_a.png}
+
+\unclear{MEO\ 4200\,km}\,/\,4200\,km\ （中圆轨道）。
+
+GTO\ 200\,km\,/\,36000\,km
+
+GEO\ 36000\,km\,/\,36000\,km
+
+$R_{\text{地}}=6400\,\mathrm{km}$。
+%%%END
+%%%BLOCK id=193-02 ch=05 sec=椭圆轨道·远近点速度比 kind=derivation alt=none cont=none y=0.115-0.40
+\[
+v_{\text{远}}r_{\text{远}}=v_{\text{近}}r_{\text{近}}
+\]
+由机械能守恒
+\[
+\frac12mv_{\text{近}}^2-\frac{GMm}{r_{\text{近}}}=\frac12mv_{\text{远}}^2-\frac{GMm}{r_{\text{远}}}
+\]
+\[
+v_{\text{远}}=\sqrt{\frac{2GMr_{\text{近}}}{r_{\text{远}}(r_{\text{远}}+r_{\text{近}})}}
+\]
+\[
+\frac{GMm}{r_{\mathrm{GEO}}^2}=m\frac{v_{\mathrm{GEO}}^2}{r_{\mathrm{GEO}}}\qquad v_{\mathrm{GEO}}=\frac{\sqrt{GM}}{\sqrt{r_{\mathrm{GEO}}}}\qquad \frac{v_{\text{远}}}{v_{\mathrm{GEO}}}=\sqrt{\frac{2r_{\text{近}}r_{\mathrm{GEO}}}{r_{\text{远}}(r_{\text{远}}+r_{\text{近}})}}
+\]
+\[
+r_{\mathrm{GEO}}=r_{\text{远}}\qquad \therefore\ \frac{v_{\text{远}}}{v_{\mathrm{GEO}}}=\sqrt{\frac{2r_{\text{近}}}{r_{\text{远}}+r_{\text{近}}}}\approx0.52
+\]
+%%%END
+%%%BLOCK id=193-03 ch=05 sec=同步卫星·MEO与GEO比较 kind=derivation alt=none cont=none y=0.15-0.46
+GEO是地球同步轨道\quad $T=24\,\mathrm{h}$
+\[
+\frac{T_{\mathrm{MEO}}^2}{r_{\mathrm{MEO}}^3}=\frac{T_{\mathrm{GEO}}^2}{r_{\mathrm{GEO}}^3}\qquad \omega=\frac{2\pi}{T}
+\]
+（\unclear{开三}） % 原稿此二字为写在上式等号上方的小字(疑指开普勒第三定律)
+\[
+\therefore\ \frac{\omega_{\mathrm{MEO}}}{\omega_{\mathrm{GEO}}}=\sqrt{\frac{r_{\mathrm{GEO}}^3}{r_{\mathrm{MEO}}^3}}
+\]
+地心与MEO、GEO的连线在\fbox{单位时间内}扫过\fbox{面积}比值 % 原稿“单位时间内”被方框圈起，“面积”被圆圈圈起并有箭头指向下方的S公式
+\[
+\frac{\frac12\omega_{\mathrm{MEO}}r_{\mathrm{MEO}}^2\Delta t}{\frac12\omega_{\mathrm{GEO}}r_{\mathrm{GEO}}^2\Delta t}=0.5
+\]
+\[
+S=\frac12v\cdot r\Delta t=\frac12\omega r^2\Delta t
+\]
+%%%END
+%%%BLOCK id=193-04 ch=17 sec=核能·质能方程 kind=formula alt=none cont=none y=0.375-0.43
+质能方程\quad $E=\Delta mc^2$\qquad $E=h\nu=\dfrac{hc}{\lambda}$\qquad $\lambda=\dfrac{hc}{E}$
+%%%END
+%%%BLOCK id=193-05 ch=05 sec=变轨·平轨变垂轨 kind=method alt=none cont=none y=0.44-0.62
+平轨变垂轨。
+%FIG p193_b 0.02 0.445 0.365 0.552
+\notefig[0.4]{figures/p193_b.png}
+
+\underline{向前下方}喷气可变垂轨\quad \unclear{移}平面 % “平面”前一字难辨
+%FIG p193_c 0.39 0.525 0.52 0.61
+\notefig[0.25]{figures/p193_c.png}
+%%%END
+%%%BLOCK id=193-06 ch=05 sec=变轨·返回器与椭圆轨道 kind=note alt=none cont=none y=0.58-0.68
+%FIG p193_d 0.045 0.592 0.232 0.655
+\notefig[0.25]{figures/p193_d.png}
+
+返回器在I上运动向$P$运动时\ 地球对它引力做正功，机械能守恒
+
+两次在$P$点\ 大圈大$v$
+%%%END
+%%%BLOCK id=193-07 ch=03 sec=超重与失重 kind=note alt=05 cont=none y=0.64-0.73
+打开降落伞\underline{减速下落\ $a\uparrow$\ 超重}\qquad \underline{上超下失\ 超加失减}
+
+天宫中仪器处于\underline{失重状态}。
+%%%END
+%%%BLOCK id=193-08 ch=05 sec=卫星运行规律·天琴二号与静止轨道卫星 kind=derivation alt=none cont=none y=0.68-0.80
+天琴二号\ 高400$\mathrm{km}$轨道，\underline{$v_{\text{天琴}}<v_{\text{第一宇宙速度}}$}
+\[
+\left(\frac{T_2}{T_1}\right)^2=\left(\frac{r_2}{r_1}\right)^3\qquad T_1=24\,\mathrm{h}\qquad r_1=\unclear{6400}\,\mathrm{km}\qquad T_2=1.4\,\mathrm{h}
+\]
+地球静止轨道卫星离\underline{地面高度}约为\underline{地球半径}6倍。
+
+向心加速度\quad $\dfrac{a_{\text{天琴}}}{a_{\text{静轨}}}=\dfrac{112^2}{17^2}=\left(\dfrac{6\times6400}{6800}\right)^2$ % CHECK: 括号内首个数字形似6，但由112/17(=7×6400/6800)似应为7；照原样转录；r_1的数值也难辨
+%%%END
+%%%BLOCK id=193-09 ch=05 sec=开普勒定律·面积定律 kind=knowledge alt=none cont=none y=0.78-0.84
+越近$a$越大\quad \fbox{同一\underline{椭圆}}轨道才符合（\unclear{卫星}与中心天体连线）单位时间扫过面积相等 % 原稿“同一椭圆”被大圆圈圈起；小字“(卫星)与中心天体连线”插写在“符合”与“单位时间”之间，前两字难辨
+%%%END
+%%%BLOCK id=193-10 ch=18 sec=游标卡尺读数 kind=note alt=none cont=none y=0.86-0.93
+游标卡尺
+%FIG p193_e 0.12 0.862 0.265 0.912
+\notefig[0.25]{figures/p193_e.png}
+
+\underline{不是从0开始}
+%%%END
+%%%PAGEEND 193

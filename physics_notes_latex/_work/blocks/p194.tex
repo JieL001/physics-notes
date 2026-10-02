@@ -1,0 +1,80 @@
+%%%PAGE 194 rot=0 legibility=good summary=电学实验要点(图像斜率截距、测电动势、电表改装、等效内阻)；x/t²-1/t图像法；三个电路题(电压表/电流表/并联分流)；误差分析；页脚流体冲击(动量定理)
+%%%BLOCK id=194-01 ch=10 sec=电学实验·图像处理 kind=method exp=1 alt=none cont=none y=0.05-0.09
+电阻可通过斜率对比，\unclear{图像}轴点线斜截面，数量级单位换算 % “斜率对比”后两字(图像?)难辨
+%%%END
+%%%BLOCK id=194-02 ch=10 sec=测电动势和内阻 kind=derivation exp=1 alt=none cont=none y=0.09-0.22
+% 左页边(约y=0.18处)有一个孤立的“γ”形笔迹，未转录
+测化学电池电动势（电压表测内电压，断开开关后无示数）
+\[
+E=U+\frac{U}{r}R=U+\frac{U}{hr_0}R\qquad r_0\text{为单位长度电阻}
+\]
+\[
+\frac1U=\frac1E+\frac{R}{Ehr_0}
+\]
+%%%END
+%%%BLOCK id=194-03 ch=10 sec=电表改装 kind=note exp=1 alt=none cont=none y=0.22-0.25
+量程不够\ +\ 定值电阻，改表
+%%%END
+%%%BLOCK id=194-04 ch=10 sec=测电动势和内阻 kind=note exp=1 alt=none cont=none y=0.25-0.28
+$U$-$I$曲线有弯的\ 也符合\ $E=U+Ir$
+%%%END
+%%%BLOCK id=194-05 ch=01 sec=匀变速运动·图像法处理数据 kind=method exp=1 alt=none cont=none y=0.26-0.40
+$x=v_0t+\dfrac12at^2$\qquad $\dfrac{x}{t^2}=\dfrac{v_0}{t}+\dfrac12a$
+%FIG p194_a 0.465 0.268 0.735 0.39
+\notefig[0.3]{figures/p194_a.png}
+
+先求各物理量\ 再计算
+%%%END
+%%%BLOCK id=194-06 ch=10 sec=测电动势和内阻 kind=formula exp=1 alt=none cont=none y=0.38-0.43
+\[
+r_{\text{等效内阻}}=\frac{\Delta U_{\text{外}}}{\Delta I}=\frac{\Delta U_{\text{内}}}{\Delta I}
+\]
+%%%END
+%%%BLOCK id=194-07 ch=10 sec=电学实验·其它 kind=note exp=1 alt=none cont=none y=0.43-0.47
+\unclear{倍功法}\ $S$不变，改\unclear{筋}数$n$变 % CHECK: “倍功法”“筋数”字迹难辨、含义不明，归章也不确定(紧邻电学实验内容，暂归10)
+%%%END
+%%%BLOCK id=194-08 ch=10 sec=测电阻·电压表法(合上断开S2) kind=derivation exp=1 alt=none cont=none y=0.47-0.62
+1.
+%FIG p194_b 0.05 0.470 0.225 0.622
+\notefig[0.25]{figures/p194_b.png}
+
+合上$S_2$\quad $U_1$
+
+断开$S_2$\quad $U_2$
+\[
+\frac{U_2}{\dfrac{R_VR_X}{R_V+R_X}}R=U_1-U_2
+\]
+%%%END
+%%%BLOCK id=194-09 ch=10 sec=电路分析·差量关系 kind=derivation exp=1 alt=none cont=none y=0.62-0.78
+2.
+%FIG p194_c 0.02 0.628 0.245 0.78
+\notefig[0.25]{figures/p194_c.png}
+% 原稿电路图被一个大圆圈圈起
+
+$U_{\text{等效}}=I_1R_1+I_0R_0$\qquad 差量关系
+
+\unclear{$P_x$}\ $P_{R_p}=I_1R_1(I_0-I_1)$ % 式首的“P”及其下标被笔画覆盖难辨
+%%%END
+%%%BLOCK id=194-10 ch=10 sec=电表改装·并联分流 kind=derivation exp=1 alt=none cont=none y=0.77-0.92
+3.
+%FIG p194_d 0.05 0.775 0.26 0.915
+\notefig[0.25]{figures/p194_d.png}
+\[
+U=\left(\frac{I_1r_g}{R_1}+I_1\right)\left(R_2+\frac{R_1r_g}{R_1+r_g}\right)
+\]
+%%%END
+%%%BLOCK id=194-11 ch=07 sec=动量定理·流体冲击 kind=note alt=06 cont=none y=0.885-0.965
+\[
+\begin{cases}
+\text{打后反弹}\quad \rho Sv^2=2Mg\\
+\text{垫物}\quad \rho Sv^2=mg
+\end{cases}
+\]
+$-P_2-P_1=-\rho Sv$\unclear{…} % 该式写在页面右边缘，后半被截断；其下方有一道红色波浪线
+%%%END
+%%%BLOCK id=194-12 ch=10 sec=电学实验·误差分析 kind=note exp=1 alt=none cont=none y=0.93-1.0
+\unclear{$I_{\text{实}}\uparrow$}\quad $V\downarrow$\qquad $U_{\text{实}}\uparrow$\ 无影响 % 首个符号形似“于/I/r”，难辨
+
+电源$E$变小\ $R_{\text{测}}$偏大\ 电源内阻被$R_{\text{滑}}$补充了，对测量无影响
+%%%END
+%%%PAGEEND 194

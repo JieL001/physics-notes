@@ -42,3 +42,9 @@ DONE pages=185-189, blocks=36, figs=15, unclear=32; texcheck_all ALL OK, contact
 - 185/186/187 are the same notebook page photographed three times: 185 and 187 are covered by two different pasted printed sheets, 186 is uncovered. I transcribed the covered text only in p186, so p185 and p187 hold only their sheet content (185: three questions; 187: question 20). They are not marked `dup=`; the header comments explain it.
 - The faint chemistry pencil text at the top right of 186 and 189 sits in the same place on both photos, so I took it as show-through from a sheet underneath. I kept it only as a comment in p186.tex and made no block for it.
 - Please re-check first: the cut-off or scribbled handwriting on 185 and 187 (the pasted sheets are cut off at the right edge, so those lines end in "……"); p188's red-pen notes and half-life formula (blocks 188-08 to 188-09); and p189's partly hidden item numbers (6 and 8) and the garbled "GM_火" (should be earth, M_地) in the item 9 solution.
+
+## p190–194
+DONE pages=190,191,192,193,194, blocks=53, figs=18, unclear=29 (`\unclear` occurrences), `texcheck_all.py` returns ALL OK.
+- p193 193-08: the r₁ value and the first digit in "(6×6400/6800)²" are unclear, and 112/17 implies it should be 7. The MEO label at the page top is cut off.
+- p191: "束缚", the "月地土运回地球" line, "轨道[时]与地球", and the Li mass number are uncertain. The 12.-orbit figure's text ("故OA=OC=R=a") is also uncertain.
+- p192: the right-margin scribbles and the unlabelled sine-like sketch are filed under ch=08 as an assumed wave-interference side calculation. The "ΔxΔp ≥ …" term is unclear. p194's "倍功法…筋数n变" is unclear and its ch=10 filing is unconfirmed.

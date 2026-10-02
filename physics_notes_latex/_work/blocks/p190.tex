@@ -1,0 +1,83 @@
+%%%PAGE 190 rot=0 legibility=good summary=原子物理要点(阴极射线/射线/康普顿/衰变)；椭圆轨道离心近心运动；星球平抛测g+近地卫星综合题；比结合能与1/λ关系；赤道g与两极g
+%%%BLOCK id=190-01 ch=17 sec=原子结构·射线 kind=knowledge alt=none cont=none y=0.01-0.09
+1.\ 阴极射线说明原子可分有内部结构
+
+\unclear{$\gamma$}射线是原子核由高能级向低能级跃迁时发出的高频光子流。（实质\ \textit{核中中子变为质子}\ $\nuc{1}{0}{n}\to\nuc{1}{1}{H}+\nuc{0}{-1}{e}$）形成电子流。 % 原稿"核中中子变为质子"小字写在括号内公式上方 % CHECK: 句首字被改写覆盖(γ/β)，括号内为β衰变实质
+%%%END
+%%%BLOCK id=190-02 ch=17 sec=波粒二象性·康普顿 kind=knowledge alt=none cont=none y=0.09-0.115
+2.\ \unclear{康普顿}—粒子性—动量
+%%%END
+%%%BLOCK id=190-03 ch=05 sec=变轨·离心近心运动 kind=knowledge alt=none cont=none y=0.115-0.235
+3.
+%FIG p190_a 0.058 0.115 0.20 0.162
+\notefig[0.25]{figures/p190_a.png}
+\[
+a_2r_2>v_2^2\qquad a_1>a_2\qquad v_1>v_2\qquad a_1r_1<v_1^2
+\]
+离心运动\quad $\dfrac{GMm}{r_1^2}<m\dfrac{v_1^2}{r_1}$\quad $\dfrac{GMm}{r_1^2}=ma_1$
+
+近心运动\quad $\dfrac{GMm}{r_2^2}>\dfrac{mv_2^2}{r_2}$\quad $\dfrac{GMm}{r_2^2}=ma_2$
+%%%END
+%%%BLOCK id=190-04 ch=17 sec=原子核·衰变 kind=knowledge alt=none cont=none y=0.235-0.285
+% 原稿：整句下划线；“α、β衰变”、“一定”、“有γ放出”分别被圈起
+4.\ \unclear{$\alpha$}、$\beta$衰变一定有$\gamma$放出
+
+{\small （\unclear{伴$\gamma$射线}）} % 原稿此小字写在“有γ放出”正下方，字迹很小
+%%%END
+%%%BLOCK id=190-05 ch=05 sec=星球表面平抛测g·近地卫星综合 kind=problem alt=03,04 cont=none y=0.285-0.74
+5.
+\begin{problem}
+研究人员在某星球表面，将小球以$v_0$平抛\red{求$g$}，落地点与抛出点水平距离为$x$，在该星球发卫星，在近地\unclear{处}以$a$匀加速运动\red{求$m$}。卫星对支持面压力为$F$，该星球近地卫星周期$T$，引力常量$G$，不考虑自转。 % 原稿“平抛”与“匀加速运”下有红线，红字“求g”写在“平抛”上方、“求m”写在“匀加速运动”下方 % CHECK: 题干未给出高度h，但解答中用到h
+\begin{solution}
+\[
+\frac{GMm}{R^2}=\frac{m4\pi^2}{T^2}R\qquad \rho=\frac{M}{V}\qquad V=\frac43\pi R^3\qquad \rho=\frac{3\pi}{GT^2}\qquad \text{设卫星质量}\,m
+\]
+\textit{向上匀加速}
+
+由牛二\quad $F-mg=ma$
+\[
+\begin{cases}
+h=\dfrac12gt^2\\[2mm]
+x=v_0t
+\end{cases}
+\]
+\[
+\therefore g=\frac{2v_0^2h}{x^2}\qquad m=\frac{Fx^2}{2v_0^2h+x^2a}
+\]
+\[
+\frac{Gm\rho\cdot\frac43\pi R^3}{R}=mg\ \Rightarrow\ R=\frac{v_0^2hT^2}{2\pi^2x^2} % CHECK: 左式分母原稿为R，物理上似应为R^2，照原样转录
+\]
+\[
+v_{\text{近地}}=\sqrt{gR}=\frac{v_0^2hT}{\pi x^2}
+\]
+高空环绕
+\begin{gather*}
+\frac{Gm\cdot M}{(R+H)^2}=F_{\text{向}}\qquad GM=gR^2\qquad g=\frac{2v_0^2h}{x^2}\\
+R=\frac{v_0^2hT^2}{2\pi^2x^2}\qquad m=\frac{Fx^2}{2v_0^2h+x^2a}\\
+F_{\text{向}}=\frac{2Fv_0^2h}{2v_0^2h+x^2a}\cdot\left(\frac{v_0^2hT^2}{v_0^2hT^2+2\pi^2x^2H}\right)^2
+\end{gather*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=190-06 ch=17 sec=核能·比结合能 kind=knowledge alt=none cont=none y=0.745-0.78
+新核核子平均质量小，比结合能增大。
+%%%END
+%%%BLOCK id=190-07 ch=17 sec=氢原子能级与光谱 kind=formula alt=none cont=none y=0.78-0.82
+\[
+\frac{1}{\lambda_{31}}=\frac{1}{\lambda_{32}}+\frac{1}{\lambda_{21}}
+\]
+%%%END
+%%%BLOCK id=190-08 ch=05 sec=天体表面·重力加速度与自转 kind=problem alt=none cont=none y=0.82-0.98
+6.
+\begin{problem}
+由于自转，赤道与两极的$g$不同，两极处为$g$，自转周期$T$，引力常量$G$，求赤道$g$？
+\begin{solution}
+两极处\quad $\dfrac{GMm}{R^2}=mg$
+
+赤道处\quad $\dfrac{GMm}{R^2}-mg_{\text{赤}}=m\left(\dfrac{2\pi}{T}\right)^2R$\quad $M=\dfrac43\pi R^3\rho$
+
+$\therefore g_{\text{赤}}=g\left(1-\dfrac{3\pi}{G\rho T^2}\right)$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 190
