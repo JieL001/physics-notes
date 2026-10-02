@@ -1,5 +1,13 @@
 # 高中物理笔记 → LaTeX：进度与续跑说明（最后更新 2026-10-03 02:50，+08）
 
+## 云端续跑（2026-10-03 04:40 +08 起，Claude Code 云会话；这一节最新，优先看）
+- 仓库：GitHub 私有仓库 `JieL001/physics-notes`。`main` = 用户 10-03 凌晨上传的快照（整个项目 + 原件 + 本地 scratchpad 工具副本 `local_tools/`）；工作分支 `claude/serene-meitner-3p3st7`，每验收完一个单元提交并推送一次。容器里的克隆在 `/home/user/physics-notes`。
+- 原件：`source/p001-010.pdf … p291-300.pdf`（从 `Desktop\高中物理笔记.pdf` 每 10 页切一份）。和本地 split 逐像素一致：12 张已有配图用同样坐标重裁，max_diff=0。
+- 工具：PROJ 改为按脚本所在位置定位（Windows/Linux 通用；本地 scratchpad 里的旧副本不受影响）。Linux 上读 `source/`，编译用 TeX Live + ctex `fontset=ubuntu`（Noto CJK；默认 Fandol 缺 ⑪–⑳），看图/编译的临时文件在会话 scratchpad 的 `pn/`。
+- 新增：`%FIG` 行末可加 `soft`（淡铅笔图用温和去背景；p164_a 用了）；`tools/verify_unit.py`（单元验收：页文件、%FIG、配图、texcheck）；`AGENT_PROMPT_CLOUD.txt`（云端提示词，model=sonnet）。GUIDE.md 加了云端路径和“%FIG 必须单独一行”。
+- p164：断额度时留下的页文件，补裁 8 张图（`%FIG p164_f` 原写在正文行尾、没被裁，已移到单独一行），texcheck OK。
+- 进度以 `python3 tools/remaining.py` 和 git log 为准。**本地那个会话（10-05 04:00 重置）不要再派单元**，否则会重复转录；要回本地继续，先拉取这个分支。
+
 ## 现状（数字以 `python tools/remaining.py` 的输出为准；它会重算还剩哪些页并刷新 units_remaining.json）
 - 02:50 之后又转录了 p137–163、p164–173 的若干单元（见 blocks/ 目录里有哪些文件）；被打断的单元：用 remaining.py 看“缺配图的页”，对这些页补跑 `crop_batch.py --blocks` + `texcheck_all.py`。
 - **p162 整页失焦**：它的 7 张配图是用 `scratchpad\crop_soft_p162.py` 裁的（默认裁图会洗掉淡笔迹），**不要对 p162 重跑 crop_batch / 不要覆盖 figures/p162_*.png**。
