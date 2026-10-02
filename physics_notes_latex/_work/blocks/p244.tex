@@ -1,0 +1,76 @@
+%%%PAGE 244 rot=0 legibility=fair summary=多面体等势面与电势；斜面滑动μ=h/(x1+x2)；双电流表测电源电动势内阻；线框进出磁场区(求B、出场速度、动能、时间)；橡皮绳下落的加速度与v-t、v^2-h图像
+%%%BLOCK id=244-01 ch=09 sec=等势面·多面体顶点电势 kind=problem alt=none cont=none y=0.00-0.16
+\begin{problem}
+%FIG p244_a 0.04 0.00 0.29 0.125
+\notefig[0.25]{figures/p244_a.png}
+等势面 $CDE$。从 $C$ 沿 $CD$ 的电子\unclear{只能在}$CDE$平面运动 % CHECK: 此句字迹模糊且页面倾斜，“只能在”三字为猜测
+
+$EF=\dfrac{\sqrt2}{2}a$\qquad $AC$\unclear{中}点\quad $\varphi=\dfrac{\varphi_1+\unclear{\varphi_2}}{2}$ % 右端被页面边缘截断
+\end{problem}
+%%%END
+%%%BLOCK id=244-02 ch=06 sec=动能定理·斜面平面滑动 kind=method alt=none cont=none y=0.165-0.28
+%FIG p244_b 0.04 0.165 0.425 0.235
+\notefig[0.4]{figures/p244_b.png}
+\[ \mu=\frac{h}{x_1+x_2} \]
+%%%END
+%%%BLOCK id=244-03 ch=10 sec=测电源电动势和内阻·双电流表 kind=problem exp=1 alt=none cont=none y=0.34-0.46
+\begin{problem}
+%FIG p244_c 0.09 0.34 0.395 0.435
+\notefig[0.3]{figures/p244_c.png}
+\begin{solution}
+或\quad $E=I_1(R_x+R+r_{A_1})+(I_1+I_2)r$
+\[ E=I_2(r_{A_2}+R_0)+(I_1+I_2)r\qquad\text{不能重复加} \]
+忽略$A_2$分流\quad $E=I_2(r_{A_2}+R_0)+I_1r$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=244-04 ch=12 sec=电磁感应·线框进出磁场区能量与动量 kind=problem alt=06,04 cont=none y=0.43-1.00
+\begin{problem}
+从静止释放，
+%FIG p244_d 0.02 0.435 0.52 0.585
+\notefig[0.5]{figures/p244_d.png}
+于此匀速下落\quad 于此消耗 $Q$
+
+求 $B$ 和出 $B$ 时速度
+\begin{solution}
+① \quad $V_{\text{入}}=\sqrt{2gL}$\qquad $mg=\dfrac{B^2L^2V_1}{R}$\qquad $B=\dfrac{\sqrt{mgR}}{\sqrt{L^2\sqrt{2gL}}}$
+
+$bc$刚出\quad $V_{\text{出}1}=2\sqrt{gL}$
+
+$ed$刚出\quad $mgL+\dfrac12mV_{\text{出}1}^2-\dfrac12mV_{\text{出}2}^2=Q$\qquad $V_{\text{出}2}=\sqrt{6gL-\dfrac{2Q}{m}}$
+
+② \quad 给一个水平向右初速度，进 $B$ 时 $V$ 与水平方向成$45^\circ$。求 $bc$ 落地时动能和用时
+\begin{align*}
+\tan45^\circ&=\frac{V_0}{V_1}\qquad V_0=V_1=\sqrt{2gL}\\
+5mgL&=Q+mgL+E_K-\frac12mV_0^2\\
+E_K&=5mgL-Q\\
+E_K&=\frac12m\left(\sqrt{V_0^2+V_y^2}\right)^2 \quad\text{（原稿此式下方画有波浪线）}\\
+V_y&=\sqrt{8gL-\frac{2Q}{m}}
+\end{align*}
+由动量定理
+
+% 原稿下面这一行被划去，并有一条弧形箭头从更下方的“mgt+…”一行指向它
+\struck{$mgt-mg\dfrac{L}{V_1}-BqL=mV_y$}
+\[ q=\frac{BL^2}{R} \]
+\[ t=\sqrt{\frac{8L}{g}-\frac{2Q}{mg^2}}+\sqrt{\frac{2L}{g}} \]
+\[ mgt+mg\frac{L}{V_1}-2BLq=mV_y \] % 原稿“mgL/V1 −2BLq”下方画有波浪线
+% 原稿下面这一行被划去
+\struck{$-mg\dfrac{L}{V_1}\quad mg\dfrac{L}{V_1}=BLq$}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=244-05 ch=03 sec=动力学图像·橡皮绳下落 kind=problem alt=06 cont=none y=0.78-0.985
+\begin{problem}
+%FIG p244_e 0.08 0.79 0.15 0.875
+\notefig[0.25]{figures/p244_e.png}
+从伸直到最低点
+\begin{solution}
+$V=at$\qquad $a=\dfrac{mg-k\Delta x}{m}\downarrow$
+
+$V^2-V_0^2=2ah$\qquad $a=\dfrac{k\Delta x-mg}{m}\uparrow$
+%FIG p244_f 0.09 0.888 0.47 0.985
+\notefig[0.38]{figures/p244_f.png}
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 244

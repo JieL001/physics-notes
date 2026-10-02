@@ -1,0 +1,81 @@
+%%%PAGE 243 rot=0 legibility=good summary=双球圆锥摆质量比；平抛动能-时间图像；洗衣机转筒；斜面平抛速度偏角；斜抛说明；线框进入磁场的动量定理与能量计算
+%%%BLOCK id=243-01 ch=04 sec=圆周运动·圆锥摆(双球共轴) kind=problem alt=02 cont=none y=0.03-0.22
+\begin{problem}
+%FIG p243_a 0.115 0.035 0.275 0.125
+\notefig[0.25]{figures/p243_a.png}
+\begin{solution}
+\begin{align*}
+F\cos\alpha&=m_Ag\\
+F\cos\beta&=m_Bg\\
+m_Ag\tan\alpha&=m_A\omega^2l_1\sin\alpha\\
+l_1\cos\unclear{\beta}&=l_2\cos\alpha\\ % CHECK: 第一个 cos 后的角度被涂改（β 与 α 叠写）；第二个像 α；按推导应为 l1cosα=l2cosβ
+\frac{m_A}{m_B}&=\frac{\cos\alpha}{\cos\beta}
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=243-02 ch=06 sec=动能·Ek-t图像(平抛) kind=problem alt=04 cont=none y=0.22-0.30
+\begin{problem}
+%FIG p243_b 0.095 0.215 0.30 0.295
+\notefig[0.3]{figures/p243_b.png}
+\begin{solution}
+\[ \frac{\Delta E_K}{\Delta t}=mgV_y\uparrow \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=243-03 ch=04 sec=圆周运动·洗衣机转筒 kind=problem alt=06 cont=none y=0.29-0.43
+\begin{problem}
+洗衣机转筒
+%FIG p243_c 0.09 0.32 0.265 0.405
+\notefig[0.25]{figures/p243_c.png}
+%FIG p243_d 0.78 0.285 0.925 0.39
+\notefig[0.25]{figures/p243_d.png}
+\begin{solution}
+\[ \begin{cases}
+\mu mg=m\omega^2r\\
+-\mu mgx=0-\frac12m(\omega x)^2 \\ % CHECK: 括号内字母形似 x（物理上应为 r）
+R=\sqrt{x^2+r^2}\qquad \unclear{F}_N>0 \\ % CHECK: 下标 N 前的字母形似 I（也可能是 F）
+Q=\mu mg\,\unclear{…}\,x % g 与 x 之间有一个被涂黑的符号
+\end{cases} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=243-04 ch=04 sec=圆周运动·合外力与向心力 kind=note alt=none cont=none y=0.44-0.47
+单摆秋千合外力不恒\unclear{指向}圆心
+%%%END
+%%%BLOCK id=243-05 ch=04 sec=平抛·斜面上的平抛(速度偏角) kind=problem alt=none cont=none y=0.48-0.60
+\begin{problem}
+%FIG p243_e 0.065 0.51 0.235 0.60
+\notefig[0.25]{figures/p243_e.png}
+\begin{solution}
+\[ \tan\theta=\tan(\alpha-\varphi)=\frac{\tan\alpha-\tan\varphi}{\tan\alpha\tan\varphi+1}\qquad\tan\alpha=2\tan\varphi \]
+\[ =\frac{1}{2\tan\varphi+\dfrac{1}{\tan\varphi}} \]
+%FIG p243_f 0.60 0.52 0.80 0.60
+\notefig[0.25]{figures/p243_f.png}
+图旁标注：不单调
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=243-06 ch=04 sec=斜抛·落点速度方向 kind=note alt=none cont=none y=0.60-0.64
+斜抛 则落点速度方向不同\quad $t\neq\dfrac{2V_0\tan\varphi}{g}$\quad $\Delta y\neq g\Delta t^2$
+%%%END
+%%%BLOCK id=243-07 ch=12 sec=电磁感应·动量定理与能量(线框进入磁场) kind=problem alt=06,07 cont=none y=0.65-1.00
+\begin{problem}
+%FIG p243_g 0.04 0.65 0.53 0.765
+\notefig[0.5]{figures/p243_g.png}
+\begin{solution}
+\[ Ft-\mu mgt-\bar F_{\text{安}}t=m(V-V_0) \]
+\[ F_{\text{安}}=B\bar IL\qquad E=\frac{\Delta\Phi}{\Delta t}=\frac{BLx}{\Delta t}\quad\unclear{\Rightarrow}\quad\bar I=\frac{\bar E}{R} \] % CHECK: 原稿此处为形似“#”的符号，可能是 ⇒
+\[ V=\frac{(F-\mu mg)t}{m}+V_0-\frac{B^2L^2x}{Rm} \]
+\[ \text{对照图像}\quad F=\mu mg\qquad\frac{B^2L^2}{Rm}=\frac{V_0}{3L} \]
+$AB$刚入$B$时\quad $F=BLV_0$\quad $\bar F_{\text{安}}=\dfrac{B^2L^2V_0}{R}$ % CHECK: F=BLV0 的首字母形似 F，按物理应为感应电动势 E
+\[ F-\mu mg-\frac{B^2L^2V_0}{R}=-ma \]
+\[ a=\frac{V_0^2}{3\unclear{L}} \] % 此行被页面底边切断，分母不全
+\[ E=\frac{\Delta\Phi}{\Delta t}=\frac{BL\cdot3L}{\Delta t}\qquad\bar I=\frac{\bar E}{R}\qquad q=\bar I\Delta t=\frac{3BL^2}{R} \]
+\[ \therefore q=\frac{mV_0}{BL} \]
+\[ \text{由动能定理}\ (F-\mu mg)3L+W_{\text{安}}=0-\frac{mV_0^2}{2} \]
+\[ Q_{\text{\unclear{焦}}}=-W_{\text{安}}=\frac12mV_0^2 \] % CHECK: Q 的下标为一个带“灬”的字，疑为“焦”（或“热”）
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 243

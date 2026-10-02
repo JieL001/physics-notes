@@ -84,3 +84,9 @@ DONE pages=246,247,248,249,250, blocks=28, figs=25, unclear=7 (crop_batch contac
 1. p248-02：t₀ 原稿似写 2.5s，但后文数值对应 0.2s；`a_2T`、`V'/t_1`（应为 a₁）、末尾 5.6s（原稿近 5.65）也已标 CHECK。
 2. p246：07 块 m_a>m_b 与 α>β 似矛盾；05 块金属板图（i=0, a=0）章号 ch=12 是猜的；p246 的 `\unclear{信}`（“滑轮的 F V 信数关系”）。
 3. p250/p247 的 `\unclear`：“使其绕 P 的完整圆周运动”、“脱轨 ⇒ V₀∈…”的符号；p247-03 “V顶”；另外 p250 斜面最远距离 d 的 sin 平方、p250 速度式 V_y 的等号已标 CHECK。
+
+## p241–245
+DONE pages=241-245, blocks=32, figs=38, unclear=22. `texcheck_all.py` returns ALL OK, and the contact sheets show every figure complete. No page is a duplicate of another.
+- p241-02: the "F>7/2 μmg" numerator may be 5, and "F=2μmg" may be 3.
+- p243-03 and p243-07: several glyphs are ambiguous (x vs r, I_N vs F_N, a "#" that may be ⇒, "Q_焦" vs "Q_热"), and the last line is cut off at the page bottom.
+- p242-06 and p241-04: a few handwritten sentences are guessed ("法2 竖水平分", "静摩擦力永远要方向讨论"). The p244-01 title line is also a guess.

@@ -1,0 +1,94 @@
+%%%PAGE 242 rot=0 legibility=good summary=六道题：1.两绳夹角不变的动态平衡 2.平衡到向右匀加速绳张力 3.斜面平抛速度比较 4.转板带电粒子 5.双球相似三角形 6.靠墙杆的受力（力矩法与分解法）
+%%%BLOCK id=242-01 ch=02 sec=动态平衡·两绳夹角不变 kind=problem alt=none cont=none y=0.00-0.24
+\begin{problem}[1]
+%FIG p242_a 0.07 0.00 0.235 0.072
+\notefig[0.25]{figures/p242_a.png}
+%FIG p242_b 0.30 0.00 0.40 0.05
+\notefig[0.25]{figures/p242_b.png}
+%FIG p242_c 0.12 0.075 0.29 0.15
+\notefig[0.25]{figures/p242_c.png}
+\begin{solution}
+\[ \begin{cases} F_1\sin\alpha=F_2\sin(\theta-\alpha)\\ F_1\cos\alpha+F_2\cos(\theta-\alpha)=G \end{cases} \]
+\[ F_1=G\,\frac{\sin(\theta-\alpha)}{\sin\theta}\qquad F_2=G\,\frac{\sin\alpha}{\sin\theta}\qquad\theta\text{不变} \]
+\begin{itemize}
+\item $\alpha$从$90^\circ\to0^\circ$
+\item $\theta-\alpha$\unclear{在}\ $120^\circ$\ 从$30^\circ\sim120^\circ$ % CHECK: 此处三行斜排：“θ−α ?”“120°”“从30°~120°”，120°应指θ=120°
+\item $F_1$先$\uparrow$后$\downarrow$
+\item $F_2\downarrow\to0$
+\end{itemize}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=242-02 ch=03 sec=瞬时与加速·绳张力变化 kind=problem alt=02 cont=none y=0.20-0.36
+\begin{problem}[2]
+%FIG p242_d 0.095 0.205 0.24 0.30
+\notefig[0.25]{figures/p242_d.png}
+由平衡到向右匀加速
+\begin{solution}
+原
+$\begin{cases} mg=T_a\cos\theta\\ T_b=T_a\sin\theta \end{cases}$
+\[ T_a\sin\theta-T_b=ma\qquad\theta\text{不变}\quad T_a\text{不变}\quad\therefore T_b\downarrow \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=242-03 ch=04 sec=平抛·斜面上的平抛 kind=problem alt=none cont=none y=0.36-0.56
+\begin{problem}[3、平抛]
+%FIG p242_e 0.075 0.386 0.375 0.507
+\notefig[0.3]{figures/p242_e.png}
+速度反向延长线\\交于位移中点
+\begin{solution}
+\begin{align*}
+&t_A<t_B<t_C\\
+&x_A=x_B=x_C\\
+&\therefore V_{A0}>V_{B0}>V_{C0}
+\end{align*}
+\[ h=\frac{x}{2}\,\frac{1}{\tan\theta}\qquad t=\sqrt{\frac{2h}{g}}\qquad V_y=\sqrt{2gh}\qquad V_x=\tan\theta\sqrt{2gh} \]
+\[ \therefore V=\sqrt{V_x^2+V_y^2}=\sqrt{2gh\,(1+\tan^2\theta)}=\sqrt{xg\Bigl(\frac{1}{\tan\theta}+\frac{1}{\tan\theta}\Bigr)} \] % CHECK: 按推导括号内第二项应为 tanθ，原稿写作 1/tanθ
+代入 $60^\circ$ $45^\circ$ $30^\circ$ 得 $V_A=V_C>V_B$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=242-04 ch=09 sec=带电粒子·平行板间平衡(转板) kind=problem alt=03 cont=none y=0.565-0.69
+\begin{problem}[4]
+%FIG p242_f 0.115 0.562 0.40 0.69
+\notefig[0.3]{figures/p242_f.png}
+转板
+\begin{solution}
+原\quad $mg=qE=q\dfrac{U}{d}$
+
+现\quad $\dfrac{U}{d}q=\dfrac{U}{d\cos\theta}=\dfrac{mg}{\cos\theta}$ % CHECK: 第二项分子无 q（原稿如此）
+
+合力水平向左
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=242-05 ch=02 sec=共点力平衡·相似三角形 kind=problem alt=none cont=none y=0.70-0.865
+\begin{problem}[5]
+%FIG p242_g 0.07 0.70 0.225 0.865
+\notefig[0.25]{figures/p242_g.png}
+\begin{solution}
+\[ \frac{T}{l_1}=\frac{m_1g}{h}\qquad\frac{T}{l_2}=\frac{m_2g}{h} \]
+\[ \therefore m_1l_1=m_2l_2 \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=242-06 ch=02 sec=共点力平衡·靠墙杆的受力 kind=problem alt=none cont=none y=0.865-1.00
+\begin{problem}[6]
+%FIG p242_h 0.11 0.865 0.245 0.985
+\notefig[0.25]{figures/p242_h.png}
+\begin{solution}
+法1\ 用杆\unclear{力矩}平衡 % CHECK: “力矩”二字笔迹潦草，仅辨认出大意
+\[ \underset{\uparrow}{F_1}\,OA=G\,O\underset{\uparrow}{B} \] % 原稿 F_1 与 B 的下方各有一个向上的小箭头
+\[ N_2=G\qquad f=F_1 \]
+地对木杆力\unclear{即}$\uparrow$ $\vec N+\vec f$
+
+%FIG p242_i 0.46 0.88 0.585 0.96
+\notefig[0.25]{figures/p242_i.png}
+
+法2\ \unclear{竖水平分} % CHECK: 末字不清（也可能是“衡”），大意应为竖直/水平方向分解
+%FIG p242_j 0.72 0.915 0.885 0.98
+\notefig[0.25]{figures/p242_j.png}
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 242

@@ -1,0 +1,84 @@
+%%%PAGE 241 rot=0 legibility=good summary=力学受力分析与动态平衡：叠放物块拉力临界、楔形体加球整体隔离、斜面静摩擦方向、绳杆/结点/双绳动态平衡、圆柱斜轨
+%%%BLOCK id=241-01 ch=02 sec=页眉·力 kind=note alt=none cont=none y=0.06-0.12
+\textbf{力}\quad（页面左上角手写的大字标题）
+%%%END
+%%%BLOCK id=241-02 ch=03 sec=板块·叠放物块摩擦与拉力临界 kind=problem alt=02 cont=none y=0.04-0.15
+\begin{problem}
+%FIG p241_a 0.125 0.042 0.28 0.098
+\notefig[0.25]{figures/p241_a.png}
+\begin{solution}
+\begin{itemize}
+\item 匀速拉 $B$\quad $F=2\mu mg$ % CHECK: 系数像“2”，按右侧阈值 7/2 推算可能应为 3（待核）
+\item 加速拉\quad $a_B\in(0,\tfrac12\mu g)$\quad $B$ $C$ 一起
+\item $F>\dfrac{7}{2}\mu mg$ 时拉动 $B$\unclear{离}$C$\quad $a_B\in(\tfrac12\mu g,+\infty)$\quad $B$ $C$ 相对滑动 % CHECK: 分子像“7”（也可能是5）；“离”字很小，不确定
+\end{itemize}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-03 ch=02 sec=整体法隔离法·楔形体与球 kind=diagram alt=none cont=none y=0.16-0.34
+\begin{problem}
+%FIG p241_b 0.13 0.16 0.60 0.255
+\notefig[0.47]{figures/p241_b.png}
+%FIG p241_c 0.135 0.255 0.23 0.34
+\notefig[0.25]{figures/p241_c.png}
+\begin{solution}
+\[ F\downarrow\qquad F'\downarrow\qquad E\downarrow \] % CHECK: 第三个符号为“E”（可能是 F'' 或 N）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-04 ch=02 sec=静摩擦力·方向讨论 kind=problem alt=none cont=none y=0.38-0.49
+\begin{problem}
+%FIG p241_d 0.10 0.415 0.25 0.485
+\notefig[0.25]{figures/p241_d.png}
+\begin{solution}
+\[ mg\sin\theta=F\cos\theta\pm f_{12} \]
+\[ f_{BA}\text{不定}\ \begin{cases}\text{先}\uparrow\text{后}\downarrow\\ \uparrow\end{cases}\qquad\qquad f_{\text{地}}=F\uparrow \]
+\unclear{静摩擦力}永远\unclear{要方}向讨论 % CHECK: 此句在 f_地=F↑ 上方，前半句笔迹潦草（静?止?摩擦…力），整句大意“静摩擦力方向永远要讨论”
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-05 ch=02 sec=动态平衡·绳与杆 kind=problem alt=none cont=none y=0.50-0.62
+\begin{problem}
+%FIG p241_e 0.08 0.50 0.23 0.62
+\notefig[0.25]{figures/p241_e.png}
+\begin{solution}
+\[ 2F\cos\theta=mg\qquad F_1=F_2=mg\quad\text{又绳力不变}\therefore\text{杆力}\uparrow \] % CHECK: “∴”原稿像“心”
+\[ A\text{向下}\quad\theta\uparrow\quad F\uparrow \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-06 ch=02 sec=摩擦力·圆柱放在斜轨上 kind=problem alt=none cont=none y=0.62-0.76
+\begin{problem}
+%FIG p241_f 0.08 0.606 0.26 0.745
+\notefig[0.3]{figures/p241_f.png}
+\begin{solution}
+\[ 2\mu mg\cos\theta=mg\sin\theta\qquad \mu=2\tan\theta \] % CHECK: 按上式应得 μ=½tanθ，原稿写作“2tanθ”
+\[ N_{\text{左}}=N_{\text{右}}=mg\cos\theta\qquad f_{\text{左}}=f_{\text{右}}=\ \tfrac12 mg\sin\theta \] % 等号与 1/2 之间原稿有一块被涂白/遮盖的空白区（可能盖住了字）
+\[ \theta\uparrow\quad N\downarrow\quad f\uparrow \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-07 ch=02 sec=动态平衡·结点与绳OA kind=problem alt=none cont=none y=0.76-0.88
+\begin{problem}
+%FIG p241_g 0.06 0.765 0.265 0.885
+\notefig[0.25]{figures/p241_g.png}
+$O$从$A$到$B$ 求$F_{OA}$ % CHECK: 首字为“O”（也可能是①）
+\begin{solution}
+$OA$在$\angle BOC$\unclear{平}分线上\qquad $F_{OA}=2F\cos\theta$\qquad $\theta\uparrow$\quad $F_{OA}\downarrow$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-08 ch=02 sec=共点力平衡·双绳与质量比 kind=problem alt=none cont=none y=0.88-1.00
+\begin{problem}
+%FIG p241_h 0.05 0.885 0.205 0.995
+\notefig[0.25]{figures/p241_h.png}
+\begin{solution}
+\begin{align*}
+T\sin\alpha&=m_Ag\\
+T\sin\beta&=m_Bg
+\end{align*}
+\[ \frac{m_A}{m_B}=\frac{\sin\alpha}{\sin\beta} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 241
