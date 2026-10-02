@@ -1,0 +1,78 @@
+%%%PAGE 207 rot=0 legibility=good summary=水平转盘上两物体绳连接（单边型/双边型）的分段临界分析与质心判断；滑轮关联速度；两条生物笔记
+%%%BLOCK id=207-01 ch=04 sec=水平圆周·转盘连接体临界 kind=method alt=02 cont=none y=0.04-0.26
+\textbf{单边型\unclear{水}平圆周}
+%FIG p207_a 0.09 0.085 0.285 0.21
+\notefig[0.28]{figures/p207_a.png}
+$\omega$从0开始$\uparrow$\quad 代入 $f_{\max}=\mu mg$
+\begin{itemize}
+\item $\omega\in\left[0,\sqrt{\dfrac{\mu g}{2r}}\right)$\quad 都静止\quad $T=0$\quad $f\uparrow$
+\item $\omega\in\left(\sqrt{\dfrac{\mu g}{2r}},\sqrt{\dfrac{2\mu g}{3r}}\right)$\quad $f_A$ $T_A$指向圆心，$T_B$\unclear{背}离圆心\quad $f_B$向圆心
+\item $\omega\in\left(\sqrt{\dfrac{2\mu g}{3r}},+\infty\right)$\quad $A$ $B$向外滑。（离心运动）
+\end{itemize}
+\textbf{红笔批注（右侧）：}
+\begin{itemize}
+\item \red{外侧先打滑。}
+\item \red{外侧打滑后，绳为\unclear{外}侧提供拉力与$f$合力充当向心力，对内侧\unclear{……}} % 原稿“绳为?侧”处字被涂改，“对内侧”后有涂抹的字迹
+\item \red{$f-T=m\omega^2r_{\text{内}}$}
+\item \red{$\omega\uparrow$ $T\uparrow$ $f\uparrow$到$f_{\max}$后，质心打滑}
+\end{itemize}
+%%%END
+%%%BLOCK id=207-02 ch=04 sec=水平圆周·转盘连接体临界 kind=method alt=02 cont=none y=0.26-0.49
+\textbf{双边型}
+%FIG p207_b 0.09 0.285 0.285 0.445
+\notefig[0.28]{figures/p207_b.png}
+\begin{itemize}
+\item $\omega\in\left[0,\sqrt{\dfrac{\mu g}{2r}}\right]$\quad $f_A$、$f_B$向里\quad $T=0$
+\item $\omega\in\left(\sqrt{\dfrac{\mu g}{2r}},\sqrt{\dfrac{\mu g}{r}}\right]$\quad $f_A$、$f_B$向里 有$T$\quad $T$向里
+\item $\omega\in\left(\sqrt{\dfrac{\mu g}{r}},\sqrt{\dfrac{2\mu g}{r}}\right]$\quad $f_B$向外，$f_A$向里
+\item $\omega\in\left(\sqrt{\dfrac{2\mu g}{r}},+\infty\right)$\quad 质心做离心运动 向左。
+\end{itemize}
+\textbf{红笔批注（右侧）：}
+\begin{itemize}
+\item \red{外侧先打滑}
+\item \red{\unclear{于是}外侧打滑后}
+\item \red{绳为外侧提供拉力}
+\item \red{与$f$的合力充当向心力}
+\item \red{随$\omega\uparrow$ $T\uparrow$}
+\item \red{$f_{\text{内}}\downarrow$到0后反向}
+\item \red{增大到$f_{\max}$后}
+\item \red{（质心）整体打滑。}
+\end{itemize}
+%%%END
+%%%BLOCK id=207-03 ch=04 sec=水平圆周·转盘连接体临界 kind=method alt=none cont=none y=0.43-0.57
+\begin{itemize}
+\item $m_Ar_A>m_Br_B$\quad 质心在$A$侧\quad 向$A$侧离心运动
+\item $m_Ar_A=m_Br_B$\quad 质心在$O$ 不会打滑，\unclear{张力}$T$一直$\uparrow$直到绳拉断
+\item $m_Ar_A<m_Br_B$\quad 质心在$B$侧\quad 向$B$侧离心运动
+\end{itemize}
+%FIG p207_c 0.49 0.435 0.69 0.56
+\notefig[0.3]{figures/p207_c.png}
+\[
+\mu\,2mg=2m\omega^2\,\frac{r}{2}
+\qquad
+\omega=\sqrt{\frac{\mu g}{r}}
+\]
+%%%END
+%%%BLOCK id=207-04 ch=04 sec=关联速度·滑轮 kind=method alt=none cont=none y=0.54-0.74
+\begin{minipage}[t]{0.40\linewidth}
+%FIG p207_d 0.09 0.545 0.205 0.685
+\notefig[0.95]{figures/p207_d.png}
+$V_B=\frac12V_A$
+\end{minipage}\hfill
+\begin{minipage}[t]{0.55\linewidth}
+%FIG p207_e 0.28 0.545 0.49 0.685
+\notefig[0.95]{figures/p207_e.png}
+$V_B=\frac12V_A\cos\alpha$
+\end{minipage}
+
+\red{竖直速度为2倍关系}\quad \fbox{$V_A\cos\alpha=2V_B$}
+%%%END
+%%%BLOCK id=207-05 ch=99 sec=生物·果蝇性染色体检测 kind=misc alt=none cont=none y=0.76-0.99
+\textbf{检测雄果蝇性染色体组成：镜检}
+
+（下方粘贴的印刷纸条，生物题答案）(3)取雄果蝇造血干细胞（或其他能观察细胞分裂的细胞）做成装片，在显微镜下观察细胞有丝分裂中期的（Y/性）染色体数目\ （2分，合理即可）若有丝分裂中期染色体数目为8条（Y染色体数目为1条/性染色体数目为2条），则可育雄果蝇的性染色体组成为XY；若有丝分裂中期染色体数目为9条（Y染色体数目为2条/性染色体数目为3条），则可育雄果蝇的性染色体组成为XYY\ （4分，合理即可）
+%%%END
+%%%BLOCK id=207-06 ch=99 sec=生物·微生物培养避光 kind=note alt=none cont=none y=0.85-0.91
+微生物培养时避光\unclear{培养}目的：排除光降解对实验结果的影响
+%%%END
+%%%PAGEEND 207

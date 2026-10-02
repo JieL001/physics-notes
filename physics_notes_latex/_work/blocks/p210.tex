@@ -1,0 +1,86 @@
+%%%PAGE 210 rot=0 legibility=poor summary=电学实验·测电源电动势和内阻：伏安法（内接/外接）的误差分析与U-I图、安阻法、伏阻法及注意事项（淡铅笔，照片偏模糊）
+%%%BLOCK id=210-01 ch=10 sec=实验·测电源电动势和内阻 kind=method alt=none exp=1 cont=none y=0.03-0.31
+% 页眉处“电学实验”写在印刷的 Date. 上
+\textbf{电学实验}
+
+\textbf{测电源电动势、内阻}\qquad $E=U+Ir$
+
+伏安法·常规\qquad 等效法\ 消除误差。
+
+\begin{minipage}[t]{0.50\linewidth}
+%FIG p210_a 0.04 0.14 0.34 0.26 soft
+\notefig[0.95]{figures/p210_a.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.46\linewidth}
+%FIG p210_b 0.37 0.165 0.62 0.245 soft
+\notefig[0.95]{figures/p210_b.png}
+\end{minipage}
+
+$E_{\text{测}}=E$\qquad 误差大 \struck{大内大}
+
+$r_{\text{测}}=r+R_A$
+
+（红圈）分压 内接 高$r$ $E$等（同安阻法）
+%%%END
+%%%BLOCK id=210-02 ch=10 sec=实验·测电源电动势和内阻 kind=method alt=none exp=1 cont=none y=0.27-0.52
+% 上图滑动变阻器处有一条长箭头指向下图的滑动变阻器，箭头旁写“尽能用限流法”等字
+尽能用限流法 % CHECK: 疑为“尽可能用限流法”（漏写“可”）
+\quad $R_{\text{滑}}=r_{\text{待测}}$的$2\sim5$倍
+
+\begin{minipage}[t]{0.50\linewidth}
+%FIG p210_c 0.07 0.33 0.37 0.465 soft
+\notefig[0.95]{figures/p210_c.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.46\linewidth}
+%FIG p210_d 0.36 0.345 0.60 0.445 soft
+\notefig[0.95]{figures/p210_d.png}
+\end{minipage}
+
+等效法，消除误差
+
+$E_{\text{测}}=\dfrac{R_VE}{R_V+r}$
+
+$r_{\text{测}}=\dfrac{rR_V}{r+R_V}$\qquad 误差小，小外小
+
+（红圈）分流外接小$r$小$E$\ 同伏阻法。
+%%%END
+%%%BLOCK id=210-03 ch=10 sec=实验·测电源电动势和内阻 kind=note alt=none exp=1 cont=none y=0.48-0.60
+注意起点：$U$-$I$图可以没有$(0,0)$点，不从$(0,0)$点开始画
+
+用旧电池$r$大一些，$E$不变，若$r$太小，那串电阻，用等效电源
+
+若已知$R_A$，用内接法，无误差（系统）\qquad $r_{\text{真}}=r_{\text{测}}-R_A$
+
+若已知$R_V$，用外接法，无误差（系统）
+%%%END
+%%%BLOCK id=210-04 ch=10 sec=实验·测电源电动势和内阻 kind=method alt=none exp=1 cont=none y=0.62-0.82
+\textbf{安阻法（同内接）}
+%FIG p210_e 0.04 0.68 0.21 0.77 soft
+\notefig[0.3]{figures/p210_e.png}
+\[
+E=I(R+R_A)+Ir
+\]
+\[
+E_{\text{测}}=E_{\text{真}}
+\]
+\[
+r_{\text{测}}=\frac{E}{I}-r>r_{\text{真}}=\frac{E}{I}-(R_A+r)
+\]
+% CHECK: 末行中的 r 疑为 R（可变电阻）；第一个分数分子处有污迹
+%%%END
+%%%BLOCK id=210-05 ch=10 sec=实验·测电源电动势和内阻 kind=method alt=none exp=1 cont=none y=0.64-0.88
+\textbf{伏阻法（同外接）}
+%FIG p210_f 0.42 0.685 0.60 0.775 soft
+\notefig[0.3]{figures/p210_f.png}
+\[
+E=U+\left(\frac{U}{R}+\frac{U}{R_V}\right)r
+\]
+$E_{\text{测}}<E_{\text{真}}$\qquad $r_{\text{测}}<r_{\text{真}}$
+\[
+\frac{1}{U}=\frac{1}{E}+\frac{r}{ER}+\frac{r}{ER_V}
+\]
+%%%END
+%%%BLOCK id=210-06 ch=10 sec=实验·测电源电动势和内阻 kind=note alt=none exp=1 cont=none y=0.87-0.92
+若考近似 把$R_A$、$R_V$项去掉即可
+%%%END
+%%%PAGEEND 210

@@ -1,0 +1,76 @@
+%%%PAGE 208 rot=0 legibility=good summary=粘贴的第25题（正方形区域磁场、粒子源O，求OP射出长度与磁场边界方程）及红笔解答；斜面上平抛/等时间间隔投弹的落点关系图
+%%%BLOCK id=208-01 ch=11 sec=磁场·有界磁场中粒子偏转与磁场边界 kind=problem alt=04 cont=none y=0.03-0.50
+% 题干为粘贴的印刷纸条；页面左缘有一个对勾标记；纸条背面透出的反字已忽略
+\begin{problem}[25.（19分）]
+如图，在$xOy$平面坐标系的第一象限内有一边长为$a$的正方形区域$OPMN$，该区域内存在垂直$xOy$平面向外的匀强磁场，在$O$点存在一粒子源，可向平面内发射质量为$m$，电荷量为$q(q>0)$的带电粒子，所有粒子的初速度大小均为$v$，粒子的发射速度的方向介于$y$轴和直线$y=\dfrac34x$之间，带电粒子经磁场偏转后均从$OP$边射出磁场，已知沿$y$轴正方向射出的粒子恰好通过$P$点。不计带电粒子的重力和粒子间的相互作用。
+
+(1)求$OP$边界上有粒子射出的部分的长度$l$；
+
+(2)若改变$OPMN$区域内的磁场分布范围，让磁场仅分布在$y$轴与满足某函数方程的边界之间，其他条件均不变，此时从粒子源$O$射出的粒子最终均从$MP$边界离开$OPMN$区域且通过$MP$边界时的速度方向相同，并且沿$y$轴正方向射出的粒子恰好通过$M$点，求
+
+(i)粒子射出磁场时的方向；
+
+(ii)磁场的边界方程。
+
+%FIG p208_a 0.585 0.27 0.94 0.475
+\notefig[0.42]{figures/p208_a.png}
+\begin{solution}
+(1)\ $r=\dfrac{a}{2}$\quad \unclear{由两个临界}\quad $l=\dfrac{\unclear{2}}{5}a$
+
+(2)\ \red{$\theta=2\alpha$}
+
+\red{$\sin\alpha=\dfrac{\sqrt5}{5}$}
+
+\red{$\sin\theta=2\sin\alpha\cos\alpha=\dfrac45$}
+
+\red{粒子在磁场中偏转角度为$53^\circ$，出磁场后速度方向与直线$y=\dfrac34x$平行}
+
+(3)
+{\color{red!75!black}
+\[
+\begin{cases}
+r\cos\beta=x+r\cos\theta\\
+r\sin\beta+y=r\sin\theta
+\end{cases}
+\]
+\[
+\left(\frac{x+r\cos\theta}{r}\right)^{2}+\left(\frac{r\sin\theta-y}{r}\right)^{2}=1\ \text{得}
+\]
+\[
+\left(\frac{2x}{a}+\frac35\right)^{2}+\left(\frac45-\frac{2y}{a}\right)^{2}=1
+\]
+% 末行行尾的“1”被图旁线条遮住一部分，按上式补
+}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=208-02 ch=04 sec=平抛·斜面上的平抛与等时间间隔投弹 kind=diagram alt=none cont=none y=0.58-0.72
+\begin{minipage}[t]{0.47\linewidth}
+%FIG p208_b 0.04 0.585 0.35 0.72
+\notefig[0.95]{figures/p208_b.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.50\linewidth}
+等时间间隔投弹\quad $t_{ab}=2t_{bc}$
+%FIG p208_c 0.40 0.607 0.73 0.725
+\notefig[0.95]{figures/p208_c.png}
+\end{minipage}
+
+图中文字：左图“更早到”；右图“第3个在$bc$之间”，底线下方“第一个 第2个”。
+%%%END
+%%%BLOCK id=208-03 ch=04 sec=平抛·斜面上的平抛与等时间间隔投弹 kind=method alt=none cont=none y=0.73-0.95
+\begin{minipage}[t]{0.47\linewidth}
+%FIG p208_d 0.04 0.745 0.32 0.86
+\notefig[0.95]{figures/p208_d.png}
+由 $x_1=x_2$ $\therefore\Delta t_1=\Delta t_2$
+\end{minipage}\hfill
+\begin{minipage}[t]{0.50\linewidth}
+%FIG p208_e 0.45 0.745 0.75 0.86
+\notefig[0.95]{figures/p208_e.png}
+$x_2=2x_1$
+\end{minipage}
+
+右图中文字：飞机；以$V_0$射出；以$2V_0$射出。
+
+\unclear{定}同一地面\quad 水平\quad $x\propto v$
+%%%END
+%%%PAGEEND 208

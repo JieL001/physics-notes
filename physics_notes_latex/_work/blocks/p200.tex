@@ -1,0 +1,45 @@
+%%%PAGE 200 rot=0 legibility=good summary=页首粘贴一条生物题纸条；导体棒（含电源）最大速度、电量，棒飞出后受空气阻力的平均速度（动量定理求和）
+%%%BLOCK id=200-01 ch=99 sec=生物·微生物高通量测序 kind=misc alt=none cont=none y=0.00-0.09
+% 页首粘贴的紫色纸条（生物题），上缘被截断；灰色印刷字与黑色手写字叠在一起
+\textbf{（页首粘贴的紫色纸条，生物题；印刷字与手写字叠在一起，上缘被截断）}
+
+手写（纸条最上一行）：测序法\unclear{与对核酸}序列，可快速区分新微生物种类
+
+印刷：“活性污泥”中的微生物种类进行研究时，常采取高通量 DNA 测序手段，\unclear{……}分离培养手段\unclear{……}你推测原因可能是
+
+手写：④ 在短时间内进行大量DNA片断测序，① 未知的微生物种类太多，不知道该如何\unclear{培养}；② 某些微生物以\unclear{较多}存在，分离培养上操作\unclear{困难}
+%%%END
+%%%BLOCK id=200-02 ch=12 sec=电磁感应·含电源导体棒（最大速度）与飞出后阻力 kind=problem alt=04,06,07 cont=none y=0.09-0.80
+\begin{problem}[圈注“求和”]
+%FIG p200_a 0.03 0.085 0.66 0.27
+\notefig[0.6]{figures/p200_a.png}
+先闭合$S$使棒获得最大速度，加到$V_1$时运动$x_0$。求通过电源的电量$q$
+\begin{solution}
+\[
+F_{\text{安}}=\frac{B(E-BLV_m)}{2r}=f
+\]
+% CHECK: 分子似缺一个 L（F=BIL）；Vm 表达式、1/B 与 E^2/(8fr) 之间的推导是否自洽请核对
+\[
+V_m=-\frac{fr}{B^2L}+\frac{E}{BL}\qquad\text{二次函数}\qquad \frac1B=\frac{E}{2fr}\ \text{最大}\qquad V_m=\frac{E^2}{8fr}
+\]
+\[
+Eq=\frac12mV_1^{\,2}+fx_0+2Q\qquad\therefore\ q=\frac{mV_1^{2}}{2E}+\frac{fx_0+2Q}{E}
+\]
+\end{solution}
+\end{problem}
+\begin{problem}
+调节导体棒初始放置位置，使之到$PQ$时恰达最大速度，最后以$V$的速度竖直向下落到地面上。求导体棒自$NQ$到刚落地这段过程的平均速度
+\begin{solution}
+\medskip
+\noindent\hspace{2cm}\struck{$-Kx=mV$}
+\begin{align*}
+&-Kx=m(0-V_m\cos\theta)\\
+&-ky+mgt=m(v-V_m\sin\theta)\\
+&\therefore\ t=\frac{\dfrac{E^2\sin\theta}{8fr}+V}{g}\\
+&\bar V=\frac{x}{t}=\frac{mg}{k}\cdot\frac{E^2\cos\theta}{E^2\sin\theta+8fr}
+\end{align*}
+% CHECK: 末行分母中没有出现上一行 t 里的 +V 项，是否漏写请核对
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 200
