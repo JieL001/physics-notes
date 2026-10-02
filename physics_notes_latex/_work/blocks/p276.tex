@@ -1,0 +1,52 @@
+%%%PAGE 276 rot=0 legibility=good summary=贴题(圆弧轨道+小盒C+物块D+木板E+细杆F与圆环的多过程综合题，题干左右两端被页边截断)及完整手写解答(含法二：摩擦生热)
+%%%BLOCK id=276-01 ch=03 sec=连接体·多过程综合 kind=problem alt=04,06,07 cont=none y=0.00-1.00
+% 页首为贴上的印刷体题目：题干每行的左端/右端被页边截断，截断处用 \unclear 补出上下文所推；题干上有手绘方框/圆圈/下划线(用 \fbox、\underline 近似)，另有铅笔斜杠3处(“木板E与定滑轮”前、“现将一质量”前、“不计空气阻力”前)
+\begin{problem}
+\unclear{…一}圆弧轨道，其末端B水平；在轨道末端等高处有\unclear{一}质量为$m$的“$\rfloor$”形小盒C（可视为质点），小盒C与质量为$3m$、\underline{大小可忽略的物块D通过光滑定滑}\unclear{轮}用轻绳相连，左侧滑轮与小盒C之间\fbox{的绳长为$2L$}，物块D压在质量为\underline{$m$}的木板E\underline{左端}，木板E上表面光\unclear{滑}、下表面与水平桌面间动摩擦因数\fbox{$\mu=0.5$}（最大静摩擦力等于滑动摩擦力），木板E右端到桌子右边\unclear{缘}固定挡板（厚度不计）\fbox{的距离为$L$；}\underline{质量为$m$且粗细均匀的细杆F}通过桌子右边缘的\underline{光滑定滑轮用轻绳}\unclear{与}木板E相连，木板E与定滑轮间轻绳水平，细杆F下端到地面\fbox{的距离也为$L$}；质量为$\frac m2$的圆环（可视为质点）套在细杆F上端，环与杆之间滑动摩擦力和最大静摩擦力相等，\fbox{大小为$\frac76 mg$。}开始时\underline{所有装置均静}\unclear{止}，现将一质量为$m$的小球（可视为质点）从圆弧轨道顶端A处由静止释放，小球进入小盒C时\underline{刚好能被}\unclear{牢牢粘}住（作用时间很短可不计），\underline{然后带动后面的装置运动}，\underline{木板E与挡板相撞}、细杆F与地面\underline{相撞均以原}\unclear{速}率反弹，最终圆环刚好到达细杆的底部。不计空气阻力，重力加速度为$g$，求：
+
+(1) 小球与小盒C相撞后瞬间，与小盒C相连的绳子上的拉力大小；
+
+(2) 细杆F的长度。
+
+\red{\unclear{h}} % 题干下方空白处另有一个红笔小记号(形如“-h”)
+
+%FIG p276_a 0.0 0.31 0.43 0.465
+\notefig[0.45]{figures/p276_a.png}
+\begin{solution}
+(1) $A\to B$\quad $mg\,2L=\dfrac12 mv_0^2$\\
+\hspace*{3em}$mv_0=(m+m)v$\\
+\hspace*{3em}$T-2mg=2m\dfrac{v^2}{2L}$\\
+\hspace*{3em}$T=3mg$
+
+(2) $\mu_2=\dfrac76>\mu_1=\dfrac12$ 故共加速\\
+\hspace*{3em}假设杆环相对静止\\
+\hspace*{1em}\struck{对整体由牛二}\ $\left(m+\dfrac m2\right)g-\mu mg=\left(m+m+\dfrac m2\right)a$\\
+\hspace*{6em}$a=\dfrac25 g$\\
+\hspace*{3em}对环 $\dfrac m2 g-f'=\dfrac m2\,\text{\unclear{$a$}}$ % CHECK: 等号右端手写形似 g，按上下文应为 a
+\ 设环杆间 $f'$\\
+\hspace*{6em}$f'=\dfrac{3}{10}mg$\\
+\hspace*{6em}$f'<\dfrac76 mg$ 故环杆未相对滑动 假设成立\\
+设木板第一次碰挡板时速度 $v_1$\quad $v_1=\sqrt{2aL}$\\
+木\unclear{板}撞挡板后，环向下匀减速\\
+\hspace*{3em}对环 $\dfrac76 mg-\dfrac m2 g=\dfrac m2 a_1$\quad $a_1=\dfrac43 g$\\
+\hspace*{1em}对E和F整体 $\dfrac76 mg+mg+\mu mg=(m+m)a_2$\quad $a_2=\dfrac43 g$
+
+$a_1=a_2$ $\therefore$ E、F、圆环同时减速到0\\
+环与F位移大小相等方向相反。\\
+设E碰第一次后向左减速到0位移为$x_1$。\\
+\hspace*{3em}$v_1^2=2a_1x_1$,\\
+\hspace*{1em}又 $v_1^2=2aL$ 故 $x_1=\dfrac{3}{10}L$\\
+此过程环\unclear{与}F相对位移为$2x_1=\Delta x_1$\\
+\hspace*{1em}过程重复\quad $\Delta x_n=2\left(\dfrac{3}{10}\right)^nL$\\
+\hspace*{3em}$S=2\left[\dfrac{\frac{3}{10}L}{1-\frac{3}{10}}\right]=\dfrac67 L$
+
+法二：\quad $\Delta E=Q_1+Q_2$\ $\therefore S=\dfrac67 L$\\
+\hspace*{1em}F与环摩擦生热 $Q_1=\dfrac76 mgS$\\
+\hspace*{1em}E与桌面 $Q_2=\mu mgL+\mu mgS$\\
+\hspace*{6em}$=\mu mg(L+S)$\\
+\struck{V\textsubscript{1}\textsuperscript{2}=}\ 整体减少的机械能\\
+\hspace*{3em}$\Delta E=mgL+\dfrac m2 g(L+S)$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 276

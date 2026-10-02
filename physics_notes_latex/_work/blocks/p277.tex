@@ -1,0 +1,78 @@
+%%%PAGE 277 rot=0 legibility=good summary=倾斜传送带问题(加速度、工件间距、传送带对工件做功、满载增加的功率)；恒定风力下小球a到b的速度/加速度/风力；突然加电场(弹簧连接体、绳拉力、电势能与弹性势能、机械能)
+%%%BLOCK id=277-01 ch=06 sec=传送带·功能关系 kind=problem alt=03 cont=none y=0.01-0.41
+% 图1标注：m=1kg, V_0=2m/s, \mu=\sqrt3/2, L=16m, 30^\circ
+%FIG p277_a 0.09 0.008 0.33 0.112
+\notefig[0.3]{figures/p277_a.png}
+
+% 图2：传送带示意(斜线)，标注“第1个”“第n个”(疑为第11个)及两处0.8m
+%FIG p277_b 0.46 0.02 0.97 0.205
+\notefig[0.6]{figures/p277_b.png}
+
+加速上升\quad $a_1=2.5\unit{m/s^2}$
+
+$t=\dfrac{V_0}{a_1}=0.8\unit{s}$ 后匀速\quad $S_1$\quad $0.8\unit{m}$
+
+下一个也加速$0.8\unit{s}$\quad $S_2$
+
+$S_1-S_2=0$
+
+上个匀速$0.8\unit{s}$ 故两工件相距 $S=2\times0.8=1.6\unit{m}$
+
+$W_{f\text{对工件}}=\dfrac12 mV^2+mgh=82\unit{J}$
+
+传送带满载工件比空载时增加的功率
+
+10个匀速\quad 1个加速
+
+$P=10mg\sin\theta\,V+\mu mg\cos\theta\,V=115\unit{W}$
+%%%END
+%%%BLOCK id=277-02 ch=04 sec=类斜抛·恒力 kind=problem alt=03 cont=none y=0.42-0.79
+% 图：直线ab，a处速度 V_a=3V(水平向右)，b处速度 V_b=4V；图中另标 \alpha、53^\circ、\theta、\beta、37^\circ，以及竖直向下的“设F风”
+%FIG p277_c 0.055 0.425 0.28 0.61
+\notefig[0.3]{figures/p277_c.png}
+
+\[
+V_a\sin(\alpha+\theta)=V_b\sin(\theta-\beta)
+\]
+$\therefore\theta=74^\circ$
+
+从$a\to b$ 平均 $\bar V=\dfrac{3V\cos53^\circ+4V\cos37^\circ}{2}=2.5V$
+
+$t=\dfrac{d}{V}=\dfrac{2d}{5V}$ % CHECK: 手写第一个分母无上横线，按上下文应为平均速度 \bar V
+
+$a\to b$\quad $a=\dfrac{V_b\cos37^\circ-(-V_a\cos53^\circ)}{t}=\dfrac{25V^2}{2d}$ % CHECK: 分子“25”手写偏草，按推算为 25
+
+$a\to b$ 风力 $F=ma=\dfrac{25mV^2}{2d}$
+
+小球沿风力方向速度最小时 $V$最小 % 原稿“球”字写成“王求”
+
+$V_{\min}=V_a\sin53^\circ=2.4V$
+%%%END
+%%%BLOCK id=277-03 ch=09 sec=电场中功能关系·弹簧连接体 kind=problem alt=03,06 cont=none y=0.77-1.00
+\textbf{突然加电场}
+
+% 图：弹簧(左端固定)连物块A(质量m，\mu=0)，轻绳绕滑轮连斜面(30^\circ)上物块B(2m)，电场E沿斜面向下
+%FIG p277_d 0.055 0.795 0.43 0.88
+\notefig[0.45]{figures/p277_d.png}
+
+未加$E$时\\
+\hspace*{1em}对B $T_1=2mg\sin\theta$\\
+\hspace*{1em}对A $T_1=KX_1$\\
+\hspace*{2em}$KX_1=2mg\sin\theta$
+
+加$E$时 $X_1$不变\\
+\hspace*{1em}对B $2mg\sin\theta+qE-T_2=2ma$\\
+\hspace*{1em}对A $T_2-KX_1=ma$\\
+\hspace*{2em}$\therefore T_2=\dfrac{5}{3}mg$
+
+$q$\quad $E=\dfrac{2mg}{q}$
+
+$V_{B\max}$时 $kX_2=3mg$\quad $X_2=\dfrac{3mg}{k}$
+
+电势能减少量 $\Delta E_p=-qE(X_2-X_1)=-\dfrac{4m^2g^2}{k}$
+
+$\Delta E_p=\dfrac12 k(X_2^2-X_1^2)=\dfrac{4m^2g^2}{k}$
+
+故AB机械能总和不变（过程不守恒） % “AB”为写在“故”与“机械能”之间上方的小字
+%%%END
+%%%PAGEEND 277

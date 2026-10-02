@@ -102,3 +102,15 @@ DONE pages=263-267, blocks=24 (263:5, 264:3, 265:6, 266:4, 267:6), figs=35, uncl
 1. p264-01 has two "5mg" with an overwritten digit (could be 6mg). p264-03 has tan53° that is handwritten like 57°.
 2. p263-02 has an inserted small "向外" whose position is unclear. In p263-03 (rod model) the F拉 arrow is drawn ↓.
 3. p267-05 has a sign problem in "−V₁T=…" and one unreadable glyph after "匀加速". p266-03 has a final N formula missing a square.
+
+## p268–272
+DONE pages=268-272, blocks=25, figs=18, unclear≈20，texcheck_all.py 已通过（ALL OK）。5 页都不是重复拍摄。
+1. p271：271-01 速滑题的铅笔演算（780/100/30 等数字）、271-02 的手写答案（BD）以及 16/9mg sinθ、2m/18 的批注。
+2. p269：左上页边的铅笔涂写、qv₀Bt=mv_p 的下标，以及被划去的 t₀=m/qB。
+3. p270：“极限法”分母原稿是 M+R（物理上应为 M+m），已加 CHECK；“以M为参 N做圆周运动”章归属不确定，暂放 ch=05 并注 alt=04。
+
+## p273–277
+DONE pages=273,274,275,276,277, blocks=21 (8/6/3/1/3), figs=17, unclear=26, ALL OK (crop and texcheck both passed).
+1. p276 是贴上去的印刷体长题，题干左右两端被页边截断。截断处我用 `\unclear` 补了上下文推断的字，另有手绘方框、下划线和一个红笔小记号；解答中"对环 m/2·g−f'=m/2·a"右端手写形似 g。
+2. p274 页首的贴题（波的起振方向）被页顶截断，"沿y轴正向"的"正"字被下划线压住；"系统中一对…"那段的"相互作用力做功无关"疑缺字，"∵/∴"符号和"路程"小字也不确定。
+3. p273 的"非质点系"末字、"全程时间(哪)还是阶段时间"，以及 p275 的"F安"下标，都是涂写重叠处，已标 `\unclear`。

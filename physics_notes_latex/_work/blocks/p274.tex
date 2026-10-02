@@ -1,0 +1,95 @@
+%%%PAGE 274 rot=0 legibility=fair summary=贴题(波的起振方向与传播时间)及批注；滑动摩擦力总功与摩擦生热、电磁感应克服安培力做功；斜面+转动滑轮能量题；分压选近阻；环与半圆环(相似三角形、恒力F做功)；A碰B+弹簧完全非弹性碰撞的E-x图像题
+%%%BLOCK id=274-01 ch=08 sec=波动图像·起振方向 kind=problem alt=none cont=none y=0.00-0.29
+% 页首为贴上的印刷体题目(页顶/页右被截断，仅见部分题干)，图上与图旁有手写批注
+\begin{problem}
+\unclear{…}简谐运动，$t_1=3\unit{s}$ 时，波刚传到 $x=6\unit{m}$ 处，波形如图中实\unclear{线所}示，经过时间 $t_2$ 形成的部分波形如图虚线所示，则波源的起振方向为\underline{\ 沿$y$轴\unclear{正}向\ }\unclear{…}$t_2$ 的最短时间为\underline{\ 5.5\ }s。 % 两处下划线内为手写填空
+
+%FIG p274_a 0.37 0.055 0.73 0.212
+\notefig[0.5]{figures/p274_a.png}
+\begin{solution}
+$\lambda=4\unit{m}$
+
+$v=\dfrac{6}{3}=2\unit{m/s}$
+
+到这才是起振方向。 % 手写箭头由此句指向图中 $x$ 轴右端的波前处
+
+$t_2=\dfrac{11}{2}=5.5\unit{s}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=274-02 ch=06 sec=功能关系·摩擦生热 kind=knowledge alt=12 cont=none y=0.22-0.39
+系统中一对相互作用的滑动摩擦力对系统做总功必为负值
+\[
+\begin{aligned}
+W_1+W_2&=\Delta E_{\text{机}} % 右侧被页边截断，“机”后或有字
+\\
+&=Q\\
+&=f_{\text{滑}}x_{\text{相对}}\ \text{\unclear{路程}}
+\end{aligned}
+\]
+
+相互作用力做功无关 % CHECK: 原文如此，疑缺字(如“与…无关”)
+
+电磁感应中克服安培力做功对系统做总功必为负值
+\[
+\text{电能}=Q=\Delta E_K
+\]
+%%%END
+%%%BLOCK id=274-03 ch=06 sec=能量守恒·转动动能 kind=problem alt=none cont=none y=0.34-0.50
+%FIG p274_b 0.13 0.345 0.32 0.435
+\notefig[0.3]{figures/p274_b.png}
+
+\[
+v^2=\frac45 gL\qquad 2mgL\sin30^\circ=\frac12\,2mv^2+E_K\ \text{转动动能}
+\]
+\[
+E_K=\frac14 m\omega^2R^2
+\]
+%%%END
+%%%BLOCK id=274-04 ch=10 sec=滑动变阻器·分压接法 kind=note exp=1 alt=none cont=none y=0.47-0.50
+分压选\unclear{近}阻，不选大阻
+%%%END
+%%%BLOCK id=274-05 ch=06 sec=功能关系·环与半圆 kind=problem alt=02 cont=none y=0.53-0.72
+%FIG p274_c 0.04 0.53 0.36 0.715
+\notefig[0.4]{figures/p274_c.png}
+
+缓慢拉动A环，B环\textsuperscript{相似}$\dfrac NG=\dfrac Rh$ 大小不变方向变
+
+若F为恒力，B环不会到D右边 % CHECK: “不会”二字手写偏草，与下列不等式的结论关系待核
+\[
+F\left(\sqrt{R^2+h^2}-(h-R)\right)>FR>mgR
+\]
+相切时 $\sin\angle OPB=\dfrac Rh$
+
+B到D B环机械能增量 $\Delta E=F\left(\sqrt{h^2+R^2}-h+R\right)$
+%%%END
+%%%BLOCK id=274-06 ch=07 sec=碰撞·弹簧完全非弹性 kind=problem alt=06,03 cont=none y=0.72-1.00
+% 图：A(m)、B(2m)置于弹簧(k)上，向下为x轴，“完非弹”；右图为E-x图像
+%FIG p274_d 0.04 0.72 0.275 0.90
+\notefig[0.3]{figures/p274_d.png}
+
+%FIG p274_e 0.275 0.72 0.62 0.895
+\notefig[0.4]{figures/p274_e.png}
+
+$x_1\to x_3$\quad $a$\unclear{逐}渐减到0再↑\\
+$a_{\max}$ 在 $x_1$ 处 or $x_3$ 处\\
+在 $x_1$ 处：$mg+2mg-T=3ma$\\
+\hspace*{3em}$T=m_Bg=2mg$\quad $\therefore a=\frac13 g$\\
+在 $x_3$ 处：$T'-mg-2mg=3ma'$\\
+\hspace*{3em}$T'=2mg+k\Delta x=2mg+k(x_3-x_1)$\\
+\hspace*{3em}$\therefore a=\dfrac{g}{3}\,\dfrac{x_3-x_2}{x_2-x_1}$ % CHECK: 分子的 g 写得像 9
+
+$E_k\to\frac19 E_k$\\
+$m_Av=(m_A+m_B)\frac13 v$\\
+$m_A:m_B=1:2$
+
+\unclear{$\because$} $x_1\to x_3$ 由能量守恒\\
+$\dfrac{E_{k1}}{3}+3mg(x_3-x_1)=\Delta E_p$\\
+$\Delta E_p=\dfrac{9x_3-8x_1}{3x_1}E_{k1}$
+
+$x_2$ 处 $E_k$ 最大，由平衡条件，\\
+\hspace*{1em}$T=3mg$\qquad $x_1\to x_2$ 弹力增加 $mg$\\
+\hspace*{2em}$\Delta F=k\Delta x$ \ $\therefore mg=k(x_2-x_1)$\\
+\hspace*{2em}$0\to x_1$ \ $E_{k1}=mgx_1$ \quad $\therefore k=\dfrac{E_{k1}}{x_1(x_2-x_1)}$
+%%%END
+%%%PAGEEND 274

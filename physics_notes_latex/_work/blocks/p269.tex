@@ -1,0 +1,72 @@
+%%%PAGE 269 rot=0 legibility=good summary=贴入的第13题（x<0匀强电场+x>0匀强磁场的组合场多选题，答案AC）及手写解答；另有正则动量标题、均匀带电球场强E-r图、圆锥摆等效绳长、验证平行四边形定则与太空油水分离两条小笔记
+%%%BLOCK id=269-01 ch=11 sec=组合场·电场与磁场交替 kind=problem alt=09 cont=none y=0.02-0.67
+% 贴纸印刷题；原稿上有圈画：“正”被圈出，“（不计重力）”“现只改变粒子自A点出射速度大小至v，”“粒子经过一段时间运动后可经过C点，”被划线；左侧页边另有难辨的铅笔涂写
+\begin{problem}[13（贴纸印刷题）]
+空间存在平面直角坐标系$xOy$，在$x<0$区域内有沿$x$轴正向的匀强电场，在$x>0$区域内有垂直平面向外的匀强磁场，在第二象限内有矩形OACD，$OA=\sqrt3h$，$OD=\unclear{2h}$，\unclear{一}个质量为$m$，电量为$q$的带正电粒子（\underline{不计重力}）从A点沿$y$轴正方向以某速度射入第二象限，经$t_0$时间后由D点进入磁场，又经一段时间射出磁场后又回到A点。\underline{现只改变粒子自A点出射速度大小至$v$，}\underline{粒子经过一段时间运动后可经过C点，}则（　　）
+
+手写答案：AC
+
+\begin{itemize}
+\item[A.] 匀强电场的场强大小为$\dfrac{2\sqrt3\,mh}{qt_0^2}$ % 原稿：分式上有一道斜划线
+\item[B.] 匀强磁场的磁感应强度大小为$\dfrac{\sqrt3\,m}{3qt_0}$ % 原稿：分式上有一道斜划线
+\item[C.] 能使粒子以最短时间从A点运动至C点的初速度$v_0'=\dfrac{3h}{t_0}$ % 原稿：$\frac{3h}{t_0}$被大圈圈住
+\end{itemize}
+
+手写批注（选项旁/图旁）：
+\begin{itemize}
+\item \struck{$t_0=\dfrac{m}{qB}$} % 原稿：被圈出并被多道斜线划去
+\item $qv_0Bt=mv_{\unclear{p}}$ % 原稿为“qV₀Bt=mV_ρ”样，V上有斜线，下标难辨
+\item $\dfrac{2\sqrt3}{2}$ % 原稿：被斜线划去，位于选项C右侧
+\item 页边左上铅笔涂写：\unclear{…}；\unclear{$\dfrac{\sqrt3}{2}$}
+\end{itemize}
+
+%FIG p269_a 0.62 0.158 0.93 0.352
+\notefig[0.3]{figures/p269_a.png}
+
+\begin{solution}
+\[
+\sqrt3h=\frac12at_0^2,\qquad a=\frac{qE}{m}
+\]
+\[
+E=\frac{2\sqrt3\,mh}{qt_0^2}
+\]
+\[
+R=\frac{2h}{\sin60^\circ}=\frac{mV}{qB}\qquad V=\frac{V_0}{\cos60^\circ}=\frac{4h}{t_0}\qquad\therefore B=\frac{\sqrt3\,m}{qt_0}
+\]
+\[
+V_x=\frac{2\sqrt3h}{t_0}
+\]
+\[
+\sin\theta=\frac{V_x}{V'}=\frac{2\sqrt3h}{V't_0}\qquad qV'B=\frac{mV'^2}{R}\qquad R'=\frac{mV'}{qB}\qquad R'\sin\theta=2h
+\] % CHECK: qV'B=mV'^2/R 中的R疑应为R'
+\[
+y=2R'\sin\theta=4h\quad\text{（由对称性）}\quad\therefore y_1=3h\quad y_2=-h\quad\therefore V_0'=\frac{y_1}{t_0}=\frac{3h}{t_0}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=269-02 ch=11 sec=正则动量 kind=note alt=none cont=none y=0.69-0.72
+\textbf{正则动量}
+%%%END
+%%%BLOCK id=269-03 ch=09 sec=电场强度·均匀带电球体 kind=knowledge alt=none cont=none y=0.74-0.90
+%FIG p269_b 0.015 0.755 0.42 0.895
+\notefig[0.4]{figures/p269_b.png}
+电球场强：图为$E$--$r$图像（纵轴$E$，横轴$r$）。$r$由0增大到$R$为过原点的直线上升，标注$\dfrac{4}{3}\pi\rho r$ % CHECK: 原稿“4/3 πρr”，π与纵轴重叠难辨，且疑缺系数k
+；在$r=R$处（虚线）达峰值；$r>R$为下降曲线，标注$\dfrac{kQ}{r^2}$。旁画球体示意图，标半径$R$。
+%%%END
+%%%BLOCK id=269-04 ch=04 sec=圆周运动·圆锥摆 kind=method alt=none cont=none y=0.73-0.87
+%FIG p269_c 0.64 0.725 0.86 0.87
+\notefig[0.25]{figures/p269_c.png}
+等效绳长$L$：
+\[
+\cos\alpha=\frac{g}{L\omega^2}
+\]
+其下方画有箭头$\downarrow$，再下方写$\alpha\uparrow$。图中转轴处标$\omega'$（带转向弧线），竖直虚线为转轴，斜绳与竖直方向夹角处标$\alpha$。
+%%%END
+%%%BLOCK id=269-05 ch=02 sec=力的合成·验证平行四边形定则 kind=note exp=1 alt=none cont=none y=0.90-0.93
+\unclear{验}力的平行四边形定则时\ 不在平行四边形中的是理想的
+%%%END
+%%%BLOCK id=269-06 ch=04 sec=圆周运动·离心现象 kind=note alt=05 cont=none y=0.93-0.96
+太空中圆周问\unclear{题}\quad $V$越大\ 油水越易分离
+%%%END
+%%%PAGEEND 269

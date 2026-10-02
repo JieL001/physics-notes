@@ -1,0 +1,63 @@
+%%%PAGE 268 rot=0 legibility=good summary=贴入的第14题（竖直弹簧+定滑轮+斜面上B的多选题，答案A C）及手写逐项解答
+%%%BLOCK id=268-01 ch=06 sec=弹簧模型·连接体 kind=problem alt=03 cont=none y=0.02-0.80
+% 贴纸印刷题；原稿上有圈画：“系数为k”“固定斜面平行”“均为m”“正确”被圈出，“轻绳恰好拉直而无作用力。”“不计一切摩擦。”被划线
+\begin{problem}[14（贴纸印刷题）]
+如图所示，劲度系数为$k$的竖直轻弹簧的下端固定在水平面上，上端与物块A连接，物块B与物块A之间用一绕过定滑轮O的轻绳连接，B放在固定斜面的上端（用外力控制B）。OA绳竖直，OB绳与倾角为$53^\circ$的足够长的固定斜面平行，且\underline{轻绳恰好拉直而无作用力。}A、B的质量均为$m$，A、B均视为质点，重力加速度大小为$g$，取$\sin53^\circ=0.8$，$\cos53^\circ=0.6$，\underline{不计一切摩擦。}现将B由静止释放，B沿斜面下滑，弹簧始终处在弹性限度内。下列说法正确的是（A\struck{\unclear{B}}C）% 括号内手写答案，A与C之间有被叉掉的字（疑为B）
+
+\begin{itemize}
+\item[A.] 释放B后的瞬间，轻绳的弹力大小为$\dfrac{2}{5}mg$ % 原稿：A被圈住并有斜划线，分数上也有一道斜线
+\item[B.] 当A的速度最大时，弹簧处于拉伸状态 % 原稿：“拉伸”处有斜划线；状态上方手写“压缩”，其下手写并圈出“$a=0$”
+\item[C.] A的最大速度为$\sqrt{\dfrac{8mg^2}{25k}}$ % 原稿：C被圈住，根号式也被圈住
+\item[D.] 当B处于最低点时，弹簧处于压缩状态 % 原稿：“压”字上有斜划线
+\end{itemize}
+
+手写批注（选项B旁）：\textbf{压缩}；$a=0$（圈出）。
+
+%FIG p268_a 0.725 0.176 0.95 0.30
+\notefig[0.3]{figures/p268_a.png}
+
+手写批注（图旁/图下）：$0.8mg-T=\unclear{\ldots}$ % 原稿为“0-8mg·-T=”，右侧被贴纸边缘截断；图中A上方绳旁标有$\frac{4}{5}mg$
+
+%FIG p268_b 0.52 0.225 0.96 0.36
+\notefig[0.5]{figures/p268_b.png}
+
+\[
+kx=\frac{1}{5}mg\ \uparrow
+\]
+受力箭头：$\uparrow$；$\downarrow kx$、$\downarrow mg$；
+\[
+T=mg+kx
+\]
+\struck{$\dfrac{4}{5}mg-T$} % 此式被横线划去；其下纸边另有被截断的字迹“4…m”，无法辨认\unclear{4\ldots m}
+
+\begin{solution}
+A.\ 释放前 对A：$kx_1=mg$
+
+释放后 对A、B：$kx_1-mg+mg\sin53^\circ=2ma$，\quad $a=\dfrac{2}{5}g$
+
+对A：$T_1+kx_1-mg=ma$，\quad $T_1=\dfrac{2}{5}mg$
+
+B.\ $V_{A\max}$时 $a_A=a_B=0$，\quad $T_2=mg\sin53^\circ<mg$，故弹簧压缩
+
+C.\ $V_{A\max}$时 对A由平衡条件：$T_2+kx_2=mg$，\quad $x_2=\dfrac{mg}{5k}$
+
+由动能定理
+\[
+\frac{k}{2}\left(x_1^2-x_2^2\right)+mg(x_1-x_2)\sin53^\circ-mg(x_1-x_2)=\frac{1}{2}\,2mV_m^2-0
+\]
+\[
+V_m=\sqrt{\frac{8mg^2}{25k}}
+\]
+
+D.\ 设当B处于最低点时压缩，$x_3$
+\[
+\frac{k(x_1+x_3)}{2}(x_1-x_3)+mg(x_1-x_3)\sin53^\circ-mg(x_1-x_3)=0
+\]
+\[
+x_3=\frac{-3mg}{5k}<0\quad\text{不成立}
+\]
+故拉伸。
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 268
