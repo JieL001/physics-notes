@@ -66,3 +66,9 @@ No duplicate pages. Please double-check these:
 1. p227-01: the formulas V_A=√(3gL/2) and V_A=V_B sin30° are inconsistent with the other lines; I kept the handwriting and added CHECK.
 2. p228-02: the handwritten sinθ_n=√(nqBd/2Em) is probably missing a square on B. p226-10: the leading "2" of the first equation may be a factor 2 or an item number.
 3. Uncertain chapter and wording: p227-08 is filed under ch=01 but could be ch=08. p230 red note "建议画图思考" and p229-01 top line (cut off by the page edge) are partly guesses.
+
+## p236–240
+DONE pages=236-240, blocks=28, figs=30, unclear=7. texcheck_all reports ALL OK; p239 has no figures and its bottom half is blank.
+1. p236-05 (cart problem): `m=5kg` and `F拉=5N` are the same handwritten digit, which I read as 5 from `a1=F/m=1`. Also check "均静止" and "右加速".
+2. p237: `M?m的作用力…` in 237-04 (glyph looks like "为", I wrote `\unclear{对}`), "不管有无μ", and whether the first `E_PG` in 237-02 has a Δ.
+3. p238-04 "想?则" (overwritten character) and 238-06 "使?重力" (I wrote 球). p239-02 `ω0=ω粒子` (handwriting looks like W; ω chosen from context), and 239-01 filed under ch=13 with alt=10 (could equally be 10).

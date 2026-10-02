@@ -1,0 +1,71 @@
+%%%PAGE 238 rot=0 legibility=good summary=力的合成（合力公式、极值、闭合多边形）；力的分解与动态平衡（绳连AB、OA/OB圆图）；V形槽夹球摩擦条件；斜面上物体加F；楔块C与球G的ΔG_max
+%%%BLOCK id=238-01 ch=02 sec=力的合成 kind=knowledge alt=none cont=none y=0.04-0.27
+\textbf{力的合成}
+
+求合力　正弦定理　余弦定理
+
+\[
+F=\sqrt{F_1^2+F_2^2+2F_1F_2\cos\theta}
+\]
+随$\theta\uparrow$而$\downarrow$　　$\theta=180^\circ$ 最小 $F_1-F_2$　　$\theta=0^\circ$ 最大 $F_1+F_2$
+
+%FIG p238_a 0.25 0.168 0.535 0.24
+\notefig[0.3]{figures/p238_a.png}
+
+首尾相连成闭合图形　$F_{\text{合}}=0$
+%%%END
+%%%BLOCK id=238-02 ch=02 sec=力的分解·动态平衡 kind=method alt=none cont=none y=0.27-0.45
+力的分解、画动态图求力　　按实际作用效果正交分解
+
+%FIG p238_b 0.10 0.39 0.205 0.45
+\notefig[0.25]{figures/p238_b.png}
+
+$N_{\text{地B}}$不变　　$T\uparrow$
+%%%END
+%%%BLOCK id=238-03 ch=02 sec=力的分解·动态平衡 kind=method alt=none cont=none y=0.42-0.57
+%FIG p238_c 0.09 0.46 0.335 0.562
+\notefig[0.3]{figures/p238_c.png}
+
+%FIG p238_d 0.395 0.415 0.70 0.54
+\notefig[0.3]{figures/p238_d.png}
+
+$N_{OA}\uparrow$
+
+$N_{OB}$先$\uparrow$后$\downarrow$
+%%%END
+%%%BLOCK id=238-04 ch=02 sec=共点力平衡·摩擦临界 kind=derivation alt=none cont=none y=0.59-0.70
+%FIG p238_e 0.055 0.598 0.225 0.688
+\notefig[0.25]{figures/p238_e.png}
+
+\[
+2\mu N\cos\theta=mg+2N\sin\theta
+\]
+\[
+N=\frac{mg}{2(\mu\cos\theta-\sin\theta)}
+\]
+想\unclear{卡住}则 $N>0$　　$\theta\uparrow\ N\uparrow$ % CHECK: "想?则"中间一字被涂改，无法辨认
+
+$\mu>\tan\theta$
+%%%END
+%%%BLOCK id=238-05 ch=02 sec=共点力平衡·斜面受力分析 kind=note alt=03 cont=none y=0.71-0.80
+%FIG p238_f 0.07 0.74 0.255 0.81
+\notefig[0.25]{figures/p238_f.png}
+
+加$F$　$f_{\text{斜物}}\uparrow$　$N_{\text{斜物}}\uparrow$　$f_{\text{地斜}}=0$　$N_{\text{地斜}}\uparrow$
+%%%END
+%%%BLOCK id=238-06 ch=02 sec=共点力平衡·临界极值 kind=problem alt=none cont=none y=0.82-0.98
+\begin{problem}
+使\unclear{球}重力加$\Delta G$ 还使$C$静止　$\Delta G_{\max}=?$ % CHECK: "球"字手写像"挂"，按语义转录
+
+%FIG p238_g 0.06 0.84 0.235 0.918
+\notefig[0.2]{figures/p238_g.png}
+
+\begin{solution}
+\begin{align*}
+F_N&=\sqrt2\,(G+\Delta G_m) & \Delta G&=\frac{2\mu-1}{1-\mu}\,G\\
+F_N\sin45^\circ&=\mu(G+F\cos45^\circ)
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 238

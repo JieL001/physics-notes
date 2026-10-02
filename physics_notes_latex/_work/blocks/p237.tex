@@ -1,0 +1,81 @@
+%%%PAGE 237 rot=0 legibility=good summary=倾斜传送带题（加速度、时间、末速度、相对位移、热量Q=9.6J、痕迹）与W额外功能关系；板块叠放F的临界条件；叠放体一起运动时M对m作用力方向
+%%%BLOCK id=237-01 ch=03 sec=传送带 kind=problem alt=06,01 cont=none y=0.03-0.57
+\begin{problem}
+$L=3.2\unit{m}$　　$\mu=0.5$　　$m=2\unit{kg}$　　$V_0=2\unit{m/s}$
+
+%FIG p237_a 0.01 0.04 0.23 0.145
+\notefig[0.25]{figures/p237_a.png}
+
+\begin{solution}
+\begin{gather*}
+a_1=g\sin\theta+\mu g\cos\theta=10\unit{m/s^2}\\
+t_1=t_{\text{共}}=0.2\unit{s}\qquad S_1=\frac{2}{2}\,0.2=0.2\unit{m}<3.2\unit{m}\\ % CHECK: t 的下标手写像"共/类"，按"共"（共速）转录
+\because\tan37^\circ=\frac34>\frac12\\ % CHECK: 起首为点状符号，按 ∵ 转录
+a_2=g\sin\theta-\mu g\cos\theta=2\unit{m/s^2}\\
+S_2=2t_2+\frac12\,2t_2^2=3\unit{m}\\
+t^2+2t-3=0\\
+(t+3)(t-1)=0\\
+t_2=1\unit{s}\\
+t=t_1+t_2=1.2\unit{s}\\
+V_{\text{末}}=2+1\times2=4\unit{m/s}
+\end{gather*}
+
+%FIG p237_b 0.0 0.29 0.32 0.427
+\notefig[0.3]{figures/p237_b.png}
+
+\begin{gather*}
+S_{\text{相}}=\frac12\,2\times0.2+\frac12\,2\,1=1.2\unit{m}\\
+Q=\mu mg\cos\theta\cdot S_{\text{相}}=9.6\unit{J}
+\end{gather*}
+（$Q$ 行下小字：\unclear{4　8-}）
+\end{solution}
+
+%FIG p237_c 0.72 0.463 0.835 0.527
+\notefig[0.25]{figures/p237_c.png}
+
+$S_1=0.2\unit{m}$　　$S_{\text{痕迹}}=1\unit{m}$
+
+\[
+\left\{\begin{array}{l}
+Q_f\propto m\\
+S_{\text{痕}}\propto V_{\text{带}}
+\end{array}\right.
+\] % CHECK: 第二行首字手写像 Y/S，按 S（痕迹长度）转录
+\end{problem}
+%%%END
+%%%BLOCK id=237-02 ch=06 sec=功能关系·摩擦生热 kind=derivation alt=03 cont=none y=0.18-0.31
+% 原稿 ΔE_k+Q 下、两处 E_PG 下有下划线
+\[
+W_{\text{额外}}=\Delta E_k+\overset{\scriptstyle fS_{\text{相}}}{Q}+\Delta E_{PG}+\cdots
+\]
+又 $S_{\text{传}}=2S_{\text{物}}$
+\[
+W_{\text{额}}=W_{f\text{对带}}+\unclear{\Delta}E_{PG}=2fS_{\text{物}}+\Delta E_{PG}
+\] % CHECK: 第一个 E_PG 前的"+"处笔迹像"+Δ"，不确定是否有 Δ
+%%%END
+%%%BLOCK id=237-03 ch=03 sec=板块模型 kind=method alt=02 cont=none y=0.54-0.67
+%FIG p237_d 0.065 0.54 0.245 0.595
+\notefig[0.25]{figures/p237_d.png}
+
+\[
+\left\{\begin{array}{ll}
+0<F\le\mu_2(m+M)g & \text{不动}\\
+\mu_2(m+M)g<F<(\mu_1+\mu_2)(m+M)g & \text{一起动}\\
+F>(\mu_1+\mu_2)(m+M)g & \text{相对滑动}
+\end{array}\right.
+\]
+%%%END
+%%%BLOCK id=237-04 ch=03 sec=连接体·整体法隔离法 kind=note alt=02 cont=none y=0.72-0.90
+一起运动
+
+%FIG p237_e 0.09 0.748 0.45 0.82
+\notefig[0.35]{figures/p237_e.png}
+
+不管有无\unclear{$\mu$}
+
+%FIG p237_f 0.485 0.743 0.835 0.857
+\notefig[0.3]{figures/p237_f.png}
+
+M\unclear{对}m的作用力方向与支持面对整体的作用力同向 % CHECK: 手写字形像"为"，按语义应为"对"
+%%%END
+%%%PAGEEND 237
