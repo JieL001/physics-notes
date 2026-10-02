@@ -1,0 +1,81 @@
+%%%PAGE 172 rot=0 legibility=good summary=多用电表（改装电流表/欧姆表/电压表）电路图及B接1~6各档位公式；分流电阻n倍推导；欧姆表含电源电阻与E偏小误差；气垫导轨注意事项
+%%%BLOCK id=172-01 ch=10 sec=多用电表·误差分析 kind=note alt=none cont=none y=0.00-0.17
+% CHECK: 页顶一行小字被页边裁掉半截，右侧另有半行无法辨认
+\unclear{若}改装后表的示数都偏小 % CHECK: 首字疑为「若」或「先」
+
+\unclear{…分析…流} % 页顶右上方被裁切的半行小字
+
+测含电源的电路电阻
+\begin{itemize}
+\item 反向电源(流)\quad $r$：测偏\unclear{…} % 行末被页边截断
+\item 同向电源(流)\quad $r$：测偏\unclear{…} % 行末被页边截断
+\end{itemize}
+E偏小($\downarrow$)\quad $r$测偏大
+
+E不变\quad $r\uparrow$\quad 让$R_3\downarrow$\quad 无影响\quad 旧\unclear{电} % 末行「旧电」下接上一行末，疑为「旧电池」
+%%%END
+%%%BLOCK id=172-02 ch=10 sec=多用电表·各档位电路分析 kind=derivation alt=none cont=none y=0.03-0.80
+%FIG p172_a 0.085 0.028 0.71 0.352
+\notefig[0.6]{figures/p172_a.png}
+
+\[
+I=\frac{I_g(r_g+R_2)}{R_1}+I_g
+\]
+
+B接1．\quad $I=$\struck{$\dfrac{I_gr_g}{\dfrac{R_1r_g}{R_1+R_2}}$}\quad $\dfrac{I}{I_g}=\dfrac{R_1+R_2+r_g}{R_1}$\quad \struck{$\dfrac{I_g}{I}$}\quad $n=1+\dfrac{R_2+r_g}{R_1}$ % 第一个分式被一条斜线划去；「I_g/I」小分式被竖线涂去，笔画潦草
+
+B接2：\quad $I=\dfrac{I_gr_g}{\dfrac{r_g(R_1+R_2)}{R_1+R_2+R_g}}$\quad $\dfrac{I}{I_g}=\dfrac{R_1+R_2+r_g}{R_1+R_2}$\quad $n=1+\dfrac{r_g}{R_1+R_2}$ % CHECK: 分母末项手写为 R_g，按上下文应为 r_g
+
+B接3：
+\begin{align*}
+E_1&=\Bigl(I_g+\frac{I_gr_g}{R_1+R_2}\Bigr)\Bigl(R_x+R_3+\frac{r_g(R_1+R_2)}{R_1+R_2+r_g}\Bigr)\\
+&=I_{\text{改}}\bigl(R_x+R_3+R_{\text{\unclear{…}}}\ \text{\unclear{右端被页边截断}}
+\end{align*}
+
+B接4：
+\begin{align*}
+E_2&=\Bigl(I_g+\frac{I_gr_g}{R_1+R_2}\Bigr)\Bigl(R_x+R_4+R_5+\frac{r_g(R_1+R_2)}{r_g+R_1+R_2}\Bigr)\\
+&=I_{\text{改}}\Bigl(R_x+\underbrace{R_4+R_5+\text{\unclear{…}}}_{r_{\text{等效}}} % 原稿在「R_4+R_5+…」下画横线并标「r等效」，右端被页边截断
+\end{align*}
+
+B接5：
+\[
+U_1=\Bigl(I_g+\frac{I_gr_g}{R_1+R_2}\Bigr)\Bigl(R_6+\frac{r_g(R_1+R_2)}{R_1+R_2+r_g}\Bigr)
+\]
+
+B接6：
+\[
+U_2=\Bigl(I_g+\frac{I_gr_g}{R_1+R_2}\Bigr)\Bigl(\overset{R_7}{\text{\struck{$R_7$}}}+\frac{r_g(R_1+R_2)}{R_1+R_2+r_g}\Bigr) % CHECK: 括号内首项为「R_7」，其下另有一个被涂掉的「R_7」；按电路图6档应含 R_6+R_7，原稿如此
+\]
+%%%END
+%%%BLOCK id=172-03 ch=10 sec=电流表改装·分流电阻 kind=derivation alt=none cont=none y=0.17-0.52
+\struck{$\dfrac{R_g+R_2\,(R_1+R_2)}{R_1\,(R_g)}$} % 整个分式被斜线划去，分子括号处笔画重叠
+
+\[
+R_{\text{并}}=\frac{R_g}{n-1}
+\]
+
+\[
+n-1\,(R_{\text{并}})=R_g
+\]
+
+\[
+n-1=\frac{R_g}{R_{\text{并}}}=\frac{R_g}{R_1+R_2}
+\]
+
+\[
+R_{\text{并}}=\frac{R_g+R_2}{n-1}
+\]
+
+\[
+(n-1)R_{\text{并}}=R_g+R_2
+\]
+
+\[
+(n-1)\,\text{\struck{$R_{\text{并}}$}}=\frac{R_g+R_2}{R_1} % 原稿此处「R_并」被划去，分母 R_1 下有一点
+\]
+%%%END
+%%%BLOCK id=172-04 ch=18 sec=气垫导轨·使用注意 kind=note exp=1 alt=03,07 cont=none y=0.86-0.91
+气垫导轨：先拿滑块，后关电源，防止摩擦损 % CHECK: 句末「损」字下笔画涂改，疑为「损坏」未写完
+%%%END
+%%%PAGEEND 172

@@ -1,0 +1,87 @@
+%%%PAGE 170 rot=0 legibility=good summary=力学类实验清单；打点计时器纸带求a与v（T的判定、逐差、频率f误差）；平衡摩擦力的操作；光电门测速与测g
+%%%BLOCK id=170-01 ch=18 sec=力学类实验·总览 kind=summary alt=01,02,03,06,07 cont=none y=0.03-0.19
+\textbf{力学类实验}
+\begin{itemize}
+\item 弹簧
+\item 力平行四边形
+\item 测$a$.（测$a$时不用测$m$，也不平衡$f$）\quad 电火花通电\quad 电磁用永磁体\quad\textit{（该行上方小字：\unclear{指出操作有误}$\downarrow$\quad $220\unit{V}$\quad $6\sim8\unit{V}$）}
+\item 探究$aFm$关系
+\item 测$M$
+\item 能量
+\item 动量
+\end{itemize}
+%%%END
+%%%BLOCK id=170-02 ch=01 sec=打点计时器·纸带处理 kind=method exp=1 alt=none cont=none y=0.20-0.67
+\fbox{测$a$：}\quad 纸带
+
+%FIG p170_a 0.29 0.225 0.48 0.28
+\notefig[0.3]{figures/p170_a.png}
+
+先接通电源再释放小车．
+
+① 不说间隔4次打一点，图上有\ $T=0.1\unit{s}$
+
+② 说间隔4次打一点．$T=0.1\unit{s}$
+
+③ 啥都\unclear{没}\quad $T=0.02\unit{s}$
+
+$T=\dfrac{1}{f}$\quad 灵活转换
+
+%FIG p170_b 0.36 0.365 0.63 0.393
+\notefig[0.3]{figures/p170_b.png}
+
+\[
+a=\frac{S_3+S_4-(S_1+S_2)}{4T^2}
+\]
+
+$a=\dfrac{S_3+S_4-S_1-S_2}{4}\,\unclear{(5f)^2}$ % CHECK: 此式笔画重叠，分子右侧疑有「(5f)^2」，且有一条斜线从分式穿过下一行的「若」字；形式不确定
+\quad 若 $f_{\text{实际}}>f_{\text{额}}=50\unit{Hz}$，则 $a$ 偏小\quad （用的$f$偏小）\quad $a$、$f$ 同大小 % CHECK: 第二个 f 的下标手写难辨，疑为「额」(额定) 或「标」
+
+\[
+a=\frac{S_6+S_5+S_4-S_3-S_2-S_1}{9T^2}\qquad\text{隔4点}\quad a=\frac{(S_6+S_5+S_4-S_3-S_2-S_1)}{9(5T)^2}
+\]
+
+若交流电源频率为$f$\quad $v=\dfrac{S_1+S_2}{2}f$\quad 隔4点\ $v=\dfrac{S_1+S_2}{10}f$\quad $=\dfrac{(S_6+S_5+S_4-S_3-S_2-S_1)}{225}f^2$
+
+\[
+\hspace{4em}=\frac{S_1+S_2}{2T}\hspace{6em}=\frac{S_1+S_2}{\text{\unclear{10}}T} % CHECK: 此处分母「10」被重写涂改（像 1、5、0 叠在一起），按上一行 v=(S1+S2)/10·f 取 10T
+\]
+
+\begin{center}
+一次性测$A$到$B\,C\,D\,E\,F\,G$距离可减小误差．
+\end{center}
+%%%END
+%%%BLOCK id=170-03 ch=03 sec=验证牛顿第二定律·实验 kind=method exp=1 alt=none cont=none y=0.33-0.80
+斜面线要与木板平行 % CHECK: 首两字手写像「斜面」，疑为「细线要与木板平行」
+
+能测出$F$就不用 $M_{\text{钩}}\ll M_{\text{车}}$（测力计、传感器）
+
+%FIG p170_c 0.28 0.464 0.49 0.508
+\notefig[0.25]{figures/p170_c.png}
+
+\textbf{平衡$f$的操作}\quad ①将木板不带定滑轮的一端适当垫高
+
+\hspace{5em}②在小车不受拉力，连接纸带且打点计时器打点的状态下，轻推一下小车使其沿斜面下滑，若纸带上打出均匀分布的点迹，表明已消除了摩擦力和其他阻力的影响
+%%%END
+%%%BLOCK id=170-04 ch=01 sec=速度·光电门测速 kind=formula exp=1 alt=none cont=none y=0.80-0.88
+$d$或$\Delta x$为滤光板宽/两传感器间距离\quad $\Delta t$为经过时间\quad $v_{\text{瞬时}}=\dfrac{\Delta x}{\Delta t}$\quad 运动时间\ 长度$L$\quad $\bar v=\dfrac{L}{t}$ % 「运动时间」小字写在「长度L」上方，疑分别标注 t 与 L
+
+$1\unit{m/s}=3.6\unit{km/h}$
+%%%END
+%%%BLOCK id=170-05 ch=03 sec=光电门·连接体测g kind=derivation exp=1 alt=01 cont=none y=0.86-1.00
+%FIG p170_d 0.13 0.885 0.335 0.96
+\notefig[0.25]{figures/p170_d.png}
+
+\[
+v_{\text{瞬}}=\frac{d}{\Delta t}\qquad v_{\text{瞬}}^2=2ax\qquad a=\frac{d^2}{2x\,\Delta t^2}
+\]
+
+\[
+\begin{cases} mg-T=ma\\ T=Ma\end{cases}
+\]
+
+\[
+g=\frac{M+m}{m}\,a=\frac{(M+m)\,d^2}{2m\,x\,\Delta t^2}
+\]
+%%%END
+%%%PAGEEND 170

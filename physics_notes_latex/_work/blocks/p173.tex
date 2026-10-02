@@ -1,0 +1,84 @@
+%%%PAGE 173 rot=0 legibility=good summary=打点计时器（电磁/电火花、计数点与选取点Δt）；纸带做差求a、做和求v；逐差法与奇数段；逐差本质·整体法（弹簧图示）；连接体实验装置
+%%%BLOCK id=173-01 ch=01 sec=打点计时器·基本 kind=knowledge exp=1 alt=none cont=none y=0.05-0.34
+\textbf{打点计时器}
+\begin{itemize}
+\item 电磁\quad $6\sim12\unit{V}$ % 「6」写在「~12V」左上方，近似上标；「6~12」数值较难确认
+\item 电火花\quad $220\unit{V}$\quad \unclear{驱机中}\quad 交流电 % 「交流电」写在右侧，疑指两种计时器均用交流电
+\end{itemize}
+
+%FIG p173_a 0.14 0.145 0.50 0.26
+\notefig[0.4]{figures/p173_a.png}
+
+\begin{itemize}
+\item 计数点\quad $\Delta t=0.02\unit{s}$ % 其右侧另有一个小字「隔」，位于下一行第二个「每」上方
+\item 选取点：每\unclear{2}个点（上方小字\unclear{2T}）\quad 每\unclear{5}个点（隔4个点）（右上方小字\unclear{5T}） % CHECK: 两处「每·个点」的数字手写重叠难辨（第一处上方似「3T」，第二处被一个粗十字叠住）；按下一行 Δt 推断为 2、5
+\end{itemize}
+
+\hspace{5em}$\Delta t=0.04\unit{s}$（隔一个点）$2T$\qquad\qquad $\Delta t=0.1\unit{s}$\quad 隔4个点
+%%%END
+%%%BLOCK id=173-02 ch=01 sec=纸带处理·求a与v kind=method exp=1 alt=none cont=none y=0.27-0.43
+做差求$a$\quad $a=\dfrac{S_3+S_4-(S_1+S_2)}{(2T)^2}$
+
+做和求$v$\quad $v_c=\dfrac{S_2+S_3}{2T}$\quad $\Bigl(\text{or}\ \dfrac{S_1+S_2+S_3+S_4}{4T}\Bigr)$\quad \unclear{取}用数据；有效数字；
+
+隔$n$个点\quad \struck{$t\doteq nT$}\quad $t\doteq(n+1)T$ % 「隔n个点」带下划线；等号处手写似「≐」（上方多一点）
+%%%END
+%%%BLOCK id=173-03 ch=01 sec=逐差法 kind=method exp=1 alt=02,18 cont=none y=0.36-0.57
+\textbf{逐差法}
+\[
+\begin{aligned}
+&S_2-S_1=aT^2\\
+&\ \ \vdots\\
+&S_n-S_{n-1}=aT^2
+\end{aligned}
+\qquad S_m-S_n=(m-n)aT^2
+\]
+
+\[
+\bar a=\frac{S_4+S_3-(S_1+S_2)}{(2T)^2}
+\]
+
+奇数段
+
+%FIG p173_b 0.31 0.502 0.71 0.554
+\notefig[0.4]{figures/p173_b.png}
+
+\[
+a=\frac{(S_4+S_5)-(S_1+S_2)}{6T^2}\qquad \text{\red{更好}}
+\]
+%%%END
+%%%BLOCK id=173-04 ch=01 sec=逐差法 kind=method exp=1 alt=02,18 cont=none y=0.56-0.79
+逐差本质\quad 整体法
+
+%FIG p173_c 0.11 0.595 0.455 0.79
+\notefig[0.4]{figures/p173_c.png}
+
+\red{忽略中间\unclear{其余}次}
+
+\begin{align*}
+&k(L_1-L_0)=m_0g % CHECK: 首行下标手写像 L_4 / L_d，按序列应为 L_1−L_0
+\\
+&k(L_2-L_1)=m_0g\\
+&\ \ \ \vdots\\
+&k(L_7-L_6)=m_0g % CHECK: 图中弹簧只画到 L_6，此处手写为 L_7−L_6
+\end{align*}
+
+\red{$\Delta\bar l=\dfrac{L_4+L_5+L_6-(L_0+L_1+L_2)}{12}$} % 红笔式中 L 手写似小写 l
+
+\red{$[4+5+6-(0+1+2)]$}
+%%%END
+%%%BLOCK id=173-05 ch=03 sec=验证牛顿第二定律·实验 kind=derivation exp=1 alt=none cont=next y=0.79-0.97
+\textbf{实验装置}
+
+(1)\ 连接体
+
+%FIG p173_d 0.27 0.86 0.475 0.97
+\notefig[0.28]{figures/p173_d.png}
+
+\[
+\begin{cases} mg=(M+m)a\\ T=Ma\end{cases}\qquad T=\frac{Mmg}{M+m}=\frac{M}{M+m}\cdot mg
+\]
+
+\red{仅有$M\gg m$时$T=mg$}
+%%%END
+%%%PAGEEND 173
