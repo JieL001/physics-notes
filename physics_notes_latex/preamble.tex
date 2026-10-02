@@ -25,6 +25,22 @@
 \newcommand{\nuc}[3]{{}^{#1}_{#2}\mathrm{#3}}          % 核素：\nuc{238}{92}{U}
 \newcommand{\unit}[1]{\,\mathrm{#1}}                    % 单位：5\unit{m/s}
 \newcommand{\ee}{\mathrm{e}}
+% fontspec 下大写希腊字母放进 \mathrm（如 \unit{\Omega/m}）会落到文本字体的空位而整个消失；固定到 OT1 字体族即可
+% （fontspec 在 \begin{document} 时才声明希腊字母，所以这里也放在 \AtBeginDocument 里、在它之后执行）
+\DeclareSymbolFont{pnupgreek}{OT1}{cmr}{m}{n}
+\AtBeginDocument{%
+  \DeclareMathSymbol{\Gamma}{\mathord}{pnupgreek}{"00}%
+  \DeclareMathSymbol{\Delta}{\mathord}{pnupgreek}{"01}%
+  \DeclareMathSymbol{\Theta}{\mathord}{pnupgreek}{"02}%
+  \DeclareMathSymbol{\Lambda}{\mathord}{pnupgreek}{"03}%
+  \DeclareMathSymbol{\Xi}{\mathord}{pnupgreek}{"04}%
+  \DeclareMathSymbol{\Pi}{\mathord}{pnupgreek}{"05}%
+  \DeclareMathSymbol{\Sigma}{\mathord}{pnupgreek}{"06}%
+  \DeclareMathSymbol{\Upsilon}{\mathord}{pnupgreek}{"07}%
+  \DeclareMathSymbol{\Phi}{\mathord}{pnupgreek}{"08}%
+  \DeclareMathSymbol{\Psi}{\mathord}{pnupgreek}{"09}%
+  \DeclareMathSymbol{\Omega}{\mathord}{pnupgreek}{"0A}%
+}
 
 % ---- 盒子环境 ----
 \newtcolorbox{keybox}[1][]{breakable,enhanced,colback=yellow!6,colframe=orange!70!black,

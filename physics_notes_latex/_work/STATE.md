@@ -6,6 +6,8 @@
 - 工具：PROJ 改为按脚本所在位置定位（Windows/Linux 通用；本地 scratchpad 里的旧副本不受影响）。Linux 上读 `source/`，编译用 TeX Live + ctex `fontset=ubuntu`（Noto CJK；默认 Fandol 缺 ⑪–⑳），看图/编译的临时文件在会话 scratchpad 的 `pn/`。
 - 新增：`%FIG` 行末可加 `soft`（淡铅笔图用温和去背景；p164_a 用了）；`tools/verify_unit.py`（单元验收：页文件、%FIG、配图、texcheck）；`AGENT_PROMPT_CLOUD.txt`（云端提示词，model=sonnet）。GUIDE.md 加了云端路径和“%FIG 必须单独一行”。
 - p164：断额度时留下的页文件，补裁 8 张图（`%FIG p164_f` 原写在正文行尾、没被裁，已移到单独一行），texcheck OK。
+- 修了两个本地也存在的问题：① `preamble.tex`：fontspec 下大写希腊字母放进 `\mathrm`（如 `\unit{\Omega/m}`，p115）会整个消失，已把 \Gamma…\Omega 固定到 OT1/cmr 字体族（放在 \AtBeginDocument 里，在 fontspec 之后）；② `texcheck.py` 的缺字正则和新版 XeTeX 日志格式（`There is no φ (U+03C6) in font`）对不上，缺字一直没报出来，已修正。修正后重查 1–164、195–199 全部 161 页：0 失败。
+- 用旧 main.tex（124 页时组装的）在云端整本试编译：276 页、0 错误；缺字只剩 ch09 一个小节标题里的文本模式 φ（autoplan 的标题，重做大纲时改成 `$\varphi$`）。
 - 进度以 `python3 tools/remaining.py` 和 git log 为准。**本地那个会话（10-05 04:00 重置）不要再派单元**，否则会重复转录；要回本地继续，先拉取这个分支。
 
 ## 现状（数字以 `python tools/remaining.py` 的输出为准；它会重算还剩哪些页并刷新 units_remaining.json）

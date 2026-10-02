@@ -62,9 +62,12 @@ pages = re.search(r"Output written on .*\((\d+) pages?", log)
 print("ERRORS:", len(errs), "| pages:", pages.group(1) if pages else "no PDF")
 for e in errs[:25]:
     print(e.strip(), NL + "---")
-miss = sorted(set(re.findall(r"Missing character: There is no (.) in font", log)))
+# XeTeX logs "There is no φ (U+03C6) in font …" (older builds omit the U+ part); the glyph itself may be a newline (U+000A)
+miss = sorted({f"U+{u}" if u and int(u, 16) < 0x21 else c for c, u in
+               re.findall(r"Missing character: There is no ([\s\S])(?: \(U\+([0-9A-Fa-f]{4,6})\))? in font", log)})
 if miss:
-    print("MISSING CHARS (not typeset! put Greek letters / math symbols inside $...$, or replace them):", " ".join(miss))
+    print("MISSING CHARS (not typeset! put Greek letters / math symbols inside $...$, or replace them;"
+          " U+000A usually means a capital Greek letter inside \\mathrm/\\unit):", " ".join(miss))
 for w in re.findall(r"^[^\n]*(?:File `[^\n]*not found|Undefined control sequence)[^\n]*", log, flags=re.M)[:10]:
     print("WARN:", w)
 bad = len(errs) > 0 or bool(miss)
