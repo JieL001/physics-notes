@@ -1,0 +1,85 @@
+%%%PAGE 15 rot=0 legibility=good summary=磁场：安培力公式与有效长度、安培力微观表达、奥斯特实验与直线电流磁场、通电导线间作用力、安培力做功与冲量、磁偏转找圆心求半径、静态/放缩/旋转/汇聚发散圆（动态圆）、平移圆标题
+%%%BLOCK id=015-01 ch=11 sec=安培力·有效长度 kind=formula alt=none cont=none y=0.04-0.19
+\textbf{安培力}
+
+$F_A=BIL\sin\theta$
+
+%FIG p015_a 0.32 0.03 0.66 0.184
+\notefig[0.5]{figures/p015_a.png}
+% 图中：弧线A→B；直线A→B；闭合圆环；与电容器相连的圆环（内有“d”和一条虚线）。以下为各图旁的标注：
+$L_{\text{有效}}=\overline{AB}$\qquad $L_{\text{有}}=\overline{AB}$\qquad $L=0$\qquad $L_{\mbox{\unclear{上}}}=d$\quad $L_{\mbox{\unclear{下}}}=d$
+
+若$B$、$I$不垂直\quad 分解$B$
+%%%END
+%%%BLOCK id=015-02 ch=11 sec=安培力·微观表达 kind=derivation alt=none cont=none y=0.19-0.27
+\[
+F_A=BIL=BL\,nqSv=LSn\cdot Bvq=\overset{\text{电子总数}}{\underline{LSn}}\cdot F_{\text{洛}}
+\]
+$n$ 单位体积电子数
+%%%END
+%%%BLOCK id=015-03 ch=11 sec=电流的磁效应·奥斯特实验 kind=knowledge alt=none cont=none y=0.27-0.33
+奥斯特实验：电流产生磁场
+
+电流应水平南北放置，小磁针应放到电流正上/下方
+%%%END
+%%%BLOCK id=015-04 ch=11 sec=电流的磁场·直线电流 kind=formula alt=none cont=none y=0.33-0.37
+\[
+B=K\frac{I}{r}=\frac{\mu_0 I}{2\pi r}
+\]
+$\mu_0$ 真空磁导率\quad $\dfrac{\mathrm{m\cdot T}}{\mathrm{A}}$
+%%%END
+%%%BLOCK id=015-05 ch=11 sec=安培力·通电导线间作用力 kind=method alt=none cont=none y=0.355-0.455
+通电导线间作用力\quad 同吸异斥
+
+先判磁场后判力
+%FIG p015_b 0.463 0.358 0.725 0.452
+\notefig[0.4]{figures/p015_b.png}
+%%%END
+%%%BLOCK id=015-06 ch=11 sec=安培力·做功与冲量 kind=formula alt=none cont=none y=0.455-0.57
+\textbf{安培力做功}：
+\[
+\left\{\begin{aligned}
+&\text{恒力}\quad \pm BIL\cdot x\\
+&\text{变力}\quad \pm W_{\text{安}}
+\end{aligned}\right.
+\]
+\textbf{安培力冲量}：
+\[
+\left\{\begin{aligned}
+&\text{恒力}\quad \pm BILt=\pm BLq\\
+&\text{变力}\quad \pm I_{A}=\pm BLq
+\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=015-07 ch=11 sec=磁偏转·轨迹圆心半径 kind=method alt=none cont=none y=0.565-0.66
+\textbf{磁偏转}：
+\begin{itemize}
+\item 画轨迹
+\item 找圆心：
+\begin{itemize}
+\item 速度作垂线过圆心
+\item 弦作中垂线过圆心
+\item 速度偏转角补角分线过圆心
+\end{itemize}
+\item 求半径
+\end{itemize}
+%%%END
+%%%BLOCK id=015-08 ch=11 sec=动态圆 kind=summary alt=none cont=none y=0.66-0.925
+% 手写大括号括住下面四行（静态圆～汇聚圆/发散圆）；“汇聚圆/发散圆”下有一条带箭头的下划线
+\begin{center}
+\begin{tabular}{lcc}
+ & $v_0$方向 & $r$\\
+静态圆 & 不变 & 不变\\
+放缩圆 & 不变 & 变\\
+旋转圆 & 变 & 不变\\
+汇聚圆/发散圆 & \multicolumn{2}{l}{$\to$ $r_{\text{粒子}}=R_{\text{磁场}}$}
+\end{tabular}
+\end{center}
+%FIG p015_c 0.05 0.735 0.72 0.918
+\notefig[0.75]{figures/p015_c.png}
+\textbf{图中标注}：②、①，$v_0$，$r=\dfrac{mv}{qB}$，圆心圆，远点圆，$d=2r=\dfrac{2mv}{qB}$
+%%%END
+%%%BLOCK id=015-09 ch=11 sec=动态圆 kind=summary alt=none cont=next y=0.92-0.95
+\textbf{平移圆}
+%%%END
+%%%PAGEEND 15

@@ -1,0 +1,74 @@
+%%%PAGE 46 rot=0 legibility=good summary=圆心参考系(F_n=ΣF指向-ΣF背离、传动同点同v同轴同ω)；竖直面圆周最高最低点压力差技巧；运动合成与相对速度(雨车、刀割玻璃)；小船过河(最快/最近/甲乙相遇/去回时间比k)
+% 右下角有折起的纸角及相邻纸页边缘(含"②""1·""月性"等字样)，非本页内容，已忽略
+%%%BLOCK id=046-01 ch=04 sec=圆周运动·圆心参考系 kind=knowledge alt=none cont=prev y=0.03-0.13
+$V$为相对圆心的速度，而非单单相对地面
+
+圆心参考系．\ $F_n=\sum F_{\text{指向圆心}}-\sum F_{\text{背离圆心}}$\ （\unclear{分解}）
+
+\[ F_n=\frac{mv^2}{R}=\frac{2E_k}{R} \]
+%%%END
+%%%BLOCK id=046-02 ch=04 sec=圆周运动·传动 kind=knowledge alt=none cont=none y=0.08-0.14
+传动\ $\begin{cases}\text{同点同}\,V\\ \text{同轴同}\,\omega\end{cases}$
+%%%END
+%%%BLOCK id=046-03 ch=04 sec=圆周运动·竖直面临界 kind=method alt=06 cont=none y=0.14-0.44
+\textbf{技巧}
+
+%FIG p046_a 0.08 0.14 0.30 0.305
+\notefig[0.3]{figures/p046_a.png}
+
+\[
+\begin{cases}
+mg\,2R+W_{\text{其他}}=\dfrac{1}{2}mV_{\text{下}}^{2}-\dfrac{1}{2}mV_{\text{上}}^{2}\\[4pt]
+N_{\text{上}}+mg=\dfrac{mV_{\text{上}}^{2}}{R}\\[4pt]
+N_{\text{下}}-mg=\dfrac{mV_{\text{下}}^{2}}{R}
+\end{cases}
+\]
+\[ \therefore\ N_{\text{下}}-N_{\text{上}}=6mg+\frac{2W_{\text{其他}}}{R} \]
+\[ \Delta N=6mg+\frac{2W_{\text{其他}}}{R} \]
+\[ \text{实际}\,\Delta N=\text{理想}\,\Delta N+2\,\frac{W_{\text{其他}}}{R} \]
+\[ \text{偏差}\,\Delta N\,\frac{R}{2}=W_{\text{其他}}\qquad W_{\text{其他}}=\frac{\Delta N_{\text{偏差}}}{2}R\qquad \Delta N_{\text{偏差}} \]
+%%%END
+%%%BLOCK id=046-04 ch=04 sec=运动合成·相对速度 kind=knowledge alt=none cont=none y=0.44-0.60
+\textbf{运动合成}\ \ {\footnotesize $P$，$I$，$V$，$a$，$X$}
+
+\[ ab^{\text{对}}=a_{\text{对地}}-b_{\text{对地}} \]
+% CHECK: 公式左端"αb"及其右上角的"对"辨认不清；右端"对地"的"对"写在"地"字上方；"运动合成"右上方有小字 P、I、V、a、X（疑为动量、冲量、速度、加速度、位移皆为相对量）
+
+%FIG p046_b 0.115 0.505 0.435 0.605
+\notefig[0.5]{figures/p046_b.png}
+% 图 p046_b 内含(黑字)公式 V雨车=V雨地−V车地 及矢量三角形、各标注
+
+\[ V_{\text{雨车}}=V_{\text{雨地}}-V_{\text{车地}} \]
+
+%FIG p046_d 0.50 0.495 0.685 0.59
+\notefig[0.3]{figures/p046_d.png}
+
+\[ V_{\text{刀玻}}=V_{\text{刀地}}-V_{\text{玻地}} \]
+%%%END
+%%%BLOCK id=046-05 ch=04 sec=小船过河 kind=method alt=none cont=none y=0.60-0.97
+\textbf{小船过河}\quad ① 最快\ $t=\dfrac{d}{V_{\text{船}}}$\quad ② 最近\ $V_{\text{船}}>V_{\text{水}}$\ 垂直过河
+
+$V_{\text{船}}<V_{\text{水}}$\quad $V_{\text{水}}$为斜边，$V_{\text{船}}$画圆找切线\quad $\sin\alpha=\dfrac{d}{L}=\dfrac{V_{\text{船}}}{V_{\text{水}}}$
+
+%FIG p046_e 0.70 0.641 0.97 0.70
+\notefig[0.45]{figures/p046_e.png}
+
+%FIG p046_f 0.285 0.675 0.445 0.76
+\notefig[0.3]{figures/p046_f.png}
+
+甲乙$V$相等\unclear{向}P，在NP上\unclear{相}遇，渡河时间一致
+
+%FIG p046_g 0.445 0.733 0.56 0.795
+\notefig[0.25]{figures/p046_g.png}
+
+$V_2$相对甲
+
+%FIG p046_h 0.05 0.82 0.297 0.915
+\notefig[0.35]{figures/p046_h.png}
+
+船头去\unclear{时}垂直河岸，归\unclear{时}路线垂直河岸，
+
+\[ t_1=\frac{d}{V_{\text{船}}}\qquad t_2=\frac{d}{\sqrt{V_{\text{船}}^{2}-V_{\text{河}}^{2}}}\qquad \frac{t_1}{t_2}=k\qquad k=\sqrt{1-\left(\frac{V_{\text{水}}}{V_{\text{船}}}\right)^{2}} \]
+% CHECK: t_2 分母根号内 V船² 与 V河² 之间的符号原稿像"="（疑为"−"的笔误），此处按"−"录入；t_2 中写 V河、k 中写 V水，照原稿
+%%%END
+%%%PAGEEND 46

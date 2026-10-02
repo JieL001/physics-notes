@@ -1,0 +1,82 @@
+%%%PAGE 74 rot=0 legibility=good summary=子弹打两块钢块问题（动量守恒+能量损耗）、动量定理两类柱状模型（连续性/粒子性）及带压强、带电流、带光子三例
+%%%BLOCK id=074-01 ch=07 sec=子弹打木块·多块穿透 kind=problem alt=06 cont=none y=0.04-0.50
+\begin{problem}[1、]
+%FIG p074_a 0.075 0.05 0.285 0.135
+\notefig[0.3]{figures/p074_a.png}
+恰好射穿.
+
+%FIG p074_b 0.075 0.135 0.31 0.205
+\notefig[0.3]{figures/p074_b.png}
+求进入第二块钢块的深度
+\begin{solution}
+\textbf{Step1.}\quad $mV_0=(2m+m)V$\quad $V=\dfrac{V_0}{3}$
+\[
+\Delta E=\frac{1}{2}mV_0^{2}-\frac{1}{2}\times 3mV^{2}=\frac{1}{3}mV_0^{2}
+\]
+\textbf{Step2.}\quad $mV_0=mV_1+mV_2$\quad 由 $f$ 为恒力 故射出一块\unclear{耗}能为 $\dfrac{\Delta E}{2}$
+\begin{align*}
+&\frac{1}{2}mV_0^{2}=\frac{1}{2}mV_2^{2}+\frac{1}{2}mV_1^{2}+\frac{1}{2}\Delta E\qquad \text{因 }V_1>V_2\quad \text{得 }V_1=\Bigl(\frac{1}{2}+\frac{\sqrt{3}}{6}\Bigr)V_0\\
+&mV_1=2mV'\\
+&\Delta E'=\frac{1}{2}mV_1^{2}-\frac{1}{2}\,2mV'^{2}=\frac{1}{2}\Bigl(1+\frac{\sqrt{3}}{2}\Bigr)\times\frac{1}{2}\Delta E\\
+&\Delta E'=fx\\
+&\frac{1}{2}\Delta E=fd\qquad \therefore\ x=\frac{1}{2}\Bigl(1+\frac{\sqrt{3}}{2}\Bigr)d
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=074-02 ch=07 sec=动量定理·柱状模型 kind=method alt=none cont=none y=0.54-0.78
+\textbf{两类柱状模型}
+\begin{itemize}
+\item \textbf{连续性}\quad 流体类、液流气流.\quad $\Delta m=\rho Sv\Delta t$\quad （此式上方批注：给密度$\rho$；页面右侧批注：注意 相对速度 与速度分解；分方向动量定理.）
+  \begin{itemize}
+  \item 用动量定理研究这段流体
+  \item $F\Delta t=\rho Sv\Delta t(V_{\text{末}}-V_0)$\qquad $F=\rho Sv(V_{\text{末}}-V_0)$\quad 注意正负
+  \end{itemize}
+\item \textbf{粒子性}\quad 微粒类、电子流、光子流、尘埃、给出单体积内粒子数
+  \begin{itemize}
+  \item 微元内粒数 $N=nv_0S\Delta t$,
+  \item 用动量定理研究单个粒子，建立方程 再乘$N$计算
+  \end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=074-03 ch=07 sec=动量定理·柱状模型 kind=derivation alt=09,17 cont=none y=0.83-1.00
+\textbf{带压强}\quad $F\Delta t=\Delta mV=\rho\Delta S\,hV$
+\[
+P_{\text{压}}=\frac{F}{\Delta S}=\frac{\rho hv}{\Delta t}
+\]
+\[
+V_{\text{增}}=\frac{h}{\Delta t}=\frac{P}{\rho V} % CHECK: 下标字迹涂改，疑为「增」
+\]
+
+\textbf{带电流}
+\[
+qU=\frac{1}{2}mv^{2}
+\]
+\[
+Q=I\Delta t
+\]
+\unclear{总}\ $M=\dfrac{Q}{q}m=\dfrac{I\Delta t}{q}m$
+\[
+\bar F\Delta t=Mv
+\]
+\[
+\bar F=I\sqrt{\frac{2mU}{q}}
+\]
+
+\textbf{带光电子} % CHECK: 标题字迹似「带光电子」，但下方内容全是光子（ε=hν、p=h/λ），疑为「带光子」，按原样转录
+\[
+\varepsilon=h\nu\qquad p=\frac{h}{\lambda}\qquad c=\lambda\nu
+\]
+\[
+\therefore\ \varepsilon=pc
+\]
+\[
+E=\frac{n}{t}\,\frac{\varepsilon}{S}\qquad \unit{J/s/m^{2}}
+\]
+设$t$时间$n$个光子 每个\unclear{粒子}（下一行）为$\varepsilon$ % 此句写在上式右侧，「为ε」另起一行
+
+\unclear{全部反射}\quad $Ft=2p\times n$
+
+$\Delta p=2p_0$\quad $F=ma$
+%%%END
+%%%PAGEEND 74

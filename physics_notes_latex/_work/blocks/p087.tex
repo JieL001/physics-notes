@@ -1,0 +1,87 @@
+%%%PAGE 087 rot=0 legibility=good summary=流动问题(谁ρ小谁朝运动方向走)；系统牛顿第二定律、超失重；系统整体法例题（环、斜面体、三物体、箱内圆周）；能整体先整体
+% 右上角页边外有手写 "No. 0=1.429 g" 样的字迹，疑为相邻页边缘，未转录
+%%%BLOCK id=087-01 ch=03 sec=超重失重·系统牛二 kind=method alt=none cont=none y=0.06-0.20
+\textbf{流动问题}\quad 谁$\rho$小谁朝运动方向走。
+% CHECK: “ρ”手写形似大写 P，按物理应为密度 ρ
+%FIG p087_a 0.055 0.095 0.21 0.15
+\notefig[0.25]{figures/p087_a.png}
+\noindent 若为木球/气泡/$\cdots$\quad 球往右 \\
+若为铁球\quad 球往左
+
+%FIG p087_b 0.61 0.12 0.70 0.195
+\notefig[0.25]{figures/p087_b.png}
+\noindent 木球上浮\quad $N$小，失重(水)向下加\unclear{速}
+% 此行行末被页边截断；括号形状不确定
+\\
+铁球下沉时 $N$ 小，铁失重
+%%%END
+%%%BLOCK id=087-02 ch=03 sec=系统牛顿第二定律 kind=formula alt=none cont=none y=0.20-0.27
+\noindent 系统牛顿第二定律、不分析内力\quad 安培力\quad 不是内力是磁场施力
+
+\noindent 非共加速\quad $F_{\text{合}}=m_1a_1+m_2a_2+\cdots$\quad 整体合外力提供部分加速度 \\
+共加速\quad $F_{\text{合}}=(m_1+\cdots+m_n)a$
+%%%END
+%%%BLOCK id=087-03 ch=03 sec=超重失重 kind=formula alt=none cont=none y=0.27-0.345
+\[ a\text{ 向}\left\{\begin{array}{ll}\text{上 超}&\quad N=mg+ma\\ \text{下 失}&\quad N=mg-ma\end{array}\right.\qquad \begin{array}{l}\text{上 超 下 失}\\ \text{超 加 失 减}\end{array} \]
+%%%END
+%%%BLOCK id=087-04 ch=03 sec=超重失重·系统牛二 kind=problem alt=none cont=none y=0.35-0.47
+\begin{problem}
+%FIG p087_c 0.07 0.35 0.145 0.44
+\notefig[0.25]{figures/p087_c.png}
+环上升至 $l$ 时 $N_{\text{地}}$
+% “N地”的“地”字有重描痕迹
+\begin{solution}
+\[ (M+m)g-N=ma \]
+\[ v_0^2=2al \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=087-05 ch=03 sec=系统牛顿第二定律 kind=problem alt=none cont=none y=0.485-0.575
+\begin{problem}
+%FIG p087_d 0.10 0.485 0.31 0.545
+\notefig[0.3]{figures/p087_d.png}
+\begin{solution}
+\[ f_{\text{地}}=ma\cos\theta \]
+\[ (M+m)g-N_{\text{地}}=ma\sin\theta \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=087-06 ch=03 sec=系统牛顿第二定律 kind=problem alt=none cont=none y=0.57-0.65
+\begin{problem}
+%FIG p087_e 0.145 0.57 0.35 0.64
+\notefig[0.3]{figures/p087_e.png}
+\begin{solution}
+\[ \begin{cases} f=m_2a\cos\theta\\ m_2g\sin\theta-m_3g=(m_2+m_3)a\\ (m_1+m_2+m_3)g-N=m_1a\cos\theta-m_3a\end{cases} \]
+% CHECK: 第三式右边手写为 m_1 a cosθ − m_3 a（按受力分析 m_2 的竖直分加速度应为 m_2 a sinθ），照抄原稿
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=087-07 ch=03 sec=系统牛顿第二定律 kind=problem alt=none cont=none y=0.65-0.71
+\begin{problem}
+$a=g\sin\theta$
+%FIG p087_f 0.18 0.648 0.30 0.705
+\notefig[0.25]{figures/p087_f.png}
+$\theta$ 可变，求 $f_{\text{地}\,\max}$
+\begin{solution}
+\[ f=ma\cos\theta=mg\cdot\frac12\sin2\theta_{\max}=\frac{mg}{2}\qquad \theta=45^\circ\text{ 时取等。} \]
+% “max”写在 sin2θ 右下角，意为 f_max
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=087-08 ch=04 sec=竖直面圆周·系统牛二 kind=problem alt=03,06 cont=none y=0.72-0.90
+\begin{problem}
+%FIG p087_g 0.105 0.73 0.2 0.795
+\notefig[0.25]{figures/p087_g.png}
+在最高点恰好对地面无压力，求在最低点压力
+\begin{solution}
+\[ (M+m)g=ma_{\text{上}}=m\,\frac{V_{\text{上}}^2}{R} \]
+\[ N-(M+m)g=\frac{mV_{\text{下}}^2}{R}\qquad \text{在圆周必用动能定理} \]
+\[ \frac12mV_{\text{下}}^2-\frac12mV_{\text{上}}^2=mg\,2R \]
+\[ \therefore N=(2M+6m)g \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=087-09 ch=03 sec=连接体·整体隔离 kind=method alt=none cont=none y=0.90-0.94
+\noindent 能整体先整体，剩余物体 $n-1$\quad 不能整体全隔离，关联加速未知力
+%%%END
+%%%PAGEEND 087

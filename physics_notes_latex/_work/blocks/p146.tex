@@ -1,0 +1,95 @@
+%%%PAGE 146 rot=0 legibility=good summary=力学综合：滑块与分段木板的动量守恒、斜劈与直杆连接体(1)、弹簧与轻绳系统的简谐对称性与功能关系(2)、弹簧连接三球的能量与动量(3)
+% 页面上另有一条大的V形（对勾状）长划线，从右上贯穿到中下部再折回，非删除标记，未特别处理；页面右边缘部分字迹被截断
+%%%BLOCK id=146-01 ch=07 sec=板块模型·分段木板 kind=method alt=06 cont=none y=0.03-0.19
+%FIG p146_a 0.125 0.04 0.255 0.12
+\notefig[0.3]{figures/p146_a.png}
+\[ mV_0=(m+M)V_{\text{末}} \]
+到不了末端
+\[ mV_0=\left(m+\dfrac{M}{2}\right)V_2+\dfrac{M}{2}V_1 \]
+\[ (m+M)V_{\text{末}}=\left(m+\dfrac{M}{2}\right)V_2+\dfrac{M}{2}V_1 \]
+%%%END
+%%%BLOCK id=146-02 ch=06 sec=机械能守恒·斜劈与直杆连接体 kind=problem alt=02,03 cont=none y=0.19-0.50
+\begin{problem}[1]
+\textbf{1、}①对斜面施加\unclear{力}$F_1$使之平衡，求$F_1$。②用$F$使斜劈缓慢右移，$m$上升$h$，求斜劈位移$S_1$及$F$做的功。% h 后的“,”按文意应为逗号；下文记作 h_1
+%FIG p146_b 0.105 0.215 0.26 0.345
+\notefig[0.25]{figures/p146_b.png}
+\begin{solution}
+\[ \begin{cases}
+N\cos\theta=mg\\
+F_1=N'\sin\theta\\
+N'=N
+\end{cases} \]
+\[ F_1=mg\tan\theta \]
+\[ V_{\text{杆}}=V_{\text{斜}}=0 \]
+\[ W=mgh_1\qquad S_1=\dfrac{h_1}{\tan\theta} \]
+③初始时$B$点高$h_2$，由静止释放$m$、$M$，求$m$着地时$M$速度
+\[ mgh_2=\dfrac{1}{2}mV_1^2+\dfrac{1}{2}MV_2^2 \]
+\[ V_1=V_2\tan\theta \]
+\[ V_2=\sqrt{\dfrac{2mgh_2}{m\tan^2\theta+M}} \]
+%FIG p146_c 0.635 0.415 0.74 0.455
+\notefig[0.15]{figures/p146_c.png}
+\[ \tan\theta=\dfrac{S_{\text{杆}}}{S_{\text{斜面}}} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=146-03 ch=06 sec=功能关系·弹簧与轻绳系统 kind=problem alt=08,03 cont=none y=0.50-0.715
+\begin{problem}[2]
+\textbf{2、}$\because$简谐运动对称性　$\angle A$从$120^\circ\to60^\circ$过程
+%FIG p146_d 0.115 0.514 0.25 0.605
+\notefig[0.2]{figures/p146_d.png}
+\begin{solution}
+$A$刚开始的$a_A=g$向下。
+
+故$A$在最低点时$a_A=g$向上
+
+$\therefore N_{\text{杆}A}=2mg$
+\[ 2T\cos30^\circ-mg=ma\qquad T=\dfrac{2\sqrt{3}}{3}mg \]
+\[ E_p=mg(h_1-h_2)=\dfrac{\sqrt{3}-1}{2}mgL \]
+\[ W_{\text{轻绳}B}=\dfrac{\sqrt{3}-1}{4}mgL\qquad W_{\text{轻绳}A}=\dfrac{\sqrt{3}-1}{4}mgL \]
+$P_{\text{绳}B}$先$\uparrow$后$\downarrow$　　$V$为0有0
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=146-04 ch=07 sec=动量与能量综合·弹簧连接三球 kind=problem alt=06 cont=none y=0.715-1.00
+\begin{problem}[3]
+\textbf{3、}释放后上球与弹簧分离时，杆弹力为10N
+%FIG p146_e 0.075 0.735 0.285 0.835
+\notefig[0.3]{figures/p146_e.png}
+①求$E_{p0}$。
+
+②若$C$球不固定，求$V_C$ max
+
+③若$C$球不固定 求$\theta=120^\circ$第一次时，$A$绕$C$的$\omega$
+%FIG p146_f 0.795 0.765 0.905 0.87
+\notefig[0.2]{figures/p146_f.png}
+以为$C$参照\unclear{物}
+\begin{solution}
+①
+\[ E_p=2\cdot\dfrac{1}{2}mv^2 \]
+\[ F=\dfrac{mv^2}{L} \]
+故$E_{p0}=10\unit{J}$
+
+②
+%FIG p146_g 0.168 0.868 0.395 0.945
+\notefig[0.35]{figures/p146_g.png}
+\[ m_1V_{A1}+m_1V_{A1}=m_2V_C \]
+\[ \dfrac{1}{2}m_1V_{A1}^2+\dfrac{1}{2}m_1V_{A1}^2+\dfrac{1}{2}m_2V_C^2=E_p \] % 第二项下标手写似 A 加一小撇，按上式取 A1
+\[ V_{A1}=V_C\text{时，}V_{A2}=0\text{时}\ V_C\ \max \]
+%FIG p146_h 0.425 0.893 0.545 0.96
+\notefig[0.2]{figures/p146_h.png}
+故$E_p=\dfrac{1}{2}m_2V_C^2+\dfrac{1}{2}m_1V_A^2\times2$
+
+$V_A=V_C$
+
+故$V_C=5\unit{m/s}$
+
+③
+\[ V_C=V_{A1}=\dfrac{\sqrt{3}}{2}V_{A2}=\dfrac{\sqrt{3}}{4}V_A \]
+\[ \sqrt{3}V_{A2}=V_C+V_{A1} \]
+\[ \dfrac{1}{2}m_2V_C^2+\dfrac{1}{2}m_1\left(V_{A1}^2+V_{A2}^2\right)\times2=\unclear{…} \] % 右端被页边截断
+\[ V_C=\sqrt{15}\unit{m/s} \]
+\[ \therefore V_A=4\sqrt{5}\unit{m/s}\qquad \omega=\dfrac{V_A}{L}=\unclear{…} \] % CHECK: 根号内数字难辨（似 5 或 15）；ω 式右端被页边截断
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 146

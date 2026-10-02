@@ -1,0 +1,242 @@
+% 本文件由 assemble.py 按 _work/plans/ch05.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{万有引力与航天}
+\label{ch:05}
+
+\section{开普勒定律与万有引力定律}
+% ---- block 070-03 (原稿第70页) kind=knowledge ----
+% 版面：左侧标题“开普勒行星运动定律”，其右大括号括入以下四条
+\textbf{开普勒行星运动定律}
+\begin{itemize}
+  \item 开普勒第一定律（轨道定律）\quad 轨迹椭圆、中心天体在焦点。
+  \item 开普勒第二定律（面积定律）\quad 一个行星绕一个中心天体\quad $V_1r_1=V_2r_2$
+  \item 开普勒第三定律（周期定律）\quad $\dfrac{a^3}{T^2}=K$。
+  \item 万有引力定律\quad $F=\dfrac{GMm}{r^2}$\quad $G=6.67\times10^{-11}\unit{N\cdot m^2/kg^2}$
+\end{itemize}
+
+
+\section{天体质量与密度计算}
+% ---- block 070-04 (原稿第70页) kind=formula ----
+自转 $T_{\text{地}}=24\unit{h}$\quad $V=\dfrac{4}{3}\pi R^3$
+
+公转 $T_{\text{地}}=365$天
+
+\textbf{天体质量密度计算}
+
+\textbf{借助外\unclear{援}}\quad 天体环绕半径 $r$、$T$
+\begin{align*}
+& \text{由}\ \dfrac{GMm}{r^2}=m\dfrac{4\pi^2}{T^2}r, \qquad M=\dfrac{4\pi^2r^3}{GT^2}\\
+& \rho=\dfrac{M}{V}=\dfrac{M}{\frac{4}{3}\pi R^3}=\dfrac{3\pi}{GT^2}\left(\dfrac{r}{R}\right)^3
+\end{align*}
+若$r\approx R$即近地卫星环绕\quad $\rho=\dfrac{3\pi}{GT^2}$
+
+\textbf{自力更生}\quad 已知表面$g$和天体半径$R$
+\[ M=\dfrac{gR^2}{G}\qquad \rho=\dfrac{M}{V}=\dfrac{M}{\frac{4}{3}\pi R^3}=\dfrac{3g}{4\pi GR} \]
+
+
+\section{天体表面重力加速度}
+% ---- block 070-05 (原稿第70页) kind=formula ----
+\textbf{天体表面的重力加速度问题}
+
+赤道 $\dfrac{GMm}{R^2}=mg+m\omega^2R$\quad 两极\,\unclear{$\therefore$}\,$\dfrac{GMm}{R^2}=mg$
+
+地球表面 $g=\dfrac{GM}{R^2}$，$h$高度处 $g'=\dfrac{GM}{(R+h)^2}$\quad 地底 $g=\dfrac{4}{3}\pi\rho Gx$。
+
+
+\section{宇宙速度与人造卫星}
+% ---- block 070-06 (原稿第70页) kind=knowledge ----
+% 版面：左侧标题“天体运动与人造卫星”，其右大括号括入“三种宇宙速度”“地球同步卫星特点”“极地卫星和近地卫星”三项；“三种宇宙速度”右侧另有大括号括入三个宇宙速度。sd=速度（原稿缩写）
+\textbf{天体运动与人造卫星}
+
+\textbf{三种宇宙速度}
+\begin{itemize}
+  \item 第一宇宙速度（环绕sd）\quad $V_1=7.9\unit{km/s}$\quad 最小发射、最大环绕\ 地球
+  \item 第二宇宙速度（脱离sd）\quad $V_2=11.2\unit{km/s}$\quad 挣脱地球引力束缚的最小发射速度
+  \item 第三宇宙速度（\unclear{逃逸}sd）\quad $V_3=16.7\unit{km/s}$\quad 挣脱太阳束缚的最小发射速度\\ 大于$V_2$小于$V_3$绕太阳
+\end{itemize}
+
+\textbf{地球同步卫星特点}
+\begin{itemize}
+  \item 轨道平面一定，轨道平面和赤道平面重合
+  \item 周期一定\quad $T=24\unit{h}=86400\unit{s}$\quad 角速度一定\quad $\omega=\omega_{\text{地球自转}}$
+  \item 高度一定\quad $\dfrac{GMm}{r^2}=m\dfrac{4\pi^2}{T^2}r$\quad $r=\sqrt[3]{\dfrac{GMT^2}{4\pi^2}}\approx4.24\times10^4\unit{km}$
+  \item 速度一定\quad $V=\dfrac{2\pi r}{T}=3.1\unit{km/s}$\quad $h=r-R\approx3.6\times10^4\unit{km}$
+  \item 绕行方向与地球自转方向相同\quad $r=6.6R$\quad $h=5.6R$
+\end{itemize}
+
+\underline{极地卫星}和\underline{近地卫星}，\quad $r=R$\quad $V=7.9\unit{km/s}$\\
+全球覆盖 % 原稿“全球覆盖”写在“极地卫星”下方
+
+\notefig[0.25]{figures/p070_d.png}
+
+
+\section{章节提纲}
+% ---- block 070-07 (原稿第70页) kind=summary ----
+% 本页散见的各专题标题（版面上与上述公式块穿插排列），此处只列没有其它内容的标题行
+\begin{itemize}
+  \item 开、万定律的理解与运用
+  \item 填补法求万有引力
+  \item 宇宙速度的理解与计算
+  \item 卫星运动参量的比较
+  \item 卫星变轨、飞船对接问题
+  \item 双星、多星模型、天体的追及相遇 % 页面底边，字迹下半部被截断
+\end{itemize}
+
+
+\section{宇宙速度}
+% ---- block 073-04 (原稿第73页) kind=knowledge ----
+\textbf{第一宇宙速度}\quad $V_1=\sqrt{\dfrac{GM}{R}}$
+
+对地球卫星\quad $v_1=\sqrt{gR}=7.9\times10^{3}\unit{km/s}$.\quad $T_{\min}=2\pi\sqrt{\dfrac{R}{g}}=85\unit{min}$ % CHECK: 原稿单位写作 km/s，数值 7.9×10^3 应对应 m/s（或 7.9 km/s），按原样转录
+
+\medskip
+\begin{tabular}{@{}ll@{}}
+$V_{\text{发}}=V_1$ & 卫星绕地球做匀速圆周运动 \\
+$V_1<V_{\text{发}}<V_2$ & 卫星绕地球做椭圆运动 \\
+$V_2<V_{\text{发}}<V_3$ & 卫星绕太阳做椭圆运动 \\
+$V_{\text{发}}\ge V_3$ & 卫星飞离太阳系 \\
+\end{tabular}
+
+
+\section{卫星变轨}
+% ---- block 073-05 (原稿第73页) kind=knowledge ----
+赤道上的物体、待发射的卫星不是卫星\quad $\dfrac{GMm}{r^{2}}\neq\dfrac{mv^{2}}{r}$
+
+$v\uparrow$\quad 离心运动.\quad $v\uparrow$\quad 升轨了
+
+\begin{tabular}{@{}l@{\;}l@{\;\;}p{0.62\linewidth}@{}}
+$v\uparrow$ & $\dfrac{GMm}{r^{2}}<\dfrac{mv^{2}}{r}$ & 离心运动，变为椭圆运动或在较大半径圆轨道上运动 \\[6pt] % CHECK: 第一行分式分母被下一行字迹遮挡，按 r^2 转录
+$v\downarrow$ & $\dfrac{GMm}{r^{2}}>\dfrac{mv^{2}}{r}$ & 向心运动\quad 变为椭圆轨道运动或在较小半径的圆轨道上运动 \\
+\end{tabular}
+
+
+\section{重力场·场强}
+% ---- block 083-04 (原稿第83页) kind=note ----
+% 原稿：g的箭头向下指向小圆圈“○”
+$\downarrow g$\quad $\circ$\quad 重力场\qquad $g=\dfrac{G}{m}$
+
+线与负电荷一样
+
+
+\section{万有引力·F-h图像}
+% ---- block 099-06 (原稿第99页) kind=problem ----
+⑥
+\[ F=\frac{GmM}{(R+h)^2} \]
+\notefig[0.25]{figures/p099_h.png}
+
+
+\section{天体能量·引力势能与机械能}
+% ---- block 117-03 (原稿第117页) kind=formula ----
+\begin{keybox}[天体功能]
+\[ E_{\mathrm{p}\text{引}}=-\frac{GMm}{r}\qquad E_K=\frac{GMm}{2r}\qquad E_{\text{机}}=-\frac{GMm}{2r} \]
+\end{keybox}
+
+
+\section{变轨·椭圆轨道能量}
+% ---- block 117-04 (原稿第117页) kind=derivation ----
+\notefig[0.25]{figures/p117_d.png}
+% 图中标注：椭圆轨道上 $r_1$、$r_2$（近、远点距离），$M$
+
+\[ E_{\text{椭}}=-\frac{GMm}{r_1+r_2}\quad
+\left\{\begin{aligned}
+& \frac{1}{2}mv_1^2-\frac{GMm}{r_1}=\frac{1}{2}mv_2^2-\frac{GMm}{r_2}\\
+& v_2=\sqrt{\frac{2GMr_1}{r_2(r_1+r_2)}}\qquad v_2'=\sqrt{\frac{GM}{r_2}}\qquad W_{\text{额外}}=\frac{1}{2}mv_2'^2-\frac{1}{2}mv_2^2\\
+& v_1=\frac{v_2 r_2}{r_1}\\
+& \frac{1}{2}m\left(\frac{v_2 r_2}{r_1}\right)^2-\frac{GMm}{r_1}=\frac{1}{2}mv_2^2-\frac{GMm}{r_2}
+\end{aligned}\right. \]
+
+
+\section{天体追及·冲日}
+% ---- block 117-05 (原稿第117页) kind=method ----
+冲日（追逐）、
+\[ \left(\underset{\text{近}}{\frac{2\pi}{T_1}}-\underset{\text{远}}{\frac{2\pi}{T_2}}\right)t=2\pi\quad\therefore\ t=\frac{T_1T_2}{T_2-T_1} \]
+
+\begin{itemize}
+\item 相向运行 $\swarrow$ 为加号 % 此处另有一弯箭头 $\nwarrow$
+\item 反向运行 $\swarrow$ 为减号 % 此处另有一弯箭头 $\searrow$；CHECK: 原稿“反向运行”，物理上追及(同向运行)才为减号；“为”字不太清晰
+\end{itemize}
+
+
+\section{拉格朗日点}
+% ---- block 117-06 (原稿第117页) kind=note ----
+拉格朗日点\quad 同轴转体\quad 不会失重\quad \unclear{地月动}.
+
+
+\section{万有引力定律·发现史}
+% ---- block 121-01 (原稿第121页) kind=knowledge ----
+% 页面右上角露出邻页(化学)内容“ρ=1.429g·L^-1”，不属于本页，已忽略
+\textbf{天体物理}
+
+托勒密\ 地心说\quad／\quad 哥白尼\ 日心说\quad／\quad 第谷\ 观测\quad／\quad 开普勒在第谷基础上总结开三\quad／\quad 伽利略发现木卫
+
+胡克、笛卡尔、牛顿 $\to$ 万有引力定律
+
+$F_{\text{万}}=G\dfrac{m_1m_2}{r^2}$\quad（\unclear{天体}球心距）
+
+$G=6.67\times10^{-11}\ \unit{N\cdot m^2/kg^2}$\quad 卡文迪许扭称实验测出（放大法） % CHECK: 原稿“扭称”，应为“扭秤”
+
+
+\section{万有引力定律·推导与月地检验}
+% ---- block 121-02 (原稿第121页) kind=derivation ----
+第谷 $\to$ 开普勒三大定律 $\to$ 胡克：平方反比.（引力与$r^2$成反比）$\to$ 牛顿\quad 由牛一.\ 行星必受力
+
+由牛二\quad $F_{\text{万}}=\dfrac{mv^2}{r}$
+
+\[
+\begin{aligned}
+&\text{由圆周}\ v=\frac{2\pi r}{T}\\
+&\text{由开三}\ \frac{r^3}{T^2}=\text{定值}
+\end{aligned}
+\qquad
+\left.\begin{aligned}
+F_{\text{万}}&=m\frac{4\pi^2}{T^2}r\\
+T^2&=\frac{r^3}{\text{定值}}
+\end{aligned}\right\}
+\ \to\ F_{\text{万}}=\frac{m\,4\pi^2}{r^2}\cdot\text{定值}
+\]
+
+\[ F_{\text{万}}\propto\frac{1}{r^2},\ \propto m\ \ \propto M \]
+
+$\downarrow$
+
+\[ F_{\text{万}}=\frac{GMm}{r^2}\qquad \text{\unclear{对}月地检验}\ \to\ \text{正确}\qquad \frac{g}{g}=\frac{1}{60^2} \]% CHECK: “月地检验”前一字难辨(疑为“对”)，原稿此处有带箭头的下划线指向“正确”；g/g 的分子分母疑带撇或下标，原稿难辨
+
+
+\section{非球体万有引力计算}
+% ---- block 121-03 (原稿第121页) kind=method ----
+\textbf{非球体万有引力计算}
+
+割补法、对称填补法、负质量法
+
+对剩余部分对$m$万有引力
+
+\notefig[0.58]{figures/p121_a.png}
+% 图中标注：大球 M、半径 R，挖去部分(红色斜线小球)“挖 1/8 M”；红字“补”；F_1(红色箭头)、F_2；d-R/2、d、d-1/2R 等尺寸线；中间小圆圈为质点 m
+% 图外：右侧小球右上方另有红字“补”
+\red{补}
+
+\notefig[0.3]{figures/p121_b.png}
+% 图中标注：余弦/正弦定理、(合力)F_2、质点 m、d、R、斜边 $\sqrt{d^2+(R/2)^2}$；红色箭头；红色斜线为挖去的小球
+
+\begin{align*}
+F_1&=\frac{G\frac{1}{8}Mm}{\left(d-\frac{1}{2}R\right)^2}\\
+F_1+F_2&=\frac{GMm}{d^2}\\
+F_{\text{万}}&=F_r+F_2-F_1 \\
+&=\frac{GMm}{d^2}-\frac{G\frac{1}{8}Mm}{\left(d-\frac{1}{2}R\right)^2}
+\end{align*}% CHECK: F_万=F_r+F_2-F_1 中第一项下标原稿像 r，疑为 1
+
+
+\section{卫星相遇·周期问题}
+% ---- block 195-01 (原稿第195页) kind=problem ----
+\begin{problem}
+火星同步卫星圆周轨道半径为$R$，火星自转一周为1个火星日。探测器在火星赤道正上方环绕火星匀圆，环绕方向与火星自转同向。每6个火星日经赤道上空同一位置。该火星环绕周期为$n$个火星日，轨道半径为$r$
+\begin{solution}
+\[
+t=6T_0=\frac{nT_0\,T_0}{nT_0-T_0}\quad\text{或}\quad\frac{nT_0\,T_0}{T_0\ nT_0}
+\]
+% CHECK: 第二个分式分母 $T_0$ 与 $nT_0$ 之间原稿未见减号（应为 $T_0-nT_0$）
+\[
+n=\frac{6}{7}\ \text{or}\ \frac{6}{5}
+\]
+\end{solution}
+\end{problem}
+

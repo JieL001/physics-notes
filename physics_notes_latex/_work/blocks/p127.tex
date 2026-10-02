@@ -1,0 +1,61 @@
+%%%PAGE 127 rot=0 legibility=good summary=杆上带电小环在磁场中下滑的动态分析(a与v变化)；球壳定理与地球内部引力；重力加速度反常(空腔探测)
+%%%BLOCK id=127-01 ch=11 sec=洛伦兹力·杆上带电小环 kind=method alt=03 cont=none y=0.02-0.30
+% 图内手写（红字，辨认不全）：f_摩（沿杆向上的箭头）、F_洛（垂直杆斜向上的箭头）、N（垂直杆斜向下的箭头，旁有“先/后”字样）、mg（竖直向下）；小环带“+”，×表示磁场垂直纸面向里
+%FIG p127_a 0.005 0.02 0.31 0.168
+\notefig[0.3]{figures/p127_a.png}
+\[ a_1\,\red{\uparrow}=\dfrac{mg\sin\theta-\unclear{\mu}\,f\downarrow}{m} \]
+% CHECK: 减号后的“μ”像被划去/写重了，且 f 已含 μ；原样转录
+% 图内红字：f=0时、N=0（二者之间有下划线）；a_max（红字，标在曲线拐点附近）
+%FIG p127_b 0.37 0.029 0.67 0.24
+\notefig[0.3]{figures/p127_b.png}
+\[ a_2=\dfrac{mg\sin\theta-f\uparrow}{m}\ \downarrow\qquad \rule[0.5ex]{3em}{0.4pt}\ v_{\max} \]
+\[ \left\{\begin{array}{l} a_{\max}\text{时}\ f,N=0\\[2pt] v_{\max}\text{时}\ \Sigma F=0 \end{array}\right. \]
+%%%END
+%%%BLOCK id=127-02 ch=99 sec=化学·气体密度 kind=note alt=none cont=none y=0.05-0.09
+% 页面顶部右侧，压在页眉线上，右端被页边截断
+\unclear{气}体 $\rho=1.429\unit{g\cdot L^{-1}}$
+%%%END
+%%%BLOCK id=127-03 ch=05 sec=球壳定理·地球内部引力 kind=knowledge alt=09 cont=none y=0.29-0.69
+\textbf{深度/井}
+% 手写左侧有一个大括号，并列下面两项
+\begin{itemize}
+\item 球\quad $\dfrac{GMm}{r^2}$\quad 质点
+%FIG p127_c 0.178 0.32 0.245 0.37
+\notefig[0.25]{figures/p127_c.png}
+\item 球壳\quad $\left\{\begin{array}{l}\text{内：}\Sigma F_{\text{引}}=0\\ \text{外：质点}\end{array}\right.$
+%FIG p127_d 0.18 0.388 0.251 0.44
+\notefig[0.25]{figures/p127_d.png}
+\end{itemize}
+% 以下两图分别为 F-r 图（纵轴F）与 E-r 图（纵轴E），横轴 r，虚线标 R
+%FIG p127_e 0.51 0.36 0.71 0.535
+\notefig[0.3]{figures/p127_e.png}
+%FIG p127_f 0.745 0.385 0.955 0.51
+\notefig[0.3]{figures/p127_f.png}
+% 下图：大圆内套小圆（小圆内写“实心”，辨认不全）
+%FIG p127_g 0.19 0.535 0.30 0.615
+\notefig[0.25]{figures/p127_g.png}
+\begin{align*}
+\Sigma F &= F_{\text{芯}}+\fbox{$F_{\text{壳}}$}= \\
+&=\dfrac{GM'm}{r^{2}}=\dfrac{G\rho\cdot\frac{4}{3}\pi r^{3}m}{r^{2}}= {\propto}\rho r
+\end{align*}
+% CHECK: 第二行分子里的字母可能是 m'（内部球质量）而非 M'；末尾“=∝ρr”原样；F_壳 被圈出
+% 右侧图：F-r 图，原点起线性上升至 R 处峰值（竖线标 R），之后曲线下降；横轴 r
+%FIG p127_h 0.62 0.55 0.82 0.664
+\notefig[0.3]{figures/p127_h.png}
+%%%END
+%%%BLOCK id=127-04 ch=05 sec=重力加速度反常·空腔探测 kind=derivation alt=none cont=none y=0.67-0.98
+% 标题“g 反常”写在图 p127_i 的左上角（已含在图内）
+(1)
+%FIG p127_i 0.015 0.672 0.455 0.825
+\notefig[0.45]{figures/p127_i.png}
+% 下式被手绘椭圆圈起；ρV 上方标注 M
+\[ \boxed{\,g_{\text{球}}=\dfrac{G\overset{M}{(\rho V)}}{x^{2}+d^{2}}\,} \]
+\[ \Delta g=\dfrac{G\rho Vd}{(x^{2}+d^{2})^{3/2}}= \text{\struck{$\delta$}} \]
+% “=δ”被涂划掉
+(2)
+%FIG p127_j 0.0 0.82 0.455 0.98
+\notefig[0.45]{figures/p127_j.png}
+\[ \left\{\begin{aligned} \dfrac{G\rho Vd}{(L^{2}+d^{2})^{3/2}}&=\delta\\[4pt] \dfrac{G\rho Vd}{(d^{2})^{3/2}}&=k\delta \end{aligned}\right. \]
+解出 $V$、$d$
+%%%END
+%%%PAGEEND 127

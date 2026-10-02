@@ -1,0 +1,79 @@
+%%%PAGE 10 rot=0 legibility=good summary=机车启动的动能定理与突变问题；竖直面圆周的绳球/杆球模型与轨道示意；圆弧摩擦与凹凸轨时间比较；库仑定律（带电球体情形）与三电荷平衡
+%%%BLOCK id=010-01 ch=06 sec=机车启动·动能定理 kind=formula alt=none cont=none y=0.02-0.11
+$t$\ $S$\ 互求\quad 动能定理
+
+\[
+Pt-fS=\Delta E_k=\frac{1}{2}mV_m^2-0
+\]
+\[
+P_0t-fS=\frac{1}{2}mV_m^2-\frac{1}{2}mV_1^2
+\]
+%%%END
+%%%BLOCK id=010-02 ch=06 sec=机车启动·突变问题 kind=method alt=03 cont=none y=0.12-0.25
+\textbf{突变问题}
+
+加速\quad $\overset{\downarrow}{a}=\dfrac{F-f}{m}=\dfrac{\frac{P}{v}-f}{m}$\quad $\left\{\begin{array}{l}\text{功率突变}\\ \text{阻力突变}\end{array}\right.$\ $v$\ $\left\{\begin{array}{l}\text{加速}\\ \text{减速}\end{array}\right.$
+
+减速\quad $\overset{\downarrow}{a}=\dfrac{f-\frac{P}{v}}{m}$
+% “a”上方有一个小符号（形似“↓”或“v”）；“减速”行分子第二项手写形似“P/v”；两行右侧各有一条短弧线
+%%%END
+%%%BLOCK id=010-03 ch=04 sec=竖直面圆周·绳球 kind=method alt=06 cont=none y=0.25-0.43
+\textbf{绳球}\quad $T\perp V$，$W=0$
+
+上到最高点\ $V\ge\sqrt{gr}$
+
+%FIG p010_a 0.50 0.282 0.585 0.342
+\notefig[0.25]{figures/p010_a.png}
+
+上不去\ $\left\{\begin{array}{ll}\text{上半圆} & \text{斜上抛}\\ \text{下半圆} & \text{单摆}\end{array}\right.$
+
+类绳模型$\to$弹力只能向内
+
+最高点最低点拉力差\ $6mg$
+%%%END
+%%%BLOCK id=010-04 ch=04 sec=竖直面圆周·杆球 kind=method alt=06 cont=none y=0.44-0.68
+\textbf{杆球}\quad 杆力\ $W_{\text{总}}=0$
+
+上到最高点\ $V_{\text{高}}\ge0$
+
+上不去\quad 原路反回 % “反回”疑为“返回”
+
+类杆模型\quad 小球受弹力可内可外
+
+%FIG p010_b 0.525 0.443 0.975 0.602
+\notefig[0.6]{figures/p010_b.png}
+% 图 p010_b：一条大波浪形轨道，沿途分段标注“杆”“绳”“杆”
+
+%FIG p010_c 0.412 0.576 0.66 0.672
+\notefig[0.35]{figures/p010_c.png}
+% 图 p010_c：四个小示意图（圆环形“杆”、拱形“杆”、碗形“绳”、圆形“杆”）
+%%%END
+%%%BLOCK id=010-05 ch=06 sec=圆弧摩擦·凹凸轨 kind=knowledge alt=04 cont=none y=0.68-0.80
+圆弧摩擦：槽大\ 拱小\quad 摩擦多
+
+凹凸轨：\ $t_{\text{槽}}<t_{\text{平}}<t_{\text{拱}}$
+
+%FIG p010_d 0.05 0.7445 0.185 0.793
+\notefig[0.25]{figures/p010_d.png}
+%%%END
+%%%BLOCK id=010-06 ch=09 sec=库仑定律 kind=knowledge alt=none cont=none y=0.82-0.93
+库仑定律\quad $F=kq_1q_2/r^2$\qquad $k=9\times10^9\,\mathrm{C}$ % CHECK: 原稿 k 的单位只写“C”（应为 N·m$^2$/C$^2$），照原样转录
+
+$q_1,q_2$不为点电荷时
+
+%FIG p010_e 0.405 0.853 0.52 0.925
+\notefig[0.25]{figures/p010_e.png}
+% 图 p010_e：上、下两幅带电球体示意图（两球心连线上标 $r$，球面上画有电荷符号，分别对应下面的“同性”“异性”）
+
+同性\quad $F<\dfrac{kq_1q_2}{r^2}$
+
+异性\quad $F>\dfrac{kq_1q_2}{r^2}$
+%%%END
+%%%BLOCK id=010-07 ch=09 sec=三电荷平衡 kind=knowledge alt=none cont=none y=0.79-1.00
+两个固定点电荷使第三个电荷在库仑力作用下平衡
+
+只需把自由电荷（$q$任意）放在$E=0$的位置
+
+\textbf{三电平衡}\quad 三点共线\quad 两同夹异\quad 两大夹小\quad \underline{近小远大}
+%%%END
+%%%PAGEEND 10

@@ -1,0 +1,78 @@
+%%%PAGE 129 rot=0 legibility=good summary=卫星运行的能量公式；变轨能量与热量；月球卫星发射所需能量；变轨半径；追及相遇与行星冲日(木星冲日例)
+%%%BLOCK id=129-01 ch=05 sec=卫星运行规律·能量 kind=formula alt=none cont=none y=0.02-0.17
+天体动能定理
+
+能量\ $\left\{\begin{array}{l}\text{动力}\\ \text{动能}\\ \text{动量}\end{array}\right.$
+% 以上：左侧两行字，右侧一个大括号括起“动力、动能、动量”
+\[ v=\sqrt{\dfrac{GMm}{r}}\qquad E_k=\dfrac{GMm}{2r}\qquad E_p=-\dfrac{GMm}{r}\ \ (E_{p\infty}=0) \]
+% CHECK: 根号内为 GMm/r（多了 m），原样转录
+\[ E_{\text{机}}=-\dfrac{GMm}{2r} \]
+%%%END
+%%%BLOCK id=129-02 ch=99 sec=化学·气体密度 kind=note alt=none cont=none y=0.05-0.09
+% 页面顶部右侧，压在页眉线上，右端被页边截断；与第127页同一位置出现同一行字
+\unclear{气}体 $\rho=1.429\unit{g\cdot L^{-1}}$
+%%%END
+%%%BLOCK id=129-03 ch=05 sec=变轨·能量与热量 kind=problem alt=none cont=none y=0.15-0.30
+\underline{用动能定理}
+
+卫星从 $R_1$ 轨\unclear{由}$f$到 $R_2$ 轨，热量为？
+\[ W_f=-Q=\Delta E_{\text{机}}=-\left[\unclear{\left(-\dfrac{GMm}{2R_2}\right)-\left(-\dfrac{GMm}{2R_1}\right)}\right] \]
+（方括号上方标注：末动能$-$初动能）
+% 方括号内有较多涂改痕迹（第一个分式前有一个大括号状的粗线，第二个括号内分式前有划掉的符号）
+\[ =\dfrac{GMm}{2}\left(\dfrac{1}{R_1}-\dfrac{1}{R_2}\right)\qquad Q>0\ \ \text{再反一下} \]
+%%%END
+%%%BLOCK id=129-04 ch=05 sec=卫星发射所需能量 kind=problem alt=none cont=none y=0.30-0.45
+% 左图：月球(小圆，内写“月球”及M)外套一个大圆，两圆之间用双向箭头标 h
+%FIG p129_a 0.075 0.30 0.235 0.425
+\notefig[0.25]{figures/p129_a.png}
+\[ E_p=\dfrac{GMmh}{R(R+h)} \]
+从发射时所需能量为？
+\[ E_{\text{机}}=\dfrac{GMm}{2(R+h)}+\dfrac{GMmh}{(R+h)R}=\dfrac{mgR^{2}}{R+h}\left(\dfrac{R}{2}+h\right) \]
+%%%END
+%%%BLOCK id=129-05 ch=05 sec=变轨·能量与半径 kind=problem alt=none cont=none y=0.45-0.58
+某\unclear{星}在 $r_1$ 上圆时 $E_k$，在轨$_2$上后动能少了 $\Delta E$，求 $r_2$
+\[ \Delta E=\underbrace{\dfrac{GMm}{2r}}_{E_k}-\underbrace{\dfrac{GMm}{2r'}}_{E_k'}\ \downarrow\ \dfrac{E_kr}{r'}\qquad\qquad r_2=\dfrac{E_k}{E_k-\Delta E}\,r \]
+%%%END
+%%%BLOCK id=129-06 ch=05 sec=追及相遇·行星冲日 kind=derivation alt=none cont=none y=0.57-0.78
+% 手绘大括号“〈 〉”括起以下两行标题
+\textbf{追及相遇}
+
+\unclear{直}冲\unclear{星}日
+% 图：两个同心圆（内圆标1、外圆标2），圆心处有点；内圆上一点与外圆上一点同圆心用虚线连成一条直线；标注 ω_1、1、ω_2、2
+%FIG p129_b 0.228 0.575 0.43 0.70
+\notefig[0.3]{figures/p129_b.png}
+\[ \omega_1t-\omega_2t=2n\pi\ \ \text{整圈}\qquad n\pi\ \ \text{半圈} \]
+\[ \dfrac{2\pi}{T_1}t-\dfrac{2\pi}{T_2}t=2\pi \]
+\[ \dfrac{1}{T_1}-\dfrac{1}{T_2}=\dfrac{1}{t}\qquad\qquad \dfrac{T_2-T_1}{T_1T_2}=\dfrac{1}{t} \]
+\[ t=\dfrac{T_1T_2}{T_2-T_1} \]
+%%%END
+%%%BLOCK id=129-07 ch=05 sec=追及相遇·行星冲日 kind=derivation alt=none cont=none y=0.74-1.0
+% 图：日、地、行（行星）三个小圆圈排成一条直线（名称写在圆圈上方），从地、行处各引一条斜向下的箭头
+%FIG p129_c 0.10 0.745 0.40 0.822
+\notefig[0.35]{figures/p129_c.png}
+% 下式中 T_地 与 1/t 下方各有一个向下箭头指向“1年”
+\[
+\begin{array}{ccccc}
+\dfrac{1}{T_{\text{地}}} & - & \dfrac{1}{T_{\text{行}}} & = & \dfrac{1}{t}\\[6pt]
+\downarrow & & & & \downarrow\\
+1\text{年} & & & & 1\text{年}
+\end{array}
+\]
+\[ T_{\text{行}}=\unclear{\infty}\propto R^{3/2} \]
+$\therefore$ 不会\unclear{每年}都冲日
+
+越远越易冲
+%%%END
+%%%BLOCK id=129-08 ch=05 sec=追及相遇·行星冲日 kind=problem alt=none cont=none y=0.82-1.0
+\[ \dfrac{1}{T_{\text{地}}}-\dfrac{1}{T_{\text{木}}}=\dfrac{1}{t}\qquad \text{木冲不会是一\unclear{年}} \]
+\[ T_{\text{木}}\propto r^{3/2}\qquad \dfrac{T_{\text{木}}}{T_{\text{地}}}=(5.2)^{3/2}=1\unclear{1}\text{年} \]
+% CHECK: 年数前面一位被涂黑，(5.2)^{3/2}≈11.9
+$\therefore$ 代入 $t=\dfrac{10}{9}=1.\unclear{2}$年
+% CHECK: 10/9≈1.1，与“1.2年”及上式不一致
+上次 2014\unclear{年}1月6
+
+$\therefore$ 2015年内可冲日
+
+(2014.1.6$\sim$2015.12.\unclear{31})
+%%%END
+%%%PAGEEND 129

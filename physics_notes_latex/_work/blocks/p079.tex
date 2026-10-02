@@ -1,0 +1,129 @@
+%%%PAGE 79 rot=0 legibility=good summary=系统动量定理（平抛、竖直圆周例）与M带m、绳绷紧两例；动量守恒条件与喷气；凹槽水平动量守恒；A、B两球碰撞求质量比与机械能损失；C在曲面槽上AB分离（页底一行被截断）
+%%%BLOCK id=079-01 ch=07 sec=动量定理·系统动量定理 kind=knowledge alt=04 cont=none y=0.04-0.24
+\textbf{系统动量定理}\quad $\sum\vec I=\sum\vec F\,t=m\vec V_2-m\vec V_1$
+
+%FIG p079_a 0.0 0.13 0.19 0.22
+\notefig[0.25]{figures/p079_a.png}
+\[
+mgt=m\Delta V
+\]
+%FIG p079_b 0.36 0.13 0.505 0.22
+\notefig[0.25]{figures/p079_b.png}
+\begin{align*}
+&mg\,2R=\tfrac12 mV^2-\tfrac12 mV_0^2\\
+&I_N+mgt=m\vec V-m\vec V_0\\
+&W_N=0\qquad I_N\ne0
+\end{align*}
+%%%END
+%%%BLOCK id=079-02 ch=07 sec=动量定理·系统动量定理 kind=problem alt=03 cont=none y=0.26-0.35
+\begin{problem}
+$M$带$m$、$V_0$时$M$离开 $m$停后 求$V_M$
+%FIG p079_c 0.02 0.30 0.17 0.335
+\notefig[0.25]{figures/p079_c.png}
+\begin{solution}
+\[
+\begin{cases}
+(M+m)at=MV+m\cdot0-(M+m)v\\[2pt]
+t=\dfrac{V_0}{\mu g}
+\end{cases}
+\]
+% CHECK: t 的分母手写像 ug，按 \mu g 转录
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=079-03 ch=07 sec=动量守恒·适用条件 kind=knowledge alt=none cont=none y=0.33-0.42
+% 原稿位置：页面右侧，与“M带m”“绳绷紧”两例同高；右侧另有一括号括出“分阶段”“分方向”
+\[
+\text{动量守恒}
+\left\{
+\begin{array}{l}
+\text{内力}\gg\text{外力}\\
+\text{时间极短}\\
+\text{合外力为0}
+\end{array}
+\right.
+\left\{
+\begin{array}{l}
+\text{分阶段}\\
+\text{分方向}
+\end{array}
+\right.
+\]
+%%%END
+%%%BLOCK id=079-04 ch=07 sec=动量定理·系统动量定理 kind=problem alt=none cont=none y=0.36-0.53
+\begin{problem}
+% 题干只有配图中的标注（$V_0=2\,\mathrm{m/s}$、$L=0.4\,\mathrm{m}$）
+%FIG p079_d 0.005 0.365 0.195 0.495
+\notefig[0.25]{figures/p079_d.png}
+\begin{solution}
+\[
+-(M+m)g\,\Delta t=(m+M)V_{\text{共}}-(MV_0-mV_0)
+\]
+\[
+\Delta t=\dfrac{0.4}{4}=0.1\,\mathrm{s}\quad {=}\,\dfrac{L}{V_{\text{相}}}
+\]
+% 原稿“=L/V相”写在“0.1s”右上方；CHECK: 0.1s 的 s 手写像 5
+\[
+\therefore\ V_{\text{共}}=\dfrac{M-3m}{M+m}\quad
+\begin{cases}
+M>3m\text{ 时 向上}\\
+M=3m\text{ 时 不动}\\
+M<3m\text{ 时 向下.}
+\end{cases}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=079-05 ch=07 sec=反冲·爆炸 kind=note alt=none cont=none y=0.44-0.51
+喷气切记质量减少
+% 句末有一斜划
+\[
+MV_0=(M-m)V_2+MV_1
+\]
+% CHECK: 末项质量手写像 M（按物理应为 m）
+%%%END
+%%%BLOCK id=079-06 ch=07 sec=滑块曲面体模型 kind=method alt=06 cont=none y=0.575-0.635
+%FIG p079_e 0.02 0.575 0.125 0.632
+\notefig[0.25]{figures/p079_e.png}
+机守可滑到最高处\quad \underline{水平方向}动量守恒\quad 动量不守恒
+%%%END
+%%%BLOCK id=079-07 ch=07 sec=碰撞·非完全弹性碰撞 kind=problem alt=06 cont=none y=0.675-0.91
+\begin{problem}
+%FIG p079_f 0.04 0.675 0.215 0.745
+\notefig[0.3]{figures/p079_f.png}
+在 $L$ 区内 $A$ 受 $F$ 向右由静止匀加、与 $B$ 只碰 1 次 最终两\unclear{距}球距离不变为 $\dfrac49L$\\
+求 $\dfrac{m_A}{m_B}$ 和 $E$机\unclear{损}
+% “两”与“球”之间多一个像“距”的笔画；“E机损”末字像 损
+\begin{solution}
+\[
+\begin{cases}
+m_AV_0=m_BV_B-m_AV_A\\
+V_A=V_B=V\\
+FL=\tfrac12 m_AV_0^2\\
+Ft=2m_AV\\
+\dfrac49L=Vt
+\end{cases}
+\qquad\therefore\ \dfrac{m_A}{m_B}=\dfrac14
+\]
+\[
+\Delta E_{\text{机}}=\tfrac12 m_AV_0^2-\left(\tfrac12 m_AV^2+\tfrac12 m_BV^2\right)=\dfrac49FL
+\]
+% CHECK: 括号内两项之间的符号手写像一个潦草的 +，按 + 转录
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=079-08 ch=07 sec=滑块曲面体模型 kind=problem alt=06 cont=none y=0.91-1.00
+\begin{problem}
+%FIG p079_g 0.03 0.918 0.205 0.99
+\notefig[0.25]{figures/p079_g.png}
+C 在最低点时 $AB$ 分离\quad C 到 $A$ 左侧最高时 $V_A=\dfrac V4$ 向左．$A$、$B$ 会滑下
+% CHECK: 若取向右为正，V_AC=V/4>0 应向右，手写为“向左”，原样转录
+\begin{solution}
+① $AB$ 共同向右\quad $mV=2mV_{AB}$\\
+$mV+m\left(-\dfrac V2\right)=2mV_{AC}$\qquad $V_{AC}=\dfrac V4$\\
+② $AC$ \unclear{左}减速，$AB$ 分开，$B$ 向右匀速
+% 页面底部此行被截断，字迹只见上半部
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 79

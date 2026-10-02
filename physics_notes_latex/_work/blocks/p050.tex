@@ -1,0 +1,147 @@
+%%%PAGE 50 rot=0 legibility=fair summary=磁场章内容页(红笔批注很多)：作图找圆心(两两垂直/中垂线+垂线)；组合场"磁场中平抛"(类平抛进磁场，D=2Ex/(BV0)与粒子无关)；速偏=圆心=2位偏、垂径定理、双边限制；平抛与圆周对比及qE>qV0B；指心入背心出/双心连线；圆形边界D=(L+R)tanθ；直线边界正负粒子；直线相切/圆形相切束缚粒子作圆步骤及Vmin/Vmax
+%%%BLOCK id=050-01 ch=11 sec=有界磁场·作图找圆心 kind=method alt=none cont=none y=0.025-0.28
+两两垂直、一垂一点作中垂\ \ 直径所对圆周角$90^\circ$
+
+\red{中垂线+垂线}
+
+%FIG p050_b 0.49 0.03 0.87 0.275
+\notefig[0.55]{figures/p050_b.png}
+% 红笔所绘：一个大红圆，圆内有竖直双线(中垂线)、水平弦及斜线构成的三角形，右侧有红色箭头；叠在"磁场中平抛"一节右上部的公式之上，公式见块 050-02
+%%%END
+%%%BLOCK id=050-02 ch=11 sec=组合场·磁场中平抛 kind=derivation alt=04,09 cont=none y=0.06-0.31
+\fcolorbox{red!75!black}{white}{\textbf{磁场中平抛}．}
+
+%FIG p050_a 0.03 0.100 0.315 0.25
+\notefig[0.4]{figures/p050_a.png}
+% 图内标注：V_0、E(两条竖直向下箭头)、y、x、2α(红)、θ(红圈)、V_1、B(虚线圆内为点，表示磁场)
+
+\[
+\begin{cases}\tan\theta=\dfrac{2y}{x}=2\tan\alpha=\dfrac{V_y}{V_0}\\[6pt] V_1\cos\theta=V_0\end{cases}
+\qquad
+\begin{cases}x=V_0t\\[2pt] y=\dfrac{1}{2}\dfrac{qE}{m}t_{\theta}^{2}\\[4pt] t_{\theta}=\dfrac{V_y}{a}\end{cases}
+\]
+% CHECK: 右侧大括号中 t 的下标被红笔覆盖，字形像 θ 或 e，按 t_θ 录入
+
+洛伦兹力提供向心力
+
+\[
+\begin{cases}qV_1B=\dfrac{mV_1^{2}}{R}\\[6pt] T=\dfrac{2\pi R}{V_1}\\[6pt] \dfrac{t}{T}=\dfrac{\theta}{2\pi}\ \ \text{or}\ \ t=\dfrac{\theta R}{V_1}\ \ \text{（无}\,B\,\text{求时间）}\end{cases}
+\qquad
+\begin{cases}R=\dfrac{mV}{qB}\\[6pt] T=\dfrac{2\pi m}{qB}\\[6pt] t=\dfrac{\theta m}{qB}\end{cases}
+\]
+
+\[ D=\frac{2mV}{qB}\sin\theta=\frac{2mV_y}{qB}=\frac{m\Delta V_y}{qB} \]
+
+\[ a_{\text{向}}=\omega V \]
+
+☆\ \fcolorbox{red!75!black}{white}{$qBD=m\Delta V_y$}
+\[ \Delta V_y=2V_y=2at=\frac{2Eqx}{mV_0} \]
+\[ D=\frac{2Ex}{BV_0}\ \ \text{（与粒子无关）} \]
+% "（与粒子无关）"原稿为涂改：先写"看"，上方改写"与"，并被圈住
+
+（正负\unclear{加}力量，与侧移结合）
+
+侧移量只与场\unclear{强}有关
+%%%END
+%%%BLOCK id=050-03 ch=11 sec=有界磁场·作图找圆心 kind=method alt=none cont=none y=0.285-0.43
+速偏$=$圆心$=2\cdot$位偏
+
+几何长$\to$\fbox{半径}$\to$其他量
+
+%FIG p050_c 0.01 0.333 0.245 0.42
+\notefig[0.4]{figures/p050_c.png}
+% 图内含(黑字)"有垂直即相等""(垂径定理)"及红笔标记
+
+有垂直即\red{相等}\quad （垂径定理）
+% 原稿"有垂直即"之后黑字被红笔"相等"叠写覆盖
+
+%FIG p050_d 0.24 0.332 0.415 0.425
+\notefig[0.3]{figures/p050_d.png}
+% 图内标注：V、D、L、r、r−D、×(磁场区)；红笔另画有 L 形大括线及 D、L 标记
+
+双边限制\quad \fcolorbox{red!75!black}{white}{$\displaystyle r=\frac{D^{2}+L^{2}}{2D}=\frac{mV}{qB}$}
+
+%FIG p050_e 0.585 0.335 0.77 0.397
+\notefig[0.3]{figures/p050_e.png}
+2种临界
+%%%END
+%%%BLOCK id=050-04 ch=11 sec=组合场·电场与磁场偏转对比 kind=method alt=04,09 cont=none y=0.40-0.51
+%FIG p050_f 0.01 0.415 0.115 0.495
+\notefig[0.25]{figures/p050_f.png}
+% 图内标注：V_0、y、x
+
+\[
+\left\{\begin{array}{l}
+\text{平抛}\ \ \fcolorbox{red!75!black}{white}{$\displaystyle y=\frac{g}{2V_0^{2}}x^{2}$}\\[10pt]
+\fcolorbox{red!75!black}{white}{圆周}\ \ r=\dfrac{mV_0}{qB}=\fcolorbox{red!75!black}{white}{$\displaystyle\frac{x^{2}+y^{2}}{2y}$}
+\end{array}\right.
+\]
+% "平抛"与"y="之间另有一个红色小记号(像 ∝ 或 ω)
+
+平进斜出
+
+%FIG p050_g 0.335 0.42 0.53 0.50
+\notefig[0.35]{figures/p050_g.png}
+% 图内标注：L、d/2、d/2、纯E、纯B（红笔在图上画有轨迹线与圈）
+
+\[ \frac{d}{2}=\frac{1}{2}\,\frac{qE}{mV_0^{2}}L^{2}\qquad qE=\frac{dmV_0^{2}}{L^{2}} \]
+\[ \frac{mV}{qB}=\frac{\left(\frac{d}{2}\right)^{2}+L^{2}}{2\cdot\frac{d}{2}}\qquad qV_0B=\frac{dmV_0^{2}}{L^{2}+\frac{d^{2}}{4}} \]
+\fcolorbox{red!75!black}{white}{\begin{tabular}{l}故 $qE>qV_0B$\\ 电场力大于洛伦兹力\end{tabular}}
+%%%END
+%%%BLOCK id=050-05 ch=11 sec=有界磁场·圆形边界 kind=method alt=none cont=none y=0.505-0.71
+指心入背心出\quad 双心连线．三点共线\quad \fcolorbox{red!75!black}{white}{速交双心}
+% 红笔在"指心入背心出""双心连线""三点共线"下各画有一道红线
+
+\unclear{夹手}指角入\ 背\unclear{心}角出
+% CHECK: 此行字迹潦草，参照上一行"指心入背心出"，疑为"夹角指心角入、背心角出"一类，待核；"背""角"之间下方另有一个"夫/关"形小字
+
+%FIG p050_h 0.01 0.543 0.19 0.685
+\notefig[0.3]{figures/p050_h.png}
+% 图内标注：夹角(?)、L、r、θ，红笔画有若干弧线与标记
+
+\[
+\begin{cases}D=(L+R)\tan\theta\\[4pt] \tan\dfrac{\theta}{2}=\dfrac{R}{r}\\[8pt] \tan\theta=\dfrac{2\tan\frac{\theta}{2}}{1-\tan^{2}\frac{\theta}{2}}\end{cases}
+\]
+
+%FIG p050_i 0.39 0.566 0.635 0.715
+\notefig[0.4]{figures/p050_i.png}
+% 图内标注：R、r、M 等；红笔画有若干大圈与竖线
+%%%END
+%%%BLOCK id=050-06 ch=11 sec=有界磁场·直线边界 kind=method alt=none cont=none y=0.545-0.75
+%FIG p050_j 0.595 0.545 0.975 0.677
+\notefig[0.6]{figures/p050_j.png}
+% 图内标注：正电、负电、Z、D、φ（多处）、V_y=V sinφ、π−φ、"侧移相等"；红笔圈出 V_y=V sinφ
+
+侧移相等
+
+\[ D=2r\sin\varphi=\frac{2mV\sin\varphi}{qB} \]
+\fcolorbox{red!75!black}{white}{正负\unclear{加}力量}
+\[ t_1+t_2=T=\frac{2\pi m}{qB} \]
+% CHECK: "正负加力量"中第三字字形不清(像"加"或"后"，上方两处同样出现此四字)，含义待核
+%%%END
+%%%BLOCK id=050-07 ch=11 sec=有界磁场·相切临界 kind=method alt=none cont=none y=0.727-0.98
+%FIG p050_k 0.01 0.727 0.255 0.937
+\notefig[0.4]{figures/p050_k.png}
+% 图内含标题"直线相切"，及标注：切点、角平分线、虚线(延长线)等
+
+1延\ \ 2交\ \ 3分\ \ 4垂\ \ 5再垂
+% 红笔在"1延""2交""4垂"下各画一条红线
+%%%END
+%%%BLOCK id=050-08 ch=11 sec=有界磁场·相切临界 kind=method alt=none cont=none y=0.727-0.98
+%FIG p050_l 0.285 0.727 0.535 0.937
+\notefig[0.4]{figures/p050_l.png}
+% 图内含标题"圆形相切""束缚粒子"，及标注：r、R、2R−r 等（同心大小圆）
+
+\[ \fcolorbox{red!75!black}{white}{$\displaystyle (2R-r)^{2}=r^{2}+R^{2}+2rR\,\overset{\text{补角}}{\underline{\cos\theta}}$} \]
+
+1垂\ \ 2射\ \ 3等\ \ 4交\ \ 5再交
+%%%END
+%%%BLOCK id=050-09 ch=11 sec=有界磁场·极值 kind=method alt=none cont=none y=0.86-0.95
+直径所对圆周角为直角
+
+$V_{\min}$\quad 位移/\unclear{距离}当直径
+
+$V_{\max}$\quad 最先射出找$R_{\max}$
+% CHECK: "位移"与"距离"之间的"/"原稿为一条斜线，含义(或为"位移(距离)当直径")待核
+%%%END
+%%%PAGEEND 50

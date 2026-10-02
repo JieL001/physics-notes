@@ -1,0 +1,62 @@
+%%%PAGE 28 rot=0 legibility=good summary=恒定电流：最大总功率/内功率条件、基尔霍夫电压定律与电压变化量关系(含电路图)、基尔霍夫电流定律、等势点简化法(含电路图)
+%%%BLOCK id=028-01 ch=10 sec=电源功率与效率·最大功率 kind=formula alt=none cont=prev y=0.06-0.12
+最大总功率\quad $R=0$
+
+最大内功率\quad $R=0$
+%%%END
+%%%BLOCK id=028-02 ch=10 sec=基尔霍夫定律·电压定律 kind=method alt=none cont=none y=0.13-0.38
+\textbf{基尔霍夫电压定律}
+
+找圈 $\to$ 确定电压方向（由高到低）$\to$ 顺正逆负和为0
+
+电压变化量关系：\unclear{$\pm$}增大变化量为正，减小变化量为负
+
+%FIG p028_a 0.10 0.205 0.297 0.348
+\notefig[0.22]{figures/p028_a.png}
+\begin{align*}
+&+U_1+U_2-U_3=0\\
+&\text{方向}\ +U_1+U_2=U_3\\
+\text{使}R_2\uparrow\ &-\Delta U_1+\Delta U_2=\Delta U_3\\
+&\Delta U_3+\Delta U_1=\Delta U_2
+\end{align*}
+% CHECK: “=ΔU₃”前的符号被涂改(像 ± 叠写)，按 ΔU₃ 转录；“方向”二字紧挨图中电压表箭头，原位置不确定
+%%%END
+%%%BLOCK id=028-03 ch=10 sec=基尔霍夫定律·电流定律 kind=method alt=none cont=none y=0.38-0.50
+\textbf{基尔霍夫电流定律}
+
+对节点流进$+$与流出$-$和为0\qquad $I_{\text{入}}+I_{\text{出}}=I$% CHECK: 末尾写作“=I”(物理上应为 I入=I出 或 =0)，照原样转录
+
+对封闭图形，流进$+$与流出$-$和为0
+
+%FIG p028_b 0.71 0.40 0.9165 0.485
+\notefig[0.25]{figures/p028_b.png}
+\[
+\begin{aligned}
+I_{R_2}+I_{R_3}\\
+=I_{R_1}
+\end{aligned}
+\]
+%%%END
+%%%BLOCK id=028-04 ch=10 sec=电路简化·等势点法 kind=method alt=none cont=none y=0.52-0.88
+\textbf{等势点简化法}
+\[
+\left\{\begin{array}{l}
+\text{理想电流表当导线，非理想电流表当电阻}\\
+\text{电压表当电阻}\\
+\text{同一根导线上电势相等}
+\end{array}\right.
+\]
+
+%FIG p028_c 0.19 0.652 0.46 0.75
+\notefig[0.27]{figures/p028_c.png}
+% 图内标注：S断开；电阻①②③④、电容、电源(②与开关所在支路并联等)
+
+%FIG p028_d 0.50 0.645 0.815 0.752
+\notefig[0.32]{figures/p028_d.png}
+% 图内标注：电阻①②③④、电容、电源
+
+%FIG p028_e 0.22 0.755 0.62 0.862
+\notefig[0.4]{figures/p028_e.png}
+% 图内标注：S闭合后；②短路
+%%%END
+%%%PAGEEND 28

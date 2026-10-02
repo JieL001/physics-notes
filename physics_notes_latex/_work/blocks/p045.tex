@@ -1,0 +1,91 @@
+%%%PAGE 45 rot=0 legibility=good summary=斜面平抛续：位偏角为倾斜角；两个初速度1:2的落点比较(都在斜面/都在平面/一斜一平)；两斜面V形t最短与无法垂直打斜面；落斜面后在水平面求滑行距离；页下部竖直面圆周运动(绳槽筒/杆环管/拱)最高最低点表与不脱离、绷直条件
+%%%BLOCK id=045-01 ch=04 sec=平抛运动·斜面平抛 kind=knowledge alt=none cont=none y=0.015-0.10
+%FIG p045_a 0.08 0.015 0.185 0.095
+\notefig[0.25]{figures/p045_a.png}
+% 图内标注：斜面，抛出点处水平箭头 $V_0$，几条抛物线落到斜面上，标 $2\alpha$、$\alpha$ 等角
+\noindent 位偏 = 从斜到斜 = 位偏角为倾斜角\qquad $\tan\alpha=\dfrac{gt}{2V_0}$
+%%%END
+%%%BLOCK id=045-02 ch=04 sec=平抛运动·斜面平抛 kind=method alt=none cont=none y=0.115-0.42
+%FIG p045_b 0.095 0.115 0.31 0.23
+\notefig[0.3]{figures/p045_b.png}
+% 图内标注：同一抛出点，两个水平初速度 $V_0$、$2V_0$ 的抛物线落到斜面上，红色直线连抛出点与两个落点，落点处标 $\alpha_1$、$\alpha_2$，右下标 $S_1$ 并写“求 $S_1/S_2$”
+\noindent 求 $\dfrac{S_1}{S_2}$
+
+\noindent 讨论\quad ① 都落在斜面上
+
+\noindent $\tan\alpha=\dfrac{gt}{2V_0}$\qquad $t=\dfrac{2V_0\tan\alpha}{g}\propto V_0$\qquad \fbox{$t_1:t_2=1:2$}
+
+\noindent $S=V_0t\propto V_0^2$\qquad \fbox{$\dfrac{S_1}{S_2}$ 则为 $1:4$}% 方框内“则”字辨认略不确定
+
+\noindent ② 都落在平面
+
+\noindent $h=\tfrac12gt^2$\quad \fbox{$t_1=t_2$}\quad $S=V_0t\propto V_0$\quad \fbox{$\dfrac{S_1}{S_2}=1:2$}
+
+\noindent ③ 一个斜面一个平面
+
+\noindent $\alpha_1>\alpha_2$
+
+\noindent $\therefore\tan\alpha_1>\tan\alpha_2$
+
+\noindent $\therefore\dfrac{gt_1}{2V_0}>\dfrac{gt_2}{2V_0}$
+
+\noindent \fbox{$\begin{array}{l}\therefore\dfrac12<\dfrac{t_1}{t_2}<1\\[4pt]\therefore\dfrac14<\dfrac{S_1}{S_2}<\dfrac12\end{array}$}% 该方框位于 ③ 推导式右侧
+%%%END
+%%%BLOCK id=045-03 ch=04 sec=平抛运动·斜面平抛 kind=method alt=none cont=none y=0.42-0.545
+%FIG p045_c 0.055 0.42 0.30 0.492
+\notefig[0.3]{figures/p045_c.png}
+% 图内标注：两个对称斜面构成 V 形，各高 $h$、水平长 $2h$，左斜面顶端抛出 $V$(水平箭头)，抛物线落到谷底 $O$ 点；$O$ 处标 $\theta_1$、$\theta_2$，向下箭头
+\noindent $t_{\text{最短}}$\quad $t=\sqrt{\dfrac{2h}{g}}$
+
+\noindent 找界点：在 $O$ 点\quad $\theta_1<45^\circ$\qquad $\tan\theta_2=2\tan\theta_1=\dfrac{2y}{x}=1$
+
+\noindent $\theta_1+\theta_2<90^\circ$\qquad 故无法垂直打在斜面 (若末速度反向\unclear{延}长线过位移中点。)% 括号内文字位于页面右侧，第一行末“过”字靠近页边，第二行为“位移中点。)”
+%%%END
+%%%BLOCK id=045-04 ch=04 sec=平抛运动·斜面平抛 kind=problem alt=06 cont=none y=0.545-0.70
+%FIG p045_d 0.09 0.553 0.355 0.695
+\notefig[0.3]{figures/p045_d.png}
+% 图内标注：左上小圆圈出发水平箭头 $V_0$(抛出点)；斜面(高 $h$，带花括号)，斜面上沿斜面向下箭头 $V_1$；斜面底端连水平面，水平面上标 $x$、$\mu$；图下斜写小字“如履平地”(第二字像“覆”)
+\noindent 如\unclear{履}平地% 斜写于图下方
+
+\noindent 求能走多远
+\[
+\left\{\begin{aligned}
+V_1&=V_0\cos\theta+gt\sin\theta\\
+\tan\theta&=\frac{gt}{2V_0}\\
+h&=H-\tfrac12gt^2\\
+\tfrac12mV_1^2&=mgh-\mu mg\cos\theta\,\frac{h}{\sin\theta}-\mu mgx
+\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=045-05 ch=04 sec=圆周运动·竖直面临界 kind=summary alt=06 cont=none y=0.71-0.85
+%FIG p045_e 0.055 0.708 0.21 0.84
+\notefig[0.25]{figures/p045_e.png}
+% 图内标注：每行左侧的示意小图——第一行红笔：竖线上端带小圆(绳)、半圆弧∪(槽)、小方框(筒)；第二行：红色竖线带小圈(杆)，“环”“管”二字各被红圈圈出；第三行：黑色拱形∩
+\noindent $mg+T=\dfrac{mV^2}{r}$% 位于表格上方、第一行方程栏
+
+\noindent \red{$V<\sqrt{gr}$ 或 $\omega<\sqrt{\dfrac{g}{r}}$ 则对筒槽绳压力为0 即为最小值}% 红笔，位于第一行上方
+
+\begin{center}
+\small
+\begin{tabular}{@{}l l l c c c c@{}}
+\toprule
+类型 & 受力特点 & 最高点方程 & 最高 & 最低 & 上下两点压力差$\Delta N$ & 向心力上下差\\
+\midrule
+绳\ 槽\ 筒 & 无法提供支持力、给压力 & $mg+T=\dfrac{mV^2}{r}$ & $V=\sqrt{gR}$ & $V=\sqrt{5gR}$ & $6mg$ & $4mg$\\[4pt]
+杆\ 环\ 管 & 双向力 & $mg\pm F_N=\dfrac{mV^2}{r}$ & $0$ & $V=\sqrt{4gR}$ & $6mg$ & $4mg$\\[4pt]
+拱 & 支持力 & $mg-N=\dfrac{mV^2}{r}$ & $0$ & 无 & 无 & 无\\
+\bottomrule
+\end{tabular}
+\end{center}% 原稿表格左侧有一个大花括号括住三行；“类型/受力特点/最高点方程”三个表头为转录者补写的栏名(原稿无)；第一行的方程 mg+T=mV^2/r 在原稿中位于该行上方；第三行方程前有一小块被涂白
+%%%END
+%%%BLOCK id=045-06 ch=04 sec=圆周运动·竖直面临界 kind=method alt=06 cont=none y=0.85-0.99
+\noindent ☆ 不脱离、\underline{绷直}
+
+%FIG p045_f 0.285 0.85 0.395 0.945
+\notefig[0.2]{figures/p045_f.png}
+% 图内标注：圆(半径 $R$)，圆心到右侧等高点的水平虚线、到最低点的竖直虚线；圆上标 $V_2$(最高点)、$V_1$(与圆心等高的右侧点)；最低点有一个小圆圈(出发点)
+\noindent $V\le V_1$ 或 $V\ge V_2$
+
+\noindent $V\le\sqrt{2gR}$\qquad $V\ge\sqrt{5gR}$
+%%%END
+%%%PAGEEND 45

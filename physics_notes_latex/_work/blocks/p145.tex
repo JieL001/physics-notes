@@ -1,0 +1,51 @@
+%%%PAGE 145 rot=0 legibility=good summary=页面贴有两张印刷题条：B7(行星最大视角，求公转周期与下次最佳观察期)与B8(天链一号卫星盲区时间，选BC)，配手写解答
+%%%BLOCK id=145-01 ch=05 sec=追及相遇·行星最大视角 kind=problem alt=none cont=none y=0.07-0.54
+% 本页贴有印刷题条，题干为印刷体，其上叠有手写批注；页面上边缘处另有他页露出的字迹“ρ=1.429 g·L^-1”，不属于本页，忽略
+\begin{problem}[B7]
+\textbf{B7、}地球和某行星在同一轨道平面内同向绕太阳做匀速圆周运动。地球的轨道半径为$r$，运转周期为$T$。地球和太阳中心的连线与地球和行星的连线所夹的角叫地球对该行星的观察视角（简称视角）。当行星处于最大视角$\theta$处时（如图所示），是地球上天文爱好者观察该行星的最佳时期。
+
+求：(1)该行星的公转周期$T_2$；
+
+(2)若某时刻该行星正处于最佳观察期，则该行星下一次处于最佳观察期需要多长时间$t$？
+%FIG p145_a 0.05 0.31 0.38 0.52
+\notefig[0.4]{figures/p145_a.png}
+\begin{solution}
+(1)　$\sin\theta=\dfrac{R}{r}$　由开普勒第三定律　$\left(\dfrac{T_2}{\struck{T}}\right)^{2}=\sin\theta^{\frac{3}{2}}\,T$ % CHECK: 分母 T 被划去；括号外指数手写似 2；3/2 写在 θ 右上（应指 sin^{3/2}θ）
+\medskip
+
+(2)　\struck{$t=$}再次相遇
+\[ t=\dfrac{T_1T_2}{T_1-T_2} \]
+但添加\unclear{乘}数　$\dfrac{\pi+2\theta}{2\pi}$　　$\dfrac{\text{外围角}}{2\pi}$
+\[ t=\dfrac{(\pi+2\theta)\sqrt{\sin^3\theta}}{2\pi\left(1-\sqrt{\sin^3\theta}\right)}T \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=145-02 ch=05 sec=追及相遇·卫星盲区 kind=method alt=none cont=none y=0.15-0.27
+% 写在页面右上空白处的公式（与下方 B8 盲区时间的解法同形）
+\[ t_{\text{盲区}}=\dfrac{\text{外围角}}{2\pi}\,t_{\text{遇}} \]
+%%%END
+%%%BLOCK id=145-03 ch=05 sec=追及相遇·卫星盲区 kind=problem alt=none cont=none y=0.55-1.00
+% 印刷题条（B8），题干与 A、B、C 选项为印刷体；括号内“BC”、D 选项及各处标记为手写
+\begin{problem}[B8]
+\textbf{B8、}我国的“天链一号”卫星是地球同步卫星，可为中低轨道卫星提供数据通讯，如图所示为“天链一号”卫星$a$、赤道平面内的低轨道卫星$b$、地球的位置关系示意图，$O$为地心，地球相对卫星$a$、$b$的张角分别为$\theta_1$弧度和$\theta_2$弧度（$\theta_2$图中未标出），卫星$a$的轨道半径是$b$的4倍，已知卫星$a$、$b$绕地球同向运行，卫星$a$的周期为$T$，在运行过程中由于地球的遮挡，卫星$b$会进入卫星$a$通讯的盲区，卫星间的通讯信号视为沿直线传播，信号传输时间可忽略。下列分析正确的是（\textbf{BC}）
+
+\noindent A．卫星$a$、$b$的速度之比为\struck{2}：1% “2”被一条斜线划去
+
+\noindent B．卫星$b$的周期为$\dfrac{T}{8}$% 此项旁有一条手绘的长弧线
+
+\noindent C．卫星$b$每次在盲区运行的时间$\dfrac{\theta_1+\theta_2}{14\pi}T$% 分式处有斜线划过
+
+\noindent D、$\dfrac{\theta_1+\theta_2}{16\pi}T$　$\times$% D 项为手写，后跟“×”
+%FIG p145_b 0.10 0.895 0.32 0.995
+\notefig[0.25]{figures/p145_b.png}
+\begin{solution}
+外围角为$\theta_1+\theta_2$
+\[ \dfrac{\theta_1+\theta_2}{2\pi} \]
+\[ t=\dfrac{\theta_1+\theta_2}{2\pi}\,\dfrac{T}{7}=\dfrac{\theta_1+\theta_2}{14\pi}T \]
+\[ \dfrac{T_a}{T_b}=\left(\dfrac{r_a}{r_b}\right)^{\frac{3}{2}}=8 \]
+\[ t_{\text{遇}}=\dfrac{T\,\dfrac{T}{8}}{T-\dfrac{T}{8}}=\dfrac{T}{7} \]
+\[ 2\pi-(\pi-\theta_1)-(\pi-\theta_2)=\theta_1+\theta_2 \]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 145

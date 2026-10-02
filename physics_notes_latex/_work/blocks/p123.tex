@@ -1,0 +1,87 @@
+%%%PAGE 123 rot=0 legibility=good summary=中心天体密度计算(知己/知彼、近地/甩出/分解周期)、牛顿法测地球质量、开普勒三定律、宇宙速度、同步卫星(三条件)与已知自转周期的考法
+%%%BLOCK id=123-01 ch=05 sec=天体质量与密度计算 kind=method alt=none cont=prev y=0.05-0.30
+% 页面右上角露出邻页(化学)内容“…429g·L^-1”及“No./Date”页眉，不属于本页，已忽略
+\textbf{\unclear{中}心天体密度计算}% 首字“中”被页边截去大半
+
+\red{（页面上方空白处的红色圆圈内，红笔字）\unclear{$\rho$、$r$、$T$}}% CHECK: 红圈内笔画为：小圈(疑ρ)＋斜线与短竖(疑r)＋圈外右上角一个T，难以确认
+
+排除项：绕行天体密度不可求
+
+\begin{itemize}
+\item 知己（知中心天体参数求$\rho_{\text{中心天体}}$）\quad
+$GM=g_{\text{表}}R^{2}$\quad $M=\dfrac{g_{\text{表}}R^{2}}{G}$\quad $\rho=\dfrac{M}{\frac{4}{3}\pi R^{3}}\ \Rightarrow\ \rho=\dfrac{3g_{\text{表}}}{4\pi GR}$
+
+\quad $GM=g_{\text{外}}(R+h)^{2}$\quad $M=\dfrac{g_{\text{外}}(R+h)^{2}}{G}$% CHECK: 原稿“g外”与“(R+h)²”之间似有一个多余的“=”，疑为乘号/笔误
+\item 知彼（知$T$求$\rho$）\red{（表面运行）}\quad $\rho=\dfrac{3\pi}{GT^{2}}$\quad \red{$\rho=\dfrac{3\pi}{GT^{2}}\cdot\dfrac{r^{3}}{R^{3}}$}\quad \red{$\rho=\dfrac{3\pi r^{3}}{GT^{2}R^{3}}$}
+
+$T$：
+\begin{itemize}
+\item 近地卫星周期：$\dfrac{GMm}{R_{\text{地球}}^{2}}=m\dfrac{4\pi^{2}}{T^{2}}R\ \Rightarrow\ M=\dfrac{4\pi^{2}R^{3}}{GT^{2}}$% CHECK: 分母 R² 下方有小字，疑为“地球”
+\item 甩出周期：（赤道物体恰好被甩出时中心天体自转周期）
+\item 分解周期：（中心天体恰好分解时中心天体自转周期）
+\end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=123-02 ch=05 sec=天体质量与密度计算 kind=method alt=none cont=none y=0.30-0.44
+\textbf{牛顿法测$M_{\text{地球}}$}
+
+%FIG p123_a 0.18 0.32 0.415 0.438
+\notefig[0.3]{figures/p123_a.png}
+% 图中：左侧一段弧线(山)，铅垂线(铅锤)受水平向左的山引力与竖直向下的地球引力，标注 $\frac{GM_{\text{山}}m_{\text{铅}}}{d^2}$、$\frac{GM_{\text{地}}m_{\text{铅}}}{R^2}$ 与偏角 $\theta$ 等
+
+$\tan\theta=\dfrac{M_{\text{山}}R_{\text{地}}^{2}}{M_{\text{地}}d^{2}}$\qquad 无大气层的天体可以用
+%%%END
+%%%BLOCK id=123-03 ch=05 sec=开普勒定律 kind=knowledge alt=none cont=none y=0.44-0.57
+\textbf{开一}\ 太阳系所有行星轨道均为椭圆，太阳位于椭圆1个焦点上% 原稿“1个”以插入符写在“椭圆”与“焦点”之间的上方
+
+\textbf{开二}
+\begin{itemize}
+\item 同一轨道、相同时间，连线扫过的面积相等
+\item 不同轨道：相同时间，大轨道扫过面积更大\quad $S=\dfrac{1}{2}rv\Delta t=\dfrac{1}{2}\sqrt{GMr}\,\Delta t$
+\item $v_1r_1=v_2r_2$\quad $\dfrac{1}{2}r_1v_1\Delta t=\dfrac{1}{2}r_2v_2\Delta t$\ 远／近地点.\ 其他点：$\dfrac{v_3}{v_4}\approx\dfrac{r_4}{r_3}$
+\end{itemize}
+
+%FIG p123_b 0.80 0.478 0.995 0.58
+\notefig[0.3]{figures/p123_b.png}
+% 图：椭圆轨道，中心天体在焦点，若干扇形面积 S1~S4，图下方标注 S1=S2<S3=S4
+%%%END
+%%%BLOCK id=123-04 ch=05 sec=开普勒定律 kind=knowledge alt=none cont=none y=0.56-0.65
+\textbf{开三}\quad $\dfrac{r^{3}}{T^{2}}=K$
+\begin{itemize}
+\item $r$：椭圆\unclear{半长}轴、圆半径
+\item $K$：$K=\dfrac{GM}{4\pi^{2}}$\quad $\dfrac{GMm}{r^{2}}=m\dfrac{4\pi^{2}}{T^{2}}r$\quad $\dfrac{r^{3}}{T^{2}}=\dfrac{GM}{4\pi^{2}}$\quad 涉及不同中心天体的椭圆计算
+\item $T$：比较正圆的椭圆周期
+\end{itemize}
+%%%END
+%%%BLOCK id=123-05 ch=05 sec=宇宙速度 kind=knowledge alt=none cont=none y=0.65-0.74
+\textbf{宇宙速度}
+\begin{itemize}
+\item 第一宇宙速度\ 最大环绕速度，最小发射速度，近地卫星线速度
+\item 第二宇宙速度\ $v_2=\sqrt{2}\,v_1$，逃逸速度
+\item 第三宇宙速度\ \unclear{脱离}速度
+\end{itemize}
+%%%END
+%%%BLOCK id=123-06 ch=05 sec=卫星变轨 kind=note alt=none cont=none y=0.72-0.79
+变速即变轨
+
+向后喷气、抛物 = 向前加速
+%%%END
+%%%BLOCK id=123-07 ch=05 sec=同步卫星 kind=knowledge alt=none cont=none y=0.75-1.00
+\textbf{同步卫星}／\textbf{静止轨道卫星}\textsubscript{（角度上看）}
+
+三个条件：
+\begin{itemize}
+\item 和中心天体自转周期相同
+\item 赤道卫星
+\item 顺行轨道
+\end{itemize}
+
+已知地球自转周期$T_{\text{自转}}$，\struck{十有八九都是}暗示$T_{\text{同步}}$% CHECK: 被划去的字依笔迹读作“十有八九都是”，不太确定
+
+已知中心天体自转周期\quad 考$\left\{\begin{array}{l}
+\Rightarrow\text{同步卫星}\\
+\Rightarrow F_{\text{万}}\text{与}mg\text{关系}\quad\text{极赤之差为向心力，}\\
+\Rightarrow\rho=\dfrac{3\pi}{GT^{2}}
+\end{array}\right.$
+%%%END
+%%%PAGEEND 123

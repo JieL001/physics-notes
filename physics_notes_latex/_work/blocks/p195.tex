@@ -1,0 +1,59 @@
+%%%PAGE 195 rot=0 legibility=fair summary=火星探测器相遇周期·微安表改装欧姆表·竖直圆轨道平抛·双缝干涉条纹间距
+%%%BLOCK id=195-01 ch=05 sec=卫星相遇·周期问题 kind=problem alt=none cont=none y=0.03-0.26
+\begin{problem}
+火星同步卫星圆周轨道半径为$R$，火星自转一周为1个火星日。探测器在火星赤道正上方环绕火星匀圆，环绕方向与火星自转同向。每6个火星日经赤道上空同一位置。该火星环绕周期为$n$个火星日，轨道半径为$r$
+\begin{solution}
+\[
+t=6T_0=\frac{nT_0\,T_0}{nT_0-T_0}\quad\text{或}\quad\frac{nT_0\,T_0}{T_0\ nT_0}
+\]
+% CHECK: 第二个分式分母 $T_0$ 与 $nT_0$ 之间原稿未见减号（应为 $T_0-nT_0$）
+\[
+n=\frac{6}{7}\ \text{or}\ \frac{6}{5}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=195-02 ch=10 sec=电表改装·欧姆表 kind=problem alt=none cont=none y=0.28-0.53
+将微安表改为欧姆表\quad 将两表笔短接，调$R$使满偏。
+
+满偏$300\,\mu$A\quad $r_g=100\,\Omega$
+
+\notefig[0.3]{figures/p195_a.png}
+
+把$\mu$A\unclear{—}改为$\Omega$\quad $300$改为$0$\quad $100$改为$9600$
+
+\begin{itemize}
+\item 两表笔短接时\ $I_g=\dfrac{E}{R_{\text{内}}}$
+\item 接入$2.4\mathrm{k}\Omega$时\ $\dfrac{2}{3}I_g=\dfrac{E}{R_{\text{内}}+2400}$
+\item $E=1.44\unit{V}$
+\item $R_{\text{内}}=4.8\mathrm{k}\Omega$
+\item $I=100\,\mu$A时\ $\dfrac{1}{3}I_g=\dfrac{E}{R_{\text{内}}+R}$\quad $R_1=9600\,\Omega$ % 此处 $R_1$ 的下标手写形似逗号/1
+\end{itemize}
+%%%END
+%%%BLOCK id=195-03 ch=04 sec=竖直面圆周·平抛临界 kind=problem alt=none cont=none y=0.54-0.88
+% 原稿此块（及下方一行）被一条自右上向左下、末端回钩的大弧线划过，疑似划去，仍照录
+\notefig[0.4]{figures/p195_b.png}
+
+$R=0.4\unit{m}$
+
+经$e$点$v$越小，下落高度越大，所用时间越长
+
+物体刚好过$e$时速度最小
+
+\begin{align*}
+v_e&=\sqrt{gR}=2\unit{m/s}\\
+x&=v_e t\\
+y&=\tfrac{1}{2}gt^2
+\end{align*}
+
+\[
+\frac{R-\dfrac{y-R}{\cos\theta}\ \star}{x-(y-R)\tan\theta}=\sin\theta
+\]
+% 分子右侧有一个小星号标记；分母括号内手写形似“4”，CHECK: 按几何关系应为 $y$
+
+$\therefore\ t=0.3\unit{s}$
+%%%END
+%%%BLOCK id=195-04 ch=15 sec=双缝干涉·条纹间距与波长 kind=knowledge exp=1 alt=none cont=none y=0.88-0.94
+相邻$n$个亮条纹中心距离为$\Delta x$，则条纹间距为\ $\dfrac{\Delta x}{n-1}=\dfrac{\unclear{L\lambda}}{d}$\qquad $\lambda=\dfrac{\Delta x\,d}{3L}$
+%%%END
+%%%PAGEEND 195

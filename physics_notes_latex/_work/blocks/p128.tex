@@ -1,0 +1,88 @@
+%%%PAGE 128 rot=0 legibility=good summary=第二宇宙速度与黑洞半径估算；三星系统(等边三角形)公式；卫星能否到对面(力、功、动能分析，W∝M，1:9探测器例)
+%%%BLOCK id=128-01 ch=05 sec=宇宙速度·第二宇宙速度 kind=formula alt=none cont=none y=0.03-0.12
+\textbf{第二宇宙速度}
+\[ \dfrac{1}{2}mv_2^{2}+\left(-\dfrac{GMm}{R}\right)=0 \]
+\[ v_2=\sqrt{2}\,v_1=11.\unclear{2}\unit{km/s} \]
+%%%END
+%%%BLOCK id=128-02 ch=05 sec=黑洞 kind=derivation alt=none cont=none y=0.12-0.285
+\textbf{黑洞}\quad $v_2\ge c$
+
+地球：塌缩：半径不超过多少
+
+% 以下一行被红笔横线划去，行首写有“错”字；根号上方有“→gR^2”标注（GM 换成 gR^2）
+错\ \struck{$\sqrt{\dfrac{2GM}{R}}^{\,\to gR^{2}}\ge c$}\quad \struck{$\sqrt{2gR}\ge c$}\quad \struck{$R\ge\dfrac{c^{2}}{2g}$}
+
+% 下式第二、三行的 ↓ 分别从 g 与 R_地^2 指向 9.8 与 (6400)^2
+\[
+\begin{array}{l}
+R\le\dfrac{2GM}{c^{2}}\ \to\ g\,R_{\text{地}}^{2}\\
+\hphantom{R\le\dfrac{2GM}{c^{2}}\ \to\ }\ \downarrow\quad\ \downarrow\\
+\hphantom{R\le\dfrac{2GM}{c^{2}}\ \to\ }\ 9.8\quad (6400)^{2}
+\end{array}
+\qquad R\le 9\times10^{-8}\unit{km}=9\times10^{-5}\unit{m}
+\]
+% CHECK: 数值指数疑似笔误（按 g=9.8、R=6400 km、c=3e8 m/s 估算应约为 9e-3 m 量级），原样转录
+%%%END
+%%%BLOCK id=128-03 ch=05 sec=双星多星·三星系统 kind=derivation alt=none cont=none y=0.03-0.33
+% 页面右上角
+\[ \text{三星}\quad F_{\text{合}}=\dfrac{mv^{2}}{R}=m\dfrac{4\pi^{2}}{T^{2}}R=\dfrac{4m^{2}\pi^{2}\sqrt{3}\,L}{3T^{2}} \]
+% CHECK: 末项分子 m 右上角似有“2”（量纲上多余），原样转录
+\[ F_{n}=\dfrac{Gm^{2}}{L^{2}} \]
+% CHECK: F 的下标字形像 n（也可能是 2），下同
+\[ \dfrac{F_{3}/2}{F_{n}}=\cos30^\circ \]
+\[ m=\dfrac{4\pi^{2}L^{3}}{3GT^{2}}\,\unclear{F_{3}} \]
+% CHECK: 分式右侧多出一个像 F_3 的小字
+\[ =\unclear{\dfrac{16\pi^{4}L^{6}}{9G^{2}T^{4}}} \]
+\[ v=\dfrac{2\sqrt{3}\,\pi L}{3T} \]
+% 下图：三个星体(小圆圈)构成三角形，左边标 L，右上标 T(或 7)，三角形内有一个“2”样的符号
+%FIG p128_a 0.81 0.258 0.93 0.325
+\notefig[0.25]{figures/p128_a.png}
+%%%END
+%%%BLOCK id=128-04 ch=05 sec=卫星能否到对面 kind=method alt=none cont=none y=0.29-0.46
+\textbf{卫星能否到对面}
+
+\red{①}
+% 图内文字：红字“过线即可到”（在红色竖线上方）；左端“地”，右端“月”；红色竖线处标 F合=0；竖线左段下方 W负功、E_k↓；竖线右段下方 W正功、E_k↑
+%FIG p128_b 0.09 0.325 0.47 0.465
+\notefig[0.5]{figures/p128_b.png}
+\[ \dfrac{M_{\text{地}}}{M_{\text{月}}}=\dfrac{81}{1}\qquad \dfrac{r_{\text{地}}}{r_{\text{月}}}=\dfrac{9}{1} \]
+\[ =\left(\dfrac{r_{\text{地}}}{r_{\text{月}}}\right)^{2} \]
+路径面积
+%%%END
+%%%BLOCK id=128-05 ch=05 sec=卫星能否到对面 kind=derivation alt=none cont=none y=0.47-0.62
+\red{②}
+% 图内：地(圆圈)—r—月(圆圈)，线上两个小方块处各标 Δr（左块下方箭头向下标 Δr，右块旁标 Δr）；红色曲线从左块连到月
+%FIG p128_c 0.085 0.483 0.375 0.575
+\notefig[0.3]{figures/p128_c.png}
+\begin{align*}
+\Delta W_{\text{地}}&=\dfrac{GM_{\text{地}}m}{r^{2}}\Delta r\\
+\Delta W_{\text{月}}&=\dfrac{GM_{\text{月}}m}{r^{2}}\Delta r
+\end{align*}
+\[ \dfrac{\sum\Delta W_{\text{地}}}{\sum\Delta W_{\text{月}}}=\dfrac{81}{1}\qquad \therefore\ \dfrac{W_{\text{地}}}{W_{\text{月}}}=\dfrac{81}{1} \]
+%%%END
+%%%BLOCK id=128-06 ch=05 sec=卫星能否到对面 kind=derivation alt=06 cont=none y=0.62-0.82
+% 以下两行被手绘大括号“〈 〉”括起
+\textbf{$W\propto M_{\text{天体}}$}
+
+\textbf{用动能定理}
+% 图内：地(圆圈，下方标 E_k0)——月(圆圈，下方标“到这 E_k”)，线上方有箭头 →
+%FIG p128_d 0.075 0.64 0.45 0.725
+\notefig[0.5]{figures/p128_d.png}
+\begin{align*}
+E_k-E_{k0}&=-W_{\text{地}}+W_{\text{月}}\\
+E_k&=E_{k0}-\dfrac{80}{81}W_{\text{地}}\ge 0\\
+E_{k0}&\ge\dfrac{80}{81}W_{\text{地}}\qquad \therefore\ E_k\ge\dfrac{80}{81}W_{\text{地}}\ \text{才能到对面}
+\end{align*}
+% CHECK: “∴”之后的 E_k 或应为 E_k0；W_月 末尾有一个小黑点
+%%%END
+%%%BLOCK id=128-07 ch=05 sec=卫星能否到对面 kind=problem alt=none cont=none y=0.80-1.0
+% 图内文字：M_1:M_2=1:9（“探测器”写在竖线处）；左小圆下标 1，右大圆下标 9；竖线为 F合=0 的位置；右段花括号下标 3，旁标 L；左段花括号；图下一行：负功　L/4 处 F合=0　正功
+%FIG p128_e 0.04 0.818 0.46 0.992
+\notefig[0.6]{figures/p128_e.png}
+\[ \dfrac{W_A}{W_B}=\dfrac{1}{9} \]
+\begin{align*}
+E_k-E_{k0}&=-W_A+W_B=8W_A\\
+E_k&=8W_A+E_{k0}>0
+\end{align*}
+%%%END
+%%%PAGEEND 128

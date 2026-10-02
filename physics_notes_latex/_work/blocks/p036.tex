@@ -1,0 +1,92 @@
+%%%PAGE 36 rot=0 legibility=good summary=板块模型要点(斜面叠放共加共减速/冲出；共速与起飞临界)；完弹、完非弹、非完弹碰撞公式汇总；反冲公式
+%%%BLOCK id=036-01 ch=03 sec=板块模型·斜面叠放 kind=method alt=07 cont=prev y=0.00-0.115
+\textbf{1.}
+%FIG p036_a 0.07 0.0 0.26 0.075
+\notefig[0.3]{figures/p036_a.png}
+
+若底滑面糙 $(\mu_2\le\mu_1)$\quad 则共加共减速\quad 无相对位移\quad $a_1=a_2=g\sin\theta-\mu g\cos\theta$ % 右端被页边切断
+
+若底糙面滑 $(\mu_2>\mu_1)$\quad 则物块会冲出去（跑得快）\quad 上快下慢，慢的会先停
+%%%END
+%%%BLOCK id=036-02 ch=11 sec=复合场·板块起飞临界 kind=method alt=07,06 cont=none y=0.115-0.40
+\textbf{2.}\ 运动过程共速，起飞等分开求解
+
+$qEB$ 加杆约束，复合场常出现合力为0、速度不为0的匀速直线运动临界：
+\begin{itemize}
+\item $qV_0B=F_{\text{外}}$ 时是做匀速运动的临界
+\item 或是起飞的临界（即离开木板）
+\end{itemize}
+
+%FIG p036_b 0.265 0.158 0.60 0.262
+\notefig[0.45]{figures/p036_b.png}
+
+未共速时\unclear{就}起飞
+\[
+m_2V_2+m_1V_1=(m_1+m_2)V_{\text{共}}
+\]
+
+板进了块还\unclear{得算进}时速度\quad $V_{\text{共}}=\cdots$
+
+$qV_0B=m_1g$ 时\quad $V_0>V_{\text{共}}$ 则会共速
+
+\hspace{4.2em}$V_0<V_{\text{共}}$ 则无法共速
+\begin{align*}
+\therefore\ Q&=\frac12m_1\bigl(V_1^2-V_{1\text{共}}^2\bigr)+\frac12m_2\bigl(V_2^2-\unclear{V_{2\text{共}}^2}\bigr)\\ % 右端被页边切断，第二项括号内后半为推测
+&\quad+\mu m_1gS_{\text{相}}
+\end{align*}
+%%%END
+%%%BLOCK id=036-03 ch=07 sec=碰撞·完全弹性碰撞 kind=formula alt=none cont=none y=0.41-0.55
+\fbox{\textbf{完弹过程}}\quad 由动量守恒、能量守恒\quad 完弹$=$完非弹加反冲（有缓冲装置如弹簧、斜面）
+\[
+\left\{\begin{aligned}
+m_1V_{01}+m_2V_{02}&=m_1V_1+m_2V_2\\
+\tfrac12m_1V_{01}^2+\tfrac12m_2V_{02}^2&=\tfrac12m_1V_1^2+\tfrac12m_2V_2^2
+\end{aligned}\right.
+\qquad e=\frac{V_{01}-V_{02}}{V_2-V_1}=1 % CHECK: 恢复系数通常写作 (V2-V1)/(V01-V02)，原稿分子分母似为倒置(e=1时不影响)，照原样转录
+\]
+\[
+\begin{aligned}V_1&=2V_{\text{共}}-V_{01}\\V_2&=2V_{\text{共}}-V_{02}\end{aligned}
+\qquad\text{二倍共速减初速}
+\]
+\unclear{特}\ 动碰静
+\[
+V_1=\frac{m_1-m_2}{m_1+m_2}V_0\ \text{（动）}\qquad V_2=\frac{2m_1V_0}{m_1+m_2}\ \text{（静）}\qquad V_A+V_A'=V_B+V_B'
+\]
+%%%END
+%%%BLOCK id=036-04 ch=07 sec=碰撞·完全非弹性碰撞 kind=formula alt=06,09,11,12 cont=none y=0.555-0.735
+\fbox{\textbf{完非弹过程}}
+\[
+\left\{\begin{aligned}
+m_1V_{01}+m_2V_{02}&=(m_1+m_2)V_{\text{共}}\qquad\text{共速}\\
+\tfrac12(m_1+m_2)V_{\text{共}}-\Bigl(\tfrac12m_1V_{01}^2+\tfrac12m_2V_{02}^2\Bigr)&=\Delta E_K=E_{\text{某能}\max} % CHECK: 原稿 V共 处似无平方；E 下标“某能max”字迹难辨
+\end{aligned}\right.
+\]
+%FIG p036_c 0.125 0.634 0.46 0.700
+\notefig[0.45]{figures/p036_c.png}
+%FIG p036_d 0.48 0.632 0.995 0.709
+\notefig[0.7]{figures/p036_d.png}
+\begin{align*}
+\Delta E_K&=-\frac12\,\frac{m_1m_2}{m_1+m_2}(V_{01}-V_{02})^2=-E_{p\text{弹}\max}=-E_{p\unclear{G}\max}\\
+&=Q=|fd|=Q_{\text{电}}=E_{\text{电场能}}\,.
+\end{align*}
+%%%END
+%%%BLOCK id=036-05 ch=07 sec=碰撞·非完全弹性碰撞 kind=formula alt=none cont=none y=0.737-0.853
+\fbox{\textbf{非完弹}}
+\begin{align*}
+m_1V_{01}+m_2V_{02}&=m_1V_{01}'+m_2V_{02}'\qquad\text{代入解方程}\\
+\tfrac12m_1V_{01}^2+\tfrac12m_2V_{02}^2&=\tfrac12m_1V_{01}'^2+\tfrac12m_2V_{02}'^2+E_{\text{损}}
+\end{align*}
+%%%END
+%%%BLOCK id=036-06 ch=07 sec=反冲·爆炸 kind=formula alt=none cont=none y=0.86-1.0
+\fbox{\textbf{反冲}}
+%FIG p036_e 0.07 0.878 0.36 0.929
+\notefig[0.4]{figures/p036_e.png}
+完弹$=$完非弹$+$反冲
+\begin{align*}
+m_1V_{01}-m_2V_{02}&=0 \\ % 第一项 V 的下标原稿似为“a”，按 V_{01} 转录
+E&=\tfrac12m_1V_{01}^2+\tfrac12m_2V_{02}^2\\
+V_{01}&=\sqrt{\frac{2m_2E}{m_1(m_1+m_2)}}\qquad V_{02}=\sqrt{\frac{2m_1E}{m_2(m_1+m_2)}}\\
+E_{K01}&=\tfrac12m_1V_{01}^2=\frac{m_2}{m_1+m_2}E\qquad E_{K02}=\tfrac12m_2V_{02}^2=\frac{m_1}{m_1+m_2}E % 原稿 E_{K02} 式中 m 与下标2的写法为“½ ₂mV₀₂²”，按 m_2 转录
+\end{align*}
+%%%END
+%%%PAGEEND 36

@@ -1,0 +1,74 @@
+%%%PAGE 113 rot=0 legibility=good summary=电磁波谱与光谱分类、折射与全反射的应用举例（彩虹、视深、光斑环面积、光导纤维、水槽光线与水位上升速度）
+%%%BLOCK id=113-01 ch=14 sec=电磁波谱 kind=summary alt=none cont=none y=0.04-0.14
+无线电波\quad 微波\quad 红外线\quad 可见光\quad 紫外线\quad $X$射线\quad $\gamma$射线 $\longrightarrow$\quad $f\uparrow$\quad $\lambda\downarrow$
+
+\fbox{无微红可紫 $X$ $\gamma$}
+%%%END
+%%%BLOCK id=113-02 ch=17 sec=光谱 kind=summary alt=14,15 cont=none y=0.14-0.21
+% CHECK: 最左侧竖排三字疑为“连续谱”，其后大括号内为“吸收谱/发射谱”，层级关系按原稿位置转录
+连续谱\ $\left\{\begin{tabular}{@{}l@{}}吸收谱\\发射谱\end{tabular}\right.$\ 反映内部结构光谱\ $\left\{\begin{tabular}{@{}l@{}}连续谱\\离散谱\end{tabular}\right.$
+%%%END
+%%%BLOCK id=113-03 ch=15 sec=折射·全反射 kind=knowledge alt=none cont=none y=0.22-0.35
+\begin{enumerate}
+\item 彩虹为光的色散/折射
+\item \unclear{鸟}看鱼偏高、鱼看鸟偏高
+\item 水中唱歌\quad 从空气到水中\ 声波波长$\uparrow$，电磁波波长短
+\item 海\unclear{市蜃}楼、车尾灯光带(全反射)
+\end{enumerate}
+%%%END
+%%%BLOCK id=113-04 ch=15 sec=折射·全反射 kind=problem alt=none cont=none y=0.35-0.45
+% 原稿第5题：只有图与解答，没有写出题干
+\begin{problem}[5]
+%FIG p113_a 0.09 0.352 0.205 0.43
+\notefig[0.25]{figures/p113_a.png}
+\begin{solution}
+\begin{align*}
+&\sin\alpha=\frac{1}{n_1}=\frac{r_1}{\sqrt{r_1^2+d^2}}\quad\therefore\ r_1=\frac{d}{\sqrt{n_1^2-1}}\qquad
+\sin\beta=\frac{1}{n_2}=\frac{r_2}{\sqrt{r_2^2+d^2}}\qquad r_2=\frac{d}{\sqrt{n_2^2-1}}\\
+&S=\pi r_2^2-\pi r_1^2=\pi d^2\left(\frac{1}{n_2^2-1}-\frac{1}{n_1^2-1}\right)
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=113-05 ch=15 sec=折射·全反射 kind=derivation alt=none cont=none y=0.45-0.66
+\textbf{6．光导纤维．}
+
+%FIG p113_b 0.055 0.478 0.25 0.567
+\notefig[0.35]{figures/p113_b.png}
+
+$n_1>n_2$
+\[n_1\sin\theta_3=n_2\sin\frac{\pi}{2}\qquad\therefore\ \sin\theta_3=\cos\theta_2\qquad\therefore\ \theta_3+\theta_2=\frac{\pi}{2}\]
+\[\left\{\begin{array}{l}n_1=\dfrac{\sin\theta_1}{\sin\theta_2}\\[2mm]\sin^2\theta_2+\cos^2\theta_2=1\quad\therefore\ \sin\theta_1=\sqrt{n_1^2-n_2^2}\end{array}\right.\]
+
+路程\ $x=\dfrac{L}{\cos\theta_2}$\qquad $v=\dfrac{c}{n_1}$\qquad $t=\dfrac{x}{v}=\dfrac{n_1^2}{n_2^2}\,\dfrac{L}{c}$ % CHECK: 分母似为 n_2^2，但由前式 cosθ2=n2/n1 推得应为 n_1^2/n_2 · L/c
+
+% 以下两式在图的左下方；第一式整体被划去
+\[\text{\struck{$\dfrac{1}{\sin\theta_3}=n=\dfrac{\sin\theta_1}{\sin\theta_2}$}}\]
+\[\frac{n_1}{n_2}=\frac{1}{\sin\theta_3}\]
+%%%END
+%%%BLOCK id=113-06 ch=15 sec=折射·全反射 kind=problem alt=none cont=none y=0.66-0.92
+% 原稿第7题：只有图与解答，没有写出题干
+\begin{problem}[7]
+% 图p113_c内含标注：中点、中线、H、ΔH、V0、水位上升速度V0、D（底面宽）、Δd、d、α、β
+%FIG p113_c 0.0 0.675 0.262 0.832
+\notefig[0.4]{figures/p113_c.png}
+\begin{solution}
+① 求折射率
+\begin{align*}
+&\sin\alpha=\frac{D}{\sqrt{D^2+H^2}}\qquad \sin\beta=\frac{d-\frac{D}{2}}{\sqrt{\left(d-\frac{D}{2}\right)^2+\left(\frac{H}{2}\right)^2}}\\
+&n=\frac{\sin\alpha}{\sin\beta}=\frac{D}{2d-D}\sqrt{\frac{(2d-D)^2+H^2}{D^2+H^2}}
+\end{align*}
+② 求光源与水面速度关系
+% 下式（①式）下方有红色波浪线
+\begin{align*}
+&\Delta d=\Delta H(\tan\alpha-\tan\beta)\quad\text{①}\\
+&\tan\alpha=\frac{D}{H}\qquad \tan\beta=\frac{d-\frac{D}{2}}{\frac{H}{2}}\quad\nearrow\\
+&\Delta d=\Delta H\,\frac{(2H-2d)}{H}\quad\text{②}\\
+&\frac{\Delta d}{\Delta t}=\frac{\Delta H}{\Delta t}\,\frac{(2\unclear{H}-2d)}{H}\quad\text{③}\\
+&\therefore V=\frac{2(D-d)}{H}V_0\quad\text{④}
+\end{align*}
+% CHECK: ②③式分子中的“2H”疑应为“2D”（由 tanα-tanβ=(2D-2d)/H 及④式2(D-d)/H）；③式中该字母似为D写在H之上。tanβ 行末有一弯曲箭头指向上方①式
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 113

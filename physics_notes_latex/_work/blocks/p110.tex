@@ -1,0 +1,101 @@
+%%%PAGE 110 rot=0 legibility=good summary=弹簧模型题(始终不分离最大压缩量_离地模型_压一下后B被提起求F_球在最高点M离地_AC粘合后B离地_弹性势能与W)
+%%%BLOCK id=110-01 ch=08 sec=弹簧振子·弹簧模型题 kind=problem alt=06 cont=none y=0.03-0.13
+\begin{problem}[①]
+%FIG p110_a 0.105 0.04 0.24 0.125
+\notefig[0.25]{figures/p110_a.png}
+始终不分离　求最大压缩量
+\begin{solution}
+\[
+\Delta X=\dfrac{2(M+m)g}{k}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=110-02 ch=08 sec=弹簧振子·弹簧模型题 kind=problem alt=02 cont=none y=0.13-0.31
+\begin{problem}[② 离地模型]
+%FIG p110_b 0.088 0.182 0.222 0.31
+\notefig[0.25]{figures/p110_b.png}
+$B$恰好离地　求$A$向上距离
+\begin{solution}
+\begin{align*}
+\Delta x_1&=\dfrac{m_Ag}{k}\\
+\Delta x_2&=\dfrac{m_Bg}{k}\\
+S=\Delta x_1+\Delta x_2&=\dfrac{(m_A+m_B)g}{k}
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=110-03 ch=08 sec=弹簧振子·弹簧模型题 kind=problem alt=02 cont=none y=0.31-0.45
+\begin{problem}[③]
+%FIG p110_c 0.057 0.34 0.24 0.45
+\notefig[0.25]{figures/p110_c.png}
+用$F$压一下后，$B$刚好被提起　求$F$
+\begin{solution}
+\[
+F+3mg=k\left(\dfrac{4mg}{k}+\dfrac{3mg}{k}\right)
+\]
+\[
+\therefore F=4mg
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=110-04 ch=08 sec=弹簧振子·弹簧模型题 kind=problem alt=03 cont=none y=0.46-0.57
+\begin{problem}[④]
+%FIG p110_d 0.108 0.462 0.25 0.558
+\notefig[0.25]{figures/p110_d.png}
+球在最高点时$M$恰好离开地面　求$M$加速度 % CHECK: 题末写“求M加速度”，而下面解出的a是球m的加速度，疑应为“求m加速度”
+\begin{solution}
+\[
+(M+m)g=M\cdot 0+ma\qquad\text{\unclear{系}统牛二}
+\]
+\[
+a=\left(\dfrac{M+m}{M}\right)g
+\]% CHECK: 分母写作M；由(M+m)g=ma应为m，照原样转录
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=110-05 ch=08 sec=弹簧振子·弹簧模型题 kind=problem alt=06,07 cont=none y=0.58-0.93
+\begin{problem}[⑤]
+%FIG p110_e 0.06 0.588 0.262 0.798
+\notefig[0.25]{figures/p110_e.png}
+图中标注：$C$　$m$；$h$；$A$　$m$　\unclear{未}粘性；$B$　$m$\\
+$AC$到最高点时$B$与地面无压力
+\begin{solution}
+\[
+V_1=\sqrt{2gh}\qquad mv=2mV_{\text{共}}=\dfrac{\sqrt{2gh}}{2}
+\]% CHECK: 原稿为连等写法，实际应为V共=√(2gh)/2
+$AC$在最高点时
+\[
+3mg=2ma\qquad\therefore a=\dfrac{3}{2}g
+\]
+\[
+\left(\begin{aligned}
+&2mg\cdot2\Delta x=\dfrac{1}{2}mV_{\text{共}}^2\qquad k=\dfrac{8mg}{h}\\
+&\Delta x=\dfrac{mg}{k}
+\end{aligned}\right)
+\]% CHECK: 原稿动能项写作½mV共²；要得到k=8mg/h应为½(2m)V共²，照原样转录
+\struck{$kx-2mg=2m\cdot\dfrac{3}{2}g$}　% 原稿此式整行被划去
+
+\textbf{从功能角度}
+\[
+\text{OR}\quad\dfrac{1}{2}\cdot2m\left(\dfrac{\sqrt{2gh}}{2}\right)^2=2mg\Delta x+\dfrac{1}{2}k\left(\dfrac{2mg}{k}\right)^2
+\]
+\[
+\Delta x=\dfrac{mg}{k}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=110-06 ch=06 sec=弹性势能 kind=derivation alt=none cont=none y=0.87-1.0
+\textbf{用弹性势能的动能定理}
+\[
+E_{p\text{弹}}=\dfrac{1}{2}k\Delta x^2
+\]
+%FIG p110_f 0.295 0.915 0.44 0.995
+\notefig[0.3]{figures/p110_f.png}
+\[
+W=\dfrac{k(x_1+x_2)(x_2-x_1)}{2}
+\]
+%%%END
+%%%PAGEEND 110

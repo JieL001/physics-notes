@@ -1,0 +1,73 @@
+%%%PAGE 088 rot=0 legibility=good summary=等效场：抛体(V⊥F合时V_min，两种解法)、圆周(等效最高/最低点，绳模型)、绳拉直问题(沿绳速度消失)、电场反向后受力图
+%%%BLOCK id=088-01 ch=09 sec=等效场·抛体 kind=method alt=04 cont=none y=0.04-0.40
+\noindent \textbf{等效场}
+% 标题被菱形框住
+
+\noindent ① 抛体\qquad $V\perp F_{\text{合}}$ 时 $V_{\min}$
+
+%FIG p088_a 0.09 0.165 0.285 0.255
+\notefig[0.3]{figures/p088_a.png}
+\noindent 求 $V_{\min}$
+\begin{align*}
+V&=\sqrt{(2gt)^2+(V_0-gt)^2}\\
+&=\sqrt{5g^2t^2-2V_0gt+V_0^2}\\
+\min&=\frac{2\sqrt5}{5}V_0
+\end{align*}
+% 第三行原稿写作 “min =”（省略了 V）
+
+\noindent （法1）二次函数\qquad $t=\dfrac{2V_0g}{10g^2}=\dfrac{V_0}{5g}$ 时 $V_{\min}$\quad $\checkmark$
+% “法1”“法2”原稿是画圈的标记
+
+\noindent （法2）类斜抛
+%FIG p088_b 0.60 0.262 0.835 0.365
+\notefig[0.4]{figures/p088_b.png}
+\[ V_0\cos\alpha=V_{0x} \]
+\[ V_{\min}=V_{0x} \]
+%%%END
+%%%BLOCK id=088-02 ch=09 sec=等效场·圆周 kind=method alt=04 cont=none y=0.37-0.70
+\noindent ② 圆\unclear{周}
+% 原稿为“圆用”，第二字形似“用”
+%FIG p088_c 0.085 0.39 0.435 0.545
+\notefig[0.45]{figures/p088_c.png}
+\begin{itemize}
+\item 等效最高点\quad 动能最小
+\item 上点\quad $E_{pG\,\max}$
+\item 右点\quad $E_{\text{机}\,\max}$\quad 电场指向最远点\qquad 加磁场也对，洛伦兹力不做功
+\item $g'$\ 等效最低点\quad 动能最大
+\item 下点\quad $E_{pG\,\min}$
+\item $E_{p\text{电}}+E_{pG}$ 最小
+\end{itemize}
+% E_pG 的下标 G 手写形似 a/G（疑为重力势能）
+
+\medskip
+\noindent
+\begin{tabular}{@{}lll@{}}
+绳 & 等效高 & $V=\sqrt{g'R}$ \\
+ & 低 & $V=\sqrt{5g'R}$
+\end{tabular}
+\qquad $g'=\dfrac{g}{\cos\theta}$
+
+\noindent $\Delta F_{\text{向}}=4mg'$
+%%%END
+%%%BLOCK id=088-03 ch=04 sec=绳拉直问题 kind=method alt=06 cont=none y=0.67-0.95
+\noindent \textbf{绳拉直问题}\quad 沿绳方向速度消失
+% “绳拉直问题”原稿被椭圆圈住
+%FIG p088_d 0.09 0.735 0.41 0.93
+\notefig[0.45]{figures/p088_d.png}
+\[ \begin{cases} V^2=2gL\sin\theta\\ mg(L-L\sin\theta)=\dfrac12mV'^2-\dfrac12m(V\cos\theta)^2\end{cases} \]
+% CHECK: 第一式 “2gL sinθ” 中 g 与 L 之间有重叠笔迹（疑有一个 2：V^2=2g·2L sinθ）；图内标注为 “V sinθ 失去”“只剩 V cosθ”
+%%%END
+%%%BLOCK id=088-04 ch=09 sec=等效场·绳拉直 kind=method alt=04 cont=none y=0.85-0.99
+%FIG p088_h 0.16 0.925 0.27 0.995
+\notefig[0.25]{figures/p088_h.png}
+%FIG p088_e 0.305 0.875 0.51 0.99
+\notefig[0.3]{figures/p088_e.png}
+\noindent 本来
+%FIG p088_f 0.565 0.856 0.67 0.908
+\notefig[0.25]{figures/p088_f.png}
+\noindent 现在转 $E$ 方向为左。
+%FIG p088_g 0.535 0.928 0.65 0.985
+\notefig[0.25]{figures/p088_g.png}
+% 本块全是示意图：左下为一小草图；中间为小球受力/速度分解（图内标注“(损失)”“V cos60°”“剩下”“F合2”）；右侧两个力三角形：本来 Eq 向右、mg 向下、F合1，夹角60°；现在 E 转向左，Eq 向左，F合2，夹角60°
+%%%END
+%%%PAGEEND 088

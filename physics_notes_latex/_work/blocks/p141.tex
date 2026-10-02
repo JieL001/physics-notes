@@ -1,0 +1,71 @@
+%%%PAGE 141 rot=0 legibility=good summary=遮光类续：飞船看不见太阳的时间(3)；卫星向地球发送照片的时间与月/地质量比(4)；赤道上方卫星最低高度(5)；同步卫星看不见时间(6，页底被裁)
+%%%BLOCK id=141-01 ch=05 sec=遮光类·遮挡时间 kind=problem alt=none cont=none y=0.04-0.45
+\begin{problem}[3.]
+飞船 $h=340\,\mathrm{km}$\quad 绕地球一圈 $90\,\mathrm{min}$\quad $R_{\text{地}}=6400\,\mathrm{km}$。飞船沿赤道平面自东向西飞行。
+%FIG p141_a 0.0 0.097 0.30 0.245
+\notefig[0.4]{figures/p141_a.png}
+
+飞行\unclear{员看}到西边日出
+
+若太阳直射赤道，飞行员每天看 $n$ 次日落\quad $n=\dfrac{24\,\mathrm{h}}{1.5\,\mathrm{h}}=16$次\quad \unclear{$T$}$=90\,\mathrm{min}=1.5\,\mathrm{h}$
+
+一圈中飞船看不见太阳的时间有多长？\quad $\cos18^\circ=0.95$\quad $\tan18^\circ=0.32$
+\begin{solution}
+\[ \sin\theta=\frac{R}{R+h}=0.95 \]
+\[ \therefore\theta=72^\circ \]
+\[ t=\frac{2\theta}{360^\circ}T=\frac{2}{5}T \]
+\struck{$T=24\,\mathrm{h}$}\quad $\therefore t=36\,\mathrm{min}$% CHECK: “T=24h”上似有一横线（疑被划去）
+
+$T=90\,\mathrm{min}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=141-02 ch=05 sec=天体质量与信号传播时间 kind=problem alt=none cont=none y=0.45-0.70
+\begin{problem}[4.]
+%FIG p141_b 0.10 0.45 0.655 0.58
+\notefig[0.75]{figures/p141_b.png}
+
+月绕地周期 $T_0$。半径为 $r$
+
+卫星向地球发送照片的时间？光速 $C$
+\begin{solution}
+\[ M=\frac{4\pi^2\,r^3}{G\,T^2} \]% 原稿 r^3 与 T^2 被手绘椭圈圈住
+\[ \frac{M_{\text{月}}}{M_{\text{地}}}=\frac{(h+R_2)^3\,T_0^2}{r^3\,T^2} \]
+\[ d=\sqrt{r^2+(R_2+h)^2}-R_1 \]
+\[ t=\frac{d}{c}=\frac{\sqrt{r^2+(R_2+h)^2}-R_1}{C} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=141-03 ch=05 sec=遮光类·遮挡时间 kind=problem alt=none cont=none y=0.69-0.85
+\begin{problem}[5.]
+%FIG p141_c 0.0 0.695 0.28 0.845
+\notefig[0.35]{figures/p141_c.png}
+
+人在地上看到（行上方插入：赤道上方飞(行的)）明亮的卫星，日落 $2\mathrm{h}$ 以后赤道附近的人们能\unclear{看见}它。求它最低高度。
+\begin{solution}
+$\theta=\dfrac{360^\circ}{12}=30^\circ$\quad $h=\dfrac{24}{2}=12$
+
+$\cos\theta=\dfrac{R}{R+h}$\quad $\therefore h=\left(\dfrac{2\sqrt{3}-3}{3}\right)R$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=141-04 ch=05 sec=遮光类·遮挡时间 kind=problem alt=none cont=none y=0.85-1.00
+\begin{problem}
+%FIG p141_d 0.0 0.845 0.295 0.972
+\notefig[0.35]{figures/p141_d.png}
+
+某地球同步卫星正下方的地球表面有一观察者，他用天文望远镜观察\unclear{被}太阳光照射的此卫星。太阳直射赤道(春分)日落后有 $12\mathrm{h}$ 看不见卫星内有几个\unclear{…}小时看不见卫星。(地表重力加速度 $g$，地球自转周期 $T$。)% CHECK: 原稿语句似有错乱（应为“日落后12h内有几个小时看不见卫星”）；“几个”与“小时”之间有一黑色墨团，似涂掉一字；第一行右端被页边切断
+\begin{solution}
+$\sin\theta=\dfrac{R}{r}$\quad \struck{$\theta$}% 其后有一处涂掉的字迹，似为 θ…
+
+$\theta=\arcsin\dfrac{R}{r}$\quad $t=\dfrac{2\theta}{2\pi}T$
+
+对同步卫星\quad $\dfrac{GMm}{r^2}=m\dfrac{4\pi^2}{T^2}r$
+
+由 $GM=gR^2$\quad $r=\sqrt[3]{\dfrac{GMT^2}{4\pi^2}}=\sqrt[3]{\dfrac{gR^2T^2}{4\pi^2}}$
+
+$t=\dfrac{\arcsin\sqrt[3]{\dfrac{4\pi^2R}{gT^2}}}{\pi}\,T$% 页面下边缘被拍摄裁切，最后一行公式下半部分缺失
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 141

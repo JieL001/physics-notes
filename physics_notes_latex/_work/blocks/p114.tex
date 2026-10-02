@@ -1,0 +1,94 @@
+%%%PAGE 114 rot=0 legibility=good summary=极值类习题五道：平抛落到抛物面的最小动能、洛伦兹力下球在碗内圆周运动的最小B、风力作用下的最小风速、斜面上系统牛二律求地面摩擦力极值、斜面上求最小拉力
+%%%BLOCK id=114-01 ch=04 sec=平抛 kind=problem alt=06,90 cont=none y=0.03-0.33
+% 本题只有标题“交弧用轨迹方程”、图和“求 Ek min”，没有写出完整题干
+\begin{problem}
+\textbf{交\unclear{弧}用轨迹方程}
+
+%FIG p114_a 0.01 0.085 0.235 0.19
+\notefig[0.3]{figures/p114_a.png}
+
+求 $E_{k\min}$
+\begin{solution}
+\begin{align*}
+y&=-\frac{g}{2v_0^2}x^2+2h=\frac{x^2}{2h}\\
+\therefore\ y&=\frac{2v_0^2h}{gh+v_0^2}
+\end{align*}
+先表达 $x^2=\dfrac{4hv_0^2h}{gh+v_0^2}=\dfrac{4v_0^2h^2}{gh+v_0^2}$
+
+\struck{$y=\unclear{\ldots}$}\quad $y=\dfrac{1}{2h}x^2\ \Rightarrow\ y$．
+\begin{align*}
+E_k&=mg(2h-y)+\frac{1}{2}mv_0^2\qquad\swarrow\\
+&=\frac{2mg^2h^2}{gh+v_0^2}+\frac{1}{2}mv_0^2\\
+&=\frac{2mg^2h^2}{gh+v_0^2}+\frac{1}{2}m(gh+v_0^2)-\frac{1}{2}mgh\\
+&\ge2\sqrt{2mg^2h^2\cdot\frac{1}{2}m}-\frac{1}{2}mgh=\frac{3}{2}mgh
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=114-02 ch=11 sec=洛伦兹力·圆周运动 kind=problem alt=04 cont=none y=0.25-0.46
+\begin{problem}[2]
+% 图p114_b：N、qvB、mg 的力三角形（含θ）；图p114_c：球在碗内表面运动的受力图（N、qvB、mg）
+%FIG p114_b 0.225 0.248 0.35 0.31
+\notefig[0.25]{figures/p114_b.png}
+
+%FIG p114_c 0.01 0.305 0.19 0.40
+\notefig[0.3]{figures/p114_c.png}
+
+球能圆周运动 求 $B_{\min}$ 及对应速率
+\begin{solution}
+【法1】\quad $\dfrac{mv^2}{r}-qvB+mg\tan\theta=0$\qquad $\Delta\ge0\ \Rightarrow\ B$
+
+【法2】\quad $\left\{\begin{array}{l}qvB-N\sin\theta=\dfrac{mv^2}{r}\\[2mm] N\cos\theta=mg\end{array}\right.$
+
+$\therefore\ B=\dfrac{mv}{qr}+\dfrac{mg\tan\theta}{qv}\ge2\sqrt{\dfrac{m^2g\tan\theta}{q^2r}}$ % 此行右端被拍摄边缘截断（可见 m^2 g tan…/q^2 r），按可见部分转录
+
+当 $\dfrac{mv}{qr}=\dfrac{mg\tan\theta}{qv}$ 时取等
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=114-03 ch=02 sec=共点力平衡 kind=problem alt=90 cont=none y=0.44-0.58
+\begin{problem}[3]
+% 图p114_d内含标注：水平线上的T、θ、mg、F方向等（受力示意）；图p114_e：F、θ、mg、T 的力三角形
+%FIG p114_d 0.04 0.44 0.262 0.54
+\notefig[0.35]{figures/p114_d.png}
+
+$F=\rho SV^2\sin^2\theta$\quad 求 $V_{\min}$
+\begin{solution}
+\[mg=F\cos\theta\]
+\[\therefore\ V=\sqrt{\frac{mg}{\rho S\sin^2\theta\cos\theta}}\qquad \tan\theta=\frac{\sqrt{2}}{2}\ \text{时}\ V_{\min}\] % CHECK: 若 F∝sin^2θ，使 sin^2θ cosθ 最大应得 tanθ=√2；原稿写作 √2/2（拍照看似 √2 over 2）
+
+%FIG p114_e 0.70 0.495 0.84 0.585
+\notefig[0.25]{figures/p114_e.png}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=114-04 ch=03 sec=连接体与整体隔离 kind=problem alt=90 cont=none y=0.58-0.72
+\begin{problem}[4]
+\textbf{$\sin2\theta=2\sin\theta\cos\theta$ 及辅助角公式}
+
+% 图p114_f内含标注：g sinθ、μ=0（或M=0，原稿字形难辨）、m、M、θ
+%FIG p114_f 0.025 0.645 0.24 0.71
+\notefig[0.3]{figures/p114_f.png}
+
+当 $\theta=?$ 时 $f_{\text{地}}$ max\qquad 系统牛二律
+\begin{solution}
+\[f_{\text{地}}=M\cdot0+ma\cos\theta=mg\sin\theta\cos\theta\qquad \theta=45^\circ\ \text{时取极大值}\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=114-05 ch=03 sec=斜面 kind=problem alt=02,90 cont=none y=0.72-0.90
+% 原稿序号处“4”被涂改为“5”
+\begin{problem}[5]
+% 图p114_g内含标注：N、F、f、mg、φ、30°、μ=tan30°
+%FIG p114_g 0.085 0.735 0.215 0.84
+\notefig[0.3]{figures/p114_g.png}
+
+$\to a=\dfrac{g}{2}$\quad 求最小拉力 $F$
+\begin{solution}
+\[\left\{\begin{array}{l}F\cos\alpha-mg\sin30^\circ-f=ma\\ N+F\sin\alpha=mg\cos30^\circ\\ f=\mu N\end{array}\right.\qquad F=\frac{mg\sin30^\circ+\mu mg\cos30^\circ+ma}{\sqrt{1+\mu^2}\,\sin(\alpha+\varphi)}\]
+\[\tan\varphi=\frac{1}{\mu}\]
+当 $\sin(\alpha+\varphi)=1$ 时 $F$ 最小
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 114

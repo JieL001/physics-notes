@@ -1,0 +1,67 @@
+%%%PAGE 162 rot=0 legibility=poor summary=整页失焦模糊：线框进入磁场的质量/电阻/速度变化量关系；F=kt的冲量；导体棒在变化安培力下的功能与电量题；电势差做功公式；线框v-t、I-t、v-x、I-x图像；线框穿过磁场区的v-t图与安培力、功率极值
+% 本页整体失焦，部分字迹模糊，已尽力辨认
+% 注意：本页配图(p162_a~g)已用 scratchpad/crop_soft_p162.py 做“柔和清理”（原图失焦，crop_batch 默认清理会洗掉淡笔迹）；若要重裁请用该脚本，勿用 crop_batch 覆盖
+%%%BLOCK id=162-01 ch=12 sec=电磁感应·线框进出磁场 kind=knowledge alt=none cont=none y=0.05-0.27
+% 首行标题模糊
+\unclear{线圈过程中}\quad $n$匝\unclear{金线}\ \unclear{$N_2$}
+
+$V_0$与$\Delta V$无关\qquad $a=\dfrac{B^2V_0}{16\rho_1\rho_2}$\quad $m=4\rho_1LS$\quad $R=\rho_2\dfrac{4L}{S}$\quad $q=\dfrac{BLS}{4\rho_2}=\dfrac{BL^2}{R}$
+
+$V_0\propto\Delta E_k$\qquad \unclear{$a$、$\rho_1$与所…有关} % 此行右半极模糊，只辨出个别字
+
+$m\propto\Delta E_k$
+
+$m\propto\dfrac{1}{\Delta V}$
+
+$\Delta V=\dfrac{-B^2L^2\Delta x}{mR}$
+
+$\Delta E_k=W_{\text{安}}$
+%%%END
+%%%BLOCK id=162-02 ch=12 sec=电磁感应·安培力冲量 kind=note alt=none cont=none y=0.17-0.24
+若匀变速\ $F=kt$
+%FIG p162_b 0.69 0.175 0.81 0.235
+\notefig[0.25]{figures/p162_b.png}
+$I_F=S_{\text{面积}}$
+%%%END
+%%%BLOCK id=162-03 ch=12 sec=电磁感应·能量与电量 kind=problem alt=06 cont=none y=0.29-0.52
+% 本页未见这道题的文字题干，只有图和已知量，及解答算式
+\begin{problem}
+%FIG p162_a 0.075 0.295 0.36 0.395
+\notefig[0.4]{figures/p162_a.png}
+$B=2\unit{T}$，$R=3\,\Omega$，$r=1\,\Omega$，$L=1\unit{m}$，$m=2\unit{kg}$，$\mu=0.5$
+\begin{solution}
+\[ v=2x\qquad F_A=\frac{B^2L^2\cdot2x}{R+r}=2x\ (\mathrm{N}) \]
+%FIG p162_c 0.48 0.375 0.605 0.43
+\notefig[0.2]{figures/p162_c.png}
+\[ W_A=-\tfrac12\,2\times1=-1\unit{J} \]
+\[ W-\mu mgx_1+W_A=\tfrac12mv_1^2\qquad W=15\unit{J} \]
+\[ q_x=\frac{\Delta\Phi}{R+r}=\frac{BLx}{R+r}=0.5\unit{C} \]
+\[ Q=-W_{\text{安}}=1\unit{J}\qquad Q_R=\frac{R}{R+r}Q=0.75\unit{J} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=162-04 ch=09 sec=电势差·电场力做功 kind=formula alt=none cont=none y=0.505-0.62
+%FIG p162_d 0.02 0.505 0.19 0.60
+\notefig[0.25]{figures/p162_d.png}
+\[ W_{12}=U_{12}q=(\varphi_1-\varphi_2)q=\tfrac12mV_2^2-\tfrac12mV_1^2 \]
+用法
+
+$E$\unclear{常}相等\quad 方向\unclear{常}不同
+%%%END
+%%%BLOCK id=162-05 ch=12 sec=电磁感应·图像 kind=method alt=none cont=none y=0.63-0.78
+%FIG p162_e 0.05 0.64 0.20 0.77
+\notefig[0.25]{figures/p162_e.png}
+\[ a=-\frac{B^2L^2V}{mR} \]
+\[ I=\frac{BLV}{R}\propto V \]
+\[ \frac{\Delta V}{\Delta x}=-\frac{B^2L^2}{mR} \]
+%FIG p162_g 0.42 0.635 0.76 0.78
+\notefig[0.5]{figures/p162_g.png}
+%%%END
+%%%BLOCK id=162-06 ch=12 sec=电磁感应·线框穿过磁场区 kind=derivation alt=01 cont=none y=0.745-1.00
+%FIG p162_f 0.04 0.752 0.375 0.87
+\notefig[0.4]{figures/p162_f.png}
+$t_1\sim t_2$匀速\quad$F_{\text{安}}=mg$\quad$\dfrac{B^2L^2V_1}{R}=mg$\quad$L=V_1(t_2-t_1)$\quad$B^2=\dfrac{mgR}{(t_2-t_1)V_1^3}$ % CHECK: 代入 L=V_1(t_2-t_1) 后分母应含 (t_2-t_1)^2；原稿看不出平方
+\[ I_{\max}=\frac{BLV_2}{R} \]
+\[ F_{\text{安}\max}=\frac{B^2(t_2-t_1)^2V_1V_2}{R}=\frac{mgV_2}{V_1}\qquad P_{\text{安}\max}=F_{\text{安}\max}V_2=\frac{mgV_2^2}{V_1} \] % CHECK: 分子 V_1V_2 处按推导应为 V_1^2V_2
+%%%END
+%%%PAGEEND 162

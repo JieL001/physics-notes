@@ -1,0 +1,115 @@
+%%%PAGE 70 rot=0 legibility=good summary=竖直圆周运动(轻绳模型、轻杆模型与F-v^2图)；万有引力与航天要点：开普勒定律与万有引力定律、天体质量密度计算(借助外援/自力更生)、表面重力加速度、三种宇宙速度、同步/极地/近地卫星，及后续专题标题清单
+%%%BLOCK id=070-01 ch=04 sec=竖直面圆周运动·轻绳模型 kind=method alt=none cont=none y=0.08-0.31
+\textbf{竖直圆周运动}
+
+\textbf{轻绳模型}
+
+%FIG p070_a 0.14 0.148 0.355 0.192
+\notefig[0.3]{figures/p070_a.png}
+
+\begin{align*}
+& mg+F_T=\dfrac{mv^2}{r}\\
+& F_T=0\qquad mg=\dfrac{mv^2}{r}\\
+& v=\sqrt{gr}\\
+& F=\dfrac{mv^2}{r}-mg
+\end{align*}
+
+无支持力
+
+绳力只能向下。
+
+\[ V_{\text{过上}}=\sqrt{gr} \]
+%%%END
+%%%BLOCK id=070-02 ch=04 sec=竖直面圆周运动·轻杆模型 kind=method alt=none cont=none y=0.15-0.31
+\textbf{轻杆模型}
+
+%FIG p070_b 0.425 0.178 0.62 0.214
+\notefig[0.3]{figures/p070_b.png}
+
+弹力可向下\quad 可向上\quad 也为0
+
+\unclear{当}\ $V=0$\quad $F_n=0$\quad $F_N=mg$
+
+$V_{\text{过上}}=0$
+
+%FIG p070_c 0.625 0.128 0.815 0.22
+\notefig[0.3]{figures/p070_c.png}
+
+\begin{align*}
+& mg\pm F_N=\dfrac{mv^2}{r}\\
+& F=\dfrac{mv^2}{r}-mg\\
+& mg-(-F)=\dfrac{mv^2}{r}
+\end{align*}
+%%%END
+%%%BLOCK id=070-03 ch=05 sec=开普勒定律与万有引力定律 kind=knowledge alt=none cont=none y=0.30-0.43
+% 版面：左侧标题“开普勒行星运动定律”，其右大括号括入以下四条
+\textbf{开普勒行星运动定律}
+\begin{itemize}
+  \item 开普勒第一定律（轨道定律）\quad 轨迹椭圆、中心天体在焦点。
+  \item 开普勒第二定律（面积定律）\quad 一个行星绕一个中心天体\quad $V_1r_1=V_2r_2$
+  \item 开普勒第三定律（周期定律）\quad $\dfrac{a^3}{T^2}=K$。
+  \item 万有引力定律\quad $F=\dfrac{GMm}{r^2}$\quad $G=6.67\times10^{-11}\unit{N\cdot m^2/kg^2}$
+\end{itemize}
+%%%END
+%%%BLOCK id=070-04 ch=05 sec=天体质量与密度计算 kind=formula alt=none cont=none y=0.47-0.60
+自转 $T_{\text{地}}=24\unit{h}$\quad $V=\dfrac{4}{3}\pi R^3$
+
+公转 $T_{\text{地}}=365$天
+
+\textbf{天体质量密度计算}
+
+\textbf{借助外\unclear{援}}\quad 天体环绕半径 $r$、$T$
+\begin{align*}
+& \text{由}\ \dfrac{GMm}{r^2}=m\dfrac{4\pi^2}{T^2}r, \qquad M=\dfrac{4\pi^2r^3}{GT^2}\\
+& \rho=\dfrac{M}{V}=\dfrac{M}{\frac{4}{3}\pi R^3}=\dfrac{3\pi}{GT^2}\left(\dfrac{r}{R}\right)^3
+\end{align*}
+若$r\approx R$即近地卫星环绕\quad $\rho=\dfrac{3\pi}{GT^2}$
+
+\textbf{自力更生}\quad 已知表面$g$和天体半径$R$
+\[ M=\dfrac{gR^2}{G}\qquad \rho=\dfrac{M}{V}=\dfrac{M}{\frac{4}{3}\pi R^3}=\dfrac{3g}{4\pi GR} \]
+%%%END
+%%%BLOCK id=070-05 ch=05 sec=天体表面重力加速度 kind=formula alt=none cont=none y=0.57-0.64
+\textbf{天体表面的重力加速度问题}
+
+赤道 $\dfrac{GMm}{R^2}=mg+m\omega^2R$\quad 两极\,\unclear{$\therefore$}\,$\dfrac{GMm}{R^2}=mg$
+
+地球表面 $g=\dfrac{GM}{R^2}$，$h$高度处 $g'=\dfrac{GM}{(R+h)^2}$\quad 地底 $g=\dfrac{4}{3}\pi\rho Gx$。
+%%%END
+%%%BLOCK id=070-06 ch=05 sec=宇宙速度与人造卫星 kind=knowledge alt=none cont=none y=0.69-0.92
+% 版面：左侧标题“天体运动与人造卫星”，其右大括号括入“三种宇宙速度”“地球同步卫星特点”“极地卫星和近地卫星”三项；“三种宇宙速度”右侧另有大括号括入三个宇宙速度。sd=速度（原稿缩写）
+\textbf{天体运动与人造卫星}
+
+\textbf{三种宇宙速度}
+\begin{itemize}
+  \item 第一宇宙速度（环绕sd）\quad $V_1=7.9\unit{km/s}$\quad 最小发射、最大环绕\ 地球
+  \item 第二宇宙速度（脱离sd）\quad $V_2=11.2\unit{km/s}$\quad 挣脱地球引力束缚的最小发射速度
+  \item 第三宇宙速度（\unclear{逃逸}sd）\quad $V_3=16.7\unit{km/s}$\quad 挣脱太阳束缚的最小发射速度\\ 大于$V_2$小于$V_3$绕太阳
+\end{itemize}
+
+\textbf{地球同步卫星特点}
+\begin{itemize}
+  \item 轨道平面一定，轨道平面和赤道平面重合
+  \item 周期一定\quad $T=24\unit{h}=86400\unit{s}$\quad 角速度一定\quad $\omega=\omega_{\text{地球自转}}$
+  \item 高度一定\quad $\dfrac{GMm}{r^2}=m\dfrac{4\pi^2}{T^2}r$\quad $r=\sqrt[3]{\dfrac{GMT^2}{4\pi^2}}\approx4.24\times10^4\unit{km}$
+  \item 速度一定\quad $V=\dfrac{2\pi r}{T}=3.1\unit{km/s}$\quad $h=r-R\approx3.6\times10^4\unit{km}$
+  \item 绕行方向与地球自转方向相同\quad $r=6.6R$\quad $h=5.6R$
+\end{itemize}
+
+\underline{极地卫星}和\underline{近地卫星}，\quad $r=R$\quad $V=7.9\unit{km/s}$\\
+全球覆盖 % 原稿“全球覆盖”写在“极地卫星”下方
+
+%FIG p070_d 0.12 0.81 0.265 0.92
+\notefig[0.25]{figures/p070_d.png}
+%%%END
+%%%BLOCK id=070-07 ch=05 sec=章节提纲 kind=summary alt=none cont=none y=0.43-1.00
+% 本页散见的各专题标题（版面上与上述公式块穿插排列），此处只列没有其它内容的标题行
+\begin{itemize}
+  \item 开、万定律的理解与运用
+  \item 填补法求万有引力
+  \item 宇宙速度的理解与计算
+  \item 卫星运动参量的比较
+  \item 卫星变轨、飞船对接问题
+  \item 双星、多星模型、天体的追及相遇 % 页面底边，字迹下半部被截断
+\end{itemize}
+%%%END
+%%%PAGEEND 70

@@ -1,0 +1,72 @@
+%%%PAGE 158 rot=0 legibility=good summary=电磁感应：磁单极子穿超导线圈(三种位置的i-t图)、法拉第圆盘及涡流；感生电场与电子加速器(做功、转圈数、W_1圈)；磁流体发电机型管道(U0、压强差、功率最大)
+% 本页为黄色方格纸(照片略倾斜)，盖在另一页上：顶部及右侧露出的化学字迹(“…=32”“物质的量浓度为c mol/L…”“溶液质量 MV/22.4+m水 g”等)属邻页，已忽略；页面上有两条手绘波浪形分隔长线(约在 y=0.35~0.43 与 y=0.59~0.66)，未转录
+%%%BLOCK id=158-01 ch=12 sec=电磁感应·磁单极子穿线圈 kind=knowledge alt=none cont=none y=0.05-0.34
+% 三行图：左为磁铁(S N)/磁单极子(圈N)穿过线圈的示意(标有“斥”“引”“i感max”等)，右为对应的 i-t 图(标“中点0”)；图内文字已在图中
+\noindent 〈磁单极子〉穿框　$i$方向不变
+
+\noindent 超导线圈　$R=0$　$I$不会随时间衰减.
+%FIG p158_a 0.05 0.133 0.40 0.22
+\notefig[0.35]{figures/p158_a.png}
+%FIG p158_b 0.05 0.21 0.40 0.285
+\notefig[0.35]{figures/p158_b.png}
+%FIG p158_c 0.05 0.275 0.40 0.34
+\notefig[0.35]{figures/p158_c.png}
+%%%END
+%%%BLOCK id=158-02 ch=12 sec=电磁感应·法拉第圆盘 kind=knowledge alt=none cont=none y=0.11-0.40
+% “盘转”等处的“盘”字形与标题“法拉第圆盘”的“盘”相同；“涡流”“磁场”之间上方有一个小字，难辨
+\noindent \textbf{法拉第圆盘}
+%FIG p158_d 0.53 0.135 0.675 0.225
+\notefig[0.25]{figures/p158_d.png}
+\[ I=\dfrac{BL^2\omega}{2R} \]
+\noindent 若$B$改为$B\sin\omega t$，不转盘则产生涡流，灯不会亮（涡流不能流出）。
+%FIG p158_e 0.52 0.25 0.625 0.31
+\notefig[0.25]{figures/p158_e.png}
+\noindent 盘转磁针也转
+
+\noindent 整个中不变　局部变化
+
+\noindent 没有自由电子形成电流
+
+\noindent 涡流\textsuperscript{\unclear{…}}磁场使磁针转动
+%%%END
+%%%BLOCK id=158-03 ch=12 sec=感生电场·涡旋电场 kind=knowledge alt=09,04 cont=none y=0.35-0.58
+% 原稿：“做功W=qES”起至“转圈数”一行左侧有一个大括号形曲线括起；W_1圈 一行在括号之外；“电子加速器只能加速电子”末尾“电子”二字下有横线；“顺逆均可”一行上方有小字“顺逆时针”
+\noindent 〈感生电场〉　耗散力　加速圆周运动　$a$不指向圆心
+
+\noindent 做功　$W=qES$
+
+\noindent \hspace*{2em}$S=V_0t+\dfrac{1}{2}\dfrac{qE}{m}t^2$
+
+\noindent \hspace*{2em}$V=V_0+at$
+
+\noindent 转圈数　$n=\dfrac{\frac{1}{2}mV_0^2}{e\,E_{\text{感应电动势}}}=\dfrac{\text{末动能}}{\text{做功/圈}}$% CHECK: 分子 ½mV_0^2 的下标0存疑(末动能应为 ½mV^2)
+
+\noindent $W_{1\text{圈}}=Uq=\dfrac{\Delta B}{\Delta t}\pi r^2q=k\pi r^2q$
+
+\noindent 电子加速器只能加速\underline{电子}
+
+\noindent 顺逆均可，\textsuperscript{顺逆时针}做功不相等.
+%%%END
+%%%BLOCK id=158-04 ch=11 sec=复合场·磁流体发电机 kind=problem alt=10,06 cont=none y=0.60-1.00
+% 图：矩形管道，标有 R(与开关串联)、B、V0(流速箭头)、d、L、h，图内文字已在图中
+\begin{problem}
+%FIG p158_f 0.04 0.585 0.262 0.752
+\notefig[0.25]{figures/p158_f.png}
+\noindent 液流，电阻率$\rho$，匀速$V_0$
+
+\noindent ①　$qV_0B=\dfrac{qU_0}{d}$　$\therefore U_0=BdV_0$
+
+\noindent ②　开关闭合前后管道两端压强差.
+\[ \left\{\begin{aligned}
+P_1hd&=f\\
+P_2hd&=f+f_{\text{安}}\\
+F_{\text{安}}&=BIL\quad I=\dfrac{U_0}{R+\dfrac{\rho d}{Lh}}
+\end{aligned}\right.\qquad \Delta P=\dfrac{LdV_0B^2}{LhR+d\rho} \]% CHECK: F_安=BIL 末字原稿形似L，按 ΔP 结果(含d)应为 d
+
+\noindent ③　调整宽和高，使$S=dh$不变，求$P_{R\max}$及此时$\dfrac{d}{h}$值
+\[ P=\dfrac{(BLV_0)^2}{R+\dfrac{\rho d}{Lh}}\qquad P_{\max}=\dfrac{Lh(BLV_0)^2}{2\rho d} \]% CHECK: (BLV_0) 中的 L 原稿字形似 L，按 U_0=BdV_0 应为 d；P_max 分母原稿为 2ρd(按 U_0^2/4r 推算应为 4ρd)
+
+\noindent 当$R=\dfrac{\rho d}{Lh}$时$P_{\max}$　$\dfrac{d}{h}=\dfrac{LR}{\rho}$
+\end{problem}
+%%%END
+%%%PAGEEND 158

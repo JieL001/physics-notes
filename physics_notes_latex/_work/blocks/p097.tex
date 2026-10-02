@@ -1,0 +1,73 @@
+%%%PAGE 97 rot=0 legibility=good summary=磁场公式与安培力技巧、磁通量与感应电荷量、楞次定律结论、感生电场图像选择题、线框受力推导
+%%%BLOCK id=097-01 ch=11 sec=磁感应强度·安培力 kind=formula alt=none cont=none y=0.03-0.17
+磁场\quad $B=\dfrac{F}{IL\sin\theta}=\dfrac{F}{qv\sin\theta}$\qquad $B=\dfrac{kI}{r}$\quad 通电导线间\unclear{安培}力；导线\unclear{同}吸异斥。（不考虑有外磁场）
+
+%FIG p097_a 0.13 0.10 0.22 0.17
+\notefig[0.25]{figures/p097_a.png}
+1连\quad 2垂\quad 3右手
+
+联系：$F_{\text{安}}=BIL=B\,nesv\,L=NBev=NqvB$
+%%%END
+%%%BLOCK id=097-02 ch=11 sec=通电导线间作用力·技巧 kind=method alt=none cont=none y=0.03-0.12
+技巧\ $\otimes$\qquad 直接画力的\unclear{…}\\
+跳过画$B$
+% 原稿右侧被页边截断，“直接画力的”之后的字不可见
+%FIG p097_b 0.77 0.03 1.0 0.12
+\notefig[0.25]{figures/p097_b.png}
+%%%END
+%%%BLOCK id=097-03 ch=11 sec=安培力·有效长度 kind=knowledge alt=none cont=none y=0.19-0.22
+有效长度连首尾，$\therefore$有效长度越大越易失去平衡。
+%%%END
+%%%BLOCK id=097-04 ch=12 sec=磁通量 kind=formula alt=none cont=none y=0.22-0.26
+$\Delta\phi=\phi_{\text{末}}-\phi_{\text{初}}$\qquad 面要分正负\qquad $\phi=BS\cos\theta$
+
+%FIG p097_c 0.67 0.205 0.79 0.262
+\notefig[0.25]{figures/p097_c.png}
+%%%END
+%%%BLOCK id=097-05 ch=12 sec=感应电荷量 kind=formula alt=none cont=none y=0.27-0.37
+%FIG p097_d 0.11 0.265 0.33 0.375
+\notefig[0.3]{figures/p097_d.png}
+
+转过$2\pi$\ $q=\dfrac{4BS}{R}$，转过\unclear{$\dfrac{7}{4}\pi$}\ $q=\left(3+\dfrac{\sqrt{2}}{2}\right)\dfrac{BS}{R}$
+
+$q$要按过程求
+
+$q=n\dfrac{\Delta\phi}{\Delta t}$ % CHECK: 手写分母似为 Δt（通常 q=nΔΦ/R）；另“转过 7π/4”的分数辨认不确定
+%%%END
+%%%BLOCK id=097-06 ch=12 sec=楞次定律 kind=knowledge alt=none cont=none y=0.40-0.62
+% 原稿“楞次定律”标题被菱形框框起
+\textbf{楞次定律}
+
+回路中\uwave{感应电流总阻碍}\uwave{原磁通量变化}（不是阻止，来自于能量守恒）
+
+% 原稿以一个大括号把下面四行括在一起
+\begin{itemize}
+\item $\pm$增反减同
+\item 来拒去留
+\item 线圈靠磁铁\quad $\pm$增扩减缩
+\item 线圈不靠磁铁\quad $\pm$增缩减扩
+\end{itemize}
+
+二次感应，一样，$i_{\text{感}}=\dfrac{\dd i_{0}}{\dd t}$\quad 导数关系。 % CHECK: 分子下标手写似“0/o”，可能是“原”（原电流）
+%%%END
+%%%BLOCK id=097-07 ch=12 sec=感生电场·图像选择题 kind=method alt=none cont=none y=0.65-0.80
+\textbf{感生电场选择题}（没有正方向，则自己规定）
+
+$B_{\text{正}}\ I_{\text{正}}$\quad 满足右手，斜正电负，斜负电正（否则相反）
+
+$F_{\text{正}}\ B_{\text{正}}\ I_{\text{正}}$\quad 满足右手，斜正对称，斜负相同（否则相反）
+
+$B$、$F$关于$X$轴对称
+% 原稿中“电负”与“对称”被圈在一起，“电正”与“相同”被圈在一起，第一行的“（否则相反）”也被圈起
+%FIG p097_e 0.635 0.645 0.78 0.81
+\notefig[0.3]{figures/p097_e.png}
+%%%END
+%%%BLOCK id=097-08 ch=12 sec=感生电动势·线框受力 kind=derivation alt=none cont=none y=0.82-0.93
+%FIG p097_f 0.06 0.82 0.16 0.925
+\notefig[0.25]{figures/p097_f.png}
+
+\[ i=\dfrac{\dfrac{\Delta B}{\Delta t}\cdot\dfrac{L^{2}}{2}}{\dfrac{\rho\,4L}{S}}\qquad
+\dfrac{\Delta F}{\Delta t}=\dfrac{\Delta B}{\Delta t}IL=KIL \]
+\[ F=KILt \]
+%%%END
+%%%PAGEEND 97

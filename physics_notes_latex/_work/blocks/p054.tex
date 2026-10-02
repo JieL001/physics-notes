@@ -1,0 +1,158 @@
+%%%PAGE 54 rot=0 legibility=good summary=电磁驱动（磁悬浮）模型的受力与速度推导、两道衍生问题（含红笔框演草）、电磁感应三大观点方框
+%%%BLOCK id=054-01 ch=12 sec=电磁驱动·磁悬浮模型 kind=derivation alt=none cont=none y=0.03-0.37
+% 手写 v 与 V 不分，这里统一记为小写 v
+\textbf{电磁驱动，带动滞后}
+
+\unclear{$I_f=kx$} $\downarrow$
+% 页面右上角（No.栏右侧）的小字，箭头向下指向右侧的 f=kv
+
+\textbf{磁悬浮}（二倍电流\ 四倍力）
+
+%FIG p054_a 0.0 0.068 0.283 0.137
+\notefig[0.3]{figures/p054_a.png}
+
+磁场速度$v_B$，安培力驱动
+
+%FIG p054_b 0.545 0.058 0.685 0.14
+\notefig[0.25]{figures/p054_b.png}
+
+$a\downarrow$到0后匀速直线运动，$f=kv$ \quad \red{框有$n$匝}
+
+开始：
+\[
+E=\red{n}\,2\cdot BLv\qquad I=\red{n}\,\frac{E}{R}
+\]
+\[
+F_{\text{安}}=\red{n}BI\cdot2L=\frac{\red{n^2}\,4B^2L^2v_B}{R}
+\]
+启动后：
+\[
+E=\red{n}\,2BL(v_B-v_{\text{框}})
+\]
+\[
+F_{\text{安}}=\frac{\red{n^2}\,4B^2L^2(v_B-v_{\text{框}})}{R}
+\]
+由牛顿第二定律\ $F_{\text{安}}-f=ma$\quad $a=0$时速度最大.
+\[
+v_m=\frac{4B^2L^2v_B\cdot\red{n^2}}{KR+4B^2L^2}
+\]
+每秒的$E_{\text{补\unclear{充}}}=Kv_m\cdot v_m+I^2R$，\quad $I=\dfrac{\red{n}\,2BL(v_B-v_m)}{R}$
+
+（功率）\qquad 能量 由磁场提供
+
+\[
+E=\red{n}BLv_{\text{相}}
+\]
+\struck{$q=nBLv$}
+\[
+I_{\text{冲}}=nBLq=\frac{n^2B^2L^2x}{R}
+\]
+%%%END
+%%%BLOCK id=054-02 ch=12 sec=电磁驱动·磁悬浮模型 kind=problem alt=none cont=none y=0.37-0.71
+\begin{problem}
+框受阻力$f$，磁场由静止开始匀加速$t_1$后，框\unclear{……}正在向右匀加速，速度为$v_1$，求框何时运动？
+% 原稿“框”字之后有一小段被涂改液盖住，字迹不可辨
+\begin{solution}
+对框\quad
+$\left\{\begin{aligned}
+&F_{\text{安}}-f=ma\\
+&v_B=at_1\\
+&v_{\text{框}}=v_1
+\end{aligned}\right.$
+
+$a_1=a_2$.
+\[
+F_{\text{安}}=\frac{4B^2L^2(at_1-v_1)}{R}
+\]
+\[
+\frac{4B^2L^2(at_1-v_1)}{R}-f=ma
+\]
+\[
+F_{\text{安}}=\frac{4N^2B^2L^2v_{\text{相}}}{R}
+\]
+\[
+v_{\text{相}}=\bigl(v_B+a\Delta t-(v_{\text{框}}+a\Delta t)\bigr)\ \text{不变.}
+\]
+刚开始运动时
+\[
+f=\frac{4N^2B^2L^2at_0}{R}
+\]
+故
+\[
+t_0=\frac{fR\,(4N^2B^2L^2-mR)}{4N^2B^2L^2\,(fR+4N^2B^2L^2v_1)}
+\]
+
+\fcolorbox{red!70!black}{white}{\parbox{0.9\linewidth}{
+\red{演草}\quad（原稿用红笔框住此区域）
+\[
+\text{\red{\textcircled{a}}}=\frac{4B^2L^2(\text{\red{\textcircled{a}}}t_1-v_1)-fR}{mR}\qquad \text{\red{没解完}}
+\]
+开始移动时\quad $F_0-f=0$\qquad $F_0=\dfrac{4B^2L^2at_0}{R}$
+\[
+\frac{4B^2L^2at_0}{R}=f
+\]
+\[
+t_0=\frac{fR^2m}{4B^2L^2\bigl(4B^2L^2(at_1-v_1)-fR\bigr)}
+\]
+\[
+a=\frac{fR+4B^2L^2v_1}{4B^2L^2t_1-mR}
+\]
+}}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=054-03 ch=12 sec=电磁驱动·磁悬浮模型 kind=problem alt=none cont=none y=0.67-0.98
+\begin{problem}
+达到$v_m$后，磁场突然停止，$t$后框也停止，求框在$t$内移动距离.
+\begin{solution}
+\[
+\sum F\cdot\Delta t+ft_1=mv_m
+\]
+% CHECK: 原稿写作 ft_1，按题意（磁场停止后 t 时间框停止）此处时间似应为 t
+\[
+\frac{4B^2L^2x}{R}+ft_1=mv_m
+\]
+\[
+I_{\text{安}}=\frac{n^2B^2L^2x}{R}
+\]
+\[
+nBLq,\qquad \frac{n^2B^2L^2x}{R}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=054-04 ch=12 sec=电磁感应·三大观点 kind=summary alt=none cont=none y=0.71-1.00
+\textbf{三大观点}（原稿框内）
+
+%FIG p054_c 0.485 0.715 1.0 1.0
+\notefig[0.7]{figures/p054_c.png}
+
+\begin{description}
+\item[动力学]
+\begin{tabular}{@{}ll@{}}
+源 & $E=n\dfrac{\Delta\Phi}{\Delta t}$ \unclear{或} $E=BLv$\\
+路 & 内电路\ 串联\quad 外电路\ 并联\quad $E=IR+Ir$\\
+力 & $F_{\text{安}}=BIL\ \to\ F_{\text{合}}=ma$\\
+运动 & $a$、$v$、$t$
+\end{tabular}
+% 原稿左侧有大括号括住 源/路/力/运动；箭头：E=BLv ← a、v（大弧线）；E=IR+Ir → F安=BIL；F合=ma → a、v、t
+\item[动量]
+$q=\bar It$
+
+$B\bar IL\Delta t=mv_2-mv_1$
+
+$BLq=mv_2-mv_1$
+
+$Ft=I_{\text{冲}}$ $=mv_2-mv_1$
+\[
+-B\bar IL\Delta t=\frac{-B^2L^2\bar v\,\Delta t}{R_{\text{总}}}=0-mv_0.
+\]
+\[
+\frac{-B^2L^2x}{R_{\text{总}}}=0-mv_0.
+\]
+求 $q$、$v$、$t$、$x$.
+\item[能量]
+其他能$\to$电能$\to$热能.\quad $Q=I^2Rt$ 或 $Q=W_{\text{克服安培力}}$ 或 $Q=\Delta E_{\text{其他能减少量}}$
+\end{description}
+%%%END
+%%%PAGEEND 54

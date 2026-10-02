@@ -1,0 +1,107 @@
+%%%PAGE 30 rot=0 legibility=good summary=变压器：理想与非理想、多副线圈关系、单副线圈无损/有损变压器的动态分析(决定关系链与参数变化表)、等效阻抗
+%%%BLOCK id=030-01 ch=13 sec=变压器·理想与非理想 kind=knowledge alt=none cont=prev y=0.04-0.20
+理想变压器：无漏磁无热损
+
+非理想变压器：输出值$<$理想值
+
+\noindent\begin{tabular}[t]{@{}l@{}}电压正比定右边\\ 电流反比定左边\\ 功率左右恒相等\\ 串反并同\ \fcolorbox{red!75!black}{white}{\red{\unclear{电}内阻}}\end{tabular}% 原稿此四行位于页面右上方；“内阻”(及其前一字)被红笔圈出；“功率”前似有一个多余的“2”笔画
+
+\medskip
+\noindent 原副线圈瞬时值之间满足\unclear{比例}关系，方向由楞次定律判断
+
+\noindent\hspace*{1.5em}原\unclear{副}线圈有效值（正弦式）关系\ 且无二极管% CHECK: 本行第二字像“理”，疑为“副”
+%%%END
+%%%BLOCK id=030-02 ch=13 sec=变压器·多副线圈 kind=formula alt=none cont=none y=0.20-0.32
+%FIG p030_a 0.04 0.197 0.318 0.287
+\notefig[0.3]{figures/p030_a.png}
+% 图内标注：原线圈(电源)、三个副线圈 U2 I2 P2 n2 / U3 I3 P3 n3 / U4 I4 P4 n4、用电器、P1，红箭头由 P1 指向各副线圈
+\[
+\frac{U_1}{n_1}=\frac{U_2}{n_2}=\frac{U_3}{n_3}=\frac{U_4}{n_4}=e=\frac{\Delta\phi}{\Delta t}
+\]
+\[
+U_1I_1=U_2I_2+U_3I_3+U_4I_4
+\]
+\[
+n_1I_1=n_2I_2+n_3I_3+n_4I_4
+\]
+% 以下四式在原页位于右侧
+\[
+\begin{aligned}
+U_1&=n_1e\\
+U_2&=n_2e\\
+U_3&=n_3e\\
+U_4&=n_4e
+\end{aligned}
+\]
+% CHECK: U2=n2e 原稿像 “me”，按 n2 转录
+%%%END
+%%%BLOCK id=030-03 ch=13 sec=变压器·动态分析·单副线圈无损 kind=method alt=none cont=none y=0.33-0.58
+\textbf{单一副线圈无损变压器}
+
+%FIG p030_b 0.012 0.352 0.28 0.472
+\notefig[0.3]{figures/p030_b.png}
+% 图内为电路图并有大量红笔批注(圈出 U0、箭头 I2、P1 等)，标注：U0、用电器、电源、R 等
+\[
+\begin{array}{r@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\qquad}l}
+ & & & U_1=U_0 & & U_2=\dfrac{n_2}{n_1}U_1 & \\[2pt]
+\text{决定关系} & U_0 & \to & U_1 & \longrightarrow & U_2 & \\[2pt]
+ & & & & & \downarrow & \\[2pt]
+I_1\leftarrow & P_1 & \leftarrow & P_2 & \leftarrow & I_2 & I_2=\dfrac{U_2}{R}\\[8pt]
+\multicolumn{2}{r}{I_1=\dfrac{P_1}{U_1}} & \multicolumn{2}{c}{P_1=P_2} & \multicolumn{3}{l}{P_2=U_2I_2}
+\end{array}
+\]
+
+参数变化 $\to$ 后面参数
+\[
+\begin{array}{@{}lllllll@{\qquad}l@{}}
+R\uparrow & I_2\downarrow & P_2\downarrow & P_1\downarrow & I_1\downarrow & & & U_0U_1U_2\text{不变}\\[4pt]
+n_2\uparrow & U_2\uparrow & I_2\uparrow & P_2\uparrow & P_1\uparrow & I_1\uparrow & & U_0U_1\text{不变}\\[4pt]
+U_0\uparrow & U_1\uparrow & U_2\uparrow & I_2\uparrow & P_2\uparrow & P_1\uparrow & I_1\uparrow &
+\end{array}
+\]
+%%%END
+%%%BLOCK id=030-04 ch=13 sec=变压器·动态分析·单副线圈有损 kind=method alt=10 cont=none y=0.59-0.82
+\textbf{单副有损}\quad 单一副线圈有损变压器
+
+%FIG p030_c 0.05 0.614 0.345 0.70
+\notefig[0.3]{figures/p030_c.png}
+% 图内为电路图并有红笔批注(圈出 U0、红色 P1、P2 等)，标注：R1、R2、U1 I1 n1 P1、U2 I2 n2 P2、电源、用电器
+\[
+\begin{array}{r@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\qquad}l}
+ & & & \text{(跟主)}\quad\text{次\ 主} & & & \\[2pt]
+ & & & U_1=U_0-I_1R_1 & & U_2=\dfrac{n_2}{n_1}U_1 & \\[2pt]
+\text{决定关系} & U_0 & \to & U_1 & \longrightarrow & U_2 & \\[2pt]
+ & & \nearrow & & & \downarrow & \\[2pt]
+I_1\leftarrow & P_1 & \leftarrow & P_2 & \leftarrow & I_2 & I_2=\dfrac{U_2}{R}\\[8pt]
+\multicolumn{2}{r}{I_1=\dfrac{P_1}{U_1}} & \multicolumn{2}{c}{P_1=P_2} & \multicolumn{3}{l}{P_2=U_2I_2}
+\end{array}
+\]
+% 原稿另有一条自 I1 斜指向 U1 的长箭头(此处以 \nearrow 示意)；“(跟主)”写在 U1 左上，“次 主”写在 I1R1 上方
+动态分析只分析1\unclear{圈}% CHECK: 末字像“圈”(框内)，也可能是“图”
+
+\[
+\begin{array}{@{}llllllll@{\qquad}l@{}}
+R_1\uparrow & U_1\downarrow & U_2\downarrow & I_2\downarrow & P_2\downarrow & P_1\downarrow & I_1\downarrow & & \text{前有$R$满足串反并同}\\[4pt]
+R_2\uparrow & I_2\downarrow & P_2\downarrow & P_1\downarrow & I_1\downarrow & U_1\uparrow & U_2\uparrow & & \text{满足串反并同}\\[4pt]
+n_2\uparrow & & U_2\uparrow & I_2\uparrow & P_2\uparrow & P_1\uparrow & I_1\uparrow & U_1\downarrow &\\[4pt]
+U_0\uparrow & \cdots & & & & & & &
+\end{array}
+\]
+% 第一行右侧“前有R满足串反并同”笔迹颜色较浅；第三行第二格有涂改液痕迹(空白)
+%%%END
+%%%BLOCK id=030-05 ch=13 sec=变压器·等效阻抗 kind=method alt=none cont=none y=0.83-0.99
+\textbf{等效阻抗}
+
+%FIG p030_d 0.09 0.893 0.275 0.953
+\notefig[0.25]{figures/p030_d.png}
+%FIG p030_e 0.34 0.870 0.505 0.955
+\notefig[0.25]{figures/p030_e.png}
+% 图d：原电路(U1 I1 n1 P1、U2 I2 n2 P2、R)；图e：等效电路(R、R等效、虚线框内 U1 I1 n1 P1)
+
+能等效先等效\quad \begin{tabular}[b]{@{}c@{}}\scriptsize(算不出)\\ 不能等效\end{tabular}\quad 列方程
+
+\[
+R_{\text{等}}=\Bigl(\frac{n_1}{n_2}\Bigr)^2R_{\text{副总}}
+\]
+%%%END
+%%%PAGEEND 30

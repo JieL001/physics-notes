@@ -1,0 +1,173 @@
+[
+{
+"a": 11,
+"b": 12,
+"inliers": 1174,
+"cover": 0.99,
+"only_a": 0.086,
+"only_b": 0.082,
+"rel": "same"
+},
+{
+"a": 68,
+"b": 70,
+"inliers": 41,
+"cover": 0.97,
+"only_a": 0.661,
+"only_b": 0.73,
+"rel": "overlap"
+},
+{
+"a": 95,
+"b": 96,
+"inliers": 1620,
+"cover": 0.98,
+"only_a": 0.096,
+"only_b": 0.003,
+"rel": "same"
+},
+{
+"a": 116,
+"b": 118,
+"inliers": 56,
+"cover": 0.98,
+"only_a": 0.902,
+"only_b": 0.636,
+"rel": "overlap"
+},
+{
+"a": 163,
+"b": 167,
+"inliers": 64,
+"cover": 1.0,
+"only_a": 0.78,
+"only_b": 0.708,
+"rel": "overlap"
+},
+{
+"a": 169,
+"b": 171,
+"inliers": 102,
+"cover": 0.96,
+"only_a": 0.792,
+"only_b": 0.855,
+"rel": "overlap"
+},
+{
+"a": 169,
+"b": 173,
+"inliers": 66,
+"cover": 0.89,
+"only_a": 0.904,
+"only_b": 0.862,
+"rel": "overlap"
+},
+{
+"a": 171,
+"b": 173,
+"inliers": 75,
+"cover": 0.98,
+"only_a": 0.938,
+"only_b": 0.871,
+"rel": "overlap"
+},
+{
+"a": 179,
+"b": 181,
+"inliers": 83,
+"cover": 0.92,
+"only_a": 0.792,
+"only_b": 0.74,
+"rel": "overlap"
+},
+{
+"a": 179,
+"b": 183,
+"inliers": 84,
+"cover": 0.97,
+"only_a": 0.827,
+"only_b": 0.662,
+"rel": "overlap"
+},
+{
+"a": 181,
+"b": 183,
+"inliers": 121,
+"cover": 0.98,
+"only_a": 0.84,
+"only_b": 0.717,
+"rel": "overlap"
+},
+{
+"a": 183,
+"b": 186,
+"inliers": 72,
+"cover": 0.97,
+"only_a": 0.896,
+"only_b": 0.74,
+"rel": "overlap"
+},
+{
+"a": 185,
+"b": 186,
+"inliers": 218,
+"cover": 1.0,
+"only_a": 0.7,
+"only_b": 0.667,
+"rel": "overlap"
+},
+{
+"a": 185,
+"b": 187,
+"inliers": 184,
+"cover": 1.0,
+"only_a": 0.631,
+"only_b": 0.74,
+"rel": "overlap"
+},
+{
+"a": 186,
+"b": 187,
+"inliers": 174,
+"cover": 0.88,
+"only_a": 0.474,
+"only_b": 0.657,
+"rel": "overlap"
+},
+{
+"a": 186,
+"b": 189,
+"inliers": 125,
+"cover": 0.95,
+"only_a": 0.658,
+"only_b": 0.701,
+"rel": "overlap"
+},
+{
+"a": 189,
+"b": 191,
+"inliers": 58,
+"cover": 0.97,
+"only_a": 0.759,
+"only_b": 0.763,
+"rel": "overlap"
+},
+{
+"a": 189,
+"b": 193,
+"inliers": 93,
+"cover": 0.98,
+"only_a": 0.8,
+"only_b": 0.711,
+"rel": "overlap"
+},
+{
+"a": 191,
+"b": 193,
+"inliers": 65,
+"cover": 1.0,
+"only_a": 0.775,
+"only_b": 0.537,
+"rel": "overlap"
+}
+]

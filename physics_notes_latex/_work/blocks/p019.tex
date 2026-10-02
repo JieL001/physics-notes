@@ -1,0 +1,59 @@
+%%%PAGE 019 rot=0 legibility=good summary=磁场多解问题（直线吃弦长、圆弧吃角度）、电磁组合场、三场叠合
+%%%BLOCK id=019-01 ch=11 sec=多解·直线边界吃弦长 kind=method alt=none cont=none y=0.03-0.27
+\fbox{多解}\ \textbf{直线吃弦长}
+
+\red{反向磁场}
+%FIG p019_a 0.065 0.084 0.38 0.178
+\notefig[0.4]{figures/p019_a.png}
+\[ (2R_1+2R_2)\,n=L \]
+\[ \text{或}\ 2R_1(n+1)+2R_2\,n=L \]
+
+\red{同向磁场}
+%FIG p019_b 0.405 0.067 0.66 0.168
+\notefig[0.35]{figures/p019_b.png}
+\[ (2R_2-2R_1)\,n=L \]
+\[ \text{或}\ (n+1)\,2R_2-2R_1\cdot n=L \]
+%%%END
+%%%BLOCK id=019-02 ch=11 sec=多解·圆弧吃角度 kind=method alt=none cont=none y=0.27-0.50
+\textbf{圆弧吃角度}\ \fbox{多解}
+%FIG p019_c 0.13 0.314 0.33 0.44
+\notefig[0.3]{figures/p019_c.png}
+要回到出发点..
+\[ \theta\cdot n=2\pi \]
+\[ \begin{cases}\theta=\dfrac{2\pi}{n}\quad(n=2,3,\dots)\\[1ex] r=R\cdot\tan\dfrac{\theta}{2}\end{cases} \]
+\[ \therefore\ r=R\tan\frac{\pi}{n}\qquad r=\frac{mv}{qB}\qquad \therefore\ V=\frac{qBR\tan\frac{\pi}{n}}{m} \]
+%%%END
+%%%BLOCK id=019-03 ch=11 sec=复合场·电磁组合场 kind=summary alt=none cont=none y=0.50-0.73
+\textbf{电磁组合场}\quad $qE$\ $qvB$
+\begin{itemize}
+\item 静止\quad $V_0=0$\quad $a=0$\quad $qV_0B=0$\quad $qE\ne0$\quad 不会静止
+\item 直线
+  \begin{itemize}
+  \item 匀速\quad 必为匀速\quad $qvB=qE$\quad $V=\dfrac{E}{B}$
+  \item 变速
+    \begin{itemize}
+    \item $a$定\quad $\times$
+    \item $a$变\quad $\times$
+    \end{itemize}
+  \end{itemize}
+\item 曲线
+  \begin{itemize}
+  \item 类平抛\quad $\times$
+  \item 圆周\quad $\times$
+  \item 摆线\quad 螺旋线
+  \end{itemize}
+\end{itemize}
+% 原稿：静止/直线/曲线三项左侧有大括号；"直线"下的匀速/变速、变速下的a定/a变、曲线下的三项各有小括号；
+% 圆周右侧的 × 位置略偏下，介于"圆周"与"摆线"两行之间，这里归给圆周
+%%%END
+%%%BLOCK id=019-04 ch=11 sec=复合场·三场叠合 kind=summary alt=none cont=next y=0.73-0.95
+\textbf{三场叠合}\quad $mg$\ $qE$\ $qvB$
+\begin{itemize}
+\item 静止\quad $V_0=0$\quad $qV_0B=0$\quad $mg=qE$
+\item 匀圆（纯磁场）\quad 电场力\unclear{重}力抵消\quad $qE=mg$
+\item 直线\quad 匀直
+\item 螺旋线\quad 配速法
+\end{itemize}
+% 原稿：以上四项左侧有大括号
+%%%END
+%%%PAGEEND 019

@@ -1,0 +1,865 @@
+% 本文件由 assemble.py 按 _work/plans/ch07.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{动量}
+\label{ch:07}
+
+\section{碰撞·完全弹性碰撞}
+% ---- block 036-03 (原稿第36页) kind=formula ----
+\fbox{\textbf{完弹过程}}\quad 由动量守恒、能量守恒\quad 完弹$=$完非弹加反冲（有缓冲装置如弹簧、斜面）
+\[
+\left\{\begin{aligned}
+m_1V_{01}+m_2V_{02}&=m_1V_1+m_2V_2\\
+\tfrac12m_1V_{01}^2+\tfrac12m_2V_{02}^2&=\tfrac12m_1V_1^2+\tfrac12m_2V_2^2
+\end{aligned}\right.
+\qquad e=\frac{V_{01}-V_{02}}{V_2-V_1}=1 % CHECK: 恢复系数通常写作 (V2-V1)/(V01-V02)，原稿分子分母似为倒置(e=1时不影响)，照原样转录
+\]
+\[
+\begin{aligned}V_1&=2V_{\text{共}}-V_{01}\\V_2&=2V_{\text{共}}-V_{02}\end{aligned}
+\qquad\text{二倍共速减初速}
+\]
+\unclear{特}\ 动碰静
+\[
+V_1=\frac{m_1-m_2}{m_1+m_2}V_0\ \text{（动）}\qquad V_2=\frac{2m_1V_0}{m_1+m_2}\ \text{（静）}\qquad V_A+V_A'=V_B+V_B'
+\]
+
+
+\section{碰撞·完全非弹性碰撞}
+% ---- block 036-04 (原稿第36页) kind=formula ----
+\fbox{\textbf{完非弹过程}}
+\[
+\left\{\begin{aligned}
+m_1V_{01}+m_2V_{02}&=(m_1+m_2)V_{\text{共}}\qquad\text{共速}\\
+\tfrac12(m_1+m_2)V_{\text{共}}-\Bigl(\tfrac12m_1V_{01}^2+\tfrac12m_2V_{02}^2\Bigr)&=\Delta E_K=E_{\text{某能}\max} % CHECK: 原稿 V共 处似无平方；E 下标“某能max”字迹难辨
+\end{aligned}\right.
+\]
+\notefig[0.45]{figures/p036_c.png}
+\notefig[0.7]{figures/p036_d.png}
+\begin{align*}
+\Delta E_K&=-\frac12\,\frac{m_1m_2}{m_1+m_2}(V_{01}-V_{02})^2=-E_{p\text{弹}\max}=-E_{p\unclear{G}\max}\\
+&=Q=|fd|=Q_{\text{电}}=E_{\text{电场能}}\,.
+\end{align*}
+
+
+\section{碰撞·非完全弹性碰撞}
+% ---- block 036-05 (原稿第36页) kind=formula ----
+\fbox{\textbf{非完弹}}
+\begin{align*}
+m_1V_{01}+m_2V_{02}&=m_1V_{01}'+m_2V_{02}'\qquad\text{代入解方程}\\
+\tfrac12m_1V_{01}^2+\tfrac12m_2V_{02}^2&=\tfrac12m_1V_{01}'^2+\tfrac12m_2V_{02}'^2+E_{\text{损}}
+\end{align*}
+
+% ---- block 079-07 (原稿第79页) kind=problem ----
+\begin{problem}
+\notefig[0.3]{figures/p079_f.png}
+在 $L$ 区内 $A$ 受 $F$ 向右由静止匀加、与 $B$ 只碰 1 次 最终两\unclear{距}球距离不变为 $\dfrac49L$\\
+求 $\dfrac{m_A}{m_B}$ 和 $E$机\unclear{损}
+% “两”与“球”之间多一个像“距”的笔画；“E机损”末字像 损
+\begin{solution}
+\[
+\begin{cases}
+m_AV_0=m_BV_B-m_AV_A\\
+V_A=V_B=V\\
+FL=\tfrac12 m_AV_0^2\\
+Ft=2m_AV\\
+\dfrac49L=Vt
+\end{cases}
+\qquad\therefore\ \dfrac{m_A}{m_B}=\dfrac14
+\]
+\[
+\Delta E_{\text{机}}=\tfrac12 m_AV_0^2-\left(\tfrac12 m_AV^2+\tfrac12 m_BV^2\right)=\dfrac49FL
+\]
+% CHECK: 括号内两项之间的符号手写像一个潦草的 +，按 + 转录
+\end{solution}
+\end{problem}
+
+
+\section{反冲·爆炸}
+% ---- block 036-06 (原稿第36页) kind=formula ----
+\fbox{\textbf{反冲}}
+\notefig[0.4]{figures/p036_e.png}
+完弹$=$完非弹$+$反冲
+\begin{align*}
+m_1V_{01}-m_2V_{02}&=0 \\ % 第一项 V 的下标原稿似为“a”，按 V_{01} 转录
+E&=\tfrac12m_1V_{01}^2+\tfrac12m_2V_{02}^2\\
+V_{01}&=\sqrt{\frac{2m_2E}{m_1(m_1+m_2)}}\qquad V_{02}=\sqrt{\frac{2m_1E}{m_2(m_1+m_2)}}\\
+E_{K01}&=\tfrac12m_1V_{01}^2=\frac{m_2}{m_1+m_2}E\qquad E_{K02}=\tfrac12m_2V_{02}^2=\frac{m_1}{m_1+m_2}E % 原稿 E_{K02} 式中 m 与下标2的写法为“½ ₂mV₀₂²”，按 m_2 转录
+\end{align*}
+
+% ---- block 079-05 (原稿第79页) kind=note ----
+喷气切记质量减少
+% 句末有一斜划
+\[
+MV_0=(M-m)V_2+MV_1
+\]
+% CHECK: 末项质量手写像 M（按物理应为 m）
+
+
+\section{弹簧板块模型·压缩与反冲}
+% ---- block 037-01 (原稿第37页) kind=derivation ----
+\textbf{反冲}\quad 势能$=$摩擦热
+\notefig[0.3]{figures/p037_a.png}
+
+压缩、完非弹
+\[
+\left\{\begin{aligned}
+m_1V_0&=(m_1+m_2)V_{\text{共}}\\
+\tfrac12(m_1+m_2)V_{\text{共}}^2-\tfrac12m_1V_0^2&=-\bigl(E_{p\text{弹}}+Q_{\text{来}}\bigr)
+\end{aligned}\right.
+\]
+
+反冲后又共速
+\[
+\left\{\begin{aligned}
+(m_1+m_2)V_{\text{共}}&=(m_1+m_2)V_{\text{共}1}\\
+\tfrac12(m_1+m_2)V_{\text{共}1}^2-\tfrac12(m_1+m_2)V_{\text{共}}^2&=E_{p\text{弹}}-Q_{\text{返}}=0\ \Rightarrow\ E_{p\text{弹}}=Q_{\text{返}}
+\end{aligned}\right.
+\]
+\[
+\frac12\,\frac{m_1m_2}{m_1+m_2}V_0^2=Q_{\text{来}}+Q_{\text{返}}=E_{p\text{弹}}+Q
+\]
+二次共速，反冲\quad 释放$=$消耗
+
+
+\section{碰撞·拆分过程}
+% ---- block 037-02 (原稿第37页) kind=method ----
+拆分过程。一个过程一组动量守恒、能量守恒方程
+\begin{itemize}
+\item 状态量：$P$\quad $E_K$\quad $F$
+\item 过程量：$I$\quad $W$
+\end{itemize}
+
+完非弹$=$完非弹$+$反冲 % CHECK: 首项原稿似为“完非弹”，按字形照录(或应为“非完弹”)
+
+完弹$=$完非弹$+$反冲
+
+% 以下公式原稿被红笔框起
+\begin{keybox}
+\[
+\Delta E_K=\frac12\,\frac{m_1m_2}{m_1+m_2}(V_{01}-V_{02})^2(e^2-1)
+\]
+\end{keybox}
+（有\unclear{恢复}系数时）
+
+每个过程只有2个体系，未参与该过程的物体原速不变
+
+
+\section{多过程碰撞·双车与摆球}
+% ---- block 037-03 (原稿第37页) kind=problem ----
+\begin{problem}[{[1]}]
+\notefig[0.4]{figures/p037_b.png}
+\begin{solution}
+\textbf{过程一}
+
+①完非弹 $AB$
+\[
+mV-mV=2mV_{\text{共}},\qquad V_{\text{共}}=0 % CHECK: 第一个减号原稿字形近似“=”，按物理意义(两车动量反向)转为减号
+\]
+$AB$ 碰后速度为0
+\[
+\tfrac12\,2mV_{\text{共}}^2-\tfrac12mV^2-\tfrac12mV^2=\Delta E_{K1}
+\]
+\textbf{过程二}
+
+②$C$ 与 $AB$ 完非弹
+\begin{align*}
+\frac m4V&=\Bigl(2m+\frac m4\Bigr)V_{\text{共}}'\\
+\tfrac12\Bigl(2m+\frac m4\Bigr)V_{\text{共}}^2-\tfrac12\,\frac m4V^2&=\Delta E_{K2}=-\frac m4gh_{\max}\\
+&\qquad\unclear{-\tfrac12\cdot2m} % 原稿第二式下方有叠写涂改的小字，形如“-½·2m”，位置在 ΔE_{K2} 下方，辨认不清
+\\
+&=\tfrac12\,\frac{\frac m4\cdot2m}{\frac m4+2m}(\Delta V_0)^2 % CHECK: 此行与上一行 ΔE_{K2} 的符号不一致，原稿行首为“=”，照录
+\end{align*}
+\notefig[0.3]{figures/p037_c.png}
+\[
+\cos\theta=\frac{L-h_{\max}}{L}
+\]
+\end{solution}
+\end{problem}
+
+
+\section{多过程碰撞·ABC弹簧}
+% ---- block 037-04 (原稿第37页) kind=problem ----
+\begin{problem}[{[2]}]
+\notefig[0.4]{figures/p037_d.png}
+\begin{solution}
+①$AB$ 爆炸反冲
+\[
+\left\{\begin{aligned}
+m_AV_A-m_BV_B&=0 % 原稿 V_B 右上似有一小撇
+\\
+\tfrac12m_AV_A^2+\tfrac12m_BV_B^2&=E
+\end{aligned}\right.
+\qquad
+V_A=\sqrt{\frac{2m_BE}{m_{\text{总}}m_A}},\quad V_B=\sqrt{\frac{2m_AE}{m_{\text{总}}m_B}}
+\]
+②$B$ 压 $C$ 完非弹
+\[
+\left\{\begin{aligned}
+m_BV_B&=(m_B+m_C)V_{\text{共}1}\\
+\tfrac12(m_B+m_C)V_{\text{共}1}^2-\tfrac12m_BV_B^2&=-E_{p\text{弹}\max}
+\end{aligned}\right.
+\]
+\[
+E_{p\text{弹}}=-\frac12\,\frac{m_Bm_C}{m_B+m_C}V_B^2 % CHECK: 原稿等号后有负号(弹性势能应为正值)，照录
+\]
+③$BC$ 完弹$=$完非弹$+$反冲
+\[
+\left\{\begin{aligned}
+m_BV_B&=m_BV_B'+m_CV_C'\\
+\tfrac12m_BV_B^2&=\tfrac12m_BV_B'^2+\tfrac12m_CV_C'^2
+\end{aligned}\right.
+\qquad
+V_B'=\frac{m_B-m_C}{m_B+m_C}V_B,\quad V_C=\frac{2m_B}{m_B+m_C}V_B % CHECK: 此处 V_C 原稿无撇
+\]
+④$A$ 追上 $B$，$AB$ 完非弹
+\[
+\left\{\begin{aligned}
+m_AV_A-m_BV_B'&=(m_A+m_B)V_{\text{共}}\\
+\tfrac12(m_A+m_B)V_{\text{共}2}^2-\tfrac12m_AV_A^2-\tfrac12m_BV_B'^2&=\Delta E_{p\text{弹}}\,(-1)
+\end{aligned}\right.
+\]
+\[
+E_{p\text{弹}}=\frac12\,\frac{(m_A+m_B)m_C}{m_A+m_C+m_B}\bigl(V_{\text{共}2}-V_C'\bigr)^2
+\]
+\end{solution}
+\end{problem}
+
+
+\section{动量·不等式关系}
+% ---- block 038-01 (原稿第38页) kind=method ----
+% 原稿此块在页面右上角，被一条框线围起，框线下沿从第三行文字中间穿过
+刚好 $\in$（上一次，下一次）
+
+动量的不等式关系
+
+推冰块8次完成，则 \unclear{$P\ge P_7$}，$P<P_9$ % 第一个 P 的下标被框线遮挡，符号“≥”处似箭头
+
+
+\section{碰撞·碰撞发生条件}
+% ---- block 038-02 (原稿第38页) kind=knowledge ----
+\textbf{碰撞发生条件}\quad $V_{\text{后}}>V_{\text{前}}$ 撞得上\quad $V_{\text{后}}\le V_{\text{前}}$ 不穿越
+\begin{itemize}
+\item 动量守恒：$P_{01}+P_{02}=P_1+P_2$
+\item 动能不增加：$\dfrac{P_{01}^2}{2m_1}+\dfrac{P_{02}^2}{2m_2}\ge\dfrac{P_1^2}{2m_1}+\dfrac{P_2^2}{2m_2}$ % 不等号处原稿有涂改叠写，辨为“≥”
+\item 不穿越，不\unclear{击}穿：碰后 $V_{\text{后}}\le V_{\text{前}}$
+\end{itemize}
+\[
+0\le e=\frac{V_2-V_1}{V_{01}-V_{02}}\le1
+\]
+\notefig[0.3]{figures/p038_a.png}
+\[
+\left\{\begin{aligned}
+V_{\text{完弹}}&\le V_1\le V_{\text{共}}\\
+V_{\text{共}}&\le V_2\le V_{\text{完弹}}
+\end{aligned}\right.
+\]
+
+
+\section{碰撞·传递系数}
+% ---- block 038-03 (原稿第38页) kind=formula ----
+\textbf{速度传递}
+\[
+k_V=\frac{V_2}{V_0}=\frac{2m_1}{m_1+m_2}=\frac{2}{1+\dfrac{m_2}{m_1}}\ \to\ 2
+\]
+$m_2\ll m_1$ 时大球撞小球，小球传速\unclear{约}\red{为}\,\red{\unclear{走}} % 红笔：“为”字上有红色叉划，其后有红字，形如“走”，辨认不清
+
+\textbf{动量传递}
+\[
+k_p=\frac{m_2V_2}{m_1V_0}=\frac{2m_2}{m_1+m_2}=\frac{2}{\dfrac{m_1}{m_2}+1}\ \to\ 2
+\]
+$m_1\ll m_2$ 时小球撞\red{大}墙，原速\red{$\times$}反\red{弹} % 红笔：“大”字上有红色叉划；“原速”后有红色斜线划去的一字；“反”后红笔补“弹”
+
+\textbf{动能传递}
+\[
+k_{E_k}=\frac{\frac12m_2V_2^2}{\frac12m_1V_0^2}=k_p\cdot k_V=\frac{4m_1m_2}{(m_1+m_2)^2}=\frac{4}{\dfrac{m_1}{m_2}+\dfrac{m_2}{m_1}+2}
+\]
+$m_1=m_2$ 时等质换速
+
+
+\section{动量守恒·适用条件}
+% ---- block 038-04 (原稿第38页) kind=knowledge ----
+动量守恒\quad $F_{\text{合}}=0$
+\begin{itemize}
+\item 内力极大动量守恒
+\item 时间极短动量守恒
+\item 水平/竖直方向动量守恒
+\item 某阶段 $F$-$t$ 图动量守恒
+\end{itemize}
+$\Sigma I=mV_2-mV_1$ 可间接求冲量
+
+% ---- block 079-03 (原稿第79页) kind=knowledge ----
+% 原稿位置：页面右侧，与“M带m”“绳绷紧”两例同高；右侧另有一括号括出“分阶段”“分方向”
+\[
+\text{动量守恒}
+\left\{
+\begin{array}{l}
+\text{内力}\gg\text{外力}\\
+\text{时间极短}\\
+\text{合外力为0}
+\end{array}
+\right.
+\left\{
+\begin{array}{l}
+\text{分阶段}\\
+\text{分方向}
+\end{array}
+\right.
+\]
+
+
+\section{连续体冲量动量}
+% ---- block 038-05 (原稿第38页) kind=method ----
+\textbf{连续体冲量动量}\quad 流量 $Q=SV$.
+
+\textbf{液柱类}
+\notefig[0.3]{figures/p038_b.png}
+$V$ 为相对速度，
+\[
+-F\Delta t=\rho SV\Delta t\,(V_1-V_0)\qquad V_1=0\text{ 时 }F=-\rho SV^2.
+\]
+水平方向动量守恒
+\notefig[0.3]{figures/p038_c.png}
+溅开
+\[
+F\Delta t=\rho SV_1\Delta t\,\bigl(-V_2\sin30^\circ-V_1\bigr)
+\]
+
+% ---- block 038-06 (原稿第38页) kind=method ----
+\textbf{顶物并散开}\quad （此处不是水柱上升最高处，最高处速度为0，无法提供力）
+\notefig[0.3]{figures/p038_d.png}
+\begin{align*}
+V^2-V_0^2&=-2gh\\
+F\Delta t&=\rho\,\Delta S\,\Delta l\,V\qquad F=\rho\,\Delta S\,V\,\frac{\Delta l}{\Delta t}\\
+\Sigma\Delta F&=\rho SV\cdot V_0
+\end{align*}
+
+% ---- block 038-07 (原稿第38页) kind=method ----
+单位体积有$n$个太空垃圾\,\red{（粘在飞船上）}\quad（完非弹） % 红笔波浪线划在“(粘在飞船上)”下
+\notefig[0.3]{figures/p038_e.png}
+\[
+FV\Delta t=\tfrac12\Delta m\,V^2
+\]
+\begin{keybox}
+\[
+F=\tfrac12\,mSV^2\cdot n
+\]
+\end{keybox}
+% 上式原稿被红笔框起
+\[
+\bar F\,(V\Delta t)=\tfrac12\,(nmSV\Delta t)\,V^2
+\]
+\notefig[0.35]{figures/p038_f.png}
+或 $\bar F=\dfrac{\Delta\unclear{p}}{\Delta t}=\dfrac{m\cdot nSV\Delta t\cdot\frac V2}{\Delta t}=nmSV^2\cdot\dfrac12$\quad （碰上就停了，用$\bar V$算）。
+
+% ---- block 038-08 (原稿第38页) kind=method ----
+\textbf{双脚类}\quad ↓相对速度
+\notefig[0.3]{figures/p038_g.png}
+\[
+(m+M)g\Delta t=2\cdot\rho SV\Delta t\,V
+\]
+\[
+\therefore\ V=\sqrt{\frac{(M+m)g}{2\rho S}}
+\]
+\[
+\underset{\text{功率}}{P}=FV=(M+m)g\sqrt{\frac{(M+m)g}{2\rho S}}
+\]
+
+% ---- block 039-01 (原稿第39页) kind=problem ----
+每秒$N$粒米，每粒$m$，求$t$s后称读数 % 首字“每”被页眉“Date”字样压住；“称读数”三字笔迹有涂改叠写
+\begin{gather*}
+(F-N\Delta t\,mg)\Delta t=N\Delta t\,m\cdot V\qquad V=\sqrt{2gh}\\
+N\Delta t\,mg\cdot\Delta t\approx0\qquad F=NmV\\
+\text{故 }F_{\text{示数}}=F+G=Nm\sqrt{2gh}+N\unclear{\Delta t}\,mg % 末项中 Δt 处原稿为一团黑色涂迹
+\end{gather*}
+
+% ---- block 039-02 (原稿第39页) kind=problem ----
+气体分子弹性撞器壁，$M$为单个重量，每立方米有$n_0$个，撞击时垂直分速度为$V$，求$P$压强 % “弹性”二字下有波浪线；M 原稿为大写
+\[
+\bar F=\frac{n_0mSV\Delta t\,V}{\Delta t}=\boxed{n_0mSV^2}\qquad F=\frac{m\Delta V}{\Delta t} % 原稿 n_0mSV^2 被圈出
+\]
+\[
+P=\frac{\bar F}{S}=n_0mV^2
+\]
+
+% ---- block 039-03 (原稿第39页) kind=problem ----
+\textbf{链条落地}
+\notefig[0.25]{figures/p039_a.png}
+线密度 $\rho=\dfrac mL$
+
+①落$x$时，求$N_{\text{地}}$
+\begin{gather*}
+(F-\rho\Delta x\,g)\Delta t=\Delta m\,V=\rho V\Delta x\\
+\rho\Delta x\,g\Delta t\approx0\\
+F=\rho V\frac{\Delta x}{\Delta t}=\rho V^2\qquad V^2=2gx\qquad\text{故 }F=2\rho gx\\
+N=\underset{F}{2\rho gx}+\underset{G}{\rho gx}=\boxed{\frac{3mgx}{L}} % 原稿 3mgx/L 被圈出；2ρgx 下标 F，ρgx 下标 G
+\end{gather*}
+②求最大压力
+\begin{gather*}
+(F-\Delta m\,g)\Delta t=\rho V\cdot\Delta x\qquad\Delta m\,g\Delta t\approx0\\
+\text{故 }F=\rho V\frac{\Delta x}{\Delta t}=\rho V^2\qquad V^2=2gL\\
+F=2\rho gL\\
+N=F+G=2\rho gL+\rho gL=3\rho gL=\boxed{3mg} % 原稿 3mg 被圈出
+\end{gather*}
+
+
+\section{动量·冲量}
+% ---- block 063-04 (原稿第63页) kind=formula ----
+\textbf{动量}
+\begin{itemize}
+\item 动量\quad 冲量
+  \[
+  \begin{array}{ll}
+  p=mv\;=\;Ft & \qquad \unclear{…}\;F=\dfrac{\Delta p}{\Delta t}=ma \\[6pt]
+  \phantom{p}=\sqrt{2mE_k} & \qquad E_k=\dfrac{p^2}{2m}
+  \end{array}
+  \]
+\item 动量定理\quad $Ft=p_2-p_1=mv_2-mv_1$
+\end{itemize}
+
+
+\section{动量定理}
+% ---- block 063-05 (原稿第63页) kind=summary ----
+\begin{itemize}
+\item 动量与冲量的理解\quad 矢量、合成分解. 以地为参 % CHECK: 末句可能为“以地为参考系”，原稿止于“参”
+\item 动量定理的理解与应用
+  \begin{itemize}
+  \item $I=Ft$
+  \item 图像法\quad $F$-$t$图
+  \item 平均方法\quad $I=\dfrac{F_1+F_2}{2}\,t$\quad 随时间 $F=kt$
+  \item 动量定理法\quad $I=Ft=\Delta p$ （自 $\Delta p$ 处画一条弧形箭头指回 $I$）
+  \end{itemize}
+\end{itemize}
+
+
+\section{动量守恒}
+% ---- block 063-06 (原稿第63页) kind=summary ----
+\textbf{动量守恒定律及应用}
+\begin{itemize}
+\item 动量守恒定律\quad (合力为0)
+\item 碰撞、爆炸、反冲.
+\end{itemize}
+
+
+\section{碰撞}
+% ---- block 063-07 (原稿第63页) kind=summary ----
+\textbf{动量守恒定律的理解与应用}
+\begin{itemize}
+\item 碰撞问题.
+  \begin{itemize}
+  \item 动量守恒，动能不增加，速度合理，不穿越
+  \end{itemize}
+\end{itemize}
+
+
+\section{爆炸反冲·人船模型}
+% ---- block 063-08 (原稿第63页) kind=summary ----
+% 页面底边被照片裁切，下方内容不可见
+\begin{itemize}
+\item 爆炸和反冲问题
+  \begin{itemize}
+  \item 人船模型\quad 人走船走\ 人停船停
+  \end{itemize}
+\end{itemize}
+\notefig[0.25]{figures/p063_a.png}
+% 图为页底左侧几幅被裁切的小示意图（一横线、带斜面的块、弧形槽、带球小车）
+\[ x_{\text{人}}=\dfrac{m_{\text{船}}}{m_{\text{人}}+m_{\text{船}}}L_{\text{相}} \]
+\[ x_{\text{船}}=\dfrac{m_{\text{人}}}{m_{\text{人}}+m_{\text{船}}}L_{\text{相}} \] % CHECK: 页底裁切，第二式分母及 L 的下标（可能为“相对”）据残笔读出
+
+
+\section{子弹打木块模型}
+% ---- block 064-01 (原稿第64页) kind=derivation ----
+\textbf{动量守恒的四类模型}
+
+\textbf{子弹打木块 模型}
+\notefig[0.4]{figures/p064_a.png}
+% 图中文字：水平面光滑、m、v_0（箭头）、M、d、f
+\textbf{未穿出}
+\begin{align*}
+mv_0&=(M+m)V, & V&=\frac{mv_0}{M+m}\\
+ft&=MV-0, & t&=\frac{Mmv_0}{f(M+m)}\\ % 原稿 ft 之前有一淡痕（疑为背面透字）
+-fx_1&=\tfrac12 mV^2-\tfrac12 mv_0^2, & x_1&=\frac{Mm(M+2m)v_0^2}{2f(M+m)^2}\\ % CHECK: 分子括号内首字母 M/m 难分，按推导读作 M+2m
+fx_2&=\tfrac12 MV^2, & x_2&=\frac{Mm^2v_0^2}{2f(M+m)^2}
+\end{align*}
+\[ \text{进入深度}\quad x_{\text{相对}}=x_1-x_2=\frac{Mmv_0^2}{2f(M+m)} \]
+
+% ---- block 064-02 (原稿第64页) kind=formula ----
+% 原稿：自上方“未穿出”推导区右下引出一条弧线并带箭头向下，指向右侧“若子弹穿出速度为 v_1”部分
+\textbf{未穿出}
+\begin{align*}
+mv_0&=(m+M)V\\
+Q_{\text{热}}&=fx_{\text{相对}}=\tfrac12 mv_0^2-\tfrac12(M+m)V^2
+\end{align*}
+\textbf{穿出}
+\begin{align*}
+mv_0&=mv_1+MV_2\\
+Q_{\text{热}}&=fL=\tfrac12 mv_0^2-\tfrac12 mv_1^2-\tfrac12 MV_2^2
+\end{align*}
+
+% ---- block 064-03 (原稿第64页) kind=derivation ----
+\textbf{若子弹穿出速度为 $v_1$}
+\begin{align*}
+mv_0&=mv_1+MV_2\\
+V_2&=\frac{m(v_0-v_1)}{M}
+\end{align*}
+\begin{itemize}
+\item 对子弹\quad $W_1=-fx_1=\tfrac12 m(v_1^2-v_0^2)$
+\item $W_2=$ 对块\quad $fx_2=\tfrac12 MV_2^2$
+\end{itemize}
+\[ \therefore\ W_2=\frac{m^2(v_0-v_1)^2}{2M} \]
+\[ Q=fx_1-fx_2=fd. \]
+
+
+\section{弹簧模型}
+% ---- block 064-04 (原稿第64页) kind=method ----
+\textbf{物体弹簧 模型\quad 双振子}
+\notefig[0.3]{figures/p064_b.png}
+% 图中文字：v、t（v-t 图像，两条曲线与若干虚线、竖线）
+\begin{itemize}
+\item 有完弹\quad 有完非弹.
+\item \unclear{共}速为压缩最大\quad 完非弹 % CHECK: 首字形似“失”，按语义读作“共”
+\item 伸开时伸长最大\quad 完弹. % CHECK: “伸开时伸长”字迹潦草，读法存疑
+\end{itemize}
+
+
+\section{滑块曲面体模型}
+% ---- block 064-05 (原稿第64页) kind=method ----
+\textbf{滑块曲面体 模型}\quad 水平方向动量守恒
+\[ \left\{\begin{array}{l}\text{上去是完非弹}\\[2pt] \text{下去是完弹}\end{array}\right. \]
+
+% ---- block 079-06 (原稿第79页) kind=method ----
+\notefig[0.25]{figures/p079_e.png}
+机守可滑到最高处\quad \underline{水平方向}动量守恒\quad 动量不守恒
+
+% ---- block 079-08 (原稿第79页) kind=problem ----
+\begin{problem}
+\notefig[0.25]{figures/p079_g.png}
+C 在最低点时 $AB$ 分离\quad C 到 $A$ 左侧最高时 $V_A=\dfrac V4$ 向左．$A$、$B$ 会滑下
+% CHECK: 若取向右为正，V_AC=V/4>0 应向右，手写为“向左”，原样转录
+\begin{solution}
+① $AB$ 共同向右\quad $mV=2mV_{AB}$\\
+$mV+m\left(-\dfrac V2\right)=2mV_{AC}$\qquad $V_{AC}=\dfrac V4$\\
+② $AC$ \unclear{左}减速，$AB$ 分开，$B$ 向右匀速
+% 页面底部此行被截断，字迹只见上半部
+\end{solution}
+\end{problem}
+
+
+\section{滑块滑板模型}
+% ---- block 064-06 (原稿第64页) kind=method ----
+\textbf{滑块滑板模型}\quad 地光滑时动量守恒
+\begin{itemize}
+\item 板长够共速为完非弹
+\item 板长不够共速为子弹打木块.
+\end{itemize}
+
+
+\section{力学三大观点综合应用}
+% ---- block 067-01 (原稿第67页) kind=method ----
+\textbf{力学三大观点的综合应用}
+
+直线运动、平抛运动、圆周运动的组合。
+
+动力学、能量、动量的综合应用
+
+要列各物理量在某一时刻的关系式，用牛二
+
+研究某一物体受到力的持续作用发生运动状态改变\quad 用动量定理\ （涉及时间）\ 或动能定理\ （涉及位移） % 原稿“(涉及时间)”“(涉及位移)”写在本行上方，分别位于“用动量定理”“或动能定理”之上
+
+研究系统，用动量守恒定律和机械能守恒定律\quad 注意守恒的条件
+
+涉及相对位移，优先考虑能量守恒定律，系统克服摩擦力所做的总功等于系统机械能的减少量（转变为系统内能的量）。
+
+在涉及碰撞、爆炸、打击、绳绷紧等现象时，一般隐含有系统机械能损失，与其他形式的能量的转换，作用时间都极短，用动量守恒定律解决。
+
+
+\section{子弹打木块·多块穿透}
+% ---- block 074-01 (原稿第74页) kind=problem ----
+\begin{problem}[1、]
+\notefig[0.3]{figures/p074_a.png}
+恰好射穿.
+
+\notefig[0.3]{figures/p074_b.png}
+求进入第二块钢块的深度
+\begin{solution}
+\textbf{Step1.}\quad $mV_0=(2m+m)V$\quad $V=\dfrac{V_0}{3}$
+\[
+\Delta E=\frac{1}{2}mV_0^{2}-\frac{1}{2}\times 3mV^{2}=\frac{1}{3}mV_0^{2}
+\]
+\textbf{Step2.}\quad $mV_0=mV_1+mV_2$\quad 由 $f$ 为恒力 故射出一块\unclear{耗}能为 $\dfrac{\Delta E}{2}$
+\begin{align*}
+&\frac{1}{2}mV_0^{2}=\frac{1}{2}mV_2^{2}+\frac{1}{2}mV_1^{2}+\frac{1}{2}\Delta E\qquad \text{因 }V_1>V_2\quad \text{得 }V_1=\Bigl(\frac{1}{2}+\frac{\sqrt{3}}{6}\Bigr)V_0\\
+&mV_1=2mV'\\
+&\Delta E'=\frac{1}{2}mV_1^{2}-\frac{1}{2}\,2mV'^{2}=\frac{1}{2}\Bigl(1+\frac{\sqrt{3}}{2}\Bigr)\times\frac{1}{2}\Delta E\\
+&\Delta E'=fx\\
+&\frac{1}{2}\Delta E=fd\qquad \therefore\ x=\frac{1}{2}\Bigl(1+\frac{\sqrt{3}}{2}\Bigr)d
+\end{align*}
+\end{solution}
+\end{problem}
+
+
+\section{动量定理·柱状模型}
+% ---- block 074-02 (原稿第74页) kind=method ----
+\textbf{两类柱状模型}
+\begin{itemize}
+\item \textbf{连续性}\quad 流体类、液流气流.\quad $\Delta m=\rho Sv\Delta t$\quad （此式上方批注：给密度$\rho$；页面右侧批注：注意 相对速度 与速度分解；分方向动量定理.）
+  \begin{itemize}
+  \item 用动量定理研究这段流体
+  \item $F\Delta t=\rho Sv\Delta t(V_{\text{末}}-V_0)$\qquad $F=\rho Sv(V_{\text{末}}-V_0)$\quad 注意正负
+  \end{itemize}
+\item \textbf{粒子性}\quad 微粒类、电子流、光子流、尘埃、给出单体积内粒子数
+  \begin{itemize}
+  \item 微元内粒数 $N=nv_0S\Delta t$,
+  \item 用动量定理研究单个粒子，建立方程 再乘$N$计算
+  \end{itemize}
+\end{itemize}
+
+% ---- block 074-03 (原稿第74页) kind=derivation ----
+\textbf{带压强}\quad $F\Delta t=\Delta mV=\rho\Delta S\,hV$
+\[
+P_{\text{压}}=\frac{F}{\Delta S}=\frac{\rho hv}{\Delta t}
+\]
+\[
+V_{\text{增}}=\frac{h}{\Delta t}=\frac{P}{\rho V} % CHECK: 下标字迹涂改，疑为「增」
+\]
+
+\textbf{带电流}
+\[
+qU=\frac{1}{2}mv^{2}
+\]
+\[
+Q=I\Delta t
+\]
+\unclear{总}\ $M=\dfrac{Q}{q}m=\dfrac{I\Delta t}{q}m$
+\[
+\bar F\Delta t=Mv
+\]
+\[
+\bar F=I\sqrt{\frac{2mU}{q}}
+\]
+
+\textbf{带光电子} % CHECK: 标题字迹似「带光电子」，但下方内容全是光子（ε=hν、p=h/λ），疑为「带光子」，按原样转录
+\[
+\varepsilon=h\nu\qquad p=\frac{h}{\lambda}\qquad c=\lambda\nu
+\]
+\[
+\therefore\ \varepsilon=pc
+\]
+\[
+E=\frac{n}{t}\,\frac{\varepsilon}{S}\qquad \unit{J/s/m^{2}}
+\]
+设$t$时间$n$个光子 每个\unclear{粒子}（下一行）为$\varepsilon$ % 此句写在上式右侧，「为ε」另起一行
+
+\unclear{全部反射}\quad $Ft=2p\times n$
+
+$\Delta p=2p_0$\quad $F=ma$
+
+
+\section{动量定理·系统动量定理}
+% ---- block 079-01 (原稿第79页) kind=knowledge ----
+\textbf{系统动量定理}\quad $\sum\vec I=\sum\vec F\,t=m\vec V_2-m\vec V_1$
+
+\notefig[0.25]{figures/p079_a.png}
+\[
+mgt=m\Delta V
+\]
+\notefig[0.25]{figures/p079_b.png}
+\begin{align*}
+&mg\,2R=\tfrac12 mV^2-\tfrac12 mV_0^2\\
+&I_N+mgt=m\vec V-m\vec V_0\\
+&W_N=0\qquad I_N\ne0
+\end{align*}
+
+% ---- block 079-02 (原稿第79页) kind=problem ----
+\begin{problem}
+$M$带$m$、$V_0$时$M$离开 $m$停后 求$V_M$
+\notefig[0.25]{figures/p079_c.png}
+\begin{solution}
+\[
+\begin{cases}
+(M+m)at=MV+m\cdot0-(M+m)v\\[2pt]
+t=\dfrac{V_0}{\mu g}
+\end{cases}
+\]
+% CHECK: t 的分母手写像 ug，按 \mu g 转录
+\end{solution}
+\end{problem}
+
+% ---- block 079-04 (原稿第79页) kind=problem ----
+\begin{problem}
+% 题干只有配图中的标注（$V_0=2\,\mathrm{m/s}$、$L=0.4\,\mathrm{m}$）
+\notefig[0.25]{figures/p079_d.png}
+\begin{solution}
+\[
+-(M+m)g\,\Delta t=(m+M)V_{\text{共}}-(MV_0-mV_0)
+\]
+\[
+\Delta t=\dfrac{0.4}{4}=0.1\,\mathrm{s}\quad {=}\,\dfrac{L}{V_{\text{相}}}
+\]
+% 原稿“=L/V相”写在“0.1s”右上方；CHECK: 0.1s 的 s 手写像 5
+\[
+\therefore\ V_{\text{共}}=\dfrac{M-3m}{M+m}\quad
+\begin{cases}
+M>3m\text{ 时 向上}\\
+M=3m\text{ 时 不动}\\
+M<3m\text{ 时 向下.}
+\end{cases}
+\]
+\end{solution}
+\end{problem}
+
+
+\section{质心运动定理}
+% ---- block 080-01 (原稿第80页) kind=knowledge ----
+% 页顶边距处一行；首行右端被页边裁切，“使质心静止或匀速直线”处字迹残缺，“运动”折到第二行
+\textbf{质心运动定理}\quad 系统受力\quad 质心加速运动\quad $F_{\text{合}}=0$ 使\unclear{质}心\unclear{静止}或匀速直\unclear{线}运动
+
+
+\section{弹簧模型·弹簧双振子}
+% ---- block 080-02 (原稿第80页) kind=method ----
+\textbf{弹簧双振子模型}
+
+\notefig[0.28]{figures/p080_a.png}
+\notefig[0.3]{figures/p080_b.png}
+$a=0$ 时 $V_{\max}$\\
+质心向右匀速直线
+% 句末有一小撇“'”
+
+% ---- block 080-03 (原稿第80页) kind=method ----
+\notefig[0.3]{figures/p080_c.png}
+\notefig[0.28]{figures/p080_d.png}
+一次周期中\\
+$V_A=V_B$ 时\quad $V_{A\max}$\quad $V_{B\max}$\quad $E_{pT\max}$\quad $E_{\text{机}\max}$\\
+$a_1=a_2$ 时\quad $\Delta V_{\max}$
+% 原稿“V_A=V_B时”一行四项之间只有空格、无标点；E_p 的下标像 T
+
+% ---- block 080-04 (原稿第80页) kind=problem ----
+\begin{problem}
+\notefig[0.3]{figures/p080_e.png}
+$W_F=W$ 突然撤 $F$．求 $I_{\text{墙}A}$、$V_A$ $V_{B\min}$
+% CHECK: V_A 后似漏写 max（下文有 V_{A max}），原样转录
+\begin{solution}
+\begin{align*}
+&W=E_p=\tfrac12 m_BV_0^2\qquad\therefore\ V_0=\sqrt{\dfrac{2W}{3m}}\qquad I_{\text{墙}A}=m_BV_0=\sqrt{6mW}\\
+&m_BV_0=m_AV_{A\max}+m_BV_{B\min}\\
+&\tfrac12 m_BV_0^2=\tfrac12 m_AV_{A\max}^2+\tfrac12 m_BV_{B\min}^2\\
+&V_{B\min}=\dfrac{m_B-m_A}{m_B+m_A}V_0=\sqrt{\dfrac{W}{6m}}\qquad V_{A\min}=0
+\end{align*}
+\end{solution}
+\end{problem}
+
+% ---- block 080-05 (原稿第80页) kind=method ----
+$F_1=F_2$\quad $W_{\text{机}}\uparrow$\quad $T=F_1=F_2$ 时 $E_k$ 最大\\
+系统 $M+m$ 动量不为0
+\notefig[0.3]{figures/p080_f.png}
+\notefig[0.28]{figures/p080_g.png}
+若 $m<M$
+% 图中标注：S_1、F_1、F_2、S_2、μ=0、W_1>0、W_2>0；v-t 图纵轴标 m 与 -M
+
+% ---- block 080-06 (原稿第80页) kind=summary ----
+\textbf{结论}
+
+\notefig[0.65]{figures/p080_h.png}
+\notefig[0.7]{figures/p080_i.png}
+% 图内标注：上方左右两个装置图（左：m_1 带 V_0 向右；右：m_2 带 V_0 向右），各行左图对应左装置、右图对应右装置；行标 ① m_1=m_2（左图下方另标“原压原拉”）、② m_1>m_2、③ m_1<m_2；各曲线分别标 m_1、m_2
+
+
+\section{人船模型}
+% ---- block 089-08 (原稿第89页) kind=method ----
+\noindent 人船模型
+\[ m_1V_1=m_2V_2 \]
+\[ m_1S_1=m_2S_2 \]
+\[ S_1+S_2=S_{\text{相}} \]
+\[ \begin{cases} S_1=\dfrac{m_2}{m_1+m_2}S_{\text{相}}\\[6pt] S_2=\dfrac{m_1}{m_1+m_2}S_{\text{相}}\end{cases} \]
+\noindent 由牛一 $\Sigma F=0\ \longrightarrow$ 静止 或 匀速直线运动 \\
+系统 $\Sigma F=0\ \longrightarrow$ 质心 静止 或 匀速直线运动
+
+
+\section{碰撞·速度范围}
+% ---- block 091-11 (原稿第91页) kind=knowledge ----
+碰撞定义域\quad $v_{\text{完非}}\le v\le v_{\text{完弹}}$
+
+
+\section{动量与能量综合·多球系统}
+% ---- block 119-04 (原稿第119页) kind=problem ----
+\begin{problem}[2.]
+\notefig[0.25]{figures/p119_e.png}
+% 图中标注：$m_1$、$M$、$m_2$（水平连线），$M$ 处向上箭头 $v_0$
+
+求\ 1\ 2\ 相遇时速度
+\begin{solution}
+\begin{align*}
+Mv_0&=(M+2m)v_y\\
+\frac{1}{2}Mv_0^2&=\frac{1}{2}Mv_y^2+\frac{1}{2}\,2m\left(v_x^2+v_y^2\right)\\
+v_x&=\sqrt{\frac{M}{M+2m}}\,v_0\qquad v_y=\frac{Mv_0}{M+2m}\\
+v&=\sqrt{v_x^2+v_y^2}=\sqrt{\frac{2M(M+m)}{M+2m}}\,v_0 % CHECK: 根号是否只盖分子；若按 v_x、v_y 代入，分母应为 (M+2m) 而非根号下的 M+2m
+\end{align*}
+\end{solution}
+\end{problem}
+
+% ---- block 120-01 (原稿第120页) kind=problem ----
+% 页面右上角露出邻页(化学)内容“…和CO2混合…×22.4=6.72L”，不属于本页，已忽略；页面下方为空白横线(背面透出淡淡反字，已忽略)
+\begin{problem}
+\notefig[0.25]{figures/p120_a.png}
+% 图中标注：A、B、C 三球在同一水平线上，B 处向上箭头 $v_0$，间距 $L$、$L$
+
+① AC第1次碰\quad 求$v_B$
+
+② 再次三球共线\ $v_B$、绳中拉力$F$
+
+③ 运动过程中A最大动能和两绳夹角
+\begin{solution}
+① $mv_0=3mv_{\text{共}}$\quad $v_{\text{共}}=\dfrac{v_0}{3}$
+
+② \[
+\left\{\begin{aligned}
+&mv_0=mv_B+2mv_A\\
+&\frac{1}{2}mv_0^2=\frac{1}{2}mv_B^2+\frac{1}{2}m\left(v_A^2+v_A^2\right)
+\end{aligned}\right.
+\]
+\[
+\left\{\begin{aligned}
+&v_B=-\frac{1}{3}v_0\\
+&v_A=\frac{2}{3}v_0
+\end{aligned}\right.
+\qquad
+F=\frac{m v_{\text{相}}^2}{L}=\frac{mv_0^2}{L}
+\]
+AC相对B\quad $v_{\text{相}}=v_0$
+
+③
+\notefig[0.25]{figures/p120_b.png}
+% 图中标注：$v_A$（左上箭头）、$v_C$（右上箭头）、45°，两处直角记号，顶点处有夹角记号
+
+沿绳$v_B$为0，故AC均无分量\quad $E_{kA\max}$\quad $v_B=0$
+
+$v_A$\ $v_C$垂绳\quad $\theta=90^\circ$
+\[ 2m_Av\sin 45^\circ=mv_0 \]% CHECK: 下标 A 的位置疑应在 v 上(2mv_A sin45°=mv_0)
+\[ v_A=v_C=\frac{\sqrt{2}}{2}v_0 \]
+\[ E_{kA}=E_{kC}=\frac{mv_0^2}{4} \]
+$\theta=90^\circ$ % 此 θ=90° 在页面中部偏右、字较大，疑为 ③ 的最终结论
+\end{solution}
+\end{problem}
+
+
+\section{动量定理·板块变力冲量}
+% ---- block 196-01 (原稿第196页) kind=problem ----
+% 原稿此块被一条自页面上方向左下弯曲、末端回钩的大弧线划过，疑似划去，仍照录
+\begin{problem}
+\notefig[0.28]{figures/p196_a.png}
+\begin{solution}
+\begin{align*}
+&F=(M+m)a\\
+&f=\mu Mg=Ma\qquad a=2\unit{m/s^2}\qquad F=6\unit{N}\qquad \struck{t=6\unit{s}}\qquad t=1\unit{s}\\
+&\mu Mg=\frac{M}{M+m}F=\frac{2}{3}F=4 \quad % 分子 $M$ 左侧有一团涂改墨迹
+\end{align*}
+\[
+F=6\unit{N}\qquad t=6\unit{s}\qquad \bar F=\frac{6}{2}\unit{N}=3\unit{N}
+\]
+% CHECK: 此处 $t=6\unit{s}$ 与后文 $t=1\unit{s}$（$\bar F t=3\unit{N\cdot s}$）不一致
+\begin{align*}
+&\underline{v_{\text{甲}}=v_{\text{乙}}=}\ \ \unclear{…}\ I_F=\bar F t=3\unit{N\cdot s}\\
+&\bar F t=(M+m)v\qquad v=1\unit{m/s}\qquad \Delta P_{\text{乙}}=mv=1\unit{kg\cdot m/s}\\
+&I_f=\Delta P_{\text{甲}}=Mv=2\unit{N\cdot s}\\
+&W_{f\text{对甲}}=E_{k\text{甲}}=\tfrac{1}{2}mV^2=\unclear{1\unit{J}} % CHECK: 动能应为 $\tfrac12Mv^2$（$M=2\unit{kg}$）；末项手写形似“U”，按 $1\unit{J}$ 记
+\end{align*}
+\end{solution}
+\end{problem}
+

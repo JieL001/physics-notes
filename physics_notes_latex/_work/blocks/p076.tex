@@ -1,0 +1,61 @@
+%%%PAGE 76 rot=0 legibility=good summary=圆锥内壁、半球碗内壁小球水平面圆周运动（N、a、v、ω、T）；碗内光滑时 ω 与 H、θ 的关系；不光滑时 a 与 g tanθ 比较及摩擦力方向
+%%%BLOCK id=076-01 ch=04 sec=水平面圆周·圆锥内壁 kind=method alt=none cont=none y=0.04-0.20
+%FIG p076_a 0.10 0.045 0.225 0.17
+\notefig[0.25]{figures/p076_a.png}
+\[
+\begin{aligned}
+&N\sin\theta = mg\\
+&N\cos\theta = mg\cot\theta\\
+&a_{\text{向}} = g\cot\theta = \omega^2 r = \frac{v^2}{r}
+\end{aligned}
+\qquad\qquad
+\begin{aligned}
+&v=\sqrt{ar}=\sqrt{g\cot\theta\,r}\\
+&\omega=\sqrt{\frac{a}{r}}=\sqrt{\frac{g}{H}}\\
+&T=2\pi\sqrt{\frac{H}{g}}
+\end{aligned}
+\]
+% CHECK: 图中 H 的含义不明（标在水平箭头旁），ω=√(g/H)、T=2π√(H/g) 与 a=g cotθ 的关系需核对
+%%%END
+%%%BLOCK id=076-02 ch=04 sec=水平面圆周·半球碗内壁 kind=method alt=none cont=none y=0.21-0.34
+%FIG p076_b 0.07 0.215 0.29 0.34
+\notefig[0.3]{figures/p076_b.png}
+\[
+\begin{aligned}
+&N\cos\theta = mg\\
+&N\sin\theta = mg\tan\theta = F_n\\
+&r = R\sin\theta
+\end{aligned}
+\qquad\qquad
+\begin{aligned}
+&v=\sqrt{ar}=\sqrt{g\tan\theta\sin\theta}\quad\text{正相关}\\
+&\omega=\sqrt{\frac{a}{r}}=\sqrt{\frac{g}{H}}=\sqrt{\frac{g\tan\theta}{L\sin\theta}}\\
+&T=2\pi\sqrt{\frac{H}{g}}
+\end{aligned}
+\]
+% CHECK: v=√(g tanθ sinθ) 手写如此，按 r=R sinθ 似漏写 R；ω 末式分母手写像 L，按 r=R sinθ 应为 R
+%%%END
+%%%BLOCK id=076-03 ch=04 sec=水平面圆周·半球碗内壁 kind=derivation alt=none cont=none y=0.37-0.60
+%FIG p076_c 0.09 0.375 0.30 0.47
+\notefig[0.3]{figures/p076_c.png}
+\textbf{若光滑}
+\begin{align*}
+&N\cos\theta = mg\\
+&N\sin\theta = mg\tan\theta = ma\\
+&H = R(1-\cos\theta)\\
+&a = g\tan\theta = \omega^2 r = \omega^2 R\sin\theta \qquad \cos\theta = \frac{g}{\omega^2 R}\\
+&\omega\uparrow\quad H\uparrow\quad \omega\uparrow\ \text{上升．}
+\end{align*}
+% CHECK: 最后一行第三个符号手写同 ω（按推导可能是 θ↑）
+%%%END
+%%%BLOCK id=076-04 ch=04 sec=水平面圆周·半球碗内壁 kind=knowledge alt=none cont=none y=0.63-0.73
+\textbf{若不光滑．}
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+$a=g\tan\theta$ & 不受 $f$\\
+$a>g\tan\theta$ & $f$ 向下\\
+$a<g\tan\theta$ & $f$ 向上\\
+\end{tabular}
+\end{center}
+%%%END
+%%%PAGEEND 76

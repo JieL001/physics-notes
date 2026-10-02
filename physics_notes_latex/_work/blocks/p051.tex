@@ -1,0 +1,88 @@
+%%%PAGE 51 rot=0 legibility=good summary=复合场应用：磁流体发电机、电磁流量计、霍尔效应、回旋加速器的公式与图
+%%%BLOCK id=051-01 ch=11 sec=复合场·磁流体发电机 kind=knowledge alt=10 cont=none y=0.03-0.30
+\textbf{磁流体发电机}（原稿圈出标题）
+
+%FIG p051_a 0.10 0.10 0.33 0.19
+\notefig[0.3]{figures/p051_a.png}
+
+\[
+\left\{\begin{aligned}
+&qvB=qE\\
+&U=Ed=Bdv
+\end{aligned}\right.
+\]
+\[
+I=\frac{U}{R+r}=\frac{Bdv}{R+\dfrac{\rho d}{S_{\text{板}}}}
+\]
+\[
+\Delta P_{\text{压}}S=F_{\text{安}}\,\unclear{+f}=BId+f
+\]
+\[
+\eta=\frac{Bdv\cdot I}{\Delta P_{\text{压}}S\cdot v}=\frac{UI}{Fv}=\frac{UI}{(F_{\text{安}}+f)v}
+\]
+% 上一行第二项分母原稿为 F v（未写下标）
+
+$P_{\text{机}}\to P_{\text{电}}\to$ \unclear{阻} $\to P_{\text{\unclear{内}}}$
+%%%END
+%%%BLOCK id=051-02 ch=11 sec=复合场·电磁流量计 kind=knowledge alt=none cont=none y=0.26-0.42
+\textbf{电磁流量计}（原稿圈出标题）
+
+%FIG p051_b 0.09 0.33 0.243 0.385
+\notefig[0.25]{figures/p051_b.png}
+
+\[
+Q=\frac{V_{\text{体积}}}{t}=S\cdot v=ac\,\frac{U_0}{Ba}
+\]
+
+%FIG p051_c 0.50 0.33 0.64 0.42
+\notefig[0.25]{figures/p051_c.png}
+%%%END
+%%%BLOCK id=051-03 ch=11 sec=复合场·霍尔效应 kind=knowledge alt=none cont=none y=0.38-0.55
+\textbf{霍尔效应}（原稿圈出标题）
+
+%FIG p051_d 0.06 0.435 0.43 0.53
+\notefig[0.4]{figures/p051_d.png}
+
+\[
+\left\{\begin{aligned}
+&U_H=Bdv=\frac{1}{ne}\cdot\frac{BdI}{S_{\text{\unclear{…}}}}=R_H\,\frac{BdI}{S}\qquad \text{$R_H$为霍尔系数}\\
+&I=nesv
+\end{aligned}\right.
+\]
+% 第一个分式分母 S 右下角有不明小标记
+%%%END
+%%%BLOCK id=051-04 ch=11 sec=复合场·回旋加速器 kind=knowledge alt=09 cont=none y=0.52-0.97
+\textbf{回旋加速器}（原稿圈出标题）
+
+%FIG p051_e 0.095 0.592 0.32 0.713
+\notefig[0.25]{figures/p051_e.png}
+
+\begin{align*}
+v_m&=\frac{qBR}{m} & E_{km}&=\frac{q^2B^2R^2}{2m} & P_m&=qBR\\
+n&=\frac{E_{km}}{qU}=\frac{qB^2R^2}{2mU}\\
+t_B&=\frac{n\pi m}{qB}=\frac{\pi R\,\unclear{n}}{v_m}\\
+t_E&=\sqrt{\frac{2nmd^2}{qU}}=\frac{2nd}{v_m}\qquad nd=\frac12\,\frac{qU}{md}\,t_E^2
+\end{align*}
+由 $t_B\gg t_E$：$\dfrac{\pi}{2}$、$\dfrac{R}{d}\ge1$
+
+\[
+v=2\pi Rf\qquad E_k=\frac12mv^2
+\]
+\[
+\frac{qBR}{m}=2\pi Rf
+\]
+\[
+f=\frac{qB}{2\pi m}\qquad \text{$m$不变}\quad B\times2\quad f\,\text{\unclear{(↑)}}\times2
+\]
+
+$f=\dfrac{qB}{2\pi m}$（交变电压频率），\quad $f\propto B$ \quad B最大为$B_m$ \quad $f_m=\dfrac{qB_m}{2\pi m}$
+\[
+\left\{\begin{aligned}
+&\underset{\text{\scriptsize 实际}}{f_m}<\underset{\text{\scriptsize 标准}}{f_m}\ \text{时}\quad v_m=2\pi f_mR\\
+&\underset{\text{\scriptsize 实际}}{f_m}>\underset{\text{\scriptsize 标准}}{f_m}\ \text{时}\quad v_m=\frac{qBR}{m}
+\end{aligned}\right.
+\]
+% 第一式 v_m= 之后、2π 之前有涂改痕迹；第二式分子 qBR 有涂改
+% 手写 v 与 V 不分，这里一律按速度记为小写 v（v_m 原稿写作 V_m）
+%%%END
+%%%PAGEEND 51

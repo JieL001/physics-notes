@@ -1,0 +1,62 @@
+%%%PAGE 57 rot=0 legibility=good summary=匀加速后撤力的导体棒(导轨电阻随位移变化)的电流极值题；杆类问题七个分析要点；运动/功能/动量三方面；并联电动势等效
+%%%BLOCK id=057-01 ch=12 sec=单杆·导轨电阻随位移变化 kind=problem alt=none cont=none y=0.02-0.55
+\begin{problem}
+%FIG p057_a 0.09 0.022 0.445 0.161
+\notefig[0.4]{figures/p057_a.png}
+$ac$、$bd$ 单位长度电阻 $r_0$，棒受 $F$ 向右匀加速，加速度为 $a$，到 $cd$ 时撤去 $F$，于 $ef$ 静止。
+\begin{solution}
+\[ E=BL\sqrt{2ax} \]
+\[ mV-m\sqrt{2ax_1}=\frac{-B^2L^2x}{R+2r_0x_1} \]
+\[ V=\sqrt{2ax_1}-\frac{B^2L^2x}{m\,(R+2r_0x_1)}\qquad \text{到 }x_2\text{ 时 }V_{\text{末}}=0 \]
+\[ x_2=\frac{\sqrt{2ax_1}\;m\,(R_0+2r_0x_1)}{B^2L^2} \] % CHECK: 分子括号内写作 R_0，前面各式为 R
+开始时和最后时 $I_{\min}=0$
+
+设走过 $x$\quad $I=\dfrac{BL\sqrt{2ax}}{R+2r_0x}=\dfrac{BL\sqrt{2a}}{\dfrac{R}{\sqrt{x}}+2r_0\sqrt{x}}$\quad 均值不等式\quad $f(x)=\dfrac{1}{x+\dfrac{1}{x}}$
+
+\[ \left\{\begin{array}{l}
+\dfrac{R}{2r_0}<x_1\text{ 时}\quad I_{\max}=\dfrac{BL\sqrt{2a}}{2\sqrt{2Rr_0}}\\[3ex]
+\dfrac{R}{2r_0}>x_1\text{ 时}\quad I_{\max}=\dfrac{BL\sqrt{2ax_1}}{R+2r_0x_1}
+\end{array}\right. \]
+%FIG p057_b 0.67 0.367 0.90 0.4755
+\notefig[0.3]{figures/p057_b.png}
+%FIG p057_c 0.575 0.475 0.78 0.55
+\notefig[0.28]{figures/p057_c.png}
+% 图 p057_c 中标注函数 x/(x^2+1)（奇函数曲线）
+$\dfrac{1}{\sqrt{x}+\dfrac{1}{\sqrt{x}}}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=057-02 ch=12 sec=电磁感应·动力学基本公式 kind=formula alt=none cont=none y=0.40-0.51
+由法拉第电磁感应定律
+\[ \left\{\begin{array}{l} E=BLV\\ I=\dfrac{E}{R_{\text{总}}}\\ F=BIL\end{array}\right.\qquad F=\frac{B^2L^2V}{R_{\text{总}}} \]
+%%%END
+%%%BLOCK id=057-03 ch=12 sec=杆类问题·分析要点 kind=method alt=none cont=none y=0.54-0.71
+\textbf{最终速度、匀速、恒定}
+
+① 最大速度 $F_{\text{合}}=0$\quad ② 加速度 $F_{\text{合}}=ma$\quad ③ 电荷量 $q=\dfrac{n\Delta\Phi}{R_{\text{总}}}$\qquad $\Delta q=I\Delta t=\dfrac{\Delta\Phi}{R}=\dfrac{BLx}{R}$
+
+④ 功率 $P_{\text{电}}=P_{\text{安}}=F_{\text{安}}v=\dfrac{B^2L^2v^2}{R}$\quad ⑤ 热量：动能损失、$W_{\text{安}}$、$I^2Rt$（恒定 $I$）
+
+⑥ 总时间总位移，$x_{\text{相}}$，$S$ 相对面积\quad 动量定理，动量守恒 $\sum F_{\text{外}}\cdot\Delta t-F_{\text{安}}\Delta t=m(V_{\text{末}}-V_0)-\Delta P$\quad $\left\{\begin{array}{l}BLq\\[0.5ex] \dfrac{B^2L^2x}{R}\end{array}\right.$
+
+⑦ $L$ 不变，匀速，$B'\Delta S=B_0S_0$
+\[ B'(t)=\frac{B_0S_0}{L\left(V_0t+\frac{1}{2}at^2-L_0\right)} \] % 此行左侧原稿有涂改液痕迹，残留一个逗号
+%%%END
+%%%BLOCK id=057-04 ch=12 sec=杆类问题·运动功能动量三方面 kind=summary alt=none cont=none y=0.71-0.80
+% 原稿左侧竖写“\unclear{运动}”，用大括号括住 V_m 与 a；“P电”与“P安”竖排，中间为竖的等号
+\[
+\left.\begin{array}{l}V_m\\ a\end{array}\right\}\ \text{\unclear{运动}}
+\]
+功能\quad $\begin{array}{c}P_{\text{电}}\\ \|\\ P_{\text{安}}\end{array}$\quad $\left\{\begin{array}{l}W_{\text{除安}}-Q=\Delta E_k\\ P_{\text{电}}=P_{\text{安}}\\ W_{\text{电}}=W_{\text{安}}=-Q\end{array}\right.$ % CHECK: “W除安”的第二字辨认为“除”(W_除安 + W_安 = ΔE_k 即得此式)，第三行中间项为 W_安(原稿字迹偏潦草)
+
+动量\quad $\left\{\begin{array}{l}q=n\dfrac{\Delta\Phi}{R}=n\cdot\dfrac{\Phi_2-\Phi_1}{R}\\[2ex] Ft-\dfrac{B^2L^2x}{R}=m(V_{\text{末}}-V_0)\end{array}\right.$\qquad 三方面
+%%%END
+%%%BLOCK id=057-05 ch=12 sec=电磁感应·并联电动势等效 kind=method alt=none cont=none y=0.80-0.93
+%FIG p057_d 0.03 0.81 0.195 0.875
+\notefig[0.25]{figures/p057_d.png}
+2 个 $BdV$ 并联了\quad $e=BdV$\quad $I=\dfrac{BdV}{R}$\quad $F=\dfrac{B^2d^2V}{R}$
+%FIG p057_e 0.20 0.845 0.345 0.93
+\notefig[0.25]{figures/p057_e.png}
+\[ e_{\text{等}}=BdV,\qquad r_{\text{等}}=\frac{r}{4} \]
+%%%END
+%%%PAGEEND 57

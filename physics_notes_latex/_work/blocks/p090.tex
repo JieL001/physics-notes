@@ -1,0 +1,66 @@
+%%%PAGE 090 rot=0 legibility=good summary=几何关系处理：圆轨迹几何关系两例；求飞得最远的R（竖直半圆轨道+平抛）；斜面+平抛的最大射程；斜抛最大射程（法1代数/法2速度三角形）
+%%%BLOCK id=090-01 ch=11 sec=有界磁场·几何关系 kind=method alt=none cont=none y=0.03-0.185
+\noindent \textbf{几何关系处理}
+% 页首标题；本块与下一块为圆弧轨迹的几何关系（原稿未写 B、q，按图形推断为有界磁场中的圆周）
+
+%FIG p090_a 0.09 0.055 0.385 0.175
+\notefig[0.5]{figures/p090_a.png}
+\[ \begin{cases} R\cos\alpha+R\sin\alpha=a\\ R-R\sin\alpha=\dfrac a2\\ \sin^2\alpha+\cos^2\alpha=1\end{cases}\qquad R=\left(\dfrac{4-\sqrt6}{2}\right)a \]
+% 手写中 a 的字形近似 9
+%%%END
+%%%BLOCK id=090-02 ch=11 sec=有界磁场·几何关系 kind=method alt=none cont=none y=0.185-0.31
+%FIG p090_b 0.06 0.18 0.27 0.305
+\notefig[0.3]{figures/p090_b.png}
+\[ r^2+R^2-2rR\cos\varphi=\left[r-(d-R)\right]^2 \]
+% 括号内手写形似 “r(d−R)”，按图中底边标注取 r−(d−R)
+%%%END
+%%%BLOCK id=090-03 ch=04 sec=平抛·圆轨道出口 kind=problem alt=06 cont=none y=0.33-0.47
+\begin{problem}
+%FIG p090_c 0.075 0.335 0.285 0.43
+\notefig[0.35]{figures/p090_c.png}
+求飞得最远的 $R$
+\begin{solution}
+\[ \begin{cases} S=V_0t\\ 2R=\dfrac12gt^2\\ \dfrac12mV^2-\dfrac12mV_0^2=-mg\,2R\end{cases}\qquad S=\sqrt{4R\left(\dfrac{V_0^2}{g}-4R\right)} \]
+% CHECK: 第一式手写形似 S=V_0 t（按物理应为出口速度 V：S=Vt）
+均值不等式\quad $R=\dfrac{V_0^2}{8g}$ 时取等
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=090-04 ch=06 sec=动能定理·斜面平抛综合 kind=problem alt=04 cont=none y=0.475-0.62
+\begin{problem}
+%FIG p090_d 0.06 0.478 0.255 0.585
+\notefig[0.3]{figures/p090_d.png}
+\begin{solution}
+\[ \begin{cases} \dfrac12mV_0^2=mg(H-h)-\mu mg\cos\theta\,\dfrac{L}{\cos\theta}\\[6pt] h=\dfrac{g}{2V_0^2}S^2\end{cases} \]
+\[ S^2=2h\left[2(H-h)-2\mu L\right] \]
+\[ y=hH-h^2-h\mu L=-h^2+(H-\mu L)h \]
+% “−hμL” 写在 “hH−h²” 的下方；“(H−h)”中的 h 笔画加粗
+\noindent $h=\dfrac{H-\mu L}{2}$ 时取\unclear{最}大值
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=090-05 ch=04 sec=斜抛·最大射程 kind=derivation alt=none cont=none y=0.61-0.87
+\noindent \textbf{斜抛最大射程}\qquad 法1
+%FIG p090_e 0.045 0.632 0.215 0.735
+\notefig[0.3]{figures/p090_e.png}
+\[ \begin{cases} S=V_0\cos\theta\,t\\ -h=V_0\sin\theta\,t-\dfrac12gt^2\end{cases} \]
+\[ -h=V_0\sin\theta\,\frac{S}{V_0\cos\theta}-\frac12g\,\frac{S^2}{(V_0\cos\theta)^2}\qquad\text{由}\ \frac{1}{\cos^2\theta}=1+\tan^2\theta \]
+\[ \therefore\ \left(\frac{S}{V_0}\right)^2(1+\tan^2\theta)-\frac{2S}{g}\tan\theta-\frac{2h}{g}=0 \]
+\[ \tan^2\theta-\frac{2SV_0^2}{gS^2}\tan\theta+\left(1-\frac{2hV_0^2}{gS^2}\right)=0 \]
+\[ \Delta\ge0\ \ \text{故}\ \ S\le\sqrt{\frac{V_0^4}{g^2}+\frac{2V_0^2h}{g}}=\frac{V_0\sqrt{V_0^2+2gh}}{g}=\frac{V_0V_t}{g}\qquad\text{最大射程} \]
+\noindent 最大高度\quad $L=\dfrac{(V_0\sin\theta)^2}{2g}$
+%%%END
+%%%BLOCK id=090-06 ch=04 sec=斜抛·最大射程 kind=derivation alt=none cont=none y=0.86-1.0
+\noindent 法2
+%FIG p090_f 0.08 0.882 0.185 0.97
+\notefig[0.25]{figures/p090_f.png}
+\begin{align*}
+V_t&=\sqrt{V_0^2+2gh}\\
+x&=V_0t\cos\alpha\\
+mgt&=m\Delta V\\
+\Delta V&=V_0\sin\alpha+V_t\sin\beta\qquad V_0\cos\alpha=V_t\cos\beta
+\end{align*}
+\[ \therefore\ x=\frac{V_0V_t}{g}\sin(\alpha+\beta) \]
+\[ \alpha+\beta=\frac{\pi}{2}\ \text{时}\ x_{\max}=\frac{V_0V_t}{g}\qquad \tan\alpha=\frac{V_0}{V_t} \]
+%%%END
+%%%PAGEEND 090

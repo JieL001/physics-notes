@@ -1,0 +1,128 @@
+%%%PAGE 37 rot=0 legibility=good summary=板块弹簧模型(压缩、反冲后二次共速，势能=摩擦热)；拆分过程方法与ΔEK=½μ(Δv)²(e²-1)；例[1]双车+摆球多过程；例[2]ABC弹簧多过程(爆炸反冲/完非弹/完弹/追上)
+%%%BLOCK id=037-01 ch=07 sec=弹簧板块模型·压缩与反冲 kind=derivation alt=06 cont=none y=0.01-0.21
+\textbf{反冲}\quad 势能$=$摩擦热
+%FIG p037_a 0.10 0.058 0.265 0.108
+\notefig[0.3]{figures/p037_a.png}
+
+压缩、完非弹
+\[
+\left\{\begin{aligned}
+m_1V_0&=(m_1+m_2)V_{\text{共}}\\
+\tfrac12(m_1+m_2)V_{\text{共}}^2-\tfrac12m_1V_0^2&=-\bigl(E_{p\text{弹}}+Q_{\text{来}}\bigr)
+\end{aligned}\right.
+\]
+
+反冲后又共速
+\[
+\left\{\begin{aligned}
+(m_1+m_2)V_{\text{共}}&=(m_1+m_2)V_{\text{共}1}\\
+\tfrac12(m_1+m_2)V_{\text{共}1}^2-\tfrac12(m_1+m_2)V_{\text{共}}^2&=E_{p\text{弹}}-Q_{\text{返}}=0\ \Rightarrow\ E_{p\text{弹}}=Q_{\text{返}}
+\end{aligned}\right.
+\]
+\[
+\frac12\,\frac{m_1m_2}{m_1+m_2}V_0^2=Q_{\text{来}}+Q_{\text{返}}=E_{p\text{弹}}+Q
+\]
+二次共速，反冲\quad 释放$=$消耗
+%%%END
+%%%BLOCK id=037-02 ch=07 sec=碰撞·拆分过程 kind=method alt=06 cont=none y=0.215-0.36
+拆分过程。一个过程一组动量守恒、能量守恒方程
+\begin{itemize}
+\item 状态量：$P$\quad $E_K$\quad $F$
+\item 过程量：$I$\quad $W$
+\end{itemize}
+
+完非弹$=$完非弹$+$反冲 % CHECK: 首项原稿似为“完非弹”，按字形照录(或应为“非完弹”)
+
+完弹$=$完非弹$+$反冲
+
+% 以下公式原稿被红笔框起
+\begin{keybox}
+\[
+\Delta E_K=\frac12\,\frac{m_1m_2}{m_1+m_2}(V_{01}-V_{02})^2(e^2-1)
+\]
+\end{keybox}
+（有\unclear{恢复}系数时）
+
+每个过程只有2个体系，未参与该过程的物体原速不变
+%%%END
+%%%BLOCK id=037-03 ch=07 sec=多过程碰撞·双车与摆球 kind=problem alt=06,04 cont=none y=0.365-0.66
+\begin{problem}[{[1]}]
+%FIG p037_b 0.085 0.372 0.318 0.462
+\notefig[0.4]{figures/p037_b.png}
+\begin{solution}
+\textbf{过程一}
+
+①完非弹 $AB$
+\[
+mV-mV=2mV_{\text{共}},\qquad V_{\text{共}}=0 % CHECK: 第一个减号原稿字形近似“=”，按物理意义(两车动量反向)转为减号
+\]
+$AB$ 碰后速度为0
+\[
+\tfrac12\,2mV_{\text{共}}^2-\tfrac12mV^2-\tfrac12mV^2=\Delta E_{K1}
+\]
+\textbf{过程二}
+
+②$C$ 与 $AB$ 完非弹
+\begin{align*}
+\frac m4V&=\Bigl(2m+\frac m4\Bigr)V_{\text{共}}'\\
+\tfrac12\Bigl(2m+\frac m4\Bigr)V_{\text{共}}^2-\tfrac12\,\frac m4V^2&=\Delta E_{K2}=-\frac m4gh_{\max}\\
+&\qquad\unclear{-\tfrac12\cdot2m} % 原稿第二式下方有叠写涂改的小字，形如“-½·2m”，位置在 ΔE_{K2} 下方，辨认不清
+\\
+&=\tfrac12\,\frac{\frac m4\cdot2m}{\frac m4+2m}(\Delta V_0)^2 % CHECK: 此行与上一行 ΔE_{K2} 的符号不一致，原稿行首为“=”，照录
+\end{align*}
+%FIG p037_c 0.28 0.59 0.44 0.66
+\notefig[0.3]{figures/p037_c.png}
+\[
+\cos\theta=\frac{L-h_{\max}}{L}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=037-04 ch=07 sec=多过程碰撞·ABC弹簧 kind=problem alt=06 cont=none y=0.67-1.0
+\begin{problem}[{[2]}]
+%FIG p037_d 0.10 0.70 0.32 0.74
+\notefig[0.4]{figures/p037_d.png}
+\begin{solution}
+①$AB$ 爆炸反冲
+\[
+\left\{\begin{aligned}
+m_AV_A-m_BV_B&=0 % 原稿 V_B 右上似有一小撇
+\\
+\tfrac12m_AV_A^2+\tfrac12m_BV_B^2&=E
+\end{aligned}\right.
+\qquad
+V_A=\sqrt{\frac{2m_BE}{m_{\text{总}}m_A}},\quad V_B=\sqrt{\frac{2m_AE}{m_{\text{总}}m_B}}
+\]
+②$B$ 压 $C$ 完非弹
+\[
+\left\{\begin{aligned}
+m_BV_B&=(m_B+m_C)V_{\text{共}1}\\
+\tfrac12(m_B+m_C)V_{\text{共}1}^2-\tfrac12m_BV_B^2&=-E_{p\text{弹}\max}
+\end{aligned}\right.
+\]
+\[
+E_{p\text{弹}}=-\frac12\,\frac{m_Bm_C}{m_B+m_C}V_B^2 % CHECK: 原稿等号后有负号(弹性势能应为正值)，照录
+\]
+③$BC$ 完弹$=$完非弹$+$反冲
+\[
+\left\{\begin{aligned}
+m_BV_B&=m_BV_B'+m_CV_C'\\
+\tfrac12m_BV_B^2&=\tfrac12m_BV_B'^2+\tfrac12m_CV_C'^2
+\end{aligned}\right.
+\qquad
+V_B'=\frac{m_B-m_C}{m_B+m_C}V_B,\quad V_C=\frac{2m_B}{m_B+m_C}V_B % CHECK: 此处 V_C 原稿无撇
+\]
+④$A$ 追上 $B$，$AB$ 完非弹
+\[
+\left\{\begin{aligned}
+m_AV_A-m_BV_B'&=(m_A+m_B)V_{\text{共}}\\
+\tfrac12(m_A+m_B)V_{\text{共}2}^2-\tfrac12m_AV_A^2-\tfrac12m_BV_B'^2&=\Delta E_{p\text{弹}}\,(-1)
+\end{aligned}\right.
+\]
+\[
+E_{p\text{弹}}=\frac12\,\frac{(m_A+m_B)m_C}{m_A+m_C+m_B}\bigl(V_{\text{共}2}-V_C'\bigr)^2
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 37

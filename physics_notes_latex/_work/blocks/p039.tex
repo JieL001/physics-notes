@@ -1,0 +1,57 @@
+%%%PAGE 39 rot=0 legibility=good summary=连续体冲量动量续(每秒N粒米称读数、气体分子撞器壁求压强、链条落地求对地压力)；光压强I类(黑片/白片)；正负电子湮灭释放光子
+%%%BLOCK id=039-01 ch=07 sec=连续体冲量动量 kind=problem alt=none cont=none y=0.07-0.21
+每秒$N$粒米，每粒$m$，求$t$s后称读数 % 首字“每”被页眉“Date”字样压住；“称读数”三字笔迹有涂改叠写
+\begin{gather*}
+(F-N\Delta t\,mg)\Delta t=N\Delta t\,m\cdot V\qquad V=\sqrt{2gh}\\
+N\Delta t\,mg\cdot\Delta t\approx0\qquad F=NmV\\
+\text{故 }F_{\text{示数}}=F+G=Nm\sqrt{2gh}+N\unclear{\Delta t}\,mg % 末项中 Δt 处原稿为一团黑色涂迹
+\end{gather*}
+%%%END
+%%%BLOCK id=039-02 ch=07 sec=连续体冲量动量 kind=problem alt=16 cont=none y=0.22-0.36
+气体分子弹性撞器壁，$M$为单个重量，每立方米有$n_0$个，撞击时垂直分速度为$V$，求$P$压强 % “弹性”二字下有波浪线；M 原稿为大写
+\[
+\bar F=\frac{n_0mSV\Delta t\,V}{\Delta t}=\boxed{n_0mSV^2}\qquad F=\frac{m\Delta V}{\Delta t} % 原稿 n_0mSV^2 被圈出
+\]
+\[
+P=\frac{\bar F}{S}=n_0mV^2
+\]
+%%%END
+%%%BLOCK id=039-03 ch=07 sec=连续体冲量动量 kind=problem alt=06 cont=none y=0.365-0.77
+\textbf{链条落地}
+%FIG p039_a 0.055 0.389 0.16 0.47
+\notefig[0.25]{figures/p039_a.png}
+线密度 $\rho=\dfrac mL$
+
+①落$x$时，求$N_{\text{地}}$
+\begin{gather*}
+(F-\rho\Delta x\,g)\Delta t=\Delta m\,V=\rho V\Delta x\\
+\rho\Delta x\,g\Delta t\approx0\\
+F=\rho V\frac{\Delta x}{\Delta t}=\rho V^2\qquad V^2=2gx\qquad\text{故 }F=2\rho gx\\
+N=\underset{F}{2\rho gx}+\underset{G}{\rho gx}=\boxed{\frac{3mgx}{L}} % 原稿 3mgx/L 被圈出；2ρgx 下标 F，ρgx 下标 G
+\end{gather*}
+②求最大压力
+\begin{gather*}
+(F-\Delta m\,g)\Delta t=\rho V\cdot\Delta x\qquad\Delta m\,g\Delta t\approx0\\
+\text{故 }F=\rho V\frac{\Delta x}{\Delta t}=\rho V^2\qquad V^2=2gL\\
+F=2\rho gL\\
+N=F+G=2\rho gL+\rho gL=3\rho gL=\boxed{3mg} % 原稿 3mg 被圈出
+\end{gather*}
+%%%END
+%%%BLOCK id=039-04 ch=17 sec=光的粒子性·光压 kind=method alt=07 cont=none y=0.77-0.90
+\textbf{光压强I类}\quad $p=\dfrac{h\nu}{c}=\dfrac h\lambda=\dfrac Ec$\qquad 最大频率 $\dfrac{eU_c}{h}$
+%FIG p039_b 0.05 0.808 0.24 0.86
+\notefig[0.3]{figures/p039_b.png}
+吸光\ $\Delta P_1=P$\qquad 反射光\ $\Delta P_2=2P$
+
+白板受冲击力大
+%%%END
+%%%BLOCK id=039-05 ch=17 sec=正负电子湮灭 kind=method alt=07 cont=none y=0.89-1.0
+正负电子湮灭释放光子
+%FIG p039_c 0.22 0.918 0.48 0.958
+\notefig[0.35]{figures/p039_c.png}
+\[
+2mc^2=\frac{2hc}{\lambda}\qquad\lambda=\frac{h}{mc}\qquad E\uparrow\ \lambda\downarrow
+\]
+质能 $2mc^2$\qquad 总能量$=2mc^2+2E_k$
+%%%END
+%%%PAGEEND 39

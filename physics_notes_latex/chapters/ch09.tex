@@ -1,0 +1,760 @@
+% 本文件由 assemble.py 按 _work/plans/ch09.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{静电场}
+\label{ch:09}
+
+\section{库仑定律}
+% ---- block 010-06 (原稿第10页) kind=knowledge ----
+库仑定律\quad $F=kq_1q_2/r^2$\qquad $k=9\times10^9\,\mathrm{C}$ % CHECK: 原稿 k 的单位只写“C”（应为 N·m$^2$/C$^2$），照原样转录
+
+$q_1,q_2$不为点电荷时
+
+\notefig[0.25]{figures/p010_e.png}
+% 图 p010_e：上、下两幅带电球体示意图（两球心连线上标 $r$，球面上画有电荷符号，分别对应下面的“同性”“异性”）
+
+同性\quad $F<\dfrac{kq_1q_2}{r^2}$
+
+异性\quad $F>\dfrac{kq_1q_2}{r^2}$
+
+
+\section{三电荷平衡}
+% ---- block 010-07 (原稿第10页) kind=knowledge ----
+两个固定点电荷使第三个电荷在库仑力作用下平衡
+
+只需把自由电荷（$q$任意）放在$E=0$的位置
+
+\textbf{三电平衡}\quad 三点共线\quad 两同夹异\quad 两大夹小\quad \underline{近小远大}
+
+
+\section{库仑定律·三电荷平衡}
+% ---- block 011-01 (原稿第11页) kind=formula ----
+\[
+q_1:q_2:q_3=L_1^2(L_1+L_2)^2:L_1^2L_2^2:L_2^2(L_1+L_2)^2
+\]
+% 以下三组口诀依次写在上式三项的正下方
+邻邻总总\quad 左左右右\quad \unclear{林林总总}
+\notefig[0.3]{figures/p011_a.png}
+
+
+\section{场强·电势·电场力做功}
+% ---- block 011-02 (原稿第11页) kind=formula ----
+\[
+E=\underbrace{\frac{F}{q}}_{\text{定义式}}=\underbrace{\frac{kQ}{r^2}}_{\substack{\text{点电荷}\\\text{决定式}}}=\underbrace{\frac{U}{d}}_{\text{匀强}}
+\]
+\[
+\varphi=\frac{E_p}{q}=\frac{kq}{r}\quad\mbox{\unclear{带正负}}
+\] % CHECK: 手写分式似为 E/d（分母像 d），按物理含义转为 E_p/q
+\[
+qEs\cos\theta=W_{ab}=qU_{ab}=q(\varphi_a-\varphi_b)=E_{pa}-E_{pb}
+\]
+
+
+\section{带电粒子·是否计重力}
+% ---- block 011-03 (原稿第11页) kind=note ----
+微观粒子（质中电）无重力\qquad 油滴小球微粒 有重力
+
+
+\section{电势·几何法}
+% ---- block 011-04 (原稿第11页) kind=method ----
+\textbf{电势几何}\quad 匀强电场\unclear{电场线}必平行且等距
+
+\textbf{匀强电场}：
+\begin{itemize}
+\item 平行四边形，对角线电势和相等
+\notefig[0.25]{figures/p011_b.png}
+\[
+\varphi_A-\varphi_B=\varphi_D-\varphi_C,\qquad \varphi_A+\varphi_C=\varphi_B+\varphi_D
+\]
+\item 三个点电势 $\to E$
+
+先找等势面 $\perp E$ $\to E$方向
+
+$E=\dfrac{U}{d}$
+\item % 手写大括号只括到上面几项，此行在括号之外
+若 B 为 AC 中点，$\varphi_B=\dfrac{\varphi_A+\varphi_C}{2}$
+\end{itemize}
+
+% ---- block 011-05 (原稿第11页) kind=method ----
+\textbf{非匀强电场}
+\notefig[0.25]{figures/p011_c.png}
+\begin{align*}
+&\varphi_A>\varphi_B>\varphi_C\qquad\text{匀强}\ \varphi_B=\dfrac{\varphi_A+\varphi_C}{2}\\
+&U_{AB}=\overset{\text{大}}{\overline{E}_{AB}}\cdot|AB|\\
+&U_{BC}=\overset{\text{小}}{\overline{E}_{BC}}\cdot|BC|\qquad U_{AB}>U_{BC}\\
+&\varphi_A-\varphi_B>\varphi_B-\varphi_C\\
+&\therefore\ \varphi_B<\tfrac{1}{2}(\varphi_A+\varphi_C)
+\end{align*}
+
+
+\section{等量电荷·中垂线电场}
+% ---- block 011-06 (原稿第11页) kind=knowledge ----
+\notefig[0.25]{figures/p011_d.png}
+中垂\unclear{线等}势面：等量异电
+
+中垂线\unclear{/}两条电场线：等量同电
+
+\begin{keybox}
+\red{中轴线上 $\theta=35.6^\circ$ 时 $E_{\max}$}\quad\red{后有证明} % CHECK: tan θ=√2/2 对应 θ≈35.3°，手写为 35.6°
+\end{keybox}
+
+\[
+\varphi_A>\varphi_B>\varphi_C\qquad \tan\theta=\frac{\sqrt{2}}{2}\ \text{处，}
+\]
+\[
+E_{c\max}>E_A>E_B
+\]
+\notefig[0.26]{figures/p011_e.png}
+中垂线等势面（$\varphi=0$）
+
+
+\section{场强·非质点电荷}
+% ---- block 013-01 (原稿第13页) kind=method ----
+\textbf{非质点电荷}
+
+\notefig[0.25]{figures/p013_a.png}
+割补法、微元法\ $\rbrack$\quad $E=\int\Delta E$
+% 手写在“割补法、微元法”右侧有一个竖长的方框括号，指向 E=∫ΔE
+
+$E=E_1+E_2$
+
+$\therefore E_1=E-E_2$
+
+\notefig[0.3]{figures/p013_b.png}
+$E_1=E_2$
+
+等效替代法
+
+% ---- block 014-05 (原稿第14页) kind=knowledge ----
+均匀球壳$Q$可等效于集中在球心处点电荷\unclear{上白项}
+
+
+\section{电容器·公式}
+% ---- block 013-02 (原稿第13页) kind=formula ----
+\[
+\left\{\begin{aligned}
+C&=\frac{Q}{U}=\frac{\varepsilon S}{4\pi kd}\\
+E&=\frac{U}{d}\\
+E&=\frac{Q\cdot 4\pi k}{\varepsilon S}
+\end{aligned}\right.
+\]
+% 下面一行写在第一个公式右侧（大括号之外）
+F\ 法拉\qquad m\ $\mu$\ n\ p\ f\qquad \textcircled{\scriptsize$10^3$}
+
+
+\section{电容器·串并联}
+% ---- block 013-03 (原稿第13页) kind=formula ----
+\begin{minipage}[t]{0.48\linewidth}
+\notefig[0.95]{figures/p013_c.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\notefig[0.95]{figures/p013_d.png}
+\end{minipage}
+
+\textbf{串}：
+\begin{align*}
+Q&=Q_1=Q_2\\
+U&=U_1+U_2\\
+\frac{1}{C}&=\frac{1}{C_1}+\frac{1}{C_2}
+\end{align*}
+\textbf{并}：
+\begin{align*}
+V&=V_1=V_2 % CHECK: 此行手写字母为 V（其余处写作 U），疑即 U=U_1=U_2
+\\
+Q&=Q_1+Q_2\\
+C&=C_1+C_2
+\end{align*}
+
+
+\section{电容器·静电计}
+% ---- block 013-04 (原稿第13页) kind=knowledge ----
+静电计：测电势差\quad $\theta\propto U$
+
+
+\section{电容器·极板移动与带电粒子}
+% ---- block 013-06 (原稿第13页) kind=method ----
+\notefig[0.8]{figures/p013_f.png}
+\textbf{左图}：
+\[
+mg(h+d)-qEd=0
+\]
+\[
+qE>mg
+\]
+
+\textbf{U不变}：
+
+中图：
+\begin{align*}
+&mg(h+d)+mgx-qU=\tfrac{1}{2}mv_{\text{末}}^2\\
+&\tfrac{1}{2}mv_{\text{末}}^2>0\quad\text{打到下极板}
+\end{align*}
+右图：
+\begin{align*}
+&mg(h+d)-mgx-qU=\tfrac{1}{2}mv_{\text{末}}^2\\
+&\tfrac{1}{2}mv_{\text{末}}^2<0\quad\therefore\text{到不了下极板}
+\end{align*}
+
+\textbf{Q不变（E不变）}：
+
+中图：
+\begin{align*}
+&mg(h+d)+mgx-qE\cdot d-qEx=\tfrac{1}{2}mv_{\text{末}}^2\\
+&\tfrac{1}{2}mv_{\text{末}}^2=(mg-qE)x<0\\
+&\text{运动不到下极板}
+\end{align*}
+右图：
+\begin{align*}
+&mg(h+d)-mgx-qE(d-x)=\tfrac{1}{2}mv_{\text{末}}^2\\
+&\tfrac{1}{2}mv_{\text{末}}^2=(qE-mg)x>0\\
+&\text{打到下极板}
+\end{align*}
+
+
+\section{示波管·电子偏转}
+% ---- block 014-01 (原稿第14页) kind=knowledge ----
+示波器：电子偏转\quad \fbox{$\Delta y\propto U$} % 手写红笔把 Δy∝U 圈起；标题下有波浪线
+
+
+\section{等效重力场}
+% ---- block 014-02 (原稿第14页) kind=method ----
+\textbf{等效场}
+
+\notefig[0.3]{figures/p014_a.png}
+% 图上标注（其中最高点右侧的 E_p? max 在图外右侧，已被裁掉，故在下行转录）：
+% 高 / E_k min / 反重点 / E_p? max ；最低 / E_k max / E_p? min / 同重点 / F' / mg
+\textbf{图上标注}：高\ $E_{k}\,\mathrm{min}$\ 反重点\ $E_{p\mbox{\unclear{等}}}\,\mathrm{max}$；\unclear{最}低\ $E_{k}\,\mathrm{max}$\ $E_{p\mbox{\unclear{等}}}\,\mathrm{min}$\ $F'$\ 同重点\ $mg$
+
+完整圆周：等效最高点\quad $v_{\text{高}}\ge\sqrt{g'R}$ % 手写在 V高≥√(g'R) 下有红色波浪线着重
+
+\[
+g_{\text{等}}=\frac{F_{\text{等}}}{m}=\frac{\sqrt{(mg)^2+(qE)^2}}{m}
+\] % 手写在根号下方有红色波浪线着重
+
+
+\section{静电平衡}
+% ---- block 014-03 (原稿第14页) kind=knowledge ----
+\textbf{静电平衡}
+
+\notefig[0.25]{figures/p014_b.png}
+% 图中：由“稳定”引出一条弧线箭头，指向标题“静电平衡”
+$E_{\text{内}}=0$
+
+$\vec{E}_{\text{感应电荷}}+\vec{E}_{\text{原}}=0$\qquad 导体为等势体，电场线与表面垂直
+
+
+\section{静电屏蔽}
+% ---- block 014-04 (原稿第14页) kind=knowledge ----
+\textbf{静电屏蔽}
+\begin{itemize}
+\item 金属导体\quad 屏蔽外来电场线$'$
+\item 金属导体 $+$ 壳不接地\quad 无法屏蔽内线$'$
+\item 金属导体 $+$ 外壳接地\quad 屏蔽内线
+\end{itemize}
+\notefig[0.7]{figures/p014_c.png}
+
+
+\section{静电的应用}
+% ---- block 014-06 (原稿第14页) kind=knowledge ----
+\textbf{应用}：
+\begin{itemize}
+\item 静电吸附：吸尘、除尘、复印
+\item 尖端\unclear{放}电 % CHECK: 手写字形近“防”，按物理术语“尖端放电”转录
+\begin{itemize}
+\item 利用：避雷针\ 打火机
+\item 避免：电晕、油罐、车接地铁链\ 导电橡胶轮胎
+% 此行“油罐、”与“车接地铁链”之间有一块白色修正贴（上有“、”）；其上方另有小字批注及一条竖线指向此行，字迹难辨：
+（上方小字批注：\unclear{车软}）
+\end{itemize}
+\item 静电屏蔽：网状高压工作服，密闭金属罩
+\end{itemize}
+
+
+\section{偏转电场·类平抛}
+% ---- block 047-01 (原稿第47页) kind=derivation ----
+\red{①}\ \textbf{电场类平抛}
+
+\notefig[0.5]{figures/p047_a.png}
+% 图内标注：U1、+、L1、d、−、θ、L2、y1、y2，及"匀加速""偏转""匀速直线运动"；图左侧另有粒子标注 m·q（在 U1 极板左边，未入图）
+% 图右上方另有手写小注"板长．"及一个小箭头/L2 样的记号（未入图）
+
+板长．
+
+\[
+\begin{cases}
+v=at\ \to\ V=\sqrt{\dfrac{2qU_1}{m}}\\[6pt]
+d=\dfrac{1}{2}at^{2}\ \to\ \sqrt{\dfrac{2d}{a}}=\sqrt{\dfrac{2md^{2}}{qU_1}}\\[6pt]
+a=\dfrac{qU}{md}
+\end{cases}
+\]
+% CHECK: 第二行根号内分母写作 qU1，按物理应为偏转电压 U2（或原稿即 U）
+
+\[ qU_1=\frac{1}{2}mV_0^{2} \]
+\[ y_1=\frac{1}{2}\,\frac{qU_2}{md}\left(\frac{L_1}{V_0}\right)^{2} \]
+\[ \tan\theta=\frac{at}{V_0}=\frac{qU_2L_1}{mdV_0^{2}} \]
+\[ \red{\star}\ D=y_1+y_2=\frac{1}{2}\,\frac{qU}{md}\left(\frac{L_1}{V_0}\right)^{2}+\frac{qU_2L_1L_2}{mdV_0^{2}}=\frac{U_2L_1^{2}}{4dU_1}+\frac{U_2L_1L_2}{2dU_1} \]
+% CHECK: 第一项分子原稿为 qU（无下标，应为 qU_2）
+\[ y_2=L_2\tan\theta \]
+
+{\large 侧移与$U_{\text{偏}}$成正比}
+
+侧移量与$K$无关（荷质比）故电\unclear{性}相同粒子同轨迹
+
+
+\section{交变电场·正弦波}
+% ---- block 047-02 (原稿第47页) kind=method ----
+\red{②}\ \textbf{正弦波}（忽略偏转时间）
+
+\notefig[0.3]{figures/p047_b.png}
+% 图内标注：U、U_m、U_0、t，以及横轴下方小字(t_有、t_无 一类)
+
+\unclear{恰}好从极板边缘射出粒子的$U_{\text{临}}$
+
+\[ \frac{d}{2}=\frac{U_0L_1^{2}}{4dU_1}\qquad \text{故}\ U_{\text{临}}=U_0=\frac{md^{2}v^{2}}{qL_1^{2}}=\frac{2d^{2}U_1}{L_1^{2}} \]
+
+① 若 $U_m\le U_0$ 全飞出
+
+② 若 $U_m>U_0$\quad $\dfrac{U_0}{U_m}=\dfrac{1}{2}$\ \ $\dfrac{t_{\text{有}}}{t_{\text{无}}}=\dfrac{1}{2}$\quad $\dfrac{U_{\text{\unclear{临}}}}{U_m}=\dfrac{\sqrt{2}}{2}$\ \ $\dfrac{t_{\text{有}}}{t_{\text{无}}}=\dfrac{1}{1}$\quad $\dfrac{U_{\text{\unclear{临}}}}{U_m}=\dfrac{\sqrt{3}}{2}$\ \ $\dfrac{t_{\text{有}}}{t_{\text{无}}}=\dfrac{2}{1}$
+% CHECK: t_有/t_无 下标字形不甚清楚(按物理含义录为 有/无)；后两个分式分子写作 U 加一个汉字下标(似"临")，第一个为 U_0
+
+\[
+\text{屏上亮线长}\ \left\{\begin{array}{l@{\quad}l}
+U_m\le U_0\text{时} & L=2D=2\Bigl(\dfrac{U_mL_1^{2}}{4dU_1}+\dfrac{U_mL_1L_2}{2dU_1}\Bigr)\\[10pt]
+U_m>U_0\text{时} & \text{\unclear{必}有射出\ 有撞板}\ \ L=2D=2\Bigl(\dfrac{d}{2}+L_2\cdot 2\,\dfrac{\frac{d}{2}}{L_1}\Bigr)\\[10pt]
+ & \qquad\qquad\ =d+L_2\tan\theta=d+2L_2\tan\theta
+\end{array}\right.
+\]
+% CHECK: "d/2"分式的分母原稿写作 ℓ（疑为 L_1，下标可能漏写）；最末一个 tan 后的角度符号写得像 α/δ，此处按 θ 录入；"="后的 d 处有涂改液修改痕迹
+
+
+\section{交变电场·方形波}
+% ---- block 047-03 (原稿第47页) kind=method ----
+\red{③}\ \textbf{方形波}\quad \fcolorbox{red!75!black}{white}{\begin{tabular}{c}$U$-$t$\\ 由 $E$-$t$ 画 $v$-$t$\end{tabular}}\quad 正上负下零化平．释放时刻画2周期
+
+\notefig[0.5]{figures/p047_c.png}
+% 图内标注：E、V、t、T/2、T、3T/2、2T、L=nTV_0，红字"T/8 起步""3T/8 起步"（图为 E-t 方波与对应的 v-t 折线，红色虚线为另一释放时刻的 v-t）
+
+\notefig[0.4]{figures/p047_d.png}
+% 图内红字：[0,T/4]段"终向与起步同向"；[T/4,3T/4]段"终向与反向起步"；[3T/4,T]段"终向与起步同向"
+
+\[ \Bigl[0,\frac{T}{4}\Bigr]\cup\Bigl[\frac{3}{4}T,\,T\Bigr]\ \text{终向相同}\]
+\[ \Bigl[\frac{T}{4},\frac{3}{4}T\Bigr]\ \text{终向相反．} \]
+
+\[ \frac{T_1+T_2}{2}=\frac{T}{4}\ \ \text{终向相同} \]
+\[ \frac{T_1+T_2}{2}=\frac{T}{2}\ \ \text{终向相反} \]
+
+% ---- block 047-04 (原稿第47页) kind=method ----
+① \textbf{垂直型}
+
+\notefig[0.4]{figures/p047_e.png}
+% 图内标注：nT、V_0（多个向右箭头）
+
+周期整数倍的运动时间\ 出射速度与入射速度相同．
+
+② \ 静止释放打板型．
+
+\notefig[0.25]{figures/p047_f.png}
+
+
+\section{电势能·系统}
+% ---- block 083-02 (原稿第83页) kind=formula ----
+% 红笔：三个q，边上标l的小斜线(三角形三顶点)
+\notefig[0.25]{figures/p083_a.png}
+\red{$E_p=\dfrac12\,\dfrac{3kq}{r}\,q$}
+
+$q$与$Q$系统电势能$=E_{pq}$
+
+
+\section{电通量}
+% ---- block 083-05 (原稿第83页) kind=formula ----
+\[
+\Phi_{\text{电}}=E_{\perp}S
+\]
+
+
+\section{等效场·抛体}
+% ---- block 088-01 (原稿第88页) kind=method ----
+\noindent \textbf{等效场}
+% 标题被菱形框住
+
+\noindent ① 抛体\qquad $V\perp F_{\text{合}}$ 时 $V_{\min}$
+
+\notefig[0.3]{figures/p088_a.png}
+\noindent 求 $V_{\min}$
+\begin{align*}
+V&=\sqrt{(2gt)^2+(V_0-gt)^2}\\
+&=\sqrt{5g^2t^2-2V_0gt+V_0^2}\\
+\min&=\frac{2\sqrt5}{5}V_0
+\end{align*}
+% 第三行原稿写作 “min =”（省略了 V）
+
+\noindent （法1）二次函数\qquad $t=\dfrac{2V_0g}{10g^2}=\dfrac{V_0}{5g}$ 时 $V_{\min}$\quad $\checkmark$
+% “法1”“法2”原稿是画圈的标记
+
+\noindent （法2）类斜抛
+\notefig[0.4]{figures/p088_b.png}
+\[ V_0\cos\alpha=V_{0x} \]
+\[ V_{\min}=V_{0x} \]
+
+
+\section{等效场·圆周}
+% ---- block 088-02 (原稿第88页) kind=method ----
+\noindent ② 圆\unclear{周}
+% 原稿为“圆用”，第二字形似“用”
+\notefig[0.45]{figures/p088_c.png}
+\begin{itemize}
+\item 等效最高点\quad 动能最小
+\item 上点\quad $E_{pG\,\max}$
+\item 右点\quad $E_{\text{机}\,\max}$\quad 电场指向最远点\qquad 加磁场也对，洛伦兹力不做功
+\item $g'$\ 等效最低点\quad 动能最大
+\item 下点\quad $E_{pG\,\min}$
+\item $E_{p\text{电}}+E_{pG}$ 最小
+\end{itemize}
+% E_pG 的下标 G 手写形似 a/G（疑为重力势能）
+
+\medskip
+\noindent
+\begin{tabular}{@{}lll@{}}
+绳 & 等效高 & $V=\sqrt{g'R}$ \\
+ & 低 & $V=\sqrt{5g'R}$
+\end{tabular}
+\qquad $g'=\dfrac{g}{\cos\theta}$
+
+\noindent $\Delta F_{\text{向}}=4mg'$
+
+
+\section{等效场·绳拉直}
+% ---- block 088-04 (原稿第88页) kind=method ----
+\notefig[0.25]{figures/p088_h.png}
+\notefig[0.3]{figures/p088_e.png}
+\noindent 本来
+\notefig[0.25]{figures/p088_f.png}
+\noindent 现在转 $E$ 方向为左。
+\notefig[0.25]{figures/p088_g.png}
+% 本块全是示意图：左下为一小草图；中间为小球受力/速度分解（图内标注“(损失)”“V cos60°”“剩下”“F合2”）；右侧两个力三角形：本来 Eq 向右、mg 向下、F合1，夹角60°；现在 E 转向左，Eq 向左，F合2，夹角60°
+
+
+\section{电场强度·极值}
+% ---- block 091-01 (原稿第91页) kind=method ----
+\notefig[0.25]{figures/p091_a.png}
+
+$E_{\max}$
+\[
+E_{\text{合}}=2E\sin\theta=\frac{2kQ}{L^{2}}\cos^{2}\theta\sin\theta
+\]
+% 原稿：从右侧求导推导处画有一条弯箭头指向上面这个 E合 式
+令 $y=\cos^{2}\theta\sin\theta$，
+\[
+y'=2\cos\theta(-\sin\theta)\sin\theta+\cos^{3}\theta=0,\qquad
+\tan\theta=\frac{\sqrt{2}}{2},\qquad \theta=35.6^\circ
+\]
+% CHECK: arctan(√2/2)≈35.3°，原稿写的是 35.6
+或\quad
+\[
+2y^{2}=\cos^{2}\theta\,\cos^{2}\theta\,2\sin^{2}\theta\le\left(\frac{\cos^{2}\theta+\cos^{2}\theta+2\sin^{2}\theta}{3}\right)^{3}
+\]
+当 $\cos^{2}\theta=\cos^{2}\theta=2\sin^{2}\theta$ 时\ $\tan\theta=\dfrac{\sqrt{2}}{2}$
+
+
+\section{库仑定律·两球接触后分开}
+% ---- block 091-09 (原稿第91页) kind=method ----
+两球碰后再分开\quad $F_{\text{库}}\uparrow$ 无法确定同电荷\quad $F_{\text{库}}\downarrow$ 一定\unclear{是}异种电荷
+\[
+\frac{kQq}{r^{2}}<\frac{k\left(\frac{Q-q}{2}\right)^{2}}{r^{2}}\ \text{有解}\qquad
+\frac{kQq}{r^{2}}>\frac{k\left(\frac{Q+q}{2}\right)^{2}}{r^{2}}\ \text{无解}
+\]
+
+% ---- block 095-03 (原稿第95页) kind=note ----
+两球接触后\ 电荷平分
+
+
+\section{库仑定律·电荷分配极值}
+% ---- block 091-10 (原稿第91页) kind=method ----
+把 $+Q$ 分给2个球使之作用力最大
+\[
+\frac{kq(Q-q)}{r^{2}}=\frac{k(-q^{2}+qQ)}{r^{2}}\qquad q=\frac{Q}{2}\ \text{时}\ F_{\text{库}}\ \text{最大}
+\]
+
+
+\section{电场强度·小量近似}
+% ---- block 092-01 (原稿第92页) kind=method ----
+\textbf{小量近似}
+\notefig[0.25]{figures/p092_a.png}
+
+% “L≫a”写在下面“忽略”二字的上方
+$L\gg a$
+
+求 $\dfrac{E_{M}}{E_{N}}$\quad 忽略 $\left(\dfrac{a}{L}\right)^{n}$\ $n\ge 2$
+\begin{align*}
+E_{M}&=2\frac{kQ}{a^{2}}\cos^{3}\theta=\frac{2kQ}{a^{2}}\left(\frac{a}{\sqrt{a^{2}+L^{2}}}\right)^{3}\\
+&=\frac{2kQa}{\left[L^{2}\left(1+\frac{a^{2}}{L^{2}}\right)\right]^{3/2}}=\frac{2kQa}{L^{3}}\\
+E_{N}&=\frac{kQ}{(L-a)^{2}}-\frac{kQ}{(L+a)^{2}}=\frac{4kQLa}{(L^{2}-a^{2})^{2}}\\
+&=kQ\cdot4La\cdot\frac{1}{\left[L^{2}\left(1-\frac{a^{2}}{L^{2}}\right)\right]^{2}}=\frac{4kQa}{L^{3}}\\
+\therefore\ \frac{E_{M}}{E_{N}}&=\frac{1}{2}
+\end{align*}
+
+
+\section{静电场·知识框架}
+% ---- block 093-01 (原稿第93页) kind=summary ----
+\textbf{静电场}
+\[
+\text{电场力的性质}\ \left\{\begin{array}{l}
+\text{电荷、电荷\unclear{守}恒定律}\\[2ex]
+\text{库仑定律}\\[2ex]
+\text{电场}
+\end{array}\right.
+\]
+\begin{itemize}
+\item 库仑力的理解应用
+\item 库仑力作用下的平衡与加速问题
+\item 电场强度的叠加问题
+\item 非点电荷带电体场强的计算
+\end{itemize}
+\textbf{电场能的性质}
+\begin{itemize}
+\item 静电力做功与电势能
+\item 电场和等势面
+\item 电势差
+\item 电势高低，与电势能大小判断
+\item 电势差与电场强度的关系
+\item 电场线、等势线(面)与粒子轨迹的综合问题
+\end{itemize}
+
+% ---- block 094-01 (原稿第94页) kind=summary ----
+\begin{itemize}
+\item 静电场中三类图像\quad $E_{p}-x$\quad $E-x$\quad $\varphi-x$
+\item 带电体在电场中功能问题
+\end{itemize}
+\[
+\left\{\begin{array}{l}
+\text{电容器与电容}\\[2ex]
+\text{带电粒子在电场中的运动.}
+\end{array}\right.
+\]
+\[
+\begin{array}{l}
+\text{电容器}\\[2ex]
+\text{带电粒子在电场\unclear{中}的运动}
+\end{array}
+\left\{\begin{array}{l}
+\text{平行板电容器的动态分析.}\\[1.5ex]
+\text{带电粒子在电场中的直线运动}\\[1.5ex]
+\text{带电粒子在电场中的偏转}\\[1.5ex]
+\text{带电粒子在交变电场中的运动}
+\end{array}\right.
+\]
+\[
+\left\{\begin{array}{l}
+\text{电场中的力电综合问题}\\[2ex]
+\text{等效重力场中的圆周问题.}
+\end{array}\right.
+\]
+% 左边缘 y≈0.64 处有被页边裁切的残字（疑为带圈数字加一个字），无法辨认，未转录
+
+
+\section{静电场·公式汇总}
+% ---- block 095-01 (原稿第95页) kind=formula ----
+\textbf{静电场}
+
+% “矢量合成”为 E=F/q 上方的小字
+{\small 矢量合成}
+\[
+E=\frac{F}{q}\qquad U=\frac{W}{q}\qquad \varphi_{A}=\varphi_{AO}=\frac{W_{AO}}{q}
+\]
+\[
+U_{AB}=\varphi_{A}-\varphi_{B}\qquad E_{p\text{电}}=\varphi q\qquad W_{AB}+\Delta E_{p\text{电}}=0
+\]
+$U\ \ \varphi\ \ E\ \ W$\ 带正负比大小，代数加和\qquad $W_{AB}=qU_{AB}=q(\varphi_{A}-\varphi_{B})$
+
+% ---- block 095-05 (原稿第95页) kind=formula ----
+% 左侧大括号；括号左边的页边有被裁切的残字（“…试.”），无法辨认，未转录
+\[
+\left\{\begin{aligned}
+&F_{\text{库}}=\frac{kQq}{r^{2}}\qquad k=9\times10^{9}\unit{N\,m^{2}/C^{2}}\\
+&E=\frac{F}{q}=\frac{kQ}{r^{2}}=\frac{U}{d}\ (\text{匀强})\qquad U=Ed\cos\theta\ (\theta<90^\circ)\qquad U>0\ \text{电压为正数}\\
+&W_{\text{电}}\ \text{与位置有关}\ \text{与路径无关.}\ \text{保守力}\\
+&C=\frac{Q}{U}=\frac{\varepsilon S}{4\pi kd}\quad \text{恒}Q\text{时}\ E=\frac{U}{d}=\frac{Q}{Cd}=\frac{4\pi kQ}{\varepsilon S}\quad \red{\dfrac{4\pi kQ}{\varepsilon S}}\\
+&\text{粒子偏转}\ a=\frac{qU}{md}\quad D=\frac{U_{2}L_{1}^{2}}{4dU_{1}}+\frac{L_{1}L_{2}U_{2}}{2dU_{1}}
+\end{aligned}\right.
+\]
+% 红笔：E 式右边另用红色重写了 4πkQ/(εS)（分数线画成箭头）
+侧移量与偏转电压成正比\quad $y\propto U_{\text{偏}}$
+
+% “正比”二字被圈起，并与右边 y∝U偏 相连
+与加速电压成反比.\quad $y\propto\dfrac{1}{U_{\text{加速}}}$
+
+
+\section{库仑定律·三球平衡}
+% ---- block 095-02 (原稿第95页) kind=method ----
+①\ 三球问题\quad 两大夹小\ 两同夹异\ 近小远大
+\notefig[0.25]{figures/p095_a.png}
+\begin{align*}
+\frac{kq_{1}q_{2}}{r_{1}^{2}}&=\frac{kq_{1}q_{3}}{(r_{1}+r_{2})^{2}}\\
+\frac{kq_{2}q_{3}}{r_{2}^{2}}&=\frac{kq_{1}q_{3}}{(r_{1}+r_{2})^{2}}
+\end{align*}
+\[
+\frac{\sqrt{q_{1}}}{\sqrt{q_{3}}}=\frac{r_{1}}{r_{2}}\qquad
+\frac{1}{\sqrt{q_{1}}}+\frac{1}{\sqrt{q_{3}}}=\frac{1}{\sqrt{q_{2}}}\qquad
+q_{1}:q_{2}:q_{3}=\left(\frac{r_{1}+r_{2}}{r_{2}}\right)^{2}:1:\left(\frac{r_{1}+r_{2}}{r_{1}}\right)^{2}
+\]
+% CHECK: 最后一项被页边裁切，按 (r1+r2)/r1 转录
+
+
+\section{电场线·匀强电场判断}
+% ---- block 095-04 (原稿第95页) kind=note ----
+电场线平行 必为匀强\struck{磁}电场
+% 原稿“磁”字被涂改，上方补写了“电”
+
+
+\section{电场·比较大小}
+% ---- block 095-06 (原稿第95页) kind=method ----
+②\ 比 $E$，$\varphi$\quad $U$\quad $W$\quad $E_{p}$
+
+\unclear{密}大疏小\quad \begin{tabular}[t]{@{}l@{}}顺小\\逆大\end{tabular}\quad $U=Ed$ 正同负反\quad $E_{p}=\varphi q$\quad 电压比=线段比
+
+
+\section{电容器·动态分析}
+% ---- block 095-07 (原稿第95页) kind=method ----
+③\ 电容器\quad 通电恒$U$\quad 断电恒$Q$ $E$不变.
+
+移板 $\varphi$ 变化\quad
+\fbox{\begin{tabular}{l}
+通电外移 正小负大\ (矛盾关系)\\
+断开电外移，正小负大
+\end{tabular}}
+\quad
+\fbox{外移正小负大，断电接地才\struck{…}变化}
+% 第一个框内第二行末尾有一块被涂白（修正液）的文字；第二个框“才”与“变化”之间有一个被涂黑的字
+
+
+\section{电场线与等势面·性质}
+% ---- block 095-08 (原稿第95页) kind=knowledge ----
+④\ 连续带电体 $/$ 微元 $/$ 用线电密度 $/$ 面电密度.
+
+电场线$\perp$等势线 $/$ 沿场方向电势降最快 $/$ $\varphi$、$E$ \unclear{同}疏密 电场线 等势线 $/$ $E$ 指向低电势.
+
+匀强 等势面为等差表示\qquad 同一等势面 电场力不做功
+
+
+\section{电势·单调性判断}
+% ---- block 095-09 (原稿第95页) kind=method ----
+\unclear{⑤}
+\notefig[0.25]{figures/p095_b.png}
+从 $C$ 到 $D$、(用求导方法)
+
+电势单调递减
+% “D、”后有一块被涂白的文字
+
+
+\section{等势面·点电荷}
+% ---- block 095-10 (原稿第95页) kind=knowledge ----
+\unclear{⑥}
+\notefig[0.25]{figures/p095_c.png}
+\[
+\left\{\begin{array}{l}
+\text{等距圆环不是等势面}\quad \varphi=\dfrac{kq}{r}\quad r\uparrow\ \varphi\downarrow\\[3ex]
+\text{等势面 间距越往外越大.}
+\end{array}\right.
+\]
+
+
+\section{圆形区域电场·动能最大点}
+% ---- block 099-02 (原稿第99页) kind=problem ----
+②
+\notefig[0.25]{figures/p099_b.png}
+
+在C动能最大，在C处做切线，电场指向C\\
+垂直于C处切线
+\[ W_{ac}=2qER\cos^{2}\alpha \]
+
+
+\section{带电粒子在电场中的轨迹分析}
+% ---- block 118-02 (原稿第118页) kind=method ----
+电场线\quad 切$+$凹
+
+等势面\quad 垂$+$凹\quad 处处垂$E$，疏密不同
+
+\notefig[0.3]{figures/p118_a.png}
+% 图中标注：A、B 两点，F，多条带箭头的曲线轨迹
+
+\[
+\left\{\begin{aligned}
+E_{kB}&>E_{kA}\\
+E_{pB}&<E_{pA}\ \text{力方向}
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+&\text{电性\ 正同负反}\\
+&W_{\text{电}}\ \text{正同负反}
+\end{aligned}
+\]
+
+\[
+\left\{\begin{aligned}
+a_A&>a_B\\
+\varphi_A&>\varphi_B
+\end{aligned}\right.
+\ \text{疏密、顺逆电场线}
+\qquad
+\text{沿受力方向\ 动增势减}
+\]
+
+% ---- block 118-04 (原稿第118页) kind=method ----
+\notefig[0.25]{figures/p118_c.png}
+% 图中标注：弧线轨迹，弧上带 $\oplus$ 的点，左侧一个小电荷符号，受力 F 箭头向左（指向凹侧）
+
+异种电荷
+
+凹侧包住点电荷、离的近时动能大
+
+% ---- block 118-05 (原稿第118页) kind=method ----
+\notefig[0.25]{figures/p118_d.png}
+% 图中标注：左侧孤立的 $\oplus$，两条相对弯曲的弧线（弧上各有一个 $\oplus$），左弧上有一个 X 记号
+
+粒子轨迹从X到X可以不确定
+
+
+\section{点电荷电场·等势面}
+% ---- block 118-03 (原稿第118页) kind=knowledge ----
+\notefig[0.25]{figures/p118_b.png}
+
+圆形辐状电场等势面越往外越宽，非等间隔（\unclear{$\pm Q$}）
+
+
+\section{E-x与φ-x图像}
+% ---- block 197-01 (原稿第197页) kind=note ----
+% 本页另有一条自右上角（一个黑点处）向左下弯曲、横穿页面中下部的大弧线，疑似划去标记；还有几处波浪形涂画线（页面左侧y约0.60-0.63与右侧y约0.69、0.77），均非文字，未录
+% 页面左上角（x约0.05-0.10,y约0.06-0.09）有一个被多道斜线涂划的词，形似“方向”
+\struck{\unclear{方向}}
+
+\notefig[0.25]{figures/p197_a.png}
+$U=\displaystyle\int E\,\dd x=U$ % 末尾的 $U$ 手写形似小写 u
+
+\notefig[0.4]{figures/p197_b.png}
+$k=F\propto E$ % 纵轴标签涂改难辨；图旁文字在图内已含
+
+\notefig[0.32]{figures/p197_c.png}
+% 上图为两条带 $\theta$ 记号的带箭头横线草图（图内无其它文字）
+
+\notefig[0.3]{figures/p197_d.png}
+% 图中标注：纵轴 $\varphi$，横轴 $x$，曲线旁 $k=E$，图下双向箭头旁 $E=0$
+
+
+\section{电容器·充放电图像}
+% ---- block 197-02 (原稿第197页) kind=knowledge ----
+% 原稿此块中部被页面中央的大弧线划过，仍照录
+\notefig[0.25]{figures/p197_e.png}
+
+$C=\dfrac{Q}{U}=$ \struck{$\dfrac{CE}{U}$}\qquad $Q=CE$
+% 第二个分式 $CE/U$ 被斜线划去，分子上还有涂改的墨点；图上方有一条斜线，起于“E=”，指向右上角一个小菱形记号
+
+$k=\dfrac{\Delta Q}{\Delta t}$\qquad $i\downarrow$
+
+\notefig[0.25]{figures/p197_f.png}
+
+\[
+k=\frac{\Delta U}{\Delta t}=\frac{\Delta q}{C\Delta t}=\frac{I}{C}
+\]
+
+\notefig[0.28]{figures/p197_g.png}
+
+$q=S_{\text{阴}}$\qquad 数格子算面积 % “数”字手写形似“表”，按语义取“数”
+

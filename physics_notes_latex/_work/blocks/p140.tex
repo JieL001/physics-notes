@@ -1,0 +1,39 @@
+%%%PAGE 140 rot=0 legibility=good summary=〈遮光类〉：月球遮挡月球卫星微波信号的时间(含推导与结果)；飞机上看日出问题(俯视，t=θ/2π T≈13min)
+%%%BLOCK id=140-01 ch=05 sec=遮光类·遮挡时间 kind=summary alt=none cont=none y=0.03-0.10
+$\langle$\textbf{遮光类}$\rangle$\quad $t=\dfrac{2\theta}{2\pi}T$% 标题被手绘尖括号括起；θ 右上角有一小笔画
+%%%END
+%%%BLOCK id=140-02 ch=05 sec=遮光类·遮挡时间 kind=problem alt=none cont=none y=0.09-0.56
+\begin{problem}[1.]
+月球绕地球周期为 $T$。若卫星绕月运行一个周期内卫\unclear{星}轨道平面与地月连心线共面，求卫\unclear{星}发射的微波信号因月球遮挡\unclear{而不能}到达地球的时间% 原稿这几行右端被页边切断
+%FIG p140_a 0.12 0.094 0.634 0.22
+\notefig[0.75]{figures/p140_a.png}
+\begin{solution}
+\[ t=\frac{2\theta}{2\pi}T_x \]
+\[ \theta+\beta=\alpha \]
+\[ \cos\alpha=\frac{R-R_1}{r} \]
+\[ \cos\beta=\frac{R_1}{r_1} \]
+\[ T=2\pi\sqrt{\frac{r^3}{GM}}\qquad T_x=2\pi\sqrt{\frac{r_1^3}{Gm}} \]
+\begin{center}
+\struck{$T_x=2\pi\sqrt{\dfrac{r_1^3}{Gm}}$}% 原稿此式被划掉
+\end{center}
+\[ \therefore T_x=T\sqrt{\frac{Mr_1^3}{mr^3}} \]
+\[ t=\frac{\left(\arccos\dfrac{R-R_1}{r}-\arccos\dfrac{R_1}{r_1}\right)T\sqrt{Mr_1^3}}{\pi\sqrt{mr^3}} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=140-03 ch=05 sec=遮光类·遮挡时间 kind=problem alt=04 cont=none y=0.57-0.93
+\begin{problem}[2.]
+一架飞机在高度 $h=10\,\mathrm{km}$ 上空看到太阳正升起，估算飞机正下方地面观察者还要经多久才可以看见太阳。$R_{\text{地}}=6400\,\mathrm{km}$\quad $|x|\ll1$ 时 $\cos x\approx1-\dfrac{x^2}{2}$
+%FIG p140_b 0.02 0.642 0.40 0.762
+\notefig[0.55]{figures/p140_b.png}
+\begin{solution}
+俯视
+
+\[ \cos\theta=\frac{R}{h+R}=0.998\approx1-\frac{\theta^2}{2} \]
+\[ \theta=0.06 \]
+\[ t=\frac{\theta}{2\pi}T \]
+\[ t=13\,\mathrm{min} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 140

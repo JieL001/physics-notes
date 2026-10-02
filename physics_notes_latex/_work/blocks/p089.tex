@@ -1,0 +1,82 @@
+%%%PAGE 089 rot=0 legibility=good summary=非惯性系惯性力；水平圆盘上A、B质心与滑动临界；圆周运动以圆心为参考系(弹性碰撞)；动量+磁场(碰撞后轨道)；α/β衰变轨迹；功与摩擦、平均功率；人船模型
+% 右上角页边外有手写 “No. 0=1.429 g·L^-1” 样字迹，疑为相邻页/杂物，未转录
+%%%BLOCK id=089-01 ch=03 sec=非惯性系·惯性力 kind=knowledge alt=none cont=none y=0.04-0.125
+\noindent $\to a$\quad $\leftarrow ma$
+% 位于标题上方的小字
+
+\noindent 非惯性系。反向施\unclear{加}$ma$ 使之平衡（假想）\quad 施加惯性力\ 并不存在
+% “非惯性系”原稿被菱形框住；“施加”的“加”字形似“向”
+%%%END
+%%%BLOCK id=089-02 ch=04 sec=水平面圆周·质心与滑动临界 kind=problem alt=03 cont=none y=0.125-0.255
+\begin{problem}
+%FIG p089_a 0.10 0.13 0.25 0.205
+\notefig[0.25]{figures/p089_a.png}
+\begin{solution}
+质心 $=\dfrac{2rm+mr}{2m}=\dfrac32r$ 距轴 $\dfrac12r$\qquad $2m\omega^2\dfrac r2>2\mu mg$ 时 向左滑。
+
+若质心距轴为0 则不会滑动\qquad $2m\omega^2\cdot0=0$。
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=089-03 ch=04 sec=圆周运动·圆心参考系 kind=problem alt=07 cont=none y=0.24-0.345
+\noindent 圆周运动以圆心为参考系\qquad $V$ 为相对于圆心的速度。
+\begin{problem}
+%FIG p089_b 0.045 0.27 0.16 0.34
+\notefig[0.25]{figures/p089_b.png}
+当B\underline{第一次回到$A$}正下方时，求细线拉力大小
+% 下划线画在“第一次回到A”下面
+\begin{solution}
+完全弹性碰撞\qquad $\Delta V_{\text{前}}=\Delta V_{\text{后}}$\qquad $T-mg=\dfrac{m\Delta V^2}{L}=\dfrac{mV_0^2}{L}$
+% “ΔV后”的 Δ 手写形似 0
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=089-04 ch=11 sec=带电粒子在磁场中的圆周·动量 kind=problem alt=07 cont=none y=0.37-0.51
+\noindent 动量+磁场
+\[ qVB=\frac{mV^2}{R}\qquad R=\frac{mV}{qB}=\frac{P}{qB} \]
+%FIG p089_c 0.41 0.385 0.53 0.445
+\notefig[0.25]{figures/p089_c.png}
+\[ m_1V_0=(m_1+m_2)V_{\text{共}} \]
+\[ r_1=\frac{m_1V_0}{qB}\qquad r_{\text{共}}=\frac{(m_1+m_2)V_{\text{共}}}{qB}=\frac{m_1V_0}{qB}=r_1 \]
+\noindent 由 $V_{\text{共}}<V_0$ 故用时更长。
+%%%END
+%%%BLOCK id=089-05 ch=17 sec=衰变·磁场中的轨迹 kind=method alt=11 cont=none y=0.50-0.70
+\noindent $\alpha$ 衰变\quad 外切
+%FIG p089_d 0.07 0.545 0.22 0.605
+\notefig[0.25]{figures/p089_d.png}
+\[ R_\alpha=\frac{m_\alpha V_\alpha}{q_\alpha B}\qquad R_{\text{新}}=\frac{m_{\text{新}}V_{\text{新}}}{q_{\text{新}}B} \]
+\begin{keybox}
+$R\propto\dfrac1q$\quad 故 $R_\alpha$、$R_\beta$ 大。
+\end{keybox}
+\noindent $\beta$ 衰变\quad 内切
+%FIG p089_e 0.07 0.625 0.215 0.695
+\notefig[0.25]{figures/p089_e.png}
+%%%END
+%%%BLOCK id=089-06 ch=06 sec=功·摩擦力做功 kind=knowledge alt=none cont=none y=0.70-0.78
+\begin{itemize}
+\item 相互作用力的功是无关的
+\item 斜面摩擦 如走平地
+\end{itemize}
+% 以上两行左侧有大括号
+\begin{keybox}
+曲面摩擦\quad 槽$\overset{V}{\text{大}}$拱$\overset{V}{\text{小}}$消耗多
+\end{keybox}
+% 原稿此行被红笔圈出；“大”“小”二字上方各有一个 V（疑为速度）
+%%%END
+%%%BLOCK id=089-07 ch=06 sec=功率·平均功率 kind=formula alt=none cont=none y=0.765-0.84
+%FIG p089_f 0.705 0.765 0.80 0.81
+\notefig[0.25]{figures/p089_f.png}
+\[ \bar P_G=\frac Wt\qquad P_{G\,\text{瞬}}=FV\cos\alpha \]
+% CHECK: 下标 G 手写形似 G，疑为“功/合”
+\noindent 对匀变速\quad $P_{t/2}=\dfrac{P_0+P_t}{2}=\bar P$\qquad $W=\dfrac{(P_0+P)t}{2}=\bar Pt$
+%%%END
+%%%BLOCK id=089-08 ch=07 sec=人船模型 kind=method alt=none cont=none y=0.85-0.98
+\noindent 人船模型
+\[ m_1V_1=m_2V_2 \]
+\[ m_1S_1=m_2S_2 \]
+\[ S_1+S_2=S_{\text{相}} \]
+\[ \begin{cases} S_1=\dfrac{m_2}{m_1+m_2}S_{\text{相}}\\[6pt] S_2=\dfrac{m_1}{m_1+m_2}S_{\text{相}}\end{cases} \]
+\noindent 由牛一 $\Sigma F=0\ \longrightarrow$ 静止 或 匀速直线运动 \\
+系统 $\Sigma F=0\ \longrightarrow$ 质心 静止 或 匀速直线运动
+%%%END
+%%%PAGEEND 089

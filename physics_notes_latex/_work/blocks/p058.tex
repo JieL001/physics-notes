@@ -1,0 +1,87 @@
+%%%PAGE 58 rot=0 legibility=good summary=电磁感应习题集：①求U_PQ ②圆环终极速度 ③恒力与恒功率 a1/a2 ④斜面导轨释放后加力 ⑤线框下落终极速度与产热；末尾为匀加速运动的F、q、I、W_F 分析
+%%%BLOCK id=058-01 ch=12 sec=单杆·电势差与电路 kind=problem alt=none cont=none y=0.00-0.13
+\begin{problem}[①]
+%FIG p058_a 0.10 0.0 0.395 0.13
+\notefig[0.4]{figures/p058_a.png}
+单位长电阻 $r$，求 $U_{PQ}$
+\begin{solution}
+\[ U_{PQ}=2U_{\text{外}}+U_{mn}=\frac{Bdv}{R+rd}R+B(L-d)v=\frac{RL+rd\,(L-\text{\unclear{…}}}{R+rd} \] % 原稿末式分子在页面右缘被截断；CHECK: “2U_外”与后式系数是否一致待核
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=058-02 ch=12 sec=线框·终极速度 kind=problem alt=none cont=none y=0.13-0.28
+\begin{problem}[②]
+%FIG p058_b 0.04 0.135 0.165 0.21
+\notefig[0.25]{figures/p058_b.png}
+\begin{solution}
+% 原稿 V_m 结果 Dρg/B^2 用椭圆圈住
+\[ \left\{\begin{array}{l} mg=\dfrac{B^2L^2V_m}{R}\\[2ex] m=DS\cdot 2\pi r\\[1ex] R=\rho\dfrac{2\pi r}{S}\end{array}\right.\qquad L=2\pi r\qquad \therefore V_m=\boxed{\dfrac{D\rho g}{B^2}} \]
+%FIG p058_c 0.66 0.205 0.77 0.275
+\notefig[0.25]{figures/p058_c.png}
+\[ a=g-\frac{BV_0^2}{\text{\unclear{$16R\rho_2$}}} \] % CHECK: 分子指数 2 写在 V_0 之后，疑为 B^2V_0；分母 16Rρ_2 辨认不清(由 m=4LdA、R=ρ4L/A 推得应为 B^2V_0/(16dρ))
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=058-03 ch=12 sec=单杆·恒力与恒功率启动 kind=problem alt=none cont=none y=0.27-0.48
+\begin{problem}[③]
+%FIG p058_d 0.07 0.275 0.195 0.36
+\notefig[0.25]{figures/p058_d.png}
+用 $F$ 拉 $ab$，$t$ 后 $ab$ 速度为 $V_1$，加速度 $a_1$，最终速度 $2V$。若拉力功率恒定，经 $t$ 后 $ab$ 速度 $V$ 加速度 $a_2$，最终速度 $2V$。求 $\dfrac{a_1}{a_2}$。 % V 右下角的小标记辨认为 1(亦可能是 V_A)
+\begin{solution}
+\[ \left\{\begin{array}{l}
+F=\dfrac{B^2L^2\cdot 2V}{R}\\[2.5ex]
+F-\dfrac{B^2L^2V}{R}=ma_1\\[2.5ex]
+\dfrac{P}{2V}=\dfrac{B^2L^2\cdot 2V}{R}\\[2.5ex]
+\dfrac{P}{V}-\dfrac{B^2L^2V}{R}=ma_2
+\end{array}\right.\qquad \frac{a_1}{a_2}=\frac{1}{3} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=058-04 ch=12 sec=单杆·斜面导轨 kind=problem alt=06 cont=none y=0.48-0.66
+\begin{problem}[④]
+%FIG p058_e 0.04 0.515 0.24 0.585
+\notefig[0.28]{figures/p058_e.png}
+\unclear{释放}，到 $V$ 后匀速，加一沿斜面向下力，功率为 $P$，最终以 $2V$ 匀速（\unclear{棒}无电阻）\quad 求 $\dfrac{V}{2}$ 时的加速度、$P$、$2V$ 后的焦耳热
+\begin{solution}
+\[ \left\{\begin{array}{l}
+mg\sin\theta=\dfrac{B^2L^2V}{R}\\[2.5ex]
+\dfrac{P}{2V}+mg\sin\theta=\dfrac{B^2L^2\cdot 2V}{R}\\[2.5ex]
+mg\sin\theta-\dfrac{B^2L^2\cdot\frac{V}{2}}{R}=ma\\[2.5ex]
+W_G+W_F-W_{\text{安}}=0
+\end{array}\right.\qquad \begin{array}{l}a=\dfrac{1}{2}g\sin\theta\\[2ex] P=2mg\sin\theta\,V\end{array} \] % 第四式首项原稿字形近似 W_a，按语境读作 W_G
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=058-05 ch=12 sec=线框·下落终极速度与产热 kind=problem alt=06 cont=none y=0.66-0.86
+\begin{problem}[⑤]
+%FIG p058_f 0.055 0.69 0.16 0.76
+\notefig[0.25]{figures/p058_f.png}
+框 % 图旁标注
+\begin{solution}
+\[ \left\{\begin{array}{l}
+mg=\dfrac{B^2(2L)^2V_m}{R}\\[2.5ex]
+m=4L\cdot dA\\[1ex]
+R=\rho\dfrac{4L}{A}
+\end{array}\right. \]
+\struck{$P_{\text{电}}=P_{\text{安}}V$}\qquad 当 $a=\dfrac{1}{2}g$ 时\quad $mg-\dfrac{B^2L^2V}{R}=m\dfrac{g}{2}$
+
+$P_{\text{电}}=F_{\text{安}}V$。 % 原稿有一条大弧线箭头，自“当 a=g/2 时…”一行右上方指向被划掉的“P电=P安V”
+\end{solution}
+下落 $t$ 后、$h$、速为 $V_t$ $(<V_m)$ 在同 $t$ 内，框产热与恒定电流 $I_0$ 产热相同（在该框中），求 $I_0$。
+\begin{solution}
+\[ mgh-I_0^2Rt=\frac{1}{2}mV_t^2 \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=058-06 ch=12 sec=单杆·匀加速运动分析 kind=method alt=none cont=none y=0.86-1.00
+\textbf{匀加速}
+\[ F-\frac{B^2L^2at}{R}=ma \]
+%FIG p058_g 0.245 0.90 0.37 0.968
+\notefig[0.25]{figures/p058_g.png}
+\[ F=ma+\frac{B^2L^2a}{R}t \]
+\[ q=\frac{BL\cdot\frac{1}{2}at^2}{R}\qquad I_{\text{安}}=BLq\qquad I=\frac{BLa}{R}t \] % q 的分母 R 被页面下缘截去一部分
+%FIG p058_h 0.42 0.918 0.553 1.0
+\notefig[0.25]{figures/p058_h.png}
+\[ q=\frac{1}{2}I_1t_1\qquad\qquad W_F=Q_{\text{电}}+\frac{1}{2}m(at)^2 \]
+%%%END
+%%%PAGEEND 58

@@ -1,0 +1,110 @@
+%%%PAGE 91 rot=0 legibility=good summary=极值问题求导与均值不等式（中垂线场强、摆球重力功率、磁场θ、绳端速度加速度、输出功率）、数列求和与多过程、二项式近似、库仑力电荷分配、碰撞速度范围
+%%%BLOCK id=091-01 ch=09 sec=电场强度·极值 kind=method alt=90 cont=none y=0.05-0.22
+%FIG p091_a 0.05 0.05 0.215 0.14
+\notefig[0.25]{figures/p091_a.png}
+
+$E_{\max}$
+\[
+E_{\text{合}}=2E\sin\theta=\frac{2kQ}{L^{2}}\cos^{2}\theta\sin\theta
+\]
+% 原稿：从右侧求导推导处画有一条弯箭头指向上面这个 E合 式
+令 $y=\cos^{2}\theta\sin\theta$，
+\[
+y'=2\cos\theta(-\sin\theta)\sin\theta+\cos^{3}\theta=0,\qquad
+\tan\theta=\frac{\sqrt{2}}{2},\qquad \theta=35.6^\circ
+\]
+% CHECK: arctan(√2/2)≈35.3°，原稿写的是 35.6
+或\quad
+\[
+2y^{2}=\cos^{2}\theta\,\cos^{2}\theta\,2\sin^{2}\theta\le\left(\frac{\cos^{2}\theta+\cos^{2}\theta+2\sin^{2}\theta}{3}\right)^{3}
+\]
+当 $\cos^{2}\theta=\cos^{2}\theta=2\sin^{2}\theta$ 时\ $\tan\theta=\dfrac{\sqrt{2}}{2}$
+%%%END
+%%%BLOCK id=091-02 ch=06 sec=功率·重力瞬时功率极值 kind=method alt=04,90 cont=none y=0.16-0.29
+%FIG p091_b 0.075 0.16 0.215 0.29
+\notefig[0.25]{figures/p091_b.png}
+
+$P_{G}\ \max$
+\[
+P_{G}=mgv\cos\theta=mg\sqrt{2gL\sin\theta}\,\cos\theta
+\]
+当 $\tan\theta=\dfrac{\sqrt{2}}{2}$ 时取最大
+%%%END
+%%%BLOCK id=091-03 ch=11 sec=有界磁场·极值 kind=method alt=90 cont=none y=0.29-0.34
+2020选择7中\unclear{磁}场 $\theta$ 也可\underline{求导求最小}：
+\[
+\cos\theta=\frac{r^{2}+4R^{2}-4Rr+r^{2}-R^{2}}{2(2R-r)r}\qquad
+\cos'\theta=\frac{12(r-R)R^{2}}{[2(2R-r)r]^{2}}
+\]
+% CHECK: 分母括号内 2R 与 r 之间的减号手写模糊，按上式取 2R-r
+%%%END
+%%%BLOCK id=091-04 ch=04 sec=关联速度·绳端速度 kind=derivation alt=01,90 cont=none y=0.33-0.47
+%FIG p091_c 0.05 0.33 0.285 0.445
+\notefig[0.25]{figures/p091_c.png}
+
+$(h^{2}+x^{2}=l^{2})'$\quad 隐函数求导
+\[
+2x\frac{\dd x}{\dd t}=2l\frac{\dd l}{\dd t}\qquad \therefore\ v=v_{\text{物}}\frac{x}{l}=v_{\text{物}}\cos\theta
+\]
+\[
+v_{\text{物}}=\frac{v}{\cos\theta}=\frac{\sqrt{x^{2}+h^{2}}}{x}\,v
+\qquad
+a_{\text{物}}=\frac{\dd v_{\text{物}}}{\dd t}=\left(\frac{\dfrac{1}{2}\cdot\dfrac{2x^{2}v_{\text{物}}}{\sqrt{x^{2}+h^{2}}}-\sqrt{x^{2}+h^{2}}\,v_{\text{物}}}{x^{2}}\right)v
+\]
+% CHECK: a物 式中分子第一项前的 1/2 手写不太清楚
+%%%END
+%%%BLOCK id=091-05 ch=10 sec=电源功率与效率·输出功率极值 kind=derivation alt=90 cont=none y=0.47-0.55
+%FIG p091_d 0.06 0.475 0.16 0.55
+\notefig[0.25]{figures/p091_d.png}
+
+\[
+P_{\text{出}}=\left(\frac{E}{R+r}\right)^{2}R\ \ \text{求导}\ \ P_{\text{出}}'=\frac{r-R}{(R+r)^{3}}=0\qquad r=R\ \text{时取最大}
+\]
+% CHECK: 对 R 求导应带有 E^2 因子，原稿 P出' 式中未写 E^2
+%%%END
+%%%BLOCK id=091-06 ch=90 sec=数列求和·多过程 kind=method alt=06 cont=none y=0.55-0.65
+\textbf{数列类}
+\[
+\left\{\begin{aligned}
+S_n&=\frac{(a_1+a_n)n}{2}\\
+S_n&=\frac{a_1}{q-1}(q^{n}-1)\qquad \text{若}\ |q|<1\ \ \lim_{n\to\infty}S_n=\frac{a_1}{1-q}
+\end{aligned}\right.
+\]
+\begin{quote}
+详写过程 $|$ 易得过程2\\
+综上全过程得出通项式\\
+求前$n$项和、极限$n$无穷
+\end{quote}
+% CHECK: “过程”后的竖线也可能是数字 1（详写过程1）
+%%%END
+%%%BLOCK id=091-07 ch=06 sec=功能关系·多次往返路程 kind=problem alt=90 cont=none y=0.65-0.74
+%FIG p091_e 0.065 0.672 0.235 0.735
+\notefig[0.25]{figures/p091_e.png}
+
+每次过\unclear{O}动能损失 $5\%$\quad 求总路程
+\[
+H=H+2H(0.95+0.95^{2}+\cdots+0.95^{n})\xrightarrow[n\to\infty]{}39H
+\qquad l_{\text{总}}=\frac{H_{\text{总}}}{\sin\theta}=\frac{39H}{\sin\theta}
+\]
+% CHECK: 第一个式子左边手写为 H（应为 H总？），原样照录
+%%%END
+%%%BLOCK id=091-08 ch=90 sec=近似·二项式定理 kind=formula alt=none cont=none y=0.75-0.79
+\textbf{二项式定理}\quad $(1+x)^{\alpha}\approx 1+\alpha x$\quad ($x$ 很小时)
+%%%END
+%%%BLOCK id=091-09 ch=09 sec=库仑定律·两球接触后分开 kind=method alt=none cont=none y=0.80-0.88
+两球碰后再分开\quad $F_{\text{库}}\uparrow$ 无法确定同电荷\quad $F_{\text{库}}\downarrow$ 一定\unclear{是}异种电荷
+\[
+\frac{kQq}{r^{2}}<\frac{k\left(\frac{Q-q}{2}\right)^{2}}{r^{2}}\ \text{有解}\qquad
+\frac{kQq}{r^{2}}>\frac{k\left(\frac{Q+q}{2}\right)^{2}}{r^{2}}\ \text{无解}
+\]
+%%%END
+%%%BLOCK id=091-10 ch=09 sec=库仑定律·电荷分配极值 kind=method alt=90 cont=none y=0.88-0.95
+把 $+Q$ 分给2个球使之作用力最大
+\[
+\frac{kq(Q-q)}{r^{2}}=\frac{k(-q^{2}+qQ)}{r^{2}}\qquad q=\frac{Q}{2}\ \text{时}\ F_{\text{库}}\ \text{最大}
+\]
+%%%END
+%%%BLOCK id=091-11 ch=07 sec=碰撞·速度范围 kind=knowledge alt=none cont=none y=0.95-0.99
+碰撞定义域\quad $v_{\text{完非}}\le v\le v_{\text{完弹}}$
+%%%END
+%%%PAGEEND 91

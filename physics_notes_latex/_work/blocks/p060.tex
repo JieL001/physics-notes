@@ -1,0 +1,59 @@
+%%%PAGE 60 rot=0 legibility=good summary=落框(线框下落穿过磁场)：速度/加速度判断、B 与下落高度 H 的关系、动量定理分段、进出磁场 v-t 图分类讨论、能量关系；抛框上升与下降的对比
+%%%BLOCK id=060-01 ch=12 sec=线框·落框 kind=derivation alt=none cont=none y=0.04-0.24
+\textbf{落框}
+%FIG p060_a 0.125 0.045 0.28 0.115
+\notefig[0.25]{figures/p060_a.png}
+\[ V=\sqrt{2gh}\quad E=nBLV\quad m=D\,4nLS\quad R=\rho\frac{4nL}{S}\quad I=\frac{E}{R},\quad F_{\text{安}}=nBIL=\frac{mB^2V}{16D\rho} \]
+\[ mg-F_{\text{安}}=ma\qquad a=g-\frac{F}{m}=g-\frac{B^2V}{16\rho D}\qquad \left\{\begin{array}{l} g>\dfrac{B^2V}{16D\rho}\ \text{时都加速}\\[2ex] g<\dfrac{B^2V}{16D\rho}\ \text{都减速}\end{array}\right. \] % CHECK: a=g-□/m 的分子字形介于 E 与 F，按物理意义读作 F(应为 F_安)
+%%%END
+%%%BLOCK id=060-02 ch=12 sec=线框·落框 kind=derivation alt=none cont=none y=0.20-0.38
+%FIG p060_b 0.05 0.205 0.14 0.27
+\notefig[0.2]{figures/p060_b.png}
+\[ mg=\frac{B^2L^2V_y}{R}=\frac{B^2L^2\sqrt{2gH}}{R} \]
+%FIG p060_c 0.025 0.29 0.21 0.366
+\notefig[0.25]{figures/p060_c.png}
+\[ \therefore B=\sqrt{\frac{mgR}{L^2\sqrt{2g}}}\ \frac{1}{\sqrt{\sqrt{H}}}\ \propto\ H^{-\frac{1}{4}} \]
+\[ P_G=P_{\text{安}}\quad mg=F_{\text{安}}\quad W_{\text{热}}=F_{\text{安}}\times 2L\quad \text{进出匀速后，}F_{\text{安}}\text{不变} \]
+%%%END
+%%%BLOCK id=060-03 ch=12 sec=线框·穿越磁场的动量定理 kind=derivation alt=07 cont=none y=0.38-0.50
+%FIG p060_d 0.095 0.41 0.24 0.49
+\notefig[0.25]{figures/p060_d.png}
+\[ -BLq=mV_2-mV_1\qquad \therefore\ |V_2-V_1|=|V_3-V_2| \]
+\[ \Delta X=\frac{m\Delta VR}{B^2L^2}\qquad \left\{\begin{array}{l} q_1=q_2\\ Q_1=3Q_2\end{array}\right. \]
+%%%END
+%%%BLOCK id=060-04 ch=12 sec=线框·进出磁场v-t图分类讨论 kind=method alt=none cont=none y=0.49-0.72
+\textbf{直接分类讨论}（与\unclear{束缚}洛伦兹力一样 直接分类讨论） % “束缚”二字辨认不清
+%FIG p060_e 0.09 0.52 0.225 0.595
+\notefig[0.25]{figures/p060_e.png}
+%FIG p060_f 0.275 0.504 0.54 0.62
+\notefig[0.3]{figures/p060_f.png}
+% 图 p060_f 中标注：mg>F_安1、mg=F_安1、mg<F_安1 三种分支，以及起始段 mg>F_安
+%FIG p060_g 0.55 0.51 0.75 0.62
+\notefig[0.3]{figures/p060_g.png}
+% 图 p060_g 中标注：入、出_1，并有批注“全等故产热相当”
+不全等产热就不相同
+%FIG p060_h 0.28 0.628 0.50 0.725
+\notefig[0.25]{figures/p060_h.png}
+% 图 p060_h 中标注：mg=F_安、进、出、mg<F_安1
+%%%END
+%%%BLOCK id=060-05 ch=12 sec=线框·落框进出磁场能量关系 kind=derivation alt=06 cont=none y=0.71-0.87
+%FIG p060_i 0.08 0.715 0.26 0.84
+\notefig[0.28]{figures/p060_i.png}
+\[ V_{\text{入}}=V_{\text{出}} \]
+\[ \left\{\begin{array}{ll}\text{进} & mg(h+L)-Q=\dfrac{1}{2}mV^2\\[2ex] \text{出} & mgd-Q=\dfrac{1}{2}mV^2-\dfrac{1}{2}mV^2\end{array}\right.\qquad \therefore mgd=Q \]
+\[ V=\sqrt{2(h+L-d)g} \]
+%%%END
+%%%BLOCK id=060-06 ch=12 sec=线框·抛框上升与下降对比 kind=summary alt=none cont=none y=0.88-1.00
+%FIG p060_j 0.13 0.893 0.292 0.97
+\notefig[0.25]{figures/p060_j.png}
+向上时的大速小时\ 大安力
+
+等电荷量\ 等安冲
+\[ \begin{array}{ll}
+\overline{V}_{\text{上}}>\overline{V}_{\text{下}} & P_{\text{电上}}>P_{\text{电下}}\\
+\overline{a}_{\text{上}}>\overline{a}_{\text{下}} & \varepsilon_{\text{上}}>\varepsilon_{\text{下}}\\
+t_{\text{上}}<t_{\text{下}} & q_{\text{上}}=q_{\text{下}}\\
+Q_{\text{上}}>Q_{\text{下}} & I_{\text{安冲上}}=I_{\text{安冲下}}
+\end{array} \] % 原稿 t_下 上方似有一横线，疑为笔迹，未转录
+%%%END
+%%%PAGEEND 60

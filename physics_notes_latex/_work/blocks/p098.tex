@@ -1,0 +1,104 @@
+%%%PAGE 98 rot=0 legibility=fair summary=六道带草图的小题：①洛伦兹力分解、②三球弹簧模型能量、③斜轨棒动量定理求位移、④电磁场中带电滑块离地、⑤变阻器U-x图像、⑥含电动机电路的等效电源
+%%%BLOCK id=098-01 ch=11 sec=洛伦兹力分解·速度分量 kind=diagram alt=06 cont=none y=0.07-0.23
+①
+%FIG p098_a 0.03 0.08 0.21 0.20
+\notefig[0.25]{figures/p098_a.png}
+
+$E_{k}\uparrow$\quad 支持力做功
+
+合外力为0时\ $V_{\max}$
+% 原稿“合外”二字被圈起
+%%%END
+%%%BLOCK id=098-02 ch=06 sec=阻力·需考虑的情形 kind=note alt=05 cont=none y=0.09-0.17
+天体\ 大气阻力\quad /\quad 空气阻力\quad /\quad \uline{\unclear{找到…不能…的实例}}
+
+要考虑阻力
+% 原稿“阻”字上方有一处很小的批注字，疑为“空气”，未能辨清；上面三项之间以长斜线“/”隔开，最后一项下有横线
+%%%END
+%%%BLOCK id=098-03 ch=06 sec=弹簧模型·机械能守恒 kind=problem alt=03,08 cont=none y=0.24-0.41
+②\ 弹簧振子（简谐运动）\unclear{静放}的从$60^\circ\to120^\circ$ A到最低点，$\mu=0$，\quad $E_{p\text{弹}}\max$\quad $V$从最大$\to0$\quad $a_A$竖直向上
+% 原稿此行横贯整页宽度；“竖”字上方有一小处笔迹无法辨认；其下分左右两栏
+%FIG p098_b 0.035 0.252 0.195 0.347
+\notefig[0.25]{figures/p098_b.png}
+
+% 以下为左栏
+$E_{kA\,\max}$\quad $a_A=0$
+
+对A\quad $2T\sin\theta_1=mg$
+
+对B\quad $\therefore N=mg+T\sin\theta_1=\dfrac{3}{2}mg$
+
+当A达$E_{k\max}$前，$a$向下加速
+
+$T\sin\theta<\dfrac{1}{2}mg$\quad $\therefore N_B<\dfrac{3}{2}mg$
+
+% 以下为右栏
+$V_B=V_C=0$，整体动能与初始相等。
+
+由机械能守恒定律
+
+$\Delta E_{p\text{弹}}=\Delta E_{pG}$
+
+$V_A=0$时 下降至最低点，$\therefore E_{p\text{弹}}$最大\unclear{的}
+
+$\dfrac{\sqrt{3}-1}{2}\,mgl$
+%%%END
+%%%BLOCK id=098-04 ch=12 sec=电磁感应·动量定理 kind=problem alt=07,03 cont=none y=0.44-0.56
+③
+%FIG p098_c 0.04 0.447 0.215 0.56
+\notefig[0.25]{figures/p098_c.png}
+
+经$t_0$停，求$x$。由动量定理
+\[ mg\sin\theta\,t_0+\frac{B^2\ell^2x}{R}=mV \]
+% CHECK: 右端手写为 mV（无下标），按后式推算似应为 mV_0
+\[ x=\frac{(V_0-gt_0\sin\theta)\,mR}{B^2\ell^2} \]
+%%%END
+%%%BLOCK id=098-05 ch=11 sec=洛伦兹力·动量定理 kind=problem alt=09,03,07 cont=none y=0.58-0.77
+④
+%FIG p098_d 0.02 0.587 0.225 0.695
+\notefig[0.25]{figures/p098_d.png}
+
+\unclear{$t_s$}离开地面，求位移
+\[ \begin{cases} Eqt-\mu(mg-qvB)t=mV\\[2pt] qvB=mg \end{cases} \qquad x=\frac{\mu mgt}{qB} \]
+% CHECK: x 的分子分母手写如此（μ 似应在分母中同样出现而相消）
+
+$Eqt=mV$
+\[ a=\frac{Eq}{m}-\mu g+\frac{qVB}{m} \]
+% CHECK: 末项手写未见 μ（按受力似应为 μqVB/m）
+\[ V=\frac{Eqt}{m}-\mu gt+\frac{qBx}{m} \]
+% CHECK: 末项手写未见 μ（似应为 μqBx/m）
+
+一个动量定理\quad $V=\dfrac{mg}{qB}$
+%FIG p098_e 0.672 0.585 0.815 0.658
+\notefig[0.25]{figures/p098_e.png}
+%%%END
+%%%BLOCK id=098-06 ch=10 sec=滑动变阻器·U-x图像 kind=problem alt=none cont=none y=0.77-0.87
+⑤
+%FIG p098_f 0.075 0.772 0.24 0.87
+\notefig[0.25]{figures/p098_f.png}
+
+\[ U=IR_x=\frac{E}{r+R_x+\dfrac{L-x}{L}R} \]
+% CHECK: 若 U 为 R_x 两端电压，分子似应为 E R_x
+%FIG p098_g 0.515 0.765 0.67 0.85
+\notefig[0.25]{figures/p098_g.png}
+\[ U=\frac{a}{b-kx} \]
+%%%END
+%%%BLOCK id=098-07 ch=10 sec=含电动机电路·等效电源 kind=problem alt=06 cont=none y=0.87-1.0
+⑥
+%FIG p098_h 0.055 0.868 0.382 1.0
+\notefig[0.32]{figures/p098_h.png}
+
+正常发光
+
+电动机以$1\unit{m/s}$提升$64\unit{g}$物体，
+
+路端电压\ $>3\unit{V}$\quad $U_{\text{等效路端}}=3\unit{V}$
+% 原稿“路端电压”后有涂改痕迹
+
+\[ P=UI=0.8\times3=2.4 \]
+\[ =0.64+I^{2}r=2.4,\quad \therefore r=2.75\,\Omega \]
+（公式下方有被页面下缘截断的小字批注：0.64下为\unclear{$P_{\text{机}}$}，$I^2r$下为$P_{\text{热}}$，$r$下为\unclear{$R$}。）
+
+（图中电源旁页面下缘标注：\unclear{$E=6\unit{V}$}，\unclear{$r=0.5$}，部分被截断。）
+%%%END
+%%%PAGEEND 98

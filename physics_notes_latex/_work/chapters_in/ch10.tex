@@ -1,0 +1,402 @@
+%%%BLOCK id=013-05 ch=10 sec=二极管·电路分析 kind=method alt=none cont=none y=0.61-0.70
+\textbf{二极管}
+
+%FIG p013_e 0.195 0.6305 0.255 0.6645
+\notefig[0.25]{figures/p013_e.png}
+$I\to$\ $\checkmark$\ 导线
+
+$\leftarrow I$\ $\times$\ 断路
+
+化简电路后分析
+%%%END
+%%%BLOCK id=026-01 ch=10 sec=电流·微观表达式 kind=method alt=none cont=none y=0.07-0.27
+\textbf{微观求法} $\leftarrow$ 电子数量$=n\cdot$体积\qquad 电子数量$=n\cdot$长度\,($vt$)% “vt”写在“长度”二字正下方
+
+\medskip
+\noindent\begin{tabular}{@{}p{0.23\linewidth}p{0.25\linewidth}p{0.23\linewidth}p{0.25\linewidth}@{}}
+单位体积电子数$n$ & 单位体积电荷量$q$\newline ($q=ne$) & 单位长度电子数$n$ & 单位长度电荷量$q$\newline ($q=ne$) \\[3pt]
+$I=nesv$ & $I=qsv$ & $I=nev$ & $I=qv$ \\
+\end{tabular}
+
+\medskip
+方法：公式、量纲、
+\[
+\left\{\begin{array}{l}
+I=v\cdot\text{单位长度带电量}\;\substack{q\\ ne}\\[6pt]
+I=v\cdot S\cdot\text{单位体积带电量}\;\substack{q\\ ne}
+\end{array}\right.
+\]
+% 手写中 q 与 ne 上下叠写，无分数线
+%%%END
+%%%BLOCK id=026-02 ch=10 sec=电流·溶液电流 kind=knowledge alt=none cont=none y=0.29-0.37
+\textbf{溶液电流}\quad $I$方向\ 正电荷运动方向、负电荷运动反方向
+
+%FIG p026_a 0.05 0.315 0.17 0.365
+\notefig[0.25]{figures/p026_a.png}
+\[
+I=I_A-I_B-I_R=\frac{K4e}{t}+\frac{m3e}{t}-\frac{n2e}{t}
+\]
+% CHECK: 图中离子为 n个A、m个B^{3+}(向左)、K个R^{4+}；I=I_A-I_B-I_R 与右端各项符号、对应关系待核对；K4e 中“4”被笔迹涂改，不太确定
+%%%END
+%%%BLOCK id=026-03 ch=10 sec=电流·环形电流 kind=knowledge alt=none cont=none y=0.38-0.43
+\textbf{环形电流}\quad $I=\dfrac{q}{T}$\quad
+\begin{tabular}[c]{@{}l@{}}载流子电荷量\\ 周期 $T=\dfrac{2\pi}{\omega}$\end{tabular}\quad $ne^-\searrow\oplus$% CHECK: T=2π/ω 手写较潦草；“ne⁻”用弯箭头指向圈加号
+%%%END
+%%%BLOCK id=026-04 ch=10 sec=电阻·电阻定律 kind=formula alt=none cont=none y=0.44-0.52
+\textbf{电阻}\quad $R=\rho\dfrac{L}{S}$ （电流方向）\quad （同种材质）\quad
+$\left\{\begin{array}{l}\text{力学}\ \rho_{\text{\unclear{密度}}}\text{相同}\quad m\propto S\\[4pt] \text{电学}\ \rho_{\text{电阻率}}\text{相同}\quad R\propto\dfrac{1}{S}\end{array}\right.$
+
+拉伸压缩\quad $V$不变\quad $V=SL=\pi r^2L$% “V不变 V=SL=πr²L”下方有波浪线
+%%%END
+%%%BLOCK id=026-05 ch=10 sec=电阻·不规则导体电阻 kind=method alt=none cont=none y=0.52-0.68
+\textbf{不规则导体电阻}：\underline{割补法} / \underline{微元法} / \underline{等效替代法}
+
+导体形状相同 + 电流流向相同 $\to$ 等效电阻相同
+
+%FIG p026_b 0.10 0.575 0.90 0.675
+\notefig[0.8]{figures/p026_b.png}
+% 图内标注自左至右：1Ω；1Ω；1Ω、R并=0.5Ω；R=1Ω；R未知；1Ω、1Ω、R串=2Ω
+%%%END
+%%%BLOCK id=026-06 ch=10 sec=闭合电路欧姆定律 kind=formula alt=none cont=none y=0.69-0.80
+\textbf{闭合电路欧姆定律}（知3求其他）
+\[
+\begin{array}{l}
+E=I(R+r)\\[8pt]
+IR=U_{\text{外}}\ (U)\\[8pt]
+Ir=U_{\text{内}}
+\end{array}
+\quad
+\left\{\begin{array}{l}
+I=\dfrac{E}{R+r}\\[8pt]
+E=U+Ir\\[6pt]
+U=\dfrac{E}{R+r}R
+\end{array}\right.
+\]
+%%%END
+%%%BLOCK id=026-07 ch=10 sec=动态电路分析 kind=method alt=none cont=none y=0.81-0.99
+\textbf{动态电路分析}
+\[
+\left\{\begin{array}{l}
+\text{$E$有内阻/干路有电阻}\quad\text{串反并同}\quad U\,I\,P\\[4pt]
+\text{$E$无内阻}\quad\text{串反并恒}\ \leftarrow\ \text{(和$R$并联部分$U\,I\,P$不变)}\ \text{电源无内阻}
+\end{array}\right.
+\]
+% CHECK: “串反并同/串反并恒”前两字连笔，按物理常识辨为“串反”
+\[
+\left\{\begin{array}{lll}
+R\uparrow & U_R\uparrow & I_R\text{、}P_R\text{都}\downarrow\\[4pt]
+R\uparrow & R_{\text{总}}\uparrow &
+\end{array}\right.
+\]
+% CHECK: I_R、P_R 中第二项下标/字母手写潦草，按 P_R 转录
+\unclear{并}断开\ $R_{\text{开关}}=\infty$\quad \unclear{并}闭合\ $R_{\text{开关}}=0$（导线）
+%%%END
+%%%BLOCK id=027-01 ch=10 sec=欧姆定律·UI比值与变化量比值 kind=knowledge alt=none cont=none y=0.05-0.13
+$\dfrac{U}{I}$ 永远是测量对象的电阻
+
+\[
+\frac{\Delta U}{\Delta I}\ \left\{\begin{array}{l}
+\text{测定值电阻，$\dfrac{\Delta U}{\Delta I}$为定值电阻阻值}\\[8pt]
+\text{测变化电阻\quad $\dfrac{\Delta U}{\Delta I}$为其他部分电阻之和}
+\end{array}\right.
+\]
+% CHECK: 三处分式的 Δ/d 符号手写潦草(类似 αU/αI)，按 ΔU/ΔI 转录
+%%%END
+%%%BLOCK id=027-02 ch=10 sec=滑动变阻器·自并联 kind=method alt=none cont=none y=0.15-0.31
+\textbf{\unclear{自}并联}\quad 滑变左右两部分并联\quad $R_{\text{左}}=R_{\text{右}}$时 $R_{\text{并}}$最大
+
+%FIG p027_a 0.10 0.195 0.23 0.30
+\notefig[0.25]{figures/p027_a.png}
+%%%END
+%%%BLOCK id=027-03 ch=10 sec=非纯电阻·电动机 kind=knowledge alt=none cont=none y=0.32-0.56
+\textbf{电动机}
+
+%FIG p027_b 0.16 0.305 0.71 0.392
+\notefig[0.55]{figures/p027_b.png}
+% 图内标注：(非纯电阻) M；=；(纯电阻)R丝；(非纯电阻)R转(不可知，若不转，则R转=0)
+
+$R_M$ 永远不可知 $=R_{\text{丝}}+R_{\text{转}}$
+
+\medskip
+$P_{\text{总}}\;=\;P_{\text{热}}+P_{\text{机}}/P_{\text{输}}/P_{\text{有用}}$
+
+\medskip
+\noindent\begin{tabular}{@{}llll@{}}
+ & $P_{\text{总}}$ & $P_{\text{热}}$ & $P_{\text{输}}$\\[3pt]
+电动机 & $UI$ & $I^2R_{\text{丝}}$ & $UI-I^2R_{\text{丝}}$\\[3pt]
+纯电阻 & & \multicolumn{2}{@{}l}{$UI=I^2R=\dfrac{U^2}{R}$}\\
+\end{tabular}
+%%%END
+%%%BLOCK id=027-04 ch=10 sec=电源功率与效率 kind=formula alt=none cont=none y=0.57-0.77
+\textbf{电源的\unclear{总}功率\,|\,效率}
+
+%FIG p027_c 0.085 0.615 0.25 0.725
+\notefig[0.25]{figures/p027_c.png}
+\begin{align*}
+P_{\text{总}}&=EI=\frac{E^2}{R+r}=P_{\text{外}}+P_{\text{内}}\\[4pt]
+P_{\text{外}}&=U\cdot I=\frac{U^2}{R}=I^2R=\Bigl(\frac{E}{R+r}\Bigr)^2R\qquad\text{有用功}\\[4pt]
+P_{\text{内}}&=U_{\text{内}}I=\frac{U_{\text{内}}^2}{r}=I^2r=\Bigl(\frac{E}{R+r}\Bigr)^2r\qquad\text{无用功}\\[4pt]
+\eta&=\frac{UI}{EI}=\underset{\text{(无条件)}}{\frac{U}{E}}=\frac{R}{R+r}=1-\frac{Ir}{E}\qquad R_{\text{\unclear{外}}}\text{必须为纯电阻}\quad E=U+Ir\quad U=E\frac{R}{R+r}
+\end{align*}
+%%%END
+%%%BLOCK id=027-05 ch=10 sec=电源功率与效率·最大输出功率 kind=formula alt=none cont=none y=0.78-0.99
+\textbf{最大输出功率}\quad $P\Leftrightarrow$函数
+
+当 $R=r$ 时\quad $P_{\text{外}\max}=\dfrac{E^2}{4r}$\quad $I=\dfrac{E}{2r}=\dfrac{I_0}{2}$\quad $U=\dfrac{E}{2}$\quad $P_{\text{总}}=\dfrac{E^2}{2r}$\quad $P_{\text{内}}=\dfrac{E^2}{4r}$
+\[
+P_{\text{外}}=\frac{E^2}{R^2+2Rr+r^2}R=\frac{E^2}{R+2r+\frac{r^2}{R}}\qquad R=r\ \text{时}\ P_{\text{外}}\ \text{取最大}
+\]
+
+%FIG p027_d 0.04 0.866 0.70 0.985
+\notefig[0.66]{figures/p027_d.png}
+% 图内三幅 P外 图像：P外-I(峰值E²/4r，横轴 I₀/2、I₀，短路电流)；P外-U(横轴 E/2、E)；P外-R(峰值在 R=r，之后渐近下降)
+%%%END
+%%%BLOCK id=028-01 ch=10 sec=电源功率与效率·最大功率 kind=formula alt=none cont=prev y=0.06-0.12
+最大总功率\quad $R=0$
+
+最大内功率\quad $R=0$
+%%%END
+%%%BLOCK id=028-02 ch=10 sec=基尔霍夫定律·电压定律 kind=method alt=none cont=none y=0.13-0.38
+\textbf{基尔霍夫电压定律}
+
+找圈 $\to$ 确定电压方向（由高到低）$\to$ 顺正逆负和为0
+
+电压变化量关系：\unclear{$\pm$}增大变化量为正，减小变化量为负
+
+%FIG p028_a 0.10 0.205 0.297 0.348
+\notefig[0.22]{figures/p028_a.png}
+\begin{align*}
+&+U_1+U_2-U_3=0\\
+&\text{方向}\ +U_1+U_2=U_3\\
+\text{使}R_2\uparrow\ &-\Delta U_1+\Delta U_2=\Delta U_3\\
+&\Delta U_3+\Delta U_1=\Delta U_2
+\end{align*}
+% CHECK: “=ΔU₃”前的符号被涂改(像 ± 叠写)，按 ΔU₃ 转录；“方向”二字紧挨图中电压表箭头，原位置不确定
+%%%END
+%%%BLOCK id=028-03 ch=10 sec=基尔霍夫定律·电流定律 kind=method alt=none cont=none y=0.38-0.50
+\textbf{基尔霍夫电流定律}
+
+对节点流进$+$与流出$-$和为0\qquad $I_{\text{入}}+I_{\text{出}}=I$% CHECK: 末尾写作“=I”(物理上应为 I入=I出 或 =0)，照原样转录
+
+对封闭图形，流进$+$与流出$-$和为0
+
+%FIG p028_b 0.71 0.40 0.9165 0.485
+\notefig[0.25]{figures/p028_b.png}
+\[
+\begin{aligned}
+I_{R_2}+I_{R_3}\\
+=I_{R_1}
+\end{aligned}
+\]
+%%%END
+%%%BLOCK id=028-04 ch=10 sec=电路简化·等势点法 kind=method alt=none cont=none y=0.52-0.88
+\textbf{等势点简化法}
+\[
+\left\{\begin{array}{l}
+\text{理想电流表当导线，非理想电流表当电阻}\\
+\text{电压表当电阻}\\
+\text{同一根导线上电势相等}
+\end{array}\right.
+\]
+
+%FIG p028_c 0.19 0.652 0.46 0.75
+\notefig[0.27]{figures/p028_c.png}
+% 图内标注：S断开；电阻①②③④、电容、电源(②与开关所在支路并联等)
+
+%FIG p028_d 0.50 0.645 0.815 0.752
+\notefig[0.32]{figures/p028_d.png}
+% 图内标注：电阻①②③④、电容、电源
+
+%FIG p028_e 0.22 0.755 0.62 0.862
+\notefig[0.4]{figures/p028_e.png}
+% 图内标注：S闭合后；②短路
+%%%END
+%%%BLOCK id=032-03 ch=10 sec=含容电路 kind=knowledge alt=13 cont=none y=0.36-0.54
+\textbf{含容电路}
+
+\noindent 在直流电路中
+\begin{itemize}
+\item 通电瞬间：充电
+\item 电流稳态：理想电压表（和电容器串联的电阻当导线）
+\item 断电瞬间：\textsuperscript{$Q\downarrow$}动态电源，$E$ 减小
+\end{itemize}
+
+\noindent 在交流电路中：当成电阻（容抗）\ $R_C=\dfrac{1}{2\pi fC}$\quad 通交隔直
+%%%END
+%%%BLOCK id=056-06 ch=10 sec=等效电源 kind=method alt=12 cont=none y=0.69-0.90
+$\langle$电源正反向、等效电源$\rangle$
+
+%FIG p056_h 0.05 0.725 0.16 0.785
+\notefig[0.25]{figures/p056_h.png}
+\[ E=E_1-E_2,\qquad r=r_1+r_2 \]
+%FIG p056_i 0.315 0.722 0.395 0.782
+\notefig[0.25]{figures/p056_i.png}
+\[ E=E_1+E_2,\qquad r=r_1+r_2 \]
+%FIG p056_j 0.19 0.795 0.325 0.87
+\notefig[0.25]{figures/p056_j.png}
+\[ E_{\text{等}}=\frac{R_1}{R_1+r}E,\qquad r_{\text{等}}=\frac{R_1r}{R_1+r} \]
+%FIG p056_k 0.52 0.79 0.67 0.88
+\notefig[0.25]{figures/p056_k.png}
+\[ r_{\text{等}}=R+r,\qquad E_{\text{等}}=\frac{E\,(r+R_2)}{R_1+R_2+r} \] % CHECK: 圈内含 R_2 与电源，r_等 疑应为 R_2+r(原稿写 R+r)
+%%%END
+%%%BLOCK id=083-11 ch=10 sec=电动势·非静电力 kind=knowledge alt=none cont=none y=0.37-0.40
+% 以下三处原稿有红笔下划线
+$E=\dfrac{W}{q}$\quad \underline{$W$为非静电力做的功}\quad \underline{$E$非静电力做功本领}\quad \underline{不是蓄电}
+%%%END
+%%%BLOCK id=091-05 ch=10 sec=电源功率与效率·输出功率极值 kind=derivation alt=90 cont=none y=0.47-0.55
+%FIG p091_d 0.06 0.475 0.16 0.55
+\notefig[0.25]{figures/p091_d.png}
+
+\[
+P_{\text{出}}=\left(\frac{E}{R+r}\right)^{2}R\ \ \text{求导}\ \ P_{\text{出}}'=\frac{r-R}{(R+r)^{3}}=0\qquad r=R\ \text{时取最大}
+\]
+% CHECK: 对 R 求导应带有 E^2 因子，原稿 P出' 式中未写 E^2
+%%%END
+%%%BLOCK id=098-06 ch=10 sec=滑动变阻器·U-x图像 kind=problem alt=none cont=none y=0.77-0.87
+⑤
+%FIG p098_f 0.075 0.772 0.24 0.87
+\notefig[0.25]{figures/p098_f.png}
+
+\[ U=IR_x=\frac{E}{r+R_x+\dfrac{L-x}{L}R} \]
+% CHECK: 若 U 为 R_x 两端电压，分子似应为 E R_x
+%FIG p098_g 0.515 0.765 0.67 0.85
+\notefig[0.25]{figures/p098_g.png}
+\[ U=\frac{a}{b-kx} \]
+%%%END
+%%%BLOCK id=098-07 ch=10 sec=含电动机电路·等效电源 kind=problem alt=06 cont=none y=0.87-1.0
+⑥
+%FIG p098_h 0.055 0.868 0.382 1.0
+\notefig[0.32]{figures/p098_h.png}
+
+正常发光
+
+电动机以$1\unit{m/s}$提升$64\unit{g}$物体，
+
+路端电压\ $>3\unit{V}$\quad $U_{\text{等效路端}}=3\unit{V}$
+% 原稿“路端电压”后有涂改痕迹
+
+\[ P=UI=0.8\times3=2.4 \]
+\[ =0.64+I^{2}r=2.4,\quad \therefore r=2.75\,\Omega \]
+（公式下方有被页面下缘截断的小字批注：0.64下为\unclear{$P_{\text{机}}$}，$I^2r$下为$P_{\text{热}}$，$r$下为\unclear{$R$}。）
+
+（图中电源旁页面下缘标注：\unclear{$E=6\unit{V}$}，\unclear{$r=0.5$}，部分被截断。）
+%%%END
+%%%BLOCK id=116-01 ch=10 sec=动态分析 kind=method alt=none cont=none y=0.01-0.24
+\textbf{1．}
+
+% 图p116_a内含标注：R_1、R_0、两个变阻器、电压表V、电流表A、电源E r，图中另有手画圈
+%FIG p116_a 0.004 0.01 0.18 0.18
+\notefig[0.3]{figures/p116_a.png}
+
+\[R_{\text{总}}=\frac{(R_{\text{上}}+R_1)(R_2+R_{\text{下}})}{R_{\text{上}}+R_1+R_2+R_{\text{下}}}\le\frac{\left(\dfrac{R_1+R_2+R_{\text{上}}+R_{\text{下}}}{2}\right)^2}{R_1+R_2+R_{\text{上}}+R_{\text{下}}}\]
+当 $R_1+R_{\text{上}}=R_2+R_{\text{下}}$\quad 能取等才可先$\uparrow$后$\downarrow$
+
+$R_{\text{等效}}$ 中间取最大
+\begin{itemize}
+\item $R$ 先$\uparrow$后$\downarrow$
+\item $I$ 先$\downarrow$后$\uparrow$
+\item $U$ 先$\uparrow$后$\downarrow$
+\end{itemize}
+当成1个$R_{\text{并}}$可用串反并同
+%%%END
+%%%BLOCK id=116-02 ch=10 sec=分压电路 kind=method alt=none cont=none y=0.24-0.36
+\textbf{2．传统分压}
+
+% 图p116_b内含标注：R、P、x、R_0−x、串联部分、与电源
+%FIG p116_b 0.18 0.245 0.322 0.34
+\notefig[0.25]{figures/p116_b.png}
+
+$P$ 从左$\to$右\quad $R_{\text{总}}\downarrow$\quad 与串联部分单调性一致 % CHECK: “R总”字形像“P总”，其下有波浪线
+
+$R$: 滑变中值分流小\quad 两边分流最大
+\[R_{\text{总}}=\frac{Rx}{R+x}+R_0-x=R-\frac{x^2}{R+x}\qquad\text{求导．}\]
+%%%END
+%%%BLOCK id=116-03 ch=10 sec=电源功率与效率 kind=knowledge alt=none cont=none y=0.31-0.46
+\textbf{3．}\unclear{输}出功率看类似图像
+
+% 图p116_c：P–R 图像，纵轴 P，横轴 R，峰值处虚线对应横轴上的 r
+%FIG p116_c 0.055 0.332 0.30 0.441
+\notefig[0.3]{figures/p116_c.png}
+
+有 \unclear{$R_{\text{外}}$} 与 $r$ 关系，才能定 $P$
+
+效率 $\eta=\dfrac{U}{E}=\dfrac{IR_{\text{外}}}{I(R_{\text{外}}+r)}=\dfrac{1}{1+\dfrac{r}{R_{\text{外}}}}$\quad 先$\uparrow$后$\downarrow$\quad $\eta$ 与 $R_{\text{外}}$ 正相关 % CHECK: “先↑后↓”与 η 随 R外单调增不符，可能指 P
+%%%END
+%%%BLOCK id=116-04 ch=10 sec=含电动机电路 kind=formula alt=none cont=none y=0.45-0.50
+\textbf{4．}\fbox{电动机}\quad $P_{\text{总}}=UI$\quad $P_{\text{热}}=I^2R$\quad $P_{\text{机}}=UI-I^2R=FV$\quad $\eta=\dfrac{UI}{FV}$ % CHECK: 按定义 η 应为 FV/UI，原稿写作 UI/FV
+% 原稿“电动机”为椭圆圈；P机式中 R 上方有向下箭头，旁注“内阻耗热”
+（$I^2R$ 上方箭头$\downarrow$标注：内阻\unclear{耗热}）
+%%%END
+%%%BLOCK id=116-05 ch=10 sec=电源功率与效率 kind=formula alt=none cont=none y=0.49-0.61
+\textbf{5．}\fbox{电源}\quad $P_{\text{总}}=EI$\quad $P_{\text{有}}=UI$\quad $P_{\text{热}}=I^2r$
+% 原稿“电源”为椭圆圈
+\[P_{\text{有}}=\left(\frac{E}{R+r}\right)^2R=\frac{E^2}{R+\dfrac{r^2}{R}+2r}\le\frac{E^2}{4r}\]
+% 图p116_d：P有–r 图像，纵轴 P有，横轴 r，峰值处标 R=r
+%FIG p116_d 0.80 0.495 0.955 0.568
+\notefig[0.25]{figures/p116_d.png}
+
+$\uparrow$ % 箭头指向上面的 E^2/(4r)
+$r$ 可以是等效电动机内阻
+%%%END
+%%%BLOCK id=116-06 ch=10 sec=电流·微观 kind=knowledge alt=none cont=none y=0.53-0.56
+定向移动 $\mu\unit{m/s}$\quad 热运动 $10^6\unit{m/s}$\quad 电场传播 $3\times10^8\unit{m/s}$
+%%%END
+%%%BLOCK id=116-07 ch=10 sec=电阻定律 kind=formula alt=none cont=none y=0.56-0.60
+\textbf{6．}热\unclear{阻}公式\quad $\rho=\rho_0(1+\alpha T)$\quad $R=\rho_1\dfrac{L-x}{S}+\rho_2\dfrac{x}{S}\cdots$
+%%%END
+%%%BLOCK id=116-08 ch=10 sec=电表改装 kind=note alt=none cont=none y=0.60-0.63
+\textbf{7．}\fbox{偏角(\unclear{$=$})电流大小} % 原稿此行外有方框
+%%%END
+%%%BLOCK id=195-02 ch=10 sec=电表改装·欧姆表 kind=problem alt=none cont=none y=0.28-0.53
+将微安表改为欧姆表\quad 将两表笔短接，调$R$使满偏。
+
+满偏$300\,\mu$A\quad $r_g=100\,\Omega$
+
+\notefig[0.3]{figures/p195_a.png}
+
+把$\mu$A\unclear{—}改为$\Omega$\quad $300$改为$0$\quad $100$改为$9600$
+
+\begin{itemize}
+\item 两表笔短接时\ $I_g=\dfrac{E}{R_{\text{内}}}$
+\item 接入$2.4\mathrm{k}\Omega$时\ $\dfrac{2}{3}I_g=\dfrac{E}{R_{\text{内}}+2400}$
+\item $E=1.44\unit{V}$
+\item $R_{\text{内}}=4.8\mathrm{k}\Omega$
+\item $I=100\,\mu$A时\ $\dfrac{1}{3}I_g=\dfrac{E}{R_{\text{内}}+R}$\quad $R_1=9600\,\Omega$ % 此处 $R_1$ 的下标手写形似逗号/1
+\end{itemize}
+%%%END
+%%%BLOCK id=197-03 ch=10 sec=电源功率·P-I与P-U图像 kind=knowledge alt=none cont=none y=0.70-0.99
+\begin{itemize}
+\item $P=IE$
+\item $P_{\text{热}}=I^2r$
+\item $P_{\text{出}}=IU=I^2R$
+\end{itemize}
+
+\notefig[0.5]{figures/p197_h.png}
+% 图中标注：①处 $P=EI$（短路，箭头指向纵轴最高点）；② $P=I^2r$（末字被涂黑）；③ $I_m$、$R=r$；图下 $P=I(E-Ir)=EI-I^2r$
+
+\[
+P=I(E-Ir)=EI-I^2r
+\]
+\[
+I_m=\frac{E}{r}\qquad\text{任一位置}\ P_{\text{出}}+P_{\text{热}}=P_{\text{总}}
+\]
+
+\notefig[0.3]{figures/p197_i.png}
+
+\begin{align*}
+&\text{①}\ P=E\,\frac{E-U}{r}=\frac{E^2}{r}-\frac{E}{r}U\qquad\qquad \frac{k}{b}=E\ {}^{\to r}\\
+&\text{②}\ P_{\text{热}}=\left(\frac{E-U}{r}\right)^{2}r\\
+&\text{③}\ P_{\text{出}}=\left(\frac{E-U}{r}\right)U
+\end{align*}
+% 原稿 $k/b=E$ 上方有两道弯箭头相连，指向右上方的 $r$；CHECK: 由①式斜率 $-E/r$、截距 $E^2/r$ 推得的应是 $|b/k|=E$
+\[
+P_{\text{出}}+P_{\text{热}}=P_{\text{总}}
+\]
+% 小图中 ①②③ 圈号及 $R=r$ 标注在图内；①式处另有一条自上方弯入的大弧线穿过
+%%%END
+%%%BLOCK id=199-08 ch=10 sec=测电源电动势和内阻·电源选择 kind=note exp=1 alt=none cont=none y=0.95-1.00
+测电源电动势、内阻实验中\qquad $E=I_{\max}R_{\text{滑}\max}$
+
+选$E$略大于$I_{\max}R_{\text{滑}\max}$的电源
+% 后一行为写在上一行右上方的小字批注，一个弯箭头从该批注指向上一行的“$E$”；“$I_{\max}R_{\text{滑}\max}$”下有红笔下划线
+%%%END

@@ -1,0 +1,84 @@
+% 本文件由 assemble.py 按 _work/plans/ch90.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{数学与物理方法（通用）}
+\label{ch:90}
+
+\section{微分方程·分离变量}
+% ---- block 001-01 (原稿第1页) kind=derivation ----
+\[
+v=kx,\quad \frac{\dd x}{\dd t}=kx,\quad \int\frac{\dd x}{kx}=\int\dd t,\quad \ln x=kt+kc,\quad x=\ee^{kt+kc}
+\]
+
+
+\section{定义式与决定式}
+% ---- block 083-07 (原稿第83页) kind=summary ----
+% 原稿左侧有大括号：{定义式 比值 (无关)；决定式 (相关)}，“无关”“相关”均被圈起；公式按原稿行序排列
+\[
+\left\{\begin{aligned}
+&\text{定义式\ \ 比值}\\[8pt]
+&\text{决定式}
+\end{aligned}\right.
+\]
+
+$v=\dfrac{\Delta x}{\Delta t}$\quad $k=\dfrac{F}{x}$\quad $E=\dfrac{F}{q}$\quad $\unclear{R=\dfrac{U}{I}}$ % CHECK: 末式笔迹形似“k=v/L”，按R=U/I转录(本页“R”常写得像“k”)
+
+$I=\dfrac{q}{t}$\quad $C=\dfrac{Q}{U}$\quad $\Phi=B_{\perp}S$
+
+\fbox{无关}\quad $p=mv$\quad $I=Ft$
+
+\fbox{相关}\quad $a=\dfrac{F}{m}$\quad $E=\dfrac{kQ}{r^2}$
+
+$I=nesv$\quad $R=\dfrac{\rho L}{S}$\quad $C=\dfrac{\varepsilon S}{4\pi kd}$
+
+
+\section{函数分析·变化率与面积}
+% ---- block 083-08 (原稿第83页) kind=formula ----
+\textbf{函数分析}
+
+% 原稿左侧红笔大括号括住下列各式
+\[
+\left\{\begin{aligned}
+a&=\frac{\Delta v}{\Delta t}\\[6pt]
+E_{\text{\unclear{感}}}&=-n\frac{\Delta\Phi}{\Delta t}\qquad E_{\text{场}}=-\red{\frac{\Delta\varphi}{\Delta x}}\\[6pt]
+i&=\frac{\Delta q}{\Delta t}\\[6pt]
+F&=\frac{\Delta p}{\Delta t}\\[6pt]
+P&=\frac{\Delta W}{\Delta t}\\[6pt]
+F_{\text{合}}&=\frac{\Delta E_k}{\Delta x}\\[6pt]
+F_{\text{其他}}&=\frac{\Delta E_{\text{机}}}{\Delta x}\\[6pt]
+R&=\frac{U_1}{I_1}=\frac{U_2}{I_2}\neq\frac{U_2-U_1}{I_2-I_1}\\[6pt]
+P&=U_1I_1\qquad\text{面积}\ S=\int xy
+\end{aligned}\right.
+\]
+% 原稿E_场式中黑笔旧写的分式被红笔涂划，右侧红笔重写为Δφ/Δx；E_感下标笔迹似“源/感”
+
+$\dfrac{\Delta v}{\Delta t}$\quad 匀圆变化\quad 方向变
+
+
+\section{数列求和·多过程}
+% ---- block 091-06 (原稿第91页) kind=method ----
+\textbf{数列类}
+\[
+\left\{\begin{aligned}
+S_n&=\frac{(a_1+a_n)n}{2}\\
+S_n&=\frac{a_1}{q-1}(q^{n}-1)\qquad \text{若}\ |q|<1\ \ \lim_{n\to\infty}S_n=\frac{a_1}{1-q}
+\end{aligned}\right.
+\]
+\begin{quote}
+详写过程 $|$ 易得过程2\\
+综上全过程得出通项式\\
+求前$n$项和、极限$n$无穷
+\end{quote}
+% CHECK: “过程”后的竖线也可能是数字 1（详写过程1）
+
+
+\section{近似·二项式定理}
+% ---- block 091-08 (原稿第91页) kind=formula ----
+\textbf{二项式定理}\quad $(1+x)^{\alpha}\approx 1+\alpha x$\quad ($x$ 很小时)
+
+
+\section{微积分·常用导数(tan x)}
+% ---- block 199-06 (原稿第199页) kind=formula ----
+$(\tan x)'=\dfrac{1}{\cos^2 x}$
+
+\notefig[0.55]{figures/p199_e.png}
+% 图为 $y=\tan x$ 的导函数 $\frac{1}{\cos^2x}$ 的草图（竖直虚线为渐近线），箭头自公式指向中间一支；右侧另有一小段红笔画的 V 形曲线
+

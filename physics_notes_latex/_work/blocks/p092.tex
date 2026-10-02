@@ -1,0 +1,75 @@
+%%%PAGE 92 rot=0 legibility=good summary=小量近似（等量异种电荷中垂线与轴线场强比、扰动后简谐运动）；质谱仪狭缝宽度与轨迹不交叠条件；两离子底片上不重叠求L条件
+%%%BLOCK id=092-01 ch=09 sec=电场强度·小量近似 kind=method alt=90 cont=none y=0.07-0.265
+\textbf{小量近似}
+%FIG p092_a 0.12 0.09 0.31 0.19
+\notefig[0.25]{figures/p092_a.png}
+
+% “L≫a”写在下面“忽略”二字的上方
+$L\gg a$
+
+求 $\dfrac{E_{M}}{E_{N}}$\quad 忽略 $\left(\dfrac{a}{L}\right)^{n}$\ $n\ge 2$
+\begin{align*}
+E_{M}&=2\frac{kQ}{a^{2}}\cos^{3}\theta=\frac{2kQ}{a^{2}}\left(\frac{a}{\sqrt{a^{2}+L^{2}}}\right)^{3}\\
+&=\frac{2kQa}{\left[L^{2}\left(1+\frac{a^{2}}{L^{2}}\right)\right]^{3/2}}=\frac{2kQa}{L^{3}}\\
+E_{N}&=\frac{kQ}{(L-a)^{2}}-\frac{kQ}{(L+a)^{2}}=\frac{4kQLa}{(L^{2}-a^{2})^{2}}\\
+&=kQ\cdot4La\cdot\frac{1}{\left[L^{2}\left(1-\frac{a^{2}}{L^{2}}\right)\right]^{2}}=\frac{4kQa}{L^{3}}\\
+\therefore\ \frac{E_{M}}{E_{N}}&=\frac{1}{2}
+\end{align*}
+%%%END
+%%%BLOCK id=092-02 ch=08 sec=简谐运动·判断（小量近似） kind=derivation alt=09 cont=none y=0.265-0.405
+扰动后做简谐运动
+%FIG p092_b 0.09 0.302 0.28 0.333
+\notefig[0.25]{figures/p092_b.png}
+\begin{align*}
+F_{\text{回}}&=\frac{kQq}{(L-x)^{2}}-\frac{kQq}{(L+x)^{2}}
+=\frac{kQq}{L^{2}\left(1-\dfrac{2x}{L}+\underset{\approx0}{\left(\dfrac{x}{L}\right)^{2}}\right)}\\
+&=\frac{kQq}{L^{2}}\cdot\frac{\dfrac{4x}{L}}{1-\underset{\approx0}{\dfrac{4x^{2}}{L^{2}}}}=\frac{4kQqx}{L^{3}}\ \propto x
+\end{align*}
+% CHECK: 中间两个等号处的式子手写较乱（第二项 -kQq/(L+x)^2 似乎未体现），原样照录
+故为简谐运动
+
+or\quad $F=\dfrac{4kQqLx}{\left[L^{2}\left(1-\underset{\approx0}{\dfrac{x^{2}}{L^{2}}}\right)\right]^{2}}=\dfrac{4kQq}{L^{3}}\,x$
+%%%END
+%%%BLOCK id=092-03 ch=11 sec=质谱仪·狭缝 kind=method alt=none cont=none y=0.42-0.61
+①\ \textbf{质谱仪狭缝}
+%FIG p092_c 0.055 0.515 0.215 0.605
+\notefig[0.25]{figures/p092_c.png}
+\[
+\left\{\begin{aligned}
+d&\le 2r_{1}-2r_{2}\\
+L-d&=2r_{2}
+\end{aligned}\right.
+\qquad d\le\frac{\sqrt{m_{1}}-\sqrt{m_{2}}}{2\sqrt{m_{1}}-\sqrt{m_{2}}}\,L
+\qquad \frac{r_{1}}{r_{2}}=\sqrt{\frac{m_{1}}{m_{2}}}
+\]
+% CHECK: d≤ 结果式的分母手写为 2√m1−√m2，请核对
+%%%END
+%%%BLOCK id=092-04 ch=11 sec=质谱仪·狭缝 kind=method alt=none cont=none y=0.61-0.90
+②\ 轨迹不交叠 $\Leftrightarrow r_{1}\ge r_{2}$
+% CHECK: “不交叠”后的符号手写像 ⇔（也可能是 ⇒）
+%FIG p092_d 0.13 0.658 0.40 0.805
+\notefig[0.3]{figures/p092_d.png}
+\[
+\left\{\begin{aligned}
+d&=r_{1}-h\\
+h&=\sqrt{r_{1}^{2}-\frac{L^{2}}{4}}
+\end{aligned}\right.
+\]
+\[
+\therefore\ d=\frac{2}{B}\sqrt{\frac{mU_{0}}{q}}-\sqrt{\frac{4mU_{0}}{qB^{2}}-\frac{L^{2}}{4}}
+\]
+%%%END
+%%%BLOCK id=092-05 ch=11 sec=质谱仪·底片重叠条件 kind=problem alt=none cont=none y=0.73-0.99
+若两离子\unclear{在}底片上没有重叠\ 求 $L$ 条件
+\begin{align*}
+r_{\text{甲}}&=\sqrt{\frac{4m(U-\Delta U)}{qB^{2}}}\\
+r_{\text{乙}}&=\sqrt{\frac{2m(U+\Delta U)}{qB^{2}}}\\
+2r_{\text{甲}}-2r_{\text{乙}}&\ge L
+\end{align*}
+% CHECK: r乙 的下标手写像 2（乙），ΔU 的 Δ 手写像 δ
+甲最近点$-$乙最远点$\ge L$
+\[
+L\le2\sqrt{\frac{4m(U-\Delta U)}{qB^{2}}}-2\sqrt{\frac{2m(U+\Delta U)}{qB^{2}}}
+\]
+%%%END
+%%%PAGEEND 92

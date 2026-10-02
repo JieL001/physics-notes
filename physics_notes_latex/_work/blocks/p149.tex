@@ -1,0 +1,79 @@
+%%%PAGE 149 rot=0 legibility=good summary=含两电流表的桥式电路求A1、A2；戴维南原理独立方程；含容电路(通交隔直)及充放电q-t图；基尔霍夫定律桥式电路方程组；戴维南原理等效电源(串联/并联电阻、两电池串联/并联求等效E与r)
+% 页面右上角露出邻页(化学)内容“ρ=1.429 g·L^-1”及“No./Date”页眉，不属于本页，已忽略
+%%%BLOCK id=149-01 ch=10 sec=电路简化·节点法 kind=problem alt=none cont=none y=0.0-0.17
+% 原稿“求A1、A2”下方的 0.5A、0.75A 疑为答案；图中各电阻值、A1/A2电流表、3V电源已在图内
+\begin{problem}
+%FIG p149_a 0.02 0.015 0.26 0.17
+\notefig[0.25]{figures/p149_a.png}
+\noindent 求 $A_1$　$A_2$
+
+\noindent $0.5\unit{A}$　$0.75\unit{A}$
+\end{problem}
+%%%END
+%%%BLOCK id=149-02 ch=10 sec=戴维南定理·独立方程 kind=knowledge alt=none cont=none y=0.17-0.26
+% 原稿：“独立方程”右侧第一个大括号含“节点”“回路”两行；其右侧第二个大括号含“任一回路有2个方程”，其下方还有一个小括号括着两行方程
+\noindent 戴维南原理——独立方程——
+\begin{itemize}
+\item 节点　$I_{\text{入}}=I_{\text{出}}$
+\item 回路　$U=0$
+\item 任一回路有2个方程
+\begin{itemize}
+\item $U=IR\ /\ E=U+Ir$
+\item $P=I^2R\ \cdot\ P=UI$
+\end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=149-03 ch=10 sec=含容电路 kind=knowledge alt=none cont=none y=0.24-0.35
+% “隔直”二字上方另有小字(疑为“隔离”)，笔迹难辨；“隔直”下方有横线，并由折线(└)引出下一行；右侧为 q-t 图(充电曲线上升、放电曲线下降，交于一点)
+\noindent 含容电路　通交\underline{\unclear{隔}直}　通高阻低
+
+\noindent \hspace*{2em}$\llcorner$\,与电容器串联的任何用电器（稳定时）不工作
+%FIG p149_b 0.715 0.265 0.91 0.355
+\notefig[0.25]{figures/p149_b.png}
+%%%END
+%%%BLOCK id=149-04 ch=10 sec=基尔霍夫定律 kind=knowledge alt=none cont=none y=0.34-0.51
+% 图中红笔标出各支路电流 I_1~I_5 的方向、节点 a、b 及两个回路的绕行箭头(已在图内)
+\textbf{基尔霍夫定律}
+
+\noindent $\sum I=0$　$\sum\varphi=0$
+%FIG p149_c 0.30 0.355 0.585 0.51
+\notefig[0.3]{figures/p149_c.png}
+\[ \left\{\begin{aligned}
+&I_1=I_2+I_3\\
+&I_3+I_4=I_5\\
+&I_1+I_4=I_2+I_5\\
+&\varphi_0-I_1R_1-I_3R_3+I_4R_4=\varphi_0\\
+&\varphi_0'+I_5R_5+I_3R_3-I_2R_2=\varphi_0'
+\end{aligned}\right. \]
+%%%END
+%%%BLOCK id=149-05 ch=10 sec=戴维南定理·等效电源 kind=knowledge alt=none cont=none y=0.51-0.72
+% 红笔：两个电路图各被红圈圈出，圈下用红色大括号写出等效关系
+\textbf{戴维南原理——等效电源}
+
+\noindent $\left\{\begin{tabular}{@{}l@{}}等效电阻：开路电阻\\[6pt]等效电压：开路电压\end{tabular}\right.$% “开路电阻”中“电”“阻”处笔迹叠写、较糊
+%FIG p149_d 0.44 0.587 0.60 0.654
+\notefig[0.25]{figures/p149_d.png}
+\red{$\left\{\begin{array}{l}r'=r+R\\E'=E\end{array}\right.$}
+%FIG p149_e 0.65 0.595 0.785 0.70
+\notefig[0.25]{figures/p149_e.png}
+\red{$\left\{\begin{array}{l}r'=\dfrac{Rr}{R+r}\\[6pt]E'=\text{\unclear{开}}\,U_R=\dfrac{R}{R+r}E\end{array}\right.$}% “E'=”与“U_R”之间的红色符号形似“开”(开路)，难辨
+%%%END
+%%%BLOCK id=149-06 ch=10 sec=戴维南定理·等效电源 kind=derivation alt=none cont=none y=0.64-0.82
+% 图中两节电池旁标有数字 3 和 5(疑为 E1=3V、E2=5V)；红笔圈出 E1-E2 并标“E等”、在 r1+r2 下划红线并标“r等”
+%FIG p149_f 0.14 0.645 0.285 0.766
+\notefig[0.25]{figures/p149_f.png}
+\[ \left\{\begin{aligned}E&=2\unit{V}\\ r&=r_1+r_2\end{aligned}\right. \]
+\[ \varphi_0+E_1-Ir_1-Ir_2+E_2-IR_0=\varphi_0 \]% CHECK: 原稿此式中 E_2 前为“+”，与下式 I=(E_1-E_2)/(r_1+r_2+R_0) 的符号不一致
+\[ I=\dfrac{\overbrace{E_1-E_2}^{\red{E_{\text{等}}}}}{\underbrace{r_1+r_2}_{\red{r_{\text{等}}}}+R_0} \]
+%%%END
+%%%BLOCK id=149-07 ch=10 sec=戴维南定理·等效电源 kind=derivation alt=none cont=none y=0.76-1.00
+% 原稿末式分子分数处画圈并在圈旁标 E'，分母中 r_1r_2/(r_1+r_2) 处画圈并在圈左标 r'；页面底边附近被截断
+%FIG p149_g 0.085 0.761 0.30 0.893
+\notefig[0.25]{figures/p149_g.png}
+\[ \left\{\begin{aligned}
+&\varphi_0+E_1-I_1r_1-E_2+I_2r_2=\varphi_0\\
+&\varphi_0+E_2-I_2r_2-(I_1+I_2)R_0=\varphi_0
+\end{aligned}\right. \]
+\[ I=\dfrac{E_1r_2+E_2r_1}{r_1r_2+(r_1+r_2)R_0}=\dfrac{\underbrace{\dfrac{E_1r_2+E_2r_1}{r_1+r_2}}_{E'}}{\underbrace{\dfrac{r_1r_2}{r_1+r_2}}_{r'}+R_0} \]
+%%%END
+%%%PAGEEND 149

@@ -1,0 +1,69 @@
+%%%PAGE 116 rot=0 legibility=good summary=恒定电流要点七条：滑变并联等效电阻先增后减、传统分压、输出功率与效率图像、电动机与电源功率、电子速度、热阻公式、偏角与电流
+% 页面最上缘及右上角露出的是相邻纸页边缘（“Date.”“混合气体 ρ=1.429 g·L^-1”“…=6.72 L”等），按规范忽略；页面下半为空白（仅有背面透出的淡字）
+%%%BLOCK id=116-01 ch=10 sec=动态分析 kind=method alt=none cont=none y=0.01-0.24
+\textbf{1．}
+
+% 图p116_a内含标注：R_1、R_0、两个变阻器、电压表V、电流表A、电源E r，图中另有手画圈
+%FIG p116_a 0.004 0.01 0.18 0.18
+\notefig[0.3]{figures/p116_a.png}
+
+\[R_{\text{总}}=\frac{(R_{\text{上}}+R_1)(R_2+R_{\text{下}})}{R_{\text{上}}+R_1+R_2+R_{\text{下}}}\le\frac{\left(\dfrac{R_1+R_2+R_{\text{上}}+R_{\text{下}}}{2}\right)^2}{R_1+R_2+R_{\text{上}}+R_{\text{下}}}\]
+当 $R_1+R_{\text{上}}=R_2+R_{\text{下}}$\quad 能取等才可先$\uparrow$后$\downarrow$
+
+$R_{\text{等效}}$ 中间取最大
+\begin{itemize}
+\item $R$ 先$\uparrow$后$\downarrow$
+\item $I$ 先$\downarrow$后$\uparrow$
+\item $U$ 先$\uparrow$后$\downarrow$
+\end{itemize}
+当成1个$R_{\text{并}}$可用串反并同
+%%%END
+%%%BLOCK id=116-02 ch=10 sec=分压电路 kind=method alt=none cont=none y=0.24-0.36
+\textbf{2．传统分压}
+
+% 图p116_b内含标注：R、P、x、R_0−x、串联部分、与电源
+%FIG p116_b 0.18 0.245 0.322 0.34
+\notefig[0.25]{figures/p116_b.png}
+
+$P$ 从左$\to$右\quad $R_{\text{总}}\downarrow$\quad 与串联部分单调性一致 % CHECK: “R总”字形像“P总”，其下有波浪线
+
+$R$: 滑变中值分流小\quad 两边分流最大
+\[R_{\text{总}}=\frac{Rx}{R+x}+R_0-x=R-\frac{x^2}{R+x}\qquad\text{求导．}\]
+%%%END
+%%%BLOCK id=116-03 ch=10 sec=电源功率与效率 kind=knowledge alt=none cont=none y=0.31-0.46
+\textbf{3．}\unclear{输}出功率看类似图像
+
+% 图p116_c：P–R 图像，纵轴 P，横轴 R，峰值处虚线对应横轴上的 r
+%FIG p116_c 0.055 0.332 0.30 0.441
+\notefig[0.3]{figures/p116_c.png}
+
+有 \unclear{$R_{\text{外}}$} 与 $r$ 关系，才能定 $P$
+
+效率 $\eta=\dfrac{U}{E}=\dfrac{IR_{\text{外}}}{I(R_{\text{外}}+r)}=\dfrac{1}{1+\dfrac{r}{R_{\text{外}}}}$\quad 先$\uparrow$后$\downarrow$\quad $\eta$ 与 $R_{\text{外}}$ 正相关 % CHECK: “先↑后↓”与 η 随 R外单调增不符，可能指 P
+%%%END
+%%%BLOCK id=116-04 ch=10 sec=含电动机电路 kind=formula alt=none cont=none y=0.45-0.50
+\textbf{4．}\fbox{电动机}\quad $P_{\text{总}}=UI$\quad $P_{\text{热}}=I^2R$\quad $P_{\text{机}}=UI-I^2R=FV$\quad $\eta=\dfrac{UI}{FV}$ % CHECK: 按定义 η 应为 FV/UI，原稿写作 UI/FV
+% 原稿“电动机”为椭圆圈；P机式中 R 上方有向下箭头，旁注“内阻耗热”
+（$I^2R$ 上方箭头$\downarrow$标注：内阻\unclear{耗热}）
+%%%END
+%%%BLOCK id=116-05 ch=10 sec=电源功率与效率 kind=formula alt=none cont=none y=0.49-0.61
+\textbf{5．}\fbox{电源}\quad $P_{\text{总}}=EI$\quad $P_{\text{有}}=UI$\quad $P_{\text{热}}=I^2r$
+% 原稿“电源”为椭圆圈
+\[P_{\text{有}}=\left(\frac{E}{R+r}\right)^2R=\frac{E^2}{R+\dfrac{r^2}{R}+2r}\le\frac{E^2}{4r}\]
+% 图p116_d：P有–r 图像，纵轴 P有，横轴 r，峰值处标 R=r
+%FIG p116_d 0.80 0.495 0.955 0.568
+\notefig[0.25]{figures/p116_d.png}
+
+$\uparrow$ % 箭头指向上面的 E^2/(4r)
+$r$ 可以是等效电动机内阻
+%%%END
+%%%BLOCK id=116-06 ch=10 sec=电流·微观 kind=knowledge alt=none cont=none y=0.53-0.56
+定向移动 $\mu\unit{m/s}$\quad 热运动 $10^6\unit{m/s}$\quad 电场传播 $3\times10^8\unit{m/s}$
+%%%END
+%%%BLOCK id=116-07 ch=10 sec=电阻定律 kind=formula alt=none cont=none y=0.56-0.60
+\textbf{6．}热\unclear{阻}公式\quad $\rho=\rho_0(1+\alpha T)$\quad $R=\rho_1\dfrac{L-x}{S}+\rho_2\dfrac{x}{S}\cdots$
+%%%END
+%%%BLOCK id=116-08 ch=10 sec=电表改装 kind=note alt=none cont=none y=0.60-0.63
+\textbf{7．}\fbox{偏角(\unclear{$=$})电流大小} % 原稿此行外有方框
+%%%END
+%%%PAGEEND 116

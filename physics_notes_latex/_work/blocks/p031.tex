@@ -1,0 +1,73 @@
+%%%PAGE 31 rot=0 legibility=good summary=自耦变压器；电流互感器与电压互感器；副线圈接二极管(半波整流)时的视在功率/有功功率/无功功率分析；远距离输电的回路关系与损失功率
+%%%BLOCK id=031-01 ch=13 sec=变压器·自耦变压器 kind=knowledge alt=none cont=none y=0.06-0.21
+\textbf{自耦变压器}
+
+%FIG p031_a 0.08 0.09 0.54 0.20
+\notefig[0.6]{figures/p031_a.png}
+% 图内标注：左为单铁芯自耦变压器符号(端点标 U_2、U_1)；中间两幅自耦变压器线路图：n_2/U_2、n_1/U_1，下图标“I_干路=I_原+I_副”、“电源”、n_1、n_2、I_原，红笔 I_副 及红箭头
+% 图右侧两式已在下面转录(原稿中位于图的右侧)
+\[
+\frac{U_1}{n_1}=\frac{U_2}{n_2}
+\]
+\[
+n_1I_{\text{原}}=n_2I_{\text{副}}
+\]
+%%%END
+%%%BLOCK id=031-02 ch=13 sec=变压器·互感器 kind=knowledge alt=none cont=none y=0.25-0.41
+\textbf{电流互感器\quad 电压互感器}\quad ($U/I$ 太大\ 不敢测/不能测)
+
+\noindent\begin{tabular}[t]{@{}p{0.4\linewidth}@{}p{0.4\linewidth}@{}}
+升压\ 降流 & 降压\ 升流
+\end{tabular}
+
+%FIG p031_b 0.075 0.318 0.333 0.380
+\notefig[0.4]{figures/p031_b.png}
+% 图内标注：左图(电流互感器)原线圈 I_1、n_1，副线圈 n_2 与 I_2测(花括号)；右图(电压互感器)n_1、n_2、U_1、U_2测
+\[
+I_1=\frac{n_2}{n_1}I_1
+\]% CHECK: 原稿右端 I 的下标写得像“1”(应为 I_2测)，照原样转录；此式位于左图下方
+\[
+U_1=\frac{n_1}{n_2}U_2\qquad \text{\unclear{测小算大}}
+\]% 此式及“测小算大”位于右图右侧；“测小算大”四字辨认不清，第二字写得像“外”
+%%%END
+%%%BLOCK id=031-03 ch=13 sec=变压器·二极管与视在功率 kind=derivation alt=none cont=none y=0.43-0.82
+\textbf{二极管与视在功率}
+
+%FIG p031_c 0.128 0.443 0.775 0.662
+\notefig[0.85]{figures/p031_c.png}
+% 图内标注：电路——原线圈(U_0 电源，I_1、U_1、P_1)、副线圈(I_2、U_2、P_2)、二极管(红笔圈出，红字“滤波”)、电阻 R(U_2、I_R、P_R)
+% 图内红字小表(行：视/有/无；列：原线圈、副线圈、R 支路)：视 P_1、P_2、P_2；有 P_R、P_R、P_2；无 P_1-P_R、P_2-P_R、0 (行首“视”字不太确定)
+% 波形(横轴 t)：U_1 正弦波，U_m 被黑笔圈出，负半周红笔描出并标红字“未做功”(共两处“未做功”)；I_1 半波(I_m)，正半周红笔描出；U_2 正弦波，峰值标 n_2/n_1·U_m，负半周红字“未做功”；U_R 半波，峰值 n_2/n_1·U_m；最右 I_2(I_R) 波形，峰值标 n_1/n_2·I_m
+\begin{align*}
+P_1&=U_1I_1=\left(\frac{U_m}{\sqrt2}\right)\left(\frac{I_m}{\sqrt2}\cdot\frac{1}{\sqrt2}\right)=\frac{U_mI_m}{2\sqrt2}\\
+P_2&=U_2I_2=\frac{n_2}{n_1}\frac{U_m}{\sqrt2}\cdot\frac{n_1}{n_2}\frac{I_m}{\sqrt2}\cdot\frac{1}{\sqrt2}=\frac{U_mI_m}{2\sqrt2}\neq P_R=\frac{U_mI_m}{4}
+\end{align*}
+
+\noindent $P_{\text{视在}}=P_{\text{有功}}+P_{\text{无功}}$\quad (有$U$无$I$下\textsuperscript{\unclear{…}}功率)% “下”与“功率”之间的上方有两个极小的字(旁注)，无法辨认
+
+\noindent 电表有效值乘积\quad 实际做功功率\ (UI 波形一致时\textsubscript{功率})% 小字“功率”写在该行下方、“形一致”处
+
+\noindent \red{题中所有功率全是 有功功率}
+%%%END
+%%%BLOCK id=031-04 ch=13 sec=变压器·远距离输电 kind=method alt=none cont=next y=0.82-1.00
+\textbf{远程输电}
+
+%FIG p031_d 0.035 0.822 0.335 0.985
+\notefig[0.42]{figures/p031_d.png}
+% 图内标注：升压变压器(n_1、n_2)、输电线、降压变压器(n_3、n_4)、用电器 R；原线圈侧 ~U_0 =U_1、I_1、P_1；输电线两侧 I_2、U_2、P_2 与 I_3、U_3、P_3，中间“=、≠、≠”(I_2=I_3，U_2≠U_3，P_2≠P_3)；用户侧 I_4、U_4；红笔：“升压降流 降热”、“输电电流”(红线指向输电线)、“低压”“高压”、红圈圈出输电线部分及红箭头；图下黑字“输电功率”“用电功率”(带引线)
+\noindent 发电回路\quad $U_0=U_1$\\
+输电回路：$U_3=U_2-I_2r$\\
+用电回路：$U_4=I_4R$
+
+\noindent \fcolorbox{red!75!black}{white}{损失功率}% 红笔圈出
+\quad $\Delta P=I_2^2r=\dfrac{\Delta U^2}{r}=\Delta U\cdot I_2=P_2-P_3$
+
+\[
+=\left(\frac{P_2}{U_2}\right)^2r=\left(\frac{P_1}{U_1\cdot\frac{n_2}{n_1}}\right)^2r
+\]% 红箭头由 I_2^2 指向 (P_2/U_2)^2 ；分母中的 n_2/n_1 被红笔圈出
+
+\noindent \fcolorbox{red!75!black}{white}{$\left(\dfrac{n_2}{n_1}\right)$}\ 提高$K$倍\quad $\Delta P$\unclear{减小为}$\dfrac{1}{K^2}$% “减…K”下方有红线；“减小为”三字辨认不清(原稿像“减损”)
+
+\noindent \red{输电电压$U_2$提高$K$倍}
+%%%END
+%%%PAGEEND 31

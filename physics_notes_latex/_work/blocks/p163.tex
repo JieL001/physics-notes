@@ -1,0 +1,81 @@
+%%%PAGE 163 rot=0 legibility=good summary=电磁感应综合：线框落入磁场的t/Q/v比较与加速减速匀速图像；弹簧悬挂线框题；有效长度变化的线框题；超导圈张力；通用解题方法提示
+% 页面顶部(y<0.12)露出的是上方另一页的化学笔记残片，已忽略
+%%%BLOCK id=163-01 ch=12 sec=电磁感应·线框落入磁场比较 kind=method alt=03,06 cont=none y=0.07-0.33
+%FIG p163_a 0.02 0.07 0.345 0.225
+\notefig[0.4]{figures/p163_a.png}
+\begin{tabular}{@{}l@{\qquad}l@{}}
+①\,若②加速或匀速 & ①加速\\
+\hphantom{①\,}若②减速 & ①加、减、匀均可
+\end{tabular}
+
+% 下图（花括号内三种情形）图内文字：②加速 a=g-B^2L^2v/m（v-t 曲线上升并趋近虚线）；②减速（v-t 曲线下降并趋近虚线）；③匀速（水平线）
+% CHECK: a=g-B^2L^2v/m 的分母只见 m，似缺 R；第三项序号写得像③（疑为②匀速）
+%FIG p163_b 0.78 0.11 0.985 0.265
+\notefig[0.3]{figures/p163_b.png}
+图象注意起点
+
+①②在磁场中位移相同
+
+$V_{2\text{入}}$小，$F_{\text{安}2}$小，$W_{F_{\text{安}2}}$小，$Q_2<Q_1$
+\[ mgh-Q=\tfrac12mv^2\qquad \text{故}\ V_2>V_1 \]
+\[ mgt-\frac{2B^2L^2L'}{R}=mV\qquad \text{由}\ V_2>V_1\ \Rightarrow\ t_1<t_2 \]
+%%%END
+%%%BLOCK id=163-02 ch=12 sec=电磁感应·方法提示 kind=note alt=none cont=none y=0.31-0.36
+\unclear{函}数类直接代入
+
+弹簧＋电磁：阻尼振动\quad 能量损耗
+%%%END
+%%%BLOCK id=163-03 ch=02 sec=受力分析·接触面作用力 kind=note alt=none cont=none y=0.33-0.39
+%FIG p163_c 0.57 0.33 0.708 0.39
+\notefig[0.25]{figures/p163_c.png}
+$M$为$m$\ 作用力\quad $F=\sqrt{N^2+f^2}$ % CHECK: “为”字疑为“对”（M对m作用力）；m 后有涂改液痕迹
+%%%END
+%%%BLOCK id=163-04 ch=12 sec=电磁感应·弹簧线框 kind=problem alt=06,03 cont=none y=0.40-0.57
+% 本页未见这道题的文字题干，只有图和解答算式
+\begin{problem}
+%FIG p163_d 0.02 0.40 0.20 0.535
+\notefig[0.25]{figures/p163_d.png}
+原长释放\quad $K=\dfrac{mg}{L}$
+\begin{solution}
+\[ mgt-I_T=mV \]
+\[ 0.5L\neq\tfrac12Vt\ \text{非匀变速}\qquad I_T\neq\frac{mgL}{V}-mV \]
+\[ E=BLV\qquad U_{ad}=-\frac{E}{R}\cdot\frac34R=-\frac34BLV \]
+由牛二
+\[ \left|mg-K\frac{L}{2}-BIL\right|=ma\qquad I=\frac{BLV}{R}\qquad a=\left|\frac{g}{2}-\frac{B^2L^2V}{mR}\right| \]
+静止时 $Kx'=mg$
+
+$\therefore x'=L$\qquad $E_p=\tfrac12Kx'^2=0.5mgL$
+
+$\Delta E_p=mgL$
+
+由能量守恒\quad $W_G-W_T=Q$\qquad $Q=0.5mgL$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=163-05 ch=12 sec=电磁感应·变有效长度 kind=problem alt=06 cont=none y=0.56-0.78
+% 本页未见这道题的文字题干，只有图和解答算式
+\begin{problem}
+%FIG p163_e 0.009 0.565 0.31 0.675
+\notefig[0.4]{figures/p163_e.png}
+$P_R$不变\ 向左移$L$过程
+\begin{solution}
+位移$x$\quad $l=L-\dfrac{x}{2}$
+\[ B\,l\,V=BLV_0\qquad \therefore V=\frac{2LV_0}{2L-x}\qquad x\uparrow\ V\uparrow\ \text{非匀变速} \] % 原稿“l”与“L”字形相近，按物理意义区分
+\[ \Delta t=\frac{\Delta\Phi}{BLV_0}=\frac{B\frac{L}{2}\left(L+\frac{L}{2}\right)}{BLV_0}=\frac{3L}{4V_0} \]
+\[ Q=I^2R\Delta t=\left(\frac{BLV_0}{R}\right)^2R\Delta t=\frac{3B^2L^3V_0}{4R} \]
+$V=2V_0$时\quad $W=\tfrac12m(2V_0)^2-\tfrac12mV_0^2+Q=\dfrac{3B^2L^3V_0}{4R}+\dfrac32mV_0^2$
+
+（写在“$V=2V_0$时”下方的小字）\unclear{即}（$x=L$时）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=163-06 ch=11 sec=安培力·圆环张力 kind=derivation alt=12 cont=none y=0.77-0.87
+% 图上标注“超导线圈”、F、BI2R
+%FIG p163_f 0.04 0.77 0.265 0.87
+\notefig[0.3]{figures/p163_f.png}
+\[ 2F_{\text{\unclear{张}}}=BI\,2R\qquad F=BIR \]
+%%%END
+%%%BLOCK id=163-07 ch=90 sec=解题方法·通用 kind=method alt=none cont=none y=0.88-0.92
+能否到达\ \ 假设到达推矛盾\qquad 相交相遇问题轨迹方程法
+%%%END
+%%%PAGEEND 163

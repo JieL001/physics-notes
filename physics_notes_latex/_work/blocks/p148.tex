@@ -1,0 +1,55 @@
+%%%PAGE 148 rot=0 legibility=good summary=电路化简：(1)桥式电路R3电流为零无法化简为串并联；(2)惠斯通电桥及三角形网络求R_AB；(3)节点法与等电势原理，及正方形带对角线电阻网络求R_AB
+% 页面背面有淡淡的透印字迹(忽略)
+%%%BLOCK id=148-01 ch=10 sec=电路简化·惠斯通电桥 kind=knowledge alt=none cont=none y=0.0-0.16
+\textbf{电路化简}
+
+\noindent (1)
+%FIG p148_a 0.08 0.013 0.385 0.155
+\notefig[0.3]{figures/p148_a.png}
+\noindent 该图无法化简为串并联
+%%%END
+%%%BLOCK id=148-02 ch=10 sec=电路简化·惠斯通电桥 kind=knowledge alt=none cont=none y=0.17-0.31
+\noindent (2)　惠斯通电桥　$\dfrac{R_1}{R_2}=\dfrac{R_4}{R_5}$　对角线乘积相等
+%FIG p148_b 0.065 0.215 0.41 0.31
+\notefig[0.35]{figures/p148_b.png}
+%%%END
+%%%BLOCK id=148-03 ch=10 sec=电路简化·惠斯通电桥 kind=problem alt=none cont=none y=0.31-0.49
+% 四幅图之间有一条手绘长曲线相连；图内文字(求R_AB、各电阻编号、A/B等)已在图中，右下角的 R_AB 算式在图内也有，下方单独转录
+\begin{problem}
+求 $R_{AB}$
+%FIG p148_c 0.08 0.32 0.98 0.49
+\notefig[0.85]{figures/p148_c.png}
+\begin{solution}
+$R_{AB}=\dfrac{4\times2}{4+2}+1=\dfrac{7}{3}\,\Omega$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=148-04 ch=10 sec=电路简化·节点法 kind=knowledge alt=none cont=none y=0.50-0.80
+% 原稿用手绘括线表示层级：“节点法”→“由2根及以上导线汇交而成的点”；“等电势原理”→“在一根导线上所有点电势相等”；“等电势原理”中的“电”字叠写在“等”“势”之间，“点”后有两个小点
+\noindent \textbf{(3)　节点法}
+\begin{itemize}
+\item 由2根及以上导线汇交而成的点..
+\item 等电势原理：电压$=$电势降
+\begin{itemize}
+\item 在一根导线上所有点电势相等
+\end{itemize}
+\end{itemize}
+%FIG p148_d 0.06 0.70 0.455 0.79
+\notefig[0.4]{figures/p148_d.png}
+%FIG p148_e 0.485 0.70 0.73 0.805
+\notefig[0.25]{figures/p148_e.png}
+%%%END
+%%%BLOCK id=148-05 ch=10 sec=电路简化·节点法 kind=problem alt=none cont=none y=0.79-1.00
+% 左下方电路图各角点标有字母 A/a、B/b、M/b 等，已在图内
+\begin{problem}
+%FIG p148_f 0.02 0.79 0.33 0.977
+\notefig[0.3]{figures/p148_f.png}
+求 $R_{AB}$
+\begin{solution}
+%FIG p148_g 0.42 0.83 0.715 0.97
+\notefig[0.3]{figures/p148_g.png}
+\[ \dfrac{\frac{3}{2}\,\frac{1}{2}}{\frac{3}{2}+\frac{1}{2}}=\dfrac{3}{8}R \]% CHECK: 分子两分数间原稿无运算符，按上下文应为乘积
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 148

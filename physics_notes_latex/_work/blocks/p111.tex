@@ -1,0 +1,91 @@
+%%%PAGE 111 rot=0 legibility=good summary=页首为简谐运动x_v_a_E-t图像;其后为光学(折射定律_全反射_折射率_视深_三棱镜圆镜方砖玻璃)
+%%%BLOCK id=111-01 ch=08 sec=简谐运动·图像 kind=diagram alt=none cont=none y=0.0-0.13
+\unclear{手段大子}　% 页面顶端被裁切，字迹不全
+%FIG p111_a 0.012 0.0 0.77 0.127
+\notefig[0.85]{figures/p111_a.png}
+% 图中标注：四幅图依次为(纵轴记号不清)、v、a、E(Ek、Ep)对t的曲线，图上标有T/2、T、t（图中已含）
+%%%END
+%%%BLOCK id=111-02 ch=15 sec=折射定律 kind=knowledge alt=none cont=none y=0.125-0.23
+\textbf{光}\\[0.8ex]
+折射律　$n=\dfrac{\sin i}{\sin r}$
+%FIG p111_b 0.31 0.139 0.44 0.205
+\notefig[0.25]{figures/p111_b.png}
+不是
+%FIG p111_c 0.545 0.143 0.655 0.222
+\notefig[0.25]{figures/p111_c.png}
+\begin{align*}
+n_1&=\dfrac{\sin i_1}{\sin r_1}\\
+n_2&=\dfrac{\sin i_2}{\sin r_2}\qquad V=\dfrac{c}{n}
+\end{align*}
+%%%END
+%%%BLOCK id=111-03 ch=15 sec=全反射 kind=knowledge alt=none cont=none y=0.26-0.41
+% 下一行为写在“光密→光疏”上方的小字批注
+水/玻璃　空气　\unclear{空气棱镜}$C$相除$n$\\
+全反射　（光密$\to$光疏　不折射　只反射的现象）
+\[
+\sin C=\dfrac{1}{n}
+\]
+%FIG p111_d 0.405 0.32 0.515 0.388
+\notefig[0.25]{figures/p111_d.png}
+\[
+n=\dfrac{\sin 90^\circ}{\sin C}=\dfrac{1}{\sin C}
+\]
+\begin{center}
+\begin{tabular}{cccccc}
+$n$ & $\dfrac{2\sqrt{3}}{3}$ & $\sqrt{2}$ & $2$ & $1.5$ & $\sqrt{3}$\\[1.2ex]
+$C$ & $60^\circ$ & $45^\circ$ & $30^\circ$ & $42^\circ$ & $35^\circ$
+\end{tabular}
+\end{center}
+%%%END
+%%%BLOCK id=111-04 ch=15 sec=全反射 kind=method alt=none cont=none y=0.41-0.52
+\textbf{Step 1}
+\begin{itemize}
+\item 分界面　$n=\dfrac{\sin i}{\sin r}$
+\item 临界　$\sin C=\dfrac{1}{n}$
+\item 反射　$\alpha=\beta$
+\end{itemize}
+画光路图判定是否全反射　画反射光线'\\[0.8ex]
+\textbf{Step 2}　几何角度关联
+\begin{itemize}
+\item 三角函数、外角、正弦定理、余弦定理　\unclear{勾股}
+\item 用量角器量角度
+\end{itemize}
+$\cos2\theta=2\cos^2\theta-1$
+%%%END
+%%%BLOCK id=111-05 ch=15 sec=折射率 kind=formula alt=none cont=none y=0.51-0.67
+\[
+n=\dfrac{n_{\text{介质1}}}{n_{\text{介质2}}}=\dfrac{\sin\theta_{\text{大}}}{\sin\theta_{\text{小}}}=\dfrac{\lambda_{\text{真空}}}{\lambda_{\text{介质水}}}=\dfrac{c}{v}=\dfrac{1}{\sin C}>1
+\qquad n_{\text{介质}}>1\quad n_{\text{空气}}=1
+\]
+%FIG p111_e 0.15 0.563 0.255 0.625
+\notefig[0.25]{figures/p111_e.png}
+\[
+n_1\sin\theta_1=n_2\sin\theta_2\quad\text{（完整版公式）}
+\]
+$n$与介质和光频率有关\\[1ex]
+光在　空气中传播时间　$t=\dfrac{s}{c}$　　介质中传播　$t=\dfrac{s}{v}$
+%%%END
+%%%BLOCK id=111-06 ch=15 sec=视深 kind=knowledge alt=none cont=none y=0.65-0.83
+水面垂直视深度　$h=\dfrac{h_{\text{实际}}}{n}$　（原高度除以折射率）\\[0.8ex]
+球面垂直视深度　$h'=h$（不变）
+%FIG p111_f 0.578 0.672 0.80 0.80
+\notefig[0.4]{figures/p111_f.png}
+$\theta$很小时　$\tan\theta\approx\sin\theta$
+\begin{align*}
+\tan\theta_1&=\dfrac{L}{h'}\\
+\tan\theta_2&=\dfrac{L}{h}
+\end{align*}
+% CHECK: tanθ1=L/h'中的分母字迹像n'，按物理应为h'
+\[
+n=\dfrac{\sin\theta_1}{\sin\theta_2}=\dfrac{\tan\theta_1}{\tan\theta_2}=\dfrac{h}{h'}
+\]
+%%%END
+%%%BLOCK id=111-07 ch=15 sec=棱镜与玻璃砖 kind=knowledge alt=none cont=none y=0.80-0.97
+三棱镜　两面均色散，偏折向厚边\\
+圆镜　半径为法线　同心圆用$2$个\unclear{根}正弦定理\\
+方砖玻璃　出入平行，两面都不会全反射，两面都色散　　$s=\dfrac{d}{\cos\alpha}$　　$t=\dfrac{s}{v}=\dfrac{dn}{\cos\alpha}$ % CHECK: 原稿t=dn/cosα，缺光速c（应为dn/(c cosα)），照原样转录
+%FIG p111_g 0.41 0.895 0.537 0.972
+\notefig[0.25]{figures/p111_g.png}
+侧移量　$x\propto\theta,\ d,\ n.$　\fbox{\unclear{$\uparrow d+\uparrow n$}}　同大\unclear{小}
+%%%END
+%%%PAGEEND 111

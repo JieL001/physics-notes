@@ -1,0 +1,69 @@
+%%%PAGE 147 rot=0 legibility=good summary=功能关系(斜面弹簧模型A/B/C三选项)；绳杆连接体的系统牛二/动量定理/动能定理及内力做功；机守⊂能守⊂动能定理；绳杆双动能定理；恒定电流：电功率公式与串并联功率分配
+% 页面右上角“NO.”页眉处灰色小字“ρ=1.429 g·L^-1”属邻页(化学)内容，不属于本页，已忽略
+% 页面上另有数条手绘长引线(自顶部A/B/C三行附近斜向连到下方“动能定理”“内力×相对距离”等处的弯钩)，未转录；右下角有两处零星笔划(疑为背面透印)，未转录；右边缘行号5忽略
+%%%BLOCK id=147-01 ch=06 sec=功能关系·斜面弹簧模型 kind=problem alt=none cont=none y=0.02-0.12
+% 原稿无题干文字，仅有图和 A、B、C 三行(疑为选择题选项)，B、C 行右侧各有红色勾号
+\begin{problem}
+%FIG p147_a 0.05 0.02 0.24 0.105
+\notefig[0.25]{figures/p147_a.png}
+\noindent A：B动能增加量$=$斜面支持力和弹簧弹力做功之和　\red{$W_{\text{合}}=W_{G}+W_{\text{弹}}+W_{N}$}% CHECK: A行按原稿读作“斜面支持力和弹簧弹力做功之和”(未见重力项)，其右侧红笔另批 W合=W_G+W_弹+W_N(下标 G、弹 笔迹较糊)
+
+\noindent B：B机械能增量等于斜面支持力和弹簧弹力做功之和　\red{$\checkmark$}
+
+\noindent C：B和弹组系机增$=$斜面支持力和弹簧弹力做功之和　\red{$\checkmark$}% CHECK: C行左半为缩写，疑为“B和弹簧组成系统机械能增量”；“系”字原稿写成与“系统(孑统)”相同的字形
+\end{problem}
+%%%END
+%%%BLOCK id=147-02 ch=06 sec=动能定理·系统与内力做功 kind=knowledge alt=03,07 cont=none y=0.12-0.37
+% 原稿“区别”部分与左侧①②③之间有一条竖线；“系统”原稿写作“孑统”
+\textbf{绳杆连接体}
+
+\noindent ①　系统牛二律　$\sum F=\sum(ma)$
+
+\noindent ②　系统　动量定理　$\sum I_{\text{外}}=\Delta\bigl(\sum p_{\text{系}}\bigr)$
+
+\noindent ③　系统　动能定理　$\sum W_{\text{外}}+\sum W_{\text{内}}=\Delta\bigl(E_{\mathrm{k}\text{系}}\bigr)$% CHECK: “=Δ”处被引线笔迹盖住，按上下文读作 =Δ；E_k 的下标读作“系”
+
+\medskip
+\noindent \textbf{区别}　①　不考虑内力　\struck{\unclear{②}}% ①下方有一个被涂划掉的带圈符号，辨认不清(疑为②)
+
+\noindent \hspace*{3.2em}②　要考虑内力　不能忽略电场力
+
+\noindent \hspace*{6em}内力$\times$相对距离 $\left\{\begin{tabular}{@{}l@{}}安培力\\摩擦力\\弹簧\end{tabular}\right.$
+%%%END
+%%%BLOCK id=147-03 ch=06 sec=动能定理·系统与内力做功 kind=note alt=none cont=none y=0.27-0.33
+% “C”形符号按“⊂”转录；机守=机械能守恒，能守=能量守恒(原稿缩写)
+机守$\subset$能守$\subset$动能定理
+%%%END
+%%%BLOCK id=147-04 ch=06 sec=动能定理·绳杆连接体 kind=method alt=04 cont=none y=0.35-0.47
+\textbf{绳杆\unclear{双}动能定理}% “杆”与“动能定理”之间的字笔迹难辨，疑为“双”
+
+\noindent $\left\{\begin{tabular}{@{}l@{}}1：物1　动能定理\\2：物2　动能定理\\关联速度　$V_1$与$V_2$关系（沿绳/杆速度都相等）\end{tabular}\right.$
+%%%END
+%%%BLOCK id=147-05 ch=10 sec=电功率·电功率公式 kind=formula alt=none cont=none y=0.50-0.65
+% 原稿两行的“任意”二字被同一个长方框框住；第二行 P=I^2R 与冒号之间有一小撇
+\textbf{恒定电流}
+
+\noindent 功率\ $\left\{\begin{tabular}{@{}l@{}}$P=UI$：\fbox{任意}用电器\\$P=I^2R$：\fbox{任意}用电器热功率　电阻为热源\end{tabular}\right.$　　$U=IR$　纯电阻
+%%%END
+%%%BLOCK id=147-06 ch=10 sec=电功率·功率分配 kind=method alt=none cont=none y=0.65-0.98
+\textbf{功率分配}
+
+\noindent 串　$\dfrac{P_1}{P_2}=\dfrac{R_1}{R_2}$
+%FIG p147_b 0.38 0.665 0.545 0.712
+\notefig[0.17]{figures/p147_b.png}
+\noindent $P_{\text{总}}=P_1+P_2$
+
+\noindent 并　$\dfrac{P_1}{P_2}=\dfrac{R_2}{R_1}$
+%FIG p147_c 0.26 0.725 0.58 0.808
+\notefig[0.32]{figures/p147_c.png}
+\noindent $P_{\text{总}}=P_1+P_2$
+
+%FIG p147_d 0.26 0.80 0.575 0.870
+\notefig[0.3]{figures/p147_d.png}
+\noindent \red{$P_{\text{总}}=6P$}　　\red{$1:1:4$}
+
+\noindent \red{总}\ \red{\fbox{\struck{$\dfrac{1\,\Omega}{2}$\ 占\ $2P$}}}% 红框内整体被两条黑色斜线划去，框下另有一条红色弧形箭头
+
+\noindent 总体上看 $\dfrac{1}{2}\,\Omega$ 占 $2P$ $\Rightarrow$ $1\,\Omega$ 占 $4P$
+%%%END
+%%%PAGEEND 147

@@ -1,0 +1,89 @@
+%%%PAGE 59 rot=0 legibility=good summary=涡旋电场(E涡分布与计算)、旋转感应电动势、电容器与导体棒四种情形(恒力无/有电阻、初速加/无电阻)、自感与电流图像
+%%%BLOCK id=059-01 ch=12 sec=涡旋电场 kind=knowledge alt=none cont=none y=0.03-0.28
+\textbf{涡旋电场}\quad \fbox{\unclear{非静电力}}\ 用有效磁场面积 % 原稿“非静电力”(三个字，字迹难辨)被椭圆圈起
+%FIG p059_a 0.09 0.11 0.275 0.225
+\notefig[0.3]{figures/p059_a.png}
+$I$ $E_{\text{涡}}$ 同向\quad 方向楞次 Th
+\[ E_{\text{涡}}=\left\{\begin{array}{ll}\dfrac{kr}{2}, & r<r_0\\[2ex] \dfrac{kr_0^2}{2r}, & r>r_0\end{array}\right. \]
+%FIG p059_b 0.572 0.105 0.735 0.215
+\notefig[0.28]{figures/p059_b.png}
+\[ E=\frac{\dfrac{\Delta B}{\Delta t}\,\pi r^2}{2\pi r}=\frac{\dfrac{\Delta B}{\Delta t}\,r}{2}=\frac{kr}{2} \]
+\[ E=\frac{\dfrac{\Delta B}{\Delta t}\,\pi r_0^2}{2\pi r}=\frac{kr_0^2}{2r} \]
+\[ E=\frac{U}{d}\qquad U=\frac{\Delta B}{\Delta t}S\qquad d=2\pi r\ (\text{区域周长。})\qquad \underline{S\text{ 为包住磁场的面积}} \]
+%%%END
+%%%BLOCK id=059-02 ch=12 sec=旋转感应电动势 kind=knowledge alt=none cont=none y=0.27-0.38
+\textbf{旋转感应电动势}
+\[ e=BL\,\frac{V_1+V_2}{2} \]
+$\uparrow$ \unclear{中点}瞬时速度 % 原稿箭头自 (V_1+V_2)/2 指向此文字，前两字重叠难辨
+%FIG p059_c 0.325 0.283 0.435 0.35
+\notefig[0.25]{figures/p059_c.png}
+%FIG p059_d 0.462 0.27 0.655 0.375
+\notefig[0.3]{figures/p059_d.png}
+\[ S=\frac{\varepsilon}{B}=\frac{\omega}{2}(r_1+r_2)(r_2-r_1) \] % 页左边缘此处有一红笔括弧标记
+%%%END
+%%%BLOCK id=059-03 ch=12 sec=电容器与导体棒·恒力无电阻 kind=method alt=09 cont=none y=0.38-0.57
+\textbf{电容与棒}\quad 电阻作用是缓冲
+
+\textbf{恒力无电阻} % 原稿用椭圆圈起
+%FIG p059_e 0.095 0.43 0.205 0.495
+\notefig[0.25]{figures/p059_e.png}
+\[ \left\{\begin{array}{l}
+i=\dfrac{\Delta q}{\Delta t}=C\dfrac{\Delta U}{\Delta t}=C\dfrac{\mathrm{d}(BLV)}{\mathrm{d}t}=CBLa\\[2.5ex]
+F_{\text{安}}=BiL\\[1ex]
+a=\dfrac{F-BiL}{m}=\dfrac{F-CB^2L^2a}{m}
+\end{array}\right. \]
+\[ \therefore a=\frac{F}{CB^2L^2+m} \]
+%FIG p059_f 0.465 0.515 0.58 0.58
+\notefig[0.25]{figures/p059_f.png}
+%%%END
+%%%BLOCK id=059-04 ch=12 sec=电容器与导体棒·恒力有电阻 kind=method alt=09 cont=none y=0.40-0.75
+\textbf{恒力有电阻} % 原稿用椭圆圈起
+%FIG p059_g 0.605 0.46 0.715 0.54
+\notefig[0.25]{figures/p059_g.png}
+\[ i=C\frac{\Delta U}{\Delta t}=\frac{C\Delta(\varepsilon-U_R)}{\Delta t} \]
+\[ =\frac{CBL\Delta V}{\Delta t}-\frac{C\Delta U_R}{\Delta t} \]
+\[ =CBLa-C\frac{\Delta U_R}{\Delta t} \]
+\[ F-B\left(CBLa-\frac{C\Delta U_R}{\Delta t}\right)L=ma \]
+↓ 最终减为 0 % 原稿箭头自括号内 CΔU_R/Δt 指向“最终减为0”
+
+稳定后 $\Delta\varepsilon=U_R+U_C$
+%FIG p059_h 0.755 0.590 0.915 0.66
+\notefig[0.28]{figures/p059_h.png}
+\[ a=\frac{F}{CB^2L^2+m} \]
+$\uparrow$ \unclear{视}在质量
+%%%END
+%%%BLOCK id=059-05 ch=12 sec=电容器与导体棒·初速加电阻 kind=method alt=09 cont=none y=0.57-0.76
+\textbf{初速加电阻} % 原稿用椭圆圈起
+%FIG p059_i 0.105 0.62 0.275 0.695
+\notefig[0.25]{figures/p059_i.png}
+\[ \left\{\begin{array}{l}
+i=\dfrac{BLV-U_c}{R}\ \ \text{最终 }BLV=U_c\\[2.5ex]
+F_{\text{安}}=BiL\quad a\downarrow\\[1ex]
+mV_m-mV_0=-BLq\\[1ex]
+U_c=BLV_m\\[1ex]
+q=CU_c=CBLV_m
+\end{array}\right.\qquad V_m=\frac{mV_0}{CB^2L^2+m} \]
+%FIG p059_j 0.655 0.63 0.80 0.715
+\notefig[0.25]{figures/p059_j.png}
+%%%END
+%%%BLOCK id=059-06 ch=12 sec=电容器与导体棒·初速无电阻 kind=method alt=09 cont=none y=0.76-0.85
+\textbf{初速无电阻} % 原稿用椭圆圈起
+%FIG p059_k 0.225 0.78 0.31 0.84
+\notefig[0.25]{figures/p059_k.png}
+%FIG p059_l 0.32 0.775 0.45 0.84
+\notefig[0.25]{figures/p059_l.png}
+\[ BiL=CB^2L^2a=ma \]
+故 $a=0$
+%%%END
+%%%BLOCK id=059-07 ch=12 sec=自感·电流图像 kind=knowledge alt=none cont=none y=0.86-1.00
+自感 $E=N\dfrac{\Delta I}{\Delta t}L$ % CHECK: 分子辨认为 ΔI(亦可能是 ΔΦ)，N 与末尾 L 的含义存疑，按原样转录
+%FIG p059_m 0.33 0.868 0.475 0.93
+\notefig[0.25]{figures/p059_m.png}
+%FIG p059_n 0.295 0.928 0.45 0.995
+\notefig[0.25]{figures/p059_n.png}
+考虑自感
+%FIG p059_o 0.55 0.895 0.745 0.99
+\notefig[0.28]{figures/p059_o.png}
+增减都阻碍
+%%%END
+%%%PAGEEND 59

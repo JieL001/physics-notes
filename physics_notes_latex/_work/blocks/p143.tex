@@ -1,0 +1,52 @@
+%%%PAGE 143 rot=0 legibility=good summary=卫星几何类习题续：A/B两卫星可直接微波通信的时间；卫星绕木星N圈求轨道半径与木星第一宇宙速度(9)；由张角和周期求地球密度
+%%%BLOCK id=143-01 ch=05 sec=追及相遇·卫星通讯 kind=problem alt=none cont=none y=0.03-0.31
+% 页面右上角另一页露出的字迹“-1.429 g·L^-1”不属于本页，忽略
+\textbf{作切线\unclear{求}}
+
+\begin{problem}
+$A$、$B$两卫星某时刻相距最近，若该时刻开始至两卫星再次相距最近的时间为$T$，在这段时间$T$内两卫星可直接利用微波通信的时间为% 行末贴近页边，后面可能还有字
+%FIG p143_a 0.08 0.09 0.30 0.25
+\notefig[0.3]{figures/p143_a.png}
+\begin{solution}
+\[ \omega_A t-\omega_B t=2\theta\ \text{①}\qquad \omega_A T-\omega_B T=2\pi\ \text{②}\qquad \dfrac{\text{①}}{\text{②}}\text{得}\ \dfrac{t}{T}=\dfrac{67}{180^\circ} \]
+\[ \sin\alpha=\dfrac{R}{R+\frac{2}{3}R}=\dfrac{3}{5}\qquad \alpha=37^\circ \]
+\[ \sin\beta=\dfrac{R}{R+R}=\dfrac{1}{2}\qquad \beta=30^\circ \]
+时间$t$应大于$\dfrac{67}{180}T$　（不能等于）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=143-02 ch=05 sec=卫星几何·张角问题 kind=problem alt=none cont=none y=0.31-0.635
+\begin{problem}[9]
+\textbf{9、}卫星$t$ s绕木星$N$圈，速率为$V$，求轨道半径和木星第一宇宙速度
+%FIG p143_b 0.04 0.318 0.28 0.505
+\notefig[0.3]{figures/p143_b.png}
+\begin{solution}
+由$t=\dfrac{N\,2\pi r}{V}$　$\therefore\ r=\dfrac{Vt}{2\pi N}$
+
+\unclear{表面}$\dfrac{GMm}{R^2}=\dfrac{mV_1^2}{R}$，　$V_1=\sqrt{\dfrac{GM}{R}}$
+\[ \begin{cases}
+\text{卫星}\ \dfrac{GMm'}{r^2}=\dfrac{m'V^2}{r}\\[4pt]
+R=r\sin\dfrac{\theta}{2}
+\end{cases} \]
+\[ GM=V_1^2R \]
+\[ \therefore\ V_1=\dfrac{V}{\sqrt{\sin\dfrac{\theta}{2}}} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=143-03 ch=05 sec=天体质量密度·张角法 kind=problem alt=none cont=none y=0.635-1.00
+\begin{problem}
+求地球密度
+%FIG p143_c 0.13 0.685 0.31 0.875
+\notefig[0.25]{figures/p143_c.png}
+\begin{solution}
+\[ \rho=\dfrac{3\pi}{GT^2} \]
+\[ \left(\dfrac{R_{\text{地}}}{r}\right)^3=\left(\dfrac{T_{\text{地}}}{T}\right)^2 \]
+% 以下两项为原稿右侧划去的草算
+\struck{$R_{\text{地}}$}　\struck{\unclear{$\left(\dfrac{R_{\text{地}}}{r}\right)^3=\dfrac{T_{\text{地}}^2}{T_{\text{地}}^2}$}}
+\[ \dfrac{R_{\text{地}}}{r}=\sin\dfrac{\theta}{2} \]
+\[ \therefore\ \left(\sin\dfrac{\theta}{2}\right)^{\frac{3}{2}}T=T_{\text{地}} \] % 原稿 T 处有涂改
+\[ \rho_{\text{地}}=\dfrac{3\pi}{G\sin^{3}\dfrac{\theta}{2}\,T^2} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 143

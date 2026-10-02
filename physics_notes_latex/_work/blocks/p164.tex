@@ -1,0 +1,67 @@
+%%%PAGE 164 rot=0 legibility=good summary=电磁感应双棒（先放1后放2）两种情形分析；杆上小球圆周运动受力；鸡蛋砸地模型；x-t图像设标准式；外力F水平面a-t图；碗中小球E_K-x图像
+%%%BLOCK id=164-01 ch=12 sec=电磁感应·双棒模型 kind=problem alt=03,06 cont=none y=0.00-0.43
+% 本页未见这道题的文字题干，只有图和解答；顶部图被页边切掉了上部
+% 原稿“l”与“L”字形相近，按所见照录
+\begin{problem}
+%FIG p164_a 0.17 0.00 0.485 0.09
+\notefig[0.4]{figures/p164_a.png}
+先放1后放2
+\begin{solution}
+\[ E_1=BLv_0\qquad i=\frac{E_1}{2R}\qquad F_{\text{安}}=\frac{B^2l^2v_0}{2R} \]
+① 若 $mg\sin\theta>\dfrac{B^2l^2v_0}{2R}$
+
+\quad 对1\ $a_1=g\sin\theta-\dfrac{B^2l^2v_0}{2mR}$
+
+\quad 对2\ $a_2=g\sin\theta+\dfrac{B^2l^2v_0}{2mR}$
+
+%FIG p164_b 0.57 0.15 0.78 0.245
+\notefig[0.25]{figures/p164_b.png}
+$v_{\text{相}}\downarrow$\quad $E=BLv_{\text{相}}\downarrow$\quad $I\downarrow$\quad $F_{\text{安}}\downarrow$\quad $a_1=a_2$\quad $\phi$不变\quad $v_1=v_2$\quad $E_{\text{机}}$先$\downarrow$后不变
+
+（写在“$F_{\text{安}}\downarrow$”下方）$F_{\text{安}}\to0$
+
+② 若 $mg\sin\theta<\dfrac{B^2l^2v_0}{2R}$\quad $a_1$向上\quad $a$先$\downarrow$后$\uparrow$(向下)\quad 最终$v_1=v_2$\quad $\phi$定值\quad $W_{F_{\text{安}2}}>0$
+
+%FIG p164_c 0.12 0.335 0.33 0.43
+\notefig[0.25]{figures/p164_c.png}
+$v_1>v_2$\quad $W_{F_{\text{安}1}}<0$ % 原稿此式写在“$v_1>v_2$”同行右侧
+
+$W_{F_{\text{安}1}}>W_{F_{\text{安}2}}$\quad $E_{\text{机}}$先$\downarrow$后不变 % CHECK: $W_{F安1}<0$ 与 $W_{F安1}>W_{F安2}$ 并列，疑为比较绝对值
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=164-02 ch=04 sec=圆周运动·竖直面杆模型 kind=note alt=03 cont=none y=0.44-0.56
+% 此块上方有一条横贯页面的波浪分隔线(y约0.44)
+%FIG p164_d 0.09 0.455 0.25 0.555
+\notefig[0.2]{figures/p164_d.png}
+对$m$\quad $v$先$\uparrow$后$\downarrow$\quad $a$先右后左.\quad 杆先压缩后拉伸\quad 地先右后左.
+
+$F_{\text{杆}m}=0$时\quad $N=Mg$\quad $f=0$
+%%%END
+%%%BLOCK id=164-03 ch=07 sec=动量定理·鸡蛋砸地模型 kind=method alt=06,01 cont=none y=0.56-0.66
+鸡蛋砸地模型
+\[ \left\{\begin{aligned} mgh&=\tfrac12mv^2\\ (mg-F)t&=0-mv \end{aligned}\right. \qquad\text{或}\qquad \left\{\begin{aligned} h&=\tfrac12gt^2\\ mg(t+t')-Ft'&=0 \end{aligned}\right. \]
+%%%END
+%%%BLOCK id=164-04 ch=01 sec=x-t图像 kind=note alt=none cont=none y=0.67-0.78
+%FIG p164_e 0.03 0.685 0.25 0.79
+\notefig[0.25]{figures/p164_e.png}
+不一定为 $S=\tfrac12at^2$ 图像
+
+设 $S=v_0t+\tfrac12at^2$\quad 设标准式\ 防止有\unclear{±}方. % CHECK: “防止有±方”末几字不确定
+%%%END
+%%%BLOCK id=164-05 ch=03 sec=动力学图像·外力F作用 kind=note alt=02 cont=none y=0.79-0.86
+% “在水平面上”下方原稿为波浪下划线
+外力$F$作用$\cdots$\ \underline{在水平面上}\ %FIG p164_f 0.39 0.795 0.51 0.85
+\notefig[0.2]{figures/p164_f.png}
+只能算出$F_{\text{水平}}$\quad 无法算出$F$(未知方向)
+%%%END
+%%%BLOCK id=164-06 ch=06 sec=机械能守恒·动能-位置图像 kind=method alt=04 cont=none y=0.86-1.00
+%FIG p164_g 0.04 0.885 0.19 0.96
+\notefig[0.2]{figures/p164_g.png}
+\[ mgh=E_K \]
+\[ h^2=R^2-(R-x)^2 \]
+\[ h=\sqrt{R^2-(R-x)^2}\qquad\text{椭圆} \]
+%FIG p164_h 0.42 0.875 0.63 0.985
+\notefig[0.3]{figures/p164_h.png}
+%%%END
+%%%PAGEEND 164

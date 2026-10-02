@@ -1,0 +1,50 @@
+%%%PAGE 115 rot=0 legibility=good summary=动生加感生电动势的叠加方法；导轨上金属杆在变化磁场中受安培力一题；金属环在非均匀磁场中下落求收尾速度一题
+%%%BLOCK id=115-01 ch=12 sec=动生与感生电动势叠加 kind=method alt=none cont=none y=0.04-0.16
+动生$+$感生\ ·\ (对$t$求导)\unclear{相}
+
+$\varepsilon=\dfrac{\Delta B}{\Delta t}\cdot S+BLv$
+
+\begin{itemize}
+\item 给 $B=kt$ 直接加\quad $e=BLv+kS$\quad $F_{\text{安}}=BL\,\dfrac{BLv+kS}{R}$
+\item 没给 则按电流方向是否相同来加减
+  \begin{itemize}
+  \item 同向$\to$相加
+  \item 反向$\to$相减．
+  \end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=115-02 ch=12 sec=动生与感生电动势叠加 kind=problem alt=none cont=none y=0.16-0.50
+% 原稿此处贴有印刷体题目（题号B4），其中若干短语被手画方框，“杆以恒定”下有横线；序号①为圈起的手写“1”
+\begin{problem}[1（B4）]
+B4、如图所示，两根平行金属导轨固定在水平桌面上，每根导轨每米的电阻为\fbox{$r_0=0.10\unit{\Omega/m}$,}导轨的端点 P、Q 用电阻可忽略的导线相连，两导轨间的距离\fbox{$L=0.20\unit{m}$.}有随时间变化的匀强磁场垂直于桌面，已知磁感应强度 $B$ 与时间 $t$ 的关系为\fbox{$B=kt$}\ 比例系数 $k=0.020\unit{T/s}$。一电阻不计的金属杆可在导轨上\fbox{无摩擦地滑动}，在滑动过程中保持与导轨垂直。在 $t=0$ 时刻，金属杆紧靠在 P、Q 端，在外力作用下，\underline{杆以恒定}的\fbox{加速度}\fbox{从静止开始}向导轨的另一端滑动，求\fbox{在 $t=6.0\unit{s}$ 时}金属杆所受的\fbox{安培力}。
+
+% 图p115_a为印刷图（含P、Q、L、箭头、I），上有手写的 ½at² 与 x 标注
+%FIG p115_a 0.095 0.383 0.40 0.452
+\notefig[0.4]{figures/p115_a.png}
+\begin{solution}
+\[\left\{\begin{array}{l}S=Lx=\dfrac{1}{2}at^2\cdot L\\[1mm]B=kt\\[1mm]V=at\end{array}\right.\qquad I=\frac{BLat+kL\cdot\frac{1}{2}at^2}{2\cdot\frac{1}{2}at^2r_0}=\frac{3kL}{2r}\]
+\[F_{\text{安}}=kt\cdot\frac{3kL}{2r}\cdot L=\frac{3k^2L^2}{2r}\,t=1.44\times10^{-3}\unit{N}\qquad\text{\struck{$=\dfrac{3kt}{2r}$}}\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=115-03 ch=12 sec=电磁感应中的能量·收尾速度 kind=problem alt=none cont=none y=0.47-0.85
+\begin{problem}[2]
+% 图p115_b内含标注：d、m、R（金属环与磁场示意）
+%FIG p115_b 0.07 0.513 0.215 0.588
+\notefig[0.25]{figures/p115_b.png}
+
+金属环下落，求收尾速度\quad \unclear{目}重力势能$\to$电能
+
+$B_y=B_0(1+ky)\ (k>0)$
+\begin{solution}
+由功能关系\qquad 合外力为0\ $\times$ % 原稿此处打叉
+\[mgV_m=P_{\text{电}}=\frac{\varepsilon^2}{R}\]
+\[\varepsilon=\frac{\dd\left(B_0(1+ky)\dfrac{\pi d^2}{4}\right)}{\dd t}=B_0\frac{\pi kd^2}{4}V_m\]
+\red{$\uparrow$ 对上式对$t$求导}
+\[\therefore\ V_m=\frac{16mgR}{B_0^2\pi^2k^2d^4}\]
+\underline{求导过程}
+\[\frac{\dd\left(B_0(1+ky)\dfrac{\pi d^2}{4}\right)}{\dd t}=\frac{B_0\,k\,v\,\pi d^2}{4}\]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 115

@@ -1,0 +1,120 @@
+%%%PAGE 38 rot=0 legibility=good summary=碰撞发生条件与e的范围；速度/动量/动能传递系数；动量守恒条件；连续体冲量动量(液柱类、顶物并散开、太空垃圾、双脚类)；右上角动量不等式注记
+%%%BLOCK id=038-01 ch=07 sec=动量·不等式关系 kind=method alt=none cont=none y=0.0-0.085
+% 原稿此块在页面右上角，被一条框线围起，框线下沿从第三行文字中间穿过
+刚好 $\in$（上一次，下一次）
+
+动量的不等式关系
+
+推冰块8次完成，则 \unclear{$P\ge P_7$}，$P<P_9$ % 第一个 P 的下标被框线遮挡，符号“≥”处似箭头
+%%%END
+%%%BLOCK id=038-02 ch=07 sec=碰撞·碰撞发生条件 kind=knowledge alt=none cont=none y=0.05-0.205
+\textbf{碰撞发生条件}\quad $V_{\text{后}}>V_{\text{前}}$ 撞得上\quad $V_{\text{后}}\le V_{\text{前}}$ 不穿越
+\begin{itemize}
+\item 动量守恒：$P_{01}+P_{02}=P_1+P_2$
+\item 动能不增加：$\dfrac{P_{01}^2}{2m_1}+\dfrac{P_{02}^2}{2m_2}\ge\dfrac{P_1^2}{2m_1}+\dfrac{P_2^2}{2m_2}$ % 不等号处原稿有涂改叠写，辨为“≥”
+\item 不穿越，不\unclear{击}穿：碰后 $V_{\text{后}}\le V_{\text{前}}$
+\end{itemize}
+\[
+0\le e=\frac{V_2-V_1}{V_{01}-V_{02}}\le1
+\]
+%FIG p038_a 0.55 0.118 0.702 0.192
+\notefig[0.3]{figures/p038_a.png}
+\[
+\left\{\begin{aligned}
+V_{\text{完弹}}&\le V_1\le V_{\text{共}}\\
+V_{\text{共}}&\le V_2\le V_{\text{完弹}}
+\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=038-03 ch=07 sec=碰撞·传递系数 kind=formula alt=06 cont=none y=0.215-0.35
+\textbf{速度传递}
+\[
+k_V=\frac{V_2}{V_0}=\frac{2m_1}{m_1+m_2}=\frac{2}{1+\dfrac{m_2}{m_1}}\ \to\ 2
+\]
+$m_2\ll m_1$ 时大球撞小球，小球传速\unclear{约}\red{为}\,\red{\unclear{走}} % 红笔：“为”字上有红色叉划，其后有红字，形如“走”，辨认不清
+
+\textbf{动量传递}
+\[
+k_p=\frac{m_2V_2}{m_1V_0}=\frac{2m_2}{m_1+m_2}=\frac{2}{\dfrac{m_1}{m_2}+1}\ \to\ 2
+\]
+$m_1\ll m_2$ 时小球撞\red{大}墙，原速\red{$\times$}反\red{弹} % 红笔：“大”字上有红色叉划；“原速”后有红色斜线划去的一字；“反”后红笔补“弹”
+
+\textbf{动能传递}
+\[
+k_{E_k}=\frac{\frac12m_2V_2^2}{\frac12m_1V_0^2}=k_p\cdot k_V=\frac{4m_1m_2}{(m_1+m_2)^2}=\frac{4}{\dfrac{m_1}{m_2}+\dfrac{m_2}{m_1}+2}
+\]
+$m_1=m_2$ 时等质换速
+%%%END
+%%%BLOCK id=038-04 ch=07 sec=动量守恒·适用条件 kind=knowledge alt=none cont=none y=0.36-0.455
+动量守恒\quad $F_{\text{合}}=0$
+\begin{itemize}
+\item 内力极大动量守恒
+\item 时间极短动量守恒
+\item 水平/竖直方向动量守恒
+\item 某阶段 $F$-$t$ 图动量守恒
+\end{itemize}
+$\Sigma I=mV_2-mV_1$ 可间接求冲量
+%%%END
+%%%BLOCK id=038-05 ch=07 sec=连续体冲量动量 kind=method alt=none cont=none y=0.38-0.62
+\textbf{连续体冲量动量}\quad 流量 $Q=SV$.
+
+\textbf{液柱类}
+%FIG p038_b 0.125 0.434 0.305 0.50
+\notefig[0.3]{figures/p038_b.png}
+$V$ 为相对速度，
+\[
+-F\Delta t=\rho SV\Delta t\,(V_1-V_0)\qquad V_1=0\text{ 时 }F=-\rho SV^2.
+\]
+水平方向动量守恒
+%FIG p038_c 0.09 0.512 0.256 0.612
+\notefig[0.3]{figures/p038_c.png}
+溅开
+\[
+F\Delta t=\rho SV_1\Delta t\,\bigl(-V_2\sin30^\circ-V_1\bigr)
+\]
+%%%END
+%%%BLOCK id=038-06 ch=07 sec=连续体冲量动量 kind=method alt=04 cont=none y=0.60-0.78
+\textbf{顶物并散开}\quad （此处不是水柱上升最高处，最高处速度为0，无法提供力）
+%FIG p038_d 0.10 0.625 0.272 0.775
+\notefig[0.3]{figures/p038_d.png}
+\begin{align*}
+V^2-V_0^2&=-2gh\\
+F\Delta t&=\rho\,\Delta S\,\Delta l\,V\qquad F=\rho\,\Delta S\,V\,\frac{\Delta l}{\Delta t}\\
+\Sigma\Delta F&=\rho SV\cdot V_0
+\end{align*}
+%%%END
+%%%BLOCK id=038-07 ch=07 sec=连续体冲量动量 kind=method alt=06 cont=none y=0.78-0.93
+单位体积有$n$个太空垃圾\,\red{（粘在飞船上）}\quad（完非弹） % 红笔波浪线划在“(粘在飞船上)”下
+%FIG p038_e 0.06 0.795 0.22 0.86
+\notefig[0.3]{figures/p038_e.png}
+\[
+FV\Delta t=\tfrac12\Delta m\,V^2
+\]
+\begin{keybox}
+\[
+F=\tfrac12\,mSV^2\cdot n
+\]
+\end{keybox}
+% 上式原稿被红笔框起
+\[
+\bar F\,(V\Delta t)=\tfrac12\,(nmSV\Delta t)\,V^2
+\]
+%FIG p038_f 0.768 0.78 0.955 0.872
+\notefig[0.35]{figures/p038_f.png}
+或 $\bar F=\dfrac{\Delta\unclear{p}}{\Delta t}=\dfrac{m\cdot nSV\Delta t\cdot\frac V2}{\Delta t}=nmSV^2\cdot\dfrac12$\quad （碰上就停了，用$\bar V$算）。
+%%%END
+%%%BLOCK id=038-08 ch=07 sec=连续体冲量动量 kind=method alt=02 cont=none y=0.85-1.0
+\textbf{双脚类}\quad ↓相对速度
+%FIG p038_g 0.06 0.868 0.23 0.938
+\notefig[0.3]{figures/p038_g.png}
+\[
+(m+M)g\Delta t=2\cdot\rho SV\Delta t\,V
+\]
+\[
+\therefore\ V=\sqrt{\frac{(M+m)g}{2\rho S}}
+\]
+\[
+\underset{\text{功率}}{P}=FV=(M+m)g\sqrt{\frac{(M+m)g}{2\rho S}}
+\]
+%%%END
+%%%PAGEEND 38

@@ -1,0 +1,84 @@
+%%%PAGE 124 rot=0 legibility=good summary=同步卫星参数比较(多个同步卫星、同步与非同步)、卫星与地表物体比较(同轴转体A/B/C、同卫做桥梁D/A/B)、赤道物体不是卫星、变轨(圆I→椭圆II→圆III速度/加速度/周期比较)
+%%%BLOCK id=124-01 ch=05 sec=同步卫星·参数比较 kind=knowledge alt=none cont=none y=0.07-0.235
+% 页面右缘(x>0.93)露出邻页的文字边缘，已忽略
+\textbf{同步卫星参数比较}
+
+同一中心天体的多个同步卫星比较\hfill $r=42000\unit{km}\approx7R_{\text{地}}$
+
+\hspace*{2em}仅卫星质量$m$和卫星位置不同\hfill $h=6$倍$R_{\text{地}}$
+
+同一中心天体的同步卫星和非同步卫星比较
+
+\hspace*{4em}高轨低速大周期，大机大势大能量
+%%%END
+%%%BLOCK id=124-02 ch=05 sec=同步卫星·参数比较 kind=knowledge alt=none cont=none y=0.235-0.475
+\textbf{卫星与地表物体进行比较}
+
+①\ 同步卫星比静止物体.\ 同步转动\ 同$\omega$
+
+同轴转体.% 原稿此处为贴在纸上的白色修正贴，字写在贴纸上
+
+%FIG p124_a 0.62 0.31 0.86 0.425
+\notefig[0.28]{figures/p124_a.png}
+% 图：地球，赤道上的A点以及两个纬度圈上的B、C点(同轴转动)，图中标有字母 A、B、C
+
+\[
+\begin{aligned}
+&\omega_A=\omega_B=\omega_C\\
+&T_A=T_B=T_C\\
+&r_A>r_B>r_C\\
+&v_A>v_B>v_C\\
+&a_A>a_B>a_C\\
+&g_A<g_B<g_C\quad\text{（两极大）}
+\end{aligned}
+\]
+%%%END
+%%%BLOCK id=124-03 ch=05 sec=同步卫星·参数比较 kind=knowledge alt=none cont=none y=0.475-0.70
+②\ 非同步卫星与静止物体：用同卫做桥梁\quad $D$为近地卫星% 原稿“②”带圈，与“非”字相叠
+
+% 以下两行原稿为横向排列：第一行四组关系式，第二行为各自的表达式(v、ω、a 下各三项；T 下无)，此处整理为表格，信息不变
+\[
+\begin{array}{llll}
+v_D>v_A>v_B & =\sqrt{\dfrac{GM}{R}} & =\sqrt{\dfrac{GM}{R+h}} & =\omega_BR\\[8pt]
+\omega_D>\omega_A=\omega_B & =\sqrt{\dfrac{GM}{R^{3}}} & =\sqrt{\dfrac{GM}{(R+h)^{3}}} & =\omega_{\text{自}}\\[8pt]
+T_D<T_A=T_B & & & \\[4pt]
+a_D>a_A>a_B & =\dfrac{GM}{R^{2}} & =\dfrac{GM}{(R+h)^{2}} & =\omega_B^{2}R
+\end{array}
+\]
+
+%FIG p124_b 0.125 0.575 0.365 0.70
+\notefig[0.28]{figures/p124_b.png}
+% 图：地球(浅灰圆)与赤道附近两条轨道环，图中标有 B(表面)、D 等字母
+
+赤道上的物体（或待发射的卫星）不是卫星\quad $\dfrac{GMm}{r^{2}}\pm\dfrac{mv^{2}}{r}$
+
+A\,$\times$\ 速度／加速度
+
+\fbox{近$>$同$>$赤}% 原稿为圈起来的椭圆圈
+%%%END
+%%%BLOCK id=124-04 ch=05 sec=卫星变轨 kind=method alt=none cont=none y=0.70-0.98
+\textbf{变轨}
+
+%FIG p124_c 0.05 0.70 0.303 0.885
+\notefig[0.3]{figures/p124_c.png}
+% 图：大浅灰圆为圆轨道III(旁标 $v_3$)，椭圆轨道II 两端为 A、B(标 $v_A$、$v_B$)，内小圆为圆轨道I(标 $v_1$)，中心为地球；图中标有 I、II、III 等
+
+在赤道上顺地球自转方向发射卫星到圆轨道$\mathrm{I}$
+
+在圆轨$\mathrm{I}$ A点，点火加速\ $v\uparrow$\ $F_{\text{万}}<F_{\text{向}}$\ 离心运动\ 进入椭圆轨道$\mathrm{II}$
+
+在$\mathrm{II}$上B点（近地点）再次点火加速进入圆形轨道$\mathrm{III}$% CHECK: B 为椭圆轨道II 的远端(应为远地点)，原稿写作“近地点”
+
+$v_A>v_1$\qquad $v_3>v_B$\qquad $v_1>v_3$
+
+故\ $v_A>v_1>v_3>v_B$
+
+$a_1=a_A$\qquad $a_B=a_3$
+
+$\dfrac{r^{3}}{T^{2}}=k^{2}$\qquad $T_1<T_2<T_3$% CHECK: 原稿右边像 k²(可能应为 k)
+
+同点同$a$\ 大圆大$v$、高轨大周期
+
+\fbox{\begin{tabular}{l}速度排序\\ 近低\unclear{和}高轨远\end{tabular}}% 原稿为圈起来的椭圆圈；第3字难辨(像 知/和/加)
+%%%END
+%%%PAGEEND 124

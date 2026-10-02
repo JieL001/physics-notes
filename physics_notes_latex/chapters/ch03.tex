@@ -1,0 +1,840 @@
+% 本文件由 assemble.py 按 _work/plans/ch03.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{牛顿运动定律}
+\label{ch:03}
+
+\section{板块模型·轻板模型}
+% ---- block 033-01 (原稿第33页) kind=problem ----
+\textbf{轻板模型}\quad $M_{\text{板}}=0$\quad $F_{\text{合}}=m_{\text{板}}a$\quad $F_{\text{合}}=0\to f_1=f_2$\quad 质小物体\ $M$ 动不动取决于外力大小% 小字“质小物体”写在“M动不动取决于外力大小”上方；原稿此行向右上倾斜
+
+\begin{problem}
+\notefig[0.3]{figures/p033_a.png}
+% 图内标注：A(1kg)、B(2kg)、F；A、B 并排放在一块长板上，标 μ_1=0.2(左端)、F_A、2N、一小箭头(←)、B、4N(右端)，板下标 μ_2=0；图上有几处白色涂改斑块
+\begin{solution}
+$f_{B\max}>f_{A\max}=2\unit{N}$\quad B 与板相对静止\quad B 与板等效成一个有质板\ $m=2\unit{kg}$
+
+$\mu m_Ag\ge m_Ba$
+
+$F=(m+2m)a\le3\unit{N}$\quad B 最多受\ $f=2\unit{N}$
+
+\noindent A、\ $F=1\unit{N}$ 时\ 不动，均静止\ $\checkmark$\\
+B、\ $F=4\unit{N}$ 时\ $f_B=2\unit{N}$\ $\checkmark$\\
+C、\ $F=6\unit{N}$ 时\ $a_B=2\unit{m/s^2}$\ $\checkmark$\\
+D、\ $F=1.5\unit{N}$ 时\ $f_A=1\unit{N}$\ $\checkmark$
+\end{solution}
+\end{problem}
+
+
+\section{斜面·丝带模型}
+% ---- block 033-02 (原稿第33页) kind=problem ----
+\begin{problem}
+$M>m$
+
+\notefig[0.35]{figures/p033_b.png}
+% 图内标注：屋脊形斜面上铺一条丝带，左侧放 M(较大)，右侧放 m(较小)，两侧斜面底角均标 θ，右下标“光滑丝带”(“光滑”二字不太确定)
+\begin{solution}
+\noindent\underline{$M$ 和 $m$ \unclear{与绳带}必相对静止}% 标题带下划线，“和”字后的 m 及“与绳带必”几字辨认不清
+
+\[
+M\left\{\begin{array}{@{}l@{}}
+\mu>\tan\theta\ \ \text{$M$ 带 $m$ 加速，都相对丝带静止}\\[6pt]
+\mu<\tan\theta\ \ \text{$M$ 向左下加速，$m$ 向右下加速，$m$ 与丝带相对滑动}
+\end{array}\right.
+\]
+
+\noindent 使 $M,m$ 与绳带不发生相对滑动，应满足
+\[
+\mu mg\cos\theta\ge f
+\]
+\noindent\hspace*{10em}$\nwarrow$ 共加速时 $f$
+
+\noindent $\mu=\tan\theta$，$m$ 不动，$M$ 下滑\\
+\hspace*{10em}与丝带一起
+\end{solution}
+\end{problem}
+
+
+\section{连接体·叠放三物体与滑轮}
+% ---- block 033-03 (原稿第33页) kind=method ----
+\notefig[0.4]{figures/p033_c.png}
+% 图内标注：三个物体叠放，1 在 2 上，2 在 3 上；3 受 F 向左；轻绳绕过右端圆柱(滑轮)，上股连 2、下股连 3，两处均标 T；2、3 间摩擦标 f_2，3 与地面间摩擦标 f_3
+\noindent 1\ 2 共加速，3 加速
+\[
+F-f_3-f_2-2T=m_3a
+\]% CHECK: 图中作用在 3 上的只有一股绳(T)，此处“2T”存疑，照原样转录
+\[
+T-f_2=(m_1+m_2)a.
+\]
+
+
+\section{板块模型·有质板块·平地}
+% ---- block 034-01 (原稿第34页) kind=method ----
+\textbf{有质板块、}
+
+\textbf{平地}
+
+\noindent 地滑
+
+\notefig[0.28]{figures/p034_a.png}
+% 图内标注：B 在 A 上，B 标“2”、向右箭头 V_0，接触面标 μ_1，A 板，板下标“1”
+\notefig[0.4]{figures/p034_b.png}
+% 图内标注：v-t 图，纵轴 V、V_0，下降线标“2”(斜线阴影)，上升线标“1”，共速后水平线标“1,2”，横轴 t
+\[
+\left\{\begin{aligned}
+a_1&=\frac{\mu_1m_2g}{m_1}\\
+a_2&=\mu_1g
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+V_B&=V_0-\mu_1gt\\
+V_1&=a_1t
+\end{aligned}
+\qquad
+\begin{aligned}
+S_2&=V_0t-\frac12a_2t^2\\
+S_1&=\frac12a_1t^2
+\end{aligned}
+\]% CHECK: V_B 的下标写得像“B”(其余处用 V_1、V_2)
+\[
+L=S_{\text{相}}=S_A-S_B
+\]% CHECK: 此式在原页位于右上方；照原样转录，按图中 A 为板、B 为块，相对位移似应为 S_B-S_A
+
+
+\section{板块模型·有质板块·初速类}
+% ---- block 034-02 (原稿第34页) kind=method ----
+\textbf{初速类}
+
+\noindent 地糙 $\mu_2$\quad ① 底滑面糙\ $\mu_1>\mu_2$
+
+\noindent 共速后一起减速
+
+\notefig[0.3]{figures/p034_c.png}
+% 图内标注：板(标“1”)上右端放物块(标“2”)，板上表面标 μ_1，下表面标 μ_2，板向右箭头 V_0
+\notefig[0.33]{figures/p034_d.png}
+% 图内标注：v-t 图，纵轴 V、V_0，从 V_0 下降线标“1”，从原点上升线标“2”，交点后共同下降线标“1.2”，横轴 t
+\begin{align*}
+a_1&=\frac{\mu_1m_2g+\mu_2(m_1+m_2)g}{m_1} & V_1&=V_0-a_1t\\
+a_2&=\mu_1g & V_2&=a_2t\\
+S_1&=V_0t-\frac12a_1t^2 & S_2&=\frac12a_2t^2
+\end{align*}
+\[
+\left\{\begin{aligned}
+V_{\text{共}}&=a_2t=V_0-a_1t\\
+a_{\text{共}}&=\mu_2g\\
+X_{\text{共}}&=\frac{V_{\text{共}}^2}{2a_{\text{共}}}
+\end{aligned}\right.
+\]
+
+% ---- block 034-03 (原稿第34页) kind=method ----
+\noindent ② 底糙面滑\ $\mu_1<\mu_2$
+
+\noindent 共速后分别减速
+
+\notefig[0.3]{figures/p034_e.png}
+% 图内标注：板(标“A”“1”)上右端放物块(标“B”“2”)，板上表面标 μ_1，下表面标 μ_2，板向右箭头 V_0
+\begin{align*}
+a_1&=\frac{\mu_1m_2g+\mu_2(m_1+m_2)g}{m_1} & V_1&=V_0-a_1t & S_1&=V_0t-\frac12a_1t^2\\
+a_2&=\mu_1g & V_2&=a_2t & S_2&=\frac12a_2t^2\\
+V_{\text{共}}&=a_2t=V_0-a_1t
+\end{align*}
+\notefig[0.33]{figures/p034_f.png}
+% 图内标注：v-t 图，纵轴 V，A 的下降线(红笔描过)标“1 A”，上升线标“B2”，交点后两条下降线：较缓的标“2 B”、较陡的(红笔)标“A”，其间阴影，横轴 t
+\noindent 分别减速
+
+\noindent 对2：$\mu_1m_2g=m_2a_2'$\quad $a_2'=\mu_1g$\\
+对1：$\mu_1m_2g-\mu_2(m_1+m_2)g=m_1a_1'$\quad $a_1'=\cdots$% 原稿“μ_1m_2g−”为写在 μ_2 前上方的插入小字
+
+\noindent 都是减速（块推板、地阻板）% 以下原稿有一条贯穿页面的横线，其下为“③ 双速度”
+
+% ---- block 034-04 (原稿第34页) kind=method ----
+\noindent ③ 双速度
+
+\notefig[0.3]{figures/p034_g.png}
+% 图内标注：物块(标“2”)在板上，向左箭头 V_0；板向右箭头 V_0；板上表面 μ_1，下表面 μ_2，板下标“1”；图下文字“底滑面糙”
+\noindent 底滑面糙
+
+\begin{align*}
+a_2&=\mu_1g\\
+a_1&=\frac{\mu_1m_2g+\mu_2(m_1+m_2)g}{m_1}
+\end{align*}
+\noindent $V_B=0$ 时\quad $t=\dfrac{V_0}{a_2}$\quad $S_B=\dfrac12V_0t$
+
+\noindent $V_A=V_0-a_1t$
+
+\notefig[0.33]{figures/p034_h.png}
+% 图内标注：v-t 图，纵轴 V，正向 V_0、负向 -V_0，从 V_0 下降线标“1”，从 -V_0 上升线标“2”，交点后共同线标“1.2”，横轴 t
+
+
+\section{板块模型·有质板块·外力类}
+% ---- block 034-05 (原稿第34页) kind=method ----
+\textbf{外力类}
+
+\noindent ① 恒力拉板
+
+\notefig[0.6]{figures/p034_i.png}
+% 图内标注：长板(标“2”)上放物块(标“1”)，板受向右的 F；文字“恒力拉板”；v-t 图：纵轴 V、V_2、V_1，两条过原点的直线(上方的标 a_2，下方的标 a_1)，其间标“S_相”，虚线至 t_0，横轴 t
+\[
+X_{\text{相}}=\frac12a_2t_0^2-\frac12a_1t_0^2=L\quad\text{时分离}
+\]
+
+% ---- block 034-06 (原稿第34页) kind=method ----
+\noindent ② 恒力拉块
+
+\notefig[0.6]{figures/p034_j.png}
+% 图内标注：文字“恒力拉块”；长板(标“2”)右端的物块受向左的 F；v-t 图：纵轴 V、V_1、V_2，两条过原点的直线(上方的标 a_1，下方的标 a_2)，其间标“S_相”，虚线至 t_0，横轴 t
+\[
+X_{\text{相}}=\frac12a_1t_0^2-\frac12a_2t_0^2=L\quad\text{时分离}
+\]
+
+
+\section{板块模型·力作用的最短时间}
+% ---- block 035-01 (原稿第35页) kind=method ----
+\textbf{力作用的最短时间}
+
+\notefig[0.28]{figures/p035_a.png}
+% 图内标注：长板(标“2”)上放物块(标“1”)，物块受向右的 F
+\notefig[0.42]{figures/p035_b.png}
+% 图内标注：v-t 图(原稿在标题右侧)，纵轴 V，V_1、V_2，两条过原点的直线及转折，标 a、a_1、a_2，t_1、t_1+t_2，横轴 t；红笔：“S_相1”“S_相2”及两处红圈
+\noindent $S_{\text{相}1}+S_{\text{相}2}=L$\quad $\dfrac12$ 水平\unclear{宽}$\times$铅垂高
+
+\noindent $S_{\text{相}}=\dfrac12(V_2-V_1)(t_1+t_2)$
+
+
+\section{板块模型·抽桌布}
+% ---- block 035-02 (原稿第35页) kind=method ----
+\textbf{抽桌布}
+
+\notefig[0.4]{figures/p035_c.png}
+% 图内标注：布(标“2”)上放物块 m(标“1”)，M；m 两侧标 L_1、L_2，接触面标 μ_1，F 向右；下方红笔画平行四边形(桌面)，内写 μ_2、“(m与桌)”
+\notefig[0.4]{figures/p035_d.png}
+% 图内标注：v-t 图，纵轴 V、V_1、V_2，横轴 t、t_1、t_2；红字“板”“块”“S_1”“S_2”“S_3”，阴影；图上方文字“① 分离，② 1 停下”(“1”原稿像竖线)
+\noindent 图注：① 分离\quad ② 1 停下
+
+\begin{align*}
+S_{\text{板}1}-S_{\text{块}1}&=S_1=L_1\\
+S_2+S_3&=L_2
+\end{align*}
+\[
+a_{\text{块}1}=+\mu_1g\qquad a_{\text{块}2}=-\mu_2g
+\]
+\[
+F-\mu_1mg-f=Ma_{\text{板}}
+\]
+\noindent 若 $L_1=L_2$ 则\quad $\begin{aligned}S_2&=\dfrac{\mu_2}{\mu_1+\mu_2}\cdot\dfrac L2\\[4pt] S_3&=\dfrac{\mu_1}{\mu_1+\mu_2}\cdot\dfrac L2\end{aligned}$
+
+% ---- block 035-05 (原稿第35页) kind=problem ----
+\begin{problem}
+抽桌布，\unclear{鱼}未掉求 $a$ 条件% “鱼”字不太确定(疑为鱼缸)；“a条件”写在下一行、与图重叠
+
+\notefig[0.3]{figures/p035_g.png}
+% 图内标注：平行四边形(桌布)内标 μ_1、“m”小方块、“2”，向右箭头 a，下方标 μ_2
+\notefig[0.36]{figures/p035_f.png}
+% 图内标注：v-t 图，纵轴 V、V_2，旁边“a条件”；两条过原点的直线(较陡的与较缓的标 μ_1 g)，阴影区标 S_2；交点后下降线标 μ_2 g；S_1、S_1'(S_1 后带撇)，横轴 t、t'、t
+\[
+\frac{S_1}{S_1'}=\frac{\mu_2}{\mu_1}
+\]
+\begin{solution}
+\noindent ① $a_1=\mu_1g$
+
+\noindent ② $V_2=at$\qquad $V_1=a_1t$
+
+\noindent\hspace*{2em}$S_2=\dfrac12at^2$\qquad $S_2=\dfrac12a_1t^2$% CHECK: 右式下标写得像 S_2，按上下文似应为 S_1，照原样转录
+
+\noindent \hspace*{1em}布抽走后
+
+\noindent ③ $a_1'=\mu_2g$
+
+\noindent\hspace*{2em}$t'=\dfrac{V_1}{a_1'}$
+
+\noindent\hspace*{2em}$S_1=V_1t'-\dfrac12a_1't'^2$% CHECK: 左端 S_1 原稿无撇(按语境似为 S_1')；“V_1t'”后有一小笔画
+
+\[
+\text{④}\ \left\{\begin{aligned}S_1+S_1'&=\frac L2\\ S_2-S_1&=\frac L2\end{aligned}\right.
+\]
+\[
+S_1=\frac{\mu_2}{\mu_1+\mu_2}\cdot\frac L2\qquad S_1'=\frac{\mu_1}{\mu_1+\mu_2}\cdot\frac L2
+\]
+\end{solution}
+\end{problem}
+
+
+\section{板块模型·共速与三块问题}
+% ---- block 035-03 (原稿第35页) kind=note ----
+\noindent 共速时 $f$ 消失\qquad 三块问题\qquad 板先和重物共速，形成整体后与轻块共速。
+
+
+\section{板块模型·解题步骤}
+% ---- block 035-04 (原稿第35页) kind=method ----
+\textbf{步骤}
+
+\notefig[0.28]{figures/p035_e.png}
+% 图内标注：板(标“2”)上放物块(标“1”)，物块受向右的 F，接触面 μ_1，地面 μ_2，板右端标 L
+\[
+\left\{\begin{array}{@{}l@{\quad}l@{\quad}l@{\quad}l@{\quad}l@{}}
+\text{①} & \text{②} & \text{③} & \text{④} & \\
+a_1= & V_1= & S_1= & V_{\text{相}}= & \text{恰好}\ d=S_1-S_2\ \ V_1=V_2\\
+a_2=\ \cdots & V_2= & S_2= & a_{\text{相}}= & \\
+\multicolumn{5}{@{}l}{S_{\text{相}}=S_1-S_2=L}\\
+t=\ \cdots & & & &
+\end{array}\right.
+\]% ①②③④ 原稿为圈码，写在对应各列上方；“恰好 d=S_1-S_2  V_1=V_2”与第一行同高、位于右侧
+
+
+\section{板块模型·斜面叠放}
+% ---- block 036-01 (原稿第36页) kind=method ----
+\textbf{1.}
+\notefig[0.3]{figures/p036_a.png}
+
+若底滑面糙 $(\mu_2\le\mu_1)$\quad 则共加共减速\quad 无相对位移\quad $a_1=a_2=g\sin\theta-\mu g\cos\theta$ % 右端被页边切断
+
+若底糙面滑 $(\mu_2>\mu_1)$\quad 则物块会冲出去（跑得快）\quad 上快下慢，慢的会先停
+
+
+\section{连接体·弹簧与分离}
+% ---- block 043-06 (原稿第43页) kind=problem ----
+\begin{problem}[{[4]}]
+\notefig[0.3]{figures/p043_e.png}
+% 图内标注：水平向右箭头 $F$ 推方块 $B$，$B$ 紧靠方块 $A$(两者上方各标 $m$)，$A$ 右侧连弹簧，弹簧另一端接右侧竖直墙；地面有斜线(粗糙)，弹簧下方标 $\mu$；图左上角有题号 [4]
+$F$ 缓慢推动 $B$，压缩弹簧 $x_0$。此时 $A$、$B$ 静止，$B$ 不受摩擦。撤去 $F$ 后，$A$ 运动最大距离为 $4x_0$。求撤去 $F$ 瞬间，$A$、$B$ 的加速度。
+
+\noindent $kx_0-\mu mg=2ma$% 原稿此处 k 写作大写 K
+
+\noindent $a=\dfrac{kx_0}{2m}-\dfrac{\mu g}{2}$
+
+\noindent $A$、$B$ 一起向左运动 $x$ 后\underline{分离}，求 $x$% “分离”二字下有红色下划线
+
+\noindent 分离临界 $N=0$\quad $a_A=a_B=0$\qquad $k(x_0-x)=\mu mg$\qquad $\therefore x=x_0-\dfrac{\mu mg}{k}$
+\end{problem}
+
+
+\section{牛顿三定律}
+% ---- block 064-07 (原稿第64页) kind=summary ----
+\textbf{牛顿运动定律}
+\begin{itemize}
+\item 牛顿第一定律\quad 惯性 $\propto m$\quad 有相对性\quad 力是改变物体运动状态的原因 % 原稿“状”字为小字，插写在“态”字上方
+\item 牛顿第二定律\quad $F=ma$\quad 单位制. 物理量和单位不同
+\item 牛顿第三定律\quad 作用力、反作用力. \unclear{换元}. 同性反向等大
+\end{itemize}
+
+% ---- block 064-08 (原稿第64页) kind=summary ----
+\textbf{对牛一、牛二、牛三定律的理解.}
+\begin{itemize}
+\item $F_{\text{合}}$与$v$同向 加速\quad 反向减速\quad 垂直圆运动 % CHECK: 末三字“垂直圆运动”，可能为“垂直：圆运动”
+\item 惯性的相对性
+  \begin{itemize}
+  \item 铁球、水球、木球类.
+  \end{itemize}
+\item 矢量性\quad 瞬时性\quad 因果性 \quad （其上方有小字注：$a$与$F$）
+\item 同一性\quad 同一物体、统一国际单位
+\item 独立性\quad 每个力产生各自的加速度
+\end{itemize}
+
+
+\section{动力学两类基本问题}
+% ---- block 065-01 (原稿第65页) kind=summary ----
+\textbf{牛顿运动定律的基本运用}
+\begin{itemize}
+\item 动力学两类基本问题
+  \begin{itemize}
+  \item 已知受力情况求物体运动状态.
+  \item 已知运动情况求物体受力情况\quad 以 $F_{\text{合}}=ma$ 为桥梁,
+  \end{itemize}
+\end{itemize}
+
+% ---- block 065-05 (原稿第65页) kind=note ----
+动力学的两类基本问题.
+
+
+\section{超重失重}
+% ---- block 065-02 (原稿第65页) kind=summary ----
+\begin{itemize}
+\item 超重与失重\quad 向上超\ 下失
+  \begin{itemize}
+  \item 超加失减 $ma$.
+  \item 太空人完全失重
+  \end{itemize}
+\end{itemize}
+
+% ---- block 065-04 (原稿第65页) kind=note ----
+对超重与失重的理解.
+
+% ---- block 087-03 (原稿第87页) kind=formula ----
+\[ a\text{ 向}\left\{\begin{array}{ll}\text{上 超}&\quad N=mg+ma\\ \text{下 失}&\quad N=mg-ma\end{array}\right.\qquad \begin{array}{l}\text{上 超 下 失}\\ \text{超 加 失 减}\end{array} \]
+
+
+\section{瞬时加速度}
+% ---- block 065-03 (原稿第65页) kind=summary ----
+\textbf{瞬时加速度问题}
+\begin{itemize}
+\item 绳杆面、力\unclear{可}瞬间消失\quad 用牛二求 $a_{\text{瞬}}$
+\item 弹簧、蹦床、橡皮\unclear{绳}、力保持
+\end{itemize}
+
+
+\section{动力学图像}
+% ---- block 065-06 (原稿第65页) kind=summary ----
+\textbf{动力学图像问题}
+\begin{itemize}
+\item $v$-$t$\quad $a$-$t$\quad $F$-$t$\quad $F$-$a$图.\quad 待定系数\ 或\ 利用数据
+\end{itemize}
+
+
+\section{斜面}
+% ---- block 065-07 (原稿第65页) kind=note ----
+三类光滑斜面上下滑时间比较.
+
+% ---- block 114-05 (原稿第114页) kind=problem ----
+% 原稿序号处“4”被涂改为“5”
+\begin{problem}[5]
+% 图p114_g内含标注：N、F、f、mg、φ、30°、μ=tan30°
+\notefig[0.3]{figures/p114_g.png}
+
+$\to a=\dfrac{g}{2}$\quad 求最小拉力 $F$
+\begin{solution}
+\[\left\{\begin{array}{l}F\cos\alpha-mg\sin30^\circ-f=ma\\ N+F\sin\alpha=mg\cos30^\circ\\ f=\mu N\end{array}\right.\qquad F=\frac{mg\sin30^\circ+\mu mg\cos30^\circ+ma}{\sqrt{1+\mu^2}\,\sin(\alpha+\varphi)}\]
+\[\tan\varphi=\frac{1}{\mu}\]
+当 $\sin(\alpha+\varphi)=1$ 时 $F$ 最小
+\end{solution}
+\end{problem}
+
+
+\section{连接体与整体隔离}
+% ---- block 065-08 (原稿第65页) kind=summary ----
+\textbf{牛顿运动定律综合运用}
+\begin{itemize}
+\item 连接体问题
+  \begin{itemize}
+  \item 整体法.
+  \item 隔离法
+  \end{itemize}
+\end{itemize}
+
+% ---- block 114-04 (原稿第114页) kind=problem ----
+\begin{problem}[4]
+\textbf{$\sin2\theta=2\sin\theta\cos\theta$ 及辅助角公式}
+
+% 图p114_f内含标注：g sinθ、μ=0（或M=0，原稿字形难辨）、m、M、θ
+\notefig[0.3]{figures/p114_f.png}
+
+当 $\theta=?$ 时 $f_{\text{地}}$ max\qquad 系统牛二律
+\begin{solution}
+\[f_{\text{地}}=M\cdot0+ma\cos\theta=mg\sin\theta\cos\theta\qquad \theta=45^\circ\ \text{时取极大值}\]
+\end{solution}
+\end{problem}
+
+
+\section{板块模型}
+% ---- block 065-09 (原稿第65页) kind=method ----
+\begin{itemize}
+\item 滑块板块模型
+  \begin{itemize}
+  \item $F$、$a$、$v_{\text{共}}$、$t$、$x$、$Q$、快带慢、快后慢减 % 原稿“快带慢”与“快后慢减”之间上方有一小字 f（疑为摩擦力 f 的批注）
+  \end{itemize}
+\end{itemize}
+
+
+\section{传送带}
+% ---- block 065-10 (原稿第65页) kind=method ----
+\begin{itemize}
+\item 传送带模型
+  \begin{itemize}
+  \item 共速临界\quad 摩擦突变
+  \end{itemize}
+\end{itemize}
+
+
+\section{临界极值}
+% ---- block 065-11 (原稿第65页) kind=summary ----
+\textbf{动力学中临界极值问题}
+\begin{itemize}
+\item 分离临界\quad $N=0$\quad $a_1=a_2$\quad $v_1=v_2$
+\item 速度临界：合外力\unclear{为0}、收尾速度 % CHECK: “为0”二字连写形似“加”，按物理意义（收尾速度时合外力为零）读作“为0”
+\item 滑动临界\quad 静摩擦达最大
+\item 绳子松断临界：松 $T=0$；断 $T=\max$
+\item \unclear{…} % 页底被照片边缘裁切，最后一行仅露出字的上端，无法辨认
+\end{itemize}
+
+
+\section{光滑斜面下滑时间}
+% ---- block 073-01 (原稿第73页) kind=derivation ----
+% 页面最上方露出的封面（姓名栏）及右上角相邻页的倾斜小字「ρ=1.429 g·L^-1」属杂物/相邻页，未转录
+\textbf{\unclear{光}滑面下滑时间} % CHECK: 首字被页边截断；原稿此处似无「斜」字（应为「光滑斜面下滑时间」）
+
+\textbf{等高斜面}
+
+\notefig[0.25]{figures/p073_a.png}
+
+\[
+\left\{\begin{aligned}
+L&=\tfrac{1}{2}at^{2}\\
+a&=g\sin\theta\\
+L&=\frac{h}{\sin\theta}
+\end{aligned}\right.
+\]
+\[
+t=\frac{1}{\sin\theta}\sqrt{\frac{2h}{g}}
+\]
+\[
+t_1>t_2>t_3
+\]
+
+% ---- block 073-02 (原稿第73页) kind=derivation ----
+% 此处原稿无单独标题；图为底边长 d 相同、倾角不同的斜面（图中标 30°、两个 15° 增量），推测为「等底斜面」
+\notefig[0.25]{figures/p073_b.png}
+
+\[
+\left\{\begin{aligned}
+L&=\tfrac{1}{2}at^{2}\\
+a&=g\sin\theta\\
+L&=\frac{d}{\cos\theta}
+\end{aligned}\right.
+\]
+\[
+t=\sqrt{\frac{4d}{g\sin 2\theta}}
+\]
+
+\notefig[0.3]{figures/p073_c.png}
+
+\[
+t_1=t_3>t_2
+\]
+
+
+\section{等时圆}
+% ---- block 073-03 (原稿第73页) kind=method ----
+\textbf{等时圆}
+
+\textbf{同圆周同顶端的斜面}
+
+\notefig[0.28]{figures/p073_d.png}
+
+\[
+2R\sin\theta=\tfrac{1}{2}g\sin\theta\,t^{2}
+\]
+\[
+t_1=t_2=t_3
+\]
+
+\textbf{同圆周同底端的斜面}
+
+\notefig[0.28]{figures/p073_e.png}
+
+\[
+t_1=t_2=t_3
+\]
+
+\textbf{斜面过公共切点且顶端在圆上}
+
+\notefig[0.28]{figures/p073_f.png}
+
+\[
+t_1=t_2=t_3
+\]
+
+
+\section{动力学图象·弹簧连接体}
+% ---- block 082-04 (原稿第82页) kind=method ----
+\notefig[0.28]{figures/p082_f.png}
+\begin{align*}
+a_A&=\frac{F-kx}{m}\ \downarrow\\
+a_B&=\frac{kx}{m}\ \uparrow
+\end{align*}
+\notefig[0.3]{figures/p082_g.png}
+\begin{itemize}
+\item $V_A=V_B$时\quad $a_A<a_B$
+\item $a_A=a_B$时\quad $V_A>V_B$
+\end{itemize}
+
+$a_A=a_B$时\quad $\Delta V$最大
+
+$V_A=V_B$时\quad $V_A\max$\quad $V_B\max$\quad $E_{p\text{弹}}\max$\quad $E_{\text{机}}\max$ % CHECK: V_A=V_B时“V_A max、V_B max”同时成立物理上存疑，照原样转录
+
+
+\section{连接体·内力公式}
+% ---- block 085-02 (原稿第85页) kind=formula ----
+\textbf{内力公式}
+
+\begin{align*}
+\text{单一外力}\quad&T=\frac{m_1}{m_1+m_2}F\\[6pt]
+\text{双反外力}\quad&T=\frac{m_1F_2+m_2F_1}{m_1+m_2}\\[6pt]
+\text{双同外力}\quad&T=\frac{|m_1F_2-m_2F_1|}{m_1+m_2}
+\end{align*}
+
+同受的力不用写\quad 独受的力先合成后公式\quad 单体上合成\quad 力在不同物体不合成
+
+% ---- block 085-03 (原稿第85页) kind=formula ----
+① % 原稿图中m_2下标注“μ=0”
+\notefig[0.25]{figures/p085_a.png}
+\[
+f_{\text{内}}=\frac{m_2F}{m_1+m_2}
+\]
+
+% ---- block 085-04 (原稿第85页) kind=formula ----
+④
+\notefig[0.25]{figures/p085_d.png}
+\[
+f_{\text{内}}=\frac{m_2F_1-m_1\bigl[F_2-\mu(m_1+m_2)g\bigr]}{m_1+m_2}
+\]
+
+% ---- block 085-05 (原稿第85页) kind=formula ----
+② % 原稿图中左侧标有f_地
+\notefig[0.25]{figures/p085_b.png}
+\[
+f_{\text{内}}=\frac{\mu(m_1+m_2)gm_1+Fm_2}{m_1+m_2}
+\]
+
+% ---- block 085-06 (原稿第85页) kind=formula ----
+% 斜面上m_1叠在m_2上；图中标μ_1、μ_2；分子中“μ_2mgcosθ”被划去，其上方改写为μ_2(m_1+m_2)g(cosθ)
+\notefig[0.25]{figures/p085_e.png}
+\[
+f_{\text{内}}=\frac{m_1g\sin\theta\cdot m_2-\bigl[m_1g\sin\theta-\text{\struck{$\mu_2mg\cos\theta$}}\,\mu_2(m_1+m_2)g\cos\theta\bigr]m_1}{m_1+m_2}
+\]
+
+% ---- block 085-07 (原稿第85页) kind=formula ----
+③ % 原稿图中左侧标有f_地
+\notefig[0.3]{figures/p085_c.png}
+\[
+f_{\text{内}}=\frac{m_1\bigl[F-\mu(m_1+m_2)g\bigr]}{m_1+m_2}
+\]
+
+% ---- block 085-08 (原稿第85页) kind=formula ----
+⑤
+\notefig[0.25]{figures/p085_f.png}
+\[
+f_{\text{内}}=\frac{m_1\mu_2(m_1+m_2)g}{m_1+m_2}
+\]
+底滑面粗糙
+
+应$<\mu_1m_1g$
+
+故$\mu_1>\mu_2$\ \unclear{共}减速
+
+% ---- block 085-09 (原稿第85页) kind=formula ----
+⑥
+\notefig[0.25]{figures/p085_g.png}
+\begin{align*}
+f_{12}&=\frac{\bigl[F_1-\mu(m_1+m_2+m_3)g\bigr](m_2+m_3)-(F_3-F_2)m_1}{m_1+m_2+m_3}\\[8pt]
+f_{23}&=\frac{\bigl[F_1-F_2-\mu(m_1+m_2+m_3)g\bigr]m_3-F_3(m_1+m_2)}{m_1+m_2+m_3}
+\end{align*}
+
+% ---- block 085-10 (原稿第85页) kind=formula ----
+⑦ % 原稿图中m_2、m_1被一小椭圈圈起，整个系统又被一大椭圈圈起
+\notefig[0.35]{figures/p085_h.png}
+\[
+T=\frac{(m_1+m_2)F}{m_1+m_2+m_3}
+\]
+\[
+f_{12}=\frac{m_2\bigl[F-\mu(m_1+m_2+m_3)g\bigr]}{m_1+m_2+m_3}
+\]
+
+% ---- block 085-11 (原稿第85页) kind=formula ----
+⑧
+\notefig[0.35]{figures/p085_i.png}
+\[
+f_{\text{左}}=\frac{2mF}{6m}\qquad\qquad f_{\text{右}}=\frac{4m}{6m}F
+\]
+对$1\,2\,3$\quad $T=\dfrac{3m\cdot\mu mg}{3m+m}$
+
+改\quad $f_{\text{右}}>2f_{\text{左}}$\quad 左先滑\quad $F$到$3f_{\text{左}}$时\quad $C,D$相对\unclear{滑} % 行末被页面右缘截断
+
+$f_{\text{右}}<2f_{\text{左}}$\quad 右先滑\quad $F$到$\dfrac32f_{\text{右}}$时\quad $A,B$相对\unclear{滑} % 行末被页面右缘截断
+
+
+\section{板块模型·滑动临界}
+% ---- block 086-01 (原稿第86页) kind=method ----
+\textbf{滑动临界}
+
+\notefig[0.25]{figures/p086_a.png}
+\[ f=\frac{m_2F+\mu_2(m_1+m_2)g\cdot m_1}{m_1+m_2}<\mu_1m_1g\qquad\text{为共加速条件} \]
+
+\notefig[0.25]{figures/p086_b.png}
+\[ f=\frac{\mu_2(m_1+m_2)g\cdot m_1}{m_1+m_2}<\mu_1m_1g\qquad\text{为共加速条件} \]
+
+\notefig[0.25]{figures/p086_c.png}
+
+\noindent 若 $\mu_1m_1g<\mu_2(m_1+m_2)g$ 则2不动 \\
+若 $\mu_1m_2g>\mu_2(m_1+m_2)g$ 则2也动 % CHECK: 此行 m 的下标手写看起来是2（物理上应与上一行一样是 m_1）
+\[ f=\frac{Fm_2+\mu_2(m_1+m_2)g\,m_1}{m_1+m_2}\ge\mu_1m_1g\ \text{时}\quad\text{相对滑动} \]
+
+
+\section{连接体·整体隔离}
+% ---- block 086-03 (原稿第86页) kind=problem ----
+\begin{problem}[2、]
+火车从东拉以 $a$，PQ 间拉力为 $F$；从西拉以 $\frac23a$，PQ 间拉力为 $F$，求节数
+\begin{solution}
+\notefig[0.3]{figures/p086_e.png}
+\[ n=x+y\ \text{节} \]
+\[ F=xm_0a \]
+% m 后的小圆圈为下标 0（每节车厢质量 m_0）
+\notefig[0.3]{figures/p086_f.png}
+\[ F=\frac23ay\,m_0 \]
+\[ \begin{cases} x=\dfrac23y\\ x+y=n\end{cases}\qquad n=\frac53y \]
+\[ 3n=5y\qquad \frac n5=\frac y3 \]
+\[ \begin{aligned} n&\text{ 为 }5k_1,\\ y&\text{ 为 }3k_1,\\ x&\text{ 为 }2k_1\end{aligned} \]
+\end{solution}
+\end{problem}
+
+\noindent 动车拖车相间，任意拖动\,间内力为0，任意动拖间内力为 $\dfrac F2$ \\
+力为$F$\ 力为0
+% CHECK: “任意拖动”疑为“任意拖拖”；第二行行首“力为F 力为0”是附注，行首字被页边遮挡，含义不明（疑为“动动间内力为F，拖拖间内力为0”）
+
+% ---- block 086-04 (原稿第86页) kind=method ----
+\noindent 3、整体/隔离法。几个物体几组独立方程，整体列1组，隔离\unclear{物体}少的列$n-1$组，横竖列1个，倾斜列\unclear{2}组 \quad $\begin{cases}F_x=\cdots\\ F_y=\cdots\end{cases}$
+% “n-1”写在行上方，行内“列”与“组”之间有涂改/划线痕迹；“倾斜列2组”末尾与右侧大括号被页边截断
+
+\medskip
+\noindent 关联加速度\quad 一根绳上 $a$ 相\,等（方向可不共线）\qquad 有对称少1组，有临界临界 \\
+动滑轮加速度、速度受力有倍数关系 \\
+(\underline{不用}整体法，滑轮也得分析)
+% “相”与“等”之间有涂改液；“有临界临界”行末被页边截断，后面可能还有字；“动滑轮…”一行是写在行间的小字
+
+% ---- block 086-06 (原稿第86页) kind=problem ----
+\begin{problem}
+\notefig[0.3]{figures/p086_h.png}
+BC 静止，求 $a_A$
+\begin{solution}
+对A
+\[ \begin{cases} mg\sin30^\circ-f=ma\\ 1.5mg\sin30^\circ=T+f\\ T=mg\end{cases} \]
+% CHECK: 第二式按受力应为 1.5mg sin30°+f=T 才能得到 a_A=g/4；此处照抄原稿 “=T+f”
+$\therefore a_A=\dfrac g4$
+\end{solution}
+\end{problem}
+
+% ---- block 087-09 (原稿第87页) kind=method ----
+\noindent 能整体先整体，剩余物体 $n-1$\quad 不能整体全隔离，关联加速未知力
+
+
+\section{连接体·关联加速度}
+% ---- block 086-05 (原稿第86页) kind=problem ----
+\begin{problem}
+\notefig[0.25]{figures/p086_g.png}
+\begin{solution}
+\[ \begin{cases} T-mg=ma\\ T-Mg+N=0\end{cases} \]
+\[ N=Mg-ma-mg\qquad\text{系统失重} \]
+\end{solution}
+\end{problem}
+
+
+\section{超重失重·系统牛二}
+% ---- block 087-01 (原稿第87页) kind=method ----
+\textbf{流动问题}\quad 谁$\rho$小谁朝运动方向走。
+% CHECK: “ρ”手写形似大写 P，按物理应为密度 ρ
+\notefig[0.25]{figures/p087_a.png}
+\noindent 若为木球/气泡/$\cdots$\quad 球往右 \\
+若为铁球\quad 球往左
+
+\notefig[0.25]{figures/p087_b.png}
+\noindent 木球上浮\quad $N$小，失重(水)向下加\unclear{速}
+% 此行行末被页边截断；括号形状不确定
+\\
+铁球下沉时 $N$ 小，铁失重
+
+% ---- block 087-04 (原稿第87页) kind=problem ----
+\begin{problem}
+\notefig[0.25]{figures/p087_c.png}
+环上升至 $l$ 时 $N_{\text{地}}$
+% “N地”的“地”字有重描痕迹
+\begin{solution}
+\[ (M+m)g-N=ma \]
+\[ v_0^2=2al \]
+\end{solution}
+\end{problem}
+
+
+\section{系统牛顿第二定律}
+% ---- block 087-02 (原稿第87页) kind=formula ----
+\noindent 系统牛顿第二定律、不分析内力\quad 安培力\quad 不是内力是磁场施力
+
+\noindent 非共加速\quad $F_{\text{合}}=m_1a_1+m_2a_2+\cdots$\quad 整体合外力提供部分加速度 \\
+共加速\quad $F_{\text{合}}=(m_1+\cdots+m_n)a$
+
+% ---- block 087-05 (原稿第87页) kind=problem ----
+\begin{problem}
+\notefig[0.3]{figures/p087_d.png}
+\begin{solution}
+\[ f_{\text{地}}=ma\cos\theta \]
+\[ (M+m)g-N_{\text{地}}=ma\sin\theta \]
+\end{solution}
+\end{problem}
+
+% ---- block 087-06 (原稿第87页) kind=problem ----
+\begin{problem}
+\notefig[0.3]{figures/p087_e.png}
+\begin{solution}
+\[ \begin{cases} f=m_2a\cos\theta\\ m_2g\sin\theta-m_3g=(m_2+m_3)a\\ (m_1+m_2+m_3)g-N=m_1a\cos\theta-m_3a\end{cases} \]
+% CHECK: 第三式右边手写为 m_1 a cosθ − m_3 a（按受力分析 m_2 的竖直分加速度应为 m_2 a sinθ），照抄原稿
+\end{solution}
+\end{problem}
+
+% ---- block 087-07 (原稿第87页) kind=problem ----
+\begin{problem}
+$a=g\sin\theta$
+\notefig[0.25]{figures/p087_f.png}
+$\theta$ 可变，求 $f_{\text{地}\,\max}$
+\begin{solution}
+\[ f=ma\cos\theta=mg\cdot\frac12\sin2\theta_{\max}=\frac{mg}{2}\qquad \theta=45^\circ\text{ 时取等。} \]
+% “max”写在 sin2θ 右下角，意为 f_max
+\end{solution}
+\end{problem}
+
+
+\section{非惯性系·惯性力}
+% ---- block 089-01 (原稿第89页) kind=knowledge ----
+\noindent $\to a$\quad $\leftarrow ma$
+% 位于标题上方的小字
+
+\noindent 非惯性系。反向施\unclear{加}$ma$ 使之平衡（假想）\quad 施加惯性力\ 并不存在
+% “非惯性系”原稿被菱形框住；“施加”的“加”字形似“向”
+
+
+\section{弹簧·物块落在弹簧上}
+% ---- block 119-01 (原稿第119页) kind=knowledge ----
+% 标题“物块”二字前有一个难辨的小符号，未转录
+\textbf{\underline{物块落在弹簧上}}
+
+\notefig[0.25]{figures/p119_a.png}
+% 图中标注：弹簧上方一个圆圈(物块)，弹簧旁自上而下标 A、O、B 三个位置
+
+\begin{itemize}
+\item[A] $kx<mg$\quad $v\uparrow$\quad $a$向下$\downarrow$
+\item[O] $kx=mg$\quad $v_{\max}$
+\item[B] $kx>mg$\quad \struck{\unclear{…}}\ $v\uparrow$\quad $a$向上$\downarrow$ % CHECK: B 行 v、a 箭头方向与物理预期相反(预期 v 减小、a 向上增大)；kx>mg 后另有一处被涂改的字
+\end{itemize}
+
+$v_{\max}$不在刚碰处
+
+\notefig[0.25]{figures/p119_b.png}
+% 图中标注：纵轴 v，$V_m$ 等标注，曲线上一点 D，横轴 t
+
+\[
+\left\{\begin{aligned}
+&\text{有}h\text{释放}\quad a_{\text{下}}>g\\
+&\text{无}h\text{释放}\quad a_{\text{下}}=g\\
+&\text{提着释放}\quad a_{\text{下}}<g
+\end{aligned}\right.
+\qquad\text{动能定理证明}
+\]
+
+
+\section{动力学临界问题}
+% ---- block 119-02 (原稿第119页) kind=knowledge ----
+变速临界\quad $a=0$\ $v_{\max}$\quad $v=0$\ $a_{\max}$
+
+分离临界\quad $N=0$\ $a_1=a_2$\ $v_1=v_2$\quad 不分离\ $N\ge 0$
+
+滑动临界、整体隔离法
+
+
+\section{有空气阻力的竖直上抛}
+% ---- block 199-07 (原稿第199页) kind=formula ----
+有空气阻力
+
+\notefig[0.1]{figures/p199_f.png}
+% 图为两个带小圆圈（物体）的竖直箭头：上方箭头向上，下方箭头向下
+
+\[
+a_1=\frac{f+mg}{m}
+\]
+\[
+a_2=\frac{mg-f}{m}\ \,{}^{a\text{不同}}
+\]
+

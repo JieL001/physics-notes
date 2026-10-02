@@ -1,0 +1,37 @@
+%%%PAGE 160 rot=0 legibility=good summary=粘贴的印刷题：斜面导轨上多个条形磁场区、双棒a与b；手写解(1)(2)(3)
+%%%BLOCK id=160-01 ch=12 sec=电磁感应·双棒模型 kind=problem alt=06 cont=none y=0.00-0.67
+% 题干是粘贴的印刷体；印刷体上有手写划线（"导轨光滑且电阻忽略不计""两根质量均为m、有效电阻均为R的导体棒a和b放在导轨上"一带有下划线）及几处连线/斜杠记号，已略
+% 图上方有手写的 L（轨距）记号，在图的裁剪范围内
+\begin{problem}
+（题干首行被页缘截断，仅见后半）\unclear{足够}长的平行金属导轨与水平面的夹角为$\theta$，导轨光滑且电阻忽略不计。场强为$B$的条形匀强磁场方向与导轨平面垂直，磁场区域的宽度为$d_1$，间距为$d_2$。两根质量均为$m$、有效电阻均为$R$的导体棒a和b放在导轨上，并与导轨垂直，重力加速度为$g$。
+
+(1) 若a进入第2个磁场区域时，b以与a同样的速度进入第1个磁场区域，求b穿过第1个磁场区域过程中增加的动能$\Delta E_k$；
+
+(2) 若a进入第2个磁场区域时，b恰好离开第1个磁场区域；此后a离开第2个磁场区域时，b又恰好进入第2个磁场区域。且a、b在任意一个磁场区域或无磁场区域的运动时间均相等。求b穿过第2个磁场区域过程中，两导体棒产生的总焦耳热$Q$；
+
+(3) 对于第(2)问所述的运动情况，求a穿出第$k$个磁场区域时的速率$v_k$。
+
+%FIG p160_a 0.04 0.35 0.56 0.60
+\notefig[0.5]{figures/p160_a.png}
+\begin{solution}
+(1)\quad $\therefore\ \Delta E_k=mgd_1\sin\theta$
+
+(2)
+\[ \tfrac12mv_1^2+Q=\tfrac12mv_2^2+mgd_1\sin\theta \]
+\[ \tfrac12mv_2^2=\tfrac12mv_1^2+mgd_2\sin\theta \] % CHECK: 原稿此行末的 θ 写得像 α
+\[ Q=mg(d_1+d_2)\sin\theta \]
+（写在印刷题干(2)与(3)之间的批注）$I_{\text{安}}$\unclear{也}在每个磁场中不变，故$\Delta v_1=\Delta v_2=\Delta v_3$，形成速度交替
+
+（以下一组算式写在图的下方，对应第(3)问，原稿无题号）
+\[
+\left\{\begin{aligned}
+&m(v_1-v_2)=mgt\sin\theta-\frac{B^2L^2d_1}{2R}\\
+&d_2=\frac{v_1+v_2}{2}t\\
+&v_1-v_2=-gt\sin\theta
+\end{aligned}\right.
+\]
+\[ v_1=\frac{4mgRd_2}{B^2L^2d_1}\sin\theta-\frac{B^2L^2d_1}{8mR} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 160

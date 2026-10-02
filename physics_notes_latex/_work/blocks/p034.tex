@@ -1,0 +1,126 @@
+%%%PAGE 34 rot=0 legibility=good summary=有质板块模型：平地(地滑)、初速类(三种情形：共速后一起减速、共速后分别减速、双速度)、外力类(恒力拉板、恒力拉块)的图示、v-t图像与加速度/位移公式
+%%%BLOCK id=034-01 ch=03 sec=板块模型·有质板块·平地 kind=method alt=01 cont=none y=0.05-0.23
+\textbf{有质板块、}
+
+\textbf{平地}
+
+\noindent 地滑
+
+%FIG p034_a 0.088 0.15 0.215 0.222
+\notefig[0.28]{figures/p034_a.png}
+% 图内标注：B 在 A 上，B 标“2”、向右箭头 V_0，接触面标 μ_1，A 板，板下标“1”
+%FIG p034_b 0.24 0.123 0.425 0.215
+\notefig[0.4]{figures/p034_b.png}
+% 图内标注：v-t 图，纵轴 V、V_0，下降线标“2”(斜线阴影)，上升线标“1”，共速后水平线标“1,2”，横轴 t
+\[
+\left\{\begin{aligned}
+a_1&=\frac{\mu_1m_2g}{m_1}\\
+a_2&=\mu_1g
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+V_B&=V_0-\mu_1gt\\
+V_1&=a_1t
+\end{aligned}
+\qquad
+\begin{aligned}
+S_2&=V_0t-\frac12a_2t^2\\
+S_1&=\frac12a_1t^2
+\end{aligned}
+\]% CHECK: V_B 的下标写得像“B”(其余处用 V_1、V_2)
+\[
+L=S_{\text{相}}=S_A-S_B
+\]% CHECK: 此式在原页位于右上方；照原样转录，按图中 A 为板、B 为块，相对位移似应为 S_B-S_A
+%%%END
+%%%BLOCK id=034-02 ch=03 sec=板块模型·有质板块·初速类 kind=method alt=01 cont=none y=0.23-0.45
+\textbf{初速类}
+
+\noindent 地糙 $\mu_2$\quad ① 底滑面糙\ $\mu_1>\mu_2$
+
+\noindent 共速后一起减速
+
+%FIG p034_c 0.185 0.3235 0.365 0.378
+\notefig[0.3]{figures/p034_c.png}
+% 图内标注：板(标“1”)上右端放物块(标“2”)，板上表面标 μ_1，下表面标 μ_2，板向右箭头 V_0
+%FIG p034_d 0.405 0.275 0.60 0.378
+\notefig[0.33]{figures/p034_d.png}
+% 图内标注：v-t 图，纵轴 V、V_0，从 V_0 下降线标“1”，从原点上升线标“2”，交点后共同下降线标“1.2”，横轴 t
+\begin{align*}
+a_1&=\frac{\mu_1m_2g+\mu_2(m_1+m_2)g}{m_1} & V_1&=V_0-a_1t\\
+a_2&=\mu_1g & V_2&=a_2t\\
+S_1&=V_0t-\frac12a_1t^2 & S_2&=\frac12a_2t^2
+\end{align*}
+\[
+\left\{\begin{aligned}
+V_{\text{共}}&=a_2t=V_0-a_1t\\
+a_{\text{共}}&=\mu_2g\\
+X_{\text{共}}&=\frac{V_{\text{共}}^2}{2a_{\text{共}}}
+\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=034-03 ch=03 sec=板块模型·有质板块·初速类 kind=method alt=01 cont=none y=0.45-0.68
+\noindent ② 底糙面滑\ $\mu_1<\mu_2$
+
+\noindent 共速后分别减速
+
+%FIG p034_e 0.175 0.511 0.365 0.557
+\notefig[0.3]{figures/p034_e.png}
+% 图内标注：板(标“A”“1”)上右端放物块(标“B”“2”)，板上表面标 μ_1，下表面标 μ_2，板向右箭头 V_0
+\begin{align*}
+a_1&=\frac{\mu_1m_2g+\mu_2(m_1+m_2)g}{m_1} & V_1&=V_0-a_1t & S_1&=V_0t-\frac12a_1t^2\\
+a_2&=\mu_1g & V_2&=a_2t & S_2&=\frac12a_2t^2\\
+V_{\text{共}}&=a_2t=V_0-a_1t
+\end{align*}
+%FIG p034_f 0.11 0.568 0.31 0.675
+\notefig[0.33]{figures/p034_f.png}
+% 图内标注：v-t 图，纵轴 V，A 的下降线(红笔描过)标“1 A”，上升线标“B2”，交点后两条下降线：较缓的标“2 B”、较陡的(红笔)标“A”，其间阴影，横轴 t
+\noindent 分别减速
+
+\noindent 对2：$\mu_1m_2g=m_2a_2'$\quad $a_2'=\mu_1g$\\
+对1：$\mu_1m_2g-\mu_2(m_1+m_2)g=m_1a_1'$\quad $a_1'=\cdots$% 原稿“μ_1m_2g−”为写在 μ_2 前上方的插入小字
+
+\noindent 都是减速（块推板、地阻板）% 以下原稿有一条贯穿页面的横线，其下为“③ 双速度”
+%%%END
+%%%BLOCK id=034-04 ch=03 sec=板块模型·有质板块·初速类 kind=method alt=01 cont=none y=0.68-0.75
+\noindent ③ 双速度
+
+%FIG p034_g 0.178 0.7005 0.35 0.772
+\notefig[0.3]{figures/p034_g.png}
+% 图内标注：物块(标“2”)在板上，向左箭头 V_0；板向右箭头 V_0；板上表面 μ_1，下表面 μ_2，板下标“1”；图下文字“底滑面糙”
+\noindent 底滑面糙
+
+\begin{align*}
+a_2&=\mu_1g\\
+a_1&=\frac{\mu_1m_2g+\mu_2(m_1+m_2)g}{m_1}
+\end{align*}
+\noindent $V_B=0$ 时\quad $t=\dfrac{V_0}{a_2}$\quad $S_B=\dfrac12V_0t$
+
+\noindent $V_A=V_0-a_1t$
+
+%FIG p034_h 0.664 0.6785 0.85 0.785
+\notefig[0.33]{figures/p034_h.png}
+% 图内标注：v-t 图，纵轴 V，正向 V_0、负向 -V_0，从 V_0 下降线标“1”，从 -V_0 上升线标“2”，交点后共同线标“1.2”，横轴 t
+%%%END
+%%%BLOCK id=034-05 ch=03 sec=板块模型·有质板块·外力类 kind=method alt=01 cont=none y=0.75-0.88
+\textbf{外力类}
+
+\noindent ① 恒力拉板
+
+%FIG p034_i 0.05 0.797 0.475 0.876
+\notefig[0.6]{figures/p034_i.png}
+% 图内标注：长板(标“2”)上放物块(标“1”)，板受向右的 F；文字“恒力拉板”；v-t 图：纵轴 V、V_2、V_1，两条过原点的直线(上方的标 a_2，下方的标 a_1)，其间标“S_相”，虚线至 t_0，横轴 t
+\[
+X_{\text{相}}=\frac12a_2t_0^2-\frac12a_1t_0^2=L\quad\text{时分离}
+\]
+%%%END
+%%%BLOCK id=034-06 ch=03 sec=板块模型·有质板块·外力类 kind=method alt=01 cont=none y=0.88-0.98
+\noindent ② 恒力拉块
+
+%FIG p034_j 0.049 0.884 0.49 0.978
+\notefig[0.6]{figures/p034_j.png}
+% 图内标注：文字“恒力拉块”；长板(标“2”)右端的物块受向左的 F；v-t 图：纵轴 V、V_1、V_2，两条过原点的直线(上方的标 a_1，下方的标 a_2)，其间标“S_相”，虚线至 t_0，横轴 t
+\[
+X_{\text{相}}=\frac12a_1t_0^2-\frac12a_2t_0^2=L\quad\text{时分离}
+\]
+%%%END
+%%%PAGEEND 34

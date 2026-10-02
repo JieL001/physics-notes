@@ -1,0 +1,100 @@
+%%%PAGE 125 rot=0 legibility=good summary=飞船对接与变轨(离心/近心运动)、天体追及相遇(共线/有夹角、同向/反向，ωt与t/T两种形式)、双星模型、三星模型(共线/等边三角形)、四星模型(正方形/三角形加中心星)
+%%%BLOCK id=125-01 ch=05 sec=卫星变轨·飞船对接 kind=knowledge alt=none cont=none y=0.05-0.215
+% 页面右上角露出邻页(化学)内容“…体 ρ=1.429 g·L^-1”及“No./Date”页眉，不属于本页，已忽略
+\textbf{飞船对接}
+
+飞船在低轨道加速\ $v\uparrow$\ $\to$\ 所需向心力$\uparrow$\ $\to$\ 做离心运动\ $\to$\ $r_{\text{轨道}}\uparrow$\ $\to$\ 升轨\ 变速对接.
+
+\textbf{变轨}
+\begin{itemize}
+\item 离心运动\quad $\dfrac{GMm}{r^{2}}<\dfrac{mv^{2}}{r}$\quad 飞行器突然加速\quad 变为椭圆运动或在较大半径圆轨道运动
+\item 近心运动\quad $\dfrac{GMm}{r^{2}}>\dfrac{mv^{2}}{r}$\quad 飞行器突然减速\quad 变为椭圆运动或在较小半径圆轨道运动
+\end{itemize}
+%%%END
+%%%BLOCK id=125-02 ch=05 sec=天体追及·冲日 kind=method alt=none cont=none y=0.235-0.67
+\textbf{天体追及相遇}
+
+\textbf{从共线时同向运行}\quad $\omega_1>\omega_2$\quad $T_2>T_1$
+\[
+\begin{array}{lll}
+\text{相距最近} & \omega_1t-\omega_2t=n\cdot2\pi\ (n=1,2,3,\ldots) & \dfrac{t}{T_1}-\dfrac{t}{T_2}=n\ (n=1,2,3,\ldots)\\[10pt]
+\text{相距最远} & \omega_1t-\omega_2t=(2n-1)\pi\ (n=1,2,3,\ldots) & \dfrac{t}{T_1}-\dfrac{t}{T_2}=n-\dfrac{1}{2}\ (n=1,2,3,\ldots)
+\end{array}
+\]
+
+\textbf{从共线时反向运行}
+\[
+\begin{array}{lll}
+\text{相距最近} & \omega_1t+\omega_2t=n\cdot2\pi\ (n=1,2,3,\ldots) & \dfrac{t}{T_1}+\dfrac{t}{T_2}=n\ (n=1,2,3,\ldots)\\[10pt]
+\text{相距最远} & \omega_1t+\omega_2t=(2n-1)\cdot\pi\ (n=1,2,3,\ldots) & \dfrac{t}{T_1}+\dfrac{t}{T_2}=n-\dfrac{1}{2}\ (n=1,2,3,\ldots)
+\end{array}
+\]
+
+\textbf{从有夹角开始同向运行}
+\[
+\begin{array}{lll}
+\text{相距最近} & \omega_1t-\omega_2t=2\pi-\theta+2n\pi\ (n=0,1,2,\ldots) & \dfrac{t}{T_1}-\dfrac{t}{T_2}=(n+1)-\dfrac{\theta}{2\pi}\\[10pt]
+\text{相距最远} & \omega_1t-\omega_2t=\pi-\theta+2n\pi\ (n=0,1,2,\ldots) & \dfrac{t}{T_1}-\dfrac{t}{T_2}=\left(n+\dfrac{1}{2}\right)-\dfrac{\theta}{2\pi}
+\end{array}
+\]
+
+\textbf{从有夹角开始反向运行}% 原稿“反”字外画有一个圆圈
+\[
+\begin{array}{lll}
+\text{相距最近} & \omega_1t+\omega_2t=\theta+2n\pi\ (n=0,1,2,\ldots) & \dfrac{t}{T_1}+\dfrac{t}{T_2}=n+\dfrac{\theta}{2\pi}\\[10pt]
+\text{相距最远} & \omega_1t+\omega_2t=\pi+\theta+2n\pi\ (n=0,1,2,\ldots) & \dfrac{t}{T_1}+\dfrac{t}{T_2}=\left(n+\dfrac{1}{2}\right)+\dfrac{\theta}{2\pi}
+\end{array}
+\]
+%%%END
+%%%BLOCK id=125-03 ch=05 sec=双星多星模型 kind=method alt=none cont=none y=0.69-1.00
+\textbf{双星模型.}
+
+%FIG p125_a 0.085 0.765 0.315 0.872
+\notefig[0.28]{figures/p125_a.png}
+% 图：两同心圆轨道，$m_1$、$m_2$ 在圆心 O 两侧，$r_1$、$r_2$，受力 $F_1$、$F_2$(指向 O)，角速度 $\omega_1$、$\omega_2$，两星间距 $L$(双向箭头)
+
+\begin{align*}
+\frac{Gm_1m_2}{L^{2}}&=m_1\omega^{2}r_1=m_1a_1 &&\text{①}\\
+\frac{Gm_1m_2}{L^{2}}&=m_2\omega^{2}r_2=m_2a_2 &&\text{②}
+\end{align*}
+% 原稿圈号“①”写在 m_1a_1 前、“②”写在“=m_2a_2”前，此处统一放在式末
+
+\[
+m_1r_1=m_2r_2\qquad \text{①+②}\quad \omega=\sqrt{\frac{Gm_1m_2}{(m_1+m_2)L^{3}}}\qquad v_1+v_2=\omega L
+\]
+\[
+r_1+r_2=L\qquad T=2\pi\sqrt{\frac{(m_1+m_2)L^{3}}{Gm_1m_2}}
+\]
+% CHECK: 原稿有一条斜线自 ω 式上沿贯穿至 T 式下沿，疑为划去标记；且这两式与标准结果 ω^2=G(m_1+m_2)/L^3 不符(原稿分子像 Gm_1m_2)。页面底边处 T 式分母可能略被截
+%%%END
+%%%BLOCK id=125-04 ch=05 sec=双星多星模型 kind=method alt=none cont=none y=0.69-0.90
+\textbf{三星模型}
+
+%FIG p125_b 0.375 0.712 0.565 0.79
+\notefig[0.3]{figures/p125_b.png}
+% 图：圆周上三星共线(左、中、右)，两端星绕中心星转动，间距均为 $r$，箭头表示运动方向；图左侧有算式尾部
+
+$\dfrac{Gm^{2}}{r^{2}}+\dfrac{Gm^{2}}{(2r)^{2}}=ma_{\text{向}}$
+
+%FIG p125_c 0.39 0.785 0.53 0.895
+\notefig[0.28]{figures/p125_c.png}
+% 图：圆周上三星构成边长 $L$ 的等边三角形，标注 $m$、$L$，虚线为半径；算式尾部叠在图左上
+
+$\dfrac{Gm^{2}}{L^{2}}\cos30^{\circ}\times2=ma_{\text{向}}$\qquad $r=\dfrac{L}{2\cos30^{\circ}}$
+%%%END
+%%%BLOCK id=125-05 ch=05 sec=双星多星模型 kind=method alt=none cont=none y=0.69-0.90
+\textbf{四星模型}
+
+%FIG p125_d 0.615 0.708 0.775 0.80
+\notefig[0.3]{figures/p125_d.png}
+% 图：圆周上四星构成边长 $L$ 的正方形，中心 O，标注 $m$、$L$
+
+$\dfrac{Gm^{2}}{L^{2}}\times2\cos45^{\circ}+\dfrac{Gm^{2}}{(\sqrt{2}L)^{2}}=ma_{\text{向}}$\qquad $r=\dfrac{\sqrt{2}}{2}L$
+
+%FIG p125_e 0.615 0.80 0.765 0.90
+\notefig[0.3]{figures/p125_e.png}
+% 图：圆周上三个质量 $m$ 构成边长 $L$ 的等边三角形，中心为质量 $M$，标注 $m$、$M$、$L$
+
+$\dfrac{Gm^{2}}{L^{2}}\times2\times\cos30^{\circ}+\dfrac{GMm}{r^{2}}=ma_{\text{向}}$\qquad $r=\dfrac{L}{2\cos30^{\circ}}$
+%%%END
+%%%PAGEEND 125

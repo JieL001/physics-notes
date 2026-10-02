@@ -1,0 +1,86 @@
+%%%PAGE 086 rot=0 legibility=good summary=板块模型滑动临界条件；斜面上AB静止求m_B范围；火车动车节数；整体隔离法与关联加速度例题
+%%%BLOCK id=086-01 ch=03 sec=板块模型·滑动临界 kind=method alt=none cont=none y=0.03-0.34
+\textbf{滑动临界}
+
+%FIG p086_a 0.085 0.055 0.21 0.11
+\notefig[0.25]{figures/p086_a.png}
+\[ f=\frac{m_2F+\mu_2(m_1+m_2)g\cdot m_1}{m_1+m_2}<\mu_1m_1g\qquad\text{为共加速条件} \]
+
+%FIG p086_b 0.09 0.125 0.21 0.19
+\notefig[0.25]{figures/p086_b.png}
+\[ f=\frac{\mu_2(m_1+m_2)g\cdot m_1}{m_1+m_2}<\mu_1m_1g\qquad\text{为共加速条件} \]
+
+%FIG p086_c 0.11 0.2 0.215 0.25
+\notefig[0.25]{figures/p086_c.png}
+
+\noindent 若 $\mu_1m_1g<\mu_2(m_1+m_2)g$ 则2不动 \\
+若 $\mu_1m_2g>\mu_2(m_1+m_2)g$ 则2也动 % CHECK: 此行 m 的下标手写看起来是2（物理上应与上一行一样是 m_1）
+\[ f=\frac{Fm_2+\mu_2(m_1+m_2)g\,m_1}{m_1+m_2}\ge\mu_1m_1g\ \text{时}\quad\text{相对滑动} \]
+%%%END
+%%%BLOCK id=086-02 ch=02 sec=共点力平衡·临界极值 kind=problem alt=03 cont=none y=0.365-0.45
+\begin{problem}[1、]
+%FIG p086_d 0.085 0.368 0.245 0.442
+\notefig[0.3]{figures/p086_d.png}
+\unclear{$\mu$}$=0.125$\quad 系统静止，求 $m_B$ 范围
+% CHECK: 手写像 "M=0.125"，按物理应为动摩擦因数 μ=0.125（斜面 37°，A、B 由绳经斜面顶端定滑轮相连，A 在 B 上）；答案中的 M 即 m_B，m 为 m_A
+\begin{solution}
+\[ \begin{cases} m_{B\,\max}\text{ 时 }f_B\text{ 向上}\\[2pt] m_{B\,\min}\text{ 时 }f_B\text{ 向下}\end{cases}\qquad \frac37m\le M\le\frac95m \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=086-03 ch=03 sec=连接体·整体隔离 kind=problem alt=none cont=none y=0.45-0.745
+\begin{problem}[2、]
+火车从东拉以 $a$，PQ 间拉力为 $F$；从西拉以 $\frac23a$，PQ 间拉力为 $F$，求节数
+\begin{solution}
+%FIG p086_e 0.115 0.512 0.33 0.59
+\notefig[0.3]{figures/p086_e.png}
+\[ n=x+y\ \text{节} \]
+\[ F=xm_0a \]
+% m 后的小圆圈为下标 0（每节车厢质量 m_0）
+%FIG p086_f 0.055 0.605 0.28 0.665
+\notefig[0.3]{figures/p086_f.png}
+\[ F=\frac23ay\,m_0 \]
+\[ \begin{cases} x=\dfrac23y\\ x+y=n\end{cases}\qquad n=\frac53y \]
+\[ 3n=5y\qquad \frac n5=\frac y3 \]
+\[ \begin{aligned} n&\text{ 为 }5k_1,\\ y&\text{ 为 }3k_1,\\ x&\text{ 为 }2k_1\end{aligned} \]
+\end{solution}
+\end{problem}
+
+\noindent 动车拖车相间，任意拖动\,间内力为0，任意动拖间内力为 $\dfrac F2$ \\
+力为$F$\ 力为0
+% CHECK: “任意拖动”疑为“任意拖拖”；第二行行首“力为F 力为0”是附注，行首字被页边遮挡，含义不明（疑为“动动间内力为F，拖拖间内力为0”）
+%%%END
+%%%BLOCK id=086-04 ch=03 sec=连接体·整体隔离 kind=method alt=none cont=none y=0.745-0.84
+\noindent 3、整体/隔离法。几个物体几组独立方程，整体列1组，隔离\unclear{物体}少的列$n-1$组，横竖列1个，倾斜列\unclear{2}组 \quad $\begin{cases}F_x=\cdots\\ F_y=\cdots\end{cases}$
+% “n-1”写在行上方，行内“列”与“组”之间有涂改/划线痕迹；“倾斜列2组”末尾与右侧大括号被页边截断
+
+\medskip
+\noindent 关联加速度\quad 一根绳上 $a$ 相\,等（方向可不共线）\qquad 有对称少1组，有临界临界 \\
+动滑轮加速度、速度受力有倍数关系 \\
+(\underline{不用}整体法，滑轮也得分析)
+% “相”与“等”之间有涂改液；“有临界临界”行末被页边截断，后面可能还有字；“动滑轮…”一行是写在行间的小字
+%%%END
+%%%BLOCK id=086-05 ch=03 sec=连接体·关联加速度 kind=problem alt=none cont=none y=0.84-0.99
+\begin{problem}
+%FIG p086_g 0.058 0.848 0.15 0.97
+\notefig[0.25]{figures/p086_g.png}
+\begin{solution}
+\[ \begin{cases} T-mg=ma\\ T-Mg+N=0\end{cases} \]
+\[ N=Mg-ma-mg\qquad\text{系统失重} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=086-06 ch=03 sec=连接体·整体隔离 kind=problem alt=02 cont=none y=0.83-0.99
+\begin{problem}
+%FIG p086_h 0.455 0.858 0.61 0.952
+\notefig[0.3]{figures/p086_h.png}
+BC 静止，求 $a_A$
+\begin{solution}
+对A
+\[ \begin{cases} mg\sin30^\circ-f=ma\\ 1.5mg\sin30^\circ=T+f\\ T=mg\end{cases} \]
+% CHECK: 第二式按受力应为 1.5mg sin30°+f=T 才能得到 a_A=g/4；此处照抄原稿 “=T+f”
+$\therefore a_A=\dfrac g4$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 086

@@ -1,0 +1,71 @@
+%%%PAGE 117 rot=0 legibility=good summary=变质量功能(链条三种方法)、天体功能与椭圆轨道、冲日追及、同轴转动公式
+%%%BLOCK id=117-01 ch=06 sec=变质量功能 kind=method alt=none cont=none y=0.03-0.34
+\textbf{变质量功能}
+
+① 重心位移法\quad／\quad ② 图象法\quad／\quad ③ 线密度法
+
+%FIG p117_a 0.07 0.13 0.208 0.245
+\notefig[0.25]{figures/p117_a.png}
+
+%FIG p117_b 0.19 0.13 0.436 0.245
+\notefig[0.3]{figures/p117_b.png}
+
+③
+\[ -a m g\,\frac{a}{2} = -L m_0\,\frac{L}{2}\,g + \frac{1}{2}m_0 L v^2 \]% CHECK: 左边 m 疑漏写下标 0（应为 m_0）
+
+② 图像法.
+\[ W=\frac{1}{2}\left(mg+\frac{a}{L}ma\right)(L-a)=\frac{1}{2}mv^2 \quad\therefore\ v=\sqrt{\frac{L^2-a^2}{L}\,g} \]% CHECK: 括号内最后一项原稿像 ma（应为 mg）；L^2 与 a^2 之间的减号不够清晰
+
+（法3）加摩擦
+\[ -a m_0 g\,\frac{a}{2} = -m_0 L\cdot\frac{L}{2}\,g + \frac{1}{2}m_0 L v^2 + Q \]
+
+有$\mu$
+%FIG p117_c 0.15 0.245 0.40 0.345
+\notefig[0.28]{figures/p117_c.png}
+% 图中标注：纵轴 f；起点处 $\mu\frac{L-a}{L}mg$，或 $\mu m_0 (L-a) g$；横轴终点 $L-a$
+
+\[ W_f=\frac{1}{2}(L-a)\,\mu\, m_0 (L-a) g \]
+%%%END
+%%%BLOCK id=117-02 ch=06 sec=功能关系·人做功 kind=note alt=none cont=none y=0.36-0.40
+人站起来\underline{做功了}\quad \underline{人原地走}\quad $\underline{W_{\text{内}}=W_f}$
+%%%END
+%%%BLOCK id=117-03 ch=05 sec=天体能量·引力势能与机械能 kind=formula alt=06 cont=none y=0.40-0.46
+\begin{keybox}[天体功能]
+\[ E_{\mathrm{p}\text{引}}=-\frac{GMm}{r}\qquad E_K=\frac{GMm}{2r}\qquad E_{\text{机}}=-\frac{GMm}{2r} \]
+\end{keybox}
+%%%END
+%%%BLOCK id=117-04 ch=05 sec=变轨·椭圆轨道能量 kind=derivation alt=06 cont=none y=0.46-0.63
+%FIG p117_d 0.08 0.465 0.21 0.55
+\notefig[0.25]{figures/p117_d.png}
+% 图中标注：椭圆轨道上 $r_1$、$r_2$（近、远点距离），$M$
+
+\[ E_{\text{椭}}=-\frac{GMm}{r_1+r_2}\quad
+\left\{\begin{aligned}
+& \frac{1}{2}mv_1^2-\frac{GMm}{r_1}=\frac{1}{2}mv_2^2-\frac{GMm}{r_2}\\
+& v_2=\sqrt{\frac{2GMr_1}{r_2(r_1+r_2)}}\qquad v_2'=\sqrt{\frac{GM}{r_2}}\qquad W_{\text{额外}}=\frac{1}{2}mv_2'^2-\frac{1}{2}mv_2^2\\
+& v_1=\frac{v_2 r_2}{r_1}\\
+& \frac{1}{2}m\left(\frac{v_2 r_2}{r_1}\right)^2-\frac{GMm}{r_1}=\frac{1}{2}mv_2^2-\frac{GMm}{r_2}
+\end{aligned}\right. \]
+%%%END
+%%%BLOCK id=117-05 ch=05 sec=天体追及·冲日 kind=method alt=none cont=none y=0.63-0.73
+冲日（追逐）、
+\[ \left(\underset{\text{近}}{\frac{2\pi}{T_1}}-\underset{\text{远}}{\frac{2\pi}{T_2}}\right)t=2\pi\quad\therefore\ t=\frac{T_1T_2}{T_2-T_1} \]
+
+\begin{itemize}
+\item 相向运行 $\swarrow$ 为加号 % 此处另有一弯箭头 $\nwarrow$
+\item 反向运行 $\swarrow$ 为减号 % 此处另有一弯箭头 $\searrow$；CHECK: 原稿“反向运行”，物理上追及(同向运行)才为减号；“为”字不太清晰
+\end{itemize}
+%%%END
+%%%BLOCK id=117-06 ch=05 sec=拉格朗日点 kind=note alt=04 cont=none y=0.71-0.75
+拉格朗日点\quad 同轴转体\quad 不会失重\quad \unclear{地月动}.
+%%%END
+%%%BLOCK id=117-07 ch=04 sec=圆周运动·同轴转动 kind=formula alt=05 cont=none y=0.77-0.96
+\begin{align*}
+v&=\omega r & v&\propto r\\
+a&=\frac{v^2}{r}=\omega^2 r & a&\propto r\\
+T&=\frac{2\pi}{\omega}\propto\frac{1}{\omega}\\
+\omega&=\frac{2\pi}{T}=2\pi f & f&\propto\omega\\
+F_n&=m\omega^2 r\propto m\text{、}r.
+\end{align*}
+%%%END
+%%%PAGEEND 117

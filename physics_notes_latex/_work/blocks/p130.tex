@@ -1,0 +1,79 @@
+%%%PAGE 130 rot=0 legibility=fair summary=赤道上3天见5次卫星(周期与相遇)；拉格朗日点与同轴转体(T卫=T双星)；天体质量/密度公式；三星(3m,2m,m)质心、环绕半径与合力(余弦定理)
+%%%BLOCK id=130-01 ch=05 sec=追及相遇·卫星过顶 kind=problem alt=none cont=none y=0.01-0.37
+% 题干上方有旁注“第一次不算”（黑笔小字）
+\begin{problem}
+赤道上人每\,\fbox{$3$天见$5$次}\,卫星在正\unclear{上}方（旁注：第一次不算）
+
+从 A$\to$B 用\unclear{时}\quad 地球自转周期 $T_0$
+% 右上图：大圆（轨道）内套一个较小的闭合曲线，标 A、B(B 被圈)、r 与箭头、1、T、卫星
+%FIG p130_a 0.50 0.005 0.71 0.145
+\notefig[0.3]{figures/p130_a.png}
+% 左图：小圆，顶端标 A，箭头标 T_0；圆上方有“\unclear{同}卫”二字
+%FIG p130_b 0.19 0.125 0.33 0.245
+\notefig[0.25]{figures/p130_b.png}
+\begin{solution}
+\struck{3天5次}\quad 实际用4次算
+
+4次\quad 8圈\quad $\Longrightarrow$\quad 3天见了4次\quad 8圈
+
+% 从“3天5次”处引一条箭头向左下，箭头旁有“81”（也可能是 8T）
+\unclear{81}\quad \struck{$8T=3T_0$}
+
+\struck{1次\unclear{=}0.6天\quad $=0.6T_0$}
+\[ \dfrac{1}{T}-\dfrac{1}{T_0}=\dfrac{1}{t}\ \to\ \dfrac{1}{0.6T_0} \]
+\[ T=\dfrac{3}{8}T_0 \]
+% 页面右侧，上一式被一条斜线划掉
+\struck{$t=\dfrac{T_{\text{大}}-T_{\text{小}}}{T_{\text{大}}T_{\text{小}}}$}
+
+\[ t=\dfrac{T_{\text{大}}T_{\text{小}}}{T_{\text{大}}-T_{\text{小}}} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=130-02 ch=05 sec=同轴转体·拉格朗日点 kind=method alt=none cont=none y=0.30-0.57
+% 手绘大括号“〈 〉”括起以下标题；“拉日点”三字被圈
+\textbf{拉日点}\quad\textbf{同轴转体}
+
+$T_{\text{月}}=31$天\ (28$\sim$31天)
+% 图：大圆（轨道），圆心偏左处标 M_地，近右侧标 M_月，水平虚线上自左至右标 L_1、L_2、L_3，圆上标 L_4（上）、L_5（下），另有 r、v_0 及弧线箭头
+%FIG p130_c 0.075 0.397 0.342 0.555
+\notefig[0.3]{figures/p130_c.png}
+\[ T_{\text{月}}=T_{\text{卫}}=31\text{天} \]
+\[ \left\{\begin{aligned}
+&\dfrac{GMm_0}{(r+r_0)^{2}}+\dfrac{G\unclear{M}m_0}{r_0^{2}}=\dfrac{m_0 4\pi^{2}}{T^{2}}(r+r_0)\\[4pt]
+&\dfrac{GMm}{r^{2}}=\dfrac{m4\pi^{2}}{T_{\text{月}}^{2}}\,r
+\end{aligned}\right.\qquad T=T_{\text{月}} \]
+% CHECK: 第一式第二项分子的 M 也可能是小写 m（月球质量）
+%%%END
+%%%BLOCK id=130-03 ch=05 sec=天体质量密度 kind=formula alt=none cont=none y=0.40-0.52
+\[ g=\dfrac{4}{3}\pi\rho GR \]
+\[ M=\dfrac{4\pi^{2}R^{3}}{GT^{2}}=\dfrac{gR^{2}}{G} \]
+%%%END
+%%%BLOCK id=130-04 ch=05 sec=同轴转体·拉格朗日点 kind=derivation alt=none cont=none y=0.57-0.73
+\[ T_{\text{卫}}=T_{\text{双星}} \]
+\[ \left\{\begin{aligned}
+T_{\text{双}}&=\sqrt{\dfrac{4\pi^{2}\unclear{a^{3}}}{\unclear{G}\,2m}}\\[4pt]
+\sqrt{3}\,\dfrac{Gmm}{a^{2}}&=\dfrac{m4\pi^{2}}{T_{\text{卫}}^{2}}\cdot\dfrac{\sqrt{3}}{2}\,a
+\end{aligned}\right.\qquad T_{\text{卫}}=T_{\text{双星}} \]
+% 第一式根号内分子有涂改（4π^2 后的 a^3 被涂黑加粗），分母“G·2m”的 G 写得像 a
+%%%END
+%%%BLOCK id=130-05 ch=05 sec=同轴转体·三星 kind=problem alt=none cont=none y=0.72-1.0
+% 左图（红笔批注为主）：三角形，顶点 3m，底边左端 2m、右端 m；底边上一点（距左端 a/3、距右端 2a/3）标 3m，该点与顶点连线中点标“6m 质心”；左上“质心”被圈；另有 L/2 与箭头、60°、120°
+%FIG p130_d 0.025 0.738 0.318 0.892
+\notefig[0.3]{figures/p130_d.png}
+% 右图：同一三角形，顶点 3m 处受两个力（红色箭头）；图内红字：6F_0=G6m^2/a^2（左上）、G3m^2/a^2=3F_0（右上）；标 60°、120°
+%FIG p130_e 0.31 0.738 0.655 0.905
+\notefig[0.4]{figures/p130_e.png}
+\[ F=\dfrac{G\cdot18m^{2}}{\dfrac{7a^{2}}{9}}=\unclear{\ldots} \]
+% 页面右边缘截断，等号右边的式子看不全（分母处可见“7a…”）
+\textbf{用余弦定理算}\struck{\unclear{$\ldots$}}\textbf{合力}
+\[ F_A=\sqrt{(6F)^{2}+(3F)^{2}-2\cdot6F\cdot3F\cos120^\circ} \]
+\[ =\sqrt{36F^{2}+9F^{2}+\unclear{36}F^{2}\cdot\dfrac{1}{2}}=\sqrt{63F^{2}}=\unclear{\ldots} \]
+% 末项“36”被改写，其右侧有小字 1/2；行末被页边截断，仅见“=√6…”
+\[ =3\sqrt{7}\,\dfrac{Gm^{2}}{a^{2}} \]
+\red{三星环绕半径}
+\[ \red{L=\sqrt{a^{2}+\left(\dfrac{a}{3}\right)^{2}-2a\dfrac{a}{3}\cos60^\circ}} \]
+% 页面最左边缘，等号前面的字母被页边遮住：
+\[ =\sqrt{\dfrac{4\pi^{2}\unclear{r^{3}}}{GM}} \]
+\[ =\sqrt{a^{2}+\dfrac{a^{2}}{9}-\dfrac{\unclear{3}}{9}a^{2}}=\sqrt{\dfrac{\unclear{7}}{9}a^{2}}=\dfrac{\sqrt{7}\,a}{3} \]
+%%%END
+%%%PAGEEND 130

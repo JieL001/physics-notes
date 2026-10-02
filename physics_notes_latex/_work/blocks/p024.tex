@@ -1,0 +1,103 @@
+%%%PAGE 24 rot=0 legibility=good summary=电磁感应单杆模型：动源(反电动势)、动容三类(恒力充电、初速充电、含容放电)及不充电不放电型；涡流：动生涡流(实心圆盘等三图)、感生涡流、利用与防止涡流
+%%%BLOCK id=024-01 ch=12 sec=单杆模型·动源 kind=method alt=10 cont=none y=0.00-0.10
+\textbf{动源}
+%FIG p024_a 0.056 0.0 0.275 0.088
+\notefig[0.3]{figures/p024_a.png}
+\[
+I=\frac{E-BLv}{R+r}\qquad\text{最终}\ E=BLv\quad I=0\quad\text{导棒匀速}\quad v=\frac{E}{BL}
+\]
+%%%END
+%%%BLOCK id=024-02 ch=12 sec=单杆模型·动容 kind=method alt=09 cont=none y=0.11-0.32
+\textbf{动容}　\textbf{恒力充电型}
+%FIG p024_b 0.025 0.146 0.215 0.232
+\notefig[0.3]{figures/p024_b.png}
+\begin{align*}
+F-BIL&=ma\\
+F-B\frac{\Delta Q}{\Delta t}L&=ma\\
+\Delta Q&=C\,\Delta U=C\,\Delta(BLv)=CBL\,\Delta v\\
+F-BCBL^{2}a&=ma\\
+a&=\frac{F}{m+CB^2L^2}\ \text{定值}\quad\text{匀加速直线运动}
+\end{align*}
+% 原稿“匀加速直线运动”下有波浪线下划线
+%%%END
+%%%BLOCK id=024-03 ch=12 sec=单杆模型·动容 kind=method alt=09 cont=none y=0.32-0.49
+\textbf{初速充电型}
+%FIG p024_c 0.07 0.325 0.315 0.462
+\notefig[0.4]{figures/p024_c.png}
+最终 $I=0$　导棒匀速　流过导棒电荷量 $\Delta Q=Q$
+\[
+\left\{\begin{aligned}
+-BLQ&=mv-mv_0\\
+\frac{Q}{C}=U&=BLv
+\end{aligned}\right.
+\quad\Rightarrow\quad Q,\ v,\ U
+\]
+\[
+mv_0=(m+CB^2L^2)v\qquad v=\frac{mv_0}{m+CB^2L^2}
+\]
+% CHECK: 原稿“mv0=(m+CB²L²)v”右括号缺失，按其意补全
+%%%END
+%%%BLOCK id=024-04 ch=12 sec=单杆模型·动容 kind=method alt=09 cont=none y=0.49-0.65
+\textbf{含容放电}
+%FIG p024_d 0.015 0.508 0.345 0.64
+\notefig[0.4]{figures/p024_d.png}
+\[
+\overset{\downarrow}{I}=\frac{\overset{\downarrow}{U}-\overset{\uparrow}{BLv}}{R}
+\]
+最后　$I=0$ 后　导棒匀速　$F_A=0$
+\[
+\left\{\begin{aligned}
++BL(Q_0-Q)&=mv-0\\
+\frac{Q}{C}=U&=BLv
+\end{aligned}\right.
+\quad\Rightarrow\quad Q,\ v,\ U
+\]
+%%%END
+%%%BLOCK id=024-05 ch=12 sec=单杆模型·动容 kind=method alt=09 cont=none y=0.65-0.68
+不充电不放电型　电容器为理想电压表　$Q=CU$
+%%%END
+%%%BLOCK id=024-06 ch=12 sec=涡流·动生涡流 kind=method alt=none cont=none y=0.69-0.93
+\textbf{动生涡流}
+\begin{itemize}
+  \item 有$B$位置　相当于电源
+  \item 无$B$位置　相当于外电路
+\end{itemize}
+%FIG p024_e 0.09 0.765 0.225 0.845
+\notefig[0.25]{figures/p024_e.png}
+实心圆盘
+
+有$E$　无$I$　无$Q$
+
+无电磁阻尼 $\to$ 不减速(匀速)
+%FIG p024_f 0.375 0.76 0.515 0.86
+\notefig[0.25]{figures/p024_f.png}
+有$E$，有$I$　有$Q$
+
+有电磁阻尼 $\to$ 减速
+%FIG p024_g 0.605 0.765 0.76 0.836
+\notefig[0.3]{figures/p024_g.png}
+$\downarrow$ 不能使灯泡亮，电流流不出来
+
+有$E$　$I$　$Q$　涡流
+
+有电磁阻尼 $\to$ 减速
+%%%END
+%%%BLOCK id=024-07 ch=12 sec=涡流·感生涡流 kind=knowledge alt=none cont=none y=0.92-1.00
+% 页面底部被截断，立方体图不完整
+\textbf{感生涡流}
+
+无\unclear{数}层、闭合\unclear{电路}
+
+类似滑动摩擦力
+%FIG p024_h 0.185 0.929 0.31 1.0
+\notefig[0.25]{figures/p024_h.png}
+%%%END
+%%%BLOCK id=024-08 ch=12 sec=涡流·利用与防止 kind=knowledge alt=none cont=none y=0.92-1.00
+利用涡流
+\begin{itemize}
+  \item 热效应：电磁炉(金属锅、真空冶炼钢)
+  \item 磁效应：金属探测仪、探伤、扫雷
+\end{itemize}
+防止涡流：变压器铁芯：采用电阻率大的硅钢片
+%%%END
+%%%PAGEEND 24

@@ -1,0 +1,69 @@
+%%%PAGE 159 rot=0 legibility=good summary=电磁感应综合：不均匀电阻框架上匀减速导棒（产热、R(x)、电量）；斜面导轨穿过n个磁场（匀速释放距离、动量定理求时间）；双棒求导得a1=a2
+% 页面左缘露出的是下层另一页的残片（"E""面积""U"图、红字残字），已忽略
+%%%BLOCK id=159-01 ch=12 sec=电磁感应·能量与电量 kind=problem alt=none cont=prev y=0.00-0.38
+\begin{problem}
+%FIG p159_a 0.16 0.00 0.41 0.135
+\notefig[0.3]{figures/p159_a.png}
+图旁标注已知量：$B=0.4\unit{T}$，$L=0.5\unit{m}$，$m=0.1\unit{kg}$，$v_0=2\unit{m/s}$，匀减速 $a=2\unit{m/s^2}$，$\mu=0$，棒无电阻，框电阻不均匀。
+
+① 导棒运动0.5s，框架产热 % CHECK: 此处“0.5s”也许指位移0.5m（由 v^2-v_0^2=-2as 得 Q=0.1J 才自洽；若为0.5s则 Q=0.15J）
+\begin{solution}
+\[ v^2-v_0^2=-2as \]
+\[ Q=\tfrac12mv_0^2-\tfrac12mv^2=0.1\unit{J} \]
+\end{solution}
+② 求$R(x)$及0.4s内通过棒的电量
+\begin{solution}
+\[ v=\sqrt{v_0^2-2a(x_0-x)}\qquad R=0.4\sqrt{x} \]
+\[ q=It \]
+\[ F=BIL=ma \]
+\[ \therefore q=\frac{ma}{BL}\,t=0.4\unit{C} \]
+（旁注）不能把0.4s时的电阻代入$q=\dfrac{BLx}{R}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=159-02 ch=12 sec=电磁感应·动量定理与多磁场区 kind=problem alt=03 cont=none y=0.37-0.90
+% 本页未见这道题的完整题干（已知条件），只有图（图中标注“穿过n个磁场”）和两问
+\begin{problem}
+%FIG p159_b 0.105 0.385 0.43 0.53
+\notefig[0.4]{figures/p159_b.png}
+① 导棒能匀速过$\mathrm{I}$，求释放地距$\mathrm{I}$距离 % CHECK: “释放地”的“地”字疑为“点”
+\begin{solution}
+\[ I=\frac{E}{R+\frac{R}{2}}\qquad E=BLv\qquad F_{\text{安}}=\frac{2B^2L^2v}{3} \] % CHECK: 原稿 F安 的分母只写了3，未见 R（按 I=E/(3R/2) 应为 3R）
+\[ mg\sin30^\circ=F_{\text{安}} \]
+\[ mgx_1\sin30^\circ=\tfrac12mv^2 \]
+\[ \therefore x_1=\frac{9gm^2R^2}{16B^4L^4} \]
+\end{solution}
+② 导棒在相邻磁场间的无磁场运动的时间都为$t_0$（$n=1,2,\cdots$），求ab释放距离$\mathrm{I}$$x_2$及过每个磁场时间$t$
+\begin{solution}
+设棒进场速度 $v_1,v_3,\cdots,v_{2n-1}$，出磁场 $v_2,v_4,\cdots,v_{2n}$
+\[ mg\sin\theta=ma \]
+\[
+\left\{\begin{aligned}
+&d=\frac{v_2+v_3}{2}t_0=\frac{v_4+v_5}{2}t_0\\
+&v_3-v_2=v_5-v_4=at_0\\
+&\therefore v_3=v_5=\cdots=v_{2n-1}\\
+&\phantom{\therefore\ }v_2=v_4=\cdots=v_{2n}
+\end{aligned}\right.
+\]
+\[
+\left\{\begin{aligned}
+&\mathrm{I}\to\mathrm{II}\quad d=v_2t_0+\tfrac12at_0^2\\
+&v_1=v_3=v_2+at_0\\
+&v_1^2=2ax_2
+\end{aligned}\right.
+\]
+\[ x_2=\frac{(4d+gt_0^2)^2}{16gt_0^2} \]
+由动量定理
+\[ (mg\sin30^\circ-F_{\text{安}})t=mv_2-mv_1 \]
+\[ F_{\text{安}}t=\frac{2B^2L^2S}{3R} \]
+\[ \therefore t=\frac{4SB^2L^2}{3mgR}-t_0 \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=159-03 ch=12 sec=电磁感应·双棒模型 kind=derivation alt=none cont=none y=0.80-0.93
+\textbf{求导：}
+\[ (e=BLv_1-BLv_2)' \]
+\[ 0=BLa_1-BLa_2 \]
+\[ \therefore a_1=a_2 \]
+%%%END
+%%%PAGEEND 159

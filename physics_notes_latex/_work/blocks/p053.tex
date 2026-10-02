@@ -1,0 +1,96 @@
+%%%PAGE 53 rot=0 legibility=good summary=交变电流与传感器提纲页：函数表达式与产生描述、四值、理想变压器与远距离输电、三类特殊变压器、传感器实验
+%%%BLOCK id=053-01 ch=13 sec=交变电流·产生与描述 kind=summary alt=none cont=none y=0.07-0.29
+\begin{itemize}
+\item 交变电流 及 图像
+\item 正弦式交变电流的函数表达式、峰值、有效值，
+\end{itemize}
+若 $e=e_m\sin\omega t$ \qquad $\phi=\phi_m\cos\omega t$ \qquad $U=\dfrac{RE_m}{R+r}\sin\omega t$ \qquad $I=\dfrac{E_m}{R+r}\sin\omega t$
+
+正弦式交流电的产生和描述 \quad 产生：
+\begin{itemize}
+\item 线框转\ 注\ 有效面积
+\item $L$ 为正余弦\ 函数
+\item $v$ 为正余弦
+\item $B$ 为正余弦
+\end{itemize}
+% 「函数」二字写在第2、3行右侧（大括号外），应是对 L、v 为正余弦函数的说明
+%%%END
+%%%BLOCK id=053-02 ch=13 sec=交变电流·四值 kind=summary alt=none cont=none y=0.28-0.47
+交变电流（电流方向改变）\quad 有效值的理解与计算. \quad 小于$\dfrac{T}{4}$\ $\dfrac{\unclear{\pi}}{2}$\ $e$\ 不成立
+% “T/4”的分母和“π/2”的分子写得潦草
+
+交变电流四值的理解和运用：
+\begin{itemize}
+\item 瞬时值\ \unclear{受力}\quad $e=E_m\sin\omega t$，\ $i=I_m\sin\omega t$，\ $u=U_m\sin\omega t$（\unclear{不}会放电了）
+\item 最大值\quad $E_m=nBS\omega$，\ $I_m=\dfrac{E_m}{R+r}$\quad 电容器击穿电压、加二极管的电容器电压
+% E_m=nBSω 原稿写在“瞬时值”与“最大值”两行之间；I_m 式字小且被压在“电容器”三字下
+\item 有效值\quad $\dfrac{E_m}{\sqrt2}$\ \ $\dfrac{U_m}{\sqrt2}$\ \ $\dfrac{I_m}{\sqrt2}$\quad 热功、铭牌、熔断电流、电表读数
+\item 平均值\quad \unclear{穿}电荷量\quad $E=BL\bar v$\ \ $\bar E=n\dfrac{\Delta\phi}{\Delta t}$\ \ $\bar I=\dfrac{\bar E}{R+r}$
+\end{itemize}
+%%%END
+%%%BLOCK id=053-03 ch=13 sec=理想变压器与远距离输电 kind=summary alt=none cont=none y=0.43-0.56
+\textbf{理想变压器与远距离输电}
+\begin{itemize}
+\item 理想变压器
+\item 原理：互感现象
+\item 电能的输送
+\end{itemize}
+\[
+I=\frac{P}{U}=\frac{P'}{U'}=\frac{U-U'}{R}\qquad \Delta P=P-P'=I^2R=\left(\frac{P}{U}\right)^2R
+\]
+\[
+\Delta U=U-U'=IR\qquad \text{用小电阻导线 + 提高输电电压}
+\]
+%%%END
+%%%BLOCK id=053-04 ch=13 sec=理想变压器与远距离输电 kind=method alt=none cont=none y=0.55-0.66
+\textbf{理想变压器的理解和应用}
+
+%FIG p053_a 0.165 0.56 0.297 0.635
+\notefig[0.25]{figures/p053_a.png}
+
+$U_1=U_{\text{源}}-U_{\text{串}}$ \qquad 有二极管\ $U$、$I$ 为最大值除以2
+
+\textbf{理想变压器的动态分析}
+%%%END
+%%%BLOCK id=053-05 ch=13 sec=特殊变压器与互感器 kind=summary alt=none cont=none y=0.67-0.79
+\textbf{三类特殊的变压器}
+
+自耦变压器（一个线圈）可升降.\qquad 互感器.\qquad
+$\left\{\begin{tabular}{@{}l@{}}电压互感器\ 降压\\ 电流互感器\ 升压降流\end{tabular}\right.$
+
+%FIG p053_b 0.375 0.734 0.50 0.775
+\notefig[0.25]{figures/p053_b.png}
+
+一对多：
+
+%FIG p053_c 0.148 0.738 0.205 0.785
+\notefig[0.25]{figures/p053_c.png}
+\[
+\frac{U_1}{n_1}=\frac{U_2}{n_2}=\frac{U_3}{n_3}
+\]
+\[
+n_1I_1=n_2I_2+n_3I_3+\cdots
+\]
+\[
+P_1=P_2+P_3+\cdots
+\]
+%%%END
+%%%BLOCK id=053-06 ch=13 sec=传感器实验 kind=note exp=1 alt=10 cont=none y=0.77-1.00
+\textbf{传感器实验}
+
+探究热敏电阻的热敏特性\quad 欧姆表、热水、温度计
+
+%FIG p053_d 0.595 0.762 0.715 0.855
+\notefig[0.3]{figures/p053_d.png}
+
+探究光敏电阻的光敏特性
+
+%FIG p053_e 0.295 0.885 0.58 0.958
+\notefig[0.5]{figures/p053_e.png}
+
+滑动$P$、调光照↑\ 观察电阻阻值情况
+
+测用手掌黑纸遮光时的电阻值并记录
+% 末行位于页面最下缘，被裁切，字迹较模糊
+%%%END
+%%%PAGEEND 53

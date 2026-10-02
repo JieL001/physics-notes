@@ -1,0 +1,103 @@
+%%%PAGE 122 rot=0 legibility=good summary=近圆环绕公转模型(公转5参数、同心不同轨、近地卫星)、测重力加速度、黄金代换(稳定自转/忽略自转、g-r图)、中心天体质量计算(知己/知彼)
+%%%BLOCK id=122-01 ch=05 sec=卫星运行规律·近圆环绕模型 kind=knowledge alt=none cont=none y=0.07-0.31
+\textbf{近圆环绕公转模型}
+
+条件.\ 圆周／匀速圆周／圆轨道\hfill 公转5参数
+
+\[
+v=\sqrt{\frac{GM}{r}}\qquad
+\omega=\sqrt{\frac{GM}{r^{3}}}\qquad
+T=\sqrt{\frac{4\pi^{2}r^{3}}{GM}}\qquad
+a=\frac{GM}{r^{2}}
+\]
+
+\[
+M\text{、}\omega/T\text{、}v\text{、}a\text{、}r\quad
+\left(\begin{array}{l}\text{一中心四环绕}\\ \text{知二求其他}\end{array}\right)
+\]
+
+\textbf{同心不同轨}
+\begin{itemize}
+\item 同一中心天体：高轨\red{\textsuperscript{$r$}}\ 低速\red{\textsuperscript{$v\omega a$}}\ 大周期\red{\textsuperscript{$T$}}
+% 红字 r / vωa / T 分别写在“高轨 / 低速 / 大周期”的正上方
+\item 同一中心天体且绕行天体质量$m$相同：大机\red{\textsuperscript{机械能}}\ 大势\red{\textsubscript{\unclear{引}力势能}}\ 大能量\red{\textsuperscript{发射卫星消耗能量}}
+% 红字“机械能”在“大机”上方，“引力势能”(首字难辨)在“大势”下方，“发射卫星消耗能量”在“大能量”右上方
+\end{itemize}
+
+\textbf{近地卫星}
+\begin{itemize}
+\item 普通卫星\ $r=R+h$
+\item 近地卫星\ $h=0$、$r=R$
+\end{itemize}
+%%%END
+%%%BLOCK id=122-02 ch=05 sec=天体表面重力加速度 kind=knowledge alt=none cont=none y=0.31-0.375
+\textbf{测重力加速度}$\,g$
+
+在某星球表面.\ 平抛／斜抛／上抛／下抛／落体／斜面／单摆／测重力
+%%%END
+%%%BLOCK id=122-03 ch=05 sec=天体表面重力加速度·黄金代换 kind=method alt=none cont=none y=0.375-0.625
+\textbf{黄金代换}
+
+1、\red{稳定自转的中心天体（$\omega$、$T$）}\quad 1天（$24\,\mathrm{h}\times3600\,\mathrm{s}$）
+
+%FIG p122_a 0.145 0.392 0.41 0.58
+\notefig[0.3]{figures/p122_a.png}
+% 图中：圆(地球)、虚线椭圆(赤道面)、竖直虚线(自转轴)，标注 $m\frac{4\pi^2}{T^2}r$、$F_{\text{向}}$、$F_{\text{万}}$、mg 等矢量
+
+$\vec{F}_{\text{万}}=m\vec{g}+\vec{F}_{\text{向}}$
+
+\red{人间}
+\[
+\begin{aligned}
+\text{两极}\quad & \frac{GMm}{R^{2}}=mg_{\text{极}} & & \quad\text{（自转轨道半径 $r=0$）}\\[4pt]
+\text{赤道}\quad & \frac{GMm}{R^{2}}=mg_{\text{赤}}+m\frac{4\pi^{2}}{T^{2}}R & & \quad\text{（自转轨道半径 $r=R$）}\\[4pt]
+\text{其他}\quad & \frac{GMm}{R^{2}}>mg_{\text{其他}} & & \quad\text{（自转轨道半径 $r<R$）}
+\end{aligned}
+\]
+
+$g$\quad $g_{\text{两极}}>g_{\text{其他}}>g_{\text{赤道}}$\hfill\red{考察}
+% 红色弧形括号(上端带箭头，起于“其他”行右端，向下括住“g”行与“天上”行)，旁注红字“考察”
+
+\red{天上}：对地外卫星而言，重力$mg$就是$F_{\text{万}}$
+%%%END
+%%%BLOCK id=122-04 ch=05 sec=天体表面重力加速度·黄金代换 kind=method alt=none cont=none y=0.625-0.855
+2、忽略自转的中心天体：天上、人间重力$mg$就是$F_{\text{万}}$\quad\red{题中出现“两极／赤\unclear{道}”}% 右端被页边截断，后文不可见
+
+$M$为中心天体内部质量\quad $gR$需匹配
+
+\[
+\begin{aligned}
+&\text{地表式}\quad GM=gR^{2}\\
+&\text{地内式}\quad GM_{\text{内}}=g_{\text{内}}(R-d)^{2}\\
+&\text{地外式}\quad GM=g_{\text{外}}(R+h)^{2}
+\end{aligned}
+\qquad\to\qquad
+\frac{g_{\text{外}}}{g}=\frac{R^{2}}{(R+h)^{2}}\quad\quad
+\frac{g_{\text{内}}}{g}=\frac{R-d}{R}\quad\text{（用 $\rho$ 代换）}
+\]
+% 地外式中 M 右下角有一小笔迹，疑为笔点，已忽略
+
+%FIG p122_b 0.45 0.77 0.68 0.855
+\notefig[0.28]{figures/p122_b.png}
+% 图：纵轴 g，横轴 r；曲线先线性上升至竖直虚线处，之后随 r 增大逐渐下降
+%%%END
+%%%BLOCK id=122-05 ch=05 sec=天体质量与密度计算 kind=method alt=none cont=next y=0.82-0.99
+\textbf{中心天体质量计算}
+
+排除点：绕行天体质量$m$不可求\quad\red{天文\unclear{题许}\,称用地球质量}% CHECK: 红字第3-4字难辨
+
+\begin{itemize}
+\item 知己（知道中心天体参数求$M_{\text{中心天体}}$）
+\[
+\begin{aligned}GM&=g_{\text{表}}R^{2}\\ GM&=g_{\text{外}}(R+h)^{2}\end{aligned}
+\quad\Rightarrow\quad
+\begin{aligned}M&=\frac{g_{\text{表}}R^{2}}{G}\\ M&=\frac{g_{\text{外}}(R+h)^{2}}{G}\end{aligned}
+\]
+\item 知彼（知道绕行天体参数求$M_{\text{中心天体}}$）\quad [$v$、$\omega/T$、$r$、$a$]\ 知二求$M$
+  \begin{itemize}
+  \item \red{已知$T$、$r$：\ $M=\dfrac{4\pi^{2}r^{3}}{GT^{2}}$\quad $v$、$a$、$\omega/T$.}
+  \item \red{已知$v$、$\omega$：\ \unclear{$M=\dfrac{v^{2}}{G}\cdot\dfrac{v}{\omega}$}\quad 知二求$M$\quad $\omega$、$T$等效}% CHECK: 第二个红色公式潦草(像 M=v^2/G · v/ω，即 v^3/(Gω))
+  \end{itemize}
+\end{itemize}
+%%%END
+%%%PAGEEND 122

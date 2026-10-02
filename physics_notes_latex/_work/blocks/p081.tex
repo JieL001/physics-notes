@@ -1,0 +1,85 @@
+%%%PAGE 81 rot=0 legibility=good summary=直线运动公式汇总(一段一组/一方向一组)；打点计时器纸带两题(求l0、求x_bc)；用V_{t/2}两题(两物落地Δt=0.2s求释放高度；0.3s内3.45m求h1)
+%%%BLOCK id=081-01 ch=99 sec=页边零星·化学 kind=misc alt=none cont=none y=0.06-0.10
+% 页面上缘空白处(页眉“No.”旁)有零星字迹，疑为相邻页内容(化学·气体密度)，照录
+$\rho=1.429\unit{g\cdot L^{-1}}$
+%%%END
+%%%BLOCK id=081-02 ch=01 sec=匀变速公式与推论 kind=formula alt=none cont=none y=0.13-0.34
+\textbf{直线运动}
+
+\[
+\left\{\begin{aligned}
+&V=V_0+at\\
+&x=V_0t+\tfrac12at^2=V_{\text{末}}t-\tfrac12at^2\\
+&V^2-V_0^2=2ax\\
+&x=\dfrac{V_0+V}{2}\,t
+\end{aligned}\right.
+\qquad
+\left\{\begin{aligned}
+&\text{一段一组}\\
+&\text{一方向一组}
+\end{aligned}\right.
+\quad\text{表示}\,a,\ \to V\to x
+\]
+
+\[
+\Delta S=aT^2\qquad v=\frac{\Delta x}{\Delta t}\qquad a=\frac{\Delta v}{\Delta t}
+\]
+%%%END
+%%%BLOCK id=081-03 ch=01 sec=匀变速推论·逐差法 kind=method alt=none cont=none y=0.36-0.54
+\textbf{利用打点计时器公式}
+
+匀加\quad 求$l_0$
+%FIG p081_a 0.075 0.393 0.315 0.475
+\notefig[0.3]{figures/p081_a.png}
+\[
+\left\{\begin{aligned}
+l_2-l_1&=at^2\\
+l_2+l_1&=V_B\,2t\\
+V_B^2&=2a(l_0+l_1)
+\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=081-04 ch=01 sec=匀变速推论·逐差法 kind=method alt=none cont=none y=0.54-0.66
+匀加\quad 求$x_{bc}$
+%FIG p081_b 0.075 0.535 0.33 0.66
+\notefig[0.3]{figures/p081_b.png}
+\begin{align*}
+&S_1+S_2+S_3=x_1=3S_2\\
+&S_6=x_2\qquad S_6-S_2=4at^2=x_2-\frac{x_1}{3}\\
+&S_4+S_5=x_{bc}=S_2+2at^2+S_2+3at^2=\frac{5x_2+x_1}{4}
+\end{align*}
+%%%END
+%%%BLOCK id=081-05 ch=01 sec=中间时刻速度 kind=problem alt=none cont=none y=0.66-0.85
+\textbf{用$V_{\frac t2}$}
+
+\begin{problem}[①]
+2物落地\quad $\Delta t=0.2\unit{s}$\quad 求释放高度
+%FIG p081_c 0.0 0.69 0.228 0.853
+\notefig[0.25]{figures/p081_c.png}
+\begin{solution}
+\[
+V_{\frac t2}=\frac{3\unit{m}}{0.2\unit{s}}=15\unit{m/s}\qquad
+V_{\text{末}}=V_{\frac t2}+0.1g=16\unit{m/s}\qquad % CHECK: 加号笔迹像“∓/+”，按数值15→16取+
+h=\frac{V_{\text{末}}^{2}}{2g}=12.8\unit{m}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=081-06 ch=01 sec=中间时刻速度 kind=problem alt=none cont=none y=0.85-1.00
+\begin{problem}[②]
+%FIG p081_d 0.0 0.846 0.328 0.965
+\notefig[0.35]{figures/p081_d.png}
+（图右上角另标：长$1.4\unclear{5}\unit{m}$） % CHECK: 末位笔迹像8，按3.45=2+1.45应为5
+\begin{solution}
+\begin{gather*}
+V_{\frac t2}=\frac{3.45}{0.3}=11.5\unit{m/s}\\
+\downarrow\\
+V_0=10\unit{m/s}\\
+\downarrow\\
+h_1=\frac{V_0^{2}}{2g}=5\unit{m}
+\end{gather*}
+% CHECK: 末行分母被照片下缘截断，按5m补2g
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 81

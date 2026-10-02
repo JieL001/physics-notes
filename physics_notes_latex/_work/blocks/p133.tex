@@ -1,0 +1,65 @@
+%%%PAGE 133 rot=0 legibility=fair summary=变轨：双圆比较公式与能量；椭圆轨道(开普勒定律)；曲率半径(椭圆近远点、斜抛最高点、平抛经t后)
+%%%BLOCK id=133-01 ch=05 sec=卫星变轨·双圆比较 kind=formula alt=none cont=none y=0.04-0.33
+\textbf{变轨}\quad\textbf{双圆比较}
+\[
+V=\sqrt{\frac{GM}{r}}\qquad \omega=\sqrt{\frac{GM}{r^{3}}}\qquad T=\sqrt{\frac{4\pi^{2}r^{3}}{GM}}\qquad a=\frac{GM}{r^{2}}
+\]
+\[ \left\langle\, E=\frac{1}{2}mv^{2}=\frac{GMm}{2r}\,\right\rangle \] % CHECK: 原稿 E 未写下标（应为 E_k）
+\[ \left\langle\, E_p=-\frac{GMm}{r}\,\right\rangle \]
+\[ \left\langle\, W_{\text{引}}=\int_{\infty}^{r}\frac{GMm}{r^{2}}\,\dd r=-\frac{GMm}{r}\,\right\rangle \] % 下标原稿写作形似“31”的“引”字（同页“小引力”的“引”也写成此形）
+\[ E_{\text{机}}=E_k+\text{\unclear{$E_{\text{引}}$}}=-\frac{GMm}{2r} \] % 第三项原稿先写 E_p 后被涂改，其上方有小字“E31”(即 E引)
+
+\fbox{高轨低速大周期}\quad\fbox{大机大势小引力}\quad\fbox{有$m$才求力功能}
+
+(没$m$两个行星比不了) % 原稿位于第二个框（大机大势小引力）下方
+%%%END
+%%%BLOCK id=133-02 ch=05 sec=椭圆轨道·开普勒定律 kind=knowledge alt=none cont=next y=0.33-0.48
+\textbf{椭圆轨道}
+
+开1\quad 轨椭圆轨道定律 % 其中“椭圆轨道定律”被手绘椭圆圈起
+
+开2
+%FIG p133_a 0.20 0.39 0.425 0.476
+\notefig[0.3]{figures/p133_a.png}
+\[ V_{\text{远}}\,r_{\text{远}}=V_{\text{近}}\,r_{\text{近}} \] % 原稿此式被手绘椭圆圈起
+%FIG p133_b 0.658 0.41 0.875 0.485
+\notefig[0.3]{figures/p133_b.png}
+%%%END
+%%%BLOCK id=133-03 ch=05 sec=椭圆轨道·曲率半径 kind=method alt=04 cont=none y=0.48-0.66
+% 整块被一对大括号“(  )”括起
+\textbf{曲率半径}
+%FIG p133_c 0.235 0.497 0.47 0.546
+\notefig[0.3]{figures/p133_c.png}
+\[
+\red{\left\{\begin{aligned}
+\frac{GMm}{\rho_{\text{近}}^{2}}&=\frac{mV_{\text{近}}^{2}}{\rho_{\text{近}}}\\[4pt]
+\frac{GMm}{\rho_{\text{远}}^{2}}&=\frac{mV_{\text{远}}^{2}}{\rho_{\text{远}}}
+\end{aligned}\right.}
+\] % CHECK: 红笔式左边分母原稿写作 ρ（物理上应为到中心距离 r_近^2、r_远^2）
+%%%END
+%%%BLOCK id=133-04 ch=04 sec=斜抛·曲率半径 kind=derivation alt=05 cont=none y=0.66-0.84
+%FIG p133_d 0.05 0.655 0.455 0.842
+\notefig[0.4]{figures/p133_d.png}
+求最高点曲率半径
+\[ mg=\frac{m\,(V\cos\alpha)^{2}}{\rho} \]
+\[ \rho=\frac{V^{2}\cos^{2}\alpha}{g} \] % CHECK: 公式中 V 均未写下标 0（图中初速度为 V_0）
+%FIG p133_e 0.85 0.77 1.0 0.84
+\notefig[0.25]{figures/p133_e.png}
+（页面右侧边缘的小草图，被页边截断：$\rho=\dfrac{v_x^{2}}{\text{\unclear{$a_n$}}}$，旁有 $g$ 字样）
+%%%END
+%%%BLOCK id=133-05 ch=04 sec=平抛·曲率半径 kind=derivation alt=05 cont=none y=0.84-1.0
+%FIG p133_f 0.05 0.841 0.295 0.975
+\notefig[0.3]{figures/p133_f.png}
+经 $t$ 后 求此时曲率半径
+\[ mg\cos\theta=\frac{mV_0^{2}}{\rho\cos\theta} \] % CHECK: 分母 cos 处原稿被涂改（按后一式应为 cos^2θ）
+\[ \rho=\frac{mV_0}{\cos^{2}\theta\; mg\cos\theta}=\frac{V_0}{g\cos^{3}\theta}=\frac{V_0}{g\,(g^{2}t^{2}+V_0^{2})^{3/2}} \] % CHECK: 第一个分子 V_0 未见平方；末式 V_0 在分子、(g^2t^2+V_0^2)^{3/2} 在分母，与物理结果（应在分子、V_0 在分母）似乎颠倒，照原稿转录
+\[ \tan\theta=\frac{gt}{V_0} \]
+%FIG p133_g 0.76 0.838 0.93 0.907
+\notefig[0.25]{figures/p133_g.png}
+\[ \cos\theta=\frac{V_0}{\sqrt{g^{2}t^{2}+V_0^{2}}} \]
+%%%END
+%%%BLOCK id=133-06 ch=99 sec=化学·零星 kind=note alt=none cont=none y=0.03-0.07
+% 页眉右上角“No.”处有一行淡灰色字迹（疑为相邻页内容；p135 顶部同一位置也有同样一行），与物理无关
+\unclear{混合气体} $\rho=1.429\,\unit{g\cdot L^{-1}}$
+%%%END
+%%%PAGEEND 133

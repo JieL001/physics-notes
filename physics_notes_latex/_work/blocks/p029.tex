@@ -1,0 +1,71 @@
+%%%PAGE 29 rot=0 legibility=good summary=交流电：四值(有效值/平均值/瞬时值/最大值)、线圈转动的磁通量与感应电动势、中性面与峰值面、电流方向变化次数、变压器基本关系
+% 页首标题：交流电
+%%%BLOCK id=029-01 ch=13 sec=交变电流·四值 kind=knowledge alt=none cont=none y=0.09-0.34
+\underline{四值}
+
+有效值（用热量定义电流大小）\quad $I_{\text{有}}^2RT=\displaystyle\sum_{i=1}^{n}I_i^2R_it_i$
+
+\medskip
+\noindent 正弦式\quad
+\begin{tabular}[t]{@{}l@{}}$U_{\text{有}}=\dfrac{1}{\sqrt2}U_{\text{峰}}$\\[6pt] $I_{\text{有}}=\dfrac{1}{\sqrt2}U_{\text{峰}}$\end{tabular}
+\quad $P$不满足\quad 波形减半\ 有效值变为$\dfrac{1}{\sqrt2}$倍（二极管）
+% CHECK: 第二式 I有=…U峰 原稿写作 U峰(应为 I峰)，照原样转录；“P不满足”的 P 辨认不确定
+
+\medskip
+\noindent 功\ 能\ 热、铭/标牌、熔断电流、电表 $\Rightarrow$ 有效值
+
+\noindent 电容器击穿电压/二极管的耐压电压 $\Rightarrow$ 瞬时值/最大值\quad
+\begin{tabular}[c]{@{}l@{}}$E=nBS\omega$\\ $E=nBS\omega\sin(\omega t+\phi)$\end{tabular}
+
+\hspace*{9em}$\uparrow$ 用表达式% 原稿：箭头自“用表达式”指向上方的“瞬时值”
+
+\medskip
+\noindent 电量 $\Rightarrow$ 平均值\quad $E=\dfrac{\dd\phi}{\dd t}$% CHECK: 平均值应为 Δφ/Δt，原稿 d 与 Δ 难分，按 d 转录
+%%%END
+%%%BLOCK id=029-02 ch=13 sec=交变电流·产生与表达式 kind=derivation alt=none cont=none y=0.34-0.56
+%FIG p029_a 0.05 0.347 0.425 0.452
+\notefig[0.45]{figures/p029_a.png}
+% 图内标注：正视图(线圈、虚线转轴、ω及转向箭头)；侧视图(三条向右箭头、线圈边、夹角ωt、π/2-ωt)
+\begin{align*}
+\phi&=-\text{\struck{$n$}}BS\sin\Bigl(\frac{\pi}{2}-\omega t\Bigr)=-\text{\struck{$n$}}BS\cos\omega t\\[4pt]
+E&=n\frac{\Delta\phi}{\Delta t}=nBS\omega\sin\omega t\qquad\text{峰值}\ nBS\omega\qquad\omega=\frac{2\pi}{T}=2\pi f
+\end{align*}
+% 第一行两处 n 被涂掉(像涂黑的 n)，按 \struck 转录
+
+$E$与转轴位置、线圈形状无关
+%%%END
+%%%BLOCK id=029-03 ch=13 sec=交变电流·中性面与峰值面 kind=knowledge alt=none cont=none y=0.57-0.73
+垂正\ 流0\ 中性面\qquad \fcolorbox{red!75!black}{white}{\red{平峰\unclear{余}垂中正}}% 红笔画圈；“余”字不确定(原稿近似“杀”)，应是“平峰余垂中正”口诀
+
+\medskip
+\noindent\begin{tabular}[t]{@{}l@{}}$S\perp B$\textsuperscript{\scriptsize(正弦)}\\[3pt] $\phi$最大\\[3pt] 开始转\end{tabular}\quad
+\begin{tabular}[t]{@{}l@{}}$I=0$\\[3pt] $E=0$\\[3pt] $\dfrac{\Delta\phi}{\Delta t}=0$\end{tabular}
+
+%FIG p029_b 0.298 0.608 0.485 0.69
+\notefig[0.25]{figures/p029_b.png}
+经过中性面 电流方向改变
+
+\medskip
+\noindent 1个$T$变化2次，1s内变化$2f$次\quad $\dfrac{1\mathrm{s}}{T}\,2$\quad 每秒改变2倍\unclear{频}
+%%%END
+%%%BLOCK id=029-04 ch=13 sec=交变电流·正弦式与旋转切割区别 kind=note alt=none cont=none y=0.74-0.78
+正弦式变流电与旋转切割区别\quad $\theta\overset{\text{夹角}}{\langle B,S\rangle}$ 是否变化% CHECK: “变流电”原稿如此(应为交流电)；“夹角”二字写在 ⟨B,S⟩ 上方
+%%%END
+%%%BLOCK id=029-05 ch=13 sec=变压器·基本关系 kind=formula alt=none cont=none y=0.79-0.97
+\textbf{变压器}
+
+%FIG p029_c 0.05 0.835 0.19 0.93
+\notefig[0.25]{figures/p029_c.png}
+% 图内标注：n1(原线圈)、n2(副线圈)、原、副、铁芯
+\[
+\begin{array}{lcll}
+\text{原} & & \text{副} & \\[2pt]
+\phi_1 & = & \phi_2 & \text{(磁通量)}\\[6pt]
+\dfrac{\Delta\phi_1}{\Delta t} & = & \dfrac{\Delta\phi_2}{\Delta t} & \text{(磁通量变化率)}\\[10pt]
+e_1 & = & e_2 & \text{每匝感应电动势}\\[6pt]
+f_1 & = & f_2 & \text{(正常：正弦式)}
+\end{array}
+\]
+铁芯作用：固定线圈+导磁
+%%%END
+%%%PAGEEND 29

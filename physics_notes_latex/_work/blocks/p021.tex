@@ -1,0 +1,88 @@
+%%%PAGE 21 rot=0 legibility=good summary=电磁感应：磁通量变化分类、楞次定律套住磁铁看抵消、动生单杆公式、电荷量与能量式、两级线圈、有效切割长度与平抛切割示例、等效电源图示；末尾有“螺旋运动”标题
+%%%BLOCK id=021-01 ch=12 sec=磁通量·ΔΦ分类 kind=knowledge alt=none cont=none y=0.03-0.18
+\begin{center}
+$\Phi=BS\cos\theta$\\
+无匝数
+\end{center}
+\begin{itemize}
+  \item $S$变　动生　$\Delta\Phi=\Delta S\cdot B\sin\theta$
+  \item $B$变　感生　$\Delta\Phi=S\cdot\Delta B\sin\theta$
+  \item $SB$变　动感　$\Delta\Phi=\Phi_2-\Phi_1$，$\ne\Delta S\,\Delta B\sin\theta$
+  \item $\theta$变　正弦式交流电（平动切割）
+% CHECK: 原稿写“平动切割”，θ变化对应线圈转动切割，疑为笔误；另 Φ=BScosθ 与下面各式 sinθ 中 θ 的含义不同，照原样
+  \item 多磁场叠合　$\Delta\Phi=\Phi_2-\Phi_1$
+\end{itemize}
+%FIG p021_a 0.775 0.05 0.90 0.13
+\notefig[0.25]{figures/p021_a.png}
+%%%END
+%%%BLOCK id=021-02 ch=12 sec=楞次定律·套住磁铁看抵消 kind=method alt=none cont=none y=0.18-0.40
+\textbf{套住磁铁看抵消}
+
+磁感线\unclear{条}，内$=$外
+%FIG p021_b 0.07 0.235 0.29 0.344
+\notefig[0.3]{figures/p021_b.png}
+管外磁场抵消管内磁场
+
+抵消的多\\
+$\Phi$小
+%%%END
+%%%BLOCK id=021-03 ch=12 sec=动生电动势·单杆平动 kind=formula alt=none cont=none y=0.40-0.52
+\[
+\left\{\begin{aligned}
+F_A&=BIL\\
+I&=\frac{E}{R_{\text{总}}}\\
+E&=BLv
+\end{aligned}\right.
+\qquad F_{\text{安}}=\frac{B^2L^2v}{R}\quad\text{动生单杆平动}
+\]
+%%%END
+%%%BLOCK id=021-04 ch=12 sec=电磁感应·电荷量 kind=formula alt=none cont=none y=0.52-0.59
+\[
+q=\bar I\,t,\qquad I=\frac{\bar E}{R},\qquad \bar E=n\frac{\Delta\Phi}{\Delta t},\qquad q=n\frac{\Delta\Phi}{R_{\text{总}}}
+\]
+（$q=n\frac{\Delta\Phi}{R_{\text{总}}}$ 中的 $n$ 处有箭头 $\downarrow$ 指向“匝数”）
+%%%END
+%%%BLOCK id=021-05 ch=12 sec=电磁感应·能量 kind=formula alt=none cont=none y=0.59-0.67
+\[
+W_{A\text{负}}+W_{\text{电池放电}}=W_{A\text{正}}+Q
+\]
+% CHECK: 下标“负/正”为按字形推测（疑指安培力做负功/正功）
+（“电池放电”项正下方有小注：）(无)\\
+干电池
+%%%END
+%%%BLOCK id=021-06 ch=12 sec=两级线圈·电流变化 kind=knowledge alt=none cont=none y=0.67-0.78
+\textbf{两级线圈}
+
+大小：$I_1$ 求导 $I_2$　满足楞次定方向
+% CHECK: 原稿“满足楞次定方向”，疑漏字（楞次定律判方向），照原样
+
+瞬时值：
+\begin{center}
+\begin{tabular}{ll}
+$\sin$ & \unclear{求导}$\;\cos$\\
+$\cos$ & $-\sin$
+\end{tabular}
+\end{center}
+%%%END
+%%%BLOCK id=021-07 ch=12 sec=动生电动势·有效切割长度 kind=method alt=04 cont=none y=0.78-0.89
+\textbf{动生}
+%FIG p021_c 0.075 0.82 0.245 0.89
+\notefig[0.3]{figures/p021_c.png}
+\[
+E=B\frac{l}{\sin\theta}\,v\sin\theta
+\]
+%FIG p021_d 0.42 0.775 0.578 0.93
+\notefig[0.3]{figures/p021_d.png}
+平抛\quad $E=BLv_0$
+%%%END
+%%%BLOCK id=021-08 ch=12 sec=动生电动势·等效电源 kind=diagram alt=11 cont=none y=0.89-0.97
+% CHECK: 下面两幅图无文字说明，疑为含电源的动生回路（R、r）与电磁流量计/磁流体发电类装置（d）
+%FIG p021_e 0.04 0.895 0.205 0.965
+\notefig[0.3]{figures/p021_e.png}
+%FIG p021_f 0.26 0.905 0.44 0.96
+\notefig[0.3]{figures/p021_f.png}
+%%%END
+%%%BLOCK id=021-09 ch=11 sec=洛伦兹力分解·螺旋运动 kind=note alt=12 cont=next y=0.88-0.92
+\textbf{螺旋运动}
+%%%END
+%%%PAGEEND 21

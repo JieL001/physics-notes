@@ -1,0 +1,932 @@
+% 本文件由 assemble.py 按 _work/plans/ch11.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{磁场}
+\label{ch:11}
+
+\section{洛伦兹力分解·微元法}
+% ---- block 001-02 (原稿第1页) kind=derivation ----
+分解洛伦兹力：
+\begin{align*}
+qv_xB &= ma_y\\
+qBx &= m\Delta v_y % CHECK: 原稿"qBx=m△v_y"，△v_y 前的小三角符号较小；左边的x疑为位移(Δx)，照原样转录
+\end{align*}
+
+
+\section{地磁场}
+% ---- block 014-07 (原稿第14页) kind=knowledge ----
+\textbf{磁场}
+
+\notefig[0.25]{figures/p014_d.png}
+南极\ $B$向上
+
+北极\ $B$向下
+
+赤道\ 平行于地面向北
+
+南半球：$B_1$向北、$B_2$向上
+
+北半球：$B_1$向北、$B_2$向下
+
+
+\section{安培力·有效长度}
+% ---- block 015-01 (原稿第15页) kind=formula ----
+\textbf{安培力}
+
+$F_A=BIL\sin\theta$
+
+\notefig[0.5]{figures/p015_a.png}
+% 图中：弧线A→B；直线A→B；闭合圆环；与电容器相连的圆环（内有“d”和一条虚线）。以下为各图旁的标注：
+$L_{\text{有效}}=\overline{AB}$\qquad $L_{\text{有}}=\overline{AB}$\qquad $L=0$\qquad $L_{\mbox{\unclear{上}}}=d$\quad $L_{\mbox{\unclear{下}}}=d$
+
+若$B$、$I$不垂直\quad 分解$B$
+
+% ---- block 097-03 (原稿第97页) kind=knowledge ----
+有效长度连首尾，$\therefore$有效长度越大越易失去平衡。
+
+
+\section{安培力·微观表达}
+% ---- block 015-02 (原稿第15页) kind=derivation ----
+\[
+F_A=BIL=BL\,nqSv=LSn\cdot Bvq=\overset{\text{电子总数}}{\underline{LSn}}\cdot F_{\text{洛}}
+\]
+$n$ 单位体积电子数
+
+
+\section{电流的磁效应·奥斯特实验}
+% ---- block 015-03 (原稿第15页) kind=knowledge ----
+奥斯特实验：电流产生磁场
+
+电流应水平南北放置，小磁针应放到电流正上/下方
+
+
+\section{电流的磁场·直线电流}
+% ---- block 015-04 (原稿第15页) kind=formula ----
+\[
+B=K\frac{I}{r}=\frac{\mu_0 I}{2\pi r}
+\]
+$\mu_0$ 真空磁导率\quad $\dfrac{\mathrm{m\cdot T}}{\mathrm{A}}$
+
+
+\section{安培力·通电导线间作用力}
+% ---- block 015-05 (原稿第15页) kind=method ----
+通电导线间作用力\quad 同吸异斥
+
+先判磁场后判力
+\notefig[0.4]{figures/p015_b.png}
+
+
+\section{安培力·做功与冲量}
+% ---- block 015-06 (原稿第15页) kind=formula ----
+\textbf{安培力做功}：
+\[
+\left\{\begin{aligned}
+&\text{恒力}\quad \pm BIL\cdot x\\
+&\text{变力}\quad \pm W_{\text{安}}
+\end{aligned}\right.
+\]
+\textbf{安培力冲量}：
+\[
+\left\{\begin{aligned}
+&\text{恒力}\quad \pm BILt=\pm BLq\\
+&\text{变力}\quad \pm I_{A}=\pm BLq
+\end{aligned}\right.
+\]
+
+
+\section{磁偏转·轨迹圆心半径}
+% ---- block 015-07 (原稿第15页) kind=method ----
+\textbf{磁偏转}：
+\begin{itemize}
+\item 画轨迹
+\item 找圆心：
+\begin{itemize}
+\item 速度作垂线过圆心
+\item 弦作中垂线过圆心
+\item 速度偏转角补角分线过圆心
+\end{itemize}
+\item 求半径
+\end{itemize}
+
+
+\section{动态圆}
+% ---- block 015-08 (原稿第15页) kind=summary ----
+% 手写大括号括住下面四行（静态圆～汇聚圆/发散圆）；“汇聚圆/发散圆”下有一条带箭头的下划线
+\begin{center}
+\begin{tabular}{lcc}
+ & $v_0$方向 & $r$\\
+静态圆 & 不变 & 不变\\
+放缩圆 & 不变 & 变\\
+旋转圆 & 变 & 不变\\
+汇聚圆/发散圆 & \multicolumn{2}{l}{$\to$ $r_{\text{粒子}}=R_{\text{磁场}}$}
+\end{tabular}
+\end{center}
+\notefig[0.75]{figures/p015_c.png}
+\textbf{图中标注}：②、①，$v_0$，$r=\dfrac{mv}{qB}$，圆心圆，远点圆，$d=2r=\dfrac{2mv}{qB}$
+
+% ---- block 015-09 (原稿第15页) kind=summary ----
+\textbf{平移圆}
+
+
+\section{平移圆}
+% ---- block 016-01 (原稿第16页) kind=method ----
+\textbf{平移圆}\quad $V_0$定\quad 入射位置改变
+\notefig[0.3]{figures/p016_a.png}
+
+
+\section{时间极值}
+% ---- block 016-02 (原稿第16页) kind=method ----
+\textbf{时间极值}\quad $t=\dfrac{\theta m}{qB}=\dfrac{s}{V_0}$\quad 时间最长\ $\theta$最大\ 圆心角最大
+% CHECK: 分子手写潦草，像 θm（也可能是 2πm）；"时间最长"后面一字同样像 θ（也可能是 弧）
+\begin{itemize}
+\item $V_0$定值\quad 最长弦/弧（劣）
+\item $V_0$变化\quad 最大圆心角
+\end{itemize}
+% 原稿：以上两行左侧有大括号；"最长弦/弧（劣）"下方有一条波浪线向右延伸至"最大圆心角"上方
+
+
+\section{单边有界入射}
+% ---- block 016-03 (原稿第16页) kind=method ----
+\textbf{单边有界入射}
+\notefig[0.25]{figures/p016_b.png}
+角入角出\quad 速偏角$=$圆心角$=2$倍弦切角
+\notefig[0.25]{figures/p016_c.png}
+\red{圆心圆}\quad \red{定速不定向问题}
+% 原稿：红色弧线从"圆心圆"（浅粉底）右上角向下弯至"弦切角"右侧，连接这两处
+\notefig[0.25]{figures/p016_d.png}
+垂直入射即半圆
+
+
+\section{单边有界出射型}
+% ---- block 016-04 (原稿第16页) kind=method ----
+\textbf{单边有界出射型}\quad \red{O离板距$d$}\quad \red{光屏}
+\notefig[0.35]{figures/p016_e.png}
+到不了\unclear{边界}交点，\red{到切点，已撞板了}
+% CHECK: "到不了"与"交点"之间被光屏横线盖住的字看不清，像 边界/切
+% 原稿：图右侧有一个竖直大括号，旁注 3m
+$3\unit{m}$\quad $r=2.5\unit{m}$
+\notefig[0.25]{figures/p016_f.png}
+% 红色小图（直角三角形）文字：斜边 R，竖直边 d-R（符号像 + 或 -，按物理意义取 -），水平边 sqrt(R^2-(d-R)^2)
+% CHECK: 红字 d 与 R 之间的符号手写像 + 也像 -
+\begin{itemize}
+\item 最值相切：最远点为轨迹与边界切点
+\item 最值相交：最远点为直径和边界交点
+\item 能交则交，不能交则切。
+\end{itemize}
+% 原稿：以上三行左侧有大括号
+
+
+\section{圆形磁场·汇聚发散}
+% ---- block 016-05 (原稿第16页) kind=method ----
+\textbf{汇聚\ 发散}
+\notefig[0.5]{figures/p016_g.png}
+$V$大小变化\ 方向定
+
+$B_1=B_2$\ 点入平出
+
+平进点出
+
+% ---- block 017-02 (原稿第17页) kind=method ----
+\textbf{圆形磁场汇聚发散}\quad $R_{\text{轨迹}}=R_{\text{磁场}}$
+
+点入平出\quad 平入点出
+\notefig[0.4]{figures/p017_b.png}
+\notefig[0.35]{figures/p017_c.png}
+菱形 $\Rightarrow BO_2\parallel AO_1\Rightarrow V_{\text{末}}\parallel L$
+
+
+\section{径入径出}
+% ---- block 016-06 (原稿第16页) kind=method ----
+\notefig[0.3]{figures/p016_h.png}
+径入径出
+\notefig[0.3]{figures/p016_i.png}
+化单边处理
+
+
+\section{环形磁场}
+% ---- block 017-01 (原稿第17页) kind=method ----
+\textbf{环形磁场}
+\notefig[0.3]{figures/p017_a.png}
+最值相切\quad 径入径出
+\[ (R-R_2)^2=R_2^2+r^2 \qquad R_2=\frac{mV_2}{qB}\ \Rightarrow\ V_2 \]
+\[ (R_1+r)^2=R^2+R_1^2 \qquad R_1=\frac{mV_1}{qB}\ \Rightarrow\ V_1 \]
+
+
+\section{类圆形磁场}
+% ---- block 017-03 (原稿第17页) kind=method ----
+\textbf{类圆形磁场}（半圆、\unclear{$\frac14$圆}、扇形、树叶形）
+
+粒子没有经过的磁场，是可有可无的磁场
+\notefig[0.25]{figures/p017_d.png}
+入射范围角$=$圆心角
+\[ S_{\mathrm{tot}}=2\left(S_{\text{扇}}-S_{\triangle}\right) \]
+% CHECK: 下标手写为"ot"（可能是 tot 或 总）；S 的第二个下标像 角/扇，按物理意义取 扇
+
+
+\section{双直线边界}
+% ---- block 017-04 (原稿第17页) kind=method ----
+\textbf{双直线边界}
+
+最值相切\quad 能从上口射出
+\notefig[0.25]{figures/p017_e.png}
+定向不定速
+
+$\checkmark$最\unclear{小}（最\unclear{小}$V$）\quad 圆的放缩
+% CHECK: 第一个对勾后的"最?"与括号内"最?V"手写潦草，按物理意义（相切对应最小速度）取 小
+能从下口射出的
+
+$\checkmark$最大（最\unclear{大}$V$）
+% CHECK: 括号内"最?V"手写潦草，像 木（大/小 均有可能），按物理意义取 大
+
+
+\section{双直线边界·最值相切}
+% ---- block 018-01 (原稿第18页) kind=derivation ----
+$AD=2R$
+\notefig[0.3]{figures/p018_a.png}
+\textbf{最值相切}
+\notefig[0.25]{figures/p018_b.png}
+\[ SB^2=R^2-(d-R)^2 \]
+\[ SC^2=OT^2=R^2-(d-R)^2 \]
+\[ R<d<2R \]
+\notefig[0.3]{figures/p018_c.png}
+\[ SB^2=R^2-(R-d)^2 \]
+\[ SC^2=R^2-(R-d)^2 \qquad \because SC=SB \]
+故\ $SD=2SC$
+% 原稿：最后一行"故 SD=2SC"下方有红色下划线
+
+
+\section{双直线边界·时间}
+% ---- block 018-02 (原稿第18页) kind=method ----
+\textbf{双直线边界}\ $t$\quad 从右边界射出\quad $V$\unclear{同}$\to$弦长最短$\to$圆心角最小
+\notefig[0.25]{figures/p018_d.png}
+\[ \sin\theta=\frac{\frac12 d}{R} \]
+\[ t_{\min}=\frac{2\theta m}{qB} \]
+% 原稿：图右侧另有两条空的竖直长线（未画完的双直线边界图），无其它内容
+
+
+\section{反向磁场}
+% ---- block 018-03 (原稿第18页) kind=method ----
+\textbf{反向磁场}
+\notefig[0.3]{figures/p018_e.png}
+若\ $B_1=B_2$\ $L_1=L_2$\ \underline{则初末速度平行}
+% 原稿：此行"则初末速度平行"下方为红色下划线
+
+若\ $B_1\ne B_2$\ $L_1\ne L_2$\ 若初末速度平行\ 则\ \underline{$B_1L_1=B_2L_2$}
+% 原稿：此行"B1L1=B2L2"下方为红色下划线，红线向右延伸至页边
+
+速偏角$\alpha_1$，速偏角$\alpha_2$\quad $\alpha_1=\alpha_2\ \overset{\text{相似}}{\Longleftrightarrow}\ \dfrac{R_1}{L_1}=\dfrac{R_2}{L_2}$\quad $R=\dfrac{mv}{qB}$
+
+
+\section{隐形磁场}
+% ---- block 018-04 (原稿第18页) kind=method ----
+\textbf{隐形磁场}
+\notefig[0.3]{figures/p018_f.png}
+\begin{itemize}
+\item 最小面积：圆\quad 以入射出射弦为直径的圆
+\item 三角形：等边$\triangle$\ 等边三角形
+\item 矩形：入射出射弦为长，切弧成形
+\item 不定形：粒子未经的地方去除
+\end{itemize}
+% 原稿：以上四行左侧有大括号；"矩形"一行右端有一个小图（矩形内含一段圆弧）
+\notefig[0.25]{figures/p018_g.png}
+
+
+\section{找圆心}
+% ---- block 018-05 (原稿第18页) kind=method ----
+\textbf{找圆心}
+\begin{itemize}
+\item 速度在磁场内：速度作垂线找圆心
+\item 速度不在磁场内：速偏角的补角平分线过圆心
+\end{itemize}
+% 原稿：以上两行左侧有大括号
+
+
+\section{多解·直线边界吃弦长}
+% ---- block 019-01 (原稿第19页) kind=method ----
+\fbox{多解}\ \textbf{直线吃弦长}
+
+\red{反向磁场}
+\notefig[0.4]{figures/p019_a.png}
+\[ (2R_1+2R_2)\,n=L \]
+\[ \text{或}\ 2R_1(n+1)+2R_2\,n=L \]
+
+\red{同向磁场}
+\notefig[0.35]{figures/p019_b.png}
+\[ (2R_2-2R_1)\,n=L \]
+\[ \text{或}\ (n+1)\,2R_2-2R_1\cdot n=L \]
+
+
+\section{多解·圆弧吃角度}
+% ---- block 019-02 (原稿第19页) kind=method ----
+\textbf{圆弧吃角度}\ \fbox{多解}
+\notefig[0.3]{figures/p019_c.png}
+要回到出发点..
+\[ \theta\cdot n=2\pi \]
+\[ \begin{cases}\theta=\dfrac{2\pi}{n}\quad(n=2,3,\dots)\\[1ex] r=R\cdot\tan\dfrac{\theta}{2}\end{cases} \]
+\[ \therefore\ r=R\tan\frac{\pi}{n}\qquad r=\frac{mv}{qB}\qquad \therefore\ V=\frac{qBR\tan\frac{\pi}{n}}{m} \]
+
+
+\section{复合场·电磁组合场}
+% ---- block 019-03 (原稿第19页) kind=summary ----
+\textbf{电磁组合场}\quad $qE$\ $qvB$
+\begin{itemize}
+\item 静止\quad $V_0=0$\quad $a=0$\quad $qV_0B=0$\quad $qE\ne0$\quad 不会静止
+\item 直线
+  \begin{itemize}
+  \item 匀速\quad 必为匀速\quad $qvB=qE$\quad $V=\dfrac{E}{B}$
+  \item 变速
+    \begin{itemize}
+    \item $a$定\quad $\times$
+    \item $a$变\quad $\times$
+    \end{itemize}
+  \end{itemize}
+\item 曲线
+  \begin{itemize}
+  \item 类平抛\quad $\times$
+  \item 圆周\quad $\times$
+  \item 摆线\quad 螺旋线
+  \end{itemize}
+\end{itemize}
+% 原稿：静止/直线/曲线三项左侧有大括号；"直线"下的匀速/变速、变速下的a定/a变、曲线下的三项各有小括号；
+% 圆周右侧的 × 位置略偏下，介于"圆周"与"摆线"两行之间，这里归给圆周
+
+
+\section{复合场·三场叠合}
+% ---- block 019-04 (原稿第19页) kind=summary ----
+\textbf{三场叠合}\quad $mg$\ $qE$\ $qvB$
+\begin{itemize}
+\item 静止\quad $V_0=0$\quad $qV_0B=0$\quad $mg=qE$
+\item 匀圆（纯磁场）\quad 电场力\unclear{重}力抵消\quad $qE=mg$
+\item 直线\quad 匀直
+\item 螺旋线\quad 配速法
+\end{itemize}
+% 原稿：以上四项左侧有大括号
+
+
+\section{复合场·配速法}
+% ---- block 020-01 (原稿第20页) kind=method ----
+\textbf{曲线}\quad 恒力$+qvB$
+\begin{itemize}
+\item 洛伦兹力不做功$\to$动能定理
+\item 配速法\quad （垂直于恒力方向分解速度$\to$抵消恒力）
+\end{itemize}
+% 原稿：以上两行左侧有大括号
+\notefig[0.25]{figures/p020_a.png}
+$\vec{V_1}+\vec{V_2}=V_0$
+\notefig[0.25]{figures/p020_b.png}
+\[ V_1=\frac{mg}{qB}\qquad qV_1B=mg \]
+\notefig[0.25]{figures/p020_c.png}
+\[ V_2=\sqrt{V_0^2+\left(\frac{mg}{qB}\right)^2} \]
+\[ V_{\min}=V_2-V_1 \]
+\[ V_{\max}=V_2+V_1 \]
+
+
+\section{复合场·速度选择器}
+% ---- block 020-02 (原稿第20页) kind=method ----
+\textbf{速度选择器}\quad $E$方向\ $B$方向\ 入口\ 知2求1\quad $V=\dfrac{E}{B}$
+
+只选速度\ 不选电量电性质量（忽略$G$）
+
+若·$V$偏大\ 偏小$\to$螺旋线运动
+
+
+\section{复合场·质谱仪}
+% ---- block 020-03 (原稿第20页) kind=method ----
+\textbf{质谱仪}\quad $R_{\text{偏}}$越大\ 比荷越小
+\notefig[0.45]{figures/p020_d.png}
+\[ qU=\frac12 mv^2 \]
+\[ R=\frac{mv}{qB} \]
+\[ R=\frac1B\sqrt{\frac{2mU}{q}} \]
+\[ R=\frac{mv}{qB}\qquad \frac{q}{m}=\frac{v}{BR}\qquad R\propto\frac{1}{\,q/m\,} \]
+
+
+\section{复合场·磁流体发电机·电磁流量计·霍尔元件}
+% ---- block 020-04 (原稿第20页) kind=method ----
+\textbf{磁流体发电机\ /\ 电磁流量计\ /\ 霍尔元件}
+\[ BqvB=qE=q\frac{U}{d}=q\frac{\varepsilon}{d} \]
+% CHECK: 开头手写为 "BqvB"，多出一个 B，照原样转录
+\[ \varepsilon=Bdv \qquad v=\frac{U}{Bd} \]
+\[ qvB=qE=q\frac{U}{d}\ \leftarrow\ \text{霍尔电压} \]
+充电后二力平衡
+\[ U=B\,\text{\struck{d}}\,\frac{I}{ne\,\text{\struck{d}}\,h} \]
+% 原稿：上式中分子 B 后的 d 与分母中的 d 被斜线划去（约分）
+\[ =\frac{1}{neh}\cdot BI\propto\frac1h \]
+% 原稿：标题"磁流体发电机/电磁流量计/霍尔元件"中的两条斜线为分隔符；前两行公式在前两项之下，后面的公式在"霍尔元件"之下
+
+
+\section{复合场·回旋加速器}
+% ---- block 020-05 (原稿第20页) kind=method ----
+\begin{itemize}
+\item \textbf{回旋加速器}\quad $T_{\text{交变电场}}=T_{\text{粒子在磁场中}}=\dfrac{2\pi m}{Bq}$
+\item 最大速度\quad $V_{\max}=\dfrac{qBR}{m}$
+\item 加速次数\quad $\frac12 mV_{\max}^2=nqU$
+\item $t_{\text{总}}=t_{\text{电}}+t_{\text{磁}}$
+\end{itemize}
+% 原稿：以上四行左侧有大括号；"t总=t电+t磁"下一行左端另有一个孤立的"="，其后即下方方框结果
+\[ t_{\text{电}}=\frac{qBR}{qE}=\frac{BR}{E} \]
+\[ qEt_{\text{电}}=mV_{\max}\ \to\ [\text{当成匀加速直线运动处理}] \]
+% 原稿："mV_max"上方标注"动量"
+\[ t_{\text{磁}}=\frac{n\pi m}{qB}\qquad (n\to n-1) \]
+\begin{keybox}
+\[ V_{\max}=\frac{qBR}{m} \]
+\[ t=\frac{n\pi m}{qB}+\frac{BR}{E} \]
+\end{keybox}
+\begin{keybox}
+\[ n=\frac{q^2B^2R^2}{q\,2mU}=\frac{qB^2R^2}{2mU} \]
+\end{keybox}
+
+% ---- block 051-04 (原稿第51页) kind=knowledge ----
+\textbf{回旋加速器}（原稿圈出标题）
+
+\notefig[0.25]{figures/p051_e.png}
+
+\begin{align*}
+v_m&=\frac{qBR}{m} & E_{km}&=\frac{q^2B^2R^2}{2m} & P_m&=qBR\\
+n&=\frac{E_{km}}{qU}=\frac{qB^2R^2}{2mU}\\
+t_B&=\frac{n\pi m}{qB}=\frac{\pi R\,\unclear{n}}{v_m}\\
+t_E&=\sqrt{\frac{2nmd^2}{qU}}=\frac{2nd}{v_m}\qquad nd=\frac12\,\frac{qU}{md}\,t_E^2
+\end{align*}
+由 $t_B\gg t_E$：$\dfrac{\pi}{2}$、$\dfrac{R}{d}\ge1$
+
+\[
+v=2\pi Rf\qquad E_k=\frac12mv^2
+\]
+\[
+\frac{qBR}{m}=2\pi Rf
+\]
+\[
+f=\frac{qB}{2\pi m}\qquad \text{$m$不变}\quad B\times2\quad f\,\text{\unclear{(↑)}}\times2
+\]
+
+$f=\dfrac{qB}{2\pi m}$（交变电压频率），\quad $f\propto B$ \quad B最大为$B_m$ \quad $f_m=\dfrac{qB_m}{2\pi m}$
+\[
+\left\{\begin{aligned}
+&\underset{\text{\scriptsize 实际}}{f_m}<\underset{\text{\scriptsize 标准}}{f_m}\ \text{时}\quad v_m=2\pi f_mR\\
+&\underset{\text{\scriptsize 实际}}{f_m}>\underset{\text{\scriptsize 标准}}{f_m}\ \text{时}\quad v_m=\frac{qBR}{m}
+\end{aligned}\right.
+\]
+% 第一式 v_m= 之后、2π 之前有涂改痕迹；第二式分子 qBR 有涂改
+% 手写 v 与 V 不分，这里一律按速度记为小写 v（v_m 原稿写作 V_m）
+
+
+\section{洛伦兹力分解·螺旋运动}
+% ---- block 021-09 (原稿第21页) kind=note ----
+\textbf{螺旋运动}
+
+
+\section{洛伦兹力分解·动生电动势}
+% ---- block 022-01 (原稿第22页) kind=derivation ----
+% 页面顶部被截断，图与上方小字不完整
+\notefig[0.3]{figures/p022_a.png}
+（图左下标注）$-BV_yqV_x$
+
+非静电力\unclear{做功}
+\[
+\text{电动势}\ E=\frac{BV_xqL}{q}=BLV_x
+\]
+\unclear{总}功　$W_{\text{合}}=0$
+
+
+\section{复合场·板块起飞临界}
+% ---- block 036-02 (原稿第36页) kind=method ----
+\textbf{2.}\ 运动过程共速，起飞等分开求解
+
+$qEB$ 加杆约束，复合场常出现合力为0、速度不为0的匀速直线运动临界：
+\begin{itemize}
+\item $qV_0B=F_{\text{外}}$ 时是做匀速运动的临界
+\item 或是起飞的临界（即离开木板）
+\end{itemize}
+
+\notefig[0.45]{figures/p036_b.png}
+
+未共速时\unclear{就}起飞
+\[
+m_2V_2+m_1V_1=(m_1+m_2)V_{\text{共}}
+\]
+
+板进了块还\unclear{得算进}时速度\quad $V_{\text{共}}=\cdots$
+
+$qV_0B=m_1g$ 时\quad $V_0>V_{\text{共}}$ 则会共速
+
+\hspace{4.2em}$V_0<V_{\text{共}}$ 则无法共速
+\begin{align*}
+\therefore\ Q&=\frac12m_1\bigl(V_1^2-V_{1\text{共}}^2\bigr)+\frac12m_2\bigl(V_2^2-\unclear{V_{2\text{共}}^2}\bigr)\\ % 右端被页边切断，第二项括号内后半为推测
+&\quad+\mu m_1gS_{\text{相}}
+\end{align*}
+
+
+\section{磁场·提纲}
+% ---- block 048-01 (原稿第48页) kind=summary ----
+\textbf{磁场}
+% 页左侧的手写标题"磁场"，其右为下列各条目（各条目独占一行、大段留白）
+\begin{itemize}
+\item 磁场、磁感应强度
+\item 磁感线、电流周围磁场，
+\item 安培力\ 及\ 安培力冲量．
+\item 安培定则的应用和磁场叠加
+\item 安培力的大小和方向
+\item 安培力作用下的运动状况
+\item 安培力作用下导体的平衡问题．
+\item 安培力作用下力电综合问题
+\end{itemize}
+
+% ---- block 048-02 (原稿第48页) kind=summary ----
+\textbf{带电粒子在磁场中的动运．}
+% CHECK: 页左侧标题原稿写作"动运"（应为"运动"）；该标题位于"洛伦兹力、洛伦兹力冲量"条目之下、"洛伦兹力的理解与运用"条目之左
+\begin{itemize}
+\item 洛伦兹力、洛伦兹力冲量
+\item 洛伦兹力的理解与运用
+\item 粒子在有界磁场中的运动
+\item 带电粒子在磁场中的临界极值问题
+  \begin{itemize}
+  \item 法1、\ 临界条件，边界条件\ 矢量图
+  \item 法2．\ 三角函数，二次方程判别式，不等式，图像法
+  \end{itemize}
+\item 带电粒子在匀强磁场中的多解问题
+  \begin{itemize}
+  \item 电性不确定、磁场方向不确定、临界状态不\unclear{唯}一（轨迹相切），运动周期性
+  \end{itemize}
+\end{itemize}
+
+% ---- block 049-01 (原稿第49页) kind=summary ----
+\red{①}
+
+四类动态圆模型
+
+带电粒子在组合场中的运动
+
+\red{②}
+
+带电粒子在交变电磁场中的运动
+
+\red{③}\ \unclear{E}
+
+带电粒子在叠加场中的运动
+
+① ②
+% 页底左侧(y≈0.87 与 0.94)为黑色圈号①②，其后无文字
+
+
+\section{有界磁场·作图找圆心}
+% ---- block 050-01 (原稿第50页) kind=method ----
+两两垂直、一垂一点作中垂\ \ 直径所对圆周角$90^\circ$
+
+\red{中垂线+垂线}
+
+\notefig[0.55]{figures/p050_b.png}
+% 红笔所绘：一个大红圆，圆内有竖直双线(中垂线)、水平弦及斜线构成的三角形，右侧有红色箭头；叠在"磁场中平抛"一节右上部的公式之上，公式见块 050-02
+
+% ---- block 050-03 (原稿第50页) kind=method ----
+速偏$=$圆心$=2\cdot$位偏
+
+几何长$\to$\fbox{半径}$\to$其他量
+
+\notefig[0.4]{figures/p050_c.png}
+% 图内含(黑字)"有垂直即相等""(垂径定理)"及红笔标记
+
+有垂直即\red{相等}\quad （垂径定理）
+% 原稿"有垂直即"之后黑字被红笔"相等"叠写覆盖
+
+\notefig[0.3]{figures/p050_d.png}
+% 图内标注：V、D、L、r、r−D、×(磁场区)；红笔另画有 L 形大括线及 D、L 标记
+
+双边限制\quad \fcolorbox{red!75!black}{white}{$\displaystyle r=\frac{D^{2}+L^{2}}{2D}=\frac{mV}{qB}$}
+
+\notefig[0.3]{figures/p050_e.png}
+2种临界
+
+
+\section{组合场·磁场中平抛}
+% ---- block 050-02 (原稿第50页) kind=derivation ----
+\fcolorbox{red!75!black}{white}{\textbf{磁场中平抛}．}
+
+\notefig[0.4]{figures/p050_a.png}
+% 图内标注：V_0、E(两条竖直向下箭头)、y、x、2α(红)、θ(红圈)、V_1、B(虚线圆内为点，表示磁场)
+
+\[
+\begin{cases}\tan\theta=\dfrac{2y}{x}=2\tan\alpha=\dfrac{V_y}{V_0}\\[6pt] V_1\cos\theta=V_0\end{cases}
+\qquad
+\begin{cases}x=V_0t\\[2pt] y=\dfrac{1}{2}\dfrac{qE}{m}t_{\theta}^{2}\\[4pt] t_{\theta}=\dfrac{V_y}{a}\end{cases}
+\]
+% CHECK: 右侧大括号中 t 的下标被红笔覆盖，字形像 θ 或 e，按 t_θ 录入
+
+洛伦兹力提供向心力
+
+\[
+\begin{cases}qV_1B=\dfrac{mV_1^{2}}{R}\\[6pt] T=\dfrac{2\pi R}{V_1}\\[6pt] \dfrac{t}{T}=\dfrac{\theta}{2\pi}\ \ \text{or}\ \ t=\dfrac{\theta R}{V_1}\ \ \text{（无}\,B\,\text{求时间）}\end{cases}
+\qquad
+\begin{cases}R=\dfrac{mV}{qB}\\[6pt] T=\dfrac{2\pi m}{qB}\\[6pt] t=\dfrac{\theta m}{qB}\end{cases}
+\]
+
+\[ D=\frac{2mV}{qB}\sin\theta=\frac{2mV_y}{qB}=\frac{m\Delta V_y}{qB} \]
+
+\[ a_{\text{向}}=\omega V \]
+
+☆\ \fcolorbox{red!75!black}{white}{$qBD=m\Delta V_y$}
+\[ \Delta V_y=2V_y=2at=\frac{2Eqx}{mV_0} \]
+\[ D=\frac{2Ex}{BV_0}\ \ \text{（与粒子无关）} \]
+% "（与粒子无关）"原稿为涂改：先写"看"，上方改写"与"，并被圈住
+
+（正负\unclear{加}力量，与侧移结合）
+
+侧移量只与场\unclear{强}有关
+
+
+\section{组合场·电场与磁场偏转对比}
+% ---- block 050-04 (原稿第50页) kind=method ----
+\notefig[0.25]{figures/p050_f.png}
+% 图内标注：V_0、y、x
+
+\[
+\left\{\begin{array}{l}
+\text{平抛}\ \ \fcolorbox{red!75!black}{white}{$\displaystyle y=\frac{g}{2V_0^{2}}x^{2}$}\\[10pt]
+\fcolorbox{red!75!black}{white}{圆周}\ \ r=\dfrac{mV_0}{qB}=\fcolorbox{red!75!black}{white}{$\displaystyle\frac{x^{2}+y^{2}}{2y}$}
+\end{array}\right.
+\]
+% "平抛"与"y="之间另有一个红色小记号(像 ∝ 或 ω)
+
+平进斜出
+
+\notefig[0.35]{figures/p050_g.png}
+% 图内标注：L、d/2、d/2、纯E、纯B（红笔在图上画有轨迹线与圈）
+
+\[ \frac{d}{2}=\frac{1}{2}\,\frac{qE}{mV_0^{2}}L^{2}\qquad qE=\frac{dmV_0^{2}}{L^{2}} \]
+\[ \frac{mV}{qB}=\frac{\left(\frac{d}{2}\right)^{2}+L^{2}}{2\cdot\frac{d}{2}}\qquad qV_0B=\frac{dmV_0^{2}}{L^{2}+\frac{d^{2}}{4}} \]
+\fcolorbox{red!75!black}{white}{\begin{tabular}{l}故 $qE>qV_0B$\\ 电场力大于洛伦兹力\end{tabular}}
+
+
+\section{有界磁场·圆形边界}
+% ---- block 050-05 (原稿第50页) kind=method ----
+指心入背心出\quad 双心连线．三点共线\quad \fcolorbox{red!75!black}{white}{速交双心}
+% 红笔在"指心入背心出""双心连线""三点共线"下各画有一道红线
+
+\unclear{夹手}指角入\ 背\unclear{心}角出
+% CHECK: 此行字迹潦草，参照上一行"指心入背心出"，疑为"夹角指心角入、背心角出"一类，待核；"背""角"之间下方另有一个"夫/关"形小字
+
+\notefig[0.3]{figures/p050_h.png}
+% 图内标注：夹角(?)、L、r、θ，红笔画有若干弧线与标记
+
+\[
+\begin{cases}D=(L+R)\tan\theta\\[4pt] \tan\dfrac{\theta}{2}=\dfrac{R}{r}\\[8pt] \tan\theta=\dfrac{2\tan\frac{\theta}{2}}{1-\tan^{2}\frac{\theta}{2}}\end{cases}
+\]
+
+\notefig[0.4]{figures/p050_i.png}
+% 图内标注：R、r、M 等；红笔画有若干大圈与竖线
+
+
+\section{有界磁场·直线边界}
+% ---- block 050-06 (原稿第50页) kind=method ----
+\notefig[0.6]{figures/p050_j.png}
+% 图内标注：正电、负电、Z、D、φ（多处）、V_y=V sinφ、π−φ、"侧移相等"；红笔圈出 V_y=V sinφ
+
+侧移相等
+
+\[ D=2r\sin\varphi=\frac{2mV\sin\varphi}{qB} \]
+\fcolorbox{red!75!black}{white}{正负\unclear{加}力量}
+\[ t_1+t_2=T=\frac{2\pi m}{qB} \]
+% CHECK: "正负加力量"中第三字字形不清(像"加"或"后"，上方两处同样出现此四字)，含义待核
+
+
+\section{有界磁场·相切临界}
+% ---- block 050-07 (原稿第50页) kind=method ----
+\notefig[0.4]{figures/p050_k.png}
+% 图内含标题"直线相切"，及标注：切点、角平分线、虚线(延长线)等
+
+1延\ \ 2交\ \ 3分\ \ 4垂\ \ 5再垂
+% 红笔在"1延""2交""4垂"下各画一条红线
+
+% ---- block 050-08 (原稿第50页) kind=method ----
+\notefig[0.4]{figures/p050_l.png}
+% 图内含标题"圆形相切""束缚粒子"，及标注：r、R、2R−r 等（同心大小圆）
+
+\[ \fcolorbox{red!75!black}{white}{$\displaystyle (2R-r)^{2}=r^{2}+R^{2}+2rR\,\overset{\text{补角}}{\underline{\cos\theta}}$} \]
+
+1垂\ \ 2射\ \ 3等\ \ 4交\ \ 5再交
+
+
+\section{有界磁场·极值}
+% ---- block 050-09 (原稿第50页) kind=method ----
+直径所对圆周角为直角
+
+$V_{\min}$\quad 位移/\unclear{距离}当直径
+
+$V_{\max}$\quad 最先射出找$R_{\max}$
+% CHECK: "位移"与"距离"之间的"/"原稿为一条斜线，含义(或为"位移(距离)当直径")待核
+
+% ---- block 091-03 (原稿第91页) kind=method ----
+2020选择7中\unclear{磁}场 $\theta$ 也可\underline{求导求最小}：
+\[
+\cos\theta=\frac{r^{2}+4R^{2}-4Rr+r^{2}-R^{2}}{2(2R-r)r}\qquad
+\cos'\theta=\frac{12(r-R)R^{2}}{[2(2R-r)r]^{2}}
+\]
+% CHECK: 分母括号内 2R 与 r 之间的减号手写模糊，按上式取 2R-r
+
+
+\section{复合场·磁流体发电机}
+% ---- block 051-01 (原稿第51页) kind=knowledge ----
+\textbf{磁流体发电机}（原稿圈出标题）
+
+\notefig[0.3]{figures/p051_a.png}
+
+\[
+\left\{\begin{aligned}
+&qvB=qE\\
+&U=Ed=Bdv
+\end{aligned}\right.
+\]
+\[
+I=\frac{U}{R+r}=\frac{Bdv}{R+\dfrac{\rho d}{S_{\text{板}}}}
+\]
+\[
+\Delta P_{\text{压}}S=F_{\text{安}}\,\unclear{+f}=BId+f
+\]
+\[
+\eta=\frac{Bdv\cdot I}{\Delta P_{\text{压}}S\cdot v}=\frac{UI}{Fv}=\frac{UI}{(F_{\text{安}}+f)v}
+\]
+% 上一行第二项分母原稿为 F v（未写下标）
+
+$P_{\text{机}}\to P_{\text{电}}\to$ \unclear{阻} $\to P_{\text{\unclear{内}}}$
+
+
+\section{复合场·电磁流量计}
+% ---- block 051-02 (原稿第51页) kind=knowledge ----
+\textbf{电磁流量计}（原稿圈出标题）
+
+\notefig[0.25]{figures/p051_b.png}
+
+\[
+Q=\frac{V_{\text{体积}}}{t}=S\cdot v=ac\,\frac{U_0}{Ba}
+\]
+
+\notefig[0.25]{figures/p051_c.png}
+
+
+\section{复合场·霍尔效应}
+% ---- block 051-03 (原稿第51页) kind=knowledge ----
+\textbf{霍尔效应}（原稿圈出标题）
+
+\notefig[0.4]{figures/p051_d.png}
+
+\[
+\left\{\begin{aligned}
+&U_H=Bdv=\frac{1}{ne}\cdot\frac{BdI}{S_{\text{\unclear{…}}}}=R_H\,\frac{BdI}{S}\qquad \text{$R_H$为霍尔系数}\\
+&I=nesv
+\end{aligned}\right.
+\]
+% 第一个分式分母 S 右下角有不明小标记
+
+
+\section{磁感应强度·定义式}
+% ---- block 083-03 (原稿第83页) kind=formula ----
+\[
+B=\frac{F}{IL\sin\theta}
+\]
+
+
+\section{磁场·受力条件与方向}
+% ---- block 083-10 (原稿第83页) kind=note ----
+% 原稿此块及下块左侧有红笔大括号
+在$B$中放$I$\quad 测不了$B$\quad $B=\dfrac{F}{IL\sin\theta}$\quad $\theta$未知.
+
+$I$不受磁场力\quad ①$B=0$\quad ②$I\parallel B$\qquad 粒子：①$B=0$\quad ②$v\parallel B$
+
+电流受磁场力方向与磁场垂直\qquad 三垂直\quad $F=qv\times B$\quad $F=IL\times B$
+
+\unclear{场}真\quad 线假
+
+
+\section{带电粒子在磁场中的圆周·动量}
+% ---- block 089-04 (原稿第89页) kind=problem ----
+\noindent 动量+磁场
+\[ qVB=\frac{mV^2}{R}\qquad R=\frac{mV}{qB}=\frac{P}{qB} \]
+\notefig[0.25]{figures/p089_c.png}
+\[ m_1V_0=(m_1+m_2)V_{\text{共}} \]
+\[ r_1=\frac{m_1V_0}{qB}\qquad r_{\text{共}}=\frac{(m_1+m_2)V_{\text{共}}}{qB}=\frac{m_1V_0}{qB}=r_1 \]
+\noindent 由 $V_{\text{共}}<V_0$ 故用时更长。
+
+
+\section{有界磁场·几何关系}
+% ---- block 090-01 (原稿第90页) kind=method ----
+\noindent \textbf{几何关系处理}
+% 页首标题；本块与下一块为圆弧轨迹的几何关系（原稿未写 B、q，按图形推断为有界磁场中的圆周）
+
+\notefig[0.5]{figures/p090_a.png}
+\[ \begin{cases} R\cos\alpha+R\sin\alpha=a\\ R-R\sin\alpha=\dfrac a2\\ \sin^2\alpha+\cos^2\alpha=1\end{cases}\qquad R=\left(\dfrac{4-\sqrt6}{2}\right)a \]
+% 手写中 a 的字形近似 9
+
+% ---- block 090-02 (原稿第90页) kind=method ----
+\notefig[0.3]{figures/p090_b.png}
+\[ r^2+R^2-2rR\cos\varphi=\left[r-(d-R)\right]^2 \]
+% 括号内手写形似 “r(d−R)”，按图中底边标注取 r−(d−R)
+
+
+\section{质谱仪·狭缝}
+% ---- block 092-03 (原稿第92页) kind=method ----
+①\ \textbf{质谱仪狭缝}
+\notefig[0.25]{figures/p092_c.png}
+\[
+\left\{\begin{aligned}
+d&\le 2r_{1}-2r_{2}\\
+L-d&=2r_{2}
+\end{aligned}\right.
+\qquad d\le\frac{\sqrt{m_{1}}-\sqrt{m_{2}}}{2\sqrt{m_{1}}-\sqrt{m_{2}}}\,L
+\qquad \frac{r_{1}}{r_{2}}=\sqrt{\frac{m_{1}}{m_{2}}}
+\]
+% CHECK: d≤ 结果式的分母手写为 2√m1−√m2，请核对
+
+% ---- block 092-04 (原稿第92页) kind=method ----
+②\ 轨迹不交叠 $\Leftrightarrow r_{1}\ge r_{2}$
+% CHECK: “不交叠”后的符号手写像 ⇔（也可能是 ⇒）
+\notefig[0.3]{figures/p092_d.png}
+\[
+\left\{\begin{aligned}
+d&=r_{1}-h\\
+h&=\sqrt{r_{1}^{2}-\frac{L^{2}}{4}}
+\end{aligned}\right.
+\]
+\[
+\therefore\ d=\frac{2}{B}\sqrt{\frac{mU_{0}}{q}}-\sqrt{\frac{4mU_{0}}{qB^{2}}-\frac{L^{2}}{4}}
+\]
+
+
+\section{质谱仪·底片重叠条件}
+% ---- block 092-05 (原稿第92页) kind=problem ----
+若两离子\unclear{在}底片上没有重叠\ 求 $L$ 条件
+\begin{align*}
+r_{\text{甲}}&=\sqrt{\frac{4m(U-\Delta U)}{qB^{2}}}\\
+r_{\text{乙}}&=\sqrt{\frac{2m(U+\Delta U)}{qB^{2}}}\\
+2r_{\text{甲}}-2r_{\text{乙}}&\ge L
+\end{align*}
+% CHECK: r乙 的下标手写像 2（乙），ΔU 的 Δ 手写像 δ
+甲最近点$-$乙最远点$\ge L$
+\[
+L\le2\sqrt{\frac{4m(U-\Delta U)}{qB^{2}}}-2\sqrt{\frac{2m(U+\Delta U)}{qB^{2}}}
+\]
+
+
+\section{磁感应强度·安培力}
+% ---- block 097-01 (原稿第97页) kind=formula ----
+磁场\quad $B=\dfrac{F}{IL\sin\theta}=\dfrac{F}{qv\sin\theta}$\qquad $B=\dfrac{kI}{r}$\quad 通电导线间\unclear{安培}力；导线\unclear{同}吸异斥。（不考虑有外磁场）
+
+\notefig[0.25]{figures/p097_a.png}
+1连\quad 2垂\quad 3右手
+
+联系：$F_{\text{安}}=BIL=B\,nesv\,L=NBev=NqvB$
+
+
+\section{通电导线间作用力·技巧}
+% ---- block 097-02 (原稿第97页) kind=method ----
+技巧\ $\otimes$\qquad 直接画力的\unclear{…}\\
+跳过画$B$
+% 原稿右侧被页边截断，“直接画力的”之后的字不可见
+\notefig[0.25]{figures/p097_b.png}
+
+
+\section{洛伦兹力分解·速度分量}
+% ---- block 098-01 (原稿第98页) kind=diagram ----
+①
+\notefig[0.25]{figures/p098_a.png}
+
+$E_{k}\uparrow$\quad 支持力做功
+
+合外力为0时\ $V_{\max}$
+% 原稿“合外”二字被圈起
+
+
+\section{洛伦兹力·动量定理}
+% ---- block 098-05 (原稿第98页) kind=problem ----
+④
+\notefig[0.25]{figures/p098_d.png}
+
+\unclear{$t_s$}离开地面，求位移
+\[ \begin{cases} Eqt-\mu(mg-qvB)t=mV\\[2pt] qvB=mg \end{cases} \qquad x=\frac{\mu mgt}{qB} \]
+% CHECK: x 的分子分母手写如此（μ 似应在分母中同样出现而相消）
+
+$Eqt=mV$
+\[ a=\frac{Eq}{m}-\mu g+\frac{qVB}{m} \]
+% CHECK: 末项手写未见 μ（按受力似应为 μqVB/m）
+\[ V=\frac{Eqt}{m}-\mu gt+\frac{qBx}{m} \]
+% CHECK: 末项手写未见 μ（似应为 μqBx/m）
+
+一个动量定理\quad $V=\dfrac{mg}{qB}$
+\notefig[0.25]{figures/p098_e.png}
+
+
+\section{洛伦兹力·圆周运动}
+% ---- block 114-02 (原稿第114页) kind=problem ----
+\begin{problem}[2]
+% 图p114_b：N、qvB、mg 的力三角形（含θ）；图p114_c：球在碗内表面运动的受力图（N、qvB、mg）
+\notefig[0.25]{figures/p114_b.png}
+
+\notefig[0.3]{figures/p114_c.png}
+
+球能圆周运动 求 $B_{\min}$ 及对应速率
+\begin{solution}
+【法1】\quad $\dfrac{mv^2}{r}-qvB+mg\tan\theta=0$\qquad $\Delta\ge0\ \Rightarrow\ B$
+
+【法2】\quad $\left\{\begin{array}{l}qvB-N\sin\theta=\dfrac{mv^2}{r}\\[2mm] N\cos\theta=mg\end{array}\right.$
+
+$\therefore\ B=\dfrac{mv}{qr}+\dfrac{mg\tan\theta}{qv}\ge2\sqrt{\dfrac{m^2g\tan\theta}{q^2r}}$ % 此行右端被拍摄边缘截断（可见 m^2 g tan…/q^2 r），按可见部分转录
+
+当 $\dfrac{mv}{qr}=\dfrac{mg\tan\theta}{qv}$ 时取等
+\end{solution}
+\end{problem}
+

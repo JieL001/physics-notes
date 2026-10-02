@@ -1,0 +1,36 @@
+%%%PAGE 136 rot=0 legibility=fair summary=拉格朗日点：L1~L5位置示意、L2点卫星与月球同步转的受力与结论、L2/L1坐标公式
+%%%BLOCK id=136-01 ch=05 sec=拉格朗日点 kind=knowledge alt=none cont=none y=0.03-0.33
+\textbf{拉格朗日点}
+%FIG p136_a 0.09 0.03 0.67 0.286
+\notefig[0.55]{figures/p136_a.png}
+周期一样\qquad 受到 2 个引力 % “引力”的“引”手写成“31”；上方两条箭头分别指向图中月球附近与卫星处
+
+$R$大\ $V$大
+
+$L_2$比$L_3$离地球远
+
+$L_2$合力比·$L_1$ $L_3$大
+
+对称点 % 原稿写在图中圆弧下方
+
+受力不平衡
+
+卫星与月球同步转\quad \fbox{大$R$ 大$V$ 大$a$} % 后者被手绘椭圆圈起
+
+$\omega$一样\quad $T$一样\quad 同轴转 % “ω一样 T一样”下方有一条波浪线，“同轴转”写在波浪线下方
+
+$a_3>a_1$\qquad $a=\omega^{2}r$
+%%%END
+%%%BLOCK id=136-02 ch=05 sec=拉格朗日点·L2受力与位置 kind=derivation alt=none cont=none y=0.33-0.76
+%FIG p136_b 0.12 0.332 0.63 0.51
+\notefig[0.55]{figures/p136_b.png}
+\[
+\begin{aligned}
+\text{对卫星}:\quad F_{\text{向}}&=\frac{GMm_0}{L_2^{2}}+\frac{GM_0m}{(L_2-L)^{2}}=M_0\omega^{2}L_2\\[8pt]
+\text{对月球}:\quad \frac{GMm}{L^{2}}&=m\omega^{2}L
+\end{aligned}
+\] % 原稿两式共用左侧一个大括号；CHECK: 第一式第一项分子原稿写作 GMm_0（卫星质量在图中及其它项中为 M_0）
+\[ L_2\left(R\left(1+\sqrt[3]{\frac{m}{3M+m}}\right),0\right) \]
+\[ L_1\left(R\left(1-\sqrt[3]{\frac{m}{3M+m}}\right),0\right) \] % CHECK: 根号内分母原稿为 3M+m（常见结果为 3(M+m) 或 3M），照原稿转录
+%%%END
+%%%PAGEEND 136

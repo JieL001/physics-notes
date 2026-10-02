@@ -1,0 +1,74 @@
+%%%PAGE 56 rot=0 legibility=good summary=双杆模型的电荷量/分热/分电荷/分压、不等宽导轨受力棒三问、电源正反接与等效电源
+%%%BLOCK id=056-01 ch=12 sec=双杆模型·电荷量 kind=knowledge alt=none cont=none y=0.07-0.12
+双杆中 $q$ 中 $x$ 为相对位移\quad 不等宽双杆中 $q=\dfrac{B\Delta S}{R}$，为相对面积 % 原稿“为相对面积”前未写主语(应指 ΔS)
+%%%END
+%%%BLOCK id=056-02 ch=12 sec=双杆模型·分热 kind=method alt=none cont=none y=0.12-0.33
+\textbf{分热}
+%FIG p056_a 0.10 0.118 0.24 0.19
+\notefig[0.25]{figures/p056_a.png}
+\[ Q_1=\frac{R}{R+R}\,Q_{\text{总}} \]
+%FIG p056_b 0.09 0.19 0.292 0.315
+\notefig[0.3]{figures/p056_b.png}
+并联电路当整体来分配 % 图中下方两个圈：并联部分旁圈住 R/2(圈内左侧有小标记)，串联的 4Q 电阻下圈住 R
+%%%END
+%%%BLOCK id=056-03 ch=12 sec=双杆模型·分电荷 kind=method alt=none cont=none y=0.12-0.30
+\textbf{分电荷}
+%FIG p056_c 0.515 0.158 0.64 0.2295
+\notefig[0.25]{figures/p056_c.png}
+\[ q_1=q_2 \]
+%FIG p056_d 0.50 0.2255 0.645 0.285
+\notefig[0.25]{figures/p056_d.png}
+\[ \frac{q_1}{q_2}=\frac{R_2}{R_1} \]
+%%%END
+%%%BLOCK id=056-04 ch=12 sec=双杆模型·等效电压 kind=method alt=none cont=none y=0.12-0.30
+\textbf{等效电压}\quad 分压
+%FIG p056_e 0.848 0.118 1.0 0.196
+\notefig[0.28]{figures/p056_e.png}
+\[ R_{\text{总}}=\frac{R}{2}+R \]
+\[ V_{ab}=\frac{\dfrac{R}{2}}{R+\dfrac{R}{2}}\,BLv \]
+%%%END
+%%%BLOCK id=056-05 ch=12 sec=双杆模型·不等宽导轨 kind=problem alt=none cont=none y=0.34-0.69
+% 原稿标题“非等宽受力棒 + 特殊条件”用方括号框起
+\begin{problem}[非等宽受力棒 + 特殊条件]
+%FIG p056_f 0.02 0.368 0.19 0.543
+\notefig[0.25]{figures/p056_f.png}
+① $t=0$ 开始用 $F$ 拉 $cd$，使其从静止开始沿导轨以 $a$ 匀加速，求 $cd$ 运动多久后 $ab$ 开始运动。
+\begin{solution}
+受力平衡 % 原稿“受力平衡”写在图右侧、公式左上方
+\[ \mu mg=BIL_1=\frac{B\,BL_2at\,L_1}{2R}\ \to\ t \]
+\end{solution}
+② 用未知力 $F_0$ 拉 $cd$ 向右到 $V$ 后匀速，$ab$ 也恰好匀速，求 $V_{ab}$　$V_{cd}$　$P_{F_0}$。
+\begin{solution}
+受力 $\left\{\begin{array}{l}\text{对 2：}F_0=\mu mg+BIL_2\\ \text{对 1：}BIL_1=\mu mg\end{array}\right.$ \qquad $P_{F_0}=F_0V_2$
+
+非电源\unclear{电动势}\quad $\varepsilon=BL_1V_1-BL_2V_2\neq 0$ % CHECK: “非电源”后两字辨认不清，可能是“电动势”
+\end{solution}
+③ $ab$ 运动到 $PQ$ 时刚好碰到\unclear{障碍}物停止，并将 $cd$ 上力改为 $F_1$，此时 $cd$ 为 $V_0$。
+
+$L_2=\dfrac{1}{2}L_1$\qquad 一段时间后停止，求 $ab$ 停后 $cd$ 运动距离
+\begin{solution}
+由动量定理 \quad $\dfrac{-B^2L_2x_2}{\frac{3}{2}R}=0-mV_0$
+
+电阻突变
+%FIG p056_g 0.708 0.598 0.84 0.682
+\notefig[0.25]{figures/p056_g.png}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=056-06 ch=10 sec=等效电源 kind=method alt=12 cont=none y=0.69-0.90
+$\langle$电源正反向、等效电源$\rangle$
+
+%FIG p056_h 0.05 0.725 0.16 0.785
+\notefig[0.25]{figures/p056_h.png}
+\[ E=E_1-E_2,\qquad r=r_1+r_2 \]
+%FIG p056_i 0.315 0.722 0.395 0.782
+\notefig[0.25]{figures/p056_i.png}
+\[ E=E_1+E_2,\qquad r=r_1+r_2 \]
+%FIG p056_j 0.19 0.795 0.325 0.87
+\notefig[0.25]{figures/p056_j.png}
+\[ E_{\text{等}}=\frac{R_1}{R_1+r}E,\qquad r_{\text{等}}=\frac{R_1r}{R_1+r} \]
+%FIG p056_k 0.52 0.79 0.67 0.88
+\notefig[0.25]{figures/p056_k.png}
+\[ r_{\text{等}}=R+r,\qquad E_{\text{等}}=\frac{E\,(r+R_2)}{R_1+R_2+r} \] % CHECK: 圈内含 R_2 与电源，r_等 疑应为 R_2+r(原稿写 R+r)
+%%%END
+%%%PAGEEND 56

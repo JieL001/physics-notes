@@ -1,0 +1,135 @@
+%%%PAGE 42 rot=0 legibility=good summary=关联速度续：交点速度(两例，余弦定理/勾股定理)；伸缩等速；绳两端速度相等；弹性绳无速度关联；双绳拉船V_C=|AB|/sinα；接触关联(点点/点面/面面)；杆与方块ω推导；滑轮组位移关联+能量题
+%%%BLOCK id=042-01 ch=04 sec=关联速度·交点速度 kind=derivation alt=none cont=none y=0.02-0.12
+\textbf{交点速度}% 页面左上角标题(后接虚线)
+
+%FIG p042_a 0.12 0.027 0.34 0.112
+\notefig[0.3]{figures/p042_a.png}
+% 图内标注：两条直线(其中一条水平线上标 $V_2\Delta t/\sin\alpha$)交于 $M$，$V_2$(小字)，$V_1\Delta t/\sin\alpha$、$V_1\Delta t$、向下箭头 $V_1$；$M$ 处向下箭头 $V_M$；虚线斜线末端箭头 $V_2$
+%FIG p042_b 0.40 0.032 0.545 0.095
+\notefig[0.25]{figures/p042_b.png}
+% 图内标注：三个矢量——向左箭头标 $V_2\Delta t/\sin\alpha$，向左下箭头标 $V_M$，向右下箭头标 $V_1\Delta t/\sin\alpha$
+\[
+V_M=\frac{\sqrt{\left(\dfrac{V_2\Delta t}{\sin\alpha}\right)^{2}+\left(\dfrac{V_1\Delta t}{\sin\alpha}\right)^{2}-2\left(\dfrac{V_1\Delta t}{\sin\alpha}\,\dfrac{V_2\Delta t}{\sin\alpha}\right)}}{\Delta t}
+\]% CHECK: 余弦定理的交叉项按理应含 cos(夹角)，原稿括号内未见 cos 因子，照原样转录
+%%%END
+%%%BLOCK id=042-02 ch=04 sec=关联速度·交点速度 kind=derivation alt=none cont=none y=0.12-0.25
+%FIG p042_c 0.05 0.12 0.28 0.21
+\notefig[0.25]{figures/p042_c.png}
+% 图内标注：两个相互交叠的菱形(旋转45°的方块)，左边菱形上标 $V$(向左箭头)，右边菱形上标 $2V$(向右箭头)，交点标 $M$
+小量分析，延长\ 找角。
+
+%FIG p042_d 0.33 0.152 0.568 0.256
+\notefig[0.28]{figures/p042_d.png}
+% 图内标注：两条45°交叉直线交于 $M$(沿一线标 $\sqrt2V\Delta t$)，左下角 $45^\circ$，底部虚线上标 $2V\Delta t$，右侧标 $V\Delta t$、$\frac{\sqrt2}{2}V\Delta t$、角 $\alpha$，由 $M$ 向下的箭头 $V_M$，数条虚线(延长线)
+% 图上方的文字“小量分析，延长 找角。”在图右上方(已在上面转录)
+
+\noindent 用余弦定理\quad 勾股定\unclear{理}% 该行位于页面右上，行末被照片边缘截断
+
+\[
+V_M=\frac{\sqrt{\left(\sqrt2V\Delta t\right)^{2}+\left(\dfrac{\sqrt2}{2}V\Delta t\right)^{2}}}{\Delta t}=\frac{\sqrt{10}}{2}V
+\]% 式末“V”右下有一小圆圈，像句号“。”，也可能是下标0(V_0)，未转录
+%%%END
+%%%BLOCK id=042-03 ch=04 sec=关联速度·伸缩等速 kind=method alt=none cont=none y=0.27-0.38
+%FIG p042_e 0.02 0.277 0.30 0.375
+\notefig[0.3]{figures/p042_e.png}
+% 图内标注：左端小圆圈处标 $V_1$(向左箭头及虚线分量箭头)，细绳自左端圆圈斜向下到中间点、再斜向上连到右端小圆圈；右段绳上标 $V_3$(沿绳虚线箭头)；中间点处标 $V$(水平向右箭头)、$V_2$(斜向下箭头)
+\begin{keybox}[伸缩等速]% 红笔框
+\[
+V_1+V_2=V_3\qquad \sum V_{\text{伸长}}=\sum V_{\text{缩短}}
+\]
+\end{keybox}
+%%%END
+%%%BLOCK id=042-04 ch=04 sec=关联速度 kind=method alt=03 cont=none y=0.25-0.38
+\red{？}% 红笔问号，位于“两端圆周速度相等”左侧
+
+\noindent 两端圆周速度相等\quad 一绳上 $T$、$x$、$v$、$a$、\unclear{$l$} 全相等% “a”后的一字像“1/I/l”
+
+\noindent 绳不转动要平动
+
+%FIG p042_f 0.668 0.297 0.835 0.376
+\notefig[0.25]{figures/p042_f.png}
+% 图内标注：斜板(与水平夹角 $30^\circ$)，板上标 $V$(沿板向右上箭头)，板与竖直绳交点处标“板 $\frac12V$”(向上箭头)、$\frac{\sqrt3}{2}V$(水平向右箭头)；竖直绳下端方块，绳上标 $V_1$(向上箭头)，方块处水平向右箭头
+\noindent $\dfrac{\sqrt3}{2}V$ 抵消\unclear{车}转动% 位于图下方右侧(第三字像“车”，疑为“轮”)
+
+\begin{align*}
+V+\tfrac12V&=V_1\\
+V_1&=\tfrac32V\\
+\therefore V_{\text{合}}&=\sqrt3\,V
+\end{align*}
+%%%END
+%%%BLOCK id=042-05 ch=04 sec=关联速度·弹性绳 kind=method alt=none cont=none y=0.38-0.50
+\textbf{弹性绳}\ —\ 弹簧/激光/光线/轻杆套环。
+
+%FIG p042_g 0.075 0.398 0.305 0.49
+\notefig[0.28]{figures/p042_g.png}
+% 图内标注：水平横线与竖直线、斜线(由竖线下端斜向上交于横线)；交点处黑字 $V_{\text{伸长}}$、$V_{\text{圆周}}$、$\omega$(弯箭头)；红字 $V\sin\theta$、$V$(向右箭头)、$V\cos\theta$，另有一小红字(像“沿”)
+
+\noindent \underline{弹性物质无速度关联}。% 红笔下划线，并延伸为红箭头指向右侧红框
+
+\begin{keybox}% 红笔框
+%FIG p042_h 0.612 0.389 0.745 0.462
+\notefig[0.25]{figures/p042_h.png}
+% 图内标注：竖直线与水平线、弹簧(锯齿线)斜连在右上方小圆环与左下方小球之间(弹簧长度与角度都在变)
+长度角度都变化、无法分解。
+\end{keybox}
+%%%END
+%%%BLOCK id=042-06 ch=04 sec=关联速度·双绳拉船 kind=method alt=none cont=none y=0.50-0.66
+\textbf{双绳拉船。}
+
+%FIG p042_i 0.03 0.53 0.195 0.645
+\notefig[0.2]{figures/p042_i.png}
+% 图内标注：两只船 $A$、$B$(各带向外上方箭头)，用绳呈“Y”形系于下方物体 $C$，$C$ 上标 $V_C$(向上箭头)
+%FIG p042_j 0.195 0.528 0.395 0.662
+\notefig[0.28]{figures/p042_j.png}
+% 图内标注：圆上三点 $A$(左)、$B$(右)、$C$(下)，连 $AB$、$AC$、$BC$，$C$ 处红字角 $\alpha$，竖直线由 $C$ 向上到圆顶并标 $V_C$(箭头)
+\noindent 连$AB$\ 过$\overset{C}{B}$作画圆\qquad $V_C=\dfrac{|AB|}{\sin\alpha}$% “B”上方另有一小字母“C”(旁注/插入)，“B”笔画有叠写
+
+\[
+AB^{2}=\sqrt{V_A^{2}+V_B^{2}-2V_AV_B\cos\alpha}
+\]% CHECK: 原稿等号左边写作 AB^2(上标2)，右边带根号，应为 AB=\sqrt{…} 或 AB^2 无根号，照原样转录
+%%%END
+%%%BLOCK id=042-07 ch=04 sec=关联速度·接触关联 kind=knowledge alt=none cont=none y=0.57-0.70
+\textbf{接触关联}（左侧花括号分三条）
+\begin{itemize}
+\item 点点接触\quad \underline{不分离 $\Leftrightarrow$ $V$大小方向相同}
+\item 点面接触\quad \underline{不分离 $\Leftrightarrow$ 垂直于接触面}\unclear{…}% 行末被照片边缘截断，其后可能还有字；箭头写作“(=)”形(手写 ⇔)，按 $\Leftrightarrow$ 转录
+\item 面面接触\quad \underline{不分离} $\Leftrightarrow$ \underline{方向速度相同}
+\end{itemize}
+%%%END
+%%%BLOCK id=042-08 ch=04 sec=关联速度·接触关联 kind=derivation alt=none cont=none y=0.69-0.80
+%FIG p042_k 0.01 0.685 0.25 0.78
+\notefig[0.25]{figures/p042_k.png}
+% 图内标注：斜杆(下端小圆圈为转轴 $O$，与水平夹角 $\theta$，杆长 $L$)，杆上端 $A$，杆上沿杆箭头 $V_{B\parallel}$；杆与方块上角接触点 $B$，$V_B$(水平向右)、垂直杆的分速度 $V_{B\perp}$(斜向下箭头)、$M$(方块下沿处)、方块高 $h$
+\begin{align*}
+V_M&=V_B\\
+V_{B\perp}&=V_B\sin\theta=\omega\cdot|OB|\\
+\therefore\omega&=\frac{V\sin\theta}{|OB|}=\frac{V\sin\theta}{\dfrac{h}{\sin\theta}}=\frac{V\sin^{2}\theta}{h}\\
+V_A&=L\cdot\omega=\frac{LV\sin^{2}\theta}{h}
+\end{align*}% 原稿 ω 写得像 W
+%%%END
+%%%BLOCK id=042-09 ch=04 sec=关联速度·滑轮组位移关联 kind=problem alt=06 cont=none y=0.82-0.99
+\red{？}% 红笔大问号，位于该题图左上方
+
+%FIG p042_l 0.10 0.82 0.41 0.985
+\notefig[0.3]{figures/p042_l.png}
+% 图内标注：竖直墙面(左)、水平细线与两个小滑轮(圆圈)，水平段向左箭头；斜面(倾角 $\alpha$)上有物块 $B$(标 $m$，沿斜面向下的箭头)，红笔：$B$ 红字、红线连接滑轮与物块、红字 $X_B$ 及红色三角；斜面下方 $m$、$A$、$\alpha$，虚线；图下方“光滑”
+\noindent $A$ 位移为 $x$ 时，求 $S_B$、$V_A$
+
+\noindent 对$B$ 先向左，再沿斜面向下。
+
+%FIG p042_m 0.435 0.918 0.577 0.97
+\notefig[0.2]{figures/p042_m.png}
+% 图内标注：位移矢量图——水平向左的 $x$(虚线)、沿斜面向下的 $x$、两段夹角红字 $\alpha/2$ 等，红粗线为合位移(斜向下箭头)
+\[
+S_B=2x\sin\frac{\alpha}{2}
+\]
+
+\[
+mgx\sin\alpha=\frac12mV_x^{2}+\frac12m\left(V_x\cdot2\sin\frac{\alpha}{2}\right)^{2}
+\]
+
+\[
+\therefore V_x=\sqrt{\frac{2gx\sin\alpha}{3-2\cos\alpha}}
+\]
+%%%END
+%%%PAGEEND 42

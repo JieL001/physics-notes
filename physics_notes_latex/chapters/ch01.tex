@@ -1,0 +1,188 @@
+% 本文件由 assemble.py 按 _work/plans/ch01.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{运动的描述与匀变速直线运动}
+\label{ch:01}
+
+\section{章节提纲}
+% ---- block 066-01 (原稿第66页) kind=summary ----
+% 版面：左侧“匀变速直线运动”后接大括号，括入前四项；其下另有一个大括号，括入“匀变速直线运动的规律”“自由落体和竖直上抛规律”；再往下各行无括号。
+% “匀变速直线运动推论的应用”“自由落体和竖直上抛运动”两行右侧的比例式批注见 066-02。
+\textbf{匀变速直线运动}
+\begin{itemize}
+  \item 质点、参考系
+  \item 位移、速度
+  \item 路程、速率
+  \item 加速度
+\end{itemize}
+\begin{itemize}
+  \item 匀变速直线运动的规律
+  \item 自由落体和竖直上抛规律
+\end{itemize}
+\begin{itemize}
+  \item 匀变速直线运动基本公式的应用
+  \item 匀变速直线运动推论的应用
+  \item 自由落体和竖直上抛运动
+  \item 匀变速直线运动多过程问题\quad 找衔接速度。
+  \item 异表同\unclear{质}问题
+  \begin{itemize}
+    \item 水平刹车与粗糙斜面上滑
+    \item 竖直上抛与光滑斜面（足够长）上滑。
+    \item 逆向思维法
+  \end{itemize}
+  \item 运动图像的理解应用
+  \item 追及相遇问题
+\end{itemize}
+
+
+\section{匀变速直线运动推论·初速度为零的比例式}
+% ---- block 066-02 (原稿第66页) kind=knowledge ----
+% 原稿位于“匀变速直线运动推论的应用”“自由落体和竖直上抛运动”两行的右侧
+$1T$末\ $2T$末\ $3T$末，…$nT$末瞬时速度之比
+\[ v_1:v_2:v_3:\cdots:v_n=1:2:\cdots:n \]
+第$1$个$T$内，$2$个$T$内，$3$个$T$内…$n$个$T$内位移之比
+\[ x_1:x_2:x_3=\cdots:x_n=1:3:5:\cdots:\text{\struck{\unclear{…}}}(2n-1) \] % CHECK: 手写中“…”与“2n-1”之间有一处被涂黑划去的字迹无法辨认；前几个冒号形似等号
+通过连续相等位移所用时间之比
+\[ t_1:t_2:t_3:\cdots:t_n=1:\sqrt{2}-1:\sqrt{3}-\sqrt{2}:\sqrt{n+1}-\sqrt{n} \] % CHECK: 末项手写为 sqrt(n+1)-sqrt(n)（通常结论的末项为 sqrt(n)-sqrt(n-1)），照原样转录
+
+
+\section{匀变速公式与推论}
+% ---- block 081-02 (原稿第81页) kind=formula ----
+\textbf{直线运动}
+
+\[
+\left\{\begin{aligned}
+&V=V_0+at\\
+&x=V_0t+\tfrac12at^2=V_{\text{末}}t-\tfrac12at^2\\
+&V^2-V_0^2=2ax\\
+&x=\dfrac{V_0+V}{2}\,t
+\end{aligned}\right.
+\qquad
+\left\{\begin{aligned}
+&\text{一段一组}\\
+&\text{一方向一组}
+\end{aligned}\right.
+\quad\text{表示}\,a,\ \to V\to x
+\]
+
+\[
+\Delta S=aT^2\qquad v=\frac{\Delta x}{\Delta t}\qquad a=\frac{\Delta v}{\Delta t}
+\]
+
+
+\section{匀变速推论·逐差法}
+% ---- block 081-03 (原稿第81页) kind=method ----
+\textbf{利用打点计时器公式}
+
+匀加\quad 求$l_0$
+\notefig[0.3]{figures/p081_a.png}
+\[
+\left\{\begin{aligned}
+l_2-l_1&=at^2\\
+l_2+l_1&=V_B\,2t\\
+V_B^2&=2a(l_0+l_1)
+\end{aligned}\right.
+\]
+
+% ---- block 081-04 (原稿第81页) kind=method ----
+匀加\quad 求$x_{bc}$
+\notefig[0.3]{figures/p081_b.png}
+\begin{align*}
+&S_1+S_2+S_3=x_1=3S_2\\
+&S_6=x_2\qquad S_6-S_2=4at^2=x_2-\frac{x_1}{3}\\
+&S_4+S_5=x_{bc}=S_2+2at^2+S_2+3at^2=\frac{5x_2+x_1}{4}
+\end{align*}
+
+
+\section{中间时刻速度}
+% ---- block 081-05 (原稿第81页) kind=problem ----
+\textbf{用$V_{\frac t2}$}
+
+\begin{problem}[①]
+2物落地\quad $\Delta t=0.2\unit{s}$\quad 求释放高度
+\notefig[0.25]{figures/p081_c.png}
+\begin{solution}
+\[
+V_{\frac t2}=\frac{3\unit{m}}{0.2\unit{s}}=15\unit{m/s}\qquad
+V_{\text{末}}=V_{\frac t2}+0.1g=16\unit{m/s}\qquad % CHECK: 加号笔迹像“∓/+”，按数值15→16取+
+h=\frac{V_{\text{末}}^{2}}{2g}=12.8\unit{m}
+\]
+\end{solution}
+\end{problem}
+
+% ---- block 081-06 (原稿第81页) kind=problem ----
+\begin{problem}[②]
+\notefig[0.35]{figures/p081_d.png}
+（图右上角另标：长$1.4\unclear{5}\unit{m}$） % CHECK: 末位笔迹像8，按3.45=2+1.45应为5
+\begin{solution}
+\begin{gather*}
+V_{\frac t2}=\frac{3.45}{0.3}=11.5\unit{m/s}\\
+\downarrow\\
+V_0=10\unit{m/s}\\
+\downarrow\\
+h_1=\frac{V_0^{2}}{2g}=5\unit{m}
+\end{gather*}
+% CHECK: 末行分母被照片下缘截断，按5m补2g
+\end{solution}
+\end{problem}
+
+
+\section{解题方法·公式相对运动图象法}
+% ---- block 082-01 (原稿第82页) kind=summary ----
+\[
+\left\{\begin{aligned}
+&\text{利用公式}\ \left\{\begin{aligned}&V=V_0+at\\&x=V_0t+\tfrac12at^2\end{aligned}\right.\\[6pt]
+&\text{相对运动}\ \Delta x=aT^2\\[6pt]
+&\text{图象法\ \ 处理非匀变速}
+\end{aligned}\right.
+\]
+
+
+\section{图象法·处理非匀变速}
+% ---- block 082-02 (原稿第82页) kind=method ----
+$S_1=S_2$\quad 求$t_1,t_2$关系
+\notefig[0.25]{figures/p082_a.png}
+\notefig[0.3]{figures/p082_i.png}
+$t_2<t_1$
+
+$S_1=S_2$\quad 求$t_1$与$t_2$关系
+\notefig[0.25]{figures/p082_b.png}
+\notefig[0.3]{figures/p082_c.png}
+$t_2<t_1$
+
+% ---- block 082-03 (原稿第82页) kind=method ----
+\notefig[0.25]{figures/p082_d.png}
+$\mu$从A到B$\downarrow$，倒过来滑$t_2$.
+\notefig[0.3]{figures/p082_e.png}
+$t_2<t_1$
+
+
+\section{另类加速度}
+% ---- block 082-05 (原稿第82页) kind=knowledge ----
+\textbf{另类加速度}\quad $A=\dfrac{V_t-V_0}{t}$\quad 匀$A$\quad\quad $A=\dfrac{\Delta V}{S}$
+\notefig[0.75]{figures/p082_h.png}
+\begin{itemize}
+\item 恒$a$\quad $V_{\frac t2}=\dfrac{V_0+V_t}{2}$
+\item 恒$A$\quad $V_{\frac S2}=\dfrac{V_0+V_S}{2}$
+\end{itemize}
+
+
+\section{a-x图像·非匀变速}
+% ---- block 099-01 (原稿第99页) kind=problem ----
+\textbf{某车由静启动}
+
+①
+\notefig[0.25]{figures/p099_a.png}
+
+$V^2=2ax$\quad $\dfrac{V^2}{2}=ax=$\ $a$-$x$图面积为$\dfrac{V^2}{2}$
+% 原稿“=”与“a-x图”之间有涂改痕迹
+\[ \therefore\ \frac{V_1^2}{2}=\frac{a_0x_1}{2}\qquad x_1\text{时}\ V_1=\sqrt{a_0x_1}\]
+\[ t_1=\frac{\sqrt{a_0x_1}}{a_0}=\sqrt{\frac{x_1}{a_0}} \]
+% CHECK: t_1 手写按匀加速 V_1/a_0 计算，而 0~x_1 段加速度并非恒定
+\[ \frac{V_2^2}{2}=\frac{(x_2+x_2-x_1)a_0}{2}\qquad x_2\text{时}\ \therefore V_2=\sqrt{(2x_2-x_1)a_0}\]
+\[ t_2=\frac{V_2-V_1}{a_0}=\sqrt{\frac{2x_2-x_1}{a_0}}-\sqrt{\frac{x_1}{a_0}} \]
+
+
+\section{匀变速·平均速度-时间图像}
+% ---- block 196-04 (原稿第196页) kind=formula ----
+$\bar v-t\ \Rightarrow\ \dfrac{x}{t}=v_0+\dfrac{1}{2}at$.
+% 原稿 $v_0$ 与 $+$ 之间有一处涂改的墨团，未录
+

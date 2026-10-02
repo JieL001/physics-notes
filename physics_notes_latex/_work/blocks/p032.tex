@@ -1,0 +1,57 @@
+%%%PAGE 32 rot=0 legibility=good summary=(页顶被裁)远距离输电动态分析(用户少时各量变化、智能电网调匝数)；含感电路(自感电动势、直流通断瞬间、感抗)；含容电路(直流通断、容抗)；变压器线路中前有/无内阻时串反并同与程序法
+%%%BLOCK id=032-01 ch=13 sec=变压器·远距离输电 kind=method alt=none cont=prev y=0.00-0.10
+% 页面顶部被相机裁切，以下为页首可见部分(含一幅被裁掉上半部的线路图)
+%FIG p032_a 0.025 0.0 0.29 0.052
+\notefig[0.4]{figures/p032_a.png}
+% 图内标注(仅见下半部)：U_0 带向下箭头；原线圈 U_1、P_1；中间两线圈 U_2≠U_3、P_2≠P_3(上方隐约可见 I_3)；用户侧线圈 U_4、R_4(上方隐约可见 I_4)及电阻 R
+\noindent $\cdots$\ $U_3\downarrow$\ \ $U_4\downarrow$\quad 电网分区域停电% 此行位于页顶，上半截被裁，左侧文字未见
+
+\noindent 用户少\ $R_{\text{并}}\uparrow$\ \unclear{总}\ $I_4\downarrow$\ \ $\Delta U\downarrow$\ \ $U_3\uparrow$\ \ $U_4\uparrow$% “R并↑”与“I_4↓”之间有一个像“△出”的笔画，疑为箭头/“总”
+
+\noindent 智能电网\quad 高峰期使 $n_4\uparrow$\ \ $n_3\downarrow$\ \ $n_2\uparrow$\ \ $n_1\downarrow$
+%%%END
+%%%BLOCK id=032-02 ch=12 sec=自感·含感电路 kind=knowledge alt=13,10 cont=none y=0.10-0.36
+\textbf{含感电路}
+
+\noindent 自感电动势\quad $E=L\dfrac{\Delta I}{\Delta t}$\quad $L$ 与匝数$\uparrow$、粗细$\uparrow$、长度$\uparrow$、铁芯有$\uparrow$无$\downarrow$ 有关\quad 方向：阻碍流过自身电流的变化% 原稿中箭头写在“匝数”“粗细”“长度”“有无”上方
+
+\noindent\hspace*{4em}自感电流方向与原电流：增反减同
+
+\noindent 在直流电路：自感在
+\begin{itemize}
+\item 通电瞬间：$R$ 从 $\infty\to0$\textsuperscript{动态电阻}\quad 注\ 串反并同/串反并\unclear{恒}
+\item 电流稳态：$R_L=0$\textsuperscript{导线}\ or\ $R_L$ 很小$\neq0$
+\item 断电瞬间：$E$ 减小\textsuperscript{动态电源}\quad $I_{\text{自感}}$ \unclear{$\le$} $I_{\text{原}}$
+\end{itemize}
+
+\noindent 自感在交流电阻中\ 视为电阻（感抗）\ $R_L=2\pi Lf$\quad 通直阻交% CHECK: “交流电阻中”疑为“交流电路中”(原稿如此)
+%%%END
+%%%BLOCK id=032-03 ch=10 sec=含容电路 kind=knowledge alt=13 cont=none y=0.36-0.54
+\textbf{含容电路}
+
+\noindent 在直流电路中
+\begin{itemize}
+\item 通电瞬间：充电
+\item 电流稳态：理想电压表（和电容器串联的电阻当导线）
+\item 断电瞬间：\textsuperscript{$Q\downarrow$}动态电源，$E$ 减小
+\end{itemize}
+
+\noindent 在交流电路中：当成电阻（容抗）\ $R_C=\dfrac{1}{2\pi fC}$\quad 通交隔直
+%%%END
+%%%BLOCK id=032-04 ch=13 sec=变压器·动态分析 kind=method alt=10 cont=none y=0.54-0.78
+%FIG p032_b 0.07 0.54 0.465 0.67
+\notefig[0.55]{figures/p032_b.png}
+% 图内标注：左侧为交流电源(~)接变压器原线圈(粗锯齿)，副线圈(细锯齿)并联一个圆圈内带“V”的电表，两根引线向右伸出，副线圈及电表部分被一个大椭圆圈住；椭圆右侧即下列两行字
+\noindent 前无内阻\\
+\unclear{转}满足\ 串反并同% 第二行第一字写得像“转/持”，疑为“都/全”
+
+%FIG p032_c 0.515 0.545 0.735 0.72
+\notefig[0.42]{figures/p032_c.png}
+% 图内标注：大方框内为交流电源(~)、电阻 R、带圆圈电表、变压器线圈、两根引线；方框下方用双向箭头连到等效电路：交流电源(~)、R、带圆圈电表、旁标“R_等效”
+\noindent 前有内阻\\
+全满足\ 串反并同
+
+\noindent 正常\ 恒定电阻无电源内阻\\
+只能用程序法，不能用串反并同
+%%%END
+%%%PAGEEND 32

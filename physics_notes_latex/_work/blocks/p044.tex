@@ -1,0 +1,190 @@
+%%%PAGE 44 rot=0 legibility=good summary=平抛/斜面平抛公式汇总：基本公式与分解(类上抛+匀加速)、①落点时间 ②重力功率 ③离斜面最远 ④S1/S2与v-t图 ⑤轨迹方程 ⑥速偏位偏 ⑦抛上另一斜面(垂直、最短距离、H) ⑧tanθ=tan(α-φ)不单调；无碰撞(平行/切向/相切)
+%%%BLOCK id=044-01 ch=04 sec=平抛运动·基本公式 kind=formula alt=none cont=none y=0.02-0.12
+%FIG p044_a 0.262 0.022 0.535 0.115
+\notefig[0.3]{figures/p044_a.png}
+% 图内标注：斜面(下端标 $\theta$、$\alpha$)，抛体的抛物线轨迹；上端抛出点处 $V_0$(向左箭头)、$V\sin\theta$(向上箭头)，沿斜面 $V\cos\theta$；加速度分解 $g\sin\theta$、$g$(向下箭头)、$g\cos\theta$(斜向下箭头)，轨迹中部有小球及 $\theta$ 标记
+\begin{align*}
+x&=V_0t & V_x&=V_0\\
+y&=\tfrac12gt^2 & V_y&=gt\\
+S&=\sqrt{x^2+y^2} & V&=\sqrt{V_x^2+V_y^2}\\
+\tan\alpha&=\frac{y}{x}=\frac{gt}{2V_0} & \tan\theta&=\frac{V_y}{V_x}=\frac{gt}{V_0}
+\end{align*}
+%%%END
+%%%BLOCK id=044-02 ch=04 sec=平抛运动·基本公式 kind=note alt=none cont=none y=0.02-0.12
+%FIG p044_b 0.64 0.028 0.78 0.08
+\notefig[0.25]{figures/p044_b.png}
+% 图内标注：“类上抛”“匀加速”两行字，左侧一个向左上箭头，另有一条斜向左下箭头由“匀加速”指向左下(指向左侧斜面图)
+%FIG p044_c 0.80 0.025 0.955 0.101
+\notefig[0.25]{figures/p044_c.png}
+% 图内标注：L 形箭头——水平向右箭头旁写“匀速直线”，竖直向下箭头下写“自由落体”
+\noindent $\nwarrow$ 类上抛\quad 匀加速$\swarrow$% 二者在页面右上方，箭头指向左侧斜面图
+
+\noindent $\rightarrow$ 匀速直线\quad $\downarrow$ 自由落体
+
+\noindent \red{抛体\unclear{重}分解}
+
+\noindent \red{平抛\unclear{有}两个直角三角形\ 一个反向延长线}
+
+\noindent \red{斜抛\unclear{有}从顶部的两个平抛}% 以上三行均为红笔；“有”字辨认不清(像“考”)
+%%%END
+%%%BLOCK id=044-03 ch=04 sec=平抛运动·斜面平抛 kind=formula alt=none cont=none y=0.12-0.20
+\textbf{① 落点时间}
+\[
+\tan\theta=\frac{gt}{2V_0}=\frac12\tan\alpha\qquad
+\tan\theta=\frac{\frac12gt^2}{V_0t}\qquad
+t=\frac{2V_0\tan\theta}{g}
+\]
+%%%END
+%%%BLOCK id=044-04 ch=04 sec=平抛运动·重力功率 kind=formula alt=06 cont=none y=0.19-0.26
+\textbf{② 重力功率}
+\[
+\left\{\begin{aligned}
+\bar P_G&=\frac{mgy}{t}=\frac{mg\cdot\frac12gt^2}{t}=\frac12mg^2t\\
+P_G&=mgV\cos\alpha=mgV_y=mg^2t
+\end{aligned}\right.
+\qquad
+\left\{\begin{aligned}
+\bar V&=V_{\frac t2}=\frac{V_0+V}{2}\\
+\bar P&=P_{\frac t2}=\frac{P_0+P}{2}
+\end{aligned}\right.
+\]% 一条细弧线自 mgVcosα 附近向左下延伸至 ③ 的 h 式附近(指示线)
+%%%END
+%%%BLOCK id=044-05 ch=04 sec=平抛运动·斜面平抛 kind=formula alt=none cont=none y=0.25-0.33
+\textbf{③ 离斜面最远}
+\[
+h=\frac{(V_0\sin\theta)^2}{2g\cos\theta}\qquad
+t=\frac{V_0\tan\theta}{g}\qquad
+V_{\parallel}=V_0\cos\theta+g\sin\theta\,t
+\]
+\noindent 半程$\nearrow$% 小字“半程”带箭头，指向 t 式
+%%%END
+%%%BLOCK id=044-06 ch=04 sec=平抛运动·斜面平抛 kind=method alt=01 cont=none y=0.32-0.41
+\textbf{④}
+
+%FIG p044_d 0.095 0.335 0.225 0.39
+\notefig[0.25]{figures/p044_d.png}
+% 图内标注：斜面上方的抛物线轨迹，沿斜面方向分成两段，分别标 1、2，右端标 $S_1$(带向左箭头)
+\noindent $\dfrac{S_1}{S_2}=\dfrac13$\qquad $V_{y_0}=0$
+
+%FIG p044_e 0.51 0.335 0.66 0.395
+\notefig[0.25]{figures/p044_e.png}
+% 图内标注：$V$-$t$ 图像(纵轴 $V$，横轴 $t$)，过原点的直线下三角形按相等时间段分成面积 1、3、5 三块
+\noindent $V_{y_0}\neq0$ 时\quad 若为
+
+%FIG p044_f 0.685 0.34 0.83 0.395
+\notefig[0.25]{figures/p044_f.png}
+% 图内标注：$V$-$t$ 图像(上部为过原点直线下的三角形，分成 1、3 两块；下部为两个相等矩形，各标 $S_0$)
+\noindent \underline{真分数不等式。}% 红线之外为黑笔下划线
+
+\[
+\frac{1+S_0}{3+S_0}>\frac13
+\]
+\[
+\therefore 1>\frac{S_1}{S_2}>\frac13
+\]% 末式下方有波浪线
+%%%END
+%%%BLOCK id=044-07 ch=04 sec=平抛运动·轨迹方程 kind=formula alt=none cont=none y=0.41-0.50
+\textbf{⑤ 轨迹方程}\quad $y=\dfrac{g}{2V_0^2}x^2$\quad (用于联立，建系) 找交点。
+\[
+\left\{\begin{aligned}x&=V_0t\\y&=\tfrac12gt^2\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=044-08 ch=04 sec=平抛运动·偏角 kind=formula alt=none cont=none y=0.50-0.60
+\textbf{⑥ 偏角}
+\[
+\left\{\begin{aligned}
+\tan\theta&=\frac{gt}{V_0}\quad\text{速偏}\\
+\tan\alpha&=\frac{gt}{2V_0}\quad\text{位偏}
+\end{aligned}\right.
+\]
+
+%FIG p044_g 0.46 0.482 0.61 0.545
+\notefig[0.25]{figures/p044_g.png}
+% 图内标注：水平线上两个反向箭头，左边标 $V_1$、右边标 $V_2$，中间竖直虚线；箭头旁标 1(向左)、2(向右)
+\noindent 当 1、2 速度垂直时求 $t$
+\[
+\tan\theta_1\cdot\tan\theta_2=1
+\]
+\[
+\tan\theta_1=\frac{gt}{V_1}\qquad\tan\theta_2=\frac{gt}{V_2}\qquad t=\frac{\sqrt{V_1V_2}}{g}
+\]
+%%%END
+%%%BLOCK id=044-09 ch=04 sec=平抛运动·抛上另一斜面 kind=method alt=06 cont=none y=0.595-0.84
+\textbf{⑦ 抛上另一个斜面}
+
+%FIG p044_h 0.125 0.617 0.255 0.69
+\notefig[0.25]{figures/p044_h.png}
+% 图内标注：$V_0$(水平向右箭头)，抛物线落到斜面上，斜面倾角 $\theta$，落点处速度箭头及夹角 $\varphi$
+\noindent 若垂直，$\tan\varphi=\dfrac{gt}{V_0}=\dfrac{1}{\tan\theta}$
+
+\[
+\bar P=\frac{mgy}{t}=\frac{mg\cdot\frac12gt^2}{t}=\frac{mgV_0\cot\theta}{2}=mgV_y
+\]% CHECK: 末项 mgV_y 与前一项 mgV_0cotθ/2 相差系数 1/2，疑漏写或 V_y 指平均值，照原样转录；“P̄=”之后有一小块被涂白
+
+%FIG p044_i 0.11 0.69 0.275 0.745
+\notefig[0.25]{figures/p044_i.png}
+% 图内标注：$V_0$(水平向右箭头)，斜面倾角 $\theta$，轨迹与斜面“最短距离”处(标“最短距离”并带引线)，速度与斜面夹角 $90^\circ-\theta$
+\[
+\frac{gt}{2V_0}=\tan(90^\circ-\theta)=\frac{1}{\tan\theta}
+\]
+
+%FIG p044_k 0.065 0.752 0.265 0.83
+\notefig[0.25]{figures/p044_k.png}
+% 图内标注：左侧花括号标 $H$(总高度)；$V_0$ 水平向右箭头，抛物线落到倾角 $\theta$ 的斜面上，落点速度方向 $\theta$，虚线辅助线；两条细长弧线由图中两段高度分别指向右侧式中 $V_0t\tan\theta$ 与 $\frac12gt^2$ 的下划线
+\[
+\left\{\begin{aligned}
+H&=\underline{V_0t\tan\theta}+\underline{\tfrac12gt^2}\\
+\frac{1}{\tan\theta}&=\frac{gt}{V_0}
+\end{aligned}\right.
+\qquad V_0=\sqrt{gH}
+\]% CHECK: 由左式联立得 H=(V_0^2/g)(1+cot^2θ/2)，与 V_0=√(gH) 不一致，照原样转录
+%%%END
+%%%BLOCK id=044-10 ch=04 sec=平抛运动·偏角之差(不单调) kind=method alt=none cont=none y=0.70-0.90
+\textbf{⑧}
+
+%FIG p044_j 0.605 0.70 0.75 0.78
+\notefig[0.25]{figures/p044_j.png}
+% 图内标注：斜面(倾角 $\varphi$)，上方箭头轨迹，标 $\alpha$、$\theta$、$\varphi$ 等角，水平虚线
+\[
+\tan\theta=\tan(\alpha-\varphi)=\frac{\tan\alpha-\tan\varphi}{1+\tan\alpha\tan\varphi}
+\]
+\[
+\tan\alpha=2\tan\varphi
+\]
+\[
+\therefore\tan\theta=\frac{1}{2\tan\varphi+\dfrac{1}{\tan\varphi}}
+\]
+
+\noindent 不单调
+%FIG p044_l 0.78 0.803 0.965 0.895
+\notefig[0.25]{figures/p044_l.png}
+% 图内标注：坐标轴(纵轴带箭头)与一条过原点的波形曲线：原点左侧先下凹，右侧上凸后下降，旁写“不单调”
+%%%END
+%%%BLOCK id=044-11 ch=04 sec=平抛运动·无碰撞 kind=method alt=none cont=none y=0.84-0.99
+\noindent 无碰撞 = 速偏 $\Leftrightarrow$ $V\parallel$接触面% “接触面”三字写得较连，辨认为“接触面”
+
+%FIG p044_m 0.09 0.872 0.225 0.95
+\notefig[0.25]{figures/p044_m.png}
+% 图内标注：$\Rightarrow$ 水平箭头，虚线轨迹，到斜面上的小物体(管口)，弯箭头；图下标“平行”
+%FIG p044_n 0.225 0.87 0.385 0.955
+\notefig[0.25]{figures/p044_n.png}
+% 图内标注：“0$\Rightarrow$”水平箭头，虚线轨迹，进入半圆形碗(右上是碗口)，向下箭头及虚线；图下标“切向”
+\noindent 平行\qquad 切向
+
+%FIG p044_o 0.435 0.864 0.605 0.95
+\notefig[0.25]{figures/p044_o.png}
+% 图内标注：$\Rightarrow V_0$ 水平箭头，虚线轨迹落到半圆弧上，圆弧上标 $60^\circ$、$30^\circ$、$120^\circ$(像“160°”)，末端速度箭头 $V$
+\noindent 刚好相切无碰
+
+\[
+\left\{\begin{aligned}
+\tan30^\circ&=\frac{gt}{V_0}\\
+\frac{\sqrt3}{2}R&=V_0t
+\end{aligned}\right.
+\]% CHECK: “R”前分数的分子写得像“3”(根号不明)，按 √3/2 转录
+
+\noindent \struck{$\therefore V_0=3\sqrt5\unit{m/s}$}% 整行被横线划去
+
+\noindent $\Rightarrow V_0$
+%%%END
+%%%PAGEEND 44

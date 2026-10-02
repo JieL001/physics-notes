@@ -1,0 +1,59 @@
+%%%PAGE 144 rot=0 legibility=good summary=卫星几何类习题：最大视角下的速度/周期/角速度之比(10)、由视角和周期算密度(11)、卫星拍摄赤道弧长(12)、摄像机拍摄面积之比(13)
+%%%BLOCK id=144-01 ch=05 sec=卫星几何·张角问题 kind=problem alt=none cont=none y=0.03-0.335
+\begin{problem}[10]
+\textbf{10、}求卫星$V_A:V_B$　　$A,B$与$A,O$间连线间夹角最大为$\theta$
+%FIG p144_a 0.16 0.055 0.34 0.17
+\notefig[0.2]{figures/p144_a.png}
+\begin{solution}
+\[ V=\sqrt{\dfrac{GM}{r}}\qquad T=\sqrt{\dfrac{4\pi r^3}{GM}}\qquad \omega=\sqrt{\dfrac{GM}{r^3}} \] % CHECK: T 式根号内 π 无平方（手写如此，其余处为 4π^2）
+\[ V\propto\dfrac{1}{\sqrt{r}}\qquad \sin\theta=\dfrac{r_B}{r_A} \]
+\[ \dfrac{V_A}{V_B}=\sqrt{\dfrac{r_B}{r_A}}=\sqrt{\sin\theta} \]
+\[ \dfrac{T_A}{T_B}\propto\sqrt{\dfrac{R_B^3}{R_B^3}}=\sqrt{\sin^3\theta}\qquad \dfrac{\omega_A}{\omega_B}\propto\dfrac{\sqrt{R_B^3}}{\sqrt{R_A^3}}=\sqrt{\dfrac{1}{\sin^3\theta}} \] % CHECK: 左式分子下标 A/B 难辨(似 B 涂改自 A)，分母为 R_B^3；且两式结果与 sinθ=r_B/r_A 的推导似互换
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=144-02 ch=05 sec=天体质量密度·张角法 kind=problem alt=none cont=none y=0.335-0.52
+\begin{problem}[11]
+\textbf{11、}
+%FIG p144_b 0.11 0.34 0.30 0.495
+\notefig[0.25]{figures/p144_b.png}
+\begin{solution}
+\[ R=r\sin\dfrac{\theta}{2}\qquad T=\sqrt{\dfrac{4\pi^2r^3}{GM}}\propto r^{\frac{3}{2}}\qquad r\uparrow\ T\uparrow \] % 根号内 r 处有涂改
+\[ \rho=\dfrac{3\pi}{GT^2\left(\sin\dfrac{\theta}{2}\right)^3} \]
+算密度要用周期和张角
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=144-03 ch=05 sec=卫星几何·拍摄赤道弧长 kind=problem alt=none cont=none y=0.52-0.835
+\begin{problem}[12]
+\textbf{12、}某卫星速度\unclear{和}1天内将地面上赤道各处在日照条件下的情况拍下来，卫星在每次通过赤道上空时，卫星上的摄像机应拍摄地面上赤道的\uline{弧长}$S$是多少？% “摄”与“像”之间有一处小的涂改/叠写
+%FIG p144_c 0.115 0.54 0.245 0.64
+\notefig[0.2]{figures/p144_c.png}
+\begin{solution}
+\[ \begin{cases}
+\text{由}\ \dfrac{GMm}{(R+h)^2}=\dfrac{mV^2}{R+h}\\[4pt]
+m_0g=\dfrac{GMm_0}{R^2}
+\end{cases} \]
+\[ \dfrac{GMm}{(R+h)^2}=m\dfrac{4\pi^2}{T'^2}(R+h) \]
+\[ T'=\dfrac{2\pi}{R}\sqrt{\dfrac{(R+h)^3}{g}} \]
+\[ V=\dfrac{R}{R+h}\sqrt{g(R+h)}, \]
+\[ N=\dfrac{T}{T'} \]
+\[ S=\dfrac{2\pi R}{N}=\dfrac{4\pi^2}{T^2}\sqrt{\dfrac{(R+h)^3}{g}} \] % CHECK: 由 S=2πR·T'/T 推得应为 4π^2/T(一次方)，手写为 T^2
+\unclear{…}$\to N$% N 下方有一处小字批注并有箭头指向 N，辨认不清
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=144-04 ch=05 sec=卫星几何·拍摄覆盖面积 kind=problem alt=none cont=none y=0.835-1.00
+\begin{problem}[13]
+\textbf{13、}求摄像机所能拍摄总面积、与地球表面积之比。　$V_{\text{球}}=\dfrac{4}{3}\pi R^3$　$S_{\text{球冠}}=2\pi Rh$
+%FIG p144_d 0.03 0.835 0.27 0.94
+\notefig[0.3]{figures/p144_d.png}
+\begin{solution}
+\[ \cos\alpha=\dfrac{\sqrt{R^2-r^2}}{R} \]
+\[ h=r(1-\cos\alpha) \]
+\[ \text{则}=\dfrac{S-S_0}{S}=\dfrac{4\pi R^2-2\cdot2\pi Rh}{4\pi R^2}=\dfrac{R-h}{R}=1-(1-\cos\alpha)=\cos\alpha \]
+\[ \cos\alpha=\sqrt{1-\left(\dfrac{r}{R}\right)^2}=\sqrt{1-\left(\dfrac{3\pi}{G\rho T^2}\right)^{\frac{2}{3}}} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 144

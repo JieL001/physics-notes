@@ -1,0 +1,45 @@
+% ====== 高中物理笔记 · 公共导言区（所有章节共用，章节文件里只能使用这里定义的宏/环境）======
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{graphicx,xcolor,enumitem,booktabs,multirow,makecell,array,colortbl,diagbox,extarrows}
+\usepackage[normalem]{ulem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,positioning,shapes.geometric,decorations.pathmorphing}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{geometry}
+\geometry{a4paper,left=2.2cm,right=2.2cm,top=2.4cm,bottom=2.4cm}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\setlist{nosep,leftmargin=*,itemsep=2pt}
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=\textendash}
+\setlist[itemize,3]{label=\ensuremath{\ast}}
+
+% ---- 红笔批注 / 辨认不清 / 原稿划去 ----
+\newcommand{\red}[1]{\textcolor{red!75!black}{#1}}
+\newcommand{\unclear}[1]{\textcolor{orange!80!black}{[#1\,\textbf{?}]}}
+\newcommand{\struck}[1]{\sout{#1}}
+
+% ---- 常用数学/物理记号 ----
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\nuc}[3]{{}^{#1}_{#2}\mathrm{#3}}          % 核素：\nuc{238}{92}{U}
+\newcommand{\unit}[1]{\,\mathrm{#1}}                    % 单位：5\unit{m/s}
+\newcommand{\ee}{\mathrm{e}}
+
+% ---- 盒子环境 ----
+\newtcolorbox{keybox}[1][]{breakable,enhanced,colback=yellow!6,colframe=orange!70!black,
+  boxrule=0.6pt,arc=2pt,left=6pt,right=6pt,top=4pt,bottom=4pt,title={#1},fonttitle=\bfseries,
+  attach boxed title to top left={xshift=6pt,yshift=-3mm},boxed title style={colback=orange!70!black,arc=2pt}}
+\newtcolorbox{notebox}[1][注意]{breakable,enhanced,colback=red!4,colframe=red!60!black,
+  boxrule=0.5pt,arc=2pt,left=6pt,right=6pt,top=3pt,bottom=3pt,title={#1},fonttitle=\bfseries\small}
+\newtcolorbox{problem}[1][]{breakable,enhanced,colback=blue!3,colframe=blue!55!black,
+  boxrule=0.6pt,arc=2pt,left=6pt,right=6pt,top=4pt,bottom=4pt,title={例题\ #1},fonttitle=\bfseries}
+\newenvironment{solution}{\par\smallskip\noindent\textbf{解：}\ }{\par\smallskip}
+
+% ---- 手写图片（从原稿裁剪）：\notefig[宽度占行宽比例]{figures/文件名.png} ----
+\newcommand{\notefig}[2][0.6]{\begin{center}\includegraphics[width=#1\linewidth,height=0.45\textheight,keepaspectratio]{#2}\end{center}}
+
+% ---- 文本模式下的特殊符号交给中文字体（①②… ★☆○●■□△）----
+\xeCJKsetcharclass{"2460}{"2473}{1}
+\xeCJKsetcharclass{"25A0}{"25EF}{1}
+\xeCJKsetcharclass{"2605}{"2606}{1}

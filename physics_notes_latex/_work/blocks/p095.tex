@@ -1,0 +1,98 @@
+%%%PAGE 95 rot=0 legibility=good summary=静电场公式与结论汇总（场强电势定义式、三球平衡、电场线与匀强电场、库仑定律与电容公式、粒子偏转、比较大小、电容器移板、连续带电体、等势面性质）
+%%%BLOCK id=095-01 ch=09 sec=静电场·公式汇总 kind=formula alt=none cont=none y=0.05-0.16
+\textbf{静电场}
+
+% “矢量合成”为 E=F/q 上方的小字
+{\small 矢量合成}
+\[
+E=\frac{F}{q}\qquad U=\frac{W}{q}\qquad \varphi_{A}=\varphi_{AO}=\frac{W_{AO}}{q}
+\]
+\[
+U_{AB}=\varphi_{A}-\varphi_{B}\qquad E_{p\text{电}}=\varphi q\qquad W_{AB}+\Delta E_{p\text{电}}=0
+\]
+$U\ \ \varphi\ \ E\ \ W$\ 带正负比大小，代数加和\qquad $W_{AB}=qU_{AB}=q(\varphi_{A}-\varphi_{B})$
+%%%END
+%%%BLOCK id=095-02 ch=09 sec=库仑定律·三球平衡 kind=method alt=none cont=none y=0.16-0.27
+①\ 三球问题\quad 两大夹小\ 两同夹异\ 近小远大
+%FIG p095_a 0.215 0.185 0.385 0.23
+\notefig[0.25]{figures/p095_a.png}
+\begin{align*}
+\frac{kq_{1}q_{2}}{r_{1}^{2}}&=\frac{kq_{1}q_{3}}{(r_{1}+r_{2})^{2}}\\
+\frac{kq_{2}q_{3}}{r_{2}^{2}}&=\frac{kq_{1}q_{3}}{(r_{1}+r_{2})^{2}}
+\end{align*}
+\[
+\frac{\sqrt{q_{1}}}{\sqrt{q_{3}}}=\frac{r_{1}}{r_{2}}\qquad
+\frac{1}{\sqrt{q_{1}}}+\frac{1}{\sqrt{q_{3}}}=\frac{1}{\sqrt{q_{2}}}\qquad
+q_{1}:q_{2}:q_{3}=\left(\frac{r_{1}+r_{2}}{r_{2}}\right)^{2}:1:\left(\frac{r_{1}+r_{2}}{r_{1}}\right)^{2}
+\]
+% CHECK: 最后一项被页边裁切，按 (r1+r2)/r1 转录
+%%%END
+%%%BLOCK id=095-03 ch=09 sec=库仑定律·两球接触后分开 kind=note alt=none cont=none y=0.17-0.20
+两球接触后\ 电荷平分
+%%%END
+%%%BLOCK id=095-04 ch=09 sec=电场线·匀强电场判断 kind=note alt=none cont=none y=0.255-0.29
+电场线平行 必为匀强\struck{磁}电场
+% 原稿“磁”字被涂改，上方补写了“电”
+%%%END
+%%%BLOCK id=095-05 ch=09 sec=静电场·公式汇总 kind=formula alt=none cont=none y=0.29-0.45
+% 左侧大括号；括号左边的页边有被裁切的残字（“…试.”），无法辨认，未转录
+\[
+\left\{\begin{aligned}
+&F_{\text{库}}=\frac{kQq}{r^{2}}\qquad k=9\times10^{9}\unit{N\,m^{2}/C^{2}}\\
+&E=\frac{F}{q}=\frac{kQ}{r^{2}}=\frac{U}{d}\ (\text{匀强})\qquad U=Ed\cos\theta\ (\theta<90^\circ)\qquad U>0\ \text{电压为正数}\\
+&W_{\text{电}}\ \text{与位置有关}\ \text{与路径无关.}\ \text{保守力}\\
+&C=\frac{Q}{U}=\frac{\varepsilon S}{4\pi kd}\quad \text{恒}Q\text{时}\ E=\frac{U}{d}=\frac{Q}{Cd}=\frac{4\pi kQ}{\varepsilon S}\quad \red{\dfrac{4\pi kQ}{\varepsilon S}}\\
+&\text{粒子偏转}\ a=\frac{qU}{md}\quad D=\frac{U_{2}L_{1}^{2}}{4dU_{1}}+\frac{L_{1}L_{2}U_{2}}{2dU_{1}}
+\end{aligned}\right.
+\]
+% 红笔：E 式右边另用红色重写了 4πkQ/(εS)（分数线画成箭头）
+侧移量与偏转电压成正比\quad $y\propto U_{\text{偏}}$
+
+% “正比”二字被圈起，并与右边 y∝U偏 相连
+与加速电压成反比.\quad $y\propto\dfrac{1}{U_{\text{加速}}}$
+%%%END
+%%%BLOCK id=095-06 ch=09 sec=电场·比较大小 kind=method alt=none cont=none y=0.45-0.52
+②\ 比 $E$，$\varphi$\quad $U$\quad $W$\quad $E_{p}$
+
+\unclear{密}大疏小\quad \begin{tabular}[t]{@{}l@{}}顺小\\逆大\end{tabular}\quad $U=Ed$ 正同负反\quad $E_{p}=\varphi q$\quad 电压比=线段比
+%%%END
+%%%BLOCK id=095-07 ch=09 sec=电容器·动态分析 kind=method alt=none cont=none y=0.52-0.65
+③\ 电容器\quad 通电恒$U$\quad 断电恒$Q$ $E$不变.
+
+移板 $\varphi$ 变化\quad
+\fbox{\begin{tabular}{l}
+通电外移 正小负大\ (矛盾关系)\\
+断开电外移，正小负大
+\end{tabular}}
+\quad
+\fbox{外移正小负大，断电接地才\struck{…}变化}
+% 第一个框内第二行末尾有一块被涂白（修正液）的文字；第二个框“才”与“变化”之间有一个被涂黑的字
+%%%END
+%%%BLOCK id=095-08 ch=09 sec=电场线与等势面·性质 kind=knowledge alt=none cont=none y=0.64-0.73
+④\ 连续带电体 $/$ 微元 $/$ 用线电密度 $/$ 面电密度.
+
+电场线$\perp$等势线 $/$ 沿场方向电势降最快 $/$ $\varphi$、$E$ \unclear{同}疏密 电场线 等势线 $/$ $E$ 指向低电势.
+
+匀强 等势面为等差表示\qquad 同一等势面 电场力不做功
+%%%END
+%%%BLOCK id=095-09 ch=09 sec=电势·单调性判断 kind=method alt=none cont=none y=0.73-0.84
+\unclear{⑤}
+%FIG p095_b 0.015 0.73 0.18 0.85
+\notefig[0.25]{figures/p095_b.png}
+从 $C$ 到 $D$、(用求导方法)
+
+电势单调递减
+% “D、”后有一块被涂白的文字
+%%%END
+%%%BLOCK id=095-10 ch=09 sec=等势面·点电荷 kind=knowledge alt=none cont=none y=0.84-0.99
+\unclear{⑥}
+%FIG p095_c 0.105 0.845 0.215 0.92
+\notefig[0.25]{figures/p095_c.png}
+\[
+\left\{\begin{array}{l}
+\text{等距圆环不是等势面}\quad \varphi=\dfrac{kq}{r}\quad r\uparrow\ \varphi\downarrow\\[3ex]
+\text{等势面 间距越往外越大.}
+\end{array}\right.
+\]
+%%%END
+%%%PAGEEND 95

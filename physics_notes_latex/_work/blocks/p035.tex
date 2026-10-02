@@ -1,0 +1,94 @@
+%%%PAGE 35 rot=0 legibility=good summary=板块模型：力作用的最短时间(v-t图面积法)、抽桌布(两段位移关系)、共速与三块问题、板块解题步骤模板、抽桌布鱼未掉求a的条件
+%%%BLOCK id=035-01 ch=03 sec=板块模型·力作用的最短时间 kind=method alt=01 cont=none y=0.06-0.24
+\textbf{力作用的最短时间}
+
+%FIG p035_a 0.085 0.152 0.23 0.20
+\notefig[0.28]{figures/p035_a.png}
+% 图内标注：长板(标“2”)上放物块(标“1”)，物块受向右的 F
+%FIG p035_b 0.31 0.064 0.535 0.226
+\notefig[0.42]{figures/p035_b.png}
+% 图内标注：v-t 图(原稿在标题右侧)，纵轴 V，V_1、V_2，两条过原点的直线及转折，标 a、a_1、a_2，t_1、t_1+t_2，横轴 t；红笔：“S_相1”“S_相2”及两处红圈
+\noindent $S_{\text{相}1}+S_{\text{相}2}=L$\quad $\dfrac12$ 水平\unclear{宽}$\times$铅垂高
+
+\noindent $S_{\text{相}}=\dfrac12(V_2-V_1)(t_1+t_2)$
+%%%END
+%%%BLOCK id=035-02 ch=03 sec=板块模型·抽桌布 kind=method alt=01 cont=none y=0.23-0.45
+\textbf{抽桌布}
+
+%FIG p035_c 0.05 0.275 0.27 0.378
+\notefig[0.4]{figures/p035_c.png}
+% 图内标注：布(标“2”)上放物块 m(标“1”)，M；m 两侧标 L_1、L_2，接触面标 μ_1，F 向右；下方红笔画平行四边形(桌面)，内写 μ_2、“(m与桌)”
+%FIG p035_d 0.295 0.245 0.51 0.368
+\notefig[0.4]{figures/p035_d.png}
+% 图内标注：v-t 图，纵轴 V、V_1、V_2，横轴 t、t_1、t_2；红字“板”“块”“S_1”“S_2”“S_3”，阴影；图上方文字“① 分离，② 1 停下”(“1”原稿像竖线)
+\noindent 图注：① 分离\quad ② 1 停下
+
+\begin{align*}
+S_{\text{板}1}-S_{\text{块}1}&=S_1=L_1\\
+S_2+S_3&=L_2
+\end{align*}
+\[
+a_{\text{块}1}=+\mu_1g\qquad a_{\text{块}2}=-\mu_2g
+\]
+\[
+F-\mu_1mg-f=Ma_{\text{板}}
+\]
+\noindent 若 $L_1=L_2$ 则\quad $\begin{aligned}S_2&=\dfrac{\mu_2}{\mu_1+\mu_2}\cdot\dfrac L2\\[4pt] S_3&=\dfrac{\mu_1}{\mu_1+\mu_2}\cdot\dfrac L2\end{aligned}$
+%%%END
+%%%BLOCK id=035-03 ch=03 sec=板块模型·共速与三块问题 kind=note alt=none cont=none y=0.45-0.49
+\noindent 共速时 $f$ 消失\qquad 三块问题\qquad 板先和重物共速，形成整体后与轻块共速。
+%%%END
+%%%BLOCK id=035-04 ch=03 sec=板块模型·解题步骤 kind=method alt=none cont=none y=0.55-0.80
+\textbf{步骤}
+
+%FIG p035_e 0.085 0.598 0.22 0.65
+\notefig[0.28]{figures/p035_e.png}
+% 图内标注：板(标“2”)上放物块(标“1”)，物块受向右的 F，接触面 μ_1，地面 μ_2，板右端标 L
+\[
+\left\{\begin{array}{@{}l@{\quad}l@{\quad}l@{\quad}l@{\quad}l@{}}
+\text{①} & \text{②} & \text{③} & \text{④} & \\
+a_1= & V_1= & S_1= & V_{\text{相}}= & \text{恰好}\ d=S_1-S_2\ \ V_1=V_2\\
+a_2=\ \cdots & V_2= & S_2= & a_{\text{相}}= & \\
+\multicolumn{5}{@{}l}{S_{\text{相}}=S_1-S_2=L}\\
+t=\ \cdots & & & &
+\end{array}\right.
+\]% ①②③④ 原稿为圈码，写在对应各列上方；“恰好 d=S_1-S_2  V_1=V_2”与第一行同高、位于右侧
+%%%END
+%%%BLOCK id=035-05 ch=03 sec=板块模型·抽桌布 kind=problem alt=01 cont=none y=0.80-1.00
+\begin{problem}
+抽桌布，\unclear{鱼}未掉求 $a$ 条件% “鱼”字不太确定(疑为鱼缸)；“a条件”写在下一行、与图重叠
+
+%FIG p035_g 0.238 0.818 0.37 0.869
+\notefig[0.3]{figures/p035_g.png}
+% 图内标注：平行四边形(桌布)内标 μ_1、“m”小方块、“2”，向右箭头 a，下方标 μ_2
+%FIG p035_f 0.12 0.8615 0.30 0.958
+\notefig[0.36]{figures/p035_f.png}
+% 图内标注：v-t 图，纵轴 V、V_2，旁边“a条件”；两条过原点的直线(较陡的与较缓的标 μ_1 g)，阴影区标 S_2；交点后下降线标 μ_2 g；S_1、S_1'(S_1 后带撇)，横轴 t、t'、t
+\[
+\frac{S_1}{S_1'}=\frac{\mu_2}{\mu_1}
+\]
+\begin{solution}
+\noindent ① $a_1=\mu_1g$
+
+\noindent ② $V_2=at$\qquad $V_1=a_1t$
+
+\noindent\hspace*{2em}$S_2=\dfrac12at^2$\qquad $S_2=\dfrac12a_1t^2$% CHECK: 右式下标写得像 S_2，按上下文似应为 S_1，照原样转录
+
+\noindent \hspace*{1em}布抽走后
+
+\noindent ③ $a_1'=\mu_2g$
+
+\noindent\hspace*{2em}$t'=\dfrac{V_1}{a_1'}$
+
+\noindent\hspace*{2em}$S_1=V_1t'-\dfrac12a_1't'^2$% CHECK: 左端 S_1 原稿无撇(按语境似为 S_1')；“V_1t'”后有一小笔画
+
+\[
+\text{④}\ \left\{\begin{aligned}S_1+S_1'&=\frac L2\\ S_2-S_1&=\frac L2\end{aligned}\right.
+\]
+\[
+S_1=\frac{\mu_2}{\mu_1+\mu_2}\cdot\frac L2\qquad S_1'=\frac{\mu_1}{\mu_1+\mu_2}\cdot\frac L2
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 35

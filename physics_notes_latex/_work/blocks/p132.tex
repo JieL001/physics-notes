@@ -1,0 +1,62 @@
+%%%PAGE 132 rot=0 legibility=good summary=天体密度公式；重要(第一宇宙速度)、合并(Tρ关系)、表面(g∝ρR)三个结论；先表达后正比的比例技巧；两极与赤道测密度
+%%%BLOCK id=132-01 ch=05 sec=天体质量密度 kind=formula alt=none cont=prev y=0.08-0.31
+\textbf{4. 密度}
+\[ \rho=\frac{M}{\frac{4}{3}\pi R^{3}} \]
+
+1. 重要\quad $V_1=\sqrt{\dfrac{gM}{R}}=\sqrt{gR}$ % CHECK: 原稿根号内分子字母形似小写 g（物理上应为 G）
+
+\[
+\text{推导}\
+\left\{\begin{aligned}
+\frac{GMm}{R^{2}}&=\frac{mv^{2}}{R}\ \text{(行星)}\\
+\frac{GMm'}{R^{2}}&=m'g\ \text{(表面)}
+\end{aligned}\right.
+\qquad \therefore\ mg=\frac{mv^{2}}{R}\qquad V=\sqrt{gR}
+\]
+%%%END
+%%%BLOCK id=132-02 ch=05 sec=天体质量密度 kind=formula alt=none cont=none y=0.31-0.55
+2. 合并
+\[
+\left\{\begin{aligned}
+\frac{GMm}{R^{2}}&=\frac{m\,4\pi^{2}R}{T^{2}}\\
+\rho&=\frac{M}{\frac{4}{3}\pi R^{3}}
+\end{aligned}\right.
+\qquad
+T=\sqrt{\frac{4\pi R^{3}}{GM}}=\sqrt{\frac{4\pi^{2}R^{3}}{G\rho\,\frac{4}{3}\pi R^{3}}}=\sqrt{\frac{3\pi}{G\rho}}
+\] % CHECK: 第一个根号内分子原稿为 4πR^3（缺 π 的平方，应为 4π^2R^3）
+
+有3没4\quad $\rho$\,1\;$T$\,2\;(次方)
+
+3. 表面
+\[
+g=\frac{GM}{R^{2}}=\frac{G\rho\,\frac{4}{3}\pi R^{3}}{R^{2}}=\frac{4}{3}\pi G\rho R\propto\rho R
+\]
+\[ \rho=\frac{M}{\frac{4}{3}\pi R^{3}} \]
+%%%END
+%%%BLOCK id=132-03 ch=05 sec=比例法·先表达后正比 kind=method alt=90 cont=none y=0.55-0.76
+4. 先表达后正比\quad 常量都当 1\ $\propto$
+\[
+\begin{array}{cl}
+\text{\unclear{O}} & \propto\ \dfrac{a}{b}\\ \cline{1-1}
+\text{\unclear{O}} & \propto\ \dfrac{a'}{b'}
+\end{array}
+\qquad
+\frac{a}{b}\div\frac{a'}{b'}=\frac{a\div a'}{b\div b'}
+\qquad
+\frac{\dfrac{b}{a}}{\dfrac{d}{c}}=\frac{bc}{ad}
+\]
+\[
+\frac{\dfrac{\text{①}}{\text{②}}}{\dfrac{\text{③}}{\text{④}}}=\frac{\text{①④}}{\text{②③}}
+\qquad \text{中沉两头合}
+\]
+%%%END
+%%%BLOCK id=132-04 ch=05 sec=天体质量密度·两极赤道 kind=derivation alt=none cont=none y=0.76-0.84
+\[
+\begin{aligned}
+\text{两极}\quad mg_0&=\frac{GMm}{R^{2}}=\frac{4}{3}\pi\rho mGR\\
+\text{赤\struck{极}道}\quad mg+\frac{m\,4\pi^{2}R}{T^{2}}&=\frac{GMm}{R^{2}}=\frac{4}{3}\pi\rho mGR\qquad \rho=\frac{3\pi}{GT^{2}}\cdot\frac{g_0}{g_0-g}
+\end{aligned}
+\] % 原稿“赤”后多写了一个被涂改的“极”字，“道”字换行写在下方
+% 页面左侧边缘 y≈0.77 处另有一小段红笔痕迹（疑为背面透字或涂鸦），未转录
+%%%END
+%%%PAGEEND 132

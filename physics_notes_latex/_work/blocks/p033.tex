@@ -1,0 +1,63 @@
+%%%PAGE 33 rot=0 legibility=good summary=轻板模型(M板=0，A/B叠放于轻板上的选项判断)；屋脊形丝带上M、m的相对静止条件；三叠放物体经绳与滑轮连接的板块受力方程
+%%%BLOCK id=033-01 ch=03 sec=板块模型·轻板模型 kind=problem alt=none cont=none y=0.05-0.37
+\textbf{轻板模型}\quad $M_{\text{板}}=0$\quad $F_{\text{合}}=m_{\text{板}}a$\quad $F_{\text{合}}=0\to f_1=f_2$\quad 质小物体\ $M$ 动不动取决于外力大小% 小字“质小物体”写在“M动不动取决于外力大小”上方；原稿此行向右上倾斜
+
+\begin{problem}
+%FIG p033_a 0.08 0.10 0.26 0.175
+\notefig[0.3]{figures/p033_a.png}
+% 图内标注：A(1kg)、B(2kg)、F；A、B 并排放在一块长板上，标 μ_1=0.2(左端)、F_A、2N、一小箭头(←)、B、4N(右端)，板下标 μ_2=0；图上有几处白色涂改斑块
+\begin{solution}
+$f_{B\max}>f_{A\max}=2\unit{N}$\quad B 与板相对静止\quad B 与板等效成一个有质板\ $m=2\unit{kg}$
+
+$\mu m_Ag\ge m_Ba$
+
+$F=(m+2m)a\le3\unit{N}$\quad B 最多受\ $f=2\unit{N}$
+
+\noindent A、\ $F=1\unit{N}$ 时\ 不动，均静止\ $\checkmark$\\
+B、\ $F=4\unit{N}$ 时\ $f_B=2\unit{N}$\ $\checkmark$\\
+C、\ $F=6\unit{N}$ 时\ $a_B=2\unit{m/s^2}$\ $\checkmark$\\
+D、\ $F=1.5\unit{N}$ 时\ $f_A=1\unit{N}$\ $\checkmark$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=033-02 ch=03 sec=斜面·丝带模型 kind=problem alt=none cont=none y=0.39-0.70
+\begin{problem}
+$M>m$
+
+%FIG p033_b 0.055 0.43 0.265 0.50
+\notefig[0.35]{figures/p033_b.png}
+% 图内标注：屋脊形斜面上铺一条丝带，左侧放 M(较大)，右侧放 m(较小)，两侧斜面底角均标 θ，右下标“光滑丝带”(“光滑”二字不太确定)
+\begin{solution}
+\noindent\underline{$M$ 和 $m$ \unclear{与绳带}必相对静止}% 标题带下划线，“和”字后的 m 及“与绳带必”几字辨认不清
+
+\[
+M\left\{\begin{array}{@{}l@{}}
+\mu>\tan\theta\ \ \text{$M$ 带 $m$ 加速，都相对丝带静止}\\[6pt]
+\mu<\tan\theta\ \ \text{$M$ 向左下加速，$m$ 向右下加速，$m$ 与丝带相对滑动}
+\end{array}\right.
+\]
+
+\noindent 使 $M,m$ 与绳带不发生相对滑动，应满足
+\[
+\mu mg\cos\theta\ge f
+\]
+\noindent\hspace*{10em}$\nwarrow$ 共加速时 $f$
+
+\noindent $\mu=\tan\theta$，$m$ 不动，$M$ 下滑\\
+\hspace*{10em}与丝带一起
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=033-03 ch=03 sec=连接体·叠放三物体与滑轮 kind=method alt=none cont=none y=0.77-0.96
+%FIG p033_c 0.40 0.775 0.665 0.88
+\notefig[0.4]{figures/p033_c.png}
+% 图内标注：三个物体叠放，1 在 2 上，2 在 3 上；3 受 F 向左；轻绳绕过右端圆柱(滑轮)，上股连 2、下股连 3，两处均标 T；2、3 间摩擦标 f_2，3 与地面间摩擦标 f_3
+\noindent 1\ 2 共加速，3 加速
+\[
+F-f_3-f_2-2T=m_3a
+\]% CHECK: 图中作用在 3 上的只有一股绳(T)，此处“2T”存疑，照原样转录
+\[
+T-f_2=(m_1+m_2)a.
+\]
+%%%END
+%%%PAGEEND 33

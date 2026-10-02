@@ -1,0 +1,87 @@
+%%%PAGE 64 rot=0 legibility=good summary=动量守恒的四类模型（子弹打木块、物体弹簧、滑块曲面体、滑块滑板）及牛顿运动定律提纲
+%%%BLOCK id=064-01 ch=07 sec=子弹打木块模型 kind=derivation alt=none cont=none y=0.02-0.18
+\textbf{动量守恒的四类模型}
+
+\textbf{子弹打木块 模型}
+%FIG p064_a 0.313 0.027 0.585 0.098
+\notefig[0.4]{figures/p064_a.png}
+% 图中文字：水平面光滑、m、v_0（箭头）、M、d、f
+\textbf{未穿出}
+\begin{align*}
+mv_0&=(M+m)V, & V&=\frac{mv_0}{M+m}\\
+ft&=MV-0, & t&=\frac{Mmv_0}{f(M+m)}\\ % 原稿 ft 之前有一淡痕（疑为背面透字）
+-fx_1&=\tfrac12 mV^2-\tfrac12 mv_0^2, & x_1&=\frac{Mm(M+2m)v_0^2}{2f(M+m)^2}\\ % CHECK: 分子括号内首字母 M/m 难分，按推导读作 M+2m
+fx_2&=\tfrac12 MV^2, & x_2&=\frac{Mm^2v_0^2}{2f(M+m)^2}
+\end{align*}
+\[ \text{进入深度}\quad x_{\text{相对}}=x_1-x_2=\frac{Mmv_0^2}{2f(M+m)} \]
+%%%END
+%%%BLOCK id=064-02 ch=07 sec=子弹打木块模型 kind=formula alt=none cont=none y=0.18-0.28
+% 原稿：自上方“未穿出”推导区右下引出一条弧线并带箭头向下，指向右侧“若子弹穿出速度为 v_1”部分
+\textbf{未穿出}
+\begin{align*}
+mv_0&=(m+M)V\\
+Q_{\text{热}}&=fx_{\text{相对}}=\tfrac12 mv_0^2-\tfrac12(M+m)V^2
+\end{align*}
+\textbf{穿出}
+\begin{align*}
+mv_0&=mv_1+MV_2\\
+Q_{\text{热}}&=fL=\tfrac12 mv_0^2-\tfrac12 mv_1^2-\tfrac12 MV_2^2
+\end{align*}
+%%%END
+%%%BLOCK id=064-03 ch=07 sec=子弹打木块模型 kind=derivation alt=none cont=none y=0.28-0.53
+\textbf{若子弹穿出速度为 $v_1$}
+\begin{align*}
+mv_0&=mv_1+MV_2\\
+V_2&=\frac{m(v_0-v_1)}{M}
+\end{align*}
+\begin{itemize}
+\item 对子弹\quad $W_1=-fx_1=\tfrac12 m(v_1^2-v_0^2)$
+\item $W_2=$ 对块\quad $fx_2=\tfrac12 MV_2^2$
+\end{itemize}
+\[ \therefore\ W_2=\frac{m^2(v_0-v_1)^2}{2M} \]
+\[ Q=fx_1-fx_2=fd. \]
+%%%END
+%%%BLOCK id=064-04 ch=07 sec=弹簧模型 kind=method alt=none cont=none y=0.27-0.41
+\textbf{物体弹簧 模型\quad 双振子}
+%FIG p064_b 0.14 0.306 0.37 0.395
+\notefig[0.3]{figures/p064_b.png}
+% 图中文字：v、t（v-t 图像，两条曲线与若干虚线、竖线）
+\begin{itemize}
+\item 有完弹\quad 有完非弹.
+\item \unclear{共}速为压缩最大\quad 完非弹 % CHECK: 首字形似“失”，按语义读作“共”
+\item 伸开时伸长最大\quad 完弹. % CHECK: “伸开时伸长”字迹潦草，读法存疑
+\end{itemize}
+%%%END
+%%%BLOCK id=064-05 ch=07 sec=滑块曲面体模型 kind=method alt=none cont=none y=0.41-0.54
+\textbf{滑块曲面体 模型}\quad 水平方向动量守恒
+\[ \left\{\begin{array}{l}\text{上去是完非弹}\\[2pt] \text{下去是完弹}\end{array}\right. \]
+%%%END
+%%%BLOCK id=064-06 ch=07 sec=滑块滑板模型 kind=method alt=none cont=none y=0.54-0.66
+\textbf{滑块滑板模型}\quad 地光滑时动量守恒
+\begin{itemize}
+\item 板长够共速为完非弹
+\item 板长不够共速为子弹打木块.
+\end{itemize}
+%%%END
+%%%BLOCK id=064-07 ch=03 sec=牛顿三定律 kind=summary alt=none cont=none y=0.69-0.79
+\textbf{牛顿运动定律}
+\begin{itemize}
+\item 牛顿第一定律\quad 惯性 $\propto m$\quad 有相对性\quad 力是改变物体运动状态的原因 % 原稿“状”字为小字，插写在“态”字上方
+\item 牛顿第二定律\quad $F=ma$\quad 单位制. 物理量和单位不同
+\item 牛顿第三定律\quad 作用力、反作用力. \unclear{换元}. 同性反向等大
+\end{itemize}
+%%%END
+%%%BLOCK id=064-08 ch=03 sec=牛顿三定律 kind=summary alt=none cont=none y=0.80-0.96
+\textbf{对牛一、牛二、牛三定律的理解.}
+\begin{itemize}
+\item $F_{\text{合}}$与$v$同向 加速\quad 反向减速\quad 垂直圆运动 % CHECK: 末三字“垂直圆运动”，可能为“垂直：圆运动”
+\item 惯性的相对性
+  \begin{itemize}
+  \item 铁球、水球、木球类.
+  \end{itemize}
+\item 矢量性\quad 瞬时性\quad 因果性 \quad （其上方有小字注：$a$与$F$）
+\item 同一性\quad 同一物体、统一国际单位
+\item 独立性\quad 每个力产生各自的加速度
+\end{itemize}
+%%%END
+%%%PAGEEND 64

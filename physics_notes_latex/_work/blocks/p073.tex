@@ -1,0 +1,104 @@
+%%%PAGE 73 rot=0 legibility=good summary=光滑斜面下滑时间（等高斜面、同底斜面）、等时圆三种情形、第一宇宙速度与发射速度分类、变轨的离心/向心判据
+%%%BLOCK id=073-01 ch=03 sec=光滑斜面下滑时间 kind=derivation alt=01 cont=none y=0.05-0.30
+% 页面最上方露出的封面（姓名栏）及右上角相邻页的倾斜小字「ρ=1.429 g·L^-1」属杂物/相邻页，未转录
+\textbf{\unclear{光}滑面下滑时间} % CHECK: 首字被页边截断；原稿此处似无「斜」字（应为「光滑斜面下滑时间」）
+
+\textbf{等高斜面}
+
+%FIG p073_a 0.01 0.09 0.165 0.18
+\notefig[0.25]{figures/p073_a.png}
+
+\[
+\left\{\begin{aligned}
+L&=\tfrac{1}{2}at^{2}\\
+a&=g\sin\theta\\
+L&=\frac{h}{\sin\theta}
+\end{aligned}\right.
+\]
+\[
+t=\frac{1}{\sin\theta}\sqrt{\frac{2h}{g}}
+\]
+\[
+t_1>t_2>t_3
+\]
+%%%END
+%%%BLOCK id=073-02 ch=03 sec=光滑斜面下滑时间 kind=derivation alt=01 cont=none y=0.10-0.35
+% 此处原稿无单独标题；图为底边长 d 相同、倾角不同的斜面（图中标 30°、两个 15° 增量），推测为「等底斜面」
+%FIG p073_b 0.38 0.10 0.50 0.195
+\notefig[0.25]{figures/p073_b.png}
+
+\[
+\left\{\begin{aligned}
+L&=\tfrac{1}{2}at^{2}\\
+a&=g\sin\theta\\
+L&=\frac{d}{\cos\theta}
+\end{aligned}\right.
+\]
+\[
+t=\sqrt{\frac{4d}{g\sin 2\theta}}
+\]
+
+%FIG p073_c 0.625 0.24 0.80 0.35
+\notefig[0.3]{figures/p073_c.png}
+
+\[
+t_1=t_3>t_2
+\]
+%%%END
+%%%BLOCK id=073-03 ch=03 sec=等时圆 kind=method alt=01 cont=none y=0.34-0.68
+\textbf{等时圆}
+
+\textbf{同圆周同顶端的斜面}
+
+%FIG p073_d 0.05 0.36 0.22 0.455
+\notefig[0.28]{figures/p073_d.png}
+
+\[
+2R\sin\theta=\tfrac{1}{2}g\sin\theta\,t^{2}
+\]
+\[
+t_1=t_2=t_3
+\]
+
+\textbf{同圆周同底端的斜面}
+
+%FIG p073_e 0.04 0.455 0.21 0.555
+\notefig[0.28]{figures/p073_e.png}
+
+\[
+t_1=t_2=t_3
+\]
+
+\textbf{斜面过公共切点且顶端在圆上}
+
+%FIG p073_f 0.06 0.565 0.225 0.665
+\notefig[0.28]{figures/p073_f.png}
+
+\[
+t_1=t_2=t_3
+\]
+%%%END
+%%%BLOCK id=073-04 ch=05 sec=宇宙速度 kind=knowledge alt=none cont=none y=0.69-0.89
+\textbf{第一宇宙速度}\quad $V_1=\sqrt{\dfrac{GM}{R}}$
+
+对地球卫星\quad $v_1=\sqrt{gR}=7.9\times10^{3}\unit{km/s}$.\quad $T_{\min}=2\pi\sqrt{\dfrac{R}{g}}=85\unit{min}$ % CHECK: 原稿单位写作 km/s，数值 7.9×10^3 应对应 m/s（或 7.9 km/s），按原样转录
+
+\medskip
+\begin{tabular}{@{}ll@{}}
+$V_{\text{发}}=V_1$ & 卫星绕地球做匀速圆周运动 \\
+$V_1<V_{\text{发}}<V_2$ & 卫星绕地球做椭圆运动 \\
+$V_2<V_{\text{发}}<V_3$ & 卫星绕太阳做椭圆运动 \\
+$V_{\text{发}}\ge V_3$ & 卫星飞离太阳系 \\
+\end{tabular}
+%%%END
+%%%BLOCK id=073-05 ch=05 sec=卫星变轨 kind=knowledge alt=none cont=none y=0.89-1.00
+赤道上的物体、待发射的卫星不是卫星\quad $\dfrac{GMm}{r^{2}}\neq\dfrac{mv^{2}}{r}$
+
+$v\uparrow$\quad 离心运动.\quad $v\uparrow$\quad 升轨了
+
+\begin{tabular}{@{}l@{\;}l@{\;\;}p{0.62\linewidth}@{}}
+$v\uparrow$ & $\dfrac{GMm}{r^{2}}<\dfrac{mv^{2}}{r}$ & 离心运动，变为椭圆运动或在较大半径圆轨道上运动 \\[6pt] % CHECK: 第一行分式分母被下一行字迹遮挡，按 r^2 转录
+$v\downarrow$ & $\dfrac{GMm}{r^{2}}>\dfrac{mv^{2}}{r}$ & 向心运动\quad 变为椭圆轨道运动或在较小半径的圆轨道上运动 \\
+\end{tabular}
+%%%END
+%%%PAGEEND 73

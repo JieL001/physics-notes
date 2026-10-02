@@ -1,0 +1,84 @@
+%%%PAGE 196 rot=0 legibility=fair summary=甲乙板块变力冲量动量定理·化学吸附态能量一行·折射色散干涉·恒功率拉导体框电磁感应动能定理
+%%%BLOCK id=196-01 ch=07 sec=动量定理·板块变力冲量 kind=problem alt=03,06 cont=none y=0.00-0.30
+% 原稿此块被一条自页面上方向左下弯曲、末端回钩的大弧线划过，疑似划去，仍照录
+\begin{problem}
+\notefig[0.28]{figures/p196_a.png}
+\begin{solution}
+\begin{align*}
+&F=(M+m)a\\
+&f=\mu Mg=Ma\qquad a=2\unit{m/s^2}\qquad F=6\unit{N}\qquad \struck{t=6\unit{s}}\qquad t=1\unit{s}\\
+&\mu Mg=\frac{M}{M+m}F=\frac{2}{3}F=4 \quad % 分子 $M$ 左侧有一团涂改墨迹
+\end{align*}
+\[
+F=6\unit{N}\qquad t=6\unit{s}\qquad \bar F=\frac{6}{2}\unit{N}=3\unit{N}
+\]
+% CHECK: 此处 $t=6\unit{s}$ 与后文 $t=1\unit{s}$（$\bar F t=3\unit{N\cdot s}$）不一致
+\begin{align*}
+&\underline{v_{\text{甲}}=v_{\text{乙}}=}\ \ \unclear{…}\ I_F=\bar F t=3\unit{N\cdot s}\\
+&\bar F t=(M+m)v\qquad v=1\unit{m/s}\qquad \Delta P_{\text{乙}}=mv=1\unit{kg\cdot m/s}\\
+&I_f=\Delta P_{\text{甲}}=Mv=2\unit{N\cdot s}\\
+&W_{f\text{对甲}}=E_{k\text{甲}}=\tfrac{1}{2}mV^2=\unclear{1\unit{J}} % CHECK: 动能应为 $\tfrac12Mv^2$（$M=2\unit{kg}$）；末项手写形似“U”，按 $1\unit{J}$ 记
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=196-02 ch=99 sec=化学·吸附态相对能量(非物理内容) kind=note alt=none cont=none y=0.31-0.34
+% 与物理无关的化学笔记（含吸附态记号 $*$）；“相对能量”四字为写在 CH$_3$OH$^*$ 上方的小字
+% 此行左下方(y约0.355-0.37,x约0.02-0.06)另有一处小记号(一道竖线加两三道斜线，含义不明，疑似涂鸦)
+CH$_3$OH$^{*}$\textsuperscript{相对能量}\ 不是甲醇的能量\qquad CO$^{*}$\ 能量不是CO能量
+%%%END
+%%%BLOCK id=196-03 ch=15 sec=折射·视深与色散干涉现象 kind=note alt=none cont=none y=0.40-0.44
+鸟看鱼\ 鱼看鸟\ 都偏高\qquad \fbox{彩虹\textsuperscript{折射}\ \ 皂泡\textsuperscript{干涉}}\ $\in$\ 色\struck{彩}散
+% 原稿“折射”“干涉”为写在“彩虹”“皂泡”右上方的小字；“彩虹…干涉”四项被一个椭圆圈起；“色散”中间一字被涂改
+%%%END
+%%%BLOCK id=196-04 ch=01 sec=匀变速·平均速度-时间图像 kind=formula alt=none cont=none y=0.40-0.44
+$\bar v-t\ \Rightarrow\ \dfrac{x}{t}=v_0+\dfrac{1}{2}at$.
+% 原稿 $v_0$ 与 $+$ 之间有一处涂改的墨团，未录
+%%%END
+%%%BLOCK id=196-05 ch=12 sec=电磁感应·恒功率拉框与动能定理 kind=problem alt=03,06 cont=none y=0.43-0.98
+\begin{problem}
+\notefig[0.4]{figures/p196_b.png}
+
+\noindent $m=0.4\unit{kg}$\\
+$R=3\,\Omega$\\
+$L=1\unit{m}$\\
+$\mu=0$\\
+$B=1\unit{T}$
+
+用恒功率为$27\unit{W}$的力拉框，在$1$处$MN$以$V_0$（未知）匀速通过磁场，当$MN$过$2$时，在导体框上再施加一水平向左的外力$F'$，外力大小为$F'=kV$\quad $k=\dfrac{4}{3}\unit{kg\cdot s^{-1}}$，$V$为速度，$L=1\unit{m}$，{\small $t_2=1.4\,t_1$}\ $t_{PQ}$过磁场、$MN$过磁场。
+% “(未知)”为写在 $V_0$ 下方的小字；$t_2=1.4t_1$ 为写在“$t_{PQ}$过磁场”上方的小字
+\par\smallskip
+$V_2=\struck{\dfrac{4}{3}}\,\dfrac{2}{3}V_0$（离开磁场时速度）。
+% 原稿 $V_2$ 后的 $\frac43$ 疑被涂改/划去
+\begin{solution}
+\textbf{由平衡条件}
+\[
+\frac{27}{V_0}=\frac{V_0}{3}\qquad V_0=9\unit{m/s}
+\]
+\hfill {\small 由于减速了合力向左}\par % 小字，其中“速”字下有下划线
+\[
+F_A+F'-F=ma\quad\text{以左为正方向}
+\]
+\[
+a=\frac{B^2L^2V}{mR}+\frac{kV}{m}-\frac{P}{mV}
+\]
+$a$与$v$反向\ 应减速运动\ $a$随之减小，故导体框$PQ$边在磁场% 此行至此为止，原稿未写完
+
+\[
+F_A\propto V\qquad F'\propto V
+\]
+故\ $\dfrac{W_{F'}}{W_A}=\dfrac{F'}{F_A}=\dfrac{kR}{B^2L^2}=4$
+
+由动能定理\quad $W_F-W_{F'}-W_A=\dfrac{1}{2}m\left(\dfrac{2}{3}V_0\right)^2-\dfrac{1}{2}mV_0^2$
+\[
+W_F=P\cdot 1.4\,\frac{L}{V_0}
+\]
+\[
+W_A=2.64\unit{J}
+\]
+导体框产生的焦耳热\ $Q=W_A=2.64\unit{J}$
+% 页面右侧中下部（y约0.87-0.90）有两道波浪形涂画线，非文字，未录
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 196

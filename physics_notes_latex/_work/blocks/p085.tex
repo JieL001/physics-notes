@@ -1,0 +1,103 @@
+%%%PAGE 85 rot=0 legibility=good summary=内力公式(单一外力/双反外力/双同外力)及合成规则；①–⑧八种叠放/连接体情形的内力f_内(或T)公式(含斜面、三物体、两对物体)；⑤附μ1>μ2共减速；⑧附f右与2f左比较判断先滑
+%%%BLOCK id=085-01 ch=99 sec=页边零星·化学 kind=misc alt=none cont=none y=0.02-0.07
+% 页面上缘右侧页眉“No.”旁有零星字迹(与p081、p083上缘相同，疑为化学·气体密度)，照录
+$\rho=1.429\unit{g\cdot L^{-1}}$
+%%%END
+%%%BLOCK id=085-02 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.07-0.23
+\textbf{内力公式}
+
+\begin{align*}
+\text{单一外力}\quad&T=\frac{m_1}{m_1+m_2}F\\[6pt]
+\text{双反外力}\quad&T=\frac{m_1F_2+m_2F_1}{m_1+m_2}\\[6pt]
+\text{双同外力}\quad&T=\frac{|m_1F_2-m_2F_1|}{m_1+m_2}
+\end{align*}
+
+同受的力不用写\quad 独受的力先合成后公式\quad 单体上合成\quad 力在不同物体不合成
+%%%END
+%%%BLOCK id=085-03 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.24-0.32
+① % 原稿图中m_2下标注“μ=0”
+%FIG p085_a 0.07 0.245 0.16 0.315
+\notefig[0.25]{figures/p085_a.png}
+\[
+f_{\text{内}}=\frac{m_2F}{m_1+m_2}
+\]
+%%%END
+%%%BLOCK id=085-04 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.24-0.32
+④
+%FIG p085_d 0.535 0.262 0.655 0.31
+\notefig[0.25]{figures/p085_d.png}
+\[
+f_{\text{内}}=\frac{m_2F_1-m_1\bigl[F_2-\mu(m_1+m_2)g\bigr]}{m_1+m_2}
+\]
+%%%END
+%%%BLOCK id=085-05 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.32-0.41
+② % 原稿图中左侧标有f_地
+%FIG p085_b 0.03 0.33 0.16 0.40
+\notefig[0.25]{figures/p085_b.png}
+\[
+f_{\text{内}}=\frac{\mu(m_1+m_2)gm_1+Fm_2}{m_1+m_2}
+\]
+%%%END
+%%%BLOCK id=085-06 ch=03 sec=连接体·内力公式 kind=formula alt=02 cont=none y=0.32-0.41
+% 斜面上m_1叠在m_2上；图中标μ_1、μ_2；分子中“μ_2mgcosθ”被划去，其上方改写为μ_2(m_1+m_2)g(cosθ)
+%FIG p085_e 0.505 0.325 0.61 0.395
+\notefig[0.25]{figures/p085_e.png}
+\[
+f_{\text{内}}=\frac{m_1g\sin\theta\cdot m_2-\bigl[m_1g\sin\theta-\text{\struck{$\mu_2mg\cos\theta$}}\,\mu_2(m_1+m_2)g\cos\theta\bigr]m_1}{m_1+m_2}
+\]
+%%%END
+%%%BLOCK id=085-07 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.41-0.49
+③ % 原稿图中左侧标有f_地
+%FIG p085_c 0.005 0.415 0.22 0.48
+\notefig[0.3]{figures/p085_c.png}
+\[
+f_{\text{内}}=\frac{m_1\bigl[F-\mu(m_1+m_2)g\bigr]}{m_1+m_2}
+\]
+%%%END
+%%%BLOCK id=085-08 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.41-0.52
+⑤
+%FIG p085_f 0.565 0.414 0.68 0.462
+\notefig[0.25]{figures/p085_f.png}
+\[
+f_{\text{内}}=\frac{m_1\mu_2(m_1+m_2)g}{m_1+m_2}
+\]
+底滑面粗糙
+
+应$<\mu_1m_1g$
+
+故$\mu_1>\mu_2$\ \unclear{共}减速
+%%%END
+%%%BLOCK id=085-09 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.53-0.67
+⑥
+%FIG p085_g 0.04 0.535 0.19 0.61
+\notefig[0.25]{figures/p085_g.png}
+\begin{align*}
+f_{12}&=\frac{\bigl[F_1-\mu(m_1+m_2+m_3)g\bigr](m_2+m_3)-(F_3-F_2)m_1}{m_1+m_2+m_3}\\[8pt]
+f_{23}&=\frac{\bigl[F_1-F_2-\mu(m_1+m_2+m_3)g\bigr]m_3-F_3(m_1+m_2)}{m_1+m_2+m_3}
+\end{align*}
+%%%END
+%%%BLOCK id=085-10 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.67-0.82
+⑦ % 原稿图中m_2、m_1被一小椭圈圈起，整个系统又被一大椭圈圈起
+%FIG p085_h 0.06 0.668 0.275 0.755
+\notefig[0.35]{figures/p085_h.png}
+\[
+T=\frac{(m_1+m_2)F}{m_1+m_2+m_3}
+\]
+\[
+f_{12}=\frac{m_2\bigl[F-\mu(m_1+m_2+m_3)g\bigr]}{m_1+m_2+m_3}
+\]
+%%%END
+%%%BLOCK id=085-11 ch=03 sec=连接体·内力公式 kind=formula alt=none cont=none y=0.82-1.00
+⑧
+%FIG p085_i 0.05 0.805 0.30 0.884
+\notefig[0.35]{figures/p085_i.png}
+\[
+f_{\text{左}}=\frac{2mF}{6m}\qquad\qquad f_{\text{右}}=\frac{4m}{6m}F
+\]
+对$1\,2\,3$\quad $T=\dfrac{3m\cdot\mu mg}{3m+m}$
+
+改\quad $f_{\text{右}}>2f_{\text{左}}$\quad 左先滑\quad $F$到$3f_{\text{左}}$时\quad $C,D$相对\unclear{滑} % 行末被页面右缘截断
+
+$f_{\text{右}}<2f_{\text{左}}$\quad 右先滑\quad $F$到$\dfrac32f_{\text{右}}$时\quad $A,B$相对\unclear{滑} % 行末被页面右缘截断
+%%%END
+%%%PAGEEND 85

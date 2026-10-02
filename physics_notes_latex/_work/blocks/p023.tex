@@ -1,0 +1,80 @@
+%%%PAGE 23 rot=0 legibility=good summary=电磁感应单杆模型：过程/状态/动能三种分析方法(冲量、牛二、动能定理与能量)、电热在串并联电阻中的分配、微积分处理变力冲量、动量定理推导I_A=±BLq=±B²L²x/R=m(v2-v1)
+%%%BLOCK id=023-01 ch=12 sec=单杆模型·分析方法 kind=method alt=none cont=none y=0.075-0.20
+\textbf{单杆}　过程/状态/动能
+\[
+\left\{\begin{aligned}
+F_A\ \text{恒力}\quad&W_A=\pm BILx\\
+F_A\ \text{变力}\quad&\pm W_A
+\end{aligned}\right.
+\]
+冲量：
+\begin{align*}
+I_A&=BIL\cdot\Delta t\quad\text{过程写动\unclear{能}动量}\\
+I_A&=\pm BLq
+\end{align*}
+% CHECK: “过程写动能/动量”处“能”与“量”字迹重叠，疑为把“动能”改成“动量”（动量定理），照原样
+状态写牛二　最大　最小　稳定$\Leftrightarrow a=0$
+%%%END
+%%%BLOCK id=023-02 ch=12 sec=电磁感应·能量 kind=knowledge alt=none cont=none y=0.20-0.31
+\begin{itemize}
+  \item 功和功关系　动能定理
+  \item 功和能关系　动能定理
+% CHECK: 原稿第二行右侧同为“动能定理”（“功”字有蓝色荧光笔涂抹），疑应为“功能关系”，照原样
+  \item 能和能关系　能量守恒
+  \begin{itemize}
+    \item 机械能　机械能定理
+  \end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=023-03 ch=12 sec=电磁感应·电热分配 kind=method alt=10 cont=none y=0.31-0.62
+\textbf{电热/功/功率　分配}
+%FIG p023_a 0.075 0.365 0.215 0.442
+\notefig[0.3]{figures/p023_a.png}
+%FIG p023_b 0.23 0.362 0.35 0.435
+\notefig[0.3]{figures/p023_b.png}
+\begin{center}
+\begin{tabular}{p{0.44\linewidth}p{0.44\linewidth}}
+并联　$Q$与$R$成反比 & 串联　$Q$与$R$成正比\\[2pt]
+$\dfrac{U^2}{R}t$ & $I^2Rt$\\[6pt]
+$Q_1=\dfrac{R_2}{R_1+R_2}Q$ & $Q_1=\dfrac{R_1}{R_1+R_2}Q$\\[8pt]
+$Q_2=\dfrac{R_1}{R_1+R_2}Q$ & $Q_2=Q\dfrac{R_2}{R_1+R_2}$\\[8pt]
+$Q$和其它电阻成正比 & $Q$和自身电阻成正比
+\end{tabular}
+\end{center}
+$P$、$W$ 一样
+%%%END
+%%%BLOCK id=023-04 ch=12 sec=电磁感应·变力冲量(微积分) kind=derivation alt=90 cont=none y=0.62-0.72
+\textbf{微积分}
+\[
+\left\{\begin{aligned}
+&f=kv\\
+&qvB\\
+&\frac{B^2L^2v}{R}
+\end{aligned}\right.
+\qquad a\text{变化的运动}
+\]
+% CHECK: “a变化的运动”首字形似 Q/a，按“a（加速度）变化的运动”转录
+\[
+I=\int f\,\dd t=k\,v\,\dd t=kx
+\]
+% CHECK: 原稿第二个等号后为“k vdt”，无积分号，照原样
+%%%END
+%%%BLOCK id=023-05 ch=12 sec=电磁感应·动量 kind=derivation alt=none cont=none y=0.72-0.99
+\[
+I_A=\pm BLq=\pm\frac{B^2L^2x}{R}=m(v_2-v_1)
+\]
+（$BLq$ 下方标注：）流过导体电荷量\\
+（箭头 $\uparrow$ 指向 $x$，标注：）单杆导棒位移/双杆位移差
+\begin{align*}
+-BIL\,\Delta t&=m\,\Delta v\\
+-BL\,\Delta q&=m\,\Delta v\\
+-\frac{B^2L^2v}{R_{\text{总}}}\,\Delta t&=m\,\Delta v\\
+-\frac{B^2L^2x}{R_{\text{总}}}&=m\,\Delta v
+\end{align*}
+求和：
+\begin{align*}
+-BLq&=m(v_2-v_1)\\
+-\frac{B^2L^2x}{R_{\text{总}}}&=m(v_2-v_1)
+\end{align*}
+%%%END
+%%%PAGEEND 23

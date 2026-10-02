@@ -1,0 +1,100 @@
+%%%PAGE 75 rot=0 legibility=good summary=功能极值：四道杆连接体机械能守恒求极值题（转动杆、靠墙滑落梯子、管内外两球、a-b杆连接体）
+%%%BLOCK id=075-01 ch=06 sec=功能极值·杆连接体 kind=problem alt=none cont=none y=0.06-0.27
+% 页面上方露出的封面及右上角相邻页的倾斜小字（「ρ=1.429 g·L^-1」「…5.72」）属杂物/相邻页，未转录
+\textbf{功能极值}
+
+\begin{problem}[1、]
+%FIG p075_a 0.03 0.08 0.33 0.18
+\notefig[0.4]{figures/p075_a.png}
+\begin{solution}
+\[
+2mg\cdot 2L\sin\theta-3mgL(1-\cos\theta)=\frac{1}{2}\cdot 2m(2V)^{2}+\frac{1}{2}\cdot 3mV^{2}
+\]
+\[
+4\sin\theta+3\cos\theta=5\sin(\theta+37^\circ)\qquad \text{当 }\theta=53^\circ\text{ 时}
+\]
+此时 $V_B=\sqrt{\dfrac{4}{11}gL}$
+
+\medskip
+$V=\omega L$ % CHECK: 手写像「V=WL」，按 ω 转录
+\\
+$h_B=L(1-\cos\theta)$.
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=075-02 ch=06 sec=功能极值·杆连接体 kind=problem alt=04 cont=none y=0.27-0.52
+\begin{problem}[2、]
+%FIG p075_b 0.08 0.275 0.375 0.42
+\notefig[0.35]{figures/p075_b.png}
+起始 $AB$ 与地成 $60^\circ$ 角，$\theta$ 为何值时 $A$ 脱离墙.
+
+$B$ 速度最大时 $A$ 脱离墙
+\begin{solution}
+\[
+mgL(\sin60^\circ-\sin\theta)=\frac{1}{2}m(V_A^{2}+V_B^{2})
+\]
+\[
+V_A\sin\theta=V_B\cos\theta
+\]
+\begin{align*}
+V_B^{2}&=2gL(\sin60^\circ-\sin\theta)\,\frac{1}{1+\cot^{2}\theta}\\
+&=2gL(\sin60^\circ-\sin\theta)\sin^{2}\theta\\
+&=gL(2\sin60^\circ-2\sin\theta)\sin\theta\,\sin\theta
+\end{align*}
+当 $\sin\theta=\dfrac{\sqrt{3}}{3}$ 时 $V_B=\dfrac{\sqrt{\sqrt{3}\,gL}}{3}$ 最大.
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=075-03 ch=06 sec=功能极值·杆连接体 kind=problem alt=04 cont=none y=0.52-0.82
+\begin{problem}[3、]
+%FIG p075_c 0.06 0.53 0.19 0.665
+\notefig[0.2]{figures/p075_c.png}
+$A$ 在管内 $B$ 在管外\quad 扰动后.
+\begin{itemize}
+\item[(1)] 求$A$落地速度
+\item[(2)] $A$机械能最小时，地对$B$支持力
+\item[(3)] 若$m_A=m_B$，$A$机械能最小时 杆与竖直方向夹角的余弦值为
+\end{itemize}
+\begin{solution}
+\textbf{(1)}\quad $m_AgL=\dfrac{1}{2}m_AV_A^{2}$\quad $V_A=\sqrt{2gL}$\quad $V_B=0$
+
+\textbf{(2)}\quad $E_{A\text{机}}+E_{B\text{机}}=m_AgL$
+
+$F_{\text{杆}}=0$ 时 $E_{B\text{机}}$ 最大
+
+$F_{\text{地}}=m_Bg$
+
+%FIG p075_d 0.51 0.71 0.68 0.835
+\notefig[0.18]{figures/p075_d.png}
+
+\textbf{(3)}
+\begin{align*}
+&mgL(1-\cos\theta)=\frac{1}{2}m(V_A^{2}+V_B^{2})\\
+&V_A\cos\theta=V_B\sin\theta\\
+&V_B^{2}=2gL(1-\cos\theta)\cos^{2}\theta\\
+&\phantom{V_B^{2}}=gL(2-2\cos\theta)\cos^{2}\theta
+\end{align*}
+$\cos\theta=\dfrac{2}{3}$ 时 $V_B^{2}=\dfrac{8}{27}gL$ 最大
+
+$E_{A\text{机}}=mgL-\dfrac{1}{2}mV_B^{2}=\dfrac{23}{27}mgL$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=075-04 ch=06 sec=功能极值·杆连接体 kind=problem alt=04 cont=none y=0.80-1.00
+\begin{problem}[4、]
+%FIG p075_e 0.07 0.79 0.26 0.90
+\notefig[0.25]{figures/p075_e.png}
+\begin{solution}
+杆对$b$先做正功后做负功.
+
+对$a$先做负功再做正功.
+
+$a$落地时 $V=\sqrt{2gh}$
+
+$E_{B\text{机}}\,\max=\dfrac{4}{27}mgh$\quad 此时，$a$的加速度为$g$，$F_{\text{杆}}=0$.
+
+$E_{A\text{机}}\,\min=\dfrac{23}{27}mgh$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 75

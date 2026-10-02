@@ -1,0 +1,113 @@
+%%%PAGE 108 rot=0 legibility=good summary=单摆(器材_摆长_等效单摆_周期测量_等效g_周期公式_T^2-L图像_两摆法_单摆作打点计时器)
+%%%BLOCK id=108-01 ch=08 sec=单摆实验 kind=knowledge exp=1 alt=none cont=none y=0.03-0.18
+\textbf{单摆}\quad\textbf{①}\ 器材
+\begin{itemize}
+\item 球：\unclear{密度大}，体积小\quad（$f$小且$m$不太大）
+\item 线：轻/\unclear{刚}/\unclear{优}/\unclear{平}/长、（超过$1\unit{m}$）
+\item 夹子：固定悬点，调节摆长
+\item 秒表：教材实验中\ \fbox{仅有的使用秒表实验}
+\end{itemize}
+%%%END
+%%%BLOCK id=108-02 ch=08 sec=单摆实验 kind=knowledge exp=1 alt=none cont=none y=0.17-0.22
+\textbf{②}\ 摆长\quad $l=\dfrac{d}{2}+l_0$
+%FIG p108_a 0.312 0.181 0.408 0.218
+\notefig[0.25]{figures/p108_a.png}
+摆长$=$半径$+$绳长.
+%%%END
+%%%BLOCK id=108-03 ch=08 sec=等效单摆 kind=knowledge alt=none cont=none y=0.22-0.30
+\textbf{③}\ 等效单摆
+%FIG p108_b 0.158 0.226 0.248 0.293
+\notefig[0.25]{figures/p108_b.png}
+$l=R\sin\theta$
+%FIG p108_c 0.342 0.226 0.43 0.287
+\notefig[0.25]{figures/p108_c.png}
+$l=R-r$
+%%%END
+%%%BLOCK id=108-04 ch=08 sec=单摆实验 kind=method exp=1 alt=none cont=none y=0.30-0.35
+\textbf{④}\ 周期：
+\begin{itemize}
+\item $n$次全振动用时$t$　$T=\dfrac{t}{n}$　\underline{从通过平衡位移开始计次数} % CHECK: 原稿此处写“位移”，疑为“位置”
+\item $n$次过平衡位置　$T=\dfrac{2t}{n-1}$　　坑：从$0$开始数　$T=\dfrac{2t}{n}$
+\end{itemize}
+%%%END
+%%%BLOCK id=108-05 ch=08 sec=等效重力加速度 kind=formula alt=02,03 cont=none y=0.35-0.42
+\textbf{⑤}\ $g$（是等效$g$）
+%FIG p108_d 0.243 0.368 0.306 0.418
+\notefig[0.25]{figures/p108_d.png}
+\[
+\Rightarrow\ g'=\sqrt{g^2+a^2}
+\]
+%FIG p108_e 0.466 0.368 0.549 0.416
+\notefig[0.25]{figures/p108_e.png}
+\[
+a=\sqrt{a_1^2+a_2^2+2a_1a_2}
+\] % CHECK: 图中a1、a2之间标有夹角θ，式中疑缺cosθ，照原样转录
+%%%END
+%%%BLOCK id=108-06 ch=08 sec=单摆周期公式 kind=formula alt=14 cont=none y=0.42-0.49
+\textbf{⑥}
+\[
+T=2\pi\sqrt{\dfrac{L}{g}}\qquad T^2=\dfrac{4\pi^2L}{g}\qquad \boxed{g=\dfrac{4\pi^2L}{T^2}}
+\]
+在圆弧运动时间$=$单摆周期　、弹簧\unclear{弹}的时间用$T=2\pi\sqrt{\dfrac{m}{k}}$　、LC电路充放电时间$T=2\pi\sqrt{LC}$
+%%%END
+%%%BLOCK id=108-07 ch=08 sec=单摆 kind=knowledge alt=03 cont=none y=0.48-0.57
+%FIG p108_f 0.08 0.49 0.2 0.566
+\notefig[0.25]{figures/p108_f.png}
+同时放会相遇在平衡处\\
+$L$　$g$一样　与释放角度无关，
+%FIG p108_g 0.487 0.488 0.607 0.562
+\notefig[0.25]{figures/p108_g.png}
+单摆合力不为$0$　力变加速运动（“加速”二字上方另写有“减速”）\\
+单摆运动没有平衡点.
+%%%END
+%%%BLOCK id=108-08 ch=08 sec=单摆实验 kind=method exp=1 alt=none cont=none y=0.57-0.79
+\textbf{图像变换，}
+%FIG p108_h 0.056 0.612 0.26 0.708
+\notefig[0.3]{figures/p108_h.png}
+\[
+T^2=\dfrac{4\pi^2}{g}L
+\]
+$\pi^2=9.86$\\
+改变摆长求$g$　$\big|$　用斜率求$g$
+%FIG p108_i 0.308 0.598 0.562 0.728
+\notefig[0.3]{figures/p108_i.png}
+\[
+T=2\pi\sqrt{\dfrac{L+R}{g}}
+\]
+\[
+T^2=\dfrac{4\pi^2L}{g}+\dfrac{4\pi^2R}{g}
+\]
+%FIG p108_j 0.54 0.598 0.822 0.762
+\notefig[0.35]{figures/p108_j.png}
+\[
+T=2\pi\sqrt{\dfrac{L+2R}{g}-\dfrac{R}{g}}
+\]
+\[
+T^2=\dfrac{4\pi^2}{g}(L+2R)-\dfrac{4\pi^2}{g}R
+\]
+用纵截距求$k$ % CHECK: 末字像小写k，疑为R（由纵截距求球半径R），存疑
+%%%END
+%%%BLOCK id=108-09 ch=08 sec=单摆实验 kind=method exp=1 alt=none cont=none y=0.79-0.97
+\fbox{两摆法}，剪$\Delta L$，不用测摆长
+%FIG p108_k 0.02 0.866 0.145 0.932
+\notefig[0.25]{figures/p108_k.png}
+\[
+T_1=2\pi\sqrt{\dfrac{L+\Delta L}{g}}\quad\text{①}
+\]
+\[
+T_2=2\pi\sqrt{\dfrac{L}{g}}\quad\text{②}
+\]
+\[
+\text{①}^2-\text{②}^2\qquad g=\dfrac{4\pi^2\Delta L}{T_1^2-T_2^2}
+\]
+%%%END
+%%%BLOCK id=108-10 ch=08 sec=单摆实验 kind=method exp=1 alt=none cont=none y=0.85-0.97
+单摆作打点计时器
+%FIG p108_l 0.457 0.858 0.592 0.968
+\notefig[0.25]{figures/p108_l.png}
+%FIG p108_m 0.6 0.882 0.76 0.927
+\notefig[0.3]{figures/p108_m.png}
+相邻两点　时间间隔\\
+$t=\pi\sqrt{\dfrac{L}{g}}=\dfrac{T}{2}$
+%%%END
+%%%PAGEEND 108

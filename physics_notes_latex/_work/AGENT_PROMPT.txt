@@ -1,0 +1,11 @@
+【转录单元 agent 的提示词模板；把 {PAGES}（如 61、62、63、64、65）、{PREP_ARGS}（如 61 62 63 64 65）、{FILES}（如 p061.tex p062.tex …）换成该单元的内容；用 Agent 工具，subagent_type=general-purpose，不指定 model（继承 Sonnet）】
+
+你是“手写高中物理笔记 → LaTeX”的转录员，负责笔记本全局页码 {PAGES}（共 N 页）。
+
+第一步，在**同一轮**里并行做两件事：
+ (a) 用 Read 工具完整读完规范 C:/Users/PC/Desktop/zuoye/intern/physics_notes_latex/_work/GUIDE.md ——里面有“省调用工作流”、章节分类表、块文件格式、LaTeX 约定、配图写法，必须严格遵守；
+ (b) 用 Bash 运行：python C:/Users/PC/AppData/Local/Temp/claude/C--Users-PC-Desktop-zuoye-intern/4ab7915c-80d6-4141-b5c1-42a845c952d7/scratchpad/tools/prep.py {PREP_ARGS}   （生成看图用的整页图和上下放大图，图上有页面比例坐标尺）。
+
+然后严格按规范 §1 的流程做：逐页（并行 Read 该页三张图 → 立刻用 Write 写出 C:/Users/PC/Desktop/zuoye/intern/physics_notes_latex/_work/blocks/pNNN.tex）→ 所有页写完后一次 crop_batch.py --blocks 裁全部配图并 Read 联系表检查 → 一次 texcheck_all.py 到 ALL OK。
+
+要点：一个字都不能漏、保真不改写；一页里混有多个章节时按块拆开，各打各的 ch；看不清用 \unclear{}；每幅图写 %FIG 行 + \notefig。**推理要简练：看图后直接转录，不要长篇推演物理题的解法或反复核算数值**（保真转录即可，疑点写 % CHECK）。如果发现某页和你已转录的另一页是**同一笔记页的重复拍摄**（内容完全相同），只写 `%%%PAGE 页码 dup=被重复的页码` + `%%%PAGEEND 页码`，不要重复转录。你要产出的文件：{FILES}（都在 blocks 目录下）。不要做第二遍复核（别人负责）。最终回复不超过 5 行（格式见规范 §1 第 5 条）。

@@ -1,0 +1,110 @@
+%%%PAGE 55 rot=0 legibility=good summary=电磁感应双杆（双棒）模型：等宽初速、不等宽初速、等宽恒力、恒力摩擦型、不等宽恒力五种情形的方程与v-t图
+%%%BLOCK id=055-01 ch=12 sec=双棒模型 kind=method alt=none cont=none y=0.03-0.25
+\textbf{双杆}
+
+\begin{itemize}
+\item $V_0$可由其他能量转化而来
+\item 等宽\ 安培力抵消、动量守恒
+\item 双向磁场\ 不抵消、动量不守恒
+\end{itemize}
+% 后两条写在页面右上角
+
+① \textbf{等宽初速}
+
+%FIG p055_a 0.122 0.088 0.268 0.238
+\notefig[0.3]{figures/p055_a.png}
+
+由动量守恒、能量守恒
+\[
+m_1V_{01}+m_2V_{02}=(m_1+m_2)V_{\text{共}}
+\]
+\[
+Q_{\text{电}}+\frac12(m_1+m_2)V_{\text{共}}^2=\frac12m_1V_{01}^2+\frac12m_2V_{02}^2
+\]
+
+%FIG p055_b 0.29 0.166 0.63 0.24
+\notefig[0.6]{figures/p055_b.png}
+%%%END
+%%%BLOCK id=055-02 ch=12 sec=双棒模型 kind=method alt=none cont=none y=0.24-0.51
+② \textbf{不等宽初速}\quad \textbar 电源平衡\textbar\ 单体动量定理\ \textbar 能量守恒\textbar
+% “单体”二字写在“动量定理”上方
+
+%FIG p055_c 0.09 0.25 0.222 0.37
+\notefig[0.25]{figures/p055_c.png}
+
+\[
+\left\{\begin{aligned}
+&BL_1V_1=BL_2V_2 && \text{①}\\
+&-BL_1q=m_1V_1-m_1V_{01} && \text{②}\\
+&BL_2q=m_2V_2-m_2V_{02} && \text{③}\\
+&\tfrac12m_1(V_{01}^2-V_1^2)+\tfrac12m_2(V_{02}^2-V_2^2)=Q_{\text{电}}
+\end{aligned}\right.
+\]
+% 原稿第四式首项 m_1 写作大写 M_1
+$\dfrac{\text{②}}{\text{③}}\quad -\dfrac{L_1}{L_2}=\dfrac{m_1(V_1-V_{01})}{m_2(V_2-V_{02})}$\ 得$V_1$、$V_2$
+
+%FIG p055_d 0.17 0.415 0.36 0.508
+\notefig[0.3]{figures/p055_d.png}
+%%%END
+%%%BLOCK id=055-03 ch=12 sec=双棒模型 kind=method alt=none cont=none y=0.50-0.70
+\textbf{等宽恒力}\quad ③
+
+%FIG p055_e 0.098 0.505 0.2425 0.695
+\notefig[0.3]{figures/p055_e.png}
+
+\[
+\left\{\begin{aligned}
+&F=(m_1+m_2)a\\
+&Ft=m_1V_1+m_2V_2\qquad R=r_1+r_2\\
+&\frac{B^2L^2(V_2-V_1)}{R}=m_1a\ \ \text{隔离1}\ \ \text{或}\ \ F-\frac{B^2L^2(V_2-V_1)}{R}=m_2a
+\end{aligned}\right.
+\]
+% 原稿第一式 (m_1+m_2) 的 m 写作大写 M
+
+$a_1=a_2$后\ $\Delta V$不再改变
+\[
+\Delta V=\frac{F_{\text{安}}(r_1+r_2)}{B^2L^2}\qquad a=\frac{F_{\text{安}}}{m}
+\]
+
+%FIG p055_f 0.24 0.635 0.42 0.72
+\notefig[0.3]{figures/p055_f.png}
+%%%END
+%%%BLOCK id=055-04 ch=12 sec=双棒模型 kind=method alt=none cont=none y=0.69-0.90
+\textbf{恒力摩擦型}\quad ④
+
+%FIG p055_g 0.085 0.695 0.254 0.878
+\notefig[0.3]{figures/p055_g.png}
+
+$f_1=f_2=f$
+
+若 $f<F<2f$\quad 2先变加速后匀速，1一直静止.
+
+若 $F>2f$\quad 2先变加速，1后变加速，最终匀速.
+
+%FIG p055_h 0.30 0.82 0.44 0.895
+\notefig[0.25]{figures/p055_h.png}
+%%%END
+%%%BLOCK id=055-05 ch=12 sec=双棒模型 kind=method alt=none cont=none y=0.87-1.00
+⑤ \textbf{不等宽双棒}\quad 恒力
+
+%FIG p055_i 0.19 0.869 0.322 0.986
+\notefig[0.3]{figures/p055_i.png}
+
+电源平衡
+\[
+e=BL_2V_2-BL_1V_1\qquad \text{对}\,e\,\text{\unclear{求导}}\quad 0=BL_2a_2-BL_1a_1
+\]
+\[
+\frac{a_1}{a_2}=\frac{L_2}{L_1}
+\]
+对2：\ $F-B\dfrac{e}{r_1+r_2}L_2=m_2a_2$
+
+对1：\ $B\dfrac{e}{r_1+r_2}L_1=m_1a_1$
+\[
+\therefore F=\left(\frac{L_2^2}{L_1^2}m_1+m_2\right)a_2=\left(\frac{L_2}{L_1}m_1+m_2\frac{L_1}{L_2}\right)a_1
+\]
+
+%FIG p055_j 0.84 0.86 1.0 0.985
+\notefig[0.25]{figures/p055_j.png}
+%%%END
+%%%PAGEEND 55

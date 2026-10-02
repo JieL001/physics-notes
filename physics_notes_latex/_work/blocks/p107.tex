@@ -1,0 +1,92 @@
+%%%PAGE 107 rot=0 legibility=good summary=机械振动与机械波知识提纲(振动y-t与波动y-x图像要点_多解_波速_波动方程_干涉_衍射_受迫振动与共振)
+%%%BLOCK id=107-01 ch=08 sec=振动图像与波动图像 kind=summary alt=none cont=none y=0.03-0.27
+\textbf{振动}　$y$-$t$　单个质点不同时刻\\
+\hspace*{1em}矢量　周期均为$T$.　能量　周期 $\dfrac{T}{2}$\\
+\hspace*{1em}$v$和$E_k$看斜率　斜率为正速度正　$a\ v\ x$ 图像\\
+\hspace*{1em}势能和$a$看位移　位移为正加速度\unclear{负}　用求导法画\\
+\hspace*{1em}应代入\unclear{数据}建立\unclear{方程}
+\[
+\left\{\begin{aligned}
+y&=A\sin(\omega x+\varphi)\\
+y&=A\sin(\omega t+\varphi)
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+&y\text{-}x\\
+&y\text{-}t
+\end{aligned}
+\]
+\textbf{波动}　$y$-$x$　整体一刻图象
+%FIG p107_c 0.775 0.137 0.84 0.165
+\notefig[0.25]{figures/p107_c.png}
+
+\hspace*{1em}振动方向看传播：同侧法　　起振方向看最后质点起振方\unclear{向}\\
+\hspace*{1em}加速度方向看位移　　两点状态看$y$-$t$
+
+\medskip
+\textbf{①}　$y$-$x$的某质点对应$y$-$t$某时刻
+%FIG p107_a 0.08 0.19 0.44 0.269
+\notefig[0.4]{figures/p107_a.png}
+
+峰对峰　谷对谷　平衡对平衡　　$y$-$t$向右看　$y$-$x$顺\unclear{传播}\\
+上升对下降　下降对上升　　　1对$b$
+%%%END
+%%%BLOCK id=107-02 ch=08 sec=波的多解问题 kind=summary alt=none cont=none y=0.26-0.36
+\textbf{②}　多解.　左右两种可能\\
+空间多解（方向）　时间多解（$n$的选取）
+%FIG p107_b 0.355 0.268 0.485 0.348
+\notefig[0.3]{figures/p107_b.png}
+\[
+\Delta X=\left(n+\dfrac{3}{4}\right)\lambda\quad\text{or}\quad \Delta X=\left(n+\dfrac{1}{4}\right)\lambda
+\]
+\textbf{③}　先传到后振动.
+%%%END
+%%%BLOCK id=107-03 ch=08 sec=振动与波动解题要点 kind=formula alt=none cont=none y=0.36-0.41
+路程　$S=\dfrac{t}{T}\cdot 4A$　$\big|$　\underline{位移}用三角对应法　$\big|$　三角函数找　$\big|$　考虑相长相消（同频波）（波的干涉）$\big|$\\[0.8ex]
+同向　$t=\dfrac{S}{v_1+v_2}$　　反向　$t=\dfrac{S}{|v_1-v_2|}$ % CHECK: 原稿“同向”用v1+v2、“反向”用|v1-v2|，与常识(相向相加、同向相减)相反，照原样转录
+%%%END
+%%%BLOCK id=107-04 ch=08 sec=波速与频率·机械波与电磁波 kind=knowledge alt=14,15 cont=none y=0.40-0.47
+\fbox{机械波}　\underline{$V$只与介质有关}　$\big|$　本子中波速全为$V$（不管任何机械波）\\[1ex]
+\fbox{电磁波}　$f$不变　$\big|$　$V=\dfrac{c}{n}$、颜色不变
+%%%END
+%%%BLOCK id=107-05 ch=08 sec=波动方程 kind=formula alt=none cont=none y=0.47-0.54
+\[
+\text{波动方程}\ \left\{\begin{aligned}
+\text{向右}\quad y&=A\sin\left[\omega\left(t-\dfrac{x}{v}\right)+\varphi\right]\\
+\text{向左}\quad y&=A\sin\left[\omega\left(t+\dfrac{x}{v}\right)+\varphi\right]
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+&y\text{-}t:\ x\text{定}\\
+&y\text{-}x:\ t\text{定}
+\end{aligned}
+\]
+%%%END
+%%%BLOCK id=107-06 ch=08 sec=波的干涉 kind=knowledge alt=15 cont=none y=0.54-0.66
+\fbox{波的干涉}　波程差为
+\[
+\left\{\begin{aligned}
+2n\cdot\dfrac{\lambda}{2}&\quad\text{相长}\quad A_1+A_2\\
+(2n+1)\cdot\dfrac{\lambda}{2}&\quad\text{相消}\quad |A_1-A_2|
+\end{aligned}\right.
+\]
+前提同频波　$f_1=f_2$\\
+看起振　振动方向，步调始终相反\\
+若为反相波则　规律相反　　半波损失$\to$反相波\\[1ex]
+$\Delta X=2n\cdot\dfrac{\lambda}{2}$　$n=0$为最亮纹　$n=1$为第一亮纹…\\[1ex]
+$\Delta X=(2n+1)\dfrac{\lambda}{2}$　第零\unclear{亮}纹 % CHECK: (2n+1)λ/2 应对应暗纹，此处字迹像“亮”，存疑
+%%%END
+%%%BLOCK id=107-07 ch=08 sec=波的衍射 kind=knowledge alt=15 cont=none y=0.63-0.67
+\fbox{波的衍射}　$\lambda\ge$ 或 \unclear{$\approx$} 障碍物尺寸，出现\underline{明暗相间亮条纹}
+%%%END
+%%%BLOCK id=107-08 ch=08 sec=受迫振动与共振 kind=knowledge alt=none cont=none y=0.67-0.78
+\[
+\left\{\begin{aligned}
+&\text{受迫振动}\quad f=f_{\text{力}}\quad\text{共振}\ \bigl(f_{\text{力}}=f_{\text{固有}}\text{时，能量最大}\bigr)\\
+&\text{自由振动}\quad f=f_{\text{固有}}
+\end{aligned}\right.
+\]
+%FIG p107_d 0.58 0.672 0.745 0.775
+\notefig[0.3]{figures/p107_d.png}
+%%%END
+%%%PAGEEND 107

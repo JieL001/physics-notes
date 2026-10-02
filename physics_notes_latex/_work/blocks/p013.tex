@@ -1,0 +1,108 @@
+%%%PAGE 13 rot=0 legibility=good summary=静电场：非质点电荷场强求法（割补/微元/等效替代）、电容器公式与串并联、静电计、二极管、电容器极板移动时带电粒子能否到达下极板（U不变/Q不变）
+%%%BLOCK id=013-01 ch=09 sec=场强·非质点电荷 kind=method alt=none cont=none y=0.04-0.24
+\textbf{非质点电荷}
+
+%FIG p013_a 0.062 0.098 0.148 0.162
+\notefig[0.25]{figures/p013_a.png}
+割补法、微元法\ $\rbrack$\quad $E=\int\Delta E$
+% 手写在“割补法、微元法”右侧有一个竖长的方框括号，指向 E=∫ΔE
+
+$E=E_1+E_2$
+
+$\therefore E_1=E-E_2$
+
+%FIG p013_b 0.48 0.086 0.635 0.176
+\notefig[0.3]{figures/p013_b.png}
+$E_1=E_2$
+
+等效替代法
+%%%END
+%%%BLOCK id=013-02 ch=09 sec=电容器·公式 kind=formula alt=none cont=none y=0.25-0.36
+\[
+\left\{\begin{aligned}
+C&=\frac{Q}{U}=\frac{\varepsilon S}{4\pi kd}\\
+E&=\frac{U}{d}\\
+E&=\frac{Q\cdot 4\pi k}{\varepsilon S}
+\end{aligned}\right.
+\]
+% 下面一行写在第一个公式右侧（大括号之外）
+F\ 法拉\qquad m\ $\mu$\ n\ p\ f\qquad \textcircled{\scriptsize$10^3$}
+%%%END
+%%%BLOCK id=013-03 ch=09 sec=电容器·串并联 kind=formula alt=none cont=none y=0.35-0.51
+\begin{minipage}[t]{0.48\linewidth}
+%FIG p013_c 0.115 0.362 0.23 0.4705
+\notefig[0.95]{figures/p013_c.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+%FIG p013_d 0.27 0.350 0.352 0.476
+\notefig[0.95]{figures/p013_d.png}
+\end{minipage}
+
+\textbf{串}：
+\begin{align*}
+Q&=Q_1=Q_2\\
+U&=U_1+U_2\\
+\frac{1}{C}&=\frac{1}{C_1}+\frac{1}{C_2}
+\end{align*}
+\textbf{并}：
+\begin{align*}
+V&=V_1=V_2 % CHECK: 此行手写字母为 V（其余处写作 U），疑即 U=U_1=U_2
+\\
+Q&=Q_1+Q_2\\
+C&=C_1+C_2
+\end{align*}
+%%%END
+%%%BLOCK id=013-04 ch=09 sec=电容器·静电计 kind=knowledge alt=none cont=none y=0.56-0.61
+静电计：测电势差\quad $\theta\propto U$
+%%%END
+%%%BLOCK id=013-05 ch=10 sec=二极管·电路分析 kind=method alt=none cont=none y=0.61-0.70
+\textbf{二极管}
+
+%FIG p013_e 0.195 0.6305 0.255 0.6645
+\notefig[0.25]{figures/p013_e.png}
+$I\to$\ $\checkmark$\ 导线
+
+$\leftarrow I$\ $\times$\ 断路
+
+化简电路后分析
+%%%END
+%%%BLOCK id=013-06 ch=09 sec=电容器·极板移动与带电粒子 kind=method alt=06 cont=none y=0.70-1.0
+%FIG p013_f 0.03 0.712 0.58 0.829
+\notefig[0.8]{figures/p013_f.png}
+\textbf{左图}：
+\[
+mg(h+d)-qEd=0
+\]
+\[
+qE>mg
+\]
+
+\textbf{U不变}：
+
+中图：
+\begin{align*}
+&mg(h+d)+mgx-qU=\tfrac{1}{2}mv_{\text{末}}^2\\
+&\tfrac{1}{2}mv_{\text{末}}^2>0\quad\text{打到下极板}
+\end{align*}
+右图：
+\begin{align*}
+&mg(h+d)-mgx-qU=\tfrac{1}{2}mv_{\text{末}}^2\\
+&\tfrac{1}{2}mv_{\text{末}}^2<0\quad\therefore\text{到不了下极板}
+\end{align*}
+
+\textbf{Q不变（E不变）}：
+
+中图：
+\begin{align*}
+&mg(h+d)+mgx-qE\cdot d-qEx=\tfrac{1}{2}mv_{\text{末}}^2\\
+&\tfrac{1}{2}mv_{\text{末}}^2=(mg-qE)x<0\\
+&\text{运动不到下极板}
+\end{align*}
+右图：
+\begin{align*}
+&mg(h+d)-mgx-qE(d-x)=\tfrac{1}{2}mv_{\text{末}}^2\\
+&\tfrac{1}{2}mv_{\text{末}}^2=(qE-mg)x>0\\
+&\text{打到下极板}
+\end{align*}
+%%%END
+%%%PAGEEND 13

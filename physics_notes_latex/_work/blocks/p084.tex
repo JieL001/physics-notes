@@ -1,0 +1,59 @@
+%%%PAGE 84 rot=0 legibility=good summary=机车启动方程(V_m、匀加速结束时P=(f+ma)at_加、动能定理、总功)；P-t图；F-1/V、1/V-F、a-1/v图及F=P/V-f；F-V图(恒a→恒P→匀速)的f、a、I_加推导及V_2=2V_1；恒P与恒a的V-t图比较
+%%%BLOCK id=084-01 ch=06 sec=机车启动 kind=derivation alt=03 cont=none y=0.03-0.28
+\textbf{机车启动方程}
+
+% 原稿左侧有大括号括住下列四式
+\[
+\left\{\begin{aligned}
+&V_m=\frac{P}{f}\\[6pt]
+&\frac{P}{at_{\text{加}}}=f+ma\\[6pt]
+&\frac12mV_m^2-\frac12m(at_{\text{加}})^2=P(t-t_{\text{加}})-f\Bigl(S_{\text{总}}-\frac12at_{\text{加}}^{2}\Bigr)\\[6pt]
+&\frac{P(2t-t_{\text{加}})}{2}=fS_{\text{总}}+\frac12mV_m^2
+\end{aligned}\right.
+\]
+%FIG p084_a 0.608 0.095 0.83 0.25
+\notefig[0.3]{figures/p084_a.png}
+$F_{\text{恒定}}$\qquad $F\downarrow\to F=f$
+%%%END
+%%%BLOCK id=084-02 ch=06 sec=机车启动 kind=method alt=03 cont=none y=0.29-0.46
+%FIG p084_b 0.11 0.295 0.37 0.45
+\notefig[0.35]{figures/p084_b.png}
+A$\to$B\quad 恒$a$
+
+B$\to$C\quad 恒$P$
+
+\[
+F=\frac{P}{V}-f
+\]
+%%%END
+%%%BLOCK id=084-03 ch=06 sec=机车启动 kind=method alt=03 cont=none y=0.46-0.59
+%FIG p084_c 0.085 0.462 0.335 0.585
+\notefig[0.3]{figures/p084_c.png}
+%FIG p084_d 0.356 0.462 0.575 0.585
+\notefig[0.28]{figures/p084_d.png}
+\begin{align*}
+&\frac{P}{v}-f=ma\\
+&a=\frac{P}{m}\cdot\frac1v-\frac{f}{m}
+\end{align*}
+%%%END
+%%%BLOCK id=084-04 ch=06 sec=机车启动 kind=derivation alt=03 cont=none y=0.63-0.90
+%FIG p084_e 0.095 0.635 0.30 0.757
+\notefig[0.3]{figures/p084_e.png}
+\[
+f=\frac{F_1V_1}{V_3}\qquad a=\frac{F_1-f}{m}=\frac{F_1-\dfrac{FV_1}{V_2}}{m}
+\]
+% CHECK: 嵌套分式分母笔迹似V_2(按f=F_1V_1/V_3应为V_3)，分子“F”应为F_1，照原样转录
+% 下一式中，两个“=”之间有一弧线箭头，自上一行a的分母m处引下(似表示代入a)
+\[
+I_{\text{加}}=F_1\frac{V_1}{a}=\ \swarrow\ =\frac{mV_1V_3}{V_3-V_1}
+\]
+\[
+F_1V_1=\frac{F_1}{2}V_2\qquad\therefore V_2=2V_1\qquad\text{反比例函数性质}
+\]
+%%%END
+%%%BLOCK id=084-05 ch=06 sec=机车启动 kind=note alt=01 cont=none y=0.92-1.00
+%FIG p084_f 0.08 0.92 0.235 1.0
+\notefig[0.25]{figures/p084_f.png}
+恒$P$比恒$a$走得远\qquad 故走相同距离\ 恒$P$快
+%%%END
+%%%PAGEEND 84

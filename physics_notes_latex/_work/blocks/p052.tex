@@ -1,0 +1,104 @@
+%%%PAGE 52 rot=0 legibility=good summary=电磁感应章节提纲页：楞次定律与右手定则、法拉第定律、自感涡流、动生电动势BLv、电路图像与动力学动量能量问题
+%%%BLOCK id=052-01 ch=12 sec=楞次定律·右手定则 kind=summary alt=none cont=none y=0.03-0.58
+\textbf{电磁感应}
+
+\begin{itemize}
+\item 电磁感应现象、楞次定律
+ \begin{itemize}
+ \item 磁通量：\ $\phi=\vec B\cdot\vec S=B\cdot\underline{S\cos\theta}$，\ $\uparrow$ 垂直于磁场的面积
+ \item 电磁感应现象：\ $\phi$变 $\to U_{\text{感}}$ + 闭合回路 $\to I_{\text{感}}$
+ \item 感应电流方向的判定，\ 楞次定律、右手定则、
+ \end{itemize}
+\end{itemize}
+
+电磁感应现象的理解
+
+楞次定律和右手定则的应用 \quad 增反减同\ 来拒去留
+
+楞次定律的推论的应用 \quad 增缩减扩\ 增反减同、
+
+三定则一定律的综合应用 \quad 安培定则、左手定则、右手定则\ 楞次定则.
+% 原稿此项右侧分两行写：第一行「安培定则、左手定则、」，第二行「右手定则 楞次定则.」（第二行与「二次感应问题」同在一行）
+% CHECK: 原稿写作“楞次定则”，疑为“楞次定律”笔误
+
+二次感应问题 \quad 程序法、倒推法
+%%%END
+%%%BLOCK id=052-02 ch=12 sec=法拉第电磁感应定律 kind=summary alt=none cont=none y=0.57-0.72
+\begin{itemize}
+\item 法拉第电磁感应现象\ 自感、涡流.
+ \begin{itemize}
+ \item 法拉第电磁感应定律 \quad $E=N\dfrac{\Delta\phi}{\Delta t}$
+ \item 自感和\underline{涡流}. \quad $E=NL\dfrac{\Delta I}{\Delta t}$ \quad $L$与线圈大小、形状、圈数\ 铁芯有无\ 有关\quad 单位亨利$H$
+ % CHECK: 自感电动势一般为 E=LΔI/Δt，原稿看起来写成 E=NL ΔI/Δt（多一个 N）
+ \begin{itemize}
+ \item $\uparrow$ 非匀强磁场.
+ \item 锅自身发热，而非加热源，只\unclear{能}用铁锅
+ \item 旋涡状电流 流不出去\ 不能点亮灯泡
+ \end{itemize}
+ \end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=052-03 ch=12 sec=法拉第电磁感应定律 kind=formula alt=none cont=none y=0.69-0.95
+\textbf{法拉第电磁感应定律的理解运用.} $\swarrow$
+% 原稿此处有一箭头(↙)指向下方左侧各组公式
+
+S变：
+\[
+E=n\frac{B\Delta S}{\Delta t}=BLv
+\]
+B变：
+\[
+E=n\frac{\Delta B}{\Delta t}S=nKS
+\]
+BS一起变：
+\[
+E=n\frac{|B_2S_2-B_1S_1|}{\Delta t}
+\]
+\[
+\ne n\frac{\Delta B\,\Delta S}{\Delta t}
+\]
+\[
+q=\bar I\,\Delta t=\frac{\bar E}{R}\Delta t=n\frac{\Delta\phi}{\Delta t\,R}\Delta t
+\]
+\[
+=n\frac{\Delta\phi}{R}
+\]
+%%%END
+%%%BLOCK id=052-04 ch=12 sec=动生电动势·BLv kind=method alt=none cont=none y=0.69-0.90
+\textbf{$E=BLv$的理解及运用}\quad（正交性 $BLv$两两垂直、有效性 $L$、相对性 $v$）
+
+%FIG p052_a 0.65 0.715 0.772 0.763
+\notefig[0.25]{figures/p052_a.png}
+
+$B\perp v$ \quad $L$有效长度 \quad $v_{\text{中}}$、$v$为相对磁场的速度
+
+\[
+v_{\text{中}}=AC\,\text{\unclear{上}}\qquad E=B\cdot AC\cdot\frac{v_A+v_C}{2}
+\]
+\[
+=B\cdot\overline{AC}\cdot\frac{\omega\,\overline{OA}+\omega\,\overline{OC}}{2}
+\]
+% 第一式 v_中 处有涂改（“=”压在 v 与 中 之上）
+%%%END
+%%%BLOCK id=052-05 ch=12 sec=自感·涡流·电磁阻尼与驱动 kind=summary alt=none cont=none y=0.80-0.92
+自感电动势 $\swarrow$ 阻碍原电流变化\quad （延缓）.\ \unclear{原}电流$I$大\ 并联灯闪亮
+% “并”字被涂抹覆盖，其余按原稿读出
+
+自感、涡流，电磁阻尼与电磁驱动，
+
+\begin{tabular}{@{}lll@{}}
+ & 导体动 & 磁场动（棒的滞后性）\\
+感应电流 & 安培力 阻碍 & 安培力 动力\\
+ & 动能$\to$电能$\to$热能 & 磁场能$\to$电能$\to$机械能
+\end{tabular}
+%%%END
+%%%BLOCK id=052-06 ch=12 sec=电路图像·动力学动量能量 kind=summary alt=none cont=none y=0.91-1.00
+电磁感应中的电路与图像问题 \quad 排除法\ 函数法.
+\[
+I=\frac{E}{R+r}\quad U=\frac{RE}{R+r}\quad P=IU\quad Q=I^2Rt\quad q=CU\quad E=BLv=n\frac{\Delta\phi}{\Delta t}=\frac12BL\omega^2=BLv_{\text{\unclear{平}}}
+\]
+% 末项 BLv 右下角的小标记不清，暂读作“平”
+
+电磁感应的动力学、动量、能量问题、三把金钥匙 \quad $q=n\dfrac{\Delta\phi}{R}$
+%%%END
+%%%PAGEEND 52

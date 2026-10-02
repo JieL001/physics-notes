@@ -1,0 +1,62 @@
+%%%PAGE 80 rot=0 legibility=good summary=质心运动定理；弹簧双振子模型（v-t图、一次周期中的极值条件）；恒力F拉A的弹簧板块；撤去F求墙冲量与V_Bmin；m、M系统v-t图；结论：m1与m2不同质量关系的v-t图
+%%%BLOCK id=080-01 ch=07 sec=质心运动定理 kind=knowledge alt=03 cont=none y=0.00-0.06
+% 页顶边距处一行；首行右端被页边裁切，“使质心静止或匀速直线”处字迹残缺，“运动”折到第二行
+\textbf{质心运动定理}\quad 系统受力\quad 质心加速运动\quad $F_{\text{合}}=0$ 使\unclear{质}心\unclear{静止}或匀速直\unclear{线}运动
+%%%END
+%%%BLOCK id=080-02 ch=07 sec=弹簧模型·弹簧双振子 kind=method alt=06 cont=none y=0.06-0.20
+\textbf{弹簧双振子模型}
+
+%FIG p080_a 0.10 0.105 0.265 0.19
+\notefig[0.28]{figures/p080_a.png}
+%FIG p080_b 0.295 0.08 0.48 0.20
+\notefig[0.3]{figures/p080_b.png}
+$a=0$ 时 $V_{\max}$\\
+质心向右匀速直线
+% 句末有一小撇“'”
+%%%END
+%%%BLOCK id=080-03 ch=07 sec=弹簧模型·弹簧双振子 kind=method alt=06 cont=none y=0.18-0.29
+%FIG p080_c 0.09 0.22 0.31 0.27
+\notefig[0.3]{figures/p080_c.png}
+%FIG p080_d 0.30 0.20 0.49 0.28
+\notefig[0.28]{figures/p080_d.png}
+一次周期中\\
+$V_A=V_B$ 时\quad $V_{A\max}$\quad $V_{B\max}$\quad $E_{pT\max}$\quad $E_{\text{机}\max}$\\
+$a_1=a_2$ 时\quad $\Delta V_{\max}$
+% 原稿“V_A=V_B时”一行四项之间只有空格、无标点；E_p 的下标像 T
+%%%END
+%%%BLOCK id=080-04 ch=07 sec=弹簧模型·弹簧双振子 kind=problem alt=06 cont=none y=0.295-0.50
+\begin{problem}
+%FIG p080_e 0.09 0.295 0.32 0.365
+\notefig[0.3]{figures/p080_e.png}
+$W_F=W$ 突然撤 $F$．求 $I_{\text{墙}A}$、$V_A$ $V_{B\min}$
+% CHECK: V_A 后似漏写 max（下文有 V_{A max}），原样转录
+\begin{solution}
+\begin{align*}
+&W=E_p=\tfrac12 m_BV_0^2\qquad\therefore\ V_0=\sqrt{\dfrac{2W}{3m}}\qquad I_{\text{墙}A}=m_BV_0=\sqrt{6mW}\\
+&m_BV_0=m_AV_{A\max}+m_BV_{B\min}\\
+&\tfrac12 m_BV_0^2=\tfrac12 m_AV_{A\max}^2+\tfrac12 m_BV_{B\min}^2\\
+&V_{B\min}=\dfrac{m_B-m_A}{m_B+m_A}V_0=\sqrt{\dfrac{W}{6m}}\qquad V_{A\min}=0
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=080-05 ch=07 sec=弹簧模型·弹簧双振子 kind=method alt=06 cont=none y=0.50-0.65
+$F_1=F_2$\quad $W_{\text{机}}\uparrow$\quad $T=F_1=F_2$ 时 $E_k$ 最大\\
+系统 $M+m$ 动量不为0
+%FIG p080_f 0.04 0.51 0.31 0.63
+\notefig[0.3]{figures/p080_f.png}
+%FIG p080_g 0.31 0.558 0.51 0.65
+\notefig[0.28]{figures/p080_g.png}
+若 $m<M$
+% 图中标注：S_1、F_1、F_2、S_2、μ=0、W_1>0、W_2>0；v-t 图纵轴标 m 与 -M
+%%%END
+%%%BLOCK id=080-06 ch=07 sec=弹簧模型·弹簧双振子 kind=summary alt=none cont=none y=0.69-1.00
+\textbf{结论}
+
+%FIG p080_h 0.03 0.708 0.68 0.83
+\notefig[0.65]{figures/p080_h.png}
+%FIG p080_i 0.025 0.824 0.72 0.988
+\notefig[0.7]{figures/p080_i.png}
+% 图内标注：上方左右两个装置图（左：m_1 带 V_0 向右；右：m_2 带 V_0 向右），各行左图对应左装置、右图对应右装置；行标 ① m_1=m_2（左图下方另标“原压原拉”）、② m_1>m_2、③ m_1<m_2；各曲线分别标 m_1、m_2
+%%%END
+%%%PAGEEND 80

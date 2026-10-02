@@ -1,0 +1,85 @@
+%%%PAGE 26 rot=0 legibility=good summary=恒定电流：电流微观表达式、溶液电流、环形电流、电阻定律与不规则导体电阻、闭合电路欧姆定律、动态电路分析(串反并同)
+% 页首标题：恒定电流
+%%%BLOCK id=026-01 ch=10 sec=电流·微观表达式 kind=method alt=none cont=none y=0.07-0.27
+\textbf{微观求法} $\leftarrow$ 电子数量$=n\cdot$体积\qquad 电子数量$=n\cdot$长度\,($vt$)% “vt”写在“长度”二字正下方
+
+\medskip
+\noindent\begin{tabular}{@{}p{0.23\linewidth}p{0.25\linewidth}p{0.23\linewidth}p{0.25\linewidth}@{}}
+单位体积电子数$n$ & 单位体积电荷量$q$\newline ($q=ne$) & 单位长度电子数$n$ & 单位长度电荷量$q$\newline ($q=ne$) \\[3pt]
+$I=nesv$ & $I=qsv$ & $I=nev$ & $I=qv$ \\
+\end{tabular}
+
+\medskip
+方法：公式、量纲、
+\[
+\left\{\begin{array}{l}
+I=v\cdot\text{单位长度带电量}\;\substack{q\\ ne}\\[6pt]
+I=v\cdot S\cdot\text{单位体积带电量}\;\substack{q\\ ne}
+\end{array}\right.
+\]
+% 手写中 q 与 ne 上下叠写，无分数线
+%%%END
+%%%BLOCK id=026-02 ch=10 sec=电流·溶液电流 kind=knowledge alt=none cont=none y=0.29-0.37
+\textbf{溶液电流}\quad $I$方向\ 正电荷运动方向、负电荷运动反方向
+
+%FIG p026_a 0.05 0.315 0.17 0.365
+\notefig[0.25]{figures/p026_a.png}
+\[
+I=I_A-I_B-I_R=\frac{K4e}{t}+\frac{m3e}{t}-\frac{n2e}{t}
+\]
+% CHECK: 图中离子为 n个A、m个B^{3+}(向左)、K个R^{4+}；I=I_A-I_B-I_R 与右端各项符号、对应关系待核对；K4e 中“4”被笔迹涂改，不太确定
+%%%END
+%%%BLOCK id=026-03 ch=10 sec=电流·环形电流 kind=knowledge alt=none cont=none y=0.38-0.43
+\textbf{环形电流}\quad $I=\dfrac{q}{T}$\quad
+\begin{tabular}[c]{@{}l@{}}载流子电荷量\\ 周期 $T=\dfrac{2\pi}{\omega}$\end{tabular}\quad $ne^-\searrow\oplus$% CHECK: T=2π/ω 手写较潦草；“ne⁻”用弯箭头指向圈加号
+%%%END
+%%%BLOCK id=026-04 ch=10 sec=电阻·电阻定律 kind=formula alt=none cont=none y=0.44-0.52
+\textbf{电阻}\quad $R=\rho\dfrac{L}{S}$ （电流方向）\quad （同种材质）\quad
+$\left\{\begin{array}{l}\text{力学}\ \rho_{\text{\unclear{密度}}}\text{相同}\quad m\propto S\\[4pt] \text{电学}\ \rho_{\text{电阻率}}\text{相同}\quad R\propto\dfrac{1}{S}\end{array}\right.$
+
+拉伸压缩\quad $V$不变\quad $V=SL=\pi r^2L$% “V不变 V=SL=πr²L”下方有波浪线
+%%%END
+%%%BLOCK id=026-05 ch=10 sec=电阻·不规则导体电阻 kind=method alt=none cont=none y=0.52-0.68
+\textbf{不规则导体电阻}：\underline{割补法} / \underline{微元法} / \underline{等效替代法}
+
+导体形状相同 + 电流流向相同 $\to$ 等效电阻相同
+
+%FIG p026_b 0.10 0.575 0.90 0.675
+\notefig[0.8]{figures/p026_b.png}
+% 图内标注自左至右：1Ω；1Ω；1Ω、R并=0.5Ω；R=1Ω；R未知；1Ω、1Ω、R串=2Ω
+%%%END
+%%%BLOCK id=026-06 ch=10 sec=闭合电路欧姆定律 kind=formula alt=none cont=none y=0.69-0.80
+\textbf{闭合电路欧姆定律}（知3求其他）
+\[
+\begin{array}{l}
+E=I(R+r)\\[8pt]
+IR=U_{\text{外}}\ (U)\\[8pt]
+Ir=U_{\text{内}}
+\end{array}
+\quad
+\left\{\begin{array}{l}
+I=\dfrac{E}{R+r}\\[8pt]
+E=U+Ir\\[6pt]
+U=\dfrac{E}{R+r}R
+\end{array}\right.
+\]
+%%%END
+%%%BLOCK id=026-07 ch=10 sec=动态电路分析 kind=method alt=none cont=none y=0.81-0.99
+\textbf{动态电路分析}
+\[
+\left\{\begin{array}{l}
+\text{$E$有内阻/干路有电阻}\quad\text{串反并同}\quad U\,I\,P\\[4pt]
+\text{$E$无内阻}\quad\text{串反并恒}\ \leftarrow\ \text{(和$R$并联部分$U\,I\,P$不变)}\ \text{电源无内阻}
+\end{array}\right.
+\]
+% CHECK: “串反并同/串反并恒”前两字连笔，按物理常识辨为“串反”
+\[
+\left\{\begin{array}{lll}
+R\uparrow & U_R\uparrow & I_R\text{、}P_R\text{都}\downarrow\\[4pt]
+R\uparrow & R_{\text{总}}\uparrow &
+\end{array}\right.
+\]
+% CHECK: I_R、P_R 中第二项下标/字母手写潦草，按 P_R 转录
+\unclear{并}断开\ $R_{\text{开关}}=\infty$\quad \unclear{并}闭合\ $R_{\text{开关}}=0$（导线）
+%%%END
+%%%PAGEEND 26

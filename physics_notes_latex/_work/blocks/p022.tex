@@ -1,0 +1,91 @@
+%%%PAGE 22 rot=0 legibility=good summary=页首为洛伦兹力分解推导动生电动势(接上页“螺旋运动”)；电源串并联；感生电动势与感生电场；感感、感动两类叠加(切恒定B、切变化B)例析
+%%%BLOCK id=022-01 ch=11 sec=洛伦兹力分解·动生电动势 kind=derivation alt=12 cont=prev y=0.00-0.125
+% 页面顶部被截断，图与上方小字不完整
+%FIG p022_a 0.01 0.0 0.205 0.09
+\notefig[0.3]{figures/p022_a.png}
+（图左下标注）$-BV_yqV_x$
+
+非静电力\unclear{做功}
+\[
+\text{电动势}\ E=\frac{BV_xqL}{q}=BLV_x
+\]
+\unclear{总}功　$W_{\text{合}}=0$
+%%%END
+%%%BLOCK id=022-02 ch=12 sec=电源串并联·等效电源 kind=formula alt=10 cont=none y=0.14-0.30
+\textbf{电源串联}
+\begin{align*}
+E_{\text{总}}&=E_1\pm E_2\quad\text{（看方向）}\\
+r_{\text{总}}&=r_1+r_2
+\end{align*}
+\textbf{电源并联}
+%FIG p022_b 0.20 0.21 0.32 0.295
+\notefig[0.25]{figures/p022_b.png}
+\begin{align*}
+E_{\text{总}}&=\max\{E_1,E_2\}\\
+r_{\text{总}}&=\frac{r_1r_2}{r_1+r_2}
+\end{align*}
+% CHECK: 原稿并联“E总”式中 max 写在花括号下方；物理上并联等效电动势一般并非 max{E1,E2}，照原样
+%%%END
+%%%BLOCK id=022-03 ch=12 sec=感生电动势·感应部分当电源 kind=knowledge alt=none cont=none y=0.31-0.42
+\textbf{感生}　感应部分当电源，其余部分为外电路，电源两端电压为路端电压
+\[
+\varepsilon=n\frac{\Delta\Phi}{\Delta t}\qquad
+\Delta\Phi=S\cdot\Delta B\sin\theta\ \Leftarrow\ n\frac{\Delta B}{\Delta t}S\sin\theta\qquad
+\text{BS夹角}
+\]
+（$S$ 下方有箭头 $\uparrow$ 标注：）磁场和线圈的重合面积
+%%%END
+%%%BLOCK id=022-04 ch=12 sec=感生电场·涡旋电场 kind=knowledge alt=none cont=none y=0.43-0.57
+\textbf{感生电场（涡旋电场）}
+
+$B$变 $\to$ $E_{\text{感}}$ 不是 静电场
+\begin{itemize}
+  \item 电场线：闭合同心圆
+  \item $E$方向：和 $I_{\text{感}}$ 一样
+  \item 做功　$W_{\text{电}}=q\varepsilon=q\dfrac{\Delta\Phi}{\Delta t}$
+  \item $E$大小　$qE\cdot2\pi r=W_{\text{电}}=q\varepsilon=q\dfrac{\Delta\Phi}{\Delta t}$
+\end{itemize}
+通过做功算　求出$E$
+%%%END
+%%%BLOCK id=022-05 ch=12 sec=感感·两区域感生叠加 kind=method alt=none cont=none y=0.57-0.66
+\textbf{感感}
+%FIG p022_c 0.17 0.565 0.325 0.65
+\notefig[0.3]{figures/p022_c.png}
+\begin{align*}
+E&=E_1+E_2\\
+E&=n\frac{\Delta B_1}{\Delta t}S_1\sin\theta+n\frac{\Delta B_2}{\Delta t}S_2\sin\theta
+\end{align*}
+%%%END
+%%%BLOCK id=022-06 ch=12 sec=感动·感生与动生叠加 kind=method alt=none cont=none y=0.66-0.99
+\textbf{感动}
+\begin{itemize}
+  \item 切恒定$B$
+%FIG p022_d 0.31 0.672 0.445 0.728
+\notefig[0.3]{figures/p022_d.png}
+\[
+E=|E_1-E_2|\qquad\text{·增顺　}\times\text{增逆}
+\]
+\[
+E=\left|n\frac{\Delta B_1}{\Delta t}S_1\sin\theta-B_2Lv_0\right|
+\]
+  \item 切变化$B$
+%FIG p022_e 0.195 0.735 0.335 0.815
+\notefig[0.3]{figures/p022_e.png}
+%FIG p022_f 0.385 0.738 0.565 0.804
+\notefig[0.3]{figures/p022_f.png}
+\end{itemize}
+假定$B$不变　假设棒不动
+\[
+E_1=BLv_0\qquad E_2=n\frac{\Delta B}{\Delta t}S\sin\theta
+\]
+求 $t_1$ 时刻 $E_{\text{电动势}}$
+\begin{align*}
+E_1&=BLv_0=kt_1Lv_0\\
+E_2&=1\cdot k\cdot Lv_0t_1\cdot1
+\end{align*}
+% CHECK: 原稿 E2=1·k·LV0t1·1，两端的“1”可能是 n=1 与 sinθ=1，也可能是绝对值竖线，照原样按数字1转录
+\[
+E=E_1\pm E_2
+\]
+%%%END
+%%%PAGEEND 22

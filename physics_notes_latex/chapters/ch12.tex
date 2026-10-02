@@ -1,0 +1,1411 @@
+% 本文件由 assemble.py 按 _work/plans/ch12.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{电磁感应}
+\label{ch:12}
+
+\section{磁通量·ΔΦ分类}
+% ---- block 021-01 (原稿第21页) kind=knowledge ----
+\begin{center}
+$\Phi=BS\cos\theta$\\
+无匝数
+\end{center}
+\begin{itemize}
+  \item $S$变　动生　$\Delta\Phi=\Delta S\cdot B\sin\theta$
+  \item $B$变　感生　$\Delta\Phi=S\cdot\Delta B\sin\theta$
+  \item $SB$变　动感　$\Delta\Phi=\Phi_2-\Phi_1$，$\ne\Delta S\,\Delta B\sin\theta$
+  \item $\theta$变　正弦式交流电（平动切割）
+% CHECK: 原稿写“平动切割”，θ变化对应线圈转动切割，疑为笔误；另 Φ=BScosθ 与下面各式 sinθ 中 θ 的含义不同，照原样
+  \item 多磁场叠合　$\Delta\Phi=\Phi_2-\Phi_1$
+\end{itemize}
+\notefig[0.25]{figures/p021_a.png}
+
+
+\section{楞次定律·套住磁铁看抵消}
+% ---- block 021-02 (原稿第21页) kind=method ----
+\textbf{套住磁铁看抵消}
+
+磁感线\unclear{条}，内$=$外
+\notefig[0.3]{figures/p021_b.png}
+管外磁场抵消管内磁场
+
+抵消的多\\
+$\Phi$小
+
+
+\section{动生电动势·单杆平动}
+% ---- block 021-03 (原稿第21页) kind=formula ----
+\[
+\left\{\begin{aligned}
+F_A&=BIL\\
+I&=\frac{E}{R_{\text{总}}}\\
+E&=BLv
+\end{aligned}\right.
+\qquad F_{\text{安}}=\frac{B^2L^2v}{R}\quad\text{动生单杆平动}
+\]
+
+
+\section{电磁感应·电荷量}
+% ---- block 021-04 (原稿第21页) kind=formula ----
+\[
+q=\bar I\,t,\qquad I=\frac{\bar E}{R},\qquad \bar E=n\frac{\Delta\Phi}{\Delta t},\qquad q=n\frac{\Delta\Phi}{R_{\text{总}}}
+\]
+（$q=n\frac{\Delta\Phi}{R_{\text{总}}}$ 中的 $n$ 处有箭头 $\downarrow$ 指向“匝数”）
+
+
+\section{电磁感应·能量}
+% ---- block 021-05 (原稿第21页) kind=formula ----
+\[
+W_{A\text{负}}+W_{\text{电池放电}}=W_{A\text{正}}+Q
+\]
+% CHECK: 下标“负/正”为按字形推测（疑指安培力做负功/正功）
+（“电池放电”项正下方有小注：）(无)\\
+干电池
+
+% ---- block 023-02 (原稿第23页) kind=knowledge ----
+\begin{itemize}
+  \item 功和功关系　动能定理
+  \item 功和能关系　动能定理
+% CHECK: 原稿第二行右侧同为“动能定理”（“功”字有蓝色荧光笔涂抹），疑应为“功能关系”，照原样
+  \item 能和能关系　能量守恒
+  \begin{itemize}
+    \item 机械能　机械能定理
+  \end{itemize}
+\end{itemize}
+
+
+\section{两级线圈·电流变化}
+% ---- block 021-06 (原稿第21页) kind=knowledge ----
+\textbf{两级线圈}
+
+大小：$I_1$ 求导 $I_2$　满足楞次定方向
+% CHECK: 原稿“满足楞次定方向”，疑漏字（楞次定律判方向），照原样
+
+瞬时值：
+\begin{center}
+\begin{tabular}{ll}
+$\sin$ & \unclear{求导}$\;\cos$\\
+$\cos$ & $-\sin$
+\end{tabular}
+\end{center}
+
+
+\section{动生电动势·有效切割长度}
+% ---- block 021-07 (原稿第21页) kind=method ----
+\textbf{动生}
+\notefig[0.3]{figures/p021_c.png}
+\[
+E=B\frac{l}{\sin\theta}\,v\sin\theta
+\]
+\notefig[0.3]{figures/p021_d.png}
+平抛\quad $E=BLv_0$
+
+
+\section{动生电动势·等效电源}
+% ---- block 021-08 (原稿第21页) kind=diagram ----
+% CHECK: 下面两幅图无文字说明，疑为含电源的动生回路（R、r）与电磁流量计/磁流体发电类装置（d）
+\notefig[0.3]{figures/p021_e.png}
+\notefig[0.3]{figures/p021_f.png}
+
+
+\section{电源串并联·等效电源}
+% ---- block 022-02 (原稿第22页) kind=formula ----
+\textbf{电源串联}
+\begin{align*}
+E_{\text{总}}&=E_1\pm E_2\quad\text{（看方向）}\\
+r_{\text{总}}&=r_1+r_2
+\end{align*}
+\textbf{电源并联}
+\notefig[0.25]{figures/p022_b.png}
+\begin{align*}
+E_{\text{总}}&=\max\{E_1,E_2\}\\
+r_{\text{总}}&=\frac{r_1r_2}{r_1+r_2}
+\end{align*}
+% CHECK: 原稿并联“E总”式中 max 写在花括号下方；物理上并联等效电动势一般并非 max{E1,E2}，照原样
+
+
+\section{感生电动势·感应部分当电源}
+% ---- block 022-03 (原稿第22页) kind=knowledge ----
+\textbf{感生}　感应部分当电源，其余部分为外电路，电源两端电压为路端电压
+\[
+\varepsilon=n\frac{\Delta\Phi}{\Delta t}\qquad
+\Delta\Phi=S\cdot\Delta B\sin\theta\ \Leftarrow\ n\frac{\Delta B}{\Delta t}S\sin\theta\qquad
+\text{BS夹角}
+\]
+（$S$ 下方有箭头 $\uparrow$ 标注：）磁场和线圈的重合面积
+
+
+\section{感生电场·涡旋电场}
+% ---- block 022-04 (原稿第22页) kind=knowledge ----
+\textbf{感生电场（涡旋电场）}
+
+$B$变 $\to$ $E_{\text{感}}$ 不是 静电场
+\begin{itemize}
+  \item 电场线：闭合同心圆
+  \item $E$方向：和 $I_{\text{感}}$ 一样
+  \item 做功　$W_{\text{电}}=q\varepsilon=q\dfrac{\Delta\Phi}{\Delta t}$
+  \item $E$大小　$qE\cdot2\pi r=W_{\text{电}}=q\varepsilon=q\dfrac{\Delta\Phi}{\Delta t}$
+\end{itemize}
+通过做功算　求出$E$
+
+
+\section{感感·两区域感生叠加}
+% ---- block 022-05 (原稿第22页) kind=method ----
+\textbf{感感}
+\notefig[0.3]{figures/p022_c.png}
+\begin{align*}
+E&=E_1+E_2\\
+E&=n\frac{\Delta B_1}{\Delta t}S_1\sin\theta+n\frac{\Delta B_2}{\Delta t}S_2\sin\theta
+\end{align*}
+
+
+\section{感动·感生与动生叠加}
+% ---- block 022-06 (原稿第22页) kind=method ----
+\textbf{感动}
+\begin{itemize}
+  \item 切恒定$B$
+\notefig[0.3]{figures/p022_d.png}
+\[
+E=|E_1-E_2|\qquad\text{·增顺　}\times\text{增逆}
+\]
+\[
+E=\left|n\frac{\Delta B_1}{\Delta t}S_1\sin\theta-B_2Lv_0\right|
+\]
+  \item 切变化$B$
+\notefig[0.3]{figures/p022_e.png}
+\notefig[0.3]{figures/p022_f.png}
+\end{itemize}
+假定$B$不变　假设棒不动
+\[
+E_1=BLv_0\qquad E_2=n\frac{\Delta B}{\Delta t}S\sin\theta
+\]
+求 $t_1$ 时刻 $E_{\text{电动势}}$
+\begin{align*}
+E_1&=BLv_0=kt_1Lv_0\\
+E_2&=1\cdot k\cdot Lv_0t_1\cdot1
+\end{align*}
+% CHECK: 原稿 E2=1·k·LV0t1·1，两端的“1”可能是 n=1 与 sinθ=1，也可能是绝对值竖线，照原样按数字1转录
+\[
+E=E_1\pm E_2
+\]
+
+
+\section{单杆模型·分析方法}
+% ---- block 023-01 (原稿第23页) kind=method ----
+\textbf{单杆}　过程/状态/动能
+\[
+\left\{\begin{aligned}
+F_A\ \text{恒力}\quad&W_A=\pm BILx\\
+F_A\ \text{变力}\quad&\pm W_A
+\end{aligned}\right.
+\]
+冲量：
+\begin{align*}
+I_A&=BIL\cdot\Delta t\quad\text{过程写动\unclear{能}动量}\\
+I_A&=\pm BLq
+\end{align*}
+% CHECK: “过程写动能/动量”处“能”与“量”字迹重叠，疑为把“动能”改成“动量”（动量定理），照原样
+状态写牛二　最大　最小　稳定$\Leftrightarrow a=0$
+
+
+\section{电磁感应·电热分配}
+% ---- block 023-03 (原稿第23页) kind=method ----
+\textbf{电热/功/功率　分配}
+\notefig[0.3]{figures/p023_a.png}
+\notefig[0.3]{figures/p023_b.png}
+\begin{center}
+\begin{tabular}{p{0.44\linewidth}p{0.44\linewidth}}
+并联　$Q$与$R$成反比 & 串联　$Q$与$R$成正比\\[2pt]
+$\dfrac{U^2}{R}t$ & $I^2Rt$\\[6pt]
+$Q_1=\dfrac{R_2}{R_1+R_2}Q$ & $Q_1=\dfrac{R_1}{R_1+R_2}Q$\\[8pt]
+$Q_2=\dfrac{R_1}{R_1+R_2}Q$ & $Q_2=Q\dfrac{R_2}{R_1+R_2}$\\[8pt]
+$Q$和其它电阻成正比 & $Q$和自身电阻成正比
+\end{tabular}
+\end{center}
+$P$、$W$ 一样
+
+
+\section{电磁感应·变力冲量(微积分)}
+% ---- block 023-04 (原稿第23页) kind=derivation ----
+\textbf{微积分}
+\[
+\left\{\begin{aligned}
+&f=kv\\
+&qvB\\
+&\frac{B^2L^2v}{R}
+\end{aligned}\right.
+\qquad a\text{变化的运动}
+\]
+% CHECK: “a变化的运动”首字形似 Q/a，按“a（加速度）变化的运动”转录
+\[
+I=\int f\,\dd t=k\,v\,\dd t=kx
+\]
+% CHECK: 原稿第二个等号后为“k vdt”，无积分号，照原样
+
+
+\section{电磁感应·动量}
+% ---- block 023-05 (原稿第23页) kind=derivation ----
+\[
+I_A=\pm BLq=\pm\frac{B^2L^2x}{R}=m(v_2-v_1)
+\]
+（$BLq$ 下方标注：）流过导体电荷量\\
+（箭头 $\uparrow$ 指向 $x$，标注：）单杆导棒位移/双杆位移差
+\begin{align*}
+-BIL\,\Delta t&=m\,\Delta v\\
+-BL\,\Delta q&=m\,\Delta v\\
+-\frac{B^2L^2v}{R_{\text{总}}}\,\Delta t&=m\,\Delta v\\
+-\frac{B^2L^2x}{R_{\text{总}}}&=m\,\Delta v
+\end{align*}
+求和：
+\begin{align*}
+-BLq&=m(v_2-v_1)\\
+-\frac{B^2L^2x}{R_{\text{总}}}&=m(v_2-v_1)
+\end{align*}
+
+
+\section{单杆模型·动源}
+% ---- block 024-01 (原稿第24页) kind=method ----
+\textbf{动源}
+\notefig[0.3]{figures/p024_a.png}
+\[
+I=\frac{E-BLv}{R+r}\qquad\text{最终}\ E=BLv\quad I=0\quad\text{导棒匀速}\quad v=\frac{E}{BL}
+\]
+
+
+\section{单杆模型·动容}
+% ---- block 024-02 (原稿第24页) kind=method ----
+\textbf{动容}　\textbf{恒力充电型}
+\notefig[0.3]{figures/p024_b.png}
+\begin{align*}
+F-BIL&=ma\\
+F-B\frac{\Delta Q}{\Delta t}L&=ma\\
+\Delta Q&=C\,\Delta U=C\,\Delta(BLv)=CBL\,\Delta v\\
+F-BCBL^{2}a&=ma\\
+a&=\frac{F}{m+CB^2L^2}\ \text{定值}\quad\text{匀加速直线运动}
+\end{align*}
+% 原稿“匀加速直线运动”下有波浪线下划线
+
+% ---- block 024-03 (原稿第24页) kind=method ----
+\textbf{初速充电型}
+\notefig[0.4]{figures/p024_c.png}
+最终 $I=0$　导棒匀速　流过导棒电荷量 $\Delta Q=Q$
+\[
+\left\{\begin{aligned}
+-BLQ&=mv-mv_0\\
+\frac{Q}{C}=U&=BLv
+\end{aligned}\right.
+\quad\Rightarrow\quad Q,\ v,\ U
+\]
+\[
+mv_0=(m+CB^2L^2)v\qquad v=\frac{mv_0}{m+CB^2L^2}
+\]
+% CHECK: 原稿“mv0=(m+CB²L²)v”右括号缺失，按其意补全
+
+% ---- block 024-04 (原稿第24页) kind=method ----
+\textbf{含容放电}
+\notefig[0.4]{figures/p024_d.png}
+\[
+\overset{\downarrow}{I}=\frac{\overset{\downarrow}{U}-\overset{\uparrow}{BLv}}{R}
+\]
+最后　$I=0$ 后　导棒匀速　$F_A=0$
+\[
+\left\{\begin{aligned}
++BL(Q_0-Q)&=mv-0\\
+\frac{Q}{C}=U&=BLv
+\end{aligned}\right.
+\quad\Rightarrow\quad Q,\ v,\ U
+\]
+
+% ---- block 024-05 (原稿第24页) kind=method ----
+不充电不放电型　电容器为理想电压表　$Q=CU$
+
+
+\section{涡流·动生涡流}
+% ---- block 024-06 (原稿第24页) kind=method ----
+\textbf{动生涡流}
+\begin{itemize}
+  \item 有$B$位置　相当于电源
+  \item 无$B$位置　相当于外电路
+\end{itemize}
+\notefig[0.25]{figures/p024_e.png}
+实心圆盘
+
+有$E$　无$I$　无$Q$
+
+无电磁阻尼 $\to$ 不减速(匀速)
+\notefig[0.25]{figures/p024_f.png}
+有$E$，有$I$　有$Q$
+
+有电磁阻尼 $\to$ 减速
+\notefig[0.3]{figures/p024_g.png}
+$\downarrow$ 不能使灯泡亮，电流流不出来
+
+有$E$　$I$　$Q$　涡流
+
+有电磁阻尼 $\to$ 减速
+
+
+\section{涡流·感生涡流}
+% ---- block 024-07 (原稿第24页) kind=knowledge ----
+% 页面底部被截断，立方体图不完整
+\textbf{感生涡流}
+
+无\unclear{数}层、闭合\unclear{电路}
+
+类似滑动摩擦力
+\notefig[0.25]{figures/p024_h.png}
+
+
+\section{涡流·利用与防止}
+% ---- block 024-08 (原稿第24页) kind=knowledge ----
+利用涡流
+\begin{itemize}
+  \item 热效应：电磁炉(金属锅、真空冶炼钢)
+  \item 磁效应：金属探测仪、探伤、扫雷
+\end{itemize}
+防止涡流：变压器铁芯：采用电阻率大的硅钢片
+
+
+\section{涡流·电磁阻尼}
+% ---- block 025-01 (原稿第25页) kind=knowledge ----
+\textbf{电磁阻尼}
+
+导体动，磁场动　都有阻碍相对运动现象
+
+
+\section{涡流·电磁驱动}
+% ---- block 025-02 (原稿第25页) kind=knowledge ----
+\textbf{电磁驱动}
+
+磁体/导体　一个先转，产生涡流　从而带动另一个转动（滞后、后慢）
+
+
+\section{自感·含感电路}
+% ---- block 032-02 (原稿第32页) kind=knowledge ----
+\textbf{含感电路}
+
+\noindent 自感电动势\quad $E=L\dfrac{\Delta I}{\Delta t}$\quad $L$ 与匝数$\uparrow$、粗细$\uparrow$、长度$\uparrow$、铁芯有$\uparrow$无$\downarrow$ 有关\quad 方向：阻碍流过自身电流的变化% 原稿中箭头写在“匝数”“粗细”“长度”“有无”上方
+
+\noindent\hspace*{4em}自感电流方向与原电流：增反减同
+
+\noindent 在直流电路：自感在
+\begin{itemize}
+\item 通电瞬间：$R$ 从 $\infty\to0$\textsuperscript{动态电阻}\quad 注\ 串反并同/串反并\unclear{恒}
+\item 电流稳态：$R_L=0$\textsuperscript{导线}\ or\ $R_L$ 很小$\neq0$
+\item 断电瞬间：$E$ 减小\textsuperscript{动态电源}\quad $I_{\text{自感}}$ \unclear{$\le$} $I_{\text{原}}$
+\end{itemize}
+
+\noindent 自感在交流电阻中\ 视为电阻（感抗）\ $R_L=2\pi Lf$\quad 通直阻交% CHECK: “交流电阻中”疑为“交流电路中”(原稿如此)
+
+
+\section{楞次定律·右手定则}
+% ---- block 052-01 (原稿第52页) kind=summary ----
+\textbf{电磁感应}
+
+\begin{itemize}
+\item 电磁感应现象、楞次定律
+ \begin{itemize}
+ \item 磁通量：\ $\phi=\vec B\cdot\vec S=B\cdot\underline{S\cos\theta}$，\ $\uparrow$ 垂直于磁场的面积
+ \item 电磁感应现象：\ $\phi$变 $\to U_{\text{感}}$ + 闭合回路 $\to I_{\text{感}}$
+ \item 感应电流方向的判定，\ 楞次定律、右手定则、
+ \end{itemize}
+\end{itemize}
+
+电磁感应现象的理解
+
+楞次定律和右手定则的应用 \quad 增反减同\ 来拒去留
+
+楞次定律的推论的应用 \quad 增缩减扩\ 增反减同、
+
+三定则一定律的综合应用 \quad 安培定则、左手定则、右手定则\ 楞次定则.
+% 原稿此项右侧分两行写：第一行「安培定则、左手定则、」，第二行「右手定则 楞次定则.」（第二行与「二次感应问题」同在一行）
+% CHECK: 原稿写作“楞次定则”，疑为“楞次定律”笔误
+
+二次感应问题 \quad 程序法、倒推法
+
+
+\section{法拉第电磁感应定律}
+% ---- block 052-02 (原稿第52页) kind=summary ----
+\begin{itemize}
+\item 法拉第电磁感应现象\ 自感、涡流.
+ \begin{itemize}
+ \item 法拉第电磁感应定律 \quad $E=N\dfrac{\Delta\phi}{\Delta t}$
+ \item 自感和\underline{涡流}. \quad $E=NL\dfrac{\Delta I}{\Delta t}$ \quad $L$与线圈大小、形状、圈数\ 铁芯有无\ 有关\quad 单位亨利$H$
+ % CHECK: 自感电动势一般为 E=LΔI/Δt，原稿看起来写成 E=NL ΔI/Δt（多一个 N）
+ \begin{itemize}
+ \item $\uparrow$ 非匀强磁场.
+ \item 锅自身发热，而非加热源，只\unclear{能}用铁锅
+ \item 旋涡状电流 流不出去\ 不能点亮灯泡
+ \end{itemize}
+ \end{itemize}
+\end{itemize}
+
+% ---- block 052-03 (原稿第52页) kind=formula ----
+\textbf{法拉第电磁感应定律的理解运用.} $\swarrow$
+% 原稿此处有一箭头(↙)指向下方左侧各组公式
+
+S变：
+\[
+E=n\frac{B\Delta S}{\Delta t}=BLv
+\]
+B变：
+\[
+E=n\frac{\Delta B}{\Delta t}S=nKS
+\]
+BS一起变：
+\[
+E=n\frac{|B_2S_2-B_1S_1|}{\Delta t}
+\]
+\[
+\ne n\frac{\Delta B\,\Delta S}{\Delta t}
+\]
+\[
+q=\bar I\,\Delta t=\frac{\bar E}{R}\Delta t=n\frac{\Delta\phi}{\Delta t\,R}\Delta t
+\]
+\[
+=n\frac{\Delta\phi}{R}
+\]
+
+
+\section{动生电动势·BLv}
+% ---- block 052-04 (原稿第52页) kind=method ----
+\textbf{$E=BLv$的理解及运用}\quad（正交性 $BLv$两两垂直、有效性 $L$、相对性 $v$）
+
+\notefig[0.25]{figures/p052_a.png}
+
+$B\perp v$ \quad $L$有效长度 \quad $v_{\text{中}}$、$v$为相对磁场的速度
+
+\[
+v_{\text{中}}=AC\,\text{\unclear{上}}\qquad E=B\cdot AC\cdot\frac{v_A+v_C}{2}
+\]
+\[
+=B\cdot\overline{AC}\cdot\frac{\omega\,\overline{OA}+\omega\,\overline{OC}}{2}
+\]
+% 第一式 v_中 处有涂改（“=”压在 v 与 中 之上）
+
+
+\section{自感·涡流·电磁阻尼与驱动}
+% ---- block 052-05 (原稿第52页) kind=summary ----
+自感电动势 $\swarrow$ 阻碍原电流变化\quad （延缓）.\ \unclear{原}电流$I$大\ 并联灯闪亮
+% “并”字被涂抹覆盖，其余按原稿读出
+
+自感、涡流，电磁阻尼与电磁驱动，
+
+\begin{tabular}{@{}lll@{}}
+ & 导体动 & 磁场动（棒的滞后性）\\
+感应电流 & 安培力 阻碍 & 安培力 动力\\
+ & 动能$\to$电能$\to$热能 & 磁场能$\to$电能$\to$机械能
+\end{tabular}
+
+
+\section{电路图像·动力学动量能量}
+% ---- block 052-06 (原稿第52页) kind=summary ----
+电磁感应中的电路与图像问题 \quad 排除法\ 函数法.
+\[
+I=\frac{E}{R+r}\quad U=\frac{RE}{R+r}\quad P=IU\quad Q=I^2Rt\quad q=CU\quad E=BLv=n\frac{\Delta\phi}{\Delta t}=\frac12BL\omega^2=BLv_{\text{\unclear{平}}}
+\]
+% 末项 BLv 右下角的小标记不清，暂读作“平”
+
+电磁感应的动力学、动量、能量问题、三把金钥匙 \quad $q=n\dfrac{\Delta\phi}{R}$
+
+
+\section{电磁驱动·磁悬浮模型}
+% ---- block 054-01 (原稿第54页) kind=derivation ----
+% 手写 v 与 V 不分，这里统一记为小写 v
+\textbf{电磁驱动，带动滞后}
+
+\unclear{$I_f=kx$} $\downarrow$
+% 页面右上角（No.栏右侧）的小字，箭头向下指向右侧的 f=kv
+
+\textbf{磁悬浮}（二倍电流\ 四倍力）
+
+\notefig[0.3]{figures/p054_a.png}
+
+磁场速度$v_B$，安培力驱动
+
+\notefig[0.25]{figures/p054_b.png}
+
+$a\downarrow$到0后匀速直线运动，$f=kv$ \quad \red{框有$n$匝}
+
+开始：
+\[
+E=\red{n}\,2\cdot BLv\qquad I=\red{n}\,\frac{E}{R}
+\]
+\[
+F_{\text{安}}=\red{n}BI\cdot2L=\frac{\red{n^2}\,4B^2L^2v_B}{R}
+\]
+启动后：
+\[
+E=\red{n}\,2BL(v_B-v_{\text{框}})
+\]
+\[
+F_{\text{安}}=\frac{\red{n^2}\,4B^2L^2(v_B-v_{\text{框}})}{R}
+\]
+由牛顿第二定律\ $F_{\text{安}}-f=ma$\quad $a=0$时速度最大.
+\[
+v_m=\frac{4B^2L^2v_B\cdot\red{n^2}}{KR+4B^2L^2}
+\]
+每秒的$E_{\text{补\unclear{充}}}=Kv_m\cdot v_m+I^2R$，\quad $I=\dfrac{\red{n}\,2BL(v_B-v_m)}{R}$
+
+（功率）\qquad 能量 由磁场提供
+
+\[
+E=\red{n}BLv_{\text{相}}
+\]
+\struck{$q=nBLv$}
+\[
+I_{\text{冲}}=nBLq=\frac{n^2B^2L^2x}{R}
+\]
+
+% ---- block 054-02 (原稿第54页) kind=problem ----
+\begin{problem}
+框受阻力$f$，磁场由静止开始匀加速$t_1$后，框\unclear{……}正在向右匀加速，速度为$v_1$，求框何时运动？
+% 原稿“框”字之后有一小段被涂改液盖住，字迹不可辨
+\begin{solution}
+对框\quad
+$\left\{\begin{aligned}
+&F_{\text{安}}-f=ma\\
+&v_B=at_1\\
+&v_{\text{框}}=v_1
+\end{aligned}\right.$
+
+$a_1=a_2$.
+\[
+F_{\text{安}}=\frac{4B^2L^2(at_1-v_1)}{R}
+\]
+\[
+\frac{4B^2L^2(at_1-v_1)}{R}-f=ma
+\]
+\[
+F_{\text{安}}=\frac{4N^2B^2L^2v_{\text{相}}}{R}
+\]
+\[
+v_{\text{相}}=\bigl(v_B+a\Delta t-(v_{\text{框}}+a\Delta t)\bigr)\ \text{不变.}
+\]
+刚开始运动时
+\[
+f=\frac{4N^2B^2L^2at_0}{R}
+\]
+故
+\[
+t_0=\frac{fR\,(4N^2B^2L^2-mR)}{4N^2B^2L^2\,(fR+4N^2B^2L^2v_1)}
+\]
+
+\fcolorbox{red!70!black}{white}{\parbox{0.9\linewidth}{
+\red{演草}\quad（原稿用红笔框住此区域）
+\[
+\text{\red{\textcircled{a}}}=\frac{4B^2L^2(\text{\red{\textcircled{a}}}t_1-v_1)-fR}{mR}\qquad \text{\red{没解完}}
+\]
+开始移动时\quad $F_0-f=0$\qquad $F_0=\dfrac{4B^2L^2at_0}{R}$
+\[
+\frac{4B^2L^2at_0}{R}=f
+\]
+\[
+t_0=\frac{fR^2m}{4B^2L^2\bigl(4B^2L^2(at_1-v_1)-fR\bigr)}
+\]
+\[
+a=\frac{fR+4B^2L^2v_1}{4B^2L^2t_1-mR}
+\]
+}}
+\end{solution}
+\end{problem}
+
+% ---- block 054-03 (原稿第54页) kind=problem ----
+\begin{problem}
+达到$v_m$后，磁场突然停止，$t$后框也停止，求框在$t$内移动距离.
+\begin{solution}
+\[
+\sum F\cdot\Delta t+ft_1=mv_m
+\]
+% CHECK: 原稿写作 ft_1，按题意（磁场停止后 t 时间框停止）此处时间似应为 t
+\[
+\frac{4B^2L^2x}{R}+ft_1=mv_m
+\]
+\[
+I_{\text{安}}=\frac{n^2B^2L^2x}{R}
+\]
+\[
+nBLq,\qquad \frac{n^2B^2L^2x}{R}
+\]
+\end{solution}
+\end{problem}
+
+
+\section{电磁感应·三大观点}
+% ---- block 054-04 (原稿第54页) kind=summary ----
+\textbf{三大观点}（原稿框内）
+
+\notefig[0.7]{figures/p054_c.png}
+
+\begin{description}
+\item[动力学]
+\begin{tabular}{@{}ll@{}}
+源 & $E=n\dfrac{\Delta\Phi}{\Delta t}$ \unclear{或} $E=BLv$\\
+路 & 内电路\ 串联\quad 外电路\ 并联\quad $E=IR+Ir$\\
+力 & $F_{\text{安}}=BIL\ \to\ F_{\text{合}}=ma$\\
+运动 & $a$、$v$、$t$
+\end{tabular}
+% 原稿左侧有大括号括住 源/路/力/运动；箭头：E=BLv ← a、v（大弧线）；E=IR+Ir → F安=BIL；F合=ma → a、v、t
+\item[动量]
+$q=\bar It$
+
+$B\bar IL\Delta t=mv_2-mv_1$
+
+$BLq=mv_2-mv_1$
+
+$Ft=I_{\text{冲}}$ $=mv_2-mv_1$
+\[
+-B\bar IL\Delta t=\frac{-B^2L^2\bar v\,\Delta t}{R_{\text{总}}}=0-mv_0.
+\]
+\[
+\frac{-B^2L^2x}{R_{\text{总}}}=0-mv_0.
+\]
+求 $q$、$v$、$t$、$x$.
+\item[能量]
+其他能$\to$电能$\to$热能.\quad $Q=I^2Rt$ 或 $Q=W_{\text{克服安培力}}$ 或 $Q=\Delta E_{\text{其他能减少量}}$
+\end{description}
+
+
+\section{双棒模型}
+% ---- block 055-01 (原稿第55页) kind=method ----
+\textbf{双杆}
+
+\begin{itemize}
+\item $V_0$可由其他能量转化而来
+\item 等宽\ 安培力抵消、动量守恒
+\item 双向磁场\ 不抵消、动量不守恒
+\end{itemize}
+% 后两条写在页面右上角
+
+① \textbf{等宽初速}
+
+\notefig[0.3]{figures/p055_a.png}
+
+由动量守恒、能量守恒
+\[
+m_1V_{01}+m_2V_{02}=(m_1+m_2)V_{\text{共}}
+\]
+\[
+Q_{\text{电}}+\frac12(m_1+m_2)V_{\text{共}}^2=\frac12m_1V_{01}^2+\frac12m_2V_{02}^2
+\]
+
+\notefig[0.6]{figures/p055_b.png}
+
+% ---- block 055-02 (原稿第55页) kind=method ----
+② \textbf{不等宽初速}\quad \textbar 电源平衡\textbar\ 单体动量定理\ \textbar 能量守恒\textbar
+% “单体”二字写在“动量定理”上方
+
+\notefig[0.25]{figures/p055_c.png}
+
+\[
+\left\{\begin{aligned}
+&BL_1V_1=BL_2V_2 && \text{①}\\
+&-BL_1q=m_1V_1-m_1V_{01} && \text{②}\\
+&BL_2q=m_2V_2-m_2V_{02} && \text{③}\\
+&\tfrac12m_1(V_{01}^2-V_1^2)+\tfrac12m_2(V_{02}^2-V_2^2)=Q_{\text{电}}
+\end{aligned}\right.
+\]
+% 原稿第四式首项 m_1 写作大写 M_1
+$\dfrac{\text{②}}{\text{③}}\quad -\dfrac{L_1}{L_2}=\dfrac{m_1(V_1-V_{01})}{m_2(V_2-V_{02})}$\ 得$V_1$、$V_2$
+
+\notefig[0.3]{figures/p055_d.png}
+
+% ---- block 055-03 (原稿第55页) kind=method ----
+\textbf{等宽恒力}\quad ③
+
+\notefig[0.3]{figures/p055_e.png}
+
+\[
+\left\{\begin{aligned}
+&F=(m_1+m_2)a\\
+&Ft=m_1V_1+m_2V_2\qquad R=r_1+r_2\\
+&\frac{B^2L^2(V_2-V_1)}{R}=m_1a\ \ \text{隔离1}\ \ \text{或}\ \ F-\frac{B^2L^2(V_2-V_1)}{R}=m_2a
+\end{aligned}\right.
+\]
+% 原稿第一式 (m_1+m_2) 的 m 写作大写 M
+
+$a_1=a_2$后\ $\Delta V$不再改变
+\[
+\Delta V=\frac{F_{\text{安}}(r_1+r_2)}{B^2L^2}\qquad a=\frac{F_{\text{安}}}{m}
+\]
+
+\notefig[0.3]{figures/p055_f.png}
+
+% ---- block 055-04 (原稿第55页) kind=method ----
+\textbf{恒力摩擦型}\quad ④
+
+\notefig[0.3]{figures/p055_g.png}
+
+$f_1=f_2=f$
+
+若 $f<F<2f$\quad 2先变加速后匀速，1一直静止.
+
+若 $F>2f$\quad 2先变加速，1后变加速，最终匀速.
+
+\notefig[0.25]{figures/p055_h.png}
+
+% ---- block 055-05 (原稿第55页) kind=method ----
+⑤ \textbf{不等宽双棒}\quad 恒力
+
+\notefig[0.3]{figures/p055_i.png}
+
+电源平衡
+\[
+e=BL_2V_2-BL_1V_1\qquad \text{对}\,e\,\text{\unclear{求导}}\quad 0=BL_2a_2-BL_1a_1
+\]
+\[
+\frac{a_1}{a_2}=\frac{L_2}{L_1}
+\]
+对2：\ $F-B\dfrac{e}{r_1+r_2}L_2=m_2a_2$
+
+对1：\ $B\dfrac{e}{r_1+r_2}L_1=m_1a_1$
+\[
+\therefore F=\left(\frac{L_2^2}{L_1^2}m_1+m_2\right)a_2=\left(\frac{L_2}{L_1}m_1+m_2\frac{L_1}{L_2}\right)a_1
+\]
+
+\notefig[0.25]{figures/p055_j.png}
+
+
+\section{双杆模型·电荷量}
+% ---- block 056-01 (原稿第56页) kind=knowledge ----
+双杆中 $q$ 中 $x$ 为相对位移\quad 不等宽双杆中 $q=\dfrac{B\Delta S}{R}$，为相对面积 % 原稿“为相对面积”前未写主语(应指 ΔS)
+
+
+\section{双杆模型·分热}
+% ---- block 056-02 (原稿第56页) kind=method ----
+\textbf{分热}
+\notefig[0.25]{figures/p056_a.png}
+\[ Q_1=\frac{R}{R+R}\,Q_{\text{总}} \]
+\notefig[0.3]{figures/p056_b.png}
+并联电路当整体来分配 % 图中下方两个圈：并联部分旁圈住 R/2(圈内左侧有小标记)，串联的 4Q 电阻下圈住 R
+
+
+\section{双杆模型·分电荷}
+% ---- block 056-03 (原稿第56页) kind=method ----
+\textbf{分电荷}
+\notefig[0.25]{figures/p056_c.png}
+\[ q_1=q_2 \]
+\notefig[0.25]{figures/p056_d.png}
+\[ \frac{q_1}{q_2}=\frac{R_2}{R_1} \]
+
+
+\section{双杆模型·等效电压}
+% ---- block 056-04 (原稿第56页) kind=method ----
+\textbf{等效电压}\quad 分压
+\notefig[0.28]{figures/p056_e.png}
+\[ R_{\text{总}}=\frac{R}{2}+R \]
+\[ V_{ab}=\frac{\dfrac{R}{2}}{R+\dfrac{R}{2}}\,BLv \]
+
+
+\section{双杆模型·不等宽导轨}
+% ---- block 056-05 (原稿第56页) kind=problem ----
+% 原稿标题“非等宽受力棒 + 特殊条件”用方括号框起
+\begin{problem}[非等宽受力棒 + 特殊条件]
+\notefig[0.25]{figures/p056_f.png}
+① $t=0$ 开始用 $F$ 拉 $cd$，使其从静止开始沿导轨以 $a$ 匀加速，求 $cd$ 运动多久后 $ab$ 开始运动。
+\begin{solution}
+受力平衡 % 原稿“受力平衡”写在图右侧、公式左上方
+\[ \mu mg=BIL_1=\frac{B\,BL_2at\,L_1}{2R}\ \to\ t \]
+\end{solution}
+② 用未知力 $F_0$ 拉 $cd$ 向右到 $V$ 后匀速，$ab$ 也恰好匀速，求 $V_{ab}$　$V_{cd}$　$P_{F_0}$。
+\begin{solution}
+受力 $\left\{\begin{array}{l}\text{对 2：}F_0=\mu mg+BIL_2\\ \text{对 1：}BIL_1=\mu mg\end{array}\right.$ \qquad $P_{F_0}=F_0V_2$
+
+非电源\unclear{电动势}\quad $\varepsilon=BL_1V_1-BL_2V_2\neq 0$ % CHECK: “非电源”后两字辨认不清，可能是“电动势”
+\end{solution}
+③ $ab$ 运动到 $PQ$ 时刚好碰到\unclear{障碍}物停止，并将 $cd$ 上力改为 $F_1$，此时 $cd$ 为 $V_0$。
+
+$L_2=\dfrac{1}{2}L_1$\qquad 一段时间后停止，求 $ab$ 停后 $cd$ 运动距离
+\begin{solution}
+由动量定理 \quad $\dfrac{-B^2L_2x_2}{\frac{3}{2}R}=0-mV_0$
+
+电阻突变
+\notefig[0.25]{figures/p056_g.png}
+\end{solution}
+\end{problem}
+
+
+\section{单杆·导轨电阻随位移变化}
+% ---- block 057-01 (原稿第57页) kind=problem ----
+\begin{problem}
+\notefig[0.4]{figures/p057_a.png}
+$ac$、$bd$ 单位长度电阻 $r_0$，棒受 $F$ 向右匀加速，加速度为 $a$，到 $cd$ 时撤去 $F$，于 $ef$ 静止。
+\begin{solution}
+\[ E=BL\sqrt{2ax} \]
+\[ mV-m\sqrt{2ax_1}=\frac{-B^2L^2x}{R+2r_0x_1} \]
+\[ V=\sqrt{2ax_1}-\frac{B^2L^2x}{m\,(R+2r_0x_1)}\qquad \text{到 }x_2\text{ 时 }V_{\text{末}}=0 \]
+\[ x_2=\frac{\sqrt{2ax_1}\;m\,(R_0+2r_0x_1)}{B^2L^2} \] % CHECK: 分子括号内写作 R_0，前面各式为 R
+开始时和最后时 $I_{\min}=0$
+
+设走过 $x$\quad $I=\dfrac{BL\sqrt{2ax}}{R+2r_0x}=\dfrac{BL\sqrt{2a}}{\dfrac{R}{\sqrt{x}}+2r_0\sqrt{x}}$\quad 均值不等式\quad $f(x)=\dfrac{1}{x+\dfrac{1}{x}}$
+
+\[ \left\{\begin{array}{l}
+\dfrac{R}{2r_0}<x_1\text{ 时}\quad I_{\max}=\dfrac{BL\sqrt{2a}}{2\sqrt{2Rr_0}}\\[3ex]
+\dfrac{R}{2r_0}>x_1\text{ 时}\quad I_{\max}=\dfrac{BL\sqrt{2ax_1}}{R+2r_0x_1}
+\end{array}\right. \]
+\notefig[0.3]{figures/p057_b.png}
+\notefig[0.28]{figures/p057_c.png}
+% 图 p057_c 中标注函数 x/(x^2+1)（奇函数曲线）
+$\dfrac{1}{\sqrt{x}+\dfrac{1}{\sqrt{x}}}$
+\end{solution}
+\end{problem}
+
+
+\section{电磁感应·动力学基本公式}
+% ---- block 057-02 (原稿第57页) kind=formula ----
+由法拉第电磁感应定律
+\[ \left\{\begin{array}{l} E=BLV\\ I=\dfrac{E}{R_{\text{总}}}\\ F=BIL\end{array}\right.\qquad F=\frac{B^2L^2V}{R_{\text{总}}} \]
+
+
+\section{杆类问题·分析要点}
+% ---- block 057-03 (原稿第57页) kind=method ----
+\textbf{最终速度、匀速、恒定}
+
+① 最大速度 $F_{\text{合}}=0$\quad ② 加速度 $F_{\text{合}}=ma$\quad ③ 电荷量 $q=\dfrac{n\Delta\Phi}{R_{\text{总}}}$\qquad $\Delta q=I\Delta t=\dfrac{\Delta\Phi}{R}=\dfrac{BLx}{R}$
+
+④ 功率 $P_{\text{电}}=P_{\text{安}}=F_{\text{安}}v=\dfrac{B^2L^2v^2}{R}$\quad ⑤ 热量：动能损失、$W_{\text{安}}$、$I^2Rt$（恒定 $I$）
+
+⑥ 总时间总位移，$x_{\text{相}}$，$S$ 相对面积\quad 动量定理，动量守恒 $\sum F_{\text{外}}\cdot\Delta t-F_{\text{安}}\Delta t=m(V_{\text{末}}-V_0)-\Delta P$\quad $\left\{\begin{array}{l}BLq\\[0.5ex] \dfrac{B^2L^2x}{R}\end{array}\right.$
+
+⑦ $L$ 不变，匀速，$B'\Delta S=B_0S_0$
+\[ B'(t)=\frac{B_0S_0}{L\left(V_0t+\frac{1}{2}at^2-L_0\right)} \] % 此行左侧原稿有涂改液痕迹，残留一个逗号
+
+
+\section{杆类问题·运动功能动量三方面}
+% ---- block 057-04 (原稿第57页) kind=summary ----
+% 原稿左侧竖写“\unclear{运动}”，用大括号括住 V_m 与 a；“P电”与“P安”竖排，中间为竖的等号
+\[
+\left.\begin{array}{l}V_m\\ a\end{array}\right\}\ \text{\unclear{运动}}
+\]
+功能\quad $\begin{array}{c}P_{\text{电}}\\ \|\\ P_{\text{安}}\end{array}$\quad $\left\{\begin{array}{l}W_{\text{除安}}-Q=\Delta E_k\\ P_{\text{电}}=P_{\text{安}}\\ W_{\text{电}}=W_{\text{安}}=-Q\end{array}\right.$ % CHECK: “W除安”的第二字辨认为“除”(W_除安 + W_安 = ΔE_k 即得此式)，第三行中间项为 W_安(原稿字迹偏潦草)
+
+动量\quad $\left\{\begin{array}{l}q=n\dfrac{\Delta\Phi}{R}=n\cdot\dfrac{\Phi_2-\Phi_1}{R}\\[2ex] Ft-\dfrac{B^2L^2x}{R}=m(V_{\text{末}}-V_0)\end{array}\right.$\qquad 三方面
+
+
+\section{电磁感应·并联电动势等效}
+% ---- block 057-05 (原稿第57页) kind=method ----
+\notefig[0.25]{figures/p057_d.png}
+2 个 $BdV$ 并联了\quad $e=BdV$\quad $I=\dfrac{BdV}{R}$\quad $F=\dfrac{B^2d^2V}{R}$
+\notefig[0.25]{figures/p057_e.png}
+\[ e_{\text{等}}=BdV,\qquad r_{\text{等}}=\frac{r}{4} \]
+
+
+\section{单杆·电势差与电路}
+% ---- block 058-01 (原稿第58页) kind=problem ----
+\begin{problem}[①]
+\notefig[0.4]{figures/p058_a.png}
+单位长电阻 $r$，求 $U_{PQ}$
+\begin{solution}
+\[ U_{PQ}=2U_{\text{外}}+U_{mn}=\frac{Bdv}{R+rd}R+B(L-d)v=\frac{RL+rd\,(L-\text{\unclear{…}}}{R+rd} \] % 原稿末式分子在页面右缘被截断；CHECK: “2U_外”与后式系数是否一致待核
+\end{solution}
+\end{problem}
+
+
+\section{线框·终极速度}
+% ---- block 058-02 (原稿第58页) kind=problem ----
+\begin{problem}[②]
+\notefig[0.25]{figures/p058_b.png}
+\begin{solution}
+% 原稿 V_m 结果 Dρg/B^2 用椭圆圈住
+\[ \left\{\begin{array}{l} mg=\dfrac{B^2L^2V_m}{R}\\[2ex] m=DS\cdot 2\pi r\\[1ex] R=\rho\dfrac{2\pi r}{S}\end{array}\right.\qquad L=2\pi r\qquad \therefore V_m=\boxed{\dfrac{D\rho g}{B^2}} \]
+\notefig[0.25]{figures/p058_c.png}
+\[ a=g-\frac{BV_0^2}{\text{\unclear{$16R\rho_2$}}} \] % CHECK: 分子指数 2 写在 V_0 之后，疑为 B^2V_0；分母 16Rρ_2 辨认不清(由 m=4LdA、R=ρ4L/A 推得应为 B^2V_0/(16dρ))
+\end{solution}
+\end{problem}
+
+
+\section{单杆·恒力与恒功率启动}
+% ---- block 058-03 (原稿第58页) kind=problem ----
+\begin{problem}[③]
+\notefig[0.25]{figures/p058_d.png}
+用 $F$ 拉 $ab$，$t$ 后 $ab$ 速度为 $V_1$，加速度 $a_1$，最终速度 $2V$。若拉力功率恒定，经 $t$ 后 $ab$ 速度 $V$ 加速度 $a_2$，最终速度 $2V$。求 $\dfrac{a_1}{a_2}$。 % V 右下角的小标记辨认为 1(亦可能是 V_A)
+\begin{solution}
+\[ \left\{\begin{array}{l}
+F=\dfrac{B^2L^2\cdot 2V}{R}\\[2.5ex]
+F-\dfrac{B^2L^2V}{R}=ma_1\\[2.5ex]
+\dfrac{P}{2V}=\dfrac{B^2L^2\cdot 2V}{R}\\[2.5ex]
+\dfrac{P}{V}-\dfrac{B^2L^2V}{R}=ma_2
+\end{array}\right.\qquad \frac{a_1}{a_2}=\frac{1}{3} \]
+\end{solution}
+\end{problem}
+
+
+\section{单杆·斜面导轨}
+% ---- block 058-04 (原稿第58页) kind=problem ----
+\begin{problem}[④]
+\notefig[0.28]{figures/p058_e.png}
+\unclear{释放}，到 $V$ 后匀速，加一沿斜面向下力，功率为 $P$，最终以 $2V$ 匀速（\unclear{棒}无电阻）\quad 求 $\dfrac{V}{2}$ 时的加速度、$P$、$2V$ 后的焦耳热
+\begin{solution}
+\[ \left\{\begin{array}{l}
+mg\sin\theta=\dfrac{B^2L^2V}{R}\\[2.5ex]
+\dfrac{P}{2V}+mg\sin\theta=\dfrac{B^2L^2\cdot 2V}{R}\\[2.5ex]
+mg\sin\theta-\dfrac{B^2L^2\cdot\frac{V}{2}}{R}=ma\\[2.5ex]
+W_G+W_F-W_{\text{安}}=0
+\end{array}\right.\qquad \begin{array}{l}a=\dfrac{1}{2}g\sin\theta\\[2ex] P=2mg\sin\theta\,V\end{array} \] % 第四式首项原稿字形近似 W_a，按语境读作 W_G
+\end{solution}
+\end{problem}
+
+
+\section{线框·下落终极速度与产热}
+% ---- block 058-05 (原稿第58页) kind=problem ----
+\begin{problem}[⑤]
+\notefig[0.25]{figures/p058_f.png}
+框 % 图旁标注
+\begin{solution}
+\[ \left\{\begin{array}{l}
+mg=\dfrac{B^2(2L)^2V_m}{R}\\[2.5ex]
+m=4L\cdot dA\\[1ex]
+R=\rho\dfrac{4L}{A}
+\end{array}\right. \]
+\struck{$P_{\text{电}}=P_{\text{安}}V$}\qquad 当 $a=\dfrac{1}{2}g$ 时\quad $mg-\dfrac{B^2L^2V}{R}=m\dfrac{g}{2}$
+
+$P_{\text{电}}=F_{\text{安}}V$。 % 原稿有一条大弧线箭头，自“当 a=g/2 时…”一行右上方指向被划掉的“P电=P安V”
+\end{solution}
+下落 $t$ 后、$h$、速为 $V_t$ $(<V_m)$ 在同 $t$ 内，框产热与恒定电流 $I_0$ 产热相同（在该框中），求 $I_0$。
+\begin{solution}
+\[ mgh-I_0^2Rt=\frac{1}{2}mV_t^2 \]
+\end{solution}
+\end{problem}
+
+
+\section{单杆·匀加速运动分析}
+% ---- block 058-06 (原稿第58页) kind=method ----
+\textbf{匀加速}
+\[ F-\frac{B^2L^2at}{R}=ma \]
+\notefig[0.25]{figures/p058_g.png}
+\[ F=ma+\frac{B^2L^2a}{R}t \]
+\[ q=\frac{BL\cdot\frac{1}{2}at^2}{R}\qquad I_{\text{安}}=BLq\qquad I=\frac{BLa}{R}t \] % q 的分母 R 被页面下缘截去一部分
+\notefig[0.25]{figures/p058_h.png}
+\[ q=\frac{1}{2}I_1t_1\qquad\qquad W_F=Q_{\text{电}}+\frac{1}{2}m(at)^2 \]
+
+
+\section{涡旋电场}
+% ---- block 059-01 (原稿第59页) kind=knowledge ----
+\textbf{涡旋电场}\quad \fbox{\unclear{非静电力}}\ 用有效磁场面积 % 原稿“非静电力”(三个字，字迹难辨)被椭圆圈起
+\notefig[0.3]{figures/p059_a.png}
+$I$ $E_{\text{涡}}$ 同向\quad 方向楞次 Th
+\[ E_{\text{涡}}=\left\{\begin{array}{ll}\dfrac{kr}{2}, & r<r_0\\[2ex] \dfrac{kr_0^2}{2r}, & r>r_0\end{array}\right. \]
+\notefig[0.28]{figures/p059_b.png}
+\[ E=\frac{\dfrac{\Delta B}{\Delta t}\,\pi r^2}{2\pi r}=\frac{\dfrac{\Delta B}{\Delta t}\,r}{2}=\frac{kr}{2} \]
+\[ E=\frac{\dfrac{\Delta B}{\Delta t}\,\pi r_0^2}{2\pi r}=\frac{kr_0^2}{2r} \]
+\[ E=\frac{U}{d}\qquad U=\frac{\Delta B}{\Delta t}S\qquad d=2\pi r\ (\text{区域周长。})\qquad \underline{S\text{ 为包住磁场的面积}} \]
+
+
+\section{旋转感应电动势}
+% ---- block 059-02 (原稿第59页) kind=knowledge ----
+\textbf{旋转感应电动势}
+\[ e=BL\,\frac{V_1+V_2}{2} \]
+$\uparrow$ \unclear{中点}瞬时速度 % 原稿箭头自 (V_1+V_2)/2 指向此文字，前两字重叠难辨
+\notefig[0.25]{figures/p059_c.png}
+\notefig[0.3]{figures/p059_d.png}
+\[ S=\frac{\varepsilon}{B}=\frac{\omega}{2}(r_1+r_2)(r_2-r_1) \] % 页左边缘此处有一红笔括弧标记
+
+
+\section{电容器与导体棒·恒力无电阻}
+% ---- block 059-03 (原稿第59页) kind=method ----
+\textbf{电容与棒}\quad 电阻作用是缓冲
+
+\textbf{恒力无电阻} % 原稿用椭圆圈起
+\notefig[0.25]{figures/p059_e.png}
+\[ \left\{\begin{array}{l}
+i=\dfrac{\Delta q}{\Delta t}=C\dfrac{\Delta U}{\Delta t}=C\dfrac{\mathrm{d}(BLV)}{\mathrm{d}t}=CBLa\\[2.5ex]
+F_{\text{安}}=BiL\\[1ex]
+a=\dfrac{F-BiL}{m}=\dfrac{F-CB^2L^2a}{m}
+\end{array}\right. \]
+\[ \therefore a=\frac{F}{CB^2L^2+m} \]
+\notefig[0.25]{figures/p059_f.png}
+
+
+\section{电容器与导体棒·恒力有电阻}
+% ---- block 059-04 (原稿第59页) kind=method ----
+\textbf{恒力有电阻} % 原稿用椭圆圈起
+\notefig[0.25]{figures/p059_g.png}
+\[ i=C\frac{\Delta U}{\Delta t}=\frac{C\Delta(\varepsilon-U_R)}{\Delta t} \]
+\[ =\frac{CBL\Delta V}{\Delta t}-\frac{C\Delta U_R}{\Delta t} \]
+\[ =CBLa-C\frac{\Delta U_R}{\Delta t} \]
+\[ F-B\left(CBLa-\frac{C\Delta U_R}{\Delta t}\right)L=ma \]
+↓ 最终减为 0 % 原稿箭头自括号内 CΔU_R/Δt 指向“最终减为0”
+
+稳定后 $\Delta\varepsilon=U_R+U_C$
+\notefig[0.28]{figures/p059_h.png}
+\[ a=\frac{F}{CB^2L^2+m} \]
+$\uparrow$ \unclear{视}在质量
+
+
+\section{电容器与导体棒·初速加电阻}
+% ---- block 059-05 (原稿第59页) kind=method ----
+\textbf{初速加电阻} % 原稿用椭圆圈起
+\notefig[0.25]{figures/p059_i.png}
+\[ \left\{\begin{array}{l}
+i=\dfrac{BLV-U_c}{R}\ \ \text{最终 }BLV=U_c\\[2.5ex]
+F_{\text{安}}=BiL\quad a\downarrow\\[1ex]
+mV_m-mV_0=-BLq\\[1ex]
+U_c=BLV_m\\[1ex]
+q=CU_c=CBLV_m
+\end{array}\right.\qquad V_m=\frac{mV_0}{CB^2L^2+m} \]
+\notefig[0.25]{figures/p059_j.png}
+
+
+\section{电容器与导体棒·初速无电阻}
+% ---- block 059-06 (原稿第59页) kind=method ----
+\textbf{初速无电阻} % 原稿用椭圆圈起
+\notefig[0.25]{figures/p059_k.png}
+\notefig[0.25]{figures/p059_l.png}
+\[ BiL=CB^2L^2a=ma \]
+故 $a=0$
+
+
+\section{自感·电流图像}
+% ---- block 059-07 (原稿第59页) kind=knowledge ----
+自感 $E=N\dfrac{\Delta I}{\Delta t}L$ % CHECK: 分子辨认为 ΔI(亦可能是 ΔΦ)，N 与末尾 L 的含义存疑，按原样转录
+\notefig[0.25]{figures/p059_m.png}
+\notefig[0.25]{figures/p059_n.png}
+考虑自感
+\notefig[0.28]{figures/p059_o.png}
+增减都阻碍
+
+
+\section{线框·落框}
+% ---- block 060-01 (原稿第60页) kind=derivation ----
+\textbf{落框}
+\notefig[0.25]{figures/p060_a.png}
+\[ V=\sqrt{2gh}\quad E=nBLV\quad m=D\,4nLS\quad R=\rho\frac{4nL}{S}\quad I=\frac{E}{R},\quad F_{\text{安}}=nBIL=\frac{mB^2V}{16D\rho} \]
+\[ mg-F_{\text{安}}=ma\qquad a=g-\frac{F}{m}=g-\frac{B^2V}{16\rho D}\qquad \left\{\begin{array}{l} g>\dfrac{B^2V}{16D\rho}\ \text{时都加速}\\[2ex] g<\dfrac{B^2V}{16D\rho}\ \text{都减速}\end{array}\right. \] % CHECK: a=g-□/m 的分子字形介于 E 与 F，按物理意义读作 F(应为 F_安)
+
+% ---- block 060-02 (原稿第60页) kind=derivation ----
+\notefig[0.2]{figures/p060_b.png}
+\[ mg=\frac{B^2L^2V_y}{R}=\frac{B^2L^2\sqrt{2gH}}{R} \]
+\notefig[0.25]{figures/p060_c.png}
+\[ \therefore B=\sqrt{\frac{mgR}{L^2\sqrt{2g}}}\ \frac{1}{\sqrt{\sqrt{H}}}\ \propto\ H^{-\frac{1}{4}} \]
+\[ P_G=P_{\text{安}}\quad mg=F_{\text{安}}\quad W_{\text{热}}=F_{\text{安}}\times 2L\quad \text{进出匀速后，}F_{\text{安}}\text{不变} \]
+
+
+\section{线框·穿越磁场的动量定理}
+% ---- block 060-03 (原稿第60页) kind=derivation ----
+\notefig[0.25]{figures/p060_d.png}
+\[ -BLq=mV_2-mV_1\qquad \therefore\ |V_2-V_1|=|V_3-V_2| \]
+\[ \Delta X=\frac{m\Delta VR}{B^2L^2}\qquad \left\{\begin{array}{l} q_1=q_2\\ Q_1=3Q_2\end{array}\right. \]
+
+
+\section{线框·进出磁场v-t图分类讨论}
+% ---- block 060-04 (原稿第60页) kind=method ----
+\textbf{直接分类讨论}（与\unclear{束缚}洛伦兹力一样 直接分类讨论） % “束缚”二字辨认不清
+\notefig[0.25]{figures/p060_e.png}
+\notefig[0.3]{figures/p060_f.png}
+% 图 p060_f 中标注：mg>F_安1、mg=F_安1、mg<F_安1 三种分支，以及起始段 mg>F_安
+\notefig[0.3]{figures/p060_g.png}
+% 图 p060_g 中标注：入、出_1，并有批注“全等故产热相当”
+不全等产热就不相同
+\notefig[0.25]{figures/p060_h.png}
+% 图 p060_h 中标注：mg=F_安、进、出、mg<F_安1
+
+
+\section{线框·落框进出磁场能量关系}
+% ---- block 060-05 (原稿第60页) kind=derivation ----
+\notefig[0.28]{figures/p060_i.png}
+\[ V_{\text{入}}=V_{\text{出}} \]
+\[ \left\{\begin{array}{ll}\text{进} & mg(h+L)-Q=\dfrac{1}{2}mV^2\\[2ex] \text{出} & mgd-Q=\dfrac{1}{2}mV^2-\dfrac{1}{2}mV^2\end{array}\right.\qquad \therefore mgd=Q \]
+\[ V=\sqrt{2(h+L-d)g} \]
+
+
+\section{线框·抛框上升与下降对比}
+% ---- block 060-06 (原稿第60页) kind=summary ----
+\notefig[0.25]{figures/p060_j.png}
+向上时的大速小时\ 大安力
+
+等电荷量\ 等安冲
+\[ \begin{array}{ll}
+\overline{V}_{\text{上}}>\overline{V}_{\text{下}} & P_{\text{电上}}>P_{\text{电下}}\\
+\overline{a}_{\text{上}}>\overline{a}_{\text{下}} & \varepsilon_{\text{上}}>\varepsilon_{\text{下}}\\
+t_{\text{上}}<t_{\text{下}} & q_{\text{上}}=q_{\text{下}}\\
+Q_{\text{上}}>Q_{\text{下}} & I_{\text{安冲上}}=I_{\text{安冲下}}
+\end{array} \] % 原稿 t_下 上方似有一横线，疑为笔迹，未转录
+
+
+\section{线框穿磁场·图像}
+% ---- block 061-01 (原稿第61页) kind=summary ----
+\textbf{线框穿磁场}\quad 考察右手定则、电源串联、有效长度 % CHECK: 原稿“穿”字小写在“传”字上方（疑为更正），主行写作“线框传磁场”
+\notefig[0.3]{figures/p061_a.png}
+% 图中文字：相加、相减（两组电池串联符号）
+\textbf{线框图像}\quad 同形状
+
+% ---- block 061-02 (原稿第61页) kind=method ----
+\textbf{单场匀速}\quad 进出反向轴对称
+\notefig[0.3]{figures/p061_b.png}
+% 图中文字：θ、v、sin x 形、L
+\[ E=B\cdot v\tan\theta\,t\cdot v \]
+\notefig[0.3]{figures/p061_c.png}
+\notefig[0.3]{figures/p061_d.png}
+% 图中文字：i、t、2L/v_0
+\[ Q=\left(\frac{\dfrac{BLv}{\sqrt{2}}}{R}\right)^{2}\frac{2L}{v_0} \] % CHECK: 按原稿转录，式中未见电阻 R 因子（Q=I^2Rt 应有 R）
+
+% ---- block 061-03 (原稿第61页) kind=method ----
+\textbf{反向场，两同夹异\ 中加倍}
+\notefig[0.55]{figures/p061_e.png}
+% 图中文字：匀速、i、t（两个 i-t 图像）
+
+% ---- block 061-04 (原稿第61页) kind=method ----
+\textbf{单一磁场匀加速}
+\notefig[0.25]{figures/p061_f.png}
+\notefig[0.3]{figures/p061_j.png}
+% 图中文字：a、i、t
+前后对称后共线
+
+% ---- block 061-05 (原稿第61页) kind=method ----
+\textbf{反向场匀加速}
+\notefig[0.3]{figures/p061_g.png}
+\notefig[0.3]{figures/p061_h.png}
+两同夹异中加倍，（前后共线\ 中加倍）\\
+前后图象共有线
+
+% ---- block 061-06 (原稿第61页) kind=method ----
+\notefig[0.6]{figures/p061_i.png}
+% 图中文字：v→、L、2、i、t、进、过 L/2、未到界线之已进、往外出之往里进（图中有一处被修正带涂白）
+图中批注：「进」「过$\dfrac{L}{2}$」；\unclear{未到界线}之已进；往外出之往里进 % CHECK: “未到界线”“往外”处字迹难辨
+
+
+\section{电磁感应·图象}
+% ---- block 083-15 (原稿第83页) kind=method ----
+% 原稿“□→”为一个小方块加向右箭头
+$\square\to$\quad $\varepsilon=Bl\sqrt{2ax}$\quad \red{匀加速}
+\notefig[0.3]{figures/p083_f.png}
+
+
+\section{磁通量}
+% ---- block 097-04 (原稿第97页) kind=formula ----
+$\Delta\phi=\phi_{\text{末}}-\phi_{\text{初}}$\qquad 面要分正负\qquad $\phi=BS\cos\theta$
+
+\notefig[0.25]{figures/p097_c.png}
+
+
+\section{感应电荷量}
+% ---- block 097-05 (原稿第97页) kind=formula ----
+\notefig[0.3]{figures/p097_d.png}
+
+转过$2\pi$\ $q=\dfrac{4BS}{R}$，转过\unclear{$\dfrac{7}{4}\pi$}\ $q=\left(3+\dfrac{\sqrt{2}}{2}\right)\dfrac{BS}{R}$
+
+$q$要按过程求
+
+$q=n\dfrac{\Delta\phi}{\Delta t}$ % CHECK: 手写分母似为 Δt（通常 q=nΔΦ/R）；另“转过 7π/4”的分数辨认不确定
+
+
+\section{楞次定律}
+% ---- block 097-06 (原稿第97页) kind=knowledge ----
+% 原稿“楞次定律”标题被菱形框框起
+\textbf{楞次定律}
+
+回路中\uwave{感应电流总阻碍}\uwave{原磁通量变化}（不是阻止，来自于能量守恒）
+
+% 原稿以一个大括号把下面四行括在一起
+\begin{itemize}
+\item $\pm$增反减同
+\item 来拒去留
+\item 线圈靠磁铁\quad $\pm$增扩减缩
+\item 线圈不靠磁铁\quad $\pm$增缩减扩
+\end{itemize}
+
+二次感应，一样，$i_{\text{感}}=\dfrac{\dd i_{0}}{\dd t}$\quad 导数关系。 % CHECK: 分子下标手写似“0/o”，可能是“原”（原电流）
+
+
+\section{感生电场·图像选择题}
+% ---- block 097-07 (原稿第97页) kind=method ----
+\textbf{感生电场选择题}（没有正方向，则自己规定）
+
+$B_{\text{正}}\ I_{\text{正}}$\quad 满足右手，斜正电负，斜负电正（否则相反）
+
+$F_{\text{正}}\ B_{\text{正}}\ I_{\text{正}}$\quad 满足右手，斜正对称，斜负相同（否则相反）
+
+$B$、$F$关于$X$轴对称
+% 原稿中“电负”与“对称”被圈在一起，“电正”与“相同”被圈在一起，第一行的“（否则相反）”也被圈起
+\notefig[0.3]{figures/p097_e.png}
+
+
+\section{感生电动势·线框受力}
+% ---- block 097-08 (原稿第97页) kind=derivation ----
+\notefig[0.25]{figures/p097_f.png}
+
+\[ i=\dfrac{\dfrac{\Delta B}{\Delta t}\cdot\dfrac{L^{2}}{2}}{\dfrac{\rho\,4L}{S}}\qquad
+\dfrac{\Delta F}{\Delta t}=\dfrac{\Delta B}{\Delta t}IL=KIL \]
+\[ F=KILt \]
+
+
+\section{电磁感应·动量定理}
+% ---- block 098-04 (原稿第98页) kind=problem ----
+③
+\notefig[0.25]{figures/p098_c.png}
+
+经$t_0$停，求$x$。由动量定理
+\[ mg\sin\theta\,t_0+\frac{B^2\ell^2x}{R}=mV \]
+% CHECK: 右端手写为 mV（无下标），按后式推算似应为 mV_0
+\[ x=\frac{(V_0-gt_0\sin\theta)\,mR}{B^2\ell^2} \]
+
+
+\section{电磁感应·变长度棒与1/v-x图像}
+% ---- block 099-05 (原稿第99页) kind=problem ----
+⑤
+\notefig[0.28]{figures/p099_f.png}
+
+\notefig[0.28]{figures/p099_g.png}
+
+由$\dfrac{1}{V}\propto x$\ 为\uline{非匀变速运动}
+
+\red{\uwave{图像面积为运动时间}}\quad $t=\dfrac{3L_0}{2V_0}$
+\[ \frac{1}{V}=\frac{1}{L_0V_0}\cdot x+\frac{1}{V_0}\ \to\ V=\frac{L_0V_0}{x+L_0} \]
+\[ E=B(L_0+x)V\qquad I=\frac{E}{R}=\frac{BL_0V_0}{R}\ \text{（定值）} \]
+\[ W=I^2Rt-\Delta E_k=\frac{3B^2L_0^2V_0}{2R}-\frac{3mV_0^2}{8} \]
+% CHECK: 分子中 L_0 的指数手写为 2，按 I^2Rt 推算似应为 L_0^3
+
+
+\section{动生与感生电动势叠加}
+% ---- block 115-01 (原稿第115页) kind=method ----
+动生$+$感生\ ·\ (对$t$求导)\unclear{相}
+
+$\varepsilon=\dfrac{\Delta B}{\Delta t}\cdot S+BLv$
+
+\begin{itemize}
+\item 给 $B=kt$ 直接加\quad $e=BLv+kS$\quad $F_{\text{安}}=BL\,\dfrac{BLv+kS}{R}$
+\item 没给 则按电流方向是否相同来加减
+  \begin{itemize}
+  \item 同向$\to$相加
+  \item 反向$\to$相减．
+  \end{itemize}
+\end{itemize}
+
+% ---- block 115-02 (原稿第115页) kind=problem ----
+% 原稿此处贴有印刷体题目（题号B4），其中若干短语被手画方框，“杆以恒定”下有横线；序号①为圈起的手写“1”
+\begin{problem}[1（B4）]
+B4、如图所示，两根平行金属导轨固定在水平桌面上，每根导轨每米的电阻为\fbox{$r_0=0.10\unit{\Omega/m}$,}导轨的端点 P、Q 用电阻可忽略的导线相连，两导轨间的距离\fbox{$L=0.20\unit{m}$.}有随时间变化的匀强磁场垂直于桌面，已知磁感应强度 $B$ 与时间 $t$ 的关系为\fbox{$B=kt$}\ 比例系数 $k=0.020\unit{T/s}$。一电阻不计的金属杆可在导轨上\fbox{无摩擦地滑动}，在滑动过程中保持与导轨垂直。在 $t=0$ 时刻，金属杆紧靠在 P、Q 端，在外力作用下，\underline{杆以恒定}的\fbox{加速度}\fbox{从静止开始}向导轨的另一端滑动，求\fbox{在 $t=6.0\unit{s}$ 时}金属杆所受的\fbox{安培力}。
+
+% 图p115_a为印刷图（含P、Q、L、箭头、I），上有手写的 ½at² 与 x 标注
+\notefig[0.4]{figures/p115_a.png}
+\begin{solution}
+\[\left\{\begin{array}{l}S=Lx=\dfrac{1}{2}at^2\cdot L\\[1mm]B=kt\\[1mm]V=at\end{array}\right.\qquad I=\frac{BLat+kL\cdot\frac{1}{2}at^2}{2\cdot\frac{1}{2}at^2r_0}=\frac{3kL}{2r}\]
+\[F_{\text{安}}=kt\cdot\frac{3kL}{2r}\cdot L=\frac{3k^2L^2}{2r}\,t=1.44\times10^{-3}\unit{N}\qquad\text{\struck{$=\dfrac{3kt}{2r}$}}\]
+\end{solution}
+\end{problem}
+
+
+\section{电磁感应中的能量·收尾速度}
+% ---- block 115-03 (原稿第115页) kind=problem ----
+\begin{problem}[2]
+% 图p115_b内含标注：d、m、R（金属环与磁场示意）
+\notefig[0.25]{figures/p115_b.png}
+
+金属环下落，求收尾速度\quad \unclear{目}重力势能$\to$电能
+
+$B_y=B_0(1+ky)\ (k>0)$
+\begin{solution}
+由功能关系\qquad 合外力为0\ $\times$ % 原稿此处打叉
+\[mgV_m=P_{\text{电}}=\frac{\varepsilon^2}{R}\]
+\[\varepsilon=\frac{\dd\left(B_0(1+ky)\dfrac{\pi d^2}{4}\right)}{\dd t}=B_0\frac{\pi kd^2}{4}V_m\]
+\red{$\uparrow$ 对上式对$t$求导}
+\[\therefore\ V_m=\frac{16mgR}{B_0^2\pi^2k^2d^4}\]
+\underline{求导过程}
+\[\frac{\dd\left(B_0(1+ky)\dfrac{\pi d^2}{4}\right)}{\dd t}=\frac{B_0\,k\,v\,\pi d^2}{4}\]
+\end{solution}
+\end{problem}
+
+
+\section{电磁感应·恒功率拉框与动能定理}
+% ---- block 196-05 (原稿第196页) kind=problem ----
+\begin{problem}
+\notefig[0.4]{figures/p196_b.png}
+
+\noindent $m=0.4\unit{kg}$\\
+$R=3\,\Omega$\\
+$L=1\unit{m}$\\
+$\mu=0$\\
+$B=1\unit{T}$
+
+用恒功率为$27\unit{W}$的力拉框，在$1$处$MN$以$V_0$（未知）匀速通过磁场，当$MN$过$2$时，在导体框上再施加一水平向左的外力$F'$，外力大小为$F'=kV$\quad $k=\dfrac{4}{3}\unit{kg\cdot s^{-1}}$，$V$为速度，$L=1\unit{m}$，{\small $t_2=1.4\,t_1$}\ $t_{PQ}$过磁场、$MN$过磁场。
+% “(未知)”为写在 $V_0$ 下方的小字；$t_2=1.4t_1$ 为写在“$t_{PQ}$过磁场”上方的小字
+\par\smallskip
+$V_2=\struck{\dfrac{4}{3}}\,\dfrac{2}{3}V_0$（离开磁场时速度）。
+% 原稿 $V_2$ 后的 $\frac43$ 疑被涂改/划去
+\begin{solution}
+\textbf{由平衡条件}
+\[
+\frac{27}{V_0}=\frac{V_0}{3}\qquad V_0=9\unit{m/s}
+\]
+\hfill {\small 由于减速了合力向左}\par % 小字，其中“速”字下有下划线
+\[
+F_A+F'-F=ma\quad\text{以左为正方向}
+\]
+\[
+a=\frac{B^2L^2V}{mR}+\frac{kV}{m}-\frac{P}{mV}
+\]
+$a$与$v$反向\ 应减速运动\ $a$随之减小，故导体框$PQ$边在磁场% 此行至此为止，原稿未写完
+
+\[
+F_A\propto V\qquad F'\propto V
+\]
+故\ $\dfrac{W_{F'}}{W_A}=\dfrac{F'}{F_A}=\dfrac{kR}{B^2L^2}=4$
+
+由动能定理\quad $W_F-W_{F'}-W_A=\dfrac{1}{2}m\left(\dfrac{2}{3}V_0\right)^2-\dfrac{1}{2}mV_0^2$
+\[
+W_F=P\cdot 1.4\,\frac{L}{V_0}
+\]
+\[
+W_A=2.64\unit{J}
+\]
+导体框产生的焦耳热\ $Q=W_A=2.64\unit{J}$
+% 页面右侧中下部（y约0.87-0.90）有两道波浪形涂画线，非文字，未录
+\end{solution}
+\end{problem}
+
+
+\section{电磁感应·单位长度电阻类}
+% ---- block 198-01 (原稿第198页) kind=method ----
+1、单位长度电阻类
+
+\notefig[0.45]{figures/p198_a.png}
+
+\[
+I=\frac{B\,vt\tan\theta\ v}{\dfrac{\rho\left(vt+vt\tan\theta+\dfrac{vt}{\cos\theta}\right)}{S}}
+=\frac{BSv\tan\theta}{\rho\left(1+\tan\theta+\dfrac{1}{\cos\theta}\right)}
+\]
+\[
+=\frac{BSv\sin\theta}{\rho(\cos\theta+\sin\theta+1)}\qquad\text{为定值}
+\]
+
+% ---- block 198-02 (原稿第198页) kind=method ----
+\notefig[0.4]{figures/p198_b.png}
+
+\[
+F=\underset{\text{定值}}{Bi}\ \underset{\uparrow\ \propto t}{L}=Bi\,vt\tan\theta\ \propto t
+\]
+
+\notefig[0.4]{figures/p198_c.png}
+
+\struck{$P=P$}\qquad $P=\underline{F}\,v\propto F\propto t$
+
+\notefig[0.4]{figures/p198_d.png}
+% 此图纵轴标签为 $P$ 加一个形似小写 n 的下标（疑为 $P_{\text{外}}$ 之类的简写），已含在图内
+
+
+\section{电磁感应·反向磁场区域线框}
+% ---- block 198-03 (原稿第198页) kind=note ----
+\notefig[0.4]{figures/p198_e.png}
+
+$\uparrow\ \nearrow$\ 2倍电流\ 4倍力（$4F_{A0}$）
+% 两个箭头分别指向图中虚线小方框（线框）的两条边
+
+
+\section{电磁感应·安培力F=kv分类讨论}
+% ---- block 199-01 (原稿第199页) kind=method ----
+分类讨论\quad $kv$与$F_{\text{安}}$
+
+\notefig[0.28]{figures/p199_a.png}
+
+$F=kv$
+
+\notefig[0.35]{figures/p199_b.png}
+
+\notefig[0.6]{figures/p199_c.png}
+% 图中标注：纵轴 $v$、横轴 $t$；三条曲线旁依次为 $k>\frac{B^2L^2}{R}$、$K=\frac{B^2L^2}{R}$（分母 $R$ 被涂改）、$k<\frac{B^2L^2}{R}$
+
+$a=kv$\qquad $a=0$\qquad $v$\unclear{也为}$0$。
+
+
+\section{电磁感应·i-t图像面积与电荷量}
+% ---- block 199-02 (原稿第199页) kind=note ----
+$i$-$t$图面积\ 若$\Delta\phi=0$\ 则面积$q$应为$0$。
+

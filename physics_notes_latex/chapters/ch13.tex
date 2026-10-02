@@ -1,0 +1,386 @@
+% 本文件由 assemble.py 按 _work/plans/ch13.json 逐字组装，请勿手改（改 plan 或 blocks 后重新生成）。
+\chapter{交变电流与传感器}
+\label{ch:13}
+
+\section{交变电流·四值}
+% ---- block 029-01 (原稿第29页) kind=knowledge ----
+\underline{四值}
+
+有效值（用热量定义电流大小）\quad $I_{\text{有}}^2RT=\displaystyle\sum_{i=1}^{n}I_i^2R_it_i$
+
+\medskip
+\noindent 正弦式\quad
+\begin{tabular}[t]{@{}l@{}}$U_{\text{有}}=\dfrac{1}{\sqrt2}U_{\text{峰}}$\\[6pt] $I_{\text{有}}=\dfrac{1}{\sqrt2}U_{\text{峰}}$\end{tabular}
+\quad $P$不满足\quad 波形减半\ 有效值变为$\dfrac{1}{\sqrt2}$倍（二极管）
+% CHECK: 第二式 I有=…U峰 原稿写作 U峰(应为 I峰)，照原样转录；“P不满足”的 P 辨认不确定
+
+\medskip
+\noindent 功\ 能\ 热、铭/标牌、熔断电流、电表 $\Rightarrow$ 有效值
+
+\noindent 电容器击穿电压/二极管的耐压电压 $\Rightarrow$ 瞬时值/最大值\quad
+\begin{tabular}[c]{@{}l@{}}$E=nBS\omega$\\ $E=nBS\omega\sin(\omega t+\phi)$\end{tabular}
+
+\hspace*{9em}$\uparrow$ 用表达式% 原稿：箭头自“用表达式”指向上方的“瞬时值”
+
+\medskip
+\noindent 电量 $\Rightarrow$ 平均值\quad $E=\dfrac{\dd\phi}{\dd t}$% CHECK: 平均值应为 Δφ/Δt，原稿 d 与 Δ 难分，按 d 转录
+
+% ---- block 053-02 (原稿第53页) kind=summary ----
+交变电流（电流方向改变）\quad 有效值的理解与计算. \quad 小于$\dfrac{T}{4}$\ $\dfrac{\unclear{\pi}}{2}$\ $e$\ 不成立
+% “T/4”的分母和“π/2”的分子写得潦草
+
+交变电流四值的理解和运用：
+\begin{itemize}
+\item 瞬时值\ \unclear{受力}\quad $e=E_m\sin\omega t$，\ $i=I_m\sin\omega t$，\ $u=U_m\sin\omega t$（\unclear{不}会放电了）
+\item 最大值\quad $E_m=nBS\omega$，\ $I_m=\dfrac{E_m}{R+r}$\quad 电容器击穿电压、加二极管的电容器电压
+% E_m=nBSω 原稿写在“瞬时值”与“最大值”两行之间；I_m 式字小且被压在“电容器”三字下
+\item 有效值\quad $\dfrac{E_m}{\sqrt2}$\ \ $\dfrac{U_m}{\sqrt2}$\ \ $\dfrac{I_m}{\sqrt2}$\quad 热功、铭牌、熔断电流、电表读数
+\item 平均值\quad \unclear{穿}电荷量\quad $E=BL\bar v$\ \ $\bar E=n\dfrac{\Delta\phi}{\Delta t}$\ \ $\bar I=\dfrac{\bar E}{R+r}$
+\end{itemize}
+
+
+\section{交变电流·产生与表达式}
+% ---- block 029-02 (原稿第29页) kind=derivation ----
+\notefig[0.45]{figures/p029_a.png}
+% 图内标注：正视图(线圈、虚线转轴、ω及转向箭头)；侧视图(三条向右箭头、线圈边、夹角ωt、π/2-ωt)
+\begin{align*}
+\phi&=-\text{\struck{$n$}}BS\sin\Bigl(\frac{\pi}{2}-\omega t\Bigr)=-\text{\struck{$n$}}BS\cos\omega t\\[4pt]
+E&=n\frac{\Delta\phi}{\Delta t}=nBS\omega\sin\omega t\qquad\text{峰值}\ nBS\omega\qquad\omega=\frac{2\pi}{T}=2\pi f
+\end{align*}
+% 第一行两处 n 被涂掉(像涂黑的 n)，按 \struck 转录
+
+$E$与转轴位置、线圈形状无关
+
+
+\section{交变电流·中性面与峰值面}
+% ---- block 029-03 (原稿第29页) kind=knowledge ----
+垂正\ 流0\ 中性面\qquad \fcolorbox{red!75!black}{white}{\red{平峰\unclear{余}垂中正}}% 红笔画圈；“余”字不确定(原稿近似“杀”)，应是“平峰余垂中正”口诀
+
+\medskip
+\noindent\begin{tabular}[t]{@{}l@{}}$S\perp B$\textsuperscript{\scriptsize(正弦)}\\[3pt] $\phi$最大\\[3pt] 开始转\end{tabular}\quad
+\begin{tabular}[t]{@{}l@{}}$I=0$\\[3pt] $E=0$\\[3pt] $\dfrac{\Delta\phi}{\Delta t}=0$\end{tabular}
+
+\notefig[0.25]{figures/p029_b.png}
+经过中性面 电流方向改变
+
+\medskip
+\noindent 1个$T$变化2次，1s内变化$2f$次\quad $\dfrac{1\mathrm{s}}{T}\,2$\quad 每秒改变2倍\unclear{频}
+
+
+\section{交变电流·正弦式与旋转切割区别}
+% ---- block 029-04 (原稿第29页) kind=note ----
+正弦式变流电与旋转切割区别\quad $\theta\overset{\text{夹角}}{\langle B,S\rangle}$ 是否变化% CHECK: “变流电”原稿如此(应为交流电)；“夹角”二字写在 ⟨B,S⟩ 上方
+
+
+\section{变压器·基本关系}
+% ---- block 029-05 (原稿第29页) kind=formula ----
+\textbf{变压器}
+
+\notefig[0.25]{figures/p029_c.png}
+% 图内标注：n1(原线圈)、n2(副线圈)、原、副、铁芯
+\[
+\begin{array}{lcll}
+\text{原} & & \text{副} & \\[2pt]
+\phi_1 & = & \phi_2 & \text{(磁通量)}\\[6pt]
+\dfrac{\Delta\phi_1}{\Delta t} & = & \dfrac{\Delta\phi_2}{\Delta t} & \text{(磁通量变化率)}\\[10pt]
+e_1 & = & e_2 & \text{每匝感应电动势}\\[6pt]
+f_1 & = & f_2 & \text{(正常：正弦式)}
+\end{array}
+\]
+铁芯作用：固定线圈+导磁
+
+
+\section{变压器·理想与非理想}
+% ---- block 030-01 (原稿第30页) kind=knowledge ----
+理想变压器：无漏磁无热损
+
+非理想变压器：输出值$<$理想值
+
+\noindent\begin{tabular}[t]{@{}l@{}}电压正比定右边\\ 电流反比定左边\\ 功率左右恒相等\\ 串反并同\ \fcolorbox{red!75!black}{white}{\red{\unclear{电}内阻}}\end{tabular}% 原稿此四行位于页面右上方；“内阻”(及其前一字)被红笔圈出；“功率”前似有一个多余的“2”笔画
+
+\medskip
+\noindent 原副线圈瞬时值之间满足\unclear{比例}关系，方向由楞次定律判断
+
+\noindent\hspace*{1.5em}原\unclear{副}线圈有效值（正弦式）关系\ 且无二极管% CHECK: 本行第二字像“理”，疑为“副”
+
+
+\section{变压器·多副线圈}
+% ---- block 030-02 (原稿第30页) kind=formula ----
+\notefig[0.3]{figures/p030_a.png}
+% 图内标注：原线圈(电源)、三个副线圈 U2 I2 P2 n2 / U3 I3 P3 n3 / U4 I4 P4 n4、用电器、P1，红箭头由 P1 指向各副线圈
+\[
+\frac{U_1}{n_1}=\frac{U_2}{n_2}=\frac{U_3}{n_3}=\frac{U_4}{n_4}=e=\frac{\Delta\phi}{\Delta t}
+\]
+\[
+U_1I_1=U_2I_2+U_3I_3+U_4I_4
+\]
+\[
+n_1I_1=n_2I_2+n_3I_3+n_4I_4
+\]
+% 以下四式在原页位于右侧
+\[
+\begin{aligned}
+U_1&=n_1e\\
+U_2&=n_2e\\
+U_3&=n_3e\\
+U_4&=n_4e
+\end{aligned}
+\]
+% CHECK: U2=n2e 原稿像 “me”，按 n2 转录
+
+
+\section{变压器·动态分析·单副线圈无损}
+% ---- block 030-03 (原稿第30页) kind=method ----
+\textbf{单一副线圈无损变压器}
+
+\notefig[0.3]{figures/p030_b.png}
+% 图内为电路图并有大量红笔批注(圈出 U0、箭头 I2、P1 等)，标注：U0、用电器、电源、R 等
+\[
+\begin{array}{r@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\qquad}l}
+ & & & U_1=U_0 & & U_2=\dfrac{n_2}{n_1}U_1 & \\[2pt]
+\text{决定关系} & U_0 & \to & U_1 & \longrightarrow & U_2 & \\[2pt]
+ & & & & & \downarrow & \\[2pt]
+I_1\leftarrow & P_1 & \leftarrow & P_2 & \leftarrow & I_2 & I_2=\dfrac{U_2}{R}\\[8pt]
+\multicolumn{2}{r}{I_1=\dfrac{P_1}{U_1}} & \multicolumn{2}{c}{P_1=P_2} & \multicolumn{3}{l}{P_2=U_2I_2}
+\end{array}
+\]
+
+参数变化 $\to$ 后面参数
+\[
+\begin{array}{@{}lllllll@{\qquad}l@{}}
+R\uparrow & I_2\downarrow & P_2\downarrow & P_1\downarrow & I_1\downarrow & & & U_0U_1U_2\text{不变}\\[4pt]
+n_2\uparrow & U_2\uparrow & I_2\uparrow & P_2\uparrow & P_1\uparrow & I_1\uparrow & & U_0U_1\text{不变}\\[4pt]
+U_0\uparrow & U_1\uparrow & U_2\uparrow & I_2\uparrow & P_2\uparrow & P_1\uparrow & I_1\uparrow &
+\end{array}
+\]
+
+
+\section{变压器·动态分析·单副线圈有损}
+% ---- block 030-04 (原稿第30页) kind=method ----
+\textbf{单副有损}\quad 单一副线圈有损变压器
+
+\notefig[0.3]{figures/p030_c.png}
+% 图内为电路图并有红笔批注(圈出 U0、红色 P1、P2 等)，标注：R1、R2、U1 I1 n1 P1、U2 I2 n2 P2、电源、用电器
+\[
+\begin{array}{r@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\qquad}l}
+ & & & \text{(跟主)}\quad\text{次\ 主} & & & \\[2pt]
+ & & & U_1=U_0-I_1R_1 & & U_2=\dfrac{n_2}{n_1}U_1 & \\[2pt]
+\text{决定关系} & U_0 & \to & U_1 & \longrightarrow & U_2 & \\[2pt]
+ & & \nearrow & & & \downarrow & \\[2pt]
+I_1\leftarrow & P_1 & \leftarrow & P_2 & \leftarrow & I_2 & I_2=\dfrac{U_2}{R}\\[8pt]
+\multicolumn{2}{r}{I_1=\dfrac{P_1}{U_1}} & \multicolumn{2}{c}{P_1=P_2} & \multicolumn{3}{l}{P_2=U_2I_2}
+\end{array}
+\]
+% 原稿另有一条自 I1 斜指向 U1 的长箭头(此处以 \nearrow 示意)；“(跟主)”写在 U1 左上，“次 主”写在 I1R1 上方
+动态分析只分析1\unclear{圈}% CHECK: 末字像“圈”(框内)，也可能是“图”
+
+\[
+\begin{array}{@{}llllllll@{\qquad}l@{}}
+R_1\uparrow & U_1\downarrow & U_2\downarrow & I_2\downarrow & P_2\downarrow & P_1\downarrow & I_1\downarrow & & \text{前有$R$满足串反并同}\\[4pt]
+R_2\uparrow & I_2\downarrow & P_2\downarrow & P_1\downarrow & I_1\downarrow & U_1\uparrow & U_2\uparrow & & \text{满足串反并同}\\[4pt]
+n_2\uparrow & & U_2\uparrow & I_2\uparrow & P_2\uparrow & P_1\uparrow & I_1\uparrow & U_1\downarrow &\\[4pt]
+U_0\uparrow & \cdots & & & & & & &
+\end{array}
+\]
+% 第一行右侧“前有R满足串反并同”笔迹颜色较浅；第三行第二格有涂改液痕迹(空白)
+
+
+\section{变压器·等效阻抗}
+% ---- block 030-05 (原稿第30页) kind=method ----
+\textbf{等效阻抗}
+
+\notefig[0.25]{figures/p030_d.png}
+\notefig[0.25]{figures/p030_e.png}
+% 图d：原电路(U1 I1 n1 P1、U2 I2 n2 P2、R)；图e：等效电路(R、R等效、虚线框内 U1 I1 n1 P1)
+
+能等效先等效\quad \begin{tabular}[b]{@{}c@{}}\scriptsize(算不出)\\ 不能等效\end{tabular}\quad 列方程
+
+\[
+R_{\text{等}}=\Bigl(\frac{n_1}{n_2}\Bigr)^2R_{\text{副总}}
+\]
+
+
+\section{变压器·自耦变压器}
+% ---- block 031-01 (原稿第31页) kind=knowledge ----
+\textbf{自耦变压器}
+
+\notefig[0.6]{figures/p031_a.png}
+% 图内标注：左为单铁芯自耦变压器符号(端点标 U_2、U_1)；中间两幅自耦变压器线路图：n_2/U_2、n_1/U_1，下图标“I_干路=I_原+I_副”、“电源”、n_1、n_2、I_原，红笔 I_副 及红箭头
+% 图右侧两式已在下面转录(原稿中位于图的右侧)
+\[
+\frac{U_1}{n_1}=\frac{U_2}{n_2}
+\]
+\[
+n_1I_{\text{原}}=n_2I_{\text{副}}
+\]
+
+
+\section{变压器·互感器}
+% ---- block 031-02 (原稿第31页) kind=knowledge ----
+\textbf{电流互感器\quad 电压互感器}\quad ($U/I$ 太大\ 不敢测/不能测)
+
+\noindent\begin{tabular}[t]{@{}p{0.4\linewidth}@{}p{0.4\linewidth}@{}}
+升压\ 降流 & 降压\ 升流
+\end{tabular}
+
+\notefig[0.4]{figures/p031_b.png}
+% 图内标注：左图(电流互感器)原线圈 I_1、n_1，副线圈 n_2 与 I_2测(花括号)；右图(电压互感器)n_1、n_2、U_1、U_2测
+\[
+I_1=\frac{n_2}{n_1}I_1
+\]% CHECK: 原稿右端 I 的下标写得像“1”(应为 I_2测)，照原样转录；此式位于左图下方
+\[
+U_1=\frac{n_1}{n_2}U_2\qquad \text{\unclear{测小算大}}
+\]% 此式及“测小算大”位于右图右侧；“测小算大”四字辨认不清，第二字写得像“外”
+
+
+\section{变压器·二极管与视在功率}
+% ---- block 031-03 (原稿第31页) kind=derivation ----
+\textbf{二极管与视在功率}
+
+\notefig[0.85]{figures/p031_c.png}
+% 图内标注：电路——原线圈(U_0 电源，I_1、U_1、P_1)、副线圈(I_2、U_2、P_2)、二极管(红笔圈出，红字“滤波”)、电阻 R(U_2、I_R、P_R)
+% 图内红字小表(行：视/有/无；列：原线圈、副线圈、R 支路)：视 P_1、P_2、P_2；有 P_R、P_R、P_2；无 P_1-P_R、P_2-P_R、0 (行首“视”字不太确定)
+% 波形(横轴 t)：U_1 正弦波，U_m 被黑笔圈出，负半周红笔描出并标红字“未做功”(共两处“未做功”)；I_1 半波(I_m)，正半周红笔描出；U_2 正弦波，峰值标 n_2/n_1·U_m，负半周红字“未做功”；U_R 半波，峰值 n_2/n_1·U_m；最右 I_2(I_R) 波形，峰值标 n_1/n_2·I_m
+\begin{align*}
+P_1&=U_1I_1=\left(\frac{U_m}{\sqrt2}\right)\left(\frac{I_m}{\sqrt2}\cdot\frac{1}{\sqrt2}\right)=\frac{U_mI_m}{2\sqrt2}\\
+P_2&=U_2I_2=\frac{n_2}{n_1}\frac{U_m}{\sqrt2}\cdot\frac{n_1}{n_2}\frac{I_m}{\sqrt2}\cdot\frac{1}{\sqrt2}=\frac{U_mI_m}{2\sqrt2}\neq P_R=\frac{U_mI_m}{4}
+\end{align*}
+
+\noindent $P_{\text{视在}}=P_{\text{有功}}+P_{\text{无功}}$\quad (有$U$无$I$下\textsuperscript{\unclear{…}}功率)% “下”与“功率”之间的上方有两个极小的字(旁注)，无法辨认
+
+\noindent 电表有效值乘积\quad 实际做功功率\ (UI 波形一致时\textsubscript{功率})% 小字“功率”写在该行下方、“形一致”处
+
+\noindent \red{题中所有功率全是 有功功率}
+
+
+\section{变压器·远距离输电}
+% ---- block 031-04 (原稿第31页) kind=method ----
+\textbf{远程输电}
+
+\notefig[0.42]{figures/p031_d.png}
+% 图内标注：升压变压器(n_1、n_2)、输电线、降压变压器(n_3、n_4)、用电器 R；原线圈侧 ~U_0 =U_1、I_1、P_1；输电线两侧 I_2、U_2、P_2 与 I_3、U_3、P_3，中间“=、≠、≠”(I_2=I_3，U_2≠U_3，P_2≠P_3)；用户侧 I_4、U_4；红笔：“升压降流 降热”、“输电电流”(红线指向输电线)、“低压”“高压”、红圈圈出输电线部分及红箭头；图下黑字“输电功率”“用电功率”(带引线)
+\noindent 发电回路\quad $U_0=U_1$\\
+输电回路：$U_3=U_2-I_2r$\\
+用电回路：$U_4=I_4R$
+
+\noindent \fcolorbox{red!75!black}{white}{损失功率}% 红笔圈出
+\quad $\Delta P=I_2^2r=\dfrac{\Delta U^2}{r}=\Delta U\cdot I_2=P_2-P_3$
+
+\[
+=\left(\frac{P_2}{U_2}\right)^2r=\left(\frac{P_1}{U_1\cdot\frac{n_2}{n_1}}\right)^2r
+\]% 红箭头由 I_2^2 指向 (P_2/U_2)^2 ；分母中的 n_2/n_1 被红笔圈出
+
+\noindent \fcolorbox{red!75!black}{white}{$\left(\dfrac{n_2}{n_1}\right)$}\ 提高$K$倍\quad $\Delta P$\unclear{减小为}$\dfrac{1}{K^2}$% “减…K”下方有红线；“减小为”三字辨认不清(原稿像“减损”)
+
+\noindent \red{输电电压$U_2$提高$K$倍}
+
+% ---- block 032-01 (原稿第32页) kind=method ----
+% 页面顶部被相机裁切，以下为页首可见部分(含一幅被裁掉上半部的线路图)
+\notefig[0.4]{figures/p032_a.png}
+% 图内标注(仅见下半部)：U_0 带向下箭头；原线圈 U_1、P_1；中间两线圈 U_2≠U_3、P_2≠P_3(上方隐约可见 I_3)；用户侧线圈 U_4、R_4(上方隐约可见 I_4)及电阻 R
+\noindent $\cdots$\ $U_3\downarrow$\ \ $U_4\downarrow$\quad 电网分区域停电% 此行位于页顶，上半截被裁，左侧文字未见
+
+\noindent 用户少\ $R_{\text{并}}\uparrow$\ \unclear{总}\ $I_4\downarrow$\ \ $\Delta U\downarrow$\ \ $U_3\uparrow$\ \ $U_4\uparrow$% “R并↑”与“I_4↓”之间有一个像“△出”的笔画，疑为箭头/“总”
+
+\noindent 智能电网\quad 高峰期使 $n_4\uparrow$\ \ $n_3\downarrow$\ \ $n_2\uparrow$\ \ $n_1\downarrow$
+
+
+\section{变压器·动态分析}
+% ---- block 032-04 (原稿第32页) kind=method ----
+\notefig[0.55]{figures/p032_b.png}
+% 图内标注：左侧为交流电源(~)接变压器原线圈(粗锯齿)，副线圈(细锯齿)并联一个圆圈内带“V”的电表，两根引线向右伸出，副线圈及电表部分被一个大椭圆圈住；椭圆右侧即下列两行字
+\noindent 前无内阻\\
+\unclear{转}满足\ 串反并同% 第二行第一字写得像“转/持”，疑为“都/全”
+
+\notefig[0.42]{figures/p032_c.png}
+% 图内标注：大方框内为交流电源(~)、电阻 R、带圆圈电表、变压器线圈、两根引线；方框下方用双向箭头连到等效电路：交流电源(~)、R、带圆圈电表、旁标“R_等效”
+\noindent 前有内阻\\
+全满足\ 串反并同
+
+\noindent 正常\ 恒定电阻无电源内阻\\
+只能用程序法，不能用串反并同
+
+
+\section{交变电流·产生与描述}
+% ---- block 053-01 (原稿第53页) kind=summary ----
+\begin{itemize}
+\item 交变电流 及 图像
+\item 正弦式交变电流的函数表达式、峰值、有效值，
+\end{itemize}
+若 $e=e_m\sin\omega t$ \qquad $\phi=\phi_m\cos\omega t$ \qquad $U=\dfrac{RE_m}{R+r}\sin\omega t$ \qquad $I=\dfrac{E_m}{R+r}\sin\omega t$
+
+正弦式交流电的产生和描述 \quad 产生：
+\begin{itemize}
+\item 线框转\ 注\ 有效面积
+\item $L$ 为正余弦\ 函数
+\item $v$ 为正余弦
+\item $B$ 为正余弦
+\end{itemize}
+% 「函数」二字写在第2、3行右侧（大括号外），应是对 L、v 为正余弦函数的说明
+
+
+\section{理想变压器与远距离输电}
+% ---- block 053-03 (原稿第53页) kind=summary ----
+\textbf{理想变压器与远距离输电}
+\begin{itemize}
+\item 理想变压器
+\item 原理：互感现象
+\item 电能的输送
+\end{itemize}
+\[
+I=\frac{P}{U}=\frac{P'}{U'}=\frac{U-U'}{R}\qquad \Delta P=P-P'=I^2R=\left(\frac{P}{U}\right)^2R
+\]
+\[
+\Delta U=U-U'=IR\qquad \text{用小电阻导线 + 提高输电电压}
+\]
+
+% ---- block 053-04 (原稿第53页) kind=method ----
+\textbf{理想变压器的理解和应用}
+
+\notefig[0.25]{figures/p053_a.png}
+
+$U_1=U_{\text{源}}-U_{\text{串}}$ \qquad 有二极管\ $U$、$I$ 为最大值除以2
+
+\textbf{理想变压器的动态分析}
+
+
+\section{特殊变压器与互感器}
+% ---- block 053-05 (原稿第53页) kind=summary ----
+\textbf{三类特殊的变压器}
+
+自耦变压器（一个线圈）可升降.\qquad 互感器.\qquad
+$\left\{\begin{tabular}{@{}l@{}}电压互感器\ 降压\\ 电流互感器\ 升压降流\end{tabular}\right.$
+
+\notefig[0.25]{figures/p053_b.png}
+
+一对多：
+
+\notefig[0.25]{figures/p053_c.png}
+\[
+\frac{U_1}{n_1}=\frac{U_2}{n_2}=\frac{U_3}{n_3}
+\]
+\[
+n_1I_1=n_2I_2+n_3I_3+\cdots
+\]
+\[
+P_1=P_2+P_3+\cdots
+\]
+
+
+\section{传感器实验}
+% ---- block 053-06 (原稿第53页) kind=note ----
+\textbf{传感器实验}
+
+探究热敏电阻的热敏特性\quad 欧姆表、热水、温度计
+
+\notefig[0.3]{figures/p053_d.png}
+
+探究光敏电阻的光敏特性
+
+\notefig[0.5]{figures/p053_e.png}
+
+滑动$P$、调光照↑\ 观察电阻阻值情况
+
+测用手掌黑纸遮光时的电阻值并记录
+% 末行位于页面最下缘，被裁切，字迹较模糊
+

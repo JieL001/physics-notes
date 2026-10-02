@@ -1,0 +1,119 @@
+%%%PAGE 77 rot=0 legibility=good summary=系统动能定理与机械能守恒公式；连接体能量方法；上抛下落类（有双向性）结论及斜面推广；小球竖直上抛 Ek=2Ep、Ep=2Ek 求 h 例题
+%%%BLOCK id=077-01 ch=06 sec=动能定理与机械能守恒·系统 kind=formula alt=none cont=none y=0.07-0.20
+\textbf{系统动能定理．}
+\[
+\sum W_{\text{外}}+\sum W_{\text{内}}=\Delta E_k
+\qquad
+\text{内力}
+\begin{cases}
+W\ \text{绳、杆、}f_{\text{静}}\ \text{抵消}\\
+W\ \red{\underline{\text{弹性绳}}}\text{、}\red{\underline{\text{弹簧}}}\text{、}\red{\underline{\text{不抵消}}}
+\end{cases}
+\]
+% 原稿：第二行“弹性绳”“弹簧”“不抵消”下为红笔下划线（字为黑色）
+\textbf{机械能守恒}
+\[
+W_{\text{其}}+W_G+W_{\text{弹}}=\Delta E_k
+\qquad
+W_{\text{其}}=\Delta E_{k}+\Delta E_{pG}+\Delta E_{p\text{弹}}=\Delta E_{\text{机}}
+\]
+% CHECK: 第二式 ΔE_k 后手写多一小笔（像逗号或下标 1）
+\[
+W_{\text{其}}=0\ \text{时 机械能守恒}
+\]
+%%%END
+%%%BLOCK id=077-02 ch=06 sec=连接体·能量 kind=method alt=03 cont=none y=0.19-0.31
+\textbf{连接体}
+\[
+\begin{cases}
+\text{对1 由动能定理}\\
+\text{对2 由动能定理}\\
+\text{速度关联}
+\end{cases}
+\qquad
+\fcolorbox{red!75!black}{white}{\begin{tabular}{@{}c@{}}单体不守恒\\ 系统\,才守恒\end{tabular}}
+\]
+% 上面“单体不守恒/系统才守恒”外为红圈；下面三行外有红笔竖括号
+\begin{itemize}
+\item 过程为变加变减速，用超失重分析（对××力与 $mg$ 比较）
+\item $V_1\ \overset{\text{\scriptsize 正功}}{0}\ \text{有}\ \overset{\text{\scriptsize 负功}}{0}$
+\item $V_2\ \text{有}\ \overset{\text{\scriptsize 负功}}{0}\ \overset{\text{\scriptsize 正功}}{\text{有}}$
+\end{itemize}
+% 小字“正功/负功”写在对应符号上方；第一行正功在第一个0上、负功在最后的0上；第二行负功在“有”“0”之间偏0、正功在最后的“有”上
+弹簧速度不能分解
+%%%END
+%%%BLOCK id=077-03 ch=06 sec=解题分类·过程与方程 kind=summary alt=none cont=none y=0.31-0.42
+不以模型分过程而以方程分过程．
+\[
+\begin{cases}
+\text{全过程类}\\
+\text{上抛下落类}\\
+\text{绳杆连接体类．}
+\end{cases}
+\]
+%%%END
+%%%BLOCK id=077-04 ch=06 sec=上抛下落类·双向性 kind=method alt=none cont=none y=0.45-0.62
+\textbf{上抛下落类}\quad （有双向性）．
+\begin{keybox}
+结论\quad 无论 $f$ 是否存在
+\end{keybox}
+\red{能量 $\times n$\quad 速度 $\times\sqrt{n}$}
+% 以下两行为原稿右侧的黑字小注
+\[
+E_{k0}\times n\quad h\times n\quad E_{k\text{返}}\times n\quad W_f\times n\quad W_G\times n
+\]
+\[
+V_{n\text{返}}\times\sqrt{n}
+\]
+% CHECK: “返”字辨认存疑（E_k返、V_n返）
+\begin{align*}
+\text{上}\quad & 0-\tfrac12 mV_0^2=-mgh-fh \quad\text{①}\\
+\text{下}\quad & \tfrac12 mV^2-0=mgh-fh \quad\text{②}\\
+& \frac{\text{①}}{\text{②}}=\frac{V_0^2}{V^2}=\frac{f+mg}{mg-f}\\
+& \tfrac12 mv^2-\tfrac12 mv_0^2=-2hf
+\end{align*}
+%%%END
+%%%BLOCK id=077-05 ch=06 sec=上抛下落类·双向性 kind=method alt=02 cont=none y=0.62-0.80
+\red{$0-V_{\text{上}}^2=-g\sin\theta-\mu g\cos\theta$}\\
+\red{$V_{\text{下}}^2=g\sin\theta-\mu g\cos\theta$}
+% CHECK: 红字 V 的下标手写像 E/F，按上下文取 上/下
+%FIG p077_a 0.065 0.72 0.205 0.78
+\notefig[0.25]{figures/p077_a.png}
+\[
+\begin{cases}
+W_G = mg\sin\theta\,S\\
+W_f = \mu mg\cos\theta\,S
+\end{cases}
+\qquad
+\frac{W_G}{W_f}=\frac{\tan\theta}{\mu}\ \text{为定值}
+\qquad
+W_f\propto W_G
+\]
+%%%END
+%%%BLOCK id=077-06 ch=06 sec=上抛下落类·双向性 kind=problem alt=none cont=none y=0.81-0.99
+\begin{problem}
+\unclear{小}球竖直上抛，最高 $H$，$f$ 恒定，上升至 $h$ 处，$E_k=2E_p$，下落至离地 $h$ 处，$E_p=2E_k$，求 $h$。
+\begin{solution}
+%FIG p077_b 0.0 0.86 0.28 0.97
+\notefig[0.3]{figures/p077_b.png}
+\[
+\left\{
+\begin{array}{l}
+\uparrow\ E_k=2mgh\qquad \downarrow\ E_k'=\tfrac12 mgh\\[6pt]
+h\ \left\{
+\begin{array}{l}
+-\tfrac32 mgh=-W_f\times 2\\
+W_f=-\tfrac34 mgh\\
+0-2mgh=-\tfrac34 mgh-mg(H-h)\\
+\therefore h=\tfrac49 H
+\end{array}
+\right.
+\end{array}
+\right.
+\]
+% 原稿左侧示意：顶部一条横线，↑自小圆圈向上、↓向下止于小圆圈（上升/下落经过 h 处）
+% CHECK: −(3/2)mgh=−W_f×2 与 W_f=−(3/4)mgh 符号不一致（原稿如此）
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 77

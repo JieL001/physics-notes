@@ -1,0 +1,91 @@
+%%%PAGE 40 rot=0 legibility=good summary=光压：光子动量公式、全反射ΔP=2P与全吸收ΔP=P时的光压强；例①光帆离开太阳系；例②激光器光压与光子数；例③激光动力机；风力发电机功率
+%%%BLOCK id=040-01 ch=17 sec=光的粒子性·光压 kind=derivation alt=07 cont=prev y=0.0-0.19
+$p=\dfrac Ec$
+
+以功率$P_0$射光
+%FIG p040_a 0.01 0.05 0.198 0.13
+\notefig[0.3]{figures/p040_a.png}
+光照\ \red{被反射}\quad \red{$\Delta P=2P$} % “被反射”被红笔圈出，红笔写 ΔP=2P
+\begin{gather*}
+-\Delta F\,\Delta t=-P-P % CHECK: 左端首个符号似“-”，按物理意义(ΔFΔt=2P)照此转录
+\\
+\Delta F=\frac{2P}{\Delta t} % 此行末尾原稿有一个小记号
+\\
+\Sigma\Delta F=\Sigma\frac{2E}{c\Delta t}=\frac{2P_0}{c}\qquad\therefore F=\frac{2P_0}{c}
+\end{gather*}
+光压强 $I=\dfrac{2P_0}{cS}$
+%%%END
+%%%BLOCK id=040-02 ch=17 sec=光的粒子性·光压 kind=derivation alt=07 cont=none y=0.185-0.28
+功率$P_0$射光\ \red{全被吸收}\quad $\Delta P=P$ % “全被吸收”被红笔圈出，并有黑色波浪线
+%FIG p040_b 0.425 0.208 0.52 0.243
+\notefig[0.25]{figures/p040_b.png}
+取$\Delta t$内光子数 $n=\dfrac{P_0\Delta t}{h\,\frac c\lambda}$\qquad $F\Delta t=nP$\quad 故 $I=\dfrac FS=\dfrac{P_0}{cS}$
+%%%END
+%%%BLOCK id=040-03 ch=17 sec=光的粒子性·光子动量 kind=formula alt=none cont=none y=0.20-0.30
+\[
+\left\{\begin{aligned}
+E&=mc^2\\
+E=h\nu&=\frac{hc}{\lambda}\quad\to\ p=\frac Ec=\frac h\lambda\\
+p&=mc
+\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=040-04 ch=17 sec=光的粒子性·光压 kind=problem alt=05 cont=none y=0.29-0.52
+% 原稿此处有一条红色斜线横贯页面(分隔其上、其下两部分内容)
+\begin{problem}[{①\ 光帆离开太阳系}]
+%FIG p040_c 0.10 0.30 0.215 0.385
+\notefig[0.25]{figures/p040_c.png}
+太阳 $G$\unclear{引}质量
+
+（太阳图标）$M$\ 太阳单位时间辐射能量为$P$，光帆与光垂直，将太阳光一半反射一半吸收，求光帆$S$取值满足的条件 % 第一行末尾“吸”字被页边切断，第二行行首又写“吸收”
+\begin{solution}
+\[
+\left\{\begin{aligned}
+I&=\frac{-\frac P2-P}{cS}\qquad S=4\pi r^2\ \text{（球面波辐射）}\\
+\red{F_{\text{光}}=}\,IS_{\text{帆}}&>\frac{GMm}{r^2}\qquad\textcircled{力}
+\end{aligned}\right.
+\qquad\therefore\ S_{\text{帆}}>\frac{8\pi cGMm}{3P}
+\]
+\[
+F=P\cdot S
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=040-05 ch=17 sec=光的粒子性·光压 kind=problem alt=07 cont=none y=0.50-0.72
+\begin{problem}[{②}]
+激光器功率$P_0$，光束截面积$S$，垂直照射被全部反射时，光对物体压力为$F=2PN$\ ↑\unclear{数}\quad $P$为动量，求光压 % $N$ 下方有一向上箭头，箭头下有一字，似“数”
+\begin{solution}
+$E=pc$\qquad $P_0=NE$ % 此行 E=pc 处有一条弧形箭头指回左侧
+\[
+I=\frac FS=\frac{2PN}{S}=\frac{2P_0}{cS}
+\]
+右侧草算：
+\begin{gather*}
+E=pc\\
+P_0=NE=Npc\\
+\boxed{N=\frac{P_0}{pc}} % 原稿 N=P_0/(pc) 被圈出
+\end{gather*}
+\red{$\checkmark$} % 右侧有一个红笔对勾
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=040-06 ch=17 sec=光的粒子性·光压 kind=method alt=03 cont=none y=0.64-0.85
+\textbf{③}\ 激光动力机.
+
+\red{$F=$}\,$IS=ma$\ \unclear{同}牛二
+\begin{itemize}
+\item $I=\dfrac{2P_0}{cS}$\quad 光压 % CHECK: 若 P_0 为单位面积辐射功率，则 I=2P_0/c；原稿写 2P_0/(cS)，照录
+\item $P=P_0\cdot S$\quad $P_0$为单位面积辐射功率
+\item $S$为薄膜面积
+\end{itemize}
+%%%END
+%%%BLOCK id=040-07 ch=06 sec=连续体功率·风力发电机 kind=derivation alt=07 cont=none y=0.86-1.0
+\textbf{风力发电机}
+%FIG p040_d 0.162 0.89 0.25 0.96
+\notefig[0.25]{figures/p040_d.png}
+\[
+P=\frac{\frac12\rho\,\Delta l\,\pi r^2V^2}{\Delta t}=\frac12\rho\pi r^2V^3 % 原稿分子中的 Δl 与分母 Δt 各被圈出(Δl/Δt=V)
+\]
+%%%END
+%%%PAGEEND 40

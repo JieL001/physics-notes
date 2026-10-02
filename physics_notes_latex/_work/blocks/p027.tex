@@ -1,0 +1,62 @@
+%%%PAGE 27 rot=0 legibility=good summary=恒定电流：U/I与ΔU/ΔI的含义、滑变自并联、电动机(非纯电阻)功率关系、电源总功率与效率、最大输出功率及P-I/P-U/P-R图像
+%%%BLOCK id=027-01 ch=10 sec=欧姆定律·UI比值与变化量比值 kind=knowledge alt=none cont=none y=0.05-0.13
+$\dfrac{U}{I}$ 永远是测量对象的电阻
+
+\[
+\frac{\Delta U}{\Delta I}\ \left\{\begin{array}{l}
+\text{测定值电阻，$\dfrac{\Delta U}{\Delta I}$为定值电阻阻值}\\[8pt]
+\text{测变化电阻\quad $\dfrac{\Delta U}{\Delta I}$为其他部分电阻之和}
+\end{array}\right.
+\]
+% CHECK: 三处分式的 Δ/d 符号手写潦草(类似 αU/αI)，按 ΔU/ΔI 转录
+%%%END
+%%%BLOCK id=027-02 ch=10 sec=滑动变阻器·自并联 kind=method alt=none cont=none y=0.15-0.31
+\textbf{\unclear{自}并联}\quad 滑变左右两部分并联\quad $R_{\text{左}}=R_{\text{右}}$时 $R_{\text{并}}$最大
+
+%FIG p027_a 0.10 0.195 0.23 0.30
+\notefig[0.25]{figures/p027_a.png}
+%%%END
+%%%BLOCK id=027-03 ch=10 sec=非纯电阻·电动机 kind=knowledge alt=none cont=none y=0.32-0.56
+\textbf{电动机}
+
+%FIG p027_b 0.16 0.305 0.71 0.392
+\notefig[0.55]{figures/p027_b.png}
+% 图内标注：(非纯电阻) M；=；(纯电阻)R丝；(非纯电阻)R转(不可知，若不转，则R转=0)
+
+$R_M$ 永远不可知 $=R_{\text{丝}}+R_{\text{转}}$
+
+\medskip
+$P_{\text{总}}\;=\;P_{\text{热}}+P_{\text{机}}/P_{\text{输}}/P_{\text{有用}}$
+
+\medskip
+\noindent\begin{tabular}{@{}llll@{}}
+ & $P_{\text{总}}$ & $P_{\text{热}}$ & $P_{\text{输}}$\\[3pt]
+电动机 & $UI$ & $I^2R_{\text{丝}}$ & $UI-I^2R_{\text{丝}}$\\[3pt]
+纯电阻 & & \multicolumn{2}{@{}l}{$UI=I^2R=\dfrac{U^2}{R}$}\\
+\end{tabular}
+%%%END
+%%%BLOCK id=027-04 ch=10 sec=电源功率与效率 kind=formula alt=none cont=none y=0.57-0.77
+\textbf{电源的\unclear{总}功率\,|\,效率}
+
+%FIG p027_c 0.085 0.615 0.25 0.725
+\notefig[0.25]{figures/p027_c.png}
+\begin{align*}
+P_{\text{总}}&=EI=\frac{E^2}{R+r}=P_{\text{外}}+P_{\text{内}}\\[4pt]
+P_{\text{外}}&=U\cdot I=\frac{U^2}{R}=I^2R=\Bigl(\frac{E}{R+r}\Bigr)^2R\qquad\text{有用功}\\[4pt]
+P_{\text{内}}&=U_{\text{内}}I=\frac{U_{\text{内}}^2}{r}=I^2r=\Bigl(\frac{E}{R+r}\Bigr)^2r\qquad\text{无用功}\\[4pt]
+\eta&=\frac{UI}{EI}=\underset{\text{(无条件)}}{\frac{U}{E}}=\frac{R}{R+r}=1-\frac{Ir}{E}\qquad R_{\text{\unclear{外}}}\text{必须为纯电阻}\quad E=U+Ir\quad U=E\frac{R}{R+r}
+\end{align*}
+%%%END
+%%%BLOCK id=027-05 ch=10 sec=电源功率与效率·最大输出功率 kind=formula alt=none cont=none y=0.78-0.99
+\textbf{最大输出功率}\quad $P\Leftrightarrow$函数
+
+当 $R=r$ 时\quad $P_{\text{外}\max}=\dfrac{E^2}{4r}$\quad $I=\dfrac{E}{2r}=\dfrac{I_0}{2}$\quad $U=\dfrac{E}{2}$\quad $P_{\text{总}}=\dfrac{E^2}{2r}$\quad $P_{\text{内}}=\dfrac{E^2}{4r}$
+\[
+P_{\text{外}}=\frac{E^2}{R^2+2Rr+r^2}R=\frac{E^2}{R+2r+\frac{r^2}{R}}\qquad R=r\ \text{时}\ P_{\text{外}}\ \text{取最大}
+\]
+
+%FIG p027_d 0.04 0.866 0.70 0.985
+\notefig[0.66]{figures/p027_d.png}
+% 图内三幅 P外 图像：P外-I(峰值E²/4r，横轴 I₀/2、I₀，短路电流)；P外-U(横轴 E/2、E)；P外-R(峰值在 R=r，之后渐近下降)
+%%%END
+%%%PAGEEND 27
