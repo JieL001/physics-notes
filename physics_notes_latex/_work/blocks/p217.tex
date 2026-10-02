@@ -1,0 +1,90 @@
+%%%PAGE 217 rot=0 legibility=good summary=多用电表欧姆挡：换挡规则、构造与量程、电流流向、欧姆表原理与中值电阻、欧姆调零与误差分析
+%%%BLOCK id=217-01 ch=10 sec=多用电表·欧姆换档与构造量程 kind=knowledge alt=none cont=none y=0.07-0.27
+\textbf{欧姆换档}：大阻小偏换大档
+
+\textbf{构造与量程}
+\begin{itemize}
+\item 阻多压大
+\item 阻多流小
+\item 阻多档高（欧姆档）
+\end{itemize}
+%%%END
+%%%BLOCK id=217-02 ch=10 sec=多用电表·电流流向 kind=diagram alt=none cont=none y=0.29-0.49
+\textbf{电流流向}：红进电表，黑出电表。
+
+\begin{center}
+\begin{minipage}[t]{0.23\linewidth}\centering
+%FIG p217_b 0.045 0.325 0.235 0.427
+\notefig[1]{figures/p217_b.png}
+测$R$两端电压
+\end{minipage}\hfill
+\begin{minipage}[t]{0.23\linewidth}\centering
+%FIG p217_c 0.265 0.335 0.435 0.427
+\notefig[1]{figures/p217_c.png}
+测$R$电流
+\end{minipage}\hfill
+\begin{minipage}[t]{0.23\linewidth}\centering
+%FIG p217_d 0.455 0.345 0.64 0.445
+\notefig[1]{figures/p217_d.png}
+测二极管正向电阻
+\end{minipage}\hfill
+\begin{minipage}[t]{0.23\linewidth}\centering
+%FIG p217_e 0.65 0.36 0.79 0.445
+\notefig[1]{figures/p217_e.png}
+测二极管反向电阻
+\end{minipage}
+\end{center}
+%%%END
+%%%BLOCK id=217-03 ch=10 sec=多用电表·欧姆表原理 kind=derivation alt=none cont=none y=0.48-0.64
+\textbf{原理}：闭合电路欧姆定律
+\[
+E=I(R_{\text{内}}+R_x)
+\]
+
+%FIG p217_a 0.04 0.495 0.28 0.655
+\notefig[0.3]{figures/p217_a.png}
+
+\[
+R_x=\frac{E}{I_{\text{总}}}-R_{\text{内}}
+\qquad
+\begin{cases}
+I=I_g, & R_x=0\to\text{表盘右}\\
+I=0, & R_x=\infty\ \text{表盘左}\\
+I=\dfrac{I_g}{2}\ \text{时}, & R_x=R_{\text{内}}\ \text{表盘中}
+\end{cases}
+\]
+% CHECK: 第三式原稿写作 "I = I/2 g"（g 写在分式右侧，应指 I_g/2）
+%%%END
+%%%BLOCK id=217-04 ch=10 sec=多用电表·欧姆调零与误差 kind=note alt=none cont=none y=0.63-0.67
+手握表笔测电阻，并联人体电阻 $R_{\text{测}}<R_{\text{真}}$
+%%%END
+%%%BLOCK id=217-05 ch=10 sec=多用电表·欧姆表原理 kind=formula alt=none cont=none y=0.66-0.82
+\textbf{推论}：中值电阻$R_{\text{中}}$ $=$ 表盘内阻 $R_{\text{内}}=\dfrac{E}{I_{\text{满}}}\ \ r+R_g+R_p$
+% CHECK: 原稿 E/I满 与 r+Rg+Rp 之间无明显等号（疑为 R内=E/I满=r+Rg+Rp）
+
+\begin{itemize}
+\item 已知 $E$、$I_{\text{满}}$、$r$、$R_g$ $\to$ 选滑变$R_p$
+\item 已知 $E$、$R_{\text{中}}$ $\to$ 选电流表$R_g$
+\end{itemize}
+
+三个方程
+\[
+\begin{cases}
+I_g=\dfrac{E}{R_{\text{内}}}=\dfrac{E}{R_{\text{中}}}\\[1.2ex]
+I_g=\dfrac{E}{R_{\text{内}}+R_x}\\[1.2ex]
+R_{\text{中}}=R_{\text{内}}
+\end{cases}
+\]
+% CHECK: 第二式左端原稿同样写作 I_g（按物理应为 I）
+%%%END
+%%%BLOCK id=217-06 ch=10 sec=多用电表·欧姆调零与误差 kind=knowledge alt=none cont=none y=0.83-1.00
+\textbf{欧姆调零本质}：调节$R_p$，补偿$r$的变化，以确保$R_{\text{内}}$为定值。
+
+\begin{itemize}
+\item 若 $E\downarrow$ \qquad\qquad $R_{\text{测}}>R_{\text{真}}$
+\item 若 $r\uparrow$ \qquad\qquad $R_{\text{测}}>R_{\text{真}}$
+\item 若 $r\uparrow$ 经欧姆调零 $R_{\text{测}}=R_{\text{真}}$ \qquad 实在不行 赋值法
+\item 若 $E\downarrow$、经欧姆调零、$R_{\text{测}}>R_{\text{真}}$
+\end{itemize}
+%%%END
+%%%PAGEEND 217

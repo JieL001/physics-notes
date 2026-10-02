@@ -1,0 +1,73 @@
+%%%PAGE 216 rot=0 legibility=good summary=电表校准电路（分压式）；多用电表欧姆表与AV档特点，机械调零/档位开关/欧姆调零要点
+%%%BLOCK id=216-01 ch=10 sec=电表改装·校准 kind=diagram exp=1 alt=none cont=none y=0.05-0.31
+\textbf{电表校准，多组数据}
+
+%FIG p216_a 0.10 0.13 0.62 0.279
+\notefig[0.6]{figures/p216_a.png}
+
+（右图旁标注）分压式
+
+量程：标$\ge$改
+
+改表：$E\ge$量程
+%%%END
+%%%BLOCK id=216-02 ch=10 sec=多用电表·欧姆表与AV档 kind=knowledge alt=none cont=none y=0.38-0.72
+\textbf{多用电表}
+
+\begin{itemize}
+\item $\Omega$（$R_A$式）：
+  \begin{itemize}
+  \item 左$\infty$右$0$
+  \item $0\to\infty$
+  \item 刻度不均匀
+  \item 左密右疏
+  \end{itemize}
+\item $\Omega$（$R_V$式）：
+  \begin{itemize}
+  \item 左$0$右$\infty$
+  \item $0\to\infty$
+  \item 刻度不均匀
+  \item 左疏右密
+  \end{itemize}
+\end{itemize}
+
+（左侧 $R_A$ 式下方的旁注，$300$、$R$、$200$ 上方画有一条弧线自 $300$ 跨至 $200$）
+\[
+\overset{\frown}{300\quad R\quad 200}
+\]
+\[
+300-R>R-200,\qquad \therefore R<250
+\]
+
+\begin{itemize}
+\item AV.
+  \begin{itemize}
+  \item 左$0$右满
+  \item 刻度均匀：且共用刻度
+  \end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=216-03 ch=10 sec=多用电表·使用规则 kind=method alt=none cont=none y=0.72-1.00
+\textbf{机械调零}
+\begin{itemize}
+\item 指针\unclear{定位}螺丝
+\item 初次\unclear{碰}表
+\item 调至左侧AV档0刻线
+\end{itemize}
+
+\textbf{档位开关}
+\begin{itemize}
+\item 测完$\to$OFF档/交流电压最高档
+\item 电流电压未知$\to$先选最高档位
+\item 电阻未知$\to$先选最低档位
+\item 电阻已知$\to$测$20\,\Omega$选$\times1\,\Omega$档，低1个数量级
+\end{itemize}
+
+\textbf{欧姆调零}
+\begin{itemize}
+\item 欧姆档，换档后
+\item 先短接调零（红黑表笔\underline{短接}）\unclear{测纯阻}为0
+\item 调至右侧$\Omega$0刻线。
+\end{itemize}
+%%%END
+%%%PAGEEND 216

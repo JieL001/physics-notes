@@ -1,0 +1,65 @@
+%%%PAGE 218 rot=0 legibility=good summary=电学实验器材选择：选电压表/电流表、选滑变（限流或分压）、选电源，附实物图连线示例
+%%%BLOCK id=218-01 ch=10 sec=电学实验·选电表 kind=method exp=1 alt=none cont=none y=0.08-0.45
+\textbf{选电压表\quad 电流表}
+
+待测电压变化范围在电压表 准确测量范围内
+
+\begin{itemize}
+\item 最大电压 $U_{\max}$：
+  \begin{itemize}
+  \item 图像 $\to U_{\max}[0,U_{\max}]$ \qquad 量程 $\dfrac{1}{3}$\unclear{$\sim$}$\dfrac{2}{3}$
+  % CHECK: 第二个 U_max 与上方横线笔迹重叠、涂改不清；"量程 1/3 ∧ 2/3" 中间符号形似 ∧，疑为 ~
+  \item 电源电动势 $E$ 估算 $U_{\max}$
+  \end{itemize}
+\item 待测电阻 $R$：
+  \begin{itemize}
+  \item 额定电压 $U_{\text{额}}$ $\to$ 电压变化范围 $[0,U_{\text{额}}]$
+  \item $I_{\text{额}}$、$P_{\text{额}}$ $\to U_{\text{额}}$
+  \end{itemize}
+\item 待测电阻 $R$：
+  \begin{itemize}
+  \item $I\in[0,I_{\text{额}}]$
+  \item $U_{\text{额}}$、$P_{\text{额}}$ $\to I_{\text{额}}$
+  \end{itemize}
+\item 最大电流 $I_{\max}$：
+  \begin{itemize}
+  \item 图像 $\to I_{\max}$ $\to$ 电流 $\in[0,I_{\max}]$
+  \item 电源电动势 $E$ $\to$ 估算 $I_{\max}$。
+  \end{itemize}
+\end{itemize}
+
+$I_{\max}=\dfrac{E}{R_{\text{总}}}=\dfrac{E}{R_x+r+R_A}$ \quad 分压限流都可选择\unclear{代} \quad （限流 $r$ 再加 $+\,nR_{\text{滑}}$ \quad $n$ 一般\unclear{为}）
+%%%END
+%%%BLOCK id=218-02 ch=10 sec=电学实验·选滑变 kind=method exp=1 alt=none cont=none y=0.46-0.66
+\textbf{选滑变，}
+
+回路电流 不超过滑动变阻器 限制电流
+
+\begin{itemize}
+\item 半偏法？$\to$ 限流半偏，选最大 $R_{\text{滑}}$
+\item $\to$ 分压半偏 选最小 $R_{\text{滑}}$。
+\end{itemize}
+% 原稿此行右侧有涂改液痕迹
+
+限流 or 分压
+\begin{itemize}
+\item 限流 选大的 \qquad $2\sim5$ 倍 $R_{\text{待测}}$
+\item 分压 选小的 \qquad 越小越好
+\end{itemize}
+%%%END
+%%%BLOCK id=218-03 ch=10 sec=电学实验·选电源 kind=method exp=1 alt=none cont=none y=0.66-0.78
+\textbf{选电源}
+
+\begin{itemize}
+\item 限流半偏 \quad 选 $E$ 最大
+\item 改装电表校准电路要求 \quad 电源电动势应使改装表满偏
+\item 其他要求 \quad 应满足电压/电流调节范围
+\end{itemize}
+%%%END
+%%%BLOCK id=218-04 ch=10 sec=电学实验·实物图连线 kind=diagram exp=1 alt=none cont=none y=0.80-1.00
+\textbf{实物图}
+
+%FIG p218_a 0.03 0.80 0.82 1.0
+\notefig[0.85]{figures/p218_a.png}
+%%%END
+%%%PAGEEND 218

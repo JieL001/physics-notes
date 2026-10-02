@@ -48,3 +48,8 @@ DONE pages=190,191,192,193,194, blocks=53, figs=18, unclear=29 (`\unclear` occur
 - p193 193-08: the r₁ value and the first digit in "(6×6400/6800)²" are unclear, and 112/17 implies it should be 7. The MEO label at the page top is cut off.
 - p191: "束缚", the "月地土运回地球" line, "轨道[时]与地球", and the Li mass number are uncertain. The 12.-orbit figure's text ("故OA=OC=R=a") is also uncertain.
 - p192: the right-margin scribbles and the unlabelled sine-like sketch are filed under ch=08 as an assumed wave-interference side calculation. The "ΔxΔp ≥ …" term is unclear. p194's "倍功法…筋数n变" is unclear and its ch=10 filing is unconfirmed.
+
+## p216–220
+DONE pages=216,217,218,219,220, blocks=19, figs=11, unclear=10. texcheck ALL OK, contact sheet checked, no dup pages. Pages 216–219 are ch=10; 219-04 is ch=18; 220 is ch=13.
+Recheck: p219 line-1 margin label (page-edge label before "R_x ___ √(R_A R_V)", written `\unclear{…}`) and the red correction "过大→不够" (219-03). Also p216 "指针定位螺丝 / 初次碰表 / 测纯阻为0".
+Also CHECK-flagged: p217 "I_g/2" layout and the missing "=" in "R内=E/I满 r+Rg+Rp"; p218 the "量程 1/3 ∧ 2/3" symbol.
