@@ -114,3 +114,12 @@ DONE pages=273,274,275,276,277, blocks=21 (8/6/3/1/3), figs=17, unclear=26, ALL 
 1. p276 是贴上去的印刷体长题，题干左右两端被页边截断。截断处我用 `\unclear` 补了上下文推断的字，另有手绘方框、下划线和一个红笔小记号；解答中"对环 m/2·g−f'=m/2·a"右端手写形似 g。
 2. p274 页首的贴题（波的起振方向）被页顶截断，"沿y轴正向"的"正"字被下划线压住；"系统中一对…"那段的"相互作用力做功无关"疑缺字，"∵/∴"符号和"路程"小字也不确定。
 3. p273 的"非质点系"末字、"全程时间(哪)还是阶段时间"，以及 p275 的"F安"下标，都是涂写重叠处，已标 `\unclear`。
+
+## p298–300
+DONE pages=298-300, blocks=7 (298:1, 299:5, 300:1), figs=5, unclear=4. texcheck_all returned ALL OK, and the contact sheet showed all five figures complete.
+- p298 is a pasted printed problem (ch=12, no solution on the page); its black-pen boxes, oval and underlines are kept as `\fbox`/`\underline`.
+- p299 is the cycloid motion cases plus the critical-problem outline (ch=11); the red curve from "弦切角" runs off the page edge and continues on p300 (ch=11).
+- p299-04: the red "常规方法 正则动量加位移微积理" is mostly unreadable, and the symbol before V_x in "Σ△t qB△Vx" may be a dot rather than △.
+- p298: the boxed word "光滑" is `\unclear`, and the dashed underline under "取走小立柱1和2，且运动过程中" is only noted in a comment.
+- p299-05: "t的范围" is handwritten like "七"; "磁聚焦、/发聚" is also uncertain.
+- The velocity "V" is written as lowercase v in p299, noted in a comment. The p300 figure crop also picks up a black object from the photo edge and the "Date. NO." header（协调者核对：保留，收紧会切掉大圆顶部和右侧红笔“圆心角=2×弦切角”）。

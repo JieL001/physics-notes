@@ -1,0 +1,61 @@
+%%%PAGE 299 rot=0 legibility=good summary=正交电磁场中带电粒子的摆线运动（初速为0、水平、向上）及磁场临界问题提纲（动态圆、边界区域、时间范围）
+%%%BLOCK id=299-01 ch=11 sec=摆线运动 kind=diagram alt=09 cont=none y=0.04-0.22
+% 笔记中速度多写作大写 V，此处统一转为小写 v
+\textbf{初速为0}
+
+%FIG p299_a 0.085 0.04 0.60 0.197
+\notefig[0.5]{figures/p299_a.png}
+
+$S=vT$.
+
+\[ qE=qv_0B \]
+%%%END
+%%%BLOCK id=299-02 ch=11 sec=摆线运动 kind=diagram alt=09 cont=none y=0.24-0.45
+\textbf{初速水平}
+
+$v_0=v_2-v_1$
+
+%FIG p299_b 0.08 0.24 0.66 0.41
+\notefig[0.55]{figures/p299_b.png}
+
+\[ qEh=\frac12 mv^2-\frac12 mv_0^2 \quad\text{或}\quad h=R(1-\sin\theta)\qquad R=\frac{mv}{qB} \]
+%%%END
+%%%BLOCK id=299-03 ch=11 sec=摆线运动 kind=diagram alt=09 cont=none y=0.455-0.64
+\textbf{初速向上}
+
+%FIG p299_c 0.09 0.455 0.56 0.64
+\notefig[0.45]{figures/p299_c.png}
+%%%END
+%%%BLOCK id=299-04 ch=11 sec=摆线运动 kind=derivation alt=07 cont=none y=0.48-0.58
+% 本块位于“初速向上”图的右侧
+\red{常规方法 \unclear{正则动量加位移微积理}} % CHECK: 红字潦草，仅“常规方法”较有把握，其余字迹难辨
+\[ \sum\Delta t\,qB\,\Delta v_x=\sum m a_y\cdot\Delta t \] % CHECK: 手写为“Σ△t qB△Vx=Σ m a_y·△t”，Vx 前的“△”也可能是圆点；物理上应为 Σ qBv_xΔt=Σ m a_yΔt
+\[ qBx=m\Delta v_y \]
+%%%END
+%%%BLOCK id=299-05 ch=11 sec=有界磁场·动态圆 kind=summary alt=none cont=next y=0.67-1.00
+% 红笔曲线从“弦切角”处起笔，向右延伸出页面右缘，接到下一页(p300)左缘的红色长曲线（指向 t_max 公式）
+\textbf{临界问题}
+\begin{itemize}
+  \item 轨迹变化 $\to$ 动态圆 $\to$
+  \begin{itemize}
+    \item 直径作弦
+    \item 相切。
+  \end{itemize}
+  \item 区域
+  \begin{itemize}
+    \item 直线边界\quad $L=2r\sin\theta$
+    \item 直角边界
+    \item 圆形边界
+    \begin{itemize}
+      \item $R=r$\quad 磁聚焦、/发聚
+      \item $R>r$ \\ $R<r$ \quad 几个直角三角形\quad \red{圆心连线、公切线}
+    \end{itemize}
+  \end{itemize}
+  \item \unclear{$t$}的范围 % CHECK: 手写首字形似“七”，按上下文读作 t
+  \begin{itemize}
+    \item 平移圆\red{/}旋转圆 $\to$ \red{\fbox{弦长}} % 红笔圈出“弦长”；“平移圆”与“旋转圆”之间有红色短竖线
+    \item 放缩圆 $\to$ \red{\underline{弦切角}} % 红色下划线，并由此延伸出长红曲线
+  \end{itemize}
+\end{itemize}
+%%%END
+%%%PAGEEND 299
