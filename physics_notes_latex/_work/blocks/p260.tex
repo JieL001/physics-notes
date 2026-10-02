@@ -1,0 +1,75 @@
+%%%PAGE 260 rot=0 legibility=good summary=传动装置小结（皮带/摩擦齿轮/同轴）；水平面圆周向心力来源图（飞机、火车转弯、圆锥摆、漏斗、转台）；圆锥摆推导；飞椅等效绳长
+%%%BLOCK id=260-01 ch=04 sec=皮带齿轮·传动装置 kind=summary alt=none cont=none y=0.00-0.30
+\textbf{皮带传动}
+%FIG p260_a 0.110 0.026 0.255 0.095
+\notefig[0.25]{figures/p260_a.png}
+\[ V_A=V_C\neq V_B \]
+%FIG p260_b 0.430 0.005 0.690 0.115
+\notefig[0.3]{figures/p260_b.png}
+\[ V_A=V_B\neq V_P=V_Q \]
+\textbf{摩擦传动、齿轮传动}
+%FIG p260_c 0.090 0.126 0.225 0.166
+\notefig[0.25]{figures/p260_c.png}
+\[ V_A=V_B \]
+\textbf{同轴传动}
+%FIG p260_d 0.100 0.191 0.205 0.265
+\notefig[0.25]{figures/p260_d.png}
+%FIG p260_e 0.250 0.168 0.360 0.275
+\notefig[0.25]{figures/p260_e.png}
+\[ \omega_A=\omega_B,\qquad V\propto r \]
+%%%END
+%%%BLOCK id=260-02 ch=04 sec=水平面圆周·向心力来源 kind=diagram alt=none cont=none y=0.33-0.45
+水平飞机转弯
+%FIG p260_f 0.045 0.335 0.190 0.450
+\notefig[0.25]{figures/p260_f.png}
+火车转弯
+%FIG p260_g 0.200 0.335 0.480 0.445
+\notefig[0.4]{figures/p260_g.png}
+\[ F_n=mg\tan\theta \]
+%%%END
+%%%BLOCK id=260-03 ch=04 sec=水平面圆周·向心力来源 kind=diagram alt=none cont=none y=0.455-0.575
+%FIG p260_h 0.040 0.455 0.190 0.575
+\notefig[0.25]{figures/p260_h.png}
+\[ F_n=mg\tan\theta,\qquad r=l\sin\theta \]
+%FIG p260_i 0.325 0.485 0.520 0.570
+\notefig[0.3]{figures/p260_i.png}
+\[ F_n=mg\tan\theta \]
+%%%END
+%%%BLOCK id=260-04 ch=04 sec=水平面圆周·向心力来源 kind=diagram alt=none cont=none y=0.585-0.69
+%FIG p260_j 0.070 0.595 0.170 0.675
+\notefig[0.25]{figures/p260_j.png}
+\[ F_n=f \]
+%FIG p260_k 0.275 0.583 0.520 0.695
+\notefig[0.3]{figures/p260_k.png}
+（光滑杆\ 转台）、\par
+\[ F_n=m_Bg \]
+%%%END
+%%%BLOCK id=260-05 ch=04 sec=水平面圆周·圆锥摆 kind=derivation alt=none cont=none y=0.71-0.95
+\textbf{圆锥摆}
+%FIG p260_l 0.000 0.735 0.170 0.855
+\notefig[0.25]{figures/p260_l.png}
+\[ mg\tan\theta=m\omega^2L\sin\theta=m\frac{4\pi^2}{T^2}L\sin\theta \]
+\begin{align*}
+\omega&=\sqrt{\frac{g}{L\cos\theta}} & T&=2\pi\sqrt{\frac{L\cos\theta}{g}}\\
+&=\sqrt{\frac{g}{h}}
+\end{align*}
+\[ T=m\omega^2L \]
+%%%END
+%%%BLOCK id=260-06 ch=04 sec=水平面圆周·圆锥摆 kind=method alt=none cont=none y=0.65-1.00
+%FIG p260_m 0.486 0.650 0.880 0.847
+\notefig[0.45]{figures/p260_m.png}
+同高不同顶\par
+等效绳长。
+\[ \omega_1=\omega_2 \]
+\[ V\propto r,\qquad a\propto r \]
+竖直方向合力为0
+\[
+\left\{\begin{aligned}
+r'&=r+L\sin\alpha\quad\text{等效绳长}\\
+F\sin\alpha&=m\omega^2(r+L\sin\alpha)\\
+F&=m\left(\frac{r}{\sin\alpha}+L\right)\omega^2=\frac{mg}{\cos\alpha}\\
+\omega&=\sqrt{\frac{g}{r'\cos\alpha}}\qquad T=2\pi\sqrt{\frac{r'\cos\alpha}{g}}
+\end{aligned}\right.
+\] % CHECK: 末行 r' 的含义与首行不一致（由上式推得应为 ω^2=g tanα/r'），原样转录
+%%%END
+%%%PAGEEND 260

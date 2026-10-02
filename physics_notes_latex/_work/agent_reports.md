@@ -90,3 +90,9 @@ DONE pages=241-245, blocks=32, figs=38, unclear=22. `texcheck_all.py` returns AL
 - p241-02: the "F>7/2 μmg" numerator may be 5, and "F=2μmg" may be 3.
 - p243-03 and p243-07: several glyphs are ambiguous (x vs r, I_N vs F_N, a "#" that may be ⇒, "Q_焦" vs "Q_热"), and the last line is cut off at the page bottom.
 - p242-06 and p241-04: a few handwritten sentences are guessed ("法2 竖水平分", "静摩擦力永远要方向讨论"). The p244-01 title line is also a guess.
+
+## p258–262
+DONE pages=258-262, blocks=23, figs=26, unclear=16。没有重复页，crop_batch 联系表已逐张检查，`texcheck_all` 为 ALL OK。需二次核对：
+1. p258 传动装置区的字难辨：「T分=60r秒针+」「f_B带 链条」「自行车 主(划去字)动轮 / 受地f向前」「受主动轮?方向」，以及「晾衣?架模型」「余力勾股定理」。
+2. p261 手写草算在图4右侧被页边截断（C₂=90?/r 等），「C₁=V₂cotθ」疑笔误（已加 CHECK），「45°」后有一个难辨小字，红笔「(−7)」「−2」。
+3. p260 末行 ω=√(g/(r′cosα)) 与上式不自洽（已加 CHECK）；p259 末行写到页边被截断；p262 两处小疑点（「½」后疑缺 m、「>」可能是「≥」，已加 CHECK）。

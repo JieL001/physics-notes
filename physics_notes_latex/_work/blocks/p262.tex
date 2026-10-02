@@ -1,0 +1,48 @@
+%%%PAGE 262 rot=0 legibility=good summary=圆周运动解题三步；绳模型（最高点/最低点条件、拉力差6mg）；不满足v>=√(gL)时的平抛后绷直；斜面上的等效重力加速度
+%%%BLOCK id=262-01 ch=04 sec=圆周运动·解题步骤 kind=summary alt=none cont=none y=0.04-0.20
+\textbf{圆周运动}
+\par 一、确定轨道平面、圆心位置、轨迹圆半径
+\par 二、受力分析、找向心力、正交分解、指向圆心减背离圆心的力
+\par 三、列方程求解
+\begin{itemize}
+\item 点、牛二
+\item 过程、动能定理
+\end{itemize}
+%%%END
+%%%BLOCK id=262-02 ch=04 sec=竖直面圆周·绳模型 kind=knowledge alt=none cont=none y=0.21-0.47
+\textbf{绳模型}
+\par 绳只能拉不能推，圆心以上\ 速度一定不为0
+%FIG p262_a 0.185 0.272 0.253 0.325
+\notefig[0.25]{figures/p262_a.png}
+\par 最高点\quad $F+G=\dfrac{mv^2}{L}$\qquad $F\ge0$\quad $\therefore V\ge\sqrt{gL}$
+\par 最低点\quad $\left\{\begin{aligned}F-G&=\dfrac{mv^2}{L}\\ mg\cdot2L&=\dfrac{1}{2}m(v_0^2-v^2)\end{aligned}\right.$\qquad $\begin{aligned}V^2&=V_0^2-4gl\ge gl\\ \unclear{\therefore}\,V_0&\ge\sqrt{5gL}\end{aligned}$
+\par 拉力差\quad $\Delta F=6mg$
+\begin{align*}
+mg+F_1&=\frac{mv^2}{L}\\
+F_2-mg&=\frac{mv'^2}{L}\\
+2mgl&=\frac{1}{2}m(v'^2-v^2)
+\end{align*}
+%%%END
+%%%BLOCK id=262-03 ch=04 sec=竖直面圆周·绳模型 kind=derivation alt=none cont=none y=0.46-0.67
+不满足 $V\ge\sqrt{gL}$ 时，
+%FIG p262_b 0.040 0.495 0.274 0.660
+\notefig[0.3]{figures/p262_b.png}
+图中标注：做平抛；$V$ 损失$=0$
+\[ V_0=\sqrt{\frac{gL}{2}}<\sqrt{gL} \]
+\begin{align*}
+V_0^2t^2&=L^2\sin^2\alpha\\
+\frac{1}{2}gt^2&=L(1+\cos\alpha)
+\end{align*}
+$\Rightarrow\ \alpha=90^\circ$\ 圆心等高处\ 绷直
+\[ mgl=\frac{1}{2}(V^2-V_y^2)\qquad V^2=V_y^2+2gl=4gl \] % CHECK: 「½」与括号之间似缺 m（原稿有一小撇）
+\[ F-mg=\frac{mV^2}{L}\ \Rightarrow\ F=5mg \]
+%%%END
+%%%BLOCK id=262-04 ch=04 sec=竖直面圆周·等效重力加速度 kind=derivation alt=none cont=none y=0.69-0.92
+\textbf{等效重力加速度}
+%FIG p262_c 0.010 0.705 0.255 0.815
+\notefig[0.3]{figures/p262_c.png}
+\[ \left\{\begin{aligned}F+mg\sin\alpha&=\frac{mV_{\text{上}}^2}{L}\\ F&\ge0\end{aligned}\right. \qquad \begin{aligned}V_{\text{上}}&\ge\sqrt{gL\sin\alpha}\\ V_{\text{下}}&\ge\sqrt{5gL\sin\alpha}\end{aligned} \]
+\[ mg\cdot2L\sin\alpha=\frac{1}{2}m(V_{\text{下}}^2-V_{\text{上}}^2)\qquad V_{\text{上}}^2=V_{\text{下}}^2-4gL\sin\alpha>gL\sin\alpha \] % CHECK: 末尾符号写作「>」，其下另起一行写 gLsinα；按前文类比应为「≥」
+\[ \Delta F_{\text{上下}}=6mg\sin\alpha \]
+%%%END
+%%%PAGEEND 262

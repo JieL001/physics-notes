@@ -1,0 +1,42 @@
+%%%PAGE 261 rot=0 legibility=good summary=粘贴印刷题（飞行器：升力F1=C1v^2、阻力F2=C2v^2，三问）及手写解答；(3)为水平面匀速圆周运动、动力做功最小值
+%%%BLOCK id=261-01 ch=04 sec=水平面圆周·飞行器综合题 kind=problem alt=02,06 cont=none y=0.00-0.93
+\begin{problem}
+% 原稿：粘贴的印刷题，首行从「到影响，」起（上文在粘贴时被裁掉）。印刷文字上有手画下划线/圈注：「飞行器的动力F始终与飞行方向相同」「空气升力F1与飞行方向垂直」「大小与速度的平方成正比，即F1=C1v^2」「大小与速度的平方成正比，即F2=C2v^2」「可由运动员调节」下划线；「总质量为90kg」被圈出；「（重力加速度取g=10m/s^2。）」上方有弧线。左页边有零星手写标记。
+到影响，同时通过控制动力的大小而改变飞行器的飞行状态。已知，飞行器的动力 $F$ 始终与飞行方向相同，空气升力 $F_1$ 与飞行方向垂直，大小与速度的平方成正比，即 $F_1=C_1v^2$；空气阻力 $F_2$ 与飞行方向相反，大小与速度的平方成正比，即 $F_2=C_2v^2$，其中 $C_1$、$C_2$ 相互影响，可由运动员调节，满足如图1所示的关系。飞行员和装备的总质量为 $90\unit{kg}$。（重力加速度取 $g=10\unit{m/s^2}$。）
+\begin{enumerate}[label=（\arabic*）]
+\item 若飞行员使飞行器以 $v_1=10\sqrt{3}\unit{m/s}$ 速度在空中沿水平方向匀速飞行，如图2所示，则飞行器受到的动力 $F$ 大小为多少？
+\item 若飞行员关闭飞行器的动力，使飞行器匀速滑行，且滑行速度 $v_2$ 与地平线的夹角 $\theta=30^\circ$，如图3所示，则速度 $v_2$ 的大小为多少？（结果可用根式表示）
+\item 若飞行员使飞行器在空中的某一水平面内做匀速圆周运动，如图4所示，在此过程中 $C_2$ 只能在 $1.75\sim2.5\unit{N\cdot s^2/m^2}$ 之间调节，且 $C_1$、$C_2$ 的大小与飞行器的倾斜程度无关。则飞行器绕行一周动力 $F$ 做功的最小值为多少？（结果可保留 $\pi$）
+\end{enumerate}
+%FIG p261_a 0.015 0.380 0.400 0.595
+\notefig[0.4]{figures/p261_a.png}
+% 图1上手画：从原点向右上的细斜线，与曲线交于 C_1=4 处，并由交点向下画竖线至横轴，横轴下方手写「2.3」
+\red{（$-7$）}\quad\red{$-2$} % 红笔批注：前者被红圈圈住，在图2~4左上方空白处；后者在图1右侧
+%FIG p261_b 0.405 0.355 1.000 0.580
+\notefig[0.8]{figures/p261_b.png}
+% 图3上手画受力箭头并标 F_2、F_1、mg；图4上手画上下箭头
+% 图4上方/右侧手写草算（右侧被页边截断）：
+\par $C_2$\,\struck{$v^2$}$\,=\dfrac{900}{r}$\quad\struck{$v^2$}\quad $C_2=\dfrac{\unclear{90}}{r}$
+\par $r=\dfrac{\unclear{90}}{C_2}$\quad $=\dfrac{\unclear{0}}{\unclear{\ldots}}$\quad $=\unclear{36}$
+\par 图4下方：$\dfrac{36}{\unclear{\ldots}\tan\unclear{\alpha}}$
+\begin{solution}
+(1)\quad $\overset{\text{平衡}}{mg=C_1v_1^2}$\quad $C_1=3\unit{N\cdot s^2/m^2}$
+\par $\therefore C_2=2.5\unit{N\cdot s^2/m^2}$
+\par 动力 $F=F_2=C_2v_1^2=750\unit{N}$
+\par (2)\quad $mg\cos\theta\overset{\text{平衡}}{=}C_1v_2^2$
+\par $mg\sin\theta=C_2v_2^2$
+\par $C_1=V_2\cot\theta$ % CHECK: 两式相除应得 C_1=C_2\cot\theta，原稿右端写作 V_2（或为 C_2 写得像 V）
+\par $C_2=2.3\unit{N\cdot s^2/m^2}$\quad $C_1=4\unit{N\cdot s^2/m^2}$
+\par $V_2=\sqrt{\dfrac{225\sqrt{3}}{2}}\unit{m/s}$
+\par (3)\quad 非平衡
+\par 设 $F_1$ 与竖直方向夹角 $\alpha$
+\par $mg=C_1v^2\cos\alpha$
+\par 水平合力 提供向心力\quad $C_1v^2\sin\alpha=\dfrac{mv^2}{R}$
+\par 动力\quad $F=F_2=C_2v^2$
+\par $W=F\cdot 2\pi R=\dfrac{2\pi C_2m^2g}{C_1^2\sin\alpha\cos\alpha}$
+\par $\alpha=45^\circ$\unclear{，}\ $C_1=6\unit{N\cdot s^2/m^2}$，$C_2=1.75\unit{N\cdot s^2/m^2}$\ 时 $W$ 最小， % 原稿折行：「C_2=1.75…」写在右侧，「时 W最小，」写在左侧下一行；「45°」后有一个难辨的小字
+\par $W_{\min}=15750\pi\unit{J}$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 261
