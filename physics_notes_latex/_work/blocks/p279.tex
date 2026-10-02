@@ -1,0 +1,66 @@
+%%%PAGE 279 rot=0 legibility=fair summary=贴有两道印刷题并带手写批注：线框穿越磁场（电磁感应，选BD）与双倍率欧姆表改装（并联分流），另有Q=227mgh/81的手写推导
+%%%BLOCK id=279-01 ch=12 sec=电磁感应·线框穿越磁场 kind=problem alt=06,03 cont=none y=0.00-0.40
+% 贴纸题（印刷体）+手写批注。原稿手写划线：“拉力F=2mg”“作用，从静止开始运动”“DC边刚进入磁场前的一段时间”下有下划线；题号18、“量为m的”、“下列正确的”被圈出
+\begin{problem}[18]
+如图所示，水平虚线$L_1$、$L_2$之间存在匀强磁场，磁场方向垂直于纸面向里，磁场区域的高度为$h$。竖直平面内有一质量为$m$的直角梯形线框，其底边水平，上、下边长之比为1：4，高为$2h$线框$ABCD$在磁场边界$L_2$的下方$h$处，受到竖直向上的拉力$F=2mg$作用，从静止开始运动（上升过程中底边始终水平，线框平面始终与磁场方向垂直），当$AB$边刚进入磁场时，线框的加速度恰好为零，且在$DC$边刚进入磁场前的一段时间内，线框做匀速运动。重力加速度为$g$，下列正确的是（B\red{D}）% 手写答案BD，其中D为红色
+
+%FIG p279_a 0.53 0.125 0.90 0.345
+\notefig[0.4]{figures/p279_a.png}
+
+A．$AB$边刚进入磁场时，线框的速度为\struck{$\sqrt{gh}$}% 原稿：该处被一道斜线划去
+
+B．$AB$边刚进入磁场时，线框中感应电流的瞬时电功率为$mg\sqrt{2gh}$\ \unclear{$\checkmark$}% 手写对勾
+
+C．$DC$边刚进入磁场时，线框加速度的大小为\struck{$\dfrac{17}{9}g$}% 原稿：分数被一道斜线划去
+
+D．从线框开始运动到$DC$边刚进入磁场的过程中，线框产生的焦耳热为$\dfrac{227}{81}mgh$\ \red{$\checkmark$}% 红色对勾；该行下方压纸边处另有被切断的手写残迹，无法辨认
+
+\textbf{手写批注：}
+
+$F=\dfrac{B^2\bigl(L+\frac{3}{2}x\bigr)^2v}{R}\,mg$% CHECK: 分式右侧紧跟 mg，疑为“=mg”（安培力等于mg）
+
+$\unclear{\tan}\theta=\dfrac{2h}{3L}=\dfrac{h}{x}$\quad \unclear{M}% 图旁手写，末尾被纸边切断；线框右上边缘另有一个手写“M”
+\end{problem}
+%%%END
+%%%BLOCK id=279-02 ch=10 sec=电表改装·欧姆表 kind=problem exp=1 alt=none cont=none y=0.40-0.78
+% 贴纸题（印刷体）+手写批注。原稿：题号19被圈；“×1”和“×10”的”处有红笔圈画并划线；“已知欧姆档的中央刻度为‘15’”下有下划线；“内阻”二字上有涂抹痕迹
+\begin{problem}[19]
+（12分）某同学用一节电动势为$1.50\unit{V}$的干电池，将量程为$0\sim1\unit{mA}$、内阻为$90\unit{\Omega}$的表头改装成倍率分别为“$\times1$”和“$\times10$”的双倍率欧姆表：\quad \textbf{手写：}原理：并联\unclear{…}分流% 手写，“并联”与“分”之间有一个涂改字
+
+（1）设计电路如图a所示，可知红表笔应为\underline{\quad B\quad}（填“A”或“B”\unclear{$\checkmark$}）；% 横线上手写B，“B”下有对勾
+
+（2）分析可知当K拨到\underline{\quad\struck{\unclear{1}}\,2\quad}（填“1”或“2”）时倍率为“$\times10$”；% 横线上先写的字被叉掉，改写2
+
+（3）改装后表盘的刻度如图b所示。已知欧姆档的中央刻度为“15”，则图a中定值电阻$R_1=$\underline{\quad\struck{\unclear{18}}\,1\quad}$\unit{\Omega}$、$R_2=$\underline{\quad\struck{\unclear{29}}\,9\quad}$\unit{\Omega}$；% 两处横线上原先所写的数被划去，在其上方改写1和9
+
+%FIG p279_b 0.14 0.615 0.36 0.79
+\notefig[0.3]{figures/p279_b.png}
+
+%FIG p279_c 0.35 0.655 0.66 0.785
+\notefig[0.4]{figures/p279_c.png}
+\end{problem}
+
+\textbf{手写批注：}图a中G旁：$90\unit{\Omega}$\quad $0\sim1\unit{mA}$
+
+$R_1+R_2=\unclear{12g}$
+
+$\dfrac{10}{3}\,\bigl(100+\unclear{x}$% 图b右下角，末尾被纸边切断
+
+左侧空白处手写：\unclear{改}欧姆\unclear{图}表\quad \unclear{V}
+%%%END
+%%%BLOCK id=279-03 ch=12 sec=电磁感应·线框穿越磁场 kind=derivation alt=06 cont=none y=0.58-0.78
+% 手写，写在题19贴纸的空白处，内容为题18选项D（焦耳热）的推导；其中 v2=(4/9)v1 被圈出，最后一式也被大圈圈住
+\[
+v_2=\frac{4}{9}v_1
+\]
+\[
+3mgh=Q+\frac{1}{2}\,\unclear{180}\,m\,\frac{16v_1^{2}}{81}
+\]% CHECK: ½ 与 m 之间的“180”无法辨认；分式右侧另有一个手写“2”样笔画（疑为指数）
+\[
+\frac{16}{81}\,\unclear{mgh}
+\]% 分式右侧三字潦草，疑为 mgh
+\[
+Q=\frac{243-16}{81}\,\unclear{mgh}
+\]% 末尾被纸边切断，隐约可见 mgh 的上半部分
+%%%END
+%%%PAGEEND 279

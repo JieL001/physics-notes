@@ -115,6 +115,12 @@ DONE pages=273,274,275,276,277, blocks=21 (8/6/3/1/3), figs=17, unclear=26, ALL 
 2. p274 页首的贴题（波的起振方向）被页顶截断，"沿y轴正向"的"正"字被下划线压住；"系统中一对…"那段的"相互作用力做功无关"疑缺字，"∵/∴"符号和"路程"小字也不确定。
 3. p273 的"非质点系"末字、"全程时间(哪)还是阶段时间"，以及 p275 的"F安"下标，都是涂写重叠处，已标 `\unclear`。
 
+## p278–282
+DONE pages=278-282, blocks=26, figs=22, unclear=27. `crop_batch` ran with the contact sheets checked, and `texcheck_all` returned ALL OK.
+1. p279 (`279-03`, `279-02`) is the least reliable: pasted printed problems with messy handwriting laid over the dial figure. In `279-03` the "180" between ½ and m and the trailing "mgh" are guesses. In `279-02`, `R_1+R_2=12g`, "改欧姆表" and the struck answers are low confidence.
+2. p282 (`282-01`) has its first two stem lines cut off by the photo edge, so they are `\unclear`. p282 (`282-02`) also has dense red/black notes. The "a=μg=1m/s²" line, the "v_2''" primes and "小车/滑块" need a check.
+3. p281 (`281-06`) has the handwritten "4.15" where 4.5 is expected. Also in p281, the p281_a axis label reads v but the curve shape looks like a-t, and "L1=L2=2:1" is likely L1:L2 (CHECK comments on each). In p278 (`278-09`), "碰后BC恰好静止" is a guess.
+
 ## p283–287
 DONE pages=283-287, blocks=24, figs=13, unclear=27; crop_batch contact sheets checked (p285_a and p287_a are pencil, so I added `soft`), `texcheck_all` ALL OK.
 1. p285: the top edge is cropped, so the first line is not legible, and the lower-left fold hides the text after "后 E". Several uncertain readings are marked `\unclear`/CHECK: the "图带规律" heading, "读数", "g代大了", "看疏密", the 面积速度 line, and the stacked-cylinder formulas.

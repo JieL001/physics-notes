@@ -1,0 +1,72 @@
+%%%PAGE 288 rot=0 legibility=good summary=斜面传送带临界式、并/串两灯的闭合电路式、气垫导轨连续射出20发子弹的速度递推、带电圆环轴线场强、含滑变的闭合电路综合题（U-I图、P-R2图）
+%%%BLOCK id=288-01 ch=03 sec=传送带·斜面传送带 kind=method alt=01 cont=none y=0.03-0.13
+%FIG p288_a 0.16 0.03 0.345 0.115
+\notefig[0.25]{figures/p288_a.png}
+
+\unclear{刚能上}\quad $\dfrac{V_0^2-V_c^2}{2a_{\text{大}}}+\dfrac{V_c^2}{2a_{\text{小}}}=L$% CHECK: “刚能上”三字字形不清
+%%%END
+%%%BLOCK id=288-02 ch=10 sec=闭合电路欧姆定律·灯泡并串联 kind=formula alt=none cont=none y=0.15-0.27
+并2灯\quad $E=U+2Ir$
+
+串2灯\quad $E=2U+\dfrac{U}{R_L}\,r$
+
+%FIG p288_b 0.38 0.175 0.56 0.262
+\notefig[0.25]{figures/p288_b.png}
+%%%END
+%%%BLOCK id=288-03 ch=07 sec=反冲·连续发射子弹 kind=problem alt=none cont=none y=0.27-0.68
+\begin{problem}
+气垫导轨无摩擦，\unclear{调}初速度没用。% CHECK: “调”字不清
+
+射出20发子弹
+\begin{solution}
+\begin{align*}
+(M-m)V_1&=m(V_0-V_1)\qquad V_1=\frac{m}{M}V_0\\
+(M-m)V_1&=(M-2m)V_2-m(V_0-V_2)\\
+V_2&=\Bigl(\frac{1}{M}+\frac{1}{M-m}\Bigr)mV_0\\
+V_3&=\Bigl(\frac{1}{M}+\frac{1}{M-m}+\frac{1}{M-2m}\Bigr)mV_0\\
+V_{20}&=\Bigl(\frac{1}{M}+\frac{1}{M-m}+\frac{1}{M-2m}+\cdots+\frac{1}{M-19m}\Bigr)\approx\frac{20}{M}mV_0\ \text{\unclear{…}}\\
+\Delta V&=V_n-V_{n-1}\ \text{\unclear{…}}\\
+&=\Bigl[\frac{1}{M}+\frac{1}{M-m}+\frac{1}{M-2m}+\cdots+\frac{1}{M-(n-1)m}\Bigr]mV_0\\
+&\quad-\Bigl[\frac{1}{M}+\frac{1}{M-m}+\frac{1}{M-2m}+\cdots+\frac{1}{M-(n-2)m}\Bigr]mV_0\\
+&=\frac{mV_0}{M-(n-1)m}\\
+Ft&=(M-nm)V_n-0
+\end{align*}
+% CHECK: V_{20} 行中“≈”符号形状不确定（也可能是 >），其右端 mV_0 之后有一个无法辨认的小记号；ΔV=V_n-V_{n-1} 之后也有一个无法辨认的小记号（像“冊/用”）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=288-04 ch=09 sec=带电圆环轴线上的场强 kind=derivation alt=none cont=none y=0.67-0.80
+%FIG p288_c 0.075 0.665 0.225 0.745
+\notefig[0.25]{figures/p288_c.png}
+
+\begin{gather*}
+E_0=\frac{kQ_0}{\left(\sqrt{x^2+r^2}\right)^2}\cdot\frac{x}{\sqrt{x^2+r^2}}=\frac{kQ_0\,x}{(x^2+r^2)^{\frac32}}\qquad E_0=\frac{kQx}{2\pi r\,(x^2+r^2)^{\frac32}}\\
+\frac{Q}{2\pi r}=Q_0\\
+E=\frac{kQx}{(x^2+r^2)^{\frac32}}
+\end{gather*}
+%%%END
+%%%BLOCK id=288-05 ch=10 sec=闭合电路欧姆定律·含滑变综合题 kind=problem alt=none cont=none y=0.79-1.00
+%FIG p288_d 0.01 0.79 0.27 0.925
+\notefig[0.3]{figures/p288_d.png}
+
+$8\,\Omega$\quad \unclear{是并联点}\quad $R_{\text{并}}=\dfrac{R}{2}$\ $\cdot$\ $R=16\,\Omega$% CHECK: “是并联点”四字不清；R/2 与 R=16Ω 之间是一个小圆点（可能是 $\therefore$）
+
+$E=9\,\mathrm{V}$
+
+\begin{align*}
+E&=4+0.25(R_2+R_1)\qquad R_1=4\,\Omega,\ I_{\max}\ \text{时}\\
+&=\text{\struck{$5+0.5\left(\tfrac{R_2}{2}+R_1\right)$}}\\
+&\phantom{=}\;4+0.25R_2+\text{\struck{$0.2$}}\,1\\
+&=5+0.25R_2+2\\
+20&=R_2+R_1\qquad R_2=16\,\Omega
+\end{align*}
+% CHECK: 倒数第二行“=5+0.25R_2+2”与上一行（4+0.25R_2+1）不一致，原样转录；第三行“+”后被划去的是“0.2”之类的小字
+%FIG p288_e 0.51 0.85 0.79 0.97
+\notefig[0.33]{figures/p288_e.png}
+
+$R_2=4\,\Omega$ 时\quad \unclear{各}左右有2次极值% CHECK: “各”字不清
+
+%FIG p288_f 0.79 0.889 0.995 0.985
+\notefig[0.25]{figures/p288_f.png}
+%%%END
+%%%PAGEEND 288

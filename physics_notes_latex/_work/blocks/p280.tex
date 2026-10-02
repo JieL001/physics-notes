@@ -1,0 +1,70 @@
+%%%PAGE 280 rot=0 legibility=good summary=贴纸题（人抛铅球两次投掷后车速比，赋值法）；全反力与匀速运动的力三角形；A/B/C弹簧模型（撤去F后BC分离、AB共速时Ep）；杆在球形碗中三力汇交求L
+%%%BLOCK id=280-01 ch=07 sec=动量守恒·人抛铅球 kind=problem alt=none cont=none y=0.00-0.30
+% 贴纸题（印刷体）+手写批注。原稿：“设每次投掷时…速度之比为”处有划线；括号内红笔手写答案A；“赋值法”为淡铅笔；纸条右上方照片中的证件等杂物已忽略
+\begin{problem}[5]
+一人站在静止于光滑平直轨道上的平板车上，人和车的总质量为$M$。现在这人双手各握一个质量均为$m$的铅球，以两种方式顺着轨道方向水平投出铅球：第一次是一个一个地投；第二次是两个一起投；设每次投掷时铅球相对车的速度相同，则两次投掷后小车速度之比为（\red{A}）
+
+A．$\dfrac{2M+3m}{2(M+m)}$
+
+B．$\dfrac{M+m}{M}$
+
+C．$1$% 该选项下半被纸边切断，仅可见“C．1”
+
+D．$\dfrac{(2M+m)(M+2m)}{2M(M+m)}$
+\end{problem}
+
+\textbf{手写批注：}赋值法
+
+$mv_0=$% 其中 v0 被一道横线划过，等号后无内容
+
+$mv=(M+m)v_1$
+
+$m\unclear{v}=Mv_2$
+
+\struck{$(M+m)$}\quad $mv$\quad $(M+m)v=mv$% 右侧 v 上方有一个小点（疑为撇号）
+
+%FIG p280_a 0.76 0.175 0.86 0.285
+\notefig[0.25]{figures/p280_a.png}
+%%%END
+%%%BLOCK id=280-02 ch=02 sec=全反力·匀速运动 kind=method alt=03 cont=none y=0.24-0.46
+%FIG p280_b 0.09 0.24 0.36 0.385
+\notefig[0.3]{figures/p280_b.png}
+$\mu=\dfrac{\sqrt{3}}{3}$\quad 匀速运动
+
+%FIG p280_c 0.38 0.28 0.65 0.45
+\notefig[0.3]{figures/p280_c.png}
+图中标注：$mg$，$R$ 全\unclear{反}力
+
+$F\uparrow\qquad N\uparrow\qquad f\uparrow$
+%%%END
+%%%BLOCK id=280-03 ch=07 sec=动量·弹簧模型 kind=problem alt=06 cont=none y=0.43-0.70
+%FIG p280_d 0.08 0.425 0.465 0.521
+\notefig[0.4]{figures/p280_d.png}
+到弹簧最短时撤去$F$。
+
+\[
+Fx=\frac{1}{2}kx^2\qquad x=\frac{2mg}{k}
+\]
+\[
+E_{p1}=\frac{1}{2}kx^2=\frac{2m^2g^2}{k}=\frac{1}{2}\,2m\,v_{BC}^2
+\]
+\[
+v_{BC}=g\sqrt{\frac{2m}{k}}
+\]
+$A$、$B$共速时\ $E_p=\dfrac{1}{2}\,\dfrac{mm}{m+m}\,(v_{BC})^2=\dfrac{m^2g^2}{2k}$
+
+$BC$在原长处分离。\quad $a_1=a_2\quad v_1=v_2\quad N=0$
+
+$A$、$B$交换速度时$v$最大\quad $v_{A\max}=g\sqrt{\dfrac{2m}{k}}$
+%%%END
+%%%BLOCK id=280-04 ch=02 sec=三力汇交·杆与球形碗 kind=problem alt=none cont=none y=0.69-0.87
+支持力$N$与接触面垂直
+
+%FIG p280_e 0.18 0.725 0.52 0.865
+\notefig[0.4]{figures/p280_e.png}
+\unclear{多}力交汇% CHECK: 首字疑为“三”（三力汇交）
+\[
+2R\cos\theta-2R\sin\theta\tan\theta=\frac{L}{2}\qquad \therefore L=\frac{4R\cos2\theta}{\cos\theta}
+\]
+%%%END
+%%%PAGEEND 280

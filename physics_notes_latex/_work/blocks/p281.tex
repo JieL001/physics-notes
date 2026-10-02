@@ -1,0 +1,68 @@
+%%%PAGE 281 rot=0 legibility=good summary=板块F=kt及图线草图；圆环套杆qvB与mg比较的速度图线；电学实验三句话与电阻定律、电表改装式；贴纸题（简谐波A、B两质点，求B第一次到波峰时间与波速）及手写解答（两种初相、两组波长波速）
+%%%BLOCK id=281-01 ch=03 sec=板块模型·变力F=kt kind=diagram alt=none cont=none y=0.04-0.19
+%FIG p281_a 0.07 0.04 0.60 0.185 soft
+\notefig[0.5]{figures/p281_a.png}
+$F=kt$% CHECK: 图中纵轴标注读作 v，但图线形状（m 一段水平、M 一段斜率变大）更像 a-t 图
+%%%END
+%%%BLOCK id=281-02 ch=11 sec=洛伦兹力·圆环套杆 kind=diagram alt=none cont=none y=0.19-0.34
+%FIG p281_b 0.10 0.195 0.60 0.34 soft
+\notefig[0.5]{figures/p281_b.png}
+\unclear{有场}% 左侧示意图上方的淡铅笔小字；示意图中的点表示磁场方向，圆环套在杆上
+
+图线旁标注：$qvB=mg$，$qvB>mg$，$qvB<mg$
+%%%END
+%%%BLOCK id=281-03 ch=10 sec=电学实验·三句话 kind=knowledge exp=1 alt=none cont=none y=0.39-0.43
+电学实验三句话：串联分压\quad 并联分流，欧姆定律
+%%%END
+%%%BLOCK id=281-04 ch=10 sec=电阻定律·密度质量比 kind=note alt=none cont=none y=0.45-0.50
+$\rho_1=\rho_2$\quad $D_1=D_2$
+
+$L_1=L_2=2:1$\quad $R_1=R_2\Rightarrow S_2=\dfrac{1}{2}S_1$\quad $m_1:m_2=4:1$% CHECK: “L1=L2=2:1”疑为 L1:L2=2:1
+%%%END
+%%%BLOCK id=281-05 ch=10 sec=多用电表·改装 kind=knowledge exp=1 alt=none cont=none y=0.50-0.53
+用多用电表测电流量程\quad 测电表电阻\quad $U_{\text{量程}}=I_gR$\quad $E=I_g(R+r_{\text{内}})$% CHECK: I 的下标仅见一小撇，按语境读作 g
+%%%END
+%%%BLOCK id=281-06 ch=08 sec=波动图像与振动图像·多解问题 kind=problem alt=none cont=none y=0.53-1.00
+% 贴纸题（印刷体）+手写解答。原稿：“（10分）”处有一道斜划线；“波长大于9cm，”与“1cm，”被圈出，“且传播时无衰减”下有横线；“运动，”与“t=2s”之间有一道斜划线；①中“B”下有弧线
+\begin{problem}[10分]
+均匀介质中质点$A$、$B$的平衡位置位于$x$轴上，坐标分别为$x_A=-1\unit{cm}$和$x_B=8\unit{cm}$。某简谐横波沿$x$轴正方向传播，波长大于$9\unit{cm}$，振幅为$1\unit{cm}$，且传播时无衰减。$t=0$时刻开始计时，质点$A$位于$x$轴上方$0.5\unit{cm}$处，质点$B$位于平衡位置且向$x$轴下方运动，$t=2\unit{s}$质点$A$第一次回到它$t=0$时刻的位置。求：
+
+①从$t=0$时刻开始，质点$B$经过多长时间第一次位于波峰；
+
+②该简谐波的波速。
+\begin{solution}
+设$A$质点振动方程\quad $y_A=A\sin\Bigl(\dfrac{2\pi}{T}t+\varphi\Bigr)$
+
+$t=0$时$A$对应初相为$\dfrac{\pi}{6}$，or $\dfrac{5\pi}{6}$
+
+%FIG p281_d 0.04 0.815 0.30 0.91
+\notefig[0.3]{figures/p281_d.png}
+②\ $t=2$时\quad $\dfrac{2\pi}{T_2}t+\dfrac{5\pi}{6}=\dfrac{13\pi}{6}$
+
+$T_2=3\unit{s}$
+
+经$\dfrac{3}{4}T_2=2.25$第一次位于波峰
+
+①\ $t=2\unit{s}$时\quad $\dfrac{2\pi}{T_1}t+\dfrac{\pi}{6}=\dfrac{5\pi}{6}$
+
+$T_1=6\unit{s}$
+
+经$\dfrac{3}{4}T=4.15\unit{s}$第一次位于波峰% CHECK: 手写为“4.15”（按 3/4×6=4.5 应为 4.5s，疑多写了“1”）；此处 T 未见下标
+
+②\ [①]\ $\Delta x=x_B-x_A=\dfrac{7}{12}\lambda$
+
+$\lambda_1=\dfrac{108}{7}\unit{cm}$
+
+[②]\ $\Delta x=x_B-x_A=\dfrac{11}{12}\lambda$
+
+$\lambda_2=\dfrac{108}{11}\unit{cm}$
+
+$v=\dfrac{\lambda}{T}$
+
+$v_1=\dfrac{18}{7}\unit{cm/s}$
+
+or $v_2=\dfrac{36}{11}\unit{cm/s}$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 281

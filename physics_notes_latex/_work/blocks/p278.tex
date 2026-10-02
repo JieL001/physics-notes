@@ -1,0 +1,99 @@
+%%%PAGE 278 rot=0 legibility=good summary=动量章零散笔记：流体冲击、碰撞发生条件与动量守恒条件、与速度有关的力的冲量、人船模型、弹性碰撞速度表、三球叠放、凹槽摩擦做功、杆连两球模型
+%%%BLOCK id=278-01 ch=07 sec=动量定理·流体冲击 kind=diagram alt=none cont=none y=0.00-0.19
+\unclear{流体}
+%FIG p278_a 0.03 0.00 0.23 0.195 soft
+\notefig[0.25]{figures/p278_a.png}
+$S_1v_1=S_2v_2$
+%%%END
+%%%BLOCK id=278-02 ch=07 sec=动量守恒·条件 kind=knowledge alt=none cont=none y=0.03-0.10
+（爆炸、碰撞、绳子绷紧）\unclear{内力远}大于外力
+%%%END
+%%%BLOCK id=278-03 ch=07 sec=碰撞·发生条件 kind=knowledge alt=none cont=none y=0.07-0.18
+\textbf{发生条件}
+\begin{itemize}
+\item 动量守恒
+\item 动能不增加
+\item 速度要合理
+\end{itemize}
+%%%END
+%%%BLOCK id=278-04 ch=07 sec=动量守恒·条件 kind=knowledge alt=none cont=none y=0.11-0.21
+%FIG p278_b 0.65 0.115 0.76 0.155
+\notefig[0.25]{figures/p278_b.png}
+水平方向动量守恒
+
+系统动量不守恒
+%%%END
+%%%BLOCK id=278-05 ch=07 sec=动量定理·与速度有关的力的冲量 kind=formula alt=12 cont=none y=0.22-0.32
+\[
+\left\{
+\begin{aligned}
+F_{\text{安}}t&=Blq=\frac{B^2l^2x}{R}\\
+ft&=kvt=kx
+\end{aligned}
+\right.
+\]
+与速度有关的力冲量
+%%%END
+%%%BLOCK id=278-06 ch=07 sec=人船模型 kind=method alt=none cont=none y=0.22-0.31
+\textbf{类人船模型}
+%FIG p278_c 0.58 0.225 0.73 0.285
+\notefig[0.25]{figures/p278_c.png}
+\[
+x_M=\frac{m}{M+m}\,2R
+\]
+%%%END
+%%%BLOCK id=278-07 ch=07 sec=人船模型 kind=method alt=none cont=none y=0.31-0.40
+%FIG p278_d 0.52 0.31 0.78 0.362
+\notefig[0.3]{figures/p278_d.png}
+\[
+x_{\text{相}}=2L\qquad x_1=\frac{m_2\,2L}{m_1+m_2}
+\]
+%%%END
+%%%BLOCK id=278-08 ch=07 sec=碰撞·弹性碰撞速度 kind=knowledge alt=none cont=none y=0.39-0.50
+% CHECK: 左列读作 m 上方带 v0（初速）；第1行“碰3m”，第2行省略“碰”；第3行左侧无标注
+\begin{center}
+\begin{tabular}{ccccc}
+$\overset{v_0}{m}$ & 碰 & $3m$ & $-\dfrac{v_0}{2}$ & $\dfrac{v_0}{2}$\\[6pt]
+$\overset{v_0}{m}$ & & $m$ & $0$ & $v_0$\\[6pt]
+ & & & $<v_0$ & $<2v_0$
+\end{tabular}
+\end{center}
+%%%END
+%%%BLOCK id=278-09 ch=07 sec=碰撞·三球叠放 kind=problem alt=06 cont=none y=0.53-0.72
+%FIG p278_e 0.03 0.54 0.17 0.71
+\notefig[0.25]{figures/p278_e.png}
+碰后$BC$恰\unclear{好静止}
+%%%END
+%%%BLOCK id=278-10 ch=06 sec=功能关系·摩擦力做功 kind=derivation alt=04 cont=none y=0.52-0.76
+%FIG p278_f 0.53 0.535 0.69 0.64
+\notefig[0.25]{figures/p278_f.png}
+\[
+W_f=\frac{1}{2}mgR
+\]
+$\because f>\mu mg\cos\alpha$
+
+又$\because$ $fx=\dfrac{1}{2}mgR$
+
+$\therefore \mu<\dfrac{1}{2}$
+%%%END
+%%%BLOCK id=278-11 ch=07 sec=动量·杆连两球模型 kind=problem alt=06 cont=none y=0.76-0.99
+水平方向动量守恒
+%FIG p278_g 0.04 0.752 0.24 0.866
+\notefig[0.25]{figures/p278_g.png}
+杆对$a$先推后拉\quad 存在$a_b=g$时，$a$对\struck{\unclear{…}}地压力为$2mg$
+
+$v_{b\text{末}}=\sqrt{2gh}$
+
+\[
+W_{\text{杆对}b}+mgh=\frac{1}{2}mv_b^2
+\]
+\[
+W_{\text{杆对}b}=0
+\]
+\[
+I_{\text{杆对}b}\neq 0
+\]
+%FIG p278_h 0.13 0.888 0.40 0.985
+\notefig[0.3]{figures/p278_h.png}
+%%%END
+%%%PAGEEND 278
