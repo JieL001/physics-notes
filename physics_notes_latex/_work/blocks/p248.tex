@@ -1,0 +1,65 @@
+%%%PAGE 248 rot=0 legibility=good summary=传送带共速痕迹与摩擦生热（含v-t图）；机器人与小车沿斜面多次弹性碰撞的时间计算
+%%%BLOCK id=248-01 ch=03 sec=传送带 kind=problem alt=06 cont=none y=0.04-0.40
+%FIG p248_a 0.05 0.04 0.185 0.10 soft
+\notefig[0.25]{figures/p248_a.png}
+$V_1>V_2$，传送带足够长。
+\[
+t_1=\frac{V_1}{\mu g}\qquad t_2=\frac{V_2}{\mu g}\qquad t_3=\frac{x_1-x_2}{V_2}\qquad t=t_1+t_2+t_3=\frac{(V_1+V_2)^2}{2\mu gV_2}
+\]
+\[
+\begin{aligned}
+x_1&=\frac12\mu gt_1^2 & x_2&=\frac12\mu gt_2^2\\[2pt]
+&=\frac{V_1^2}{2\mu g} & &=\frac{V_2^2}{2\mu g}
+\end{aligned}
+\]
+\[
+x_{\text{相}1}=x_1+V_2t_1
+\]
+\[
+x_{\text{相}2}=V_2t_2-x_2\qquad \text{痕迹}\ L=x_{\text{相}1}+x_{\text{相}2}=\frac{(V_1+V_2)^2}{2\mu g}
+\]
+%FIG p248_b 0.09 0.25 0.29 0.365
+\notefig[0.25]{figures/p248_b.png}
+\[
+Q=\mu mgL=\frac12m(V_1+V_2)^2
+\]
+传送带克服摩擦力做功\quad $W=\mu mgV_2(t_1+t_2)=mV_2(V_1+V_2)$
+%%%END
+%%%BLOCK id=248-02 ch=07 sec=碰撞·弹性碰撞 kind=problem alt=01,03 cont=none y=0.42-1.00
+%FIG p248_c 0.0 0.425 0.296 0.557
+\notefig[0.3]{figures/p248_c.png}
+车停时机器人进入，经 $t_0=2.5\unit{s}$ 后第一次推车（弹性碰撞）。% CHECK: t_0 写作 2.5s，但后文 V车=a_1 t_0=1m/s、a_1=5m/s^2、S=0.45m 都对应 t_0=0.2s
+
+$h=3.25\unit{m}$\quad 机器人 $a$ 不变。
+
+对块\ $a_1=g\sin\theta=5\unit{m/s^2}$\qquad 赛道总长度\ $x_{\text{总}}=\dfrac{h}{\sin\theta}=6.5\unit{m}$
+
+$x=\dfrac{V_1^2}{2a_1}=0.9\unit{m}$\qquad 机器人刚开始距小车\ $S=x-d_0=0.45\unit{m}$
+
+$S=V_2t_0+\dfrac12at_0^2+\dfrac12a_1t_0^2$\qquad $a=2.5\unit{m/s^2}$
+
+第一次推车位置为\ $x_0=d_0+V_2t_0+\dfrac12at_0^2=0.8\unit{m}$
+
+推车前\ $V_{\text{车}}=a_1t_0=1\unit{m/s}$\ 沿斜面向下
+
+$V_{\text{机}}=V_2+at_0=2\unit{m/s}$\ 沿斜面向上
+
+完弹后\ $\left\{\begin{array}{l}V_{\text{机}}'=0\qquad V_{\text{车}}'=3\unit{m/s}\end{array}\right.$
+
+第一次推车到第二次推车\ $V_{\text{车}}'T-\dfrac12a_1T^2=\dfrac12aT^2$\qquad $T=0.8\unit{s}$
+
+第二次推车前\ $V_{\text{车}}''=V_{\text{车}}'-a_1T=1\unit{m/s}$\qquad $V_{\text{机}}''=a_2T=2\unit{m/s}$ % CHECK: 此处写作 a_2T，前文机器人加速度记作 a
+
+与第一次碰撞前状态完全相同
+
+相邻两次推车\ 小车位移\ $\Delta X_{\text{车}}=\dfrac{V_{\text{车}}'^2}{2a_1}=0.9\unit{m}$
+
+相邻两次推车位置距离\ $\Delta X=V_{\text{车}}'T-\dfrac12a_1T^2=0.8\unit{m}$
+
+第一次推车后还需 $n$ 次\qquad $n=\dfrac{X_{\text{总}}-X_0-\Delta X_{\text{车}}}{\Delta X_1}=6$
+
+$n$ 为整数\ 故小车运动到赛道顶端恰减速到 $0$
+
+$\therefore t_{\text{总}}=t_0+\dfrac{V_{\text{车}}'}{t_1}+nT=5.6\unit{s}$ % CHECK: 分母写作 t_1，按物理应为 a_1；末尾字迹近 5.65，按 0.2+0.6+4.8 取 5.6s
+%%%END
+%%%PAGEEND 248

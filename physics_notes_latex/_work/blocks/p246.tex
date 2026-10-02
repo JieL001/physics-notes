@@ -1,0 +1,90 @@
+%%%PAGE 246 rot=0 legibility=good summary=动态平衡矢量图、平衡求tanθ、板块恰好不滑出、库仑力相似三角形、连接体提纲、带电小球剪线与正弦定理
+%%%BLOCK id=246-01 ch=02 sec=共点力平衡·动态平衡 kind=diagram alt=none cont=none y=0.00-0.14
+%FIG p246_a 0.02 0.00 0.24 0.145
+\notefig[0.25]{figures/p246_a.png}
+$A$先$\downarrow$后$\uparrow$，$B\uparrow$\quad $A\uparrow$ % 末尾“A”旁的箭头为弯曲向上的箭头
+%%%END
+%%%BLOCK id=246-02 ch=02 sec=共点力平衡·受力分析 kind=problem alt=none cont=none y=0.02-0.24
+\begin{problem}
+现在平衡，求 $\tan\theta$。
+%FIG p246_b 0.34 0.03 0.73 0.14
+\notefig[0.4]{figures/p246_b.png}
+\begin{solution}
+\[
+\begin{cases}
+N\sin37^\circ=F\cos\theta\\
+N\cos37^\circ=m_1g+F\cos\theta\\
+2F\sin\theta=m_1g
+\end{cases}
+\qquad \tan\theta=\dfrac{16}{27}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=246-03 ch=03 sec=板块kind=method alt=01 cont=none y=0.24-0.34
+恰好不滑出\quad $x_1-x_2=L$ 且在此时共速
+\[
+\frac{v_1+v_{\text{共}}}{2}\,t-\frac{v_2+v_{\text{共}}}{2}\,t=L
+\]
+\[
+\frac{v_1-v_2}{2}\,t=L
+\]
+%%%END
+%%%BLOCK id=246-04 ch=09 sec=库仑定律·相似三角形kind=problem alt=02 cont=none y=0.35-0.50
+%FIG p246_c 0.06 0.34 0.24 0.49
+\notefig[0.25]{figures/p246_c.png}
+\[
+\frac{T}{G}=\frac{OB}{OC}\qquad \frac{F}{G}=\frac{BC}{OC}
+\]
+使 $q_B\downarrow$ \\
+$B$ 做圆周运动 \\
+$F_{\text{库}}\downarrow$ \\
+$m_A<m_B$ \\
+$A$ 静止
+%%%END
+%%%BLOCK id=246-05 ch=12 sec=电磁感应·金属板匀速 kind=diagram alt=09 cont=none y=0.38-0.49
+%FIG p246_d 0.64 0.375 0.855 0.485
+\notefig[0.3]{figures/p246_d.png}
+$i=0$\quad $a=0$ % 图中标注“金属板”“匀速”
+%%%END
+%%%BLOCK id=246-06 ch=03 sec=连接体 kind=summary alt=04 cont=none y=0.54-0.64
+\textbf{连接体}
+\begin{itemize}
+\item 动力分配\quad 同 $a$
+\item 滑轮的 $F$ $V$ \unclear{信}数关系 % “数关系”三字写在涂改带上
+\item 杆绳\quad 速度分解
+\end{itemize}
+%%%END
+%%%BLOCK id=246-07 ch=09 sec=电场中功能关系kind=problem alt=02,06,07 cont=none y=0.63-0.82
+%FIG p246_e 0.08 0.62 0.42 0.72
+\notefig[0.35]{figures/p246_e.png}
+$\alpha>\beta$\quad 由静止同时剪 2,3。
+\[
+m_ag\tan\alpha=m_bg\tan\beta \qquad \therefore m_a>m_b % CHECK: 由 m_a g tanα = m_b g tanβ 且 α>β 似应得 m_a<m_b，原稿写 m_a>m_b
+\]
+\[
+a=\frac{F}{m}\qquad \therefore a_a<a_b\qquad v_a<v_b\qquad S_{ax}\le S_{bx}
+\]
+$ab$ 远离\quad $E_{p\text{电}}\downarrow$
+\[
+E_{ka}+E_{kb}=(m_a+m_b)gh
+\]
+若只剪 1，落地时 $ab$ 水平速度抵消
+%%%END
+%%%BLOCK id=246-08 ch=09 sec=库仑定律·相似三角形kind=problem alt=02 cont=none y=0.79-1.00
+%FIG p246_f 0.09 0.785 0.285 0.91
+\notefig[0.25]{figures/p246_f.png}
+\[
+\frac{F}{m_1g}=\frac{AO'}{OO'}\qquad \frac{F}{m_2g}=\frac{BO'}{OO'}
+\]
+\[
+\therefore\ \frac{m_1}{m_2}=\frac{BO'}{AO'}\qquad \text{由正弦定理}\quad \frac{OO'}{\sin\alpha}=\frac{AO'}{\sin\angle1}
+\]
+\[
+\therefore\ AO'=\frac{\sin\angle1}{\sin\alpha}\,OO'\qquad BO'=\frac{\sin\angle2}{\sin\alpha}\,OO'
+\]
+\[
+\frac{m_1}{m_2}=\frac{\sin\angle2}{\sin\angle1}
+\]
+%%%END
+%%%PAGEEND 246

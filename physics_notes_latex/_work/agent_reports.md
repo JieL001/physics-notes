@@ -78,3 +78,9 @@ DONE pages=231-235, blocks=28 (3/9/5/4/7), figs=25, unclear=32, texcheck ALL OK,
 - p231: first line of problem 1 and its truncated right-margin text; the subscript on W in (1), 安 or 它; whether 2mgd in the t formula is 2 or I.
 - p235-03: scribbled energy line and V=√(6mg)/3, probably 6gl. Also p233-05, rows 1 and 4 of the A/B case table.
 - p234-04: a乙=a甲 sin37° (should be cos37° to give 64/89 g) and the "12.5 s" unit. p231 last block: F=BLV is written as F, probably E.
+
+## p246–250
+DONE pages=246,247,248,249,250, blocks=28, figs=25, unclear=7 (crop_batch contact sheets checked, texcheck_all ALL OK), 无重复页。
+1. p248-02：t₀ 原稿似写 2.5s，但后文数值对应 0.2s；`a_2T`、`V'/t_1`（应为 a₁）、末尾 5.6s（原稿近 5.65）也已标 CHECK。
+2. p246：07 块 m_a>m_b 与 α>β 似矛盾；05 块金属板图（i=0, a=0）章号 ch=12 是猜的；p246 的 `\unclear{信}`（“滑轮的 F V 信数关系”）。
+3. p250/p247 的 `\unclear`：“使其绕 P 的完整圆周运动”、“脱轨 ⇒ V₀∈…”的符号；p247-03 “V顶”；另外 p250 斜面最远距离 d 的 sin 平方、p250 速度式 V_y 的等号已标 CHECK。

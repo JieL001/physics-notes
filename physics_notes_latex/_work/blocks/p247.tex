@@ -1,0 +1,66 @@
+%%%PAGE 247 rot=0 legibility=good summary=传送带五种情形图像与分类讨论、小球与物块系统方程、光线影子速度关系、力学两确定与受力分析方法提纲
+%%%BLOCK id=247-01 ch=03 sec=传送带 kind=method alt=01,06 cont=none y=0.03-0.37
+%FIG p247_a 0.075 0.03 0.90 0.16
+\notefig[0.8]{figures/p247_a.png}
+%FIG p247_b 0.075 0.178 0.70 0.285
+\notefig[0.6]{figures/p247_b.png}
+% 图中标注：②处 μ>tanθ ✓；③处 μ<tanθ、μ≥tanθ
+\[
+V_0=0\quad\text{一直减速}
+\]
+\[
+V_0<V\ \left\{\begin{array}{ll}
+V_0<\sqrt{V^2-2\mu gL} & \text{一直减速}\\
+V>V_0>\sqrt{V^2-2\mu gL} & \text{先减后匀}
+\end{array}\right.
+\]
+\[
+V_0>V\ \left\{\begin{array}{ll}
+V_0>\sqrt{V^2+2\mu gL} & \text{一直加速}\\
+V<V_0<\sqrt{V^2+2\mu gL} & \text{先加后匀}
+\end{array}\right.
+\]
+$V_0=0$ or $V_0$反向\quad 一直减速落\unclear{回}\\
+$V_0\neq0$ 则\quad 落在 $P$ 或 $P$ 右侧
+%%%END
+%%%BLOCK id=247-02 ch=06 sec=机械能守恒·关联速度系统 kind=problem alt=04 cont=none y=0.45-0.55
+%FIG p247_c 0.11 0.465 0.275 0.545
+\notefig[0.25]{figures/p247_c.png}
+\[
+\begin{cases}
+mgL(1-\cos37^\circ)=\dfrac12mv^2+\dfrac12M(0.8V)^2\\[4pt]
+mg\cos37^\circ=\dfrac{mv^2}{L}
+\end{cases}
+\]
+%%%END
+%%%BLOCK id=247-03 ch=04 sec=运动合成与分解·关联速度 kind=derivation alt=none cont=none y=0.59-0.78
+%FIG p247_d 0.07 0.595 0.325 0.718
+\notefig[0.3]{figures/p247_d.png}
+\[
+V_{\perp}=V\cos\theta=\omega r\qquad r=\frac{h}{\cos\theta}
+\]
+% 原稿此式被划去
+\struck{$V_{\text{速}}=V_{\text{影}}\cos\theta$}
+\begin{keybox}
+\[
+\sin\text{光地}=\frac{V_{\text{\unclear{顶}}}}{V_{\text{影}}}
+\]
+\end{keybox}
+%%%END
+%%%BLOCK id=247-04 ch=02 sec=受力分析 kind=summary alt=03 cont=none y=0.76-0.83
+\textbf{力学两确定}
+\begin{itemize}
+\item 平衡非平衡
+\item 研究对象
+\end{itemize}
+%%%END
+%%%BLOCK id=247-05 ch=02 sec=受力分析 kind=summary alt=none cont=none y=0.86-1.00
+\textbf{受力分析}
+\begin{itemize}
+\item 力三角形（旋转、延长）
+\item 非特殊三角形\quad 相似、正余弦定理
+\item 多力正交分解
+\item 定角定边画力辅助圆
+\end{itemize}
+%%%END
+%%%PAGEEND 247

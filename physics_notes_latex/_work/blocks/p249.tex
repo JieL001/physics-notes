@@ -1,0 +1,79 @@
+%%%PAGE 249 rot=0 legibility=good summary=斜面上物块随a=kt的相对滑动临界(t1、t2与动能比较)；电场与弹性绳的功能关系；恒力转动下两绳拉力变化；斜面悬挂小球加速度；作图规范提醒
+%%%BLOCK id=249-01 ch=03 sec=斜面 kind=problem alt=06,07 cont=none y=0.03-0.41
+%FIG p249_a 0.14 0.03 0.355 0.125
+\notefig[0.35]{figures/p249_a.png}
+$a=kt$\quad $t_1$ 时相对滑动，$E_{K1}$
+\[
+\left\{\begin{aligned}
+&N_1\cos\theta+f_1\sin\theta=mg\\
+&f_1\cos\theta-N\sin\theta=ma_1 % CHECK: N 无下标，应为 N_1
+\\
+&a_1=kt_1\\
+&f_1=\mu N_1
+\end{aligned}\right.
+\]
+\[
+N_1=\frac{mg}{\cos\theta+\mu\sin\theta}\qquad f_1=\frac{\mu mg}{\cos\theta+\mu\sin\theta}\qquad t_1=\frac{g(\mu\cos\theta-\sin\theta)}{k(\mu\sin\theta+\cos\theta)}
+\]
+\[
+\text{斜面对物块}\ I_1=t_1\sqrt{N_1^2+f_1^2}=\frac{mg^2(\mu\cos\theta-\sin\theta)\sqrt{1+\mu^2}}{k(\mu\sin\theta+\cos\theta)^2}
+\]
+若 $F$ 向左\ 物块与斜面相对运动时\ $t_2$ 时刻\ $E_{K2}$
+\[
+f_2\cos\theta+N_2\sin\theta=ma_2\qquad N_2\cos\theta=f_2\sin\theta+mg\qquad f_2=\mu N_2\qquad a_2=kt_2
+\]
+%FIG p249_b 0.12 0.305 0.265 0.39
+\notefig[0.25]{figures/p249_b.png}
+\[
+t_2=\frac{g(\mu\cos\theta+\sin\theta)}{k(\cos\theta-\mu\sin\theta)}
+\]
+\[
+t_2>t_1\qquad E_{K2}>E_{K1}
+\]
+%%%END
+%%%BLOCK id=249-02 ch=09 sec=电场中功能关系 kind=problem alt=06 cont=none y=0.40-0.69
+%FIG p249_c 0.05 0.395 0.222 0.527
+\notefig[0.25]{figures/p249_c.png}
+$E=\dfrac{mg}{q}$\qquad $CE=L$\qquad $V_C=0$\quad $V_E=0$\qquad 在 $C$\ $T=\dfrac32mg$\quad $\mu=0.5$
+\[
+f=\mu\left(\frac32mg-mg\right)=\frac14mg
+\]
+\[
+C\to E\qquad qEL-fL-W=0-0
+\]
+\[
+T=K|BF| % CHECK: 此处写作大写 K，后文为小写 k，应为同一劲度系数
+\]
+\[
+T_x=K|BF|\cos\theta=K\,CF
+\]
+\[
+W=\frac{0+kL}{2}\,L=\frac12kL^2
+\]
+\[
+\therefore kL=\frac32mg
+\]
+在 $D$\ $T_x=k\dfrac{L}{2}=\dfrac34mg$\qquad $qE=f+T_x$ 故 $V_D$ max
+\[
+W=\frac34mgL
+\]
+%%%END
+%%%BLOCK id=249-03 ch=02 sec=共点力平衡·动态平衡 kind=problem alt=none cont=none y=0.69-0.81
+%FIG p249_d 0.04 0.685 0.256 0.81
+\notefig[0.25]{figures/p249_d.png}
+%FIG p249_e 0.44 0.715 0.56 0.795
+\notefig[0.25]{figures/p249_e.png}
+恒力 $F$ 从 $OM$ 转到 $ON$ \\
+$T_{OA}$ 先$\uparrow$后$\downarrow$ \\
+$T_{OB}\uparrow$
+%%%END
+%%%BLOCK id=249-04 ch=03 sec=斜面 kind=diagram alt=none cont=none y=0.83-0.98
+%FIG p249_f 0.04 0.83 0.335 0.975
+\notefig[0.3]{figures/p249_f.png}
+% 图中标注：M；$a<g\sin\theta$（向下）；$a=0$（向下运动）；$a=g\sin\theta$（向下）；$a>g\sin\theta$（向上）
+%%%END
+%%%BLOCK id=249-05 ch=18 sec=数据处理·图像规范 kind=note alt=none cont=none y=0.86-0.92
+图像 $\tan\theta$ 值不等于切线斜率\quad 分度值大小不规范 \\
+物理量$+$单位
+%%%END
+%%%PAGEEND 249
