@@ -1,0 +1,70 @@
+%%%PAGE 227 rot=0 legibility=good summary=加速关联分离题、感应电流产生条件、不出轨道、皮带轮抛出、脱离轨道、圆锥内物块、点数与间隔数
+%%%BLOCK id=227-01 ch=04 sec=圆周运动·分离临界与关联速度 kind=problem alt=03,06 cont=none y=0.01-0.25
+\textbf{1.} 加速关联
+%FIG p227_a 0.19 0.005 0.505 0.08
+\notefig[0.31]{figures/p227_a.png}
+
+\unclear{将}要分离
+
+$a_{Ax}=a_{Bx}=0$ \qquad $V_A=V_B\sin30^\circ$ % CHECK: 与后面 V_B=√(gL/8) 对照，疑应为 V_B=V_A sin30°
+
+$\therefore a_{Ay}=g$ \qquad $mg\sin30^\circ=\dfrac{mV_A^{2}}{L}$ 重力分力提供向心力
+
+$V_A=\sqrt{\dfrac{3gL}{2}}$ \qquad $m_A:m_B=1:4$ % CHECK: 下标可能是"A末"（末速度）；与上式按 mg sin30°=mV_A^2/L 得 V_A=√(gL/2) 不同
+
+$m_Agl\sin30^\circ=\dfrac12 mV_{A\text{末}}^{2}-\dfrac12 mV_A^{2}$ % CHECK: 末 字辨认不确定
+
+$m_Agl(1-\sin30^\circ)=\dfrac12 m_AV_A^{2}+\dfrac12 m_BV_B^{2}$ \qquad $V_B=\sqrt{\dfrac{gL}{8}}$
+%%%END
+%%%BLOCK id=227-02 ch=12 sec=感应电流·产生条件 kind=knowledge alt=none cont=none y=0.25-0.29
+产生 $I_{\text{感}}$ = 闭合回路 $+$ \unclear{磁通量}变化 % CHECK: "磁通量"处笔迹被涂改叠写，辨认不清
+%%%END
+%%%BLOCK id=227-03 ch=07 sec=动量定理·平均作用力 kind=formula alt=none cont=none y=0.25-0.30
+\[ \overline{F}=\frac{\Delta p}{\Delta t}=\frac{N(P_{\max}+P_{\min})}{2} \] % CHECK: N 前有一处涂抹符号；N、P 含义不明
+%%%END
+%%%BLOCK id=227-04 ch=04 sec=竖直面圆周·不脱轨条件 kind=note alt=06 cont=none y=0.30-0.46
+\textbf{2.} 不出轨道
+%FIG p227_b 0.04 0.35 0.20 0.45
+\notefig[0.25]{figures/p227_b.png}
+
+$V\ge V_2$ 或 $V\le V_1$ \qquad $\ast$ 反回或冲出后碰墙反弹回来。
+%%%END
+%%%BLOCK id=227-05 ch=04 sec=皮带轮·抛出临界 kind=note alt=06 cont=none y=0.46-0.54
+%FIG p227_c 0.05 0.47 0.205 0.52
+\notefig[0.3]{figures/p227_c.png}
+
+能在D抛出 \quad $mg\le\dfrac{mV_D^{2}}{R}$
+
+求$h$、$x$关系 分段讨论
+
+过了某个点/未过某个点
+%%%END
+%%%BLOCK id=227-06 ch=04 sec=圆周运动·脱离轨道 kind=derivation alt=06 cont=none y=0.52-0.67
+%FIG p227_d 0.04 0.52 0.225 0.64
+\notefig[0.3]{figures/p227_d.png}
+
+重力分力提供向心力
+
+在P点 $mg\cos\theta-N=\dfrac{mV_P^{2}}{R}$ \qquad 从B到P $mgR(1-\cos\theta)=\dfrac12 mV_P^{2}$
+
+在P脱离轨道则 $N=0$
+
+$\cos\theta=\dfrac{h}{R}$
+%%%END
+%%%BLOCK id=227-07 ch=04 sec=水平圆周·圆锥内物块 kind=problem alt=02 cont=none y=0.69-0.87
+\textbf{3.} 圆锥
+%FIG p227_e 0.04 0.729 0.19 0.84
+\notefig[0.25]{figures/p227_e.png}
+
+①A静止时求$f$、$N$ \quad 转动时求$\omega$（$\mu=0$）
+
+\[ f=mg\sin\theta=\frac{mgH}{\sqrt{H^{2}+R^{2}}}\qquad
+\begin{cases} mg\tan\theta=m\omega^{2}\dfrac{R}{2}\\[4pt] \tan\theta=\dfrac{H}{R}\end{cases} \]
+\[ N=mg\cos\theta=\frac{mgR}{\sqrt{H^{2}+R^{2}}}\qquad \therefore\omega=\frac{\sqrt{2gH}}{R} \]
+%%%END
+%%%BLOCK id=227-08 ch=01 sec=易错·点数与间隔数 kind=note alt=08 cont=none y=0.87-0.95
+$n$个点，$n-1$个间隔
+
+\textbf{4.} 人听到1$\sim$16次撞击 有$10\unit{s}$ \qquad $\Delta t=\dfrac{10}{16-1}=\dfrac{2}{3}\unit{s}$ 每次撞击的时间（15个间隔）
+%%%END
+%%%PAGEEND 227

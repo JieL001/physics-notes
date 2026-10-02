@@ -1,0 +1,75 @@
+%%%PAGE 229 rot=0 legibility=good summary=弹簧连接体C落B粘连与换D题、弹簧振子C在B上的简谐运动题、裂变聚变注记、斜面上斜抛飞行时间推导
+%%%BLOCK id=229-01 ch=07 sec=碰撞·完全非弹性碰撞与弹簧模型 kind=problem alt=06 cont=none y=0.00-0.46
+\textbf{1.}
+%FIG p229_a 0.03 0.00 0.273 0.14
+\notefig[0.3]{figures/p229_a.png}
+
+\begin{problem}
+\unclear{…}到最低\unclear{点B}上升 恰\unclear{好}使A离开地面，% 原稿此行位于页面最上缘，被截断，仅见下半
+
+C换为D，从$4h$处自由下落，求A刚离地
+
+时，$V_B$和$V_D$。
+\begin{solution}
+C落下之前 \quad $3mg=kx_1$ \quad $x_1=\dfrac{3mg}{k}$
+
+C下落 \quad $2mgh=\dfrac12\cdot 2mV_1^{2}$ \quad $V=\sqrt{2gh}$ % CHECK: 左式为V_1，右式未写下标
+
+CB共速 \quad $2mV_1=(2m+3m)V_2$ \quad $V_2=\dfrac{2}{5}\sqrt{2gh}$
+
+CB到最高点，A恰离地 弹簧伸长 \quad $4mg=kx_2$ \quad $x_2=\dfrac{4mg}{k}$
+
+\[ \frac12\cdot 5mV_2^{2}+E_{p1}=E_{p2}+5mg(x_1+x_2) \]
+\[ \therefore E_{p1}-E_{p2}=\frac{35}{k}m^{2}g^{2}-\frac{4}{5}mgh \]
+
+D下落 \quad $mg\cdot 4h=\dfrac12 mV_3^{2}$ \quad $V_3=2\sqrt{2gh}$
+
+DB共速 \quad $mV_3=(m+3m)V_4$ \quad $V_4=\dfrac{\sqrt{2gh}}{2}$
+
+DB上升
+\[ \frac12\cdot 4mV_4^{2}+E_{p1}=E_{p2}+4mg(x_1+x_2)+\frac12\cdot 4mV_{BD}^{2} \]
+\[ V_{BD}=\sqrt{\frac{g(hk+35mg)}{10k}} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=229-02 ch=08 sec=简谐运动·弹簧振子 kind=problem alt=03 cont=none y=0.46-0.76
+\textbf{2.}
+%FIG p229_b 0.01 0.455 0.33 0.60
+\notefig[0.3]{figures/p229_b.png}
+
+\begin{problem}
+将C下压后释放，C作简谐运动，当C在最高点时，B压地
+
+$k=100\unit{N/m}$ \quad 压力为0。求C到最低点时，C的加速度及$N_{\text{地}B}$
+\begin{solution}
+刚开始 \quad $kx_0=mg$ \quad $x_0=0.02\unit{m}$
+
+C向下$x_1$，振幅 $A=x_1$
+
+C在最高处 \quad $Mg=k(A-x_0)$ \quad $\therefore A=0.07\unit{m}$
+
+C在最低处 \quad $k(A+x_0)-mg=ma$ \quad $a=35\unit{m/s^2}$
+
+对B \quad $F=mg+k(A+x_0)=14\unit{N}$ % CHECK: 按数值(5+9=14)此处应为Mg
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=229-03 ch=17 sec=核反应·裂变聚变与衰变 kind=note alt=none cont=none y=0.76-0.83
+裂变聚变都放能，
+
+\unclear{核}铀裂变释放 快中子不易捕获 衰变自发 不需要中子 % CHECK: "铀"字上方有一个小字（插入），辨认不清
+%%%END
+%%%BLOCK id=229-04 ch=04 sec=斜抛·斜面上的抛体 kind=derivation alt=03 cont=none y=0.82-1.00
+\textbf{3.}
+%FIG p229_c 0.00 0.82 0.195 0.965
+\notefig[0.25]{figures/p229_c.png}
+
+\[ t=\frac{2V_{0y}}{g_y}=\frac{2V_0\cos(\alpha-\theta)}{g\cos\theta} \]
+也可按斜抛水平竖直分解
+
+当 $\cos(\alpha-\theta)=1$ 时（$\alpha=\theta$）$t$最大
+
+\[ t=\frac{2V_0}{g\cos\theta}\qquad x=\frac12 g_xt^{2}=\frac{2V_0^{2}\sin\theta}{g\cos^{2}\theta} \]
+$g_x=g\sin\theta$
+%%%END
+%%%PAGEEND 229

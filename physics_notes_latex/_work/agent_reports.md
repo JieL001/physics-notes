@@ -53,3 +53,16 @@ DONE pages=190,191,192,193,194, blocks=53, figs=18, unclear=29 (`\unclear` occur
 DONE pages=216,217,218,219,220, blocks=19, figs=11, unclear=10. texcheck ALL OK, contact sheet checked, no dup pages. Pages 216–219 are ch=10; 219-04 is ch=18; 220 is ch=13.
 Recheck: p219 line-1 margin label (page-edge label before "R_x ___ √(R_A R_V)", written `\unclear{…}`) and the red correction "过大→不够" (219-03). Also p216 "指针定位螺丝 / 初次碰表 / 测纯阻为0".
 Also CHECK-flagged: p217 "I_g/2" layout and the missing "=" in "R内=E/I满 r+Rg+Rp"; p218 the "量程 1/3 ∧ 2/3" symbol.
+
+## p221–225
+DONE pages=221-225, blocks=44 (221:11, 222:7, 223:7, 224:9, 225:10), figs=34, unclear=13；crop_batch 联系表已检查，texcheck_all 为 ALL OK；无重复页。
+二次核对 1：p221 的 221-06「整体法」里 `\unclear{向心力}` 可能是“向上/向下”；221-10 补偿法公式的下标 `F外大小=F大小−F小小` 难辨；221-11「1到16次 算时 15 除以15」归入 ch=18（备选 ch=08）。
+二次核对 2：p224-07 斜面式 `(g sinθ+μcosθ)/(sinθ−μcosθ)` 中 g 与 μ 的位置、图中倾角 α 与公式 θ 不一致；224-06 的“基本短试”和 `V_t^2-V_0^2=2ax` 的下标。
+二次核对 3：p225 红笔「合\unclear{外}力为0」；225-02「正常时」和分子被页边截断；p222-03 分母首字（t 改 V？）；223-02 里 x2 第一项缺 t（已写 % CHECK）。
+
+## p226–230
+DONE pages=226-230, blocks=33, figs=25, unclear=14, texcheck ALL OK.
+No duplicate pages. Please double-check these:
+1. p227-01: the formulas V_A=√(3gL/2) and V_A=V_B sin30° are inconsistent with the other lines; I kept the handwriting and added CHECK.
+2. p228-02: the handwritten sinθ_n=√(nqBd/2Em) is probably missing a square on B. p226-10: the leading "2" of the first equation may be a factor 2 or an item number.
+3. Uncertain chapter and wording: p227-08 is filed under ch=01 but could be ch=08. p230 red note "建议画图思考" and p229-01 top line (cut off by the page edge) are partly guesses.

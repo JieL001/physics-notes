@@ -1,0 +1,72 @@
+%%%PAGE 228 rot=0 legibility=good summary=正则动量(洛伦兹力冲量)与多层电磁场题、滑轮连接体机械能题、两镜多次反射、半圆形玻璃光路、半圆导线安培力与张力
+%%%BLOCK id=228-01 ch=11 sec=洛伦兹力分解·动量定理 kind=method alt=none cont=none y=0.03-0.17
+\textbf{1.} 正则动量 \quad $qBx=m\Delta V_y$ \quad \red{2018、桥梁公式考} \quad \red{25T}
+%FIG p228_a 0.09 0.075 0.28 0.165
+\notefig[0.25]{figures/p228_a.png}
+
+$qB_1l_1+qB_2l_2=m\Delta V_y=m(V_0\cos\alpha+V_0\sin\alpha)$
+%%%END
+%%%BLOCK id=228-02 ch=11 sec=复合场·多层电磁场 kind=problem alt=09 cont=none y=0.17-0.40
+%FIG p228_b 0.03 0.175 0.235 0.265
+\notefig[0.25]{figures/p228_b.png}
+
+\begin{problem}
+①求在第$n$层时出B的角度$\theta$（与水平方向）
+
+②粒子恰可从第$n$层过，但比荷大一点不能穿过。解释
+\begin{solution}
+① $nqBd=m\Delta V_y$
+
+$\Delta V_y=V\sin\theta_n$
+
+$nEqd=\dfrac12 mV_n^{2}$ \qquad $V_n=\sqrt{\dfrac{2nEqd}{m}}$
+
+$\Delta V_y=\sqrt{\dfrac{2nEqd}{m}}\,\sin\theta_n$
+
+$\therefore\sin\theta_n=\sqrt{\dfrac{nqBd}{2Em}}$ % CHECK: 按推导根号内分子应为 nqB^2 d，原稿疑漏平方
+
+② $\sin\theta\le1$ \qquad $\dfrac{q}{m}\uparrow$ \qquad $d\downarrow$
+
+$d\downarrow$ 故出不去
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=228-03 ch=06 sec=机械能守恒·关联速度连接体 kind=problem alt=03,04 cont=none y=0.43-0.60
+\textbf{2.}
+%FIG p228_c 0.02 0.425 0.18 0.575
+\notefig[0.25]{figures/p228_c.png}
+
+$V_P=V_2=V_Q\cos\theta$ \qquad $\because 0<\theta\le90^\circ$ \quad $\therefore V_P<V_Q$
+
+P先失重 $T<mg$ 后超重 $T>mg$ % CHECK: P质量为4m，此处"mg"疑为4mg；"<"">"处笔迹重描
+
+故 $T\ne mg$ \quad 可等于 不恒等于
+
+Q到最低点 $E_{Q\text{机}}$最大 $E_{P\text{机}}$最小
+
+\[ 4mg\left(\frac{d}{\cos37^\circ}-d\right)=mgd\tan37^\circ+\frac12 mV_Q^{2}\qquad V_Q=\frac{\sqrt{2gd}}{2} \]
+%%%END
+%%%BLOCK id=228-04 ch=15 sec=反射·两镜多次反射 kind=note alt=none cont=none y=0.62-0.70
+\textbf{3.}
+%FIG p228_d 0.07 0.625 0.155 0.695
+\notefig[0.2]{figures/p228_d.png}
+
+\red{两\unclear{镜}区 多次反射问题}
+%%%END
+%%%BLOCK id=228-05 ch=15 sec=折射·半圆形玻璃砖 kind=note alt=none cont=none y=0.62-0.73
+%FIG p228_e 0.47 0.62 0.595 0.725
+\notefig[0.25]{figures/p228_e.png}
+
+出入平行 必过最高点
+
+$\dfrac{\sin i}{\sin r}=n$
+%%%END
+%%%BLOCK id=228-06 ch=11 sec=安培力·有效长度与张力 kind=note alt=02 cont=none y=0.73-0.85
+%FIG p228_f 0.015 0.735 0.155 0.845
+\notefig[0.25]{figures/p228_f.png}
+
+$F_{\text{全}}=2BIL$
+
+\underline{$F_{\text{半}}=\dfrac{F}{2}=BIL$} \struck{张力} \quad \red{上下张力合$=F=2BIL$} % 原稿 F半 式下有红色下划线
+%%%END
+%%%PAGEEND 228

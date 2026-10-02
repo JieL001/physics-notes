@@ -1,0 +1,105 @@
+%%%PAGE 230 rot=0 legibility=good summary=电磁连接体：方法提要、定滑轮连接体过磁场题1、2、斜面线框过两磁场题3、电磁题解题思路
+%%%BLOCK id=230-01 ch=12 sec=电磁连接体·分析方法 kind=summary alt=03 cont=none y=0.01-0.09
+整体、隔离 \quad 超重 失重、系统守恒 \quad 单体不守恒
+
+\textbf{电磁连接体} \quad 受力关联：共同运动、内力外力 \quad 运动关联（速度、位移）·能量关联
+%%%END
+%%%BLOCK id=230-02 ch=12 sec=电磁连接体·定滑轮与线框过磁场 kind=problem alt=03,06 cont=none y=0.09-0.23
+\textbf{1.}
+%FIG p230_a 0.05 0.085 0.215 0.178
+\notefig[0.2]{figures/p230_a.png}
+
+\begin{problem}
+静止释放，A$_1$刚过磁场\unclear{I}中线时匀速了。求
+
+①A$_1$刚进I时A$_1$的$V_1$
+
+②ab进II后A重力功率
+
+③从ab刚进II到刚出II的焦耳热
+\begin{solution}
+① $Mgh-mgh=\dfrac12(M+m)V_1^{2}$ \qquad $V_1=\sqrt{\dfrac{2(M-m)gh}{M+m}}$
+
+② \red{建议\unclear{画图思考}} \quad $I=\dfrac{2BLV}{R}$ \qquad $Mg=\dfrac{4B^{2}L^{2}V}{R}+mg$ \qquad $\Delta E_k=0$ \struck{\unclear{$MgL=mgL+$}}
+\[ \therefore P=MgV=\frac{M(M-m)g^{2}R}{4B^{2}L^{2}} \]
+
+③ $MgL\ \overset{\Delta E_k=0}{-}\ mgL=Q$
+
+$Q=(M-m)gL$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=230-03 ch=12 sec=电磁连接体·定滑轮与线框过磁场 kind=problem alt=03,06 cont=none y=0.24-0.57
+\textbf{2.}
+%FIG p230_b 0.03 0.245 0.275 0.375
+\notefig[0.28]{figures/p230_b.png}
+
+\begin{problem}
+静止释放。ad从B上界穿出时 线框匀速
+
+①求ad穿出速度
+
+②线框全进B中的动能
+
+③线框整个过程产热
+\begin{solution}
+①
+\[ \left\{\begin{aligned} &\text{对}m_1\quad T=m_1g+BIL\\ &\text{对}m_2\quad m_2g\sin53^\circ=\mu m_2g\cos53^\circ+T\end{aligned}\right.\ \to V \]
+% CHECK: 第二式 μmg cos53° 的 m 原稿无下标，应为 m_2
+$\therefore$ \struck{$V=2\unit{m/s}$}
+
+②
+\begin{align*}
+&m_2g(d_2-L)\sin\theta-\mu m_2g(d_2-L)\cos\theta-m_1g(d_2-L)\\
+&=\frac12(m_1+m_2)(V^{2}-V_0^{2})\qquad E_K=\frac12 m_1V_0^{2}
+\end{align*}
+
+③全程
+\begin{align*}
+&m_2g(d_1+d_2+L)\sin\theta-\mu m_2g\cos\theta(d_1+d_2+L)\\
+&-m_1g(d_1+d_2+L)+W_{\text{安}}=\frac12(m_1+m_2)V^{2}-0\\
+&Q=-W_{\text{安}}
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=230-04 ch=12 sec=电磁感应·斜面线框过两磁场 kind=problem alt=06 cont=none y=0.56-0.88
+\textbf{3.}
+%FIG p230_c 0.015 0.56 0.275 0.69
+\notefig[0.28]{figures/p230_c.png}
+
+\begin{problem}
+框以$V$进B时匀速 \quad ab到\unclear{磁场}II中线时匀速。
+
+①求ab过$ff'$时的$a$
+
+②线框该过程产热
+\begin{solution}
+①进I \quad $mg\sin\theta=\dfrac{B^{2}L^{2}V}{R}$
+
+出I \quad $I=\dfrac{2BLV}{R}$
+
+$mg\sin\theta-\dfrac{4B^{2}L^{2}V}{R}=ma$
+
+$a=-3g\sin\theta$ 沿斜面向上
+
+②
+\begin{align*}
+mg\sin\theta&=2BI_2L\\
+I_2&=\frac{2BLV_2}{R}\\
+mg\sin\theta&=\frac{4B^{2}L^{2}V_2}{R}=\frac{B^{2}L^{2}V_1}{R}\\
+\therefore V_2&=\frac14 V_1\\
+mg\cdot\frac32 L\sin\theta+W_{\text{安}}&=\frac12 mV_2^{2}-\frac12 mV_1^{2}\\
+Q=-W_{\text{安}}&=\frac32 mgL\sin\theta+\frac{15}{32}mV^{2}
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=230-05 ch=12 sec=电磁感应·解题思路 kind=method alt=03,06 cont=none y=0.89-0.97
+$\to$ 路 $\to$ 力 $\to$ $a$ $\to$ 能
+
+$I=\dfrac{E}{R+r}$ \quad $F_{\text{安}}$ \quad 运动状态 \quad 能量守恒
+
+$F_{\text{合}}=ma$
+%%%END
+%%%PAGEEND 230

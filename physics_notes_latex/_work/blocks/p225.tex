@@ -1,0 +1,123 @@
+%%%PAGE 225 rot=0 legibility=good summary=匀变速推论（位移差公式、逐差法、比例关系）、平抛频闪实验、刹车与逆向思维、竖直上抛及对称性、复合场中带电小球（红笔受力图、套杆小球V_max与a_max）
+%%%BLOCK id=225-01 ch=01 sec=匀变速直线运动推论 kind=formula alt=none cont=prev y=0.00-0.08
+3）位移差公式
+\[
+\Delta x=aT^2=x_{n+1}-x_n\qquad x_m-x_n=(m-n)aT^2
+\]
+%%%END
+%%%BLOCK id=225-02 ch=01 sec=打点计时器类实验·逐差法 kind=method exp=1 alt=none cont=none y=0.08-0.30
+\textbf{逐差法}
+%FIG p225_a 0.175 0.108 0.455 0.292
+\notefig[0.35]{figures/p225_a.png}
+\[
+a=\frac{x_6-2x_3}{9T^2}
+\]
+正\unclear{常}时 $a=\dfrac{S_6+S_5+S_4-(S_1+S_2+S_3\unclear{)}}{9T^2}$ % 原稿分子末尾被页边截断，右括号未见
+%%%END
+%%%BLOCK id=225-03 ch=04 sec=平抛运动·频闪照片 kind=problem exp=1 alt=01 cont=none y=0.15-0.38
+\begin{problem}
+%FIG p225_b 0.462 0.165 0.74 0.274
+\notefig[0.3]{figures/p225_b.png}
+$T=0.1\unit{s}$
+\begin{solution}
+$\Delta y=y_2-y_1=gT^2$\quad $\therefore\ V_0=2\unit{m/s}$
+
+$V_{Ay}=1.5\unit{m/s}$\quad $t=0.15\unit{s}$
+
+$V_A=2.5\unit{m/s}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=225-04 ch=01 sec=初速为零的匀变速比例关系 kind=formula alt=none cont=none y=0.37-0.45
+$1t$\quad $2t$\quad $\cdots$\quad $V$比为\quad 1\quad 2\quad 3\quad $\cdots$\quad $n$
+
+$1t$\quad $2t$\quad $\cdots$\quad $x$比为\quad 1\quad 3\quad 5\quad 7\quad $\cdots$\quad $2n-1$
+
+$x$\quad $2x$\quad $\cdots$\quad $t$比\quad $1:\sqrt2-1:\cdots:\sqrt n-\sqrt{n-1}$
+%%%END
+%%%BLOCK id=225-05 ch=01 sec=刹车·逆向思维 kind=note alt=none cont=none y=0.46-0.52
+刹车时间
+
+逆向思维。
+%%%END
+%%%BLOCK id=225-06 ch=04 sec=平抛运动·动能与动量变化 kind=problem alt=06,07 cont=none y=0.37-0.50
+\begin{problem}
+%FIG p225_c 0.512 0.378 0.600 0.43
+\notefig[0.25]{figures/p225_c.png}
+\begin{solution}
+第3s内：第5s内\quad $E_k$变化\quad $5:9$ % 原稿：“E_k变化”写在第二行，并以括号与 5:9 相连
+
+动量变化之比\quad $1:1$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=225-07 ch=01 sec=自由落体、竖直上抛 kind=knowledge alt=none cont=none y=0.55-0.70
+\textbf{4、}竖直上抛
+\begin{itemize}
+\item $v=v_0-gt$
+\item $x=v_0t-\frac12gt^2$
+\item $v^2-v_0^2=-2gx$
+\end{itemize}
+对称性
+\begin{itemize}
+\item 对称过程 $t$ 相等
+\item 对称位置 $V$ 大小相等方向相反
+\end{itemize}
+%%%END
+%%%BLOCK id=225-08 ch=01 sec=自由落体、竖直上抛 kind=problem alt=none cont=none y=0.60-0.72
+\begin{problem}
+5个球 $\Delta t=0.5\unit{s}$ 求 $h=?$
+%FIG p225_d 0.618 0.65 0.715 0.712
+\notefig[0.25]{figures/p225_d.png}
+\begin{solution}
+$h=\dfrac12gt^2=5\unit{m}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=225-09 ch=11 sec=复合场·带电体的直线运动 kind=method alt=02 cont=none y=0.70-0.90
+%FIG p225_e 0.02 0.705 0.25 0.898
+\notefig[0.3]{figures/p225_e.png}
+\red{垂直于运动方向的合\unclear{外}力为0。} % 原稿：“合”与“力”之间有一处被涂的字迹
+
+\red{正电\quad 电场向右。}
+%%%END
+%%%BLOCK id=225-10 ch=11 sec=复合场·摩擦与最大速度 kind=problem alt=03,09 cont=none y=0.78-1.00
+\begin{problem}
+%FIG p225_f 0.012 0.888 0.24 1.0
+\notefig[0.3]{figures/p225_f.png}
+求 $V_{\max}$ 和 $a_{\max}$ 时的 $V$
+%FIG p225_g 0.285 0.885 0.475 0.995
+\notefig[0.25]{figures/p225_g.png}
+\begin{solution}
+$a_{\max}$：$f=0$ % 原稿冒号处近似“÷”
+
+$V_{\max}$：$a=0$
+
+%FIG p225_h 0.603 0.806 0.93 0.876
+\notefig[0.4]{figures/p225_h.png}
+\noindent
+\begin{minipage}[t]{0.48\linewidth}
+开始 $V_{\text{小}}$
+\begin{align*}
+N+qVB-qE&=0\\
+N&=qE-qVB\\
+f&=\mu N\\
+mg-f&=ma\\
+a&=g-\frac{\mu qE}{m}+\frac{qVB}{m}\quad V\uparrow\ a\uparrow
+\end{align*}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+之后 $qVB>qE$
+\begin{align*}
+N+qE&=qVB\\
+N&=qVB-qE\\
+f&=\mu N\\
+mg-f&=ma\\
+a&=g+\frac{\mu qE}{m}-\frac{qVB}{m}\quad V\uparrow\ a\downarrow
+\end{align*}
+\end{minipage}
+% CHECK: 两处 a 的表达式中第二项分子原稿均为 qVB（未见 μ）
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 225

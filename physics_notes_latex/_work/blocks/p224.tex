@@ -1,0 +1,86 @@
+%%%PAGE 224 rot=0 legibility=good summary=描述运动方法（语言描述法、图象描述：斜率与面积及p-V循环例、公式法：匀变速公式、斜面上滑下滑、中时速与中位速）
+%%%BLOCK id=224-01 ch=01 sec=描述运动方法 kind=summary alt=04,08 cont=none y=0.05-0.25
+\textbf{描述运动方法}
+
+1）语言描述法
+\begin{itemize}
+\item 匀速运动
+\item 匀变速直线运动
+\item 匀变速曲线运动\quad 平抛/斜抛
+\item 匀速圆周运动
+\item 简谐运动
+\end{itemize}
+%%%END
+%%%BLOCK id=224-02 ch=01 sec=x-t、v-t、a-t图像 kind=knowledge alt=90 cont=none y=0.26-0.35
+2）图象描述
+
+斜率 $K=\dfrac{\Delta y}{\Delta x}$\quad 斜率正负不表示大小，表示方向
+
+面积 $S=\int xy$\quad 图象与横轴组成的面积\quad 不表正负，表方向 % CHECK: 原文“不表正负，表方向”，疑漏字（对照上一行“正负不表示大小，表示方向”）
+%%%END
+%%%BLOCK id=224-03 ch=16 sec=热力学定律·p-V图像 kind=problem alt=90 cont=none y=0.36-0.49
+\begin{problem}
+%FIG p224_a 0.285 0.36 0.465 0.433
+\notefig[0.25]{figures/p224_a.png}
+%FIG p224_b 0.478 0.36 0.565 0.412
+\notefig[0.25]{figures/p224_b.png}
+\begin{solution}
+$1\unit{atm}=1\times10^5\unit{Pa}$
+
+$W=$\unclear{…}$(S_1-S_2)\times(-1)$ % 原稿：“=”后有一处被涂划的字迹
+
+$W=-4000\unit{J}$\quad $\Delta U=Q+W=0$\quad 故吸热 $4000\unit{J}$
+\end{solution}
+\end{problem}
+功的正负\quad 在 顺吸 逆放
+%%%END
+%%%BLOCK id=224-04 ch=01 sec=x-t、v-t、a-t图像 kind=note alt=none cont=none y=0.49-0.52
+$v$-$t$、$x$-$t$。
+%%%END
+%%%BLOCK id=224-05 ch=01 sec=匀变速直线运动公式 kind=formula alt=none cont=none y=0.52-0.63
+\textbf{3）}公式法\quad —匀变速直线运动 $V=V_0+at$
+%FIG p224_c 0.495 0.505 0.62 0.56
+\notefig[0.25]{figures/p224_c.png}
+$V_{t/2}=V_0+\dfrac12at$
+%FIG p224_d 0.595 0.585 0.745 0.625
+\notefig[0.25]{figures/p224_d.png}
+%%%END
+%%%BLOCK id=224-06 ch=01 sec=匀变速直线运动公式 kind=formula alt=none cont=none y=0.58-0.72
+匀变速直线运动\quad $a$ 恒定/恒力
+
+函数关系。系数涵义
+\begin{align*}
+x&=V_0t+\frac12at^2 &&\text{抛物线}\ \checkmark\\
+V&=V_0+at &&\checkmark\ \text{基本\unclear{短}试}\\
+V_t^2-V_0^2&=2ax &&\checkmark % CHECK: 首项 V 后似有 t 的笔画，可能为 V^2
+\end{align*}
+%%%END
+%%%BLOCK id=224-07 ch=03 sec=斜面·上滑与下滑 kind=method alt=01 cont=none y=0.72-0.86
+%FIG p224_e 0.065 0.745 0.295 0.84
+\notefig[0.3]{figures/p224_e.png}
+$\mu<\tan\alpha$
+\[
+\frac{0^2-V_0^2=-2a_1x}{V^2-0^2=2a_2x}\qquad
+\left(\frac{V_0}{V}\right)^2=\frac{a_1}{a_2}=\frac{g\sin\theta+\mu\cos\theta}{\sin\theta-\mu\cos\theta}
+\] % CHECK: 分子“g sinθ+μcosθ”与分母不对应（g 的位置）；图中倾角记 α，公式中写 θ
+%FIG p224_f 0.55 0.815 0.65 0.86
+\notefig[0.25]{figures/p224_f.png}
+%%%END
+%%%BLOCK id=224-08 ch=01 sec=匀变速直线运动推论 kind=formula alt=none cont=none y=0.86-0.92
+平均速度\quad $V_{t/2}=\dfrac{V_0+V}{2}=V_0+\dfrac12at=\dfrac12(2V_0+at)=\dfrac12(V_0+V_0+at)$
+
+中时速
+%%%END
+%%%BLOCK id=224-09 ch=01 sec=匀变速直线运动推论 kind=formula alt=none cont=none y=0.92-1.00
+中位速\quad $V_{x/2}=\sqrt{\dfrac{V_0^2+V^2}{2}}$
+
+%FIG p224_g 0.185 0.937 0.315 1.0
+\notefig[0.25]{figures/p224_g.png}
+$V_{x/2}>V_{t/2}$
+\[
+V'^2-V_0^2=2a\cdot\frac12x\qquad V^2-V'^2=2a\cdot\frac12x
+\]
+%FIG p224_h 0.34 0.947 0.545 1.0
+\notefig[0.3]{figures/p224_h.png}
+%%%END
+%%%PAGEEND 224

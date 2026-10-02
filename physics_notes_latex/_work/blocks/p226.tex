@@ -1,0 +1,86 @@
+%%%PAGE 226 rot=0 legibility=good summary=杂记提示1-7：折射率、标量矢量符号、辐状发电、含容电路最大电荷量、完全非弹性碰撞、斜面与平抛相对位移、线框穿磁场
+%%%BLOCK id=226-01 ch=15 sec=折射定律·折射率 kind=note alt=none cont=none y=0.03-0.10
+\textbf{1.}
+%FIG p226_a 0.10 0.02 0.25 0.09
+\notefig[0.3]{figures/p226_a.png}
+
+\unclear{NO} $n=\dfrac{\sin 2\theta}{\sin\theta}$ % CHECK: 公式左上角的小字"NO"含义不明
+%%%END
+%%%BLOCK id=226-02 ch=01 sec=易错·符号与矢量 kind=note alt=none cont=none y=0.13-0.22
+\textbf{2.} 标量、和 题上规定正方向了 要带正负号。
+
+矢量 注意 分方向 $\Delta v=\sqrt{\Delta v_x^{2}+\Delta v_y^{2}}$
+%%%END
+%%%BLOCK id=226-03 ch=01 sec=抛体·空气阻力与g kind=note alt=04 cont=none y=0.12-0.16
+抛物时 注空气阻力是否忽略及$g$的值 % CHECK: "注"后疑漏"意"
+%%%END
+%%%BLOCK id=226-04 ch=10 sec=电学实验·电表选择答题 kind=note exp=1 alt=none cont=none y=0.20-0.23
+电表选字母、还是选代号
+%%%END
+%%%BLOCK id=226-05 ch=12 sec=感应电动势·旋转切割 kind=formula alt=none cont=none y=0.22-0.33
+\textbf{3.}
+%FIG p226_b 0.15 0.225 0.235 0.27
+\notefig[0.25]{figures/p226_b.png}
+
+辐状发电 $e=nB2\pi rv$
+
+\[ E=\frac12 Bl^{2}\omega,\qquad \omega=\frac{2\pi}{T}=2\pi f,\qquad E=\frac12 Bl^{2}\,2\pi f \]
+
+%FIG p226_c 0.555 0.225 0.81 0.32
+\notefig[0.3]{figures/p226_c.png}
+
+$R_{\text{总}}=\dfrac{R}{4}$
+%%%END
+%%%BLOCK id=226-06 ch=12 sec=电磁感应·含容电路 kind=problem alt=10 cont=none y=0.27-0.46
+\textbf{4.}
+%FIG p226_d 0.09 0.275 0.32 0.35
+\notefig[0.3]{figures/p226_d.png}
+
+求电容器最大电荷量
+
+\[ E_1=N\frac{\Delta\Phi}{\Delta t}=\frac{NBl^{2}}{2t_0} \]
+\[ R_{\text{总}}=\frac{(R_{\text{上}}+r)(3r-R_{\text{上}})}{r+3r} \]
+\[ R_{\text{上}}+r=3r-R_{\text{上}} \]
+$R_{\text{上}}=r$ 时 $R_{\max}=r$，$\therefore Q_{\max}=CU_m$
+
+\[ U_m=\frac{r}{r+r}E_1 \]
+此时外电路电压 \struck{$U_m=\dfrac{r}{r+r}E_1$} % 原稿此行被划去
+%%%END
+%%%BLOCK id=226-07 ch=07 sec=碰撞·完全非弹性碰撞 kind=note alt=06 cont=none y=0.49-0.59
+\textbf{5.}
+%FIG p226_e 0.11 0.49 0.168 0.58
+\notefig[0.25]{figures/p226_e.png}
+
+粘 ← 在此处为完非弹，不能只用1个动能定理
+
+$g$ 也会设坑
+%%%END
+%%%BLOCK id=226-08 ch=03 sec=斜面·滑块与斜面体 kind=note alt=none cont=none y=0.61-0.68
+\textbf{6.}
+%FIG p226_f 0.10 0.615 0.20 0.675
+\notefig[0.25]{figures/p226_f.png}
+
+先\unclear{加速}后\unclear{匀}减速
+%%%END
+%%%BLOCK id=226-09 ch=04 sec=平抛·相对位移 kind=note alt=03,06 cont=none y=0.69-0.78
+%FIG p226_g 0.095 0.69 0.165 0.75
+\notefig[0.25]{figures/p226_g.png}
+
+$m$ 掉后，同向平抛$x_{\text{相}}=x_M-x_m$
+
+$m$ 掉下后 车为保持匀速 $f=\mu Mg\downarrow$，$F_{\text{牵}}=f$ 也变小
+%%%END
+%%%BLOCK id=226-10 ch=12 sec=电磁感应·线框穿过磁场 kind=problem alt=06,07 cont=none y=0.79-0.97
+\textbf{7.}
+%FIG p226_h 0.05 0.80 0.335 0.905
+\notefig[0.55]{figures/p226_h.png}
+
+\red{←走到这里 求$V$} \hfill 框只在进出时有焦耳热
+
+\[ 2\cdot\frac{-B^{2}s^{2}s}{R}=4m(V_{\text{末}}-V_0) \] % CHECK: 行首的"2"也可能是编号"2、"；按物理推断为进出两次冲量的系数2
+\[ V_{\text{出}}=V_0-\frac{B^{2}s^{3}}{2mR} \]
+\[ \mu mgs+\mu mg\frac{s}{2}=\frac12\cdot 4mV_2^{2} \]
+\red{↓只有1个杆摩擦力} \quad \red{不是4杆都摩擦}
+\[ \mu=\frac{4}{3gs}\left(V_0-\frac{B^{2}s^{3}}{2mR}\right)^{2} \]
+%%%END
+%%%PAGEEND 226

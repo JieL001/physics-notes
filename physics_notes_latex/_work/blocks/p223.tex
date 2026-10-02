@@ -1,0 +1,76 @@
+%%%PAGE 223 rot=0 legibility=good summary=运动的描述（位移坐标系、F1F2往返问题、带电小球回原地、速度/瞬时速度/打点计时器/光电门、加速度）
+%%%BLOCK id=223-01 ch=01 sec=质点·位移·速度·加速度 kind=knowledge alt=none cont=none y=0.03-0.14
+\textbf{运动的描述}
+
+\unclear{物理量}：位移 $\longrightarrow x$
+%FIG p223_a 0.195 0.035 0.44 0.105
+\notefig[0.3]{figures/p223_a.png}
+$\vec x$
+%%%END
+%%%BLOCK id=223-02 ch=03 sec=牛二应用·两段运动（往返） kind=problem alt=01 cont=none y=0.14-0.43
+\begin{problem}
+%FIG p223_b 0.07 0.15 0.225 0.20
+\notefig[0.25]{figures/p223_b.png}
+$\leftarrow F_2$ 用 $t$ 后回原地
+\begin{solution}
+以向右为正
+
+$\dfrac{F_1}{F_2}=\dfrac13$
+
+%FIG p223_c 0.515 0.13 0.775 0.305
+\notefig[0.3]{figures/p223_c.png}
+\begin{align*}
+a_1&=\frac{F_1}{m}\qquad x_1=\frac12\frac{F_1}{m}t^2\\
+V_1&=a_1t=\frac{F_1t}{m}
+\end{align*}
+第2个$t$中。$a_2=\dfrac{-F_2}{m}$
+\begin{align*}
+x_2&=V_1t+\frac12a_2t^2\\
+x_2&=\frac{F_1t}{m}+\frac12\left(-\frac{F_2}{m}\right)t^2 % CHECK: 第一项分子原稿为 F1t（按 V1t 应为 F1t^2/m）
+\end{align*}
+又在 $0\sim2t$ 内 $x_1+x_2=0$\quad $\therefore\ \dfrac{F_1}{F_2}=\dfrac13$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=223-03 ch=09 sec=电场中的功能关系 kind=problem alt=01,06 cont=none y=0.46-0.58
+\begin{problem}
+%FIG p223_d 0.05 0.47 0.165 0.585
+\notefig[0.25]{figures/p223_d.png}
+下落 $t$ 后 经 $t$ s 回原地
+\begin{solution}
+$E=\dfrac{4mg}{q}$\qquad $W_{\text{电}}=2mg^2t^2$（动能定理）\qquad $d_{\max}=\dfrac23gt^2$
+
+$\Delta E_{pG}=0$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=223-04 ch=01 sec=质点·位移·速度·加速度 kind=knowledge alt=none cont=none y=0.58-0.69
+速度\quad $\vec V=\dfrac{\text{位移}}{\text{时间}}=\dfrac{x}{t}$\quad $V_{\text{率}}=\dfrac{s}{t}$
+
+位置变化的快慢
+\[
+V_{\text{瞬}}=\lim_{\Delta t\to0}\frac{\Delta x}{\Delta t}\qquad V_{t/2}=\bar V=\frac{x}{t}
+\]
+%%%END
+%%%BLOCK id=223-05 ch=01 sec=打点计时器类实验 kind=method exp=1 alt=none cont=none y=0.69-0.78
+%FIG p223_e 0.115 0.69 0.26 0.77
+\notefig[0.25]{figures/p223_e.png}
+$V_B=\dfrac{x_1+x_2}{2t}$
+
+计数点$\ne$计时点
+
+（相邻两计数\unclear{点}间4个点）\quad 50Hz\quad 0.02s
+
+0.1s
+%%%END
+%%%BLOCK id=223-06 ch=01 sec=光电门测速 kind=method exp=1 alt=18 cont=none y=0.78-0.84
+$\swarrow$游标卡尺
+
+光电门\quad $V_{\text{瞬}}=\dfrac{d}{t}$\ $\leftarrow$很短
+%%%END
+%%%BLOCK id=223-07 ch=01 sec=质点·位移·速度·加速度 kind=knowledge alt=none cont=none y=0.84-1.00
+\textbf{3、}加速度\quad $a=\dfrac{\Delta V}{\Delta t}$\quad 速度变化快慢\quad $\vec a\parallel\Delta V\parallel F_{\text{合}}$ 与 $V$ 无关
+%FIG p223_f 0.04 0.89 0.66 1.0
+\notefig[0.6]{figures/p223_f.png}
+%%%END
+%%%PAGEEND 223
