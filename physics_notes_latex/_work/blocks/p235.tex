@@ -1,0 +1,67 @@
+%%%PAGE 235 rot=0 legibility=good summary=竖直面圆周最低点受力、整体法与系统牛二(斜面体与物块)、轻杆连接体机械能与转轴受力、重力弹力要点、斜面上小球临界加速度、轻绳轻弹簧轻杆与瞬时加速度
+%%%BLOCK id=235-01 ch=04 sec=竖直面圆周·最低点受力 kind=note alt=06 cont=none y=0.02-0.12
+%FIG p235_a 0.025 0.035 0.16 0.108 soft
+\notefig[0.2]{figures/p235_a.png}
+$1\to2$ 在$2$处 $N=3mg$\par
+%FIG p235_b 0.43 0.015 0.54 0.105 soft
+\notefig[0.2]{figures/p235_b.png}
+$T=3mg$
+%%%END
+%%%BLOCK id=235-02 ch=03 sec=整体法·系统牛顿第二定律 kind=method alt=02 cont=none y=0.14-0.375
+整体不\unclear{考}虑内力
+%FIG p235_f 0.075 0.145 0.245 0.226 soft
+\notefig[0.25]{figures/p235_f.png}
+\[ a_1=g\sin\alpha\cos\alpha \] % 原稿此处 sin/cos 字迹重叠涂改
+\[ a_2=g\sin^2\alpha \]
+\[ \left\{\begin{aligned} \sum F_x&=\sum_{i=1}^{n}m_ia_{ix}\\ \sum F_y&=\sum_{i=1}^{n}m_ia_{iy} \end{aligned}\right. \]
+\[ f_{\text{地}}=ma_1=mg\sin\alpha\cos\alpha \]
+\[ (m+M)g-N_{\text{地}}=mg\sin^2\alpha \]
+\[ N_{\text{地}}=(M+m)g-mg\sin^2\alpha \] % CHECK: 减号后有一处涂改墨迹（疑为系数 1）
+%%%END
+%%%BLOCK id=235-03 ch=06 sec=轻杆连接体·系统机械能守恒 kind=problem alt=03,04 cont=none y=0.33-0.55
+\begin{problem}
+%FIG p235_g 0.04 0.33 0.29 0.43
+\notefig[0.25]{figures/p235_g.png}
+\begin{solution}
+\[ 2mg\,2l-mgl=\frac{1}{2}\,2m(2V)^2+\frac{1}{2}mV^2 \]
+\[ 3mgl=\frac{1}{2}\,2m\,4V^2+\frac{1}{2}mV^2 \]
+\[ =\frac{9mV^2}{2}=\text{\unclear{$\dfrac{6mg}{9}$}}\qquad V=\frac{\sqrt{6mg}}{3} \] % 此行字迹有涂改；CHECK: 根号内手写像 6mg，按推导似应为 6gl
+\par\smallskip
+\unclear{竖}直时对转轴作用力：对整体 $3mg-F=ma_1-2ma_2$
+\[ a_2=2a_1=\frac{2V^2}{l} \qquad a=\frac{v^2}{r} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=235-04 ch=02 sec=重力·弹力 kind=knowledge alt=03 cont=none y=0.535-0.67
+\textbf{重力、弹力}\par
+万有引力指向地心，重力竖直向下（无条件）\par
+太空完全失重，不能用弹簧测力计测$G$，可以测拉力．天平不能用 \unclear{摆钟}、压强计\par
+\unclear{接触}因弹性形变而产生的力\par
+力学两确定：\begin{tabular}[t]{@{}l@{}}研究对象\\运动状态\end{tabular}
+%FIG p235_h 0.05 0.588 0.225 0.668
+\notefig[0.2]{figures/p235_h.png}
+无$T$无$N$
+%%%END
+%%%BLOCK id=235-05 ch=03 sec=斜面上的小球·临界加速度 kind=method alt=02 cont=none y=0.68-0.78
+%FIG p235_d 0.075 0.70 0.262 0.77
+\notefig[0.25]{figures/p235_d.png}
+$a_{\text{\unclear{临界}}}=\dfrac{g}{\tan\theta}$ \quad 有$T$，$N$不定\par
+%FIG p235_e 0.52 0.68 0.683 0.752
+\notefig[0.2]{figures/p235_e.png}
+有$N$ \quad $T$不定
+%%%END
+%%%BLOCK id=235-06 ch=03 sec=瞬时加速度·轻绳轻弹簧轻杆 kind=knowledge alt=02 cont=none y=0.79-0.93
+轻绳：力沿绳 可突变\par
+轻弹簧：力沿弹簧 不可突变\par
+轻杆：力不一定沿杆，但能突变\par
+轻\struck{内部}弹力处处相等 % CHECK: “轻”与“弹力处处相等”之间的“内部”被涂划，原句可能是“轻绳内部弹力处处相等”
+%FIG p235_i 0.465 0.785 0.935 0.86
+\notefig[0.6]{figures/p235_i.png}
+$\times\,1\to T_1\to0$ \qquad $a_2=g$ \qquad $T_2=mg$ \qquad $a_{2A}=2g$ \qquad $a_{2B}=0$
+%%%END
+%%%BLOCK id=235-07 ch=03 sec=悬挂小球·加速运动中绳的拉力 kind=note alt=02 cont=none y=0.855-0.90
+%FIG p235_j 0.465 0.853 0.775 0.895
+\notefig[0.4]{figures/p235_j.png}
+\[ F_T=\sqrt{(mg)^2+(ma)^2} \]
+%%%END
+%%%PAGEEND 235

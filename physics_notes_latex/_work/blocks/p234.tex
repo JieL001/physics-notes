@@ -1,0 +1,41 @@
+%%%PAGE 234 rot=0 legibility=good summary=实验题答题要点与v-x图方法；「时间交叠」刹车例题(第1s、第3s位移求12.5s平均速度)；滑轮-小球-弹簧连接体题(加速度与机械能)
+%%%BLOCK id=234-01 ch=18 sec=实验·答题方法 kind=method exp=1 alt=none cont=none y=0.07-0.20
+\textbf{实验}\par
+% “忆课内实验”为写在“联想”上方的小字
+实验目的\ 首句精读 \quad 实验原理\ 通读全篇 \quad \unclear{忆}课内实验\ 联想 \quad 关注小括号（\unclear{微}数字）代号or字母\par
+器材\ 步骤\ 数据处理\ 误差分析
+%%%END
+%%%BLOCK id=234-02 ch=01 sec=运动图像·v-x图 kind=method alt=90,18 cont=none y=0.22-0.30
+$V$-$X$图，\quad $\left\{\begin{array}{l}\text{列式子对照\ 系数代入数据}\\ \text{微分方程}\end{array}\right.$
+%%%END
+%%%BLOCK id=234-03 ch=01 sec=刹车·时间交叠 kind=problem alt=none cont=none y=0.31-0.60
+\textbf{时间交叠}
+\begin{problem}
+一车突然刹车，第$1\unit{s}$位移$8\unit{m}$，第$3\unit{s}$位移$0.5\unit{m}$，求$12.5\unit{s}$内平均速度
+\begin{solution}
+\[ \begin{array}{ccc} 1&2&3\\ 1&3&5 \end{array} \]
+由 $\dfrac{5}{1}<\dfrac{8}{0.5}$ \ 故中间有时间间隔
+\[ \left\{\begin{aligned} &\frac{1}{2}at^2=0.5\\ &(at+2a)\,1-\frac{1}{2}a\,1=8 \end{aligned}\right. \]
+\[ t=0.5\unit{s} \]
+\[ a=4\unit{m/s^2} \]
+\[ V_0=10\unit{m/s} \]
+$2.5\unit{s}$停 \quad $S=\dfrac{V_0}{2}\,2.5=12.5\,\text{\unclear{s}}$ % CHECK: 末尾单位手写像 s（位移应为 m）
+\[ \overline{V}=\frac{S}{t}=1\unit{m/s} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=234-04 ch=06 sec=弹簧模型·滑轮连接体机械能 kind=problem alt=03,04 cont=none y=0.62-0.83
+\begin{problem}
+%FIG p234_a 0.03 0.628 0.184 0.748
+\notefig[0.2]{figures/p234_a.png}
+甲到这
+\begin{solution}
+\[ \left\{\begin{aligned} &T\sin\alpha=ma_{\text{甲}}\\ &4mg-T=4ma_{\text{乙}}\\ &a_{\text{乙}}=a_{\text{甲}}\sin37^\circ \end{aligned}\right. \] % CHECK: 由 a乙=64/89 g 反推，第3式似应为 cos37°（或 sin53°），原稿写 sin37°
+\[ a_{\text{乙}}=\frac{64}{89}g \]
+\[ 4mg\left(\frac{5}{3}d-d\right)-mg\frac{4}{3}d=\frac{1}{2}mv^2 \]
+\[ v=\sqrt{\frac{8}{3}gd} \]
+小球和乙机械能先$\uparrow$后$\downarrow$ \qquad \unclear{3}弹簧$E_p$先$\downarrow$后$\uparrow$
+\end{solution}
+\end{problem}
+%%%END
+%%%PAGEEND 234

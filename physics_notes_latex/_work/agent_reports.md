@@ -72,3 +72,9 @@ DONE pages=236-240, blocks=28, figs=30, unclear=7. texcheck_all reports ALL OK; 
 1. p236-05 (cart problem): `m=5kg` and `F拉=5N` are the same handwritten digit, which I read as 5 from `a1=F/m=1`. Also check "均静止" and "右加速".
 2. p237: `M?m的作用力…` in 237-04 (glyph looks like "为", I wrote `\unclear{对}`), "不管有无μ", and whether the first `E_PG` in 237-02 has a Δ.
 3. p238-04 "想?则" (overwritten character) and 238-06 "使?重力" (I wrote 球). p239-02 `ω0=ω粒子` (handwriting looks like W; ω chosen from context), and 239-01 filed under ch=13 with alt=10 (could equally be 10).
+
+## p231–235
+DONE pages=231-235, blocks=28 (3/9/5/4/7), figs=25, unclear=32, texcheck ALL OK, none duplicated.
+- p231: first line of problem 1 and its truncated right-margin text; the subscript on W in (1), 安 or 它; whether 2mgd in the t formula is 2 or I.
+- p235-03: scribbled energy line and V=√(6mg)/3, probably 6gl. Also p233-05, rows 1 and 4 of the A/B case table.
+- p234-04: a乙=a甲 sin37° (should be cos37° to give 64/89 g) and the "12.5 s" unit. p231 last block: F=BLV is written as F, probably E.

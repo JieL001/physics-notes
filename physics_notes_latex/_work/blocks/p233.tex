@@ -1,0 +1,55 @@
+%%%PAGE 233 rot=0 legibility=good summary=匀变速首尾段位移比求总时间、追及相遇方法与判别式、斜面体上物块的地面摩擦力方向、倾斜传送带v-t图与加速度、斜面上叠放AB按μ2分情况
+%%%BLOCK id=233-01 ch=01 sec=匀变速直线运动·首尾段位移比 kind=problem alt=03 cont=none y=0.00-0.19
+\begin{problem}
+%FIG p233_a 0.09 0.012 0.24 0.08
+\notefig[0.2]{figures/p233_a.png}
+第1个$5\unit{s}$ \unclear{与}最后$5\unit{s}$ \quad $x$比 $11:5$ \quad 求总$t$
+%FIG p233_b 0.30 0.045 0.44 0.115
+\notefig[0.2]{figures/p233_b.png}
+\begin{solution}
+\[ x_1=\frac{1}{2}a\times25 \]
+\[ x_2=a(t-2.5)\,5 \] % 原稿 (t-2.5) 与 5 之间无乘号
+\[ \frac{x_1}{x_2}=\frac{5}{11} \qquad t=8\unit{s} \]
+\end{solution}
+\end{problem}
+% 以下为页面右上角（紧靠页边、部分被页边截断）的小注
+若\unclear{$x$比}大于$1:3$则有交叉；小于$1:3$则有间隔；\unclear{等}于$1:3$\unclear{正好}
+%%%END
+%%%BLOCK id=233-02 ch=01 sec=追及相遇 kind=method alt=none cont=none y=0.19-0.40
+\textbf{追及相遇} \quad 前车已停\unclear{来}、先求前车\par
+临界条件：速度相同 \quad 追得上 / 追不上 / $x$最值临界
+\[ \left\{\begin{aligned} &\text{时间关系\quad 运动时间是否相等}\\ &\text{位移关系，}\ x_{\text{后}}\ge x_{\text{\unclear{相距}}}+x_{\text{前}} \end{aligned}\right. \]
+减速追加速
+%FIG p233_f 0.29 0.262 0.49 0.322
+\notefig[0.25]{figures/p233_f.png}
+方法 \ ① 条件法 \ ② 图象法 \ ③ 解析法 \quad 由$x_{\text{后}}=x_{\text{前}}+\Delta x$ 得 关于$t$的一元二次方程\par
+由判别式判断 \quad $\Delta=b^2-4ac$
+\[ \left\{\begin{aligned} &{<}0\quad \text{不相遇}\\ &{>}0\quad \text{相遇2次}\\ &{=}0\quad \text{相遇1次} \end{aligned}\right. \]
+%%%END
+%%%BLOCK id=233-03 ch=03 sec=斜面体上物块·地面摩擦力方向 kind=method alt=02 cont=none y=0.40-0.56
+%FIG p233_c 0.065 0.40 0.365 0.545
+\notefig[0.3]{figures/p233_c.png}
+\[ \frac{f_1}{N_1}=\frac{f\cos\alpha}{N\sin\alpha}=\frac{\mu}{\tan\alpha} \]
+$\mu=\tan\alpha$ 时 $f_{\text{地}}=0$\par
+$\mu<\tan\alpha$ 时 $f_{\text{地}}$向左\par
+$\mu>\tan\alpha$ \quad $f_{\text{地}}$向右\par
+有无推力都一样
+%%%END
+%%%BLOCK id=233-04 ch=03 sec=传送带·倾斜传送带 kind=method alt=none cont=none y=0.56-0.67
+%FIG p233_d 0.06 0.563 0.43 0.66
+\notefig[0.4]{figures/p233_d.png}
+\[ a_1=g(\sin\alpha+\mu\cos\alpha) \]
+\[ a_2=g(\sin\alpha-\mu\cos\alpha). \]
+%%%END
+%%%BLOCK id=233-05 ch=03 sec=板块·斜面上叠放物体 kind=method alt=02 cont=none y=0.69-0.81
+%FIG p233_e 0.07 0.695 0.215 0.76
+\notefig[0.2]{figures/p233_e.png}
+% 第3行右侧的“加速下滑”“a=…”写在第2、3行之间偏上处，“f地B=…”在第3行末
+\[ \left\{\begin{aligned}
+&\mu_2\,\text{\unclear{为0}}\quad AB\text{共加速}\quad a=g\sin\alpha\\
+&\mu_2=\tan\alpha\quad f_{BA}=m_Ag\sin\alpha\ \text{向上}\quad AB\text{匀速下滑}\\
+&0<\mu_2<\tan\alpha\quad f_{BA}=\mu m_Ag\cos\alpha\ \text{向上}\quad \text{加速下滑}\quad a=g\sin\alpha-\mu g\cos\alpha<g\sin\alpha\quad f_{\text{地}B}=\mu(m_A+m_B)g\cos\alpha\\
+&\mu_2\,\text{\unclear{$>$}}\,\tan\alpha\quad f_{BA}>mg\sin\alpha\quad \text{减速下滑}
+\end{aligned}\right. \] % CHECK: 第3行 a 后的符号手写像 “<”/“=”；第4行 μ2 与 tanα 之间的“>”几乎看不出，m 无下标 A
+%%%END
+%%%PAGEEND 233

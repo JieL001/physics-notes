@@ -1,0 +1,66 @@
+%%%PAGE 231 rot=0 legibility=good summary=电磁感应三题：斜面线框穿越磁场(产热/穿越时间/往复最大距离)、导轨上匀加速拉力极值与动能增量、悬绳发电(系绳卫星)
+%%%BLOCK id=231-01 ch=12 sec=电磁感应·线框穿越磁场(斜面)能量与动量 kind=problem alt=06,07 cont=none y=0.00-0.40
+\begin{problem}[1]
+%FIG p231_a 0.07 0.00 0.355 0.10
+\notefig[0.3]{figures/p231_a.png}
+光滑\unclear{石}装置质量为$m$，通恒流$I$．($d<L$)\par
+由静止释放，导体\unclear{框}恰好到$B$下\unclear{面}边界处返回\par
+刚开始框下边界$2$到$B$上边 % CHECK: 此句写在页面右侧边缘，被页边截断；"2"后疑漏写 d，"上边"后疑为"界"
+\par
+① 从释放到刚开始返回过程的产热\par
+② 线框第一次穿$B$所用时间\par
+③ 经足够长时间后，线框上边界与$B$下边界距离最大值
+\begin{solution}
+(1) $mg\,4d\sin\alpha-BILd+W_{\text{\unclear{安}}}=0$ \quad $\therefore Q=-W_{\text{\unclear{安}}}=4mgd\sin\alpha-BILd$ % W 的下标汉字像"它"/"安"
+\par
+(2) 出$B$后 \quad $mg\,2d\sin\alpha-BILd=0-\frac{1}{2}mv^2$
+\[ mg\sin\alpha\,t-BLq=mv \qquad q=\frac{2Bd^2}{R} \]
+\[ \therefore t=\frac{\sqrt{2m(BILd-2mgd\sin\alpha)}}{mg\sin\alpha}+\frac{2B^2d^3}{R} \] % CHECK: 根号内"2mgd"的 2 手写像 I；第二项 2B^2d^3/R 写在分式外、未除以 mg sinα
+\par
+(3) 往复运动 \quad $BIL\,[\,d-(2L-x_{\max})\,]-mg\sin\alpha\,x_m=0$．
+\[ \therefore x_{\max}=\frac{BILd}{BIL-mg\sin\alpha} \] % CHECK: 所写方程与结果式的对应存疑，原样转录
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=231-02 ch=12 sec=电磁感应·导轨上匀加速拉力与能量 kind=problem alt=03,06 cont=none y=0.40-0.83
+\begin{problem}[2]
+%FIG p231_b 0.055 0.378 0.325 0.512
+\notefig[0.3]{figures/p231_b.png}
+$PQ$左侧总电阻$R$，右侧单位长电阻为$R_0$．$t=0$时水平向左拉力$F$作用在$bc$上，使之做加速度为$a$的匀加速．\par
+求$F_{\max}$．\unclear{某}过程产热$Q$，导轨克服摩擦做功为$W$．求动能增量
+\begin{solution}
+\[ E=BLat \]
+\[ I=\frac{E}{R_{\text{总}}}=\frac{BLat}{R+2R_0\cdot\frac{1}{2}at^2}=\frac{BLat}{R+R_0at^2} \]
+\[ F-BIL-f=Ma \qquad f=\mu N \]
+\[ N=mg+BIL \]
+故 $F=Ma+\mu mg+(1+\mu)\dfrac{B^2L^2at}{R+R_0at^2}$ \quad 当$t=\sqrt{\dfrac{R}{R_0a}}$时$F$达max
+\[ F_{\max}=Ma+\mu mg+\frac{(1+\mu)^2}{2}B^2L^2\sqrt{\frac{a}{RR_0}} \] % CHECK: (1+μ) 右上角手写像有平方；按推导应为 (1+μ)/2
+\[ \Delta E_K=Mas \qquad f=\mu(mg+F_A) \]
+\[ \int f\,\Delta s=\int(\mu mg\,\Delta s+\mu F_A\,\Delta s) \]
+\[ W_f=\mu mgs+\mu Q \qquad \therefore s=\frac{W-\mu Q}{\mu mg} \]
+\[ \therefore \Delta E_K=Mas=Ma\,\frac{W-\mu Q}{\mu mg} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=231-03 ch=12 sec=电磁感应·悬绳发电(系绳卫星) kind=problem alt=05 cont=next y=0.83-1.00
+\begin{problem}[3、悬绳发电]
+%FIG p231_c 0.05 0.848 0.205 0.985
+\notefig[0.2]{figures/p231_c.png}
+导线电阻$R_1$，周围电阻$R_2$
+\begin{solution}
+\[ \frac{V_Q}{V_P}=\frac{R+h}{R+h+L} \qquad E=BL\overline{V}=\frac{BLV_P}{2}\left(1+\frac{R+h}{R+h+L}\right) \]
+\[ I=\frac{E}{R_1+R_2} \qquad F=BIL=\frac{B^2L^2V_P}{2(R_1+R_2)}\left(1+\frac{R+h}{R+h+L}\right) \] % B^2L^2 中的 L 手写像"("
+\[ \frac{GMm_Q}{(R+h)^2}-T_{\text{绳}Q}=\frac{m_QV_Q^2}{R+h} \qquad \text{与周围气体形成回路} \]
+\[ \therefore T_{\text{绳}Q}=m_Q\left(\frac{gR^2}{(R+h)^2}-\frac{(R+h)^2V_P^2}{(R+h+L)^2}\right) \] % CHECK: 分子 (R+h) 的指数手写像 2（按推导似应为 1）
+\end{solution}
+\par\medskip
+\textbf{$*$：}
+%FIG p231_d 0.75 0.835 0.93 0.905
+\notefig[0.2]{figures/p231_d.png}
+\[ F=BLV \] % CHECK: 首字母手写为 F，应为 E=BLV（电动势）？
+\[ U_{\text{\unclear{路端}}}=E-Ir \]
+\[ t=\frac{2\pi R}{V} \]
+电能 $E_0=UIt$
+\end{problem}
+%%%END
+%%%PAGEEND 231
