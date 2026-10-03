@@ -1566,6 +1566,29 @@ $W_{F_{\text{安}1}}>W_{F_{\text{安}2}}$\quad $E_{\text{机}}$先$\downarrow$�
 \end{solution}
 \end{problem}
 %%%END
+%%%BLOCK id=166-02 ch=12 sec=电磁感应·动生与感生(磁场变化+杆切割) kind=problem alt=none cont=none y=0.30-0.77
+\begin{problem}
+% 剪贴印刷题干。“以恒定速度”与“求在 t=6s”被笔圈出；图中有手写数字 15、9、12、9、15、37°、θ 及“动生”“感生”字样，杆MN后有手画的第二位置竖线（带箭头）
+B5、如图所示，两根完全相同的光滑金属导轨 $OP$、$OQ$ 固定在水平桌面上，导轨间的夹角为 $\theta=74^\circ$，导轨单位长度的电阻为 $r_0=0.10\,\Omega/\mathrm{m}$。导轨所在空间有垂直于桌面向下的匀强磁场，且磁场随时间变化 $B=k/t$，其中比例系数 $k=2\unit{T\cdot s}$。将电阻不计的金属杆 $MN$ 放置在水平桌面上，在外力作用下，$t=0$ 时刻开始以恒定速度 $v=2\unit{m/s}$ 从 $O$ 点开始向右平动。已知导轨和金属杆均足够长且与导轨接触良好。求在 $t=6\unit{s}$ 时：(1)回路中感应电动势的大小；(2) $MN$ 所受安培力的大小；(3)外力做功的功率和电路的热功率。
+%FIG p166_b 0.52 0.298 0.735 0.46
+\notefig[0.4]{figures/p166_b.png}
+\begin{solution}
+感生 $+$ 动生
+
+$B\downarrow$\qquad $B'(t)=-\dfrac{2}{t^2}<0$
+
+$e=BLv+{-}\dfrac{\Delta B}{\Delta t}S$
+
+$=\dfrac{1}{3}\times18\times2+6=18\unit{V}$\qquad 代入
+
+$r=3\,\Omega$\quad $I=6\unit{A}$\quad $F_A=\dfrac{1}{3}\cdot6\cdot18=36\unit{N}$
+
+$P_{\text{外}}=F_{\text{安}}v=72\unit{W}$
+
+$P_{\text{热}}=I^2r=108\unit{W}$
+\end{solution}
+\end{problem}
+%%%END
 %%%BLOCK id=196-05 ch=12 sec=电磁感应·恒功率拉框与动能定理 kind=problem alt=03,06 cont=none y=0.43-0.98
 \begin{problem}
 \notefig[0.4]{figures/p196_b.png}
@@ -1661,4 +1684,489 @@ $a=kv$\qquad $a=0$\qquad $v$\unclear{也为}$0$。
 %%%END
 %%%BLOCK id=199-02 ch=12 sec=电磁感应·i-t图像面积与电荷量 kind=note alt=none cont=none y=0.20-0.24
 $i$-$t$图面积\ 若$\Delta\phi=0$\ 则面积$q$应为$0$。
+%%%END
+%%%BLOCK id=200-02 ch=12 sec=电磁感应·含电源导体棒（最大速度）与飞出后阻力 kind=problem alt=04,06,07 cont=none y=0.09-0.80
+\begin{problem}[圈注“求和”]
+%FIG p200_a 0.03 0.085 0.66 0.27
+\notefig[0.6]{figures/p200_a.png}
+先闭合$S$使棒获得最大速度，加到$V_1$时运动$x_0$。求通过电源的电量$q$
+\begin{solution}
+\[
+F_{\text{安}}=\frac{B(E-BLV_m)}{2r}=f
+\]
+% CHECK: 分子似缺一个 L（F=BIL）；Vm 表达式、1/B 与 E^2/(8fr) 之间的推导是否自洽请核对
+\[
+V_m=-\frac{fr}{B^2L}+\frac{E}{BL}\qquad\text{二次函数}\qquad \frac1B=\frac{E}{2fr}\ \text{最大}\qquad V_m=\frac{E^2}{8fr}
+\]
+\[
+Eq=\frac12mV_1^{\,2}+fx_0+2Q\qquad\therefore\ q=\frac{mV_1^{2}}{2E}+\frac{fx_0+2Q}{E}
+\]
+\end{solution}
+\end{problem}
+\begin{problem}
+调节导体棒初始放置位置，使之到$PQ$时恰达最大速度，最后以$V$的速度竖直向下落到地面上。求导体棒自$NQ$到刚落地这段过程的平均速度
+\begin{solution}
+\medskip
+\noindent\hspace{2cm}\struck{$-Kx=mV$}
+\begin{align*}
+&-Kx=m(0-V_m\cos\theta)\\
+&-ky+mgt=m(v-V_m\sin\theta)\\
+&\therefore\ t=\frac{\dfrac{E^2\sin\theta}{8fr}+V}{g}\\
+&\bar V=\frac{x}{t}=\frac{mg}{k}\cdot\frac{E^2\cos\theta}{E^2\sin\theta+8fr}
+\end{align*}
+% CHECK: 末行分母中没有出现上一行 t 里的 +V 项，是否漏写请核对
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=222-07 ch=12 sec=动生电动势·相对速度 kind=method alt=none cont=none y=0.83-0.91
+%FIG p222_e 0.005 0.83 0.205 0.90
+\notefig[0.25]{figures/p222_e.png}
+$E=BL(V_1-V_2)$\quad 导体棒相对于磁场的速度。
+%%%END
+%%%BLOCK id=226-05 ch=12 sec=感应电动势·旋转切割 kind=formula alt=none cont=none y=0.22-0.33
+\textbf{3.}
+%FIG p226_b 0.15 0.225 0.235 0.27
+\notefig[0.25]{figures/p226_b.png}
+
+辐状发电 $e=nB2\pi rv$
+
+\[ E=\frac12 Bl^{2}\omega,\qquad \omega=\frac{2\pi}{T}=2\pi f,\qquad E=\frac12 Bl^{2}\,2\pi f \]
+
+%FIG p226_c 0.555 0.225 0.81 0.32
+\notefig[0.3]{figures/p226_c.png}
+
+$R_{\text{总}}=\dfrac{R}{4}$
+%%%END
+%%%BLOCK id=226-06 ch=12 sec=电磁感应·含容电路 kind=problem alt=10 cont=none y=0.27-0.46
+\textbf{4.}
+%FIG p226_d 0.09 0.275 0.32 0.35
+\notefig[0.3]{figures/p226_d.png}
+
+求电容器最大电荷量
+
+\[ E_1=N\frac{\Delta\Phi}{\Delta t}=\frac{NBl^{2}}{2t_0} \]
+\[ R_{\text{总}}=\frac{(R_{\text{上}}+r)(3r-R_{\text{上}})}{r+3r} \]
+\[ R_{\text{上}}+r=3r-R_{\text{上}} \]
+$R_{\text{上}}=r$ 时 $R_{\max}=r$，$\therefore Q_{\max}=CU_m$
+
+\[ U_m=\frac{r}{r+r}E_1 \]
+此时外电路电压 \struck{$U_m=\dfrac{r}{r+r}E_1$} % 原稿此行被划去
+%%%END
+%%%BLOCK id=226-10 ch=12 sec=电磁感应·线框穿过磁场 kind=problem alt=06,07 cont=none y=0.79-0.97
+\textbf{7.}
+%FIG p226_h 0.05 0.80 0.335 0.905
+\notefig[0.55]{figures/p226_h.png}
+
+\red{←走到这里 求$V$} \hfill 框只在进出时有焦耳热
+
+\[ 2\cdot\frac{-B^{2}s^{2}s}{R}=4m(V_{\text{末}}-V_0) \] % CHECK: 行首的"2"也可能是编号"2、"；按物理推断为进出两次冲量的系数2
+\[ V_{\text{出}}=V_0-\frac{B^{2}s^{3}}{2mR} \]
+\[ \mu mgs+\mu mg\frac{s}{2}=\frac12\cdot 4mV_2^{2} \]
+\red{↓只有1个杆摩擦力} \quad \red{不是4杆都摩擦}
+\[ \mu=\frac{4}{3gs}\left(V_0-\frac{B^{2}s^{3}}{2mR}\right)^{2} \]
+%%%END
+%%%BLOCK id=227-02 ch=12 sec=感应电流·产生条件 kind=knowledge alt=none cont=none y=0.25-0.29
+产生 $I_{\text{感}}$ = 闭合回路 $+$ \unclear{磁通量}变化 % CHECK: "磁通量"处笔迹被涂改叠写，辨认不清
+%%%END
+%%%BLOCK id=230-01 ch=12 sec=电磁连接体·分析方法 kind=summary alt=03 cont=none y=0.01-0.09
+整体、隔离 \quad 超重 失重、系统守恒 \quad 单体不守恒
+
+\textbf{电磁连接体} \quad 受力关联：共同运动、内力外力 \quad 运动关联（速度、位移）·能量关联
+%%%END
+%%%BLOCK id=230-02 ch=12 sec=电磁连接体·定滑轮与线框过磁场 kind=problem alt=03,06 cont=none y=0.09-0.23
+\textbf{1.}
+%FIG p230_a 0.05 0.085 0.215 0.178
+\notefig[0.2]{figures/p230_a.png}
+
+\begin{problem}
+静止释放，A$_1$刚过磁场\unclear{I}中线时匀速了。求
+
+①A$_1$刚进I时A$_1$的$V_1$
+
+②ab进II后A重力功率
+
+③从ab刚进II到刚出II的焦耳热
+\begin{solution}
+① $Mgh-mgh=\dfrac12(M+m)V_1^{2}$ \qquad $V_1=\sqrt{\dfrac{2(M-m)gh}{M+m}}$
+
+② \red{建议\unclear{画图思考}} \quad $I=\dfrac{2BLV}{R}$ \qquad $Mg=\dfrac{4B^{2}L^{2}V}{R}+mg$ \qquad $\Delta E_k=0$ \struck{\unclear{$MgL=mgL+$}}
+\[ \therefore P=MgV=\frac{M(M-m)g^{2}R}{4B^{2}L^{2}} \]
+
+③ $MgL\ \overset{\Delta E_k=0}{-}\ mgL=Q$
+
+$Q=(M-m)gL$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=230-03 ch=12 sec=电磁连接体·定滑轮与线框过磁场 kind=problem alt=03,06 cont=none y=0.24-0.57
+\textbf{2.}
+%FIG p230_b 0.03 0.245 0.275 0.375
+\notefig[0.28]{figures/p230_b.png}
+
+\begin{problem}
+静止释放。ad从B上界穿出时 线框匀速
+
+①求ad穿出速度
+
+②线框全进B中的动能
+
+③线框整个过程产热
+\begin{solution}
+①
+\[ \left\{\begin{aligned} &\text{对}m_1\quad T=m_1g+BIL\\ &\text{对}m_2\quad m_2g\sin53^\circ=\mu m_2g\cos53^\circ+T\end{aligned}\right.\ \to V \]
+% CHECK: 第二式 μmg cos53° 的 m 原稿无下标，应为 m_2
+$\therefore$ \struck{$V=2\unit{m/s}$}
+
+②
+\begin{align*}
+&m_2g(d_2-L)\sin\theta-\mu m_2g(d_2-L)\cos\theta-m_1g(d_2-L)\\
+&=\frac12(m_1+m_2)(V^{2}-V_0^{2})\qquad E_K=\frac12 m_1V_0^{2}
+\end{align*}
+
+③全程
+\begin{align*}
+&m_2g(d_1+d_2+L)\sin\theta-\mu m_2g\cos\theta(d_1+d_2+L)\\
+&-m_1g(d_1+d_2+L)+W_{\text{安}}=\frac12(m_1+m_2)V^{2}-0\\
+&Q=-W_{\text{安}}
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=230-04 ch=12 sec=电磁感应·斜面线框过两磁场 kind=problem alt=06 cont=none y=0.56-0.88
+\textbf{3.}
+%FIG p230_c 0.015 0.56 0.275 0.69
+\notefig[0.28]{figures/p230_c.png}
+
+\begin{problem}
+框以$V$进B时匀速 \quad ab到\unclear{磁场}II中线时匀速。
+
+①求ab过$ff'$时的$a$
+
+②线框该过程产热
+\begin{solution}
+①进I \quad $mg\sin\theta=\dfrac{B^{2}L^{2}V}{R}$
+
+出I \quad $I=\dfrac{2BLV}{R}$
+
+$mg\sin\theta-\dfrac{4B^{2}L^{2}V}{R}=ma$
+
+$a=-3g\sin\theta$ 沿斜面向上
+
+②
+\begin{align*}
+mg\sin\theta&=2BI_2L\\
+I_2&=\frac{2BLV_2}{R}\\
+mg\sin\theta&=\frac{4B^{2}L^{2}V_2}{R}=\frac{B^{2}L^{2}V_1}{R}\\
+\therefore V_2&=\frac14 V_1\\
+mg\cdot\frac32 L\sin\theta+W_{\text{安}}&=\frac12 mV_2^{2}-\frac12 mV_1^{2}\\
+Q=-W_{\text{安}}&=\frac32 mgL\sin\theta+\frac{15}{32}mV^{2}
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=230-05 ch=12 sec=电磁感应·解题思路 kind=method alt=03,06 cont=none y=0.89-0.97
+$\to$ 路 $\to$ 力 $\to$ $a$ $\to$ 能
+
+$I=\dfrac{E}{R+r}$ \quad $F_{\text{安}}$ \quad 运动状态 \quad 能量守恒
+
+$F_{\text{合}}=ma$
+%%%END
+%%%BLOCK id=231-01 ch=12 sec=电磁感应·线框穿越磁场(斜面)能量与动量 kind=problem alt=06,07 cont=none y=0.00-0.40
+\begin{problem}[1]
+%FIG p231_a 0.07 0.00 0.355 0.10
+\notefig[0.3]{figures/p231_a.png}
+光滑\unclear{石}装置质量为$m$，通恒流$I$．($d<L$)\par
+由静止释放，导体\unclear{框}恰好到$B$下\unclear{面}边界处返回\par
+刚开始框下边界$2$到$B$上边 % CHECK: 此句写在页面右侧边缘，被页边截断；"2"后疑漏写 d，"上边"后疑为"界"
+\par
+① 从释放到刚开始返回过程的产热\par
+② 线框第一次穿$B$所用时间\par
+③ 经足够长时间后，线框上边界与$B$下边界距离最大值
+\begin{solution}
+(1) $mg\,4d\sin\alpha-BILd+W_{\text{\unclear{安}}}=0$ \quad $\therefore Q=-W_{\text{\unclear{安}}}=4mgd\sin\alpha-BILd$ % W 的下标汉字像"它"/"安"
+\par
+(2) 出$B$后 \quad $mg\,2d\sin\alpha-BILd=0-\frac{1}{2}mv^2$
+\[ mg\sin\alpha\,t-BLq=mv \qquad q=\frac{2Bd^2}{R} \]
+\[ \therefore t=\frac{\sqrt{2m(BILd-2mgd\sin\alpha)}}{mg\sin\alpha}+\frac{2B^2d^3}{R} \] % CHECK: 根号内"2mgd"的 2 手写像 I；第二项 2B^2d^3/R 写在分式外、未除以 mg sinα
+\par
+(3) 往复运动 \quad $BIL\,[\,d-(2L-x_{\max})\,]-mg\sin\alpha\,x_m=0$．
+\[ \therefore x_{\max}=\frac{BILd}{BIL-mg\sin\alpha} \] % CHECK: 所写方程与结果式的对应存疑，原样转录
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=231-02 ch=12 sec=电磁感应·导轨上匀加速拉力与能量 kind=problem alt=03,06 cont=none y=0.40-0.83
+\begin{problem}[2]
+%FIG p231_b 0.055 0.378 0.325 0.512
+\notefig[0.3]{figures/p231_b.png}
+$PQ$左侧总电阻$R$，右侧单位长电阻为$R_0$．$t=0$时水平向左拉力$F$作用在$bc$上，使之做加速度为$a$的匀加速．\par
+求$F_{\max}$．\unclear{某}过程产热$Q$，导轨克服摩擦做功为$W$．求动能增量
+\begin{solution}
+\[ E=BLat \]
+\[ I=\frac{E}{R_{\text{总}}}=\frac{BLat}{R+2R_0\cdot\frac{1}{2}at^2}=\frac{BLat}{R+R_0at^2} \]
+\[ F-BIL-f=Ma \qquad f=\mu N \]
+\[ N=mg+BIL \]
+故 $F=Ma+\mu mg+(1+\mu)\dfrac{B^2L^2at}{R+R_0at^2}$ \quad 当$t=\sqrt{\dfrac{R}{R_0a}}$时$F$达max
+\[ F_{\max}=Ma+\mu mg+\frac{(1+\mu)^2}{2}B^2L^2\sqrt{\frac{a}{RR_0}} \] % CHECK: (1+μ) 右上角手写像有平方；按推导应为 (1+μ)/2
+\[ \Delta E_K=Mas \qquad f=\mu(mg+F_A) \]
+\[ \int f\,\Delta s=\int(\mu mg\,\Delta s+\mu F_A\,\Delta s) \]
+\[ W_f=\mu mgs+\mu Q \qquad \therefore s=\frac{W-\mu Q}{\mu mg} \]
+\[ \therefore \Delta E_K=Mas=Ma\,\frac{W-\mu Q}{\mu mg} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=231-03 ch=12 sec=电磁感应·悬绳发电(系绳卫星) kind=problem alt=05 cont=next y=0.83-1.00
+\begin{problem}[3、悬绳发电]
+%FIG p231_c 0.05 0.848 0.205 0.985
+\notefig[0.2]{figures/p231_c.png}
+导线电阻$R_1$，周围电阻$R_2$
+\begin{solution}
+\[ \frac{V_Q}{V_P}=\frac{R+h}{R+h+L} \qquad E=BL\overline{V}=\frac{BLV_P}{2}\left(1+\frac{R+h}{R+h+L}\right) \]
+\[ I=\frac{E}{R_1+R_2} \qquad F=BIL=\frac{B^2L^2V_P}{2(R_1+R_2)}\left(1+\frac{R+h}{R+h+L}\right) \] % B^2L^2 中的 L 手写像"("
+\[ \frac{GMm_Q}{(R+h)^2}-T_{\text{绳}Q}=\frac{m_QV_Q^2}{R+h} \qquad \text{与周围气体形成回路} \]
+\[ \therefore T_{\text{绳}Q}=m_Q\left(\frac{gR^2}{(R+h)^2}-\frac{(R+h)^2V_P^2}{(R+h+L)^2}\right) \] % CHECK: 分子 (R+h) 的指数手写像 2（按推导似应为 1）
+\end{solution}
+\par\medskip
+\textbf{$*$：}
+%FIG p231_d 0.75 0.835 0.93 0.905
+\notefig[0.2]{figures/p231_d.png}
+\[ F=BLV \] % CHECK: 首字母手写为 F，应为 E=BLV（电动势）？
+\[ U_{\text{\unclear{路端}}}=E-Ir \]
+\[ t=\frac{2\pi R}{V} \]
+电能 $E_0=UIt$
+\end{problem}
+%%%END
+%%%BLOCK id=243-07 ch=12 sec=电磁感应·动量定理与能量(线框进入磁场) kind=problem alt=06,07 cont=none y=0.65-1.00
+\begin{problem}
+%FIG p243_g 0.04 0.65 0.53 0.765
+\notefig[0.5]{figures/p243_g.png}
+\begin{solution}
+\[ Ft-\mu mgt-\bar F_{\text{安}}t=m(V-V_0) \]
+\[ F_{\text{安}}=B\bar IL\qquad E=\frac{\Delta\Phi}{\Delta t}=\frac{BLx}{\Delta t}\quad\unclear{\Rightarrow}\quad\bar I=\frac{\bar E}{R} \] % CHECK: 原稿此处为形似“#”的符号，可能是 ⇒
+\[ V=\frac{(F-\mu mg)t}{m}+V_0-\frac{B^2L^2x}{Rm} \]
+\[ \text{对照图像}\quad F=\mu mg\qquad\frac{B^2L^2}{Rm}=\frac{V_0}{3L} \]
+$AB$刚入$B$时\quad $F=BLV_0$\quad $\bar F_{\text{安}}=\dfrac{B^2L^2V_0}{R}$ % CHECK: F=BLV0 的首字母形似 F，按物理应为感应电动势 E
+\[ F-\mu mg-\frac{B^2L^2V_0}{R}=-ma \]
+\[ a=\frac{V_0^2}{3\unclear{L}} \] % 此行被页面底边切断，分母不全
+\[ E=\frac{\Delta\Phi}{\Delta t}=\frac{BL\cdot3L}{\Delta t}\qquad\bar I=\frac{\bar E}{R}\qquad q=\bar I\Delta t=\frac{3BL^2}{R} \]
+\[ \therefore q=\frac{mV_0}{BL} \]
+\[ \text{由动能定理}\ (F-\mu mg)3L+W_{\text{安}}=0-\frac{mV_0^2}{2} \]
+\[ Q_{\text{\unclear{焦}}}=-W_{\text{安}}=\frac12mV_0^2 \] % CHECK: Q 的下标为一个带“灬”的字，疑为“焦”（或“热”）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=244-04 ch=12 sec=电磁感应·线框进出磁场区能量与动量 kind=problem alt=06,04 cont=none y=0.43-1.00
+\begin{problem}
+从静止释放，
+%FIG p244_d 0.02 0.435 0.52 0.585
+\notefig[0.5]{figures/p244_d.png}
+于此匀速下落\quad 于此消耗 $Q$
+
+求 $B$ 和出 $B$ 时速度
+\begin{solution}
+① \quad $V_{\text{入}}=\sqrt{2gL}$\qquad $mg=\dfrac{B^2L^2V_1}{R}$\qquad $B=\dfrac{\sqrt{mgR}}{\sqrt{L^2\sqrt{2gL}}}$
+
+$bc$刚出\quad $V_{\text{出}1}=2\sqrt{gL}$
+
+$ed$刚出\quad $mgL+\dfrac12mV_{\text{出}1}^2-\dfrac12mV_{\text{出}2}^2=Q$\qquad $V_{\text{出}2}=\sqrt{6gL-\dfrac{2Q}{m}}$
+
+② \quad 给一个水平向右初速度，进 $B$ 时 $V$ 与水平方向成$45^\circ$。求 $bc$ 落地时动能和用时
+\begin{align*}
+\tan45^\circ&=\frac{V_0}{V_1}\qquad V_0=V_1=\sqrt{2gL}\\
+5mgL&=Q+mgL+E_K-\frac12mV_0^2\\
+E_K&=5mgL-Q\\
+E_K&=\frac12m\left(\sqrt{V_0^2+V_y^2}\right)^2 \quad\text{（原稿此式下方画有波浪线）}\\
+V_y&=\sqrt{8gL-\frac{2Q}{m}}
+\end{align*}
+由动量定理
+
+% 原稿下面这一行被划去，并有一条弧形箭头从更下方的“mgt+…”一行指向它
+\struck{$mgt-mg\dfrac{L}{V_1}-BqL=mV_y$}
+\[ q=\frac{BL^2}{R} \]
+\[ t=\sqrt{\frac{8L}{g}-\frac{2Q}{mg^2}}+\sqrt{\frac{2L}{g}} \]
+\[ mgt+mg\frac{L}{V_1}-2BLq=mV_y \] % 原稿“mgL/V1 −2BLq”下方画有波浪线
+% 原稿下面这一行被划去
+\struck{$-mg\dfrac{L}{V_1}\quad mg\dfrac{L}{V_1}=BLq$}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=246-05 ch=12 sec=电磁感应·金属板匀速 kind=diagram alt=09 cont=none y=0.38-0.49
+%FIG p246_d 0.64 0.375 0.855 0.485
+\notefig[0.3]{figures/p246_d.png}
+$i=0$\quad $a=0$ % 图中标注“金属板”“匀速”
+%%%END
+%%%BLOCK id=275-01 ch=12 sec=电磁感应·动量定理 kind=formula alt=07 cont=none y=0.03-0.12
+\[
+F_{\text{\unclear{安}}}\,t=BLq=\frac{B^2L^2x}{R} % CHECK: F后下标字被涂写(疑为“安”)；分子手写偏草，疑为 B^2L^2x
+\]
+\[
+ft=kvt=kx
+\]
+%%%END
+%%%BLOCK id=275-02 ch=12 sec=电磁感应·线框穿越磁场 kind=problem alt=07 cont=none y=0.14-0.29
+% 图：线框(方框)速度 V_0 过竖直边界线，中间标 V_0/2，另一侧标“0 停止”
+%FIG p275_a 0.15 0.135 0.35 0.215
+\notefig[0.35]{figures/p275_a.png}
+
+$q_1:q_2=1:1$
+
+$Q_1:Q_2=3:1$ % 原稿 Q_1 处有涂写重叠，$Q_2$ 前有一多余竖笔
+%%%END
+%%%BLOCK id=279-01 ch=12 sec=电磁感应·线框穿越磁场 kind=problem alt=06,03 cont=none y=0.00-0.40
+% 贴纸题（印刷体）+手写批注。原稿手写划线：“拉力F=2mg”“作用，从静止开始运动”“DC边刚进入磁场前的一段时间”下有下划线；题号18、“量为m的”、“下列正确的”被圈出
+\begin{problem}[18]
+如图所示，水平虚线$L_1$、$L_2$之间存在匀强磁场，磁场方向垂直于纸面向里，磁场区域的高度为$h$。竖直平面内有一质量为$m$的直角梯形线框，其底边水平，上、下边长之比为1：4，高为$2h$线框$ABCD$在磁场边界$L_2$的下方$h$处，受到竖直向上的拉力$F=2mg$作用，从静止开始运动（上升过程中底边始终水平，线框平面始终与磁场方向垂直），当$AB$边刚进入磁场时，线框的加速度恰好为零，且在$DC$边刚进入磁场前的一段时间内，线框做匀速运动。重力加速度为$g$，下列正确的是（B\red{D}）% 手写答案BD，其中D为红色
+
+%FIG p279_a 0.53 0.125 0.90 0.345
+\notefig[0.4]{figures/p279_a.png}
+
+A．$AB$边刚进入磁场时，线框的速度为\struck{$\sqrt{gh}$}% 原稿：该处被一道斜线划去
+
+B．$AB$边刚进入磁场时，线框中感应电流的瞬时电功率为$mg\sqrt{2gh}$\ \unclear{$\checkmark$}% 手写对勾
+
+C．$DC$边刚进入磁场时，线框加速度的大小为\struck{$\dfrac{17}{9}g$}% 原稿：分数被一道斜线划去
+
+D．从线框开始运动到$DC$边刚进入磁场的过程中，线框产生的焦耳热为$\dfrac{227}{81}mgh$\ \red{$\checkmark$}% 红色对勾；该行下方压纸边处另有被切断的手写残迹，无法辨认
+
+\textbf{手写批注：}
+
+$F=\dfrac{B^2\bigl(L+\frac{3}{2}x\bigr)^2v}{R}\,mg$% CHECK: 分式右侧紧跟 mg，疑为“=mg”（安培力等于mg）
+
+$\unclear{\tan}\theta=\dfrac{2h}{3L}=\dfrac{h}{x}$\quad \unclear{M}% 图旁手写，末尾被纸边切断；线框右上边缘另有一个手写“M”
+\end{problem}
+%%%END
+%%%BLOCK id=279-03 ch=12 sec=电磁感应·线框穿越磁场 kind=derivation alt=06 cont=none y=0.58-0.78
+% 手写，写在题19贴纸的空白处，内容为题18选项D（焦耳热）的推导；其中 v2=(4/9)v1 被圈出，最后一式也被大圈圈住
+\[
+v_2=\frac{4}{9}v_1
+\]
+\[
+3mgh=Q+\frac{1}{2}\,\unclear{180}\,m\,\frac{16v_1^{2}}{81}
+\]% CHECK: ½ 与 m 之间的“180”无法辨认；分式右侧另有一个手写“2”样笔画（疑为指数）
+\[
+\frac{16}{81}\,\unclear{mgh}
+\]% 分式右侧三字潦草，疑为 mgh
+\[
+Q=\frac{243-16}{81}\,\unclear{mgh}
+\]% 末尾被纸边切断，隐约可见 mgh 的上半部分
+%%%END
+%%%BLOCK id=293-05 ch=12 sec=电磁感应·动量问题 kind=derivation alt=07 cont=none y=0.66-1.00
+%FIG p293_e 0.085 0.665 0.40 0.745
+\notefig[0.4]{figures/p293_e.png}
+
+n匝\unclear{重杆}，% CHECK: “重杆”二字辨认不清
+
+$F$不乘\unclear{$\Phi$}。% CHECK: 此行末字形似 $\psi$/$\Phi$，含义不明
+
+% 原稿此式被划去（与右侧 q 式相同）
+\tikz[baseline=(m.base)]{\node[inner sep=1pt](m){$q=n\dfrac{\Delta\Phi}{R}$};\draw[line width=0.6pt](m.west)--(m.east);}
+
+\begin{align*}
+q&=n\frac{\Delta\Phi}{R}\\
+e&=n\frac{\Delta\Phi}{\Delta t}\\
+I&=\frac{e}{R}\\
+F_{\text{安}}&=nBIL\\
+-nBLq&=\Delta\, m(v_{\text{末}}-v_0)\\ % CHECK: 等号后 m 前有一个类似 Δ 的符号（可能是 Δp 的笔误）
+-\frac{n^2B^2L^2s}{R}&=m(v_{\text{末}}-v_0)
+\end{align*}
+%%%END
+%%%BLOCK id=294-04 ch=12 sec=电磁感应·动量问题 kind=problem alt=07 cont=none y=0.82-1.00
+\begin{problem}[4]
+%FIG p294_d 0.015 0.82 0.27 0.955
+\notefig[0.35]{figures/p294_d.png}
+
+\begin{solution}
+正交\unclear{分解}（弧形箭头指向下式中的 $Blq\cos\alpha$ 项）
+\[
+mg\sin\alpha\, t-Blq\cos\alpha=mv_m-0.
+\]
+安培力需再投影
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=296-01 ch=12 sec=自感 kind=knowledge alt=none cont=none y=0.03-0.31
+\textbf{自感}\quad \unclear{感}阻碍电流变化\quad $i$增反减同
+
+% 左图线圈旁另有小字标注（字迹不清，形如“R_L+r→0”）
+%FIG p296_a 0.085 0.068 0.335 0.19
+\notefig[0.4]{figures/p296_a.png}
+
+%FIG p296_b 0.455 0.068 0.71 0.19
+\notefig[0.4]{figures/p296_b.png}
+
+\textbf{通电自感}\quad 闭A后亮\quad B立即亮
+
+断电自感\quad AB过一段才熄灭
+
+$I_B>I_A$\quad A闪后逐渐熄灭
+%%%END
+%%%BLOCK id=296-02 ch=12 sec=自感 kind=knowledge alt=none cont=none y=0.31-0.44
+\textbf{理想线圈}
+\begin{itemize}
+\item 通电时相当于电断路 % CHECK: “电断路”，“电”字疑为多写，原样转录
+\item 断电时相当于电源
+\item 稳定时相当于导线
+\end{itemize}
+%%%END
+%%%BLOCK id=296-04 ch=12 sec=电磁感应·能量与热量分配 kind=problem alt=06 cont=none y=0.60-0.90
+\begin{problem}
+% 图中标注（已在图里）：R_1、2r、R_2、r（棒）、37°、x_0
+%FIG p296_c 0.075 0.63 0.357 0.81
+\notefig[0.35]{figures/p296_c.png}
+
+\begin{solution}
+% 原稿：$W_f$ 似被划去，其正上方写有 $-\mu mgx_0\cos\alpha$；$W_f$ 与 $mgx_0\sin\alpha$ 之间是一个“·”
+\[
+\overset{-\mu mgx_0\cos\alpha}{W_f}\cdot mgx_0\sin\alpha=\frac{1}{2}mv_{\max}^2+Q
+\] % CHECK: “W_f”与“mgx_0 sinα”之间为“·”，物理上应为“+”
+
+\textbf{电量、热量分配}
+
+求 $Q_{\text{总}}\Rightarrow Q_{\text{外}}$\ \ $\left(\dfrac{Q_{\text{外}}}{Q_{\text{总}}}=\dfrac{R}{R+r}\right)$\ \ $\Rightarrow Q\propto Q_1\ Q_2$ % CHECK: “Q ∝ Q_1 Q_2”中间符号不清
+
+（括号上方小字：与 $R$ 成正比。右侧并列两行小字：与 $R$ 成反比（并联）；与 $R$ 成正比（串联））
+
+并联 $Q$ 与 $R$ 成反比\quad $\dfrac{U^2}{R}$
+
+串联 $Q$ 与 $R$ 成正比
+
+\[
+q=\frac{BLx}{R_{\text{总}}}
+\]
+
+$q_1$、$q_2$ 与电阻成反比。
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=297-01 ch=12 sec=电磁感应·电路与能量 kind=problem alt=06 cont=none y=0.03-0.30
+% 以下为剪贴的印刷题（题号被裁掉，仅剩一个“.”），其上有手写圈画；第1行末“长度”上方有一处手写小记号，第2行行首“小于”处有一道手写斜线
+\begin{problem}
+如图，水平\underline{面内有一光滑}金属导轨，其 $MN$、$PQ$ 边的电阻不计，$MP$ 边的电阻阻值 \fbox{$R=1.5\,\Omega$}，$MN$ 与 $MP$ 的\fbox{夹角为 $135^\circ$}，$PQ$ 与 $MP$ 垂直，$MP$ 边长度小于 $1\unit{m}$。将\fbox{质量 $m=2\unit{kg}$}、\fbox{电阻不计}的足够长直导体棒搁在导轨上，并与 $MP$ 平行。棒与 $MN$、$PQ$ 交点 $G$、$H$ 间的距离 \fbox{$L=4\unit{m}$}，空间存在垂直于导轨平面的匀强磁场，磁感应强度 \fbox{$B=0.5\unit{T}$}。在外力作用下，棒由 $GH$ 处以一定的初速度向左做直线运动，运动时回路中的电流强度始终与初始时的电流强度相等。
+
+% 图上手写标注（已在图里）：v_3、2m、3m、4m、135° 等
+%FIG p297_a 0.035 0.108 0.215 0.222
+\notefig[0.35]{figures/p297_a.png}
+
+\begin{enumerate}[label=(\arabic*)]
+\item 若初速度 $v_1=3\unit{m/s}$，求棒在 $GH$ 处所受的安培力大小 $F_A$。
+\item 若初速度 $v_2=1.5\unit{m/s}$，求棒向左移动距离 $2\unit{m}$ 到达 $EF$ 所需时间 \unclear{$\Delta t$}。
+\item 在棒由 $GH$ 处向左移动 $2\unit{m}$ 到达 $EF$ 处的过程中，外力做功 \unclear{$W=7\unit{J}$}，求初速度 $v_3$。
+\end{enumerate}
+\end{problem}
+%%%END
+%%%BLOCK id=298-01 ch=12 sec=双棒模型 kind=problem alt=02,06 cont=none y=0.00-0.30
+% 页面上部为剪贴的印刷体题目，只有题干与配图，无解答；其余为空白横线页（背面透字已忽略）。剪贴纸右上部有一条手写斜线（疑为裁剪线）
+% 手写标记：方框＝“光滑”“质量均为m，长均为L”“动摩擦因数为μ”“不计所有导轨和ab棒的电阻”；椭圆圈＝“同一水平面内，”；下划线＝“最大静摩擦力与滑动摩擦力大小相等，”“一段距离后停止，”“ef棒始终静止”；第(3)问“取走小立柱1和2，且运动过程中”下方另有手写断续下划线（形状不清）
+% 配图中另有手写：R_1=R、R/2、θ 等小标注（已含在图里）
+\begin{problem}[剪贴题 8]
+8．如图所示，金属导轨 $MNC$ 和 $PQD$，$MN$ 与 $PQ$ 平行且间距为 $L$，所在平面与水平面夹角为 $\alpha$，$N$、$Q$ 连线与 $MN$ 垂直，$M$、$P$ 间接有阻值为 $R$ 的电阻；\fbox{\unclear{光滑}}直导轨 $NC$ 和 $QD$ 在\fbox{同一水平面内，}与 $NQ$ 的夹角都为锐角 $\theta$。均匀金属棒 $ab$ 和 $ef$ \fbox{质量均为 $m$，长均为 $L$}，$ab$ 棒初始位置在水平导轨上与 $NQ$ 重合；$ef$ 棒垂直放在倾斜导轨上，与导轨间的\fbox{动摩擦因数为 $\mu$}（$\mu$ 较小），由导轨上的小立柱 1 和 2 阻挡而静止。空间有方向竖直的匀强磁场（图中未画出）。两金属棒与导轨保持良好接触。\fbox{不计所有导轨和 $ab$ 棒的电阻}，$ef$ 棒的阻值为 $R$，\underline{最大静摩擦力与滑动摩擦力大小相等，}忽略感应电流产生的磁场，重力加速度为 $g$。
+
+(1) 若磁感应强度大小为 $B$，给 $ab$ 棒一个垂直于 $NQ$、水平向右的速度 $v_1$，在水平导轨上沿运动方向滑行\underline{一段距离后停止，}\underline{$ef$ 棒始终静止}，求此过程 $ef$ 棒上产生的热量；
+
+(2) 在 (1) 问过程中，$ab$ 棒滑行距离为 $d$，求通过 $ab$ 棒某横截面的电荷量；
+
+(3) 若 $ab$ 棒以垂直于 $NQ$ 的速度 $v_2$ 在水平导轨上向右匀速运动，并在 $NQ$ 位置时取走小立柱 1 和 2，且运动过程中 $ef$ 棒始终静止。求此状态下最强磁场的磁感应强度及此磁场下 $ab$ 棒运动的最大距离。
+
+%FIG p298_a 0.015 0.175 0.375 0.302
+\notefig[0.38]{figures/p298_a.png}
+\end{problem}
 %%%END

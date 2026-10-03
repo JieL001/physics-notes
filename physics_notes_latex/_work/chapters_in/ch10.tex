@@ -529,6 +529,236 @@ $R_{AB}=\dfrac{4\times2}{4+2}+1=\dfrac{7}{3}\,\Omega$
 \end{aligned}\right. \]
 \[ I=\dfrac{E_1r_2+E_2r_1}{r_1r_2+(r_1+r_2)R_0}=\dfrac{\underbrace{\dfrac{E_1r_2+E_2r_1}{r_1+r_2}}_{E'}}{\underbrace{\dfrac{r_1r_2}{r_1+r_2}}_{r'}+R_0} \]
 %%%END
+%%%BLOCK id=169-01 ch=10 sec=伏安法测电阻·选器材与内外接 kind=method exp=1 alt=none cont=none y=0.06-0.19
+可以算出准确值 % 写在“精确与否”上方
+
+选器材时 先看 \underline{精确与否} 后\unclear{度}大小阻 内外接 % “精确与否”下有下划线；“大小”与“阻”之间有一短横
+
+阻值不\unclear{是}约数 % 写在“精确与否”下划线下方；“是”字形近“足”
+%%%END
+%%%BLOCK id=169-04 ch=10 sec=闭合电路·电源与灯泡U-I图线(双灯) kind=method exp=1 alt=none cont=none y=0.47-0.66
+% 原稿此块被划去（每行均被横线划过）
+双灯
+
+并联\quad 满足同 $U$\quad $U=E-(I_1+I_2)r$\quad 找满足式子的直线
+% 上行 E、r 下方各有一短横
+
+串联\quad ：满足 同 $I$\quad $U=E-\unclear{I_2}\,(r_1+r_2+r)$\quad 找满足式子的直线
+% “同 I”被圈出；“：”或为“∵”；式中括号前一项字形难辨；括号下另有一道长下划线
+
+找 $U$ 等\unclear{于} % 小字，写在并联行与串联行之间，同样被划去
+%%%END
+%%%BLOCK id=169-05 ch=10 sec=电表改装·非常规使用 kind=summary exp=1 alt=none cont=none y=0.69-0.74
+电表 $\to$ 非常规使用 $\to$ 改表 $\to$ 串联分压，并联分流
+
+$U=IR_A$\quad $I=\dfrac{U}{R_V}$
+%%%END
+%%%BLOCK id=169-06 ch=10 sec=滑动变阻器·分压与限流 kind=method exp=1 alt=none cont=none y=0.74-0.84
+\textbf{分压}
+\begin{itemize}
+\item $R$\unclear{全滑} $<\dfrac{1}{2}R_x$ 分压
+\item 测量范围大
+\item $U$-$I$ 曲线，示数校对 % CHECK: “U”后的字形近似“2”，据语境读作“-I”
+\end{itemize}
+其余用限流\qquad $U=\dfrac{E}{r+R'}R$
+%%%END
+%%%BLOCK id=171-05 ch=10 sec=测电阻·内接法与分压 kind=method exp=1 alt=none cont=none y=0.75-0.93
+测污水电阻率\quad 大$R$\ 内接法\quad 选小滑变
+
+%FIG p171_e 0.115 0.777 0.245 0.885
+\notefig[0.25]{figures/p171_e.png}
+
+\[
+\Bigl(I-\frac{U}{R_V}\Bigr)R_x=U
+\]
+
+\[
+U=\frac{R_xR_V}{R_x+R_V}\,I
+\]
+
+% 页面右侧另有两处潦草涂改的小式，疑为分式「U/R_x +」与「U/R_V +」
+\unclear{$\dfrac{U}{R_x}+$}\quad\unclear{$\dfrac{U}{R_V}+$}
+%%%END
+%%%BLOCK id=172-01 ch=10 sec=多用电表·误差分析 kind=note alt=none cont=none y=0.00-0.17
+% CHECK: 页顶一行小字被页边裁掉半截，右侧另有半行无法辨认
+\unclear{若}改装后表的示数都偏小 % CHECK: 首字疑为「若」或「先」
+
+\unclear{…分析…流} % 页顶右上方被裁切的半行小字
+
+测含电源的电路电阻
+\begin{itemize}
+\item 反向电源(流)\quad $r$：测偏\unclear{…} % 行末被页边截断
+\item 同向电源(流)\quad $r$：测偏\unclear{…} % 行末被页边截断
+\end{itemize}
+E偏小($\downarrow$)\quad $r$测偏大
+
+E不变\quad $r\uparrow$\quad 让$R_3\downarrow$\quad 无影响\quad 旧\unclear{电} % 末行「旧电」下接上一行末，疑为「旧电池」
+%%%END
+%%%BLOCK id=172-02 ch=10 sec=多用电表·各档位电路分析 kind=derivation alt=none cont=none y=0.03-0.80
+%FIG p172_a 0.085 0.028 0.71 0.352
+\notefig[0.6]{figures/p172_a.png}
+
+\[
+I=\frac{I_g(r_g+R_2)}{R_1}+I_g
+\]
+
+B接1．\quad $I=$\struck{$\dfrac{I_gr_g}{\dfrac{R_1r_g}{R_1+R_2}}$}\quad $\dfrac{I}{I_g}=\dfrac{R_1+R_2+r_g}{R_1}$\quad \struck{$\dfrac{I_g}{I}$}\quad $n=1+\dfrac{R_2+r_g}{R_1}$ % 第一个分式被一条斜线划去；「I_g/I」小分式被竖线涂去，笔画潦草
+
+B接2：\quad $I=\dfrac{I_gr_g}{\dfrac{r_g(R_1+R_2)}{R_1+R_2+R_g}}$\quad $\dfrac{I}{I_g}=\dfrac{R_1+R_2+r_g}{R_1+R_2}$\quad $n=1+\dfrac{r_g}{R_1+R_2}$ % CHECK: 分母末项手写为 R_g，按上下文应为 r_g
+
+B接3：
+\begin{align*}
+E_1&=\Bigl(I_g+\frac{I_gr_g}{R_1+R_2}\Bigr)\Bigl(R_x+R_3+\frac{r_g(R_1+R_2)}{R_1+R_2+r_g}\Bigr)\\
+&=I_{\text{改}}\bigl(R_x+R_3+R_{\text{\unclear{…}}}\ \text{\unclear{右端被页边截断}}
+\end{align*}
+
+B接4：
+\begin{align*}
+E_2&=\Bigl(I_g+\frac{I_gr_g}{R_1+R_2}\Bigr)\Bigl(R_x+R_4+R_5+\frac{r_g(R_1+R_2)}{r_g+R_1+R_2}\Bigr)\\
+&=I_{\text{改}}\Bigl(R_x+\underbrace{R_4+R_5+\text{\unclear{…}}}_{r_{\text{等效}}} % 原稿在「R_4+R_5+…」下画横线并标「r等效」，右端被页边截断
+\end{align*}
+
+B接5：
+\[
+U_1=\Bigl(I_g+\frac{I_gr_g}{R_1+R_2}\Bigr)\Bigl(R_6+\frac{r_g(R_1+R_2)}{R_1+R_2+r_g}\Bigr)
+\]
+
+B接6：
+\[
+U_2=\Bigl(I_g+\frac{I_gr_g}{R_1+R_2}\Bigr)\Bigl(\overset{R_7}{\text{\struck{$R_7$}}}+\frac{r_g(R_1+R_2)}{R_1+R_2+r_g}\Bigr) % CHECK: 括号内首项为「R_7」，其下另有一个被涂掉的「R_7」；按电路图6档应含 R_6+R_7，原稿如此
+\]
+%%%END
+%%%BLOCK id=172-03 ch=10 sec=电流表改装·分流电阻 kind=derivation alt=none cont=none y=0.17-0.52
+\struck{$\dfrac{R_g+R_2\,(R_1+R_2)}{R_1\,(R_g)}$} % 整个分式被斜线划去，分子括号处笔画重叠
+
+\[
+R_{\text{并}}=\frac{R_g}{n-1}
+\]
+
+\[
+n-1\,(R_{\text{并}})=R_g
+\]
+
+\[
+n-1=\frac{R_g}{R_{\text{并}}}=\frac{R_g}{R_1+R_2}
+\]
+
+\[
+R_{\text{并}}=\frac{R_g+R_2}{n-1}
+\]
+
+\[
+(n-1)R_{\text{并}}=R_g+R_2
+\]
+
+\[
+(n-1)\,\text{\struck{$R_{\text{并}}$}}=\frac{R_g+R_2}{R_1} % 原稿此处「R_并」被划去，分母 R_1 下有一点
+\]
+%%%END
+%%%BLOCK id=187-01 ch=10 sec=电表改装·改装电压表并测电源电动势内阻 kind=problem alt=none cont=none y=0.165-0.80 exp=1
+% 粘贴的印刷题（紫色纸）；原稿圈画“改装后的”，划线“内阻R_V约为5kΩ”“某时刻电压表的示数为80V”“保持滑片P的位置不变，调节电阻箱，使电压表的示数为”“其测量值总是”“示数记为U）连接成如图乙所”“电阻箱接入电路的阻值R和电压表的示数U”
+\begin{problem}[粘贴印刷题 20]
+20．电动汽车充电比燃烧汽油更便宜，受到市场的欢迎。某兴趣小组为了测量电动汽车上电池的电动势 $E$（$300\unit{V}\sim400\unit{V}$）和内阻 $r$（$0\sim10\,\Omega$），需要将一个量程为 $100\unit{V}$ 的电压表（内阻 $R_V$ 约为 $5\unit{k\Omega}$）改装成量程为 $400\unit{V}$ 的电压表，然后再测量电池的电动势和内阻。以下是该实验的操作过程。
+
+\noindent（题干上方行间有淡铅笔小字草算，字迹模糊，可见 \unclear{$\frac12(n\cdots)^2$} 等）
+
+%FIG p187_a 0.012 0.265 0.287 0.46
+\notefig[0.3]{figures/p187_a.png}
+
+%FIG p187_b 0.288 0.335 0.53 0.463
+\notefig[0.28]{figures/p187_b.png}
+
+%FIG p187_c 0.54 0.31 0.81 0.445
+\notefig[0.28]{figures/p187_c.png}
+
+（图丙：$\dfrac1R$--$\dfrac1U$ 图线，图中标注见图）
+
+\noindent\textbf{图旁手写：}图甲上：$20\unit{V}$（V 表上方）、$60\unit{V}$（$R_p$ 上方）、$80\unit{V}$（V 表左上方与下方导线旁各一处，字迹反复涂描）；V 与 $R_p$ 被一个椭圆圈在一起，其右写 $R_x$。图乙上：电压表圈内手写 $U$，$R_p$ 右侧手写 $R$。
+
+串联分压、并联分流、\unclear{欧姆}定律% 位于图乙/图丙上方
+
+$r_V=3.5\unit{k\Omega}$% CHECK: 3 与 5 之间可能漏小数点，原稿写作“3 5kΩ”
+\quad 其上方另有 \unclear{5…}、\unclear{$\triangle$…$\le$}（字迹潦草）
+
+分压法选小阻\quad $U$ 与滑片位置成线性关系
+
+$\dfrac{1.8\times10^{-8}}{21}$\quad \unclear{$2.84\times10^{-9}$}\quad（页面右缘另有草算 \unclear{22、484、21…}）
+
+（1）由于不知道该电压表内阻的确切值，该兴趣小组将一个最大阻值为 $50\unit{k\Omega}$ 的电阻箱 $R_p$ 与电压表串联后，利用如图甲所示的电路进行改装。将滑动变阻器的滑片 $P$ 移至右端，同时将电阻箱的阻值调为零。闭合开关 S，将滑片 $P$ 向左移动，某时刻电压表的示数为 $80\unit{V}$。保持滑片 $P$ 的位置不变，调节电阻箱，使电压表的示数为 \underline{\hspace{2.5em}} $\unit{V}$．……再改变电阻箱的阻值，保持电压表和电阻箱串联，撤去其他电路就得到改装后的电压表。% 此行右端“V．”之后被页边截断
+
+\noindent\textbf{（1）问处手写：}“$80\unit{V}$”上方行间：分压\unclear{与 $R$ 有关，与 $R_x$ 无关}；“保持滑片 $P$ 的位置不变”下方：分压不变；闭合开关 S 上方：\unclear{7…}；空格处手写 \unclear{20}，被圈并叉掉，其右上另有 \unclear{$\frac1{20}$}。
+
+（2）用改装后的电压表接入电路测量已知电压时，由于系统误差，其测量值总是 \struck{大于}（填“大于”、“等于”或“小于”）真实值。% 原稿：“大于”为手写，被圈出并斜线划去
+
+\noindent\textbf{（2）问处手写：}小于（写在“大于”右上方）；实际大于 $400\unit{V}$；页边右侧另有圈出的 \unclear{阻}。
+
+（3）该兴趣小组利用另一个电阻箱 $R$ 和改装后的电压表（电压表的表盘没有改变，示数记为 $U$）连接成如图乙所示的电路来测量该电池的电动势和内阻。根据测得的电阻箱接入电路的阻值 $R$ 和电压表的示数 $U$ 作出 $\dfrac1R-\dfrac1U$ 图像如图丙所示，则该电池的电动势 $E=$ \underline{\;36\unclear{0}\;} V、内阻 $r=$ \underline{\;9\;} $\Omega$。% CHECK: E 的空格内手写“360”，末位被粘贴纸边缘遮挡
+
+\noindent 页面下沿贴着纸边处另有手写 \unclear{$4U$…}（后面被纸边遮挡）。
+\end{problem}
+%%%END
+%%%BLOCK id=194-01 ch=10 sec=电学实验·图像处理 kind=method exp=1 alt=none cont=none y=0.05-0.09
+电阻可通过斜率对比，\unclear{图像}轴点线斜截面，数量级单位换算 % “斜率对比”后两字(图像?)难辨
+%%%END
+%%%BLOCK id=194-02 ch=10 sec=测电动势和内阻 kind=derivation exp=1 alt=none cont=none y=0.09-0.22
+% 左页边(约y=0.18处)有一个孤立的“γ”形笔迹，未转录
+测化学电池电动势（电压表测内电压，断开开关后无示数）
+\[
+E=U+\frac{U}{r}R=U+\frac{U}{hr_0}R\qquad r_0\text{为单位长度电阻}
+\]
+\[
+\frac1U=\frac1E+\frac{R}{Ehr_0}
+\]
+%%%END
+%%%BLOCK id=194-03 ch=10 sec=电表改装 kind=note exp=1 alt=none cont=none y=0.22-0.25
+量程不够\ +\ 定值电阻，改表
+%%%END
+%%%BLOCK id=194-04 ch=10 sec=测电动势和内阻 kind=note exp=1 alt=none cont=none y=0.25-0.28
+$U$-$I$曲线有弯的\ 也符合\ $E=U+Ir$
+%%%END
+%%%BLOCK id=194-06 ch=10 sec=测电动势和内阻 kind=formula exp=1 alt=none cont=none y=0.38-0.43
+\[
+r_{\text{等效内阻}}=\frac{\Delta U_{\text{外}}}{\Delta I}=\frac{\Delta U_{\text{内}}}{\Delta I}
+\]
+%%%END
+%%%BLOCK id=194-07 ch=10 sec=电学实验·其它 kind=note exp=1 alt=none cont=none y=0.43-0.47
+\unclear{倍功法}\ $S$不变，改\unclear{筋}数$n$变 % CHECK: “倍功法”“筋数”字迹难辨、含义不明，归章也不确定(紧邻电学实验内容，暂归10)
+%%%END
+%%%BLOCK id=194-08 ch=10 sec=测电阻·电压表法(合上断开S2) kind=derivation exp=1 alt=none cont=none y=0.47-0.62
+1.
+%FIG p194_b 0.05 0.470 0.225 0.622
+\notefig[0.25]{figures/p194_b.png}
+
+合上$S_2$\quad $U_1$
+
+断开$S_2$\quad $U_2$
+\[
+\frac{U_2}{\dfrac{R_VR_X}{R_V+R_X}}R=U_1-U_2
+\]
+%%%END
+%%%BLOCK id=194-09 ch=10 sec=电路分析·差量关系 kind=derivation exp=1 alt=none cont=none y=0.62-0.78
+2.
+%FIG p194_c 0.02 0.628 0.245 0.78
+\notefig[0.25]{figures/p194_c.png}
+% 原稿电路图被一个大圆圈圈起
+
+$U_{\text{等效}}=I_1R_1+I_0R_0$\qquad 差量关系
+
+\unclear{$P_x$}\ $P_{R_p}=I_1R_1(I_0-I_1)$ % 式首的“P”及其下标被笔画覆盖难辨
+%%%END
+%%%BLOCK id=194-10 ch=10 sec=电表改装·并联分流 kind=derivation exp=1 alt=none cont=none y=0.77-0.92
+3.
+%FIG p194_d 0.05 0.775 0.26 0.915
+\notefig[0.25]{figures/p194_d.png}
+\[
+U=\left(\frac{I_1r_g}{R_1}+I_1\right)\left(R_2+\frac{R_1r_g}{R_1+r_g}\right)
+\]
+%%%END
+%%%BLOCK id=194-12 ch=10 sec=电学实验·误差分析 kind=note exp=1 alt=none cont=none y=0.93-1.0
+\unclear{$I_{\text{实}}\uparrow$}\quad $V\downarrow$\qquad $U_{\text{实}}\uparrow$\ 无影响 % 首个符号形似“于/I/r”，难辨
+
+电源$E$变小\ $R_{\text{测}}$偏大\ 电源内阻被$R_{\text{滑}}$补充了，对测量无影响
+%%%END
 %%%BLOCK id=195-02 ch=10 sec=电表改装·欧姆表 kind=problem alt=none cont=none y=0.28-0.53
 将微安表改为欧姆表\quad 将两表笔短接，调$R$使满偏。
 
@@ -581,4 +811,821 @@ P_{\text{出}}+P_{\text{热}}=P_{\text{总}}
 
 选$E$略大于$I_{\max}R_{\text{滑}\max}$的电源
 % 后一行为写在上一行右上方的小字批注，一个弯箭头从该批注指向上一行的“$E$”；“$I_{\max}R_{\text{滑}\max}$”下有红笔下划线
+%%%END
+%%%BLOCK id=210-01 ch=10 sec=实验·测电源电动势和内阻 kind=method alt=none exp=1 cont=none y=0.03-0.31
+% 页眉处“电学实验”写在印刷的 Date. 上
+\textbf{电学实验}
+
+\textbf{测电源电动势、内阻}\qquad $E=U+Ir$
+
+伏安法·常规\qquad 等效法\ 消除误差。
+
+\begin{minipage}[t]{0.50\linewidth}
+%FIG p210_a 0.04 0.14 0.34 0.26 soft
+\notefig[0.95]{figures/p210_a.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.46\linewidth}
+%FIG p210_b 0.37 0.165 0.62 0.245 soft
+\notefig[0.95]{figures/p210_b.png}
+\end{minipage}
+
+$E_{\text{测}}=E$\qquad 误差大 \struck{大内大}
+
+$r_{\text{测}}=r+R_A$
+
+（红圈）分压 内接 高$r$ $E$等（同安阻法）
+%%%END
+%%%BLOCK id=210-02 ch=10 sec=实验·测电源电动势和内阻 kind=method alt=none exp=1 cont=none y=0.27-0.52
+% 上图滑动变阻器处有一条长箭头指向下图的滑动变阻器，箭头旁写“尽能用限流法”等字
+尽能用限流法 % CHECK: 疑为“尽可能用限流法”（漏写“可”）
+\quad $R_{\text{滑}}=r_{\text{待测}}$的$2\sim5$倍
+
+\begin{minipage}[t]{0.50\linewidth}
+%FIG p210_c 0.07 0.33 0.37 0.465 soft
+\notefig[0.95]{figures/p210_c.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.46\linewidth}
+%FIG p210_d 0.36 0.345 0.60 0.445 soft
+\notefig[0.95]{figures/p210_d.png}
+\end{minipage}
+
+等效法，消除误差
+
+$E_{\text{测}}=\dfrac{R_VE}{R_V+r}$
+
+$r_{\text{测}}=\dfrac{rR_V}{r+R_V}$\qquad 误差小，小外小
+
+（红圈）分流外接小$r$小$E$\ 同伏阻法。
+%%%END
+%%%BLOCK id=210-03 ch=10 sec=实验·测电源电动势和内阻 kind=note alt=none exp=1 cont=none y=0.48-0.60
+注意起点：$U$-$I$图可以没有$(0,0)$点，不从$(0,0)$点开始画
+
+用旧电池$r$大一些，$E$不变，若$r$太小，那串电阻，用等效电源
+
+若已知$R_A$，用内接法，无误差（系统）\qquad $r_{\text{真}}=r_{\text{测}}-R_A$
+
+若已知$R_V$，用外接法，无误差（系统）
+%%%END
+%%%BLOCK id=210-04 ch=10 sec=实验·测电源电动势和内阻 kind=method alt=none exp=1 cont=none y=0.62-0.82
+\textbf{安阻法（同内接）}
+%FIG p210_e 0.04 0.68 0.21 0.77 soft
+\notefig[0.3]{figures/p210_e.png}
+\[
+E=I(R+R_A)+Ir
+\]
+\[
+E_{\text{测}}=E_{\text{真}}
+\]
+\[
+r_{\text{测}}=\frac{E}{I}-r>r_{\text{真}}=\frac{E}{I}-(R_A+r)
+\]
+% CHECK: 末行中的 r 疑为 R（可变电阻）；第一个分数分子处有污迹
+%%%END
+%%%BLOCK id=210-05 ch=10 sec=实验·测电源电动势和内阻 kind=method alt=none exp=1 cont=none y=0.64-0.88
+\textbf{伏阻法（同外接）}
+%FIG p210_f 0.42 0.685 0.60 0.775 soft
+\notefig[0.3]{figures/p210_f.png}
+\[
+E=U+\left(\frac{U}{R}+\frac{U}{R_V}\right)r
+\]
+$E_{\text{测}}<E_{\text{真}}$\qquad $r_{\text{测}}<r_{\text{真}}$
+\[
+\frac{1}{U}=\frac{1}{E}+\frac{r}{ER}+\frac{r}{ER_V}
+\]
+%%%END
+%%%BLOCK id=210-06 ch=10 sec=实验·测电源电动势和内阻 kind=note alt=none exp=1 cont=none y=0.87-0.92
+若考近似 把$R_A$、$R_V$项去掉即可
+%%%END
+%%%BLOCK id=211-01 ch=10 sec=测电动势和内阻·方程组法 kind=formula exp=1 alt=none cont=none y=0.03-0.19
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{@{}c c c c@{}}
+ & 伏安法 & 伏阻法 & 安阻法\\
+方程组法 &
+$\left\{\begin{array}{l} E=\underline{U_1}+\underline{I_1}r\\ E=\underline{U_2}+\underline{I_2}r\end{array}\right.$ &
+$\begin{array}{l} U_1=E\cdot\dfrac{R_1}{R_1+r}\\[6pt] U_2=E\,\dfrac{R_2}{R_2+r}\end{array}$ &
+$\begin{array}{l} E=I_1(R_1+r)\\ E=I_2(R_2+r)\end{array}$
+\end{tabular}
+\end{center}
+%%%END
+%%%BLOCK id=211-02 ch=10 sec=测电动势和内阻·消除系统误差 kind=method exp=1 alt=none cont=none y=0.23-0.37
+%FIG p211_a 0.08 0.225 0.39 0.365
+\notefig[0.31]{figures/p211_a.png}
+
+$i_1$ $i_2$ 抵消。无误差（\unclear{除了表所带系统误差}）
+
+$E_1=E_2$
+
+$r_1=r_2$
+%%%END
+%%%BLOCK id=211-03 ch=10 sec=测电动势和内阻·定值电阻的应用 kind=method exp=1 alt=none cont=none y=0.39-0.57
+定值电阻在测电源 $E$、$r$ 实验中的应用。
+
+%FIG p211_b 0.07 0.455 0.60 0.565
+\notefig[0.5]{figures/p211_b.png}
+
+图旁标注（自上而下，依次在 $R_1$、$R_2$、$R_3$ 所在行右侧）：
+\begin{itemize}
+\item 看成滑变的一部分。
+\item 改装电表
+\item 看成电源内阻的一部分
+\end{itemize}
+%%%END
+%%%BLOCK id=211-04 ch=10 sec=测电动势和内阻·内外接改进 kind=method exp=1 alt=none cont=none y=0.57-0.71
+\textbf{改进}（左侧大括号）：
+\begin{itemize}
+\item 内外均\unclear{结}法，
+\item \underline{内接$\to E$准确} % 红笔划线
+\item \underline{外接$\to I_0$准确} \quad \underline{$I_0=\dfrac{E}{r}\to r$ 准确值} % 红笔划线（两段：“外接…准确”与“$I_0=E/r\to r$准确值”）
+\item \underline{A内V外法} % 红笔波浪线
+\end{itemize}
+%%%END
+%%%BLOCK id=211-05 ch=10 sec=测电动势和内阻·内外接修正公式 kind=formula exp=1 alt=none cont=none y=0.72-0.79
+\[
+\text{已知 }R_A\to\text{内接}\
+\left\{\begin{array}{l} E_{\text{测}}=E_{\text{真}}\\ r_{\text{测}}=r_{\text{真}}+R_A \end{array}\right.
+\qquad
+\text{已知 }R_V\to\text{外接}\
+\left\{\begin{array}{l} E_{\text{测}}=E_{\text{真}}\dfrac{R_V}{R_V+r}\\[8pt] r_{\text{测}}=\dfrac{r_{\text{真}}R_V}{R_V+r_{\text{真}}} \end{array}\right.
+\]
+%%%END
+%%%BLOCK id=211-06 ch=10 sec=测电动势和内阻·特殊伏阻法 kind=method exp=1 alt=none cont=none y=0.83-1.00
+\textbf{一种特殊的伏阻法}
+
+%FIG p211_c 0.04 0.862 0.545 0.955
+\notefig[0.5]{figures/p211_c.png}
+
+（箭头上方：\unclear{看作…}；箭头下方：\unclear{就在电源里}）
+
+\[
+U=\frac{E R_0}{R_0+r+R}
+\qquad
+\frac{1}{U}=\frac{1}{ER_0}\cdot R+\frac{R_0+r}{ER_0}
+\]
+%%%END
+%%%BLOCK id=211-07 ch=10 sec=测电动势和内阻·特殊安阻法 kind=method exp=1 alt=none cont=none y=0.83-1.00
+\textbf{一种特殊的安阻法}
+
+%FIG p211_d 0.60 0.865 0.762 0.932
+\notefig[0.25]{figures/p211_d.png}
+
+%FIG p211_e 0.765 0.865 0.925 0.958
+\notefig[0.25]{figures/p211_e.png}
+
+\[ E=I(R+r) \]
+\[ IR=-r\cdot I+E \]
+%%%END
+%%%BLOCK id=212-01 ch=10 sec=半偏法测电表内阻·限流半偏 kind=method exp=1 alt=none cont=none y=0.07-0.32
+\textbf{半偏法测电表内阻}
+
+%FIG p212_a 0.09 0.103 0.375 0.235
+\notefig[0.28]{figures/p212_a.png}
+
+$R_g=2R_1$，并联分流
+
+\noindent 断$S_1,S_2$，调$R$到最大\\
+闭$S_1$，调$R$使 \textcircled{G} 满偏\\
+闭$S_2$，调$R'$使 \textcircled{G} 半偏\\
+$r_g=R'$
+
+调$R_1\uparrow$时 $I_{R_1,G\text{\unclear{差}}}\downarrow$ \quad $I_{R_1}>I_g$ \quad $R_{\text{测}}<r_{g\text{真}}$
+
+限流半偏小偏小
+
+$R_{\text{滑}}$要大，$E$要大。
+%%%END
+%%%BLOCK id=212-02 ch=10 sec=半偏法测电表内阻·系统误差 kind=knowledge exp=1 alt=none cont=none y=0.25-0.34
+大内大，小外\unclear{大}。 % CHECK: 常见口诀为“大内大，小外小”，末字疑为“小”
+
+系统误差：
+\begin{itemize}
+\item 大内阻表头分压半偏\quad 偏大
+\item 小内阻表头限流半偏\quad 偏小
+\end{itemize}
+%%%END
+%%%BLOCK id=212-03 ch=10 sec=半偏法测电表内阻·分压半偏 kind=method exp=1 alt=none cont=none y=0.34-0.57
+%FIG p212_b 0.10 0.345 0.358 0.49
+\notefig[0.27]{figures/p212_b.png}
+
+串联分压\quad $\frac13V\Rightarrow R_g=\frac12R_1$，
+
+$E<R_{\text{滑}}I_g$\quad 选使最接近
+
+调$R_1\uparrow$时 $U_{R_1,G}\uparrow$ \quad $U_{R_1}>U_g$ \quad $R_{\text{测}}>r_{g\text{真}}$
+
+分压半偏大偏大。
+
+$R_1\gg R_0$。
+
+$U_{\text{分}}=\text{\unclear{总}}E$ \quad $R_{\text{滑}}$不动，分压就不变]
+%%%END
+%%%BLOCK id=212-04 ch=10 sec=双表测电表内阻 kind=method exp=1 alt=none cont=none y=0.65-0.97
+\textbf{双表测电表内阻}
+
+%FIG p212_c 0.04 0.685 0.245 0.79
+\notefig[0.25]{figures/p212_c.png}
+
+$I_1r_1=I_2r_2$
+
+%FIG p212_d 0.44 0.70 0.64 0.79
+\notefig[0.25]{figures/p212_d.png}
+
+\[\frac{U_1}{r_1}=\frac{U_2}{r_2}\]
+
+%FIG p212_e 0.03 0.797 0.25 0.935
+\notefig[0.25]{figures/p212_e.png}
+
+$A_2$量程应大于$A_1$，
+
+\[I_2=I_1+\frac{I_1r_1}{R_0}\]
+
+%FIG p212_f 0.44 0.795 0.65 0.925
+\notefig[0.25]{figures/p212_f.png}
+
+\[U_2=U_1+\frac{U_1}{r_1}R_0\]
+
+即可测电表又能测电阻 % CHECK: 疑为“既可测电表又能测电阻”
+%%%END
+%%%BLOCK id=213-01 ch=10 sec=测电阻·替换法 kind=method exp=1 alt=none cont=none y=0.05-0.16
+\textbf{替换法测电阻}
+
+%FIG p213_a 0.09 0.08 0.29 0.15
+\notefig[0.25]{figures/p213_a.png}
+
+调节 $R_{\text{滑}}$ 使 $I_1=I_2$ 则 $R_x=R_0$。
+
+\hspace{2em}或 $U_1=U_2$
+%%%END
+%%%BLOCK id=213-02 ch=10 sec=测电阻·双U双I法 kind=method exp=1 alt=none cont=none y=0.15-0.30
+\textbf{双$U$双$I$法}
+
+%FIG p213_b 0.07 0.175 0.28 0.24
+\notefig[0.25]{figures/p213_b.png}
+
+\[\frac{U_1}{R_1}=\frac{U_2}{R_2}\]
+
+%FIG p213_c 0.34 0.19 0.53 0.25
+\notefig[0.25]{figures/p213_c.png}
+
+\[I_1R_1=I_2R_2\]
+%%%END
+%%%BLOCK id=213-03 ch=10 sec=测电阻·单U单I法 kind=method exp=1 alt=none cont=none y=0.30-0.41
+\textbf{单$U$单$I$法}
+
+%FIG p213_d 0.08 0.32 0.345 0.40
+\notefig[0.27]{figures/p213_d.png}
+
+测 2 次。
+%%%END
+%%%BLOCK id=213-04 ch=10 sec=测电阻·电桥法 kind=method exp=1 alt=none cont=none y=0.42-0.72
+\textbf{电桥法}
+
+%FIG p213_e 0.16 0.428 0.42 0.562
+\notefig[0.3]{figures/p213_e.png}
+
+\begin{center}
+\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{@{}lll@{}}
+若 $\dfrac{R_1}{R_2}<\dfrac{R_3}{R_x}$ & 若 $\dfrac{R_1}{R_2}>\dfrac{R_3}{R_x}$ & 若 $\dfrac{R_1}{R_2}=\dfrac{R_3}{R_x}$\\
+则 $U_1<U_1'$ & 则 $U_1>U_1'$ & 则 $U_1=U_1'$\\
+$\varphi_A>\varphi_B$ & $\varphi_A<\varphi_B$ & $\varphi_A=\varphi_B$\\
+$i$ 从 $A\to B$ & $i$ 从 $B\to A$。 & $AB$ 无电流
+\end{tabular}
+\end{center}
+%%%END
+%%%BLOCK id=213-05 ch=10 sec=滑动变阻器·分压限流接法选择 kind=method exp=1 alt=none cont=none y=0.76-0.83
+$R_{\text{测}}$ 大于 $3R_{\text{滑}}$ 用分压\quad 优：从 $0$ 开始，$R_{\text{测}}\gg R_{\text{滑}}$ 可线性调节。\quad 劣：费电费线。
+
+小于 $3R_{\text{滑}}$ 用限流\quad 优：省电省线。\quad 劣：无法从 $0$ 开始
+%%%END
+%%%BLOCK id=213-06 ch=10 sec=滑动变阻器·作用 kind=knowledge exp=1 alt=none cont=none y=0.85-0.95
+\textbf{滑变的作用}
+\begin{itemize}
+\item 保护电路
+  \begin{itemize}
+  \item 分压式：开关闭合前，短路测量电阻
+  \item 限流式：开关闭合前，滑变阻值调到最大
+  \end{itemize}
+\item 调节 $U$ 和 $I$。
+\end{itemize}
+%%%END
+%%%BLOCK id=214-01 ch=10 sec=伏安特性曲线·电阻与电阻丝 kind=knowledge alt=none cont=none y=0.07-0.30
+\textbf{伏安特性曲线}
+
+%FIG p214_a 0.09 0.12 0.28 0.22
+\notefig[0.25]{figures/p214_a.png}
+
+%FIG p214_b 0.29 0.12 0.49 0.22
+\notefig[0.25]{figures/p214_b.png}
+
+电阻/电阻丝
+
+偏$U$
+
+$I\uparrow$ \unclear{$P\uparrow$} $T\uparrow$ $\rho\uparrow$ $R\uparrow$
+
+\noindent 割线斜率 $k=\dfrac{U}{I}=R$ \qquad\qquad $k=\dfrac{I}{U}=\dfrac{1}{R}$\\[4pt]
+矩形面积 $=U\cdot I=P_{\text{瞬时}}$ \qquad\quad $S=U\cdot I=P_{\text{瞬时}}$。
+%%%END
+%%%BLOCK id=214-02 ch=10 sec=伏安特性曲线·半导体 kind=knowledge alt=none cont=none y=0.31-0.46
+半导体 \quad 温度$\uparrow$ $R\downarrow$。
+
+%FIG p214_c 0.08 0.35 0.485 0.455
+\notefig[0.45]{figures/p214_c.png}
+%%%END
+%%%BLOCK id=214-03 ch=10 sec=伏安特性曲线·标准电阻 kind=knowledge alt=none cont=none y=0.49-0.62
+标准电阻 \quad $\rho$不变
+
+%FIG p214_e 0.08 0.515 0.28 0.62
+\notefig[0.25]{figures/p214_e.png}
+
+%FIG p214_f 0.285 0.515 0.49 0.62
+\notefig[0.25]{figures/p214_f.png}
+%%%END
+%%%BLOCK id=214-04 ch=10 sec=伏安特性曲线与电源U-I图像交点 kind=method alt=none cont=none y=0.65-0.83
+伏安特性曲线与电源 $U$-$I$ 图像的交点问题（可变电阻求功率）。\quad 注意等效电源内阻/电源电动势
+
+%FIG p214_g 0.085 0.72 0.56 0.815
+\notefig[0.55]{figures/p214_g.png}
+
+\[ E=U+Ir \]
+\[ U=-Ir+E \]
+%%%END
+%%%BLOCK id=214-05 ch=10 sec=伏安特性曲线与电源U-I图像交点 kind=method alt=none cont=none y=0.83-1.00
+%FIG p214_i 0.07 0.832 0.235 0.90
+\notefig[0.25]{figures/p214_i.png}
+
+%FIG p214_j 0.24 0.835 0.425 0.955
+\notefig[0.25]{figures/p214_j.png}
+
+\[ E=2U+Ir \]
+\[ U=-\frac{Ir}{2}+\frac{E}{2} \]
+%%%END
+%%%BLOCK id=214-06 ch=10 sec=伏安特性曲线与电源U-I图像交点 kind=method alt=none cont=none y=0.80-1.00
+%FIG p214_k 0.47 0.795 0.87 0.935
+\notefig[0.4]{figures/p214_k.png}
+
+\[ E=U+2I\cdot r \]
+\[ U=-2r\cdot I+E \]
+%%%END
+%%%BLOCK id=215-01 ch=10 sec=电表改装·扩程原理 kind=knowledge alt=none cont=none y=0.03-0.24
+\textbf{电表改装} % 标题被椭圆圈住
+
+条件（左大括号）：
+\begin{itemize}
+\item 量程不够
+\item 内阻已知。（准确值）。
+\item 有定值电阻（电阻箱）。
+\end{itemize}
+
+\textcircled{A} 扩大 $n$ 倍\quad 并个 $\dfrac{R_A}{n-1}$
+
+\textcircled{V} 扩大 $n$ 倍\quad 串个 $(n-1)R_V$。
+%%%END
+%%%BLOCK id=215-02 ch=10 sec=电表改装·电流表电压表混用 kind=method alt=none cont=none y=0.25-0.41
+\textcircled{A}\,\textcircled{V}\ 混用 % “混用”被椭圆圈住，右侧大括号分两种情形
+
+%FIG p215_a 0.255 0.255 0.355 0.32
+\notefig[0.25]{figures/p215_a.png}
+
+\textcircled{A}当电压表。$U=I_AR_A$。\quad 条件\ 电阻：准确已知
+
+%FIG p215_b 0.21 0.345 0.37 0.385
+\notefig[0.25]{figures/p215_b.png}
+
+\textcircled{V}当电流表。$I=\dfrac{U}{R_V}$\quad 电表\ 内阻不变量程变
+%%%END
+%%%BLOCK id=215-03 ch=10 sec=电表改装·错改 kind=note alt=none cont=none y=0.40-0.50
+\textbf{错改} % “错改”被椭圆圈住
+
+%FIG p215_c 0.135 0.40 0.26 0.49
+\notefig[0.25]{figures/p215_c.png}
+
+%FIG p215_d 0.32 0.435 0.53 0.48
+\notefig[0.25]{figures/p215_d.png}
+
+电表 量程不变 内阻变。
+%%%END
+%%%BLOCK id=215-04 ch=10 sec=电表改装·改装电表的表盘 kind=method alt=none cont=none y=0.50-0.93
+改装电表的表盘。
+
+刻度看比例。
+
+%FIG p215_e 0.025 0.612 0.235 0.705
+\notefig[0.25]{figures/p215_e.png}
+
+$200\unit{\mu A}\to 1\unit{mA}$
+
+若重置表盘
+
+分度值 $=0.02\unit{mA}\to 0.78\unit{mA}$
+
+若不重置表盘
+
+分度值 $=4\unit{\mu A}$。
+
+$\to 156\unit{\mu A}\times 5$ 倍 $=780\unit{\mu A}=0.780\unit{mA}$
+%%%END
+%%%BLOCK id=215-05 ch=10 sec=电表改装·并联改装表的示数与偏转 kind=method alt=none cont=none y=0.58-0.76
+示数看 $U,I$。
+
+%FIG p215_f 0.30 0.62 0.70 0.755
+\notefig[0.4]{figures/p215_f.png}
+
+表头相同，改装倍数不同\quad 哪个读数大。
+
+$I_{\text{上}}<I_{\text{下}}$。
+%%%END
+%%%BLOCK id=215-06 ch=10 sec=电表改装·并联改装表的示数与偏转 kind=method alt=none cont=none y=0.58-0.80
+偏转看构造（内部）。
+
+哪个表偏转更大
+
+%FIG p215_g 0.65 0.665 0.87 0.785
+\notefig[0.25]{figures/p215_g.png}
+
+一样大。
+%%%END
+%%%BLOCK id=216-01 ch=10 sec=电表改装·校准 kind=diagram exp=1 alt=none cont=none y=0.05-0.31
+\textbf{电表校准，多组数据}
+
+%FIG p216_a 0.10 0.13 0.62 0.279
+\notefig[0.6]{figures/p216_a.png}
+
+（右图旁标注）分压式
+
+量程：标$\ge$改
+
+改表：$E\ge$量程
+%%%END
+%%%BLOCK id=216-02 ch=10 sec=多用电表·欧姆表与AV档 kind=knowledge alt=none cont=none y=0.38-0.72
+\textbf{多用电表}
+
+\begin{itemize}
+\item $\Omega$（$R_A$式）：
+  \begin{itemize}
+  \item 左$\infty$右$0$
+  \item $0\to\infty$
+  \item 刻度不均匀
+  \item 左密右疏
+  \end{itemize}
+\item $\Omega$（$R_V$式）：
+  \begin{itemize}
+  \item 左$0$右$\infty$
+  \item $0\to\infty$
+  \item 刻度不均匀
+  \item 左疏右密
+  \end{itemize}
+\end{itemize}
+
+（左侧 $R_A$ 式下方的旁注，$300$、$R$、$200$ 上方画有一条弧线自 $300$ 跨至 $200$）
+\[
+\overset{\frown}{300\quad R\quad 200}
+\]
+\[
+300-R>R-200,\qquad \therefore R<250
+\]
+
+\begin{itemize}
+\item AV.
+  \begin{itemize}
+  \item 左$0$右满
+  \item 刻度均匀：且共用刻度
+  \end{itemize}
+\end{itemize}
+%%%END
+%%%BLOCK id=216-03 ch=10 sec=多用电表·使用规则 kind=method alt=none cont=none y=0.72-1.00
+\textbf{机械调零}
+\begin{itemize}
+\item 指针\unclear{定位}螺丝
+\item 初次\unclear{碰}表
+\item 调至左侧AV档0刻线
+\end{itemize}
+
+\textbf{档位开关}
+\begin{itemize}
+\item 测完$\to$OFF档/交流电压最高档
+\item 电流电压未知$\to$先选最高档位
+\item 电阻未知$\to$先选最低档位
+\item 电阻已知$\to$测$20\,\Omega$选$\times1\,\Omega$档，低1个数量级
+\end{itemize}
+
+\textbf{欧姆调零}
+\begin{itemize}
+\item 欧姆档，换档后
+\item 先短接调零（红黑表笔\underline{短接}）\unclear{测纯阻}为0
+\item 调至右侧$\Omega$0刻线。
+\end{itemize}
+%%%END
+%%%BLOCK id=217-01 ch=10 sec=多用电表·欧姆换档与构造量程 kind=knowledge alt=none cont=none y=0.07-0.27
+\textbf{欧姆换档}：大阻小偏换大档
+
+\textbf{构造与量程}
+\begin{itemize}
+\item 阻多压大
+\item 阻多流小
+\item 阻多档高（欧姆档）
+\end{itemize}
+%%%END
+%%%BLOCK id=217-02 ch=10 sec=多用电表·电流流向 kind=diagram alt=none cont=none y=0.29-0.49
+\textbf{电流流向}：红进电表，黑出电表。
+
+\begin{center}
+\begin{minipage}[t]{0.23\linewidth}\centering
+%FIG p217_b 0.045 0.325 0.235 0.427
+\notefig[1]{figures/p217_b.png}
+测$R$两端电压
+\end{minipage}\hfill
+\begin{minipage}[t]{0.23\linewidth}\centering
+%FIG p217_c 0.265 0.335 0.435 0.427
+\notefig[1]{figures/p217_c.png}
+测$R$电流
+\end{minipage}\hfill
+\begin{minipage}[t]{0.23\linewidth}\centering
+%FIG p217_d 0.455 0.345 0.64 0.445
+\notefig[1]{figures/p217_d.png}
+测二极管正向电阻
+\end{minipage}\hfill
+\begin{minipage}[t]{0.23\linewidth}\centering
+%FIG p217_e 0.65 0.36 0.79 0.445
+\notefig[1]{figures/p217_e.png}
+测二极管反向电阻
+\end{minipage}
+\end{center}
+%%%END
+%%%BLOCK id=217-03 ch=10 sec=多用电表·欧姆表原理 kind=derivation alt=none cont=none y=0.48-0.64
+\textbf{原理}：闭合电路欧姆定律
+\[
+E=I(R_{\text{内}}+R_x)
+\]
+
+%FIG p217_a 0.04 0.495 0.28 0.655
+\notefig[0.3]{figures/p217_a.png}
+
+\[
+R_x=\frac{E}{I_{\text{总}}}-R_{\text{内}}
+\qquad
+\begin{cases}
+I=I_g, & R_x=0\to\text{表盘右}\\
+I=0, & R_x=\infty\ \text{表盘左}\\
+I=\dfrac{I_g}{2}\ \text{时}, & R_x=R_{\text{内}}\ \text{表盘中}
+\end{cases}
+\]
+% CHECK: 第三式原稿写作 "I = I/2 g"（g 写在分式右侧，应指 I_g/2）
+%%%END
+%%%BLOCK id=217-04 ch=10 sec=多用电表·欧姆调零与误差 kind=note alt=none cont=none y=0.63-0.67
+手握表笔测电阻，并联人体电阻 $R_{\text{测}}<R_{\text{真}}$
+%%%END
+%%%BLOCK id=217-05 ch=10 sec=多用电表·欧姆表原理 kind=formula alt=none cont=none y=0.66-0.82
+\textbf{推论}：中值电阻$R_{\text{中}}$ $=$ 表盘内阻 $R_{\text{内}}=\dfrac{E}{I_{\text{满}}}\ \ r+R_g+R_p$
+% CHECK: 原稿 E/I满 与 r+Rg+Rp 之间无明显等号（疑为 R内=E/I满=r+Rg+Rp）
+
+\begin{itemize}
+\item 已知 $E$、$I_{\text{满}}$、$r$、$R_g$ $\to$ 选滑变$R_p$
+\item 已知 $E$、$R_{\text{中}}$ $\to$ 选电流表$R_g$
+\end{itemize}
+
+三个方程
+\[
+\begin{cases}
+I_g=\dfrac{E}{R_{\text{内}}}=\dfrac{E}{R_{\text{中}}}\\[1.2ex]
+I_g=\dfrac{E}{R_{\text{内}}+R_x}\\[1.2ex]
+R_{\text{中}}=R_{\text{内}}
+\end{cases}
+\]
+% CHECK: 第二式左端原稿同样写作 I_g（按物理应为 I）
+%%%END
+%%%BLOCK id=217-06 ch=10 sec=多用电表·欧姆调零与误差 kind=knowledge alt=none cont=none y=0.83-1.00
+\textbf{欧姆调零本质}：调节$R_p$，补偿$r$的变化，以确保$R_{\text{内}}$为定值。
+
+\begin{itemize}
+\item 若 $E\downarrow$ \qquad\qquad $R_{\text{测}}>R_{\text{真}}$
+\item 若 $r\uparrow$ \qquad\qquad $R_{\text{测}}>R_{\text{真}}$
+\item 若 $r\uparrow$ 经欧姆调零 $R_{\text{测}}=R_{\text{真}}$ \qquad 实在不行 赋值法
+\item 若 $E\downarrow$、经欧姆调零、$R_{\text{测}}>R_{\text{真}}$
+\end{itemize}
+%%%END
+%%%BLOCK id=218-01 ch=10 sec=电学实验·选电表 kind=method exp=1 alt=none cont=none y=0.08-0.45
+\textbf{选电压表\quad 电流表}
+
+待测电压变化范围在电压表 准确测量范围内
+
+\begin{itemize}
+\item 最大电压 $U_{\max}$：
+  \begin{itemize}
+  \item 图像 $\to U_{\max}[0,U_{\max}]$ \qquad 量程 $\dfrac{1}{3}$\unclear{$\sim$}$\dfrac{2}{3}$
+  % CHECK: 第二个 U_max 与上方横线笔迹重叠、涂改不清；"量程 1/3 ∧ 2/3" 中间符号形似 ∧，疑为 ~
+  \item 电源电动势 $E$ 估算 $U_{\max}$
+  \end{itemize}
+\item 待测电阻 $R$：
+  \begin{itemize}
+  \item 额定电压 $U_{\text{额}}$ $\to$ 电压变化范围 $[0,U_{\text{额}}]$
+  \item $I_{\text{额}}$、$P_{\text{额}}$ $\to U_{\text{额}}$
+  \end{itemize}
+\item 待测电阻 $R$：
+  \begin{itemize}
+  \item $I\in[0,I_{\text{额}}]$
+  \item $U_{\text{额}}$、$P_{\text{额}}$ $\to I_{\text{额}}$
+  \end{itemize}
+\item 最大电流 $I_{\max}$：
+  \begin{itemize}
+  \item 图像 $\to I_{\max}$ $\to$ 电流 $\in[0,I_{\max}]$
+  \item 电源电动势 $E$ $\to$ 估算 $I_{\max}$。
+  \end{itemize}
+\end{itemize}
+
+$I_{\max}=\dfrac{E}{R_{\text{总}}}=\dfrac{E}{R_x+r+R_A}$ \quad 分压限流都可选择\unclear{代} \quad （限流 $r$ 再加 $+\,nR_{\text{滑}}$ \quad $n$ 一般\unclear{为}）
+%%%END
+%%%BLOCK id=218-02 ch=10 sec=电学实验·选滑变 kind=method exp=1 alt=none cont=none y=0.46-0.66
+\textbf{选滑变，}
+
+回路电流 不超过滑动变阻器 限制电流
+
+\begin{itemize}
+\item 半偏法？$\to$ 限流半偏，选最大 $R_{\text{滑}}$
+\item $\to$ 分压半偏 选最小 $R_{\text{滑}}$。
+\end{itemize}
+% 原稿此行右侧有涂改液痕迹
+
+限流 or 分压
+\begin{itemize}
+\item 限流 选大的 \qquad $2\sim5$ 倍 $R_{\text{待测}}$
+\item 分压 选小的 \qquad 越小越好
+\end{itemize}
+%%%END
+%%%BLOCK id=218-03 ch=10 sec=电学实验·选电源 kind=method exp=1 alt=none cont=none y=0.66-0.78
+\textbf{选电源}
+
+\begin{itemize}
+\item 限流半偏 \quad 选 $E$ 最大
+\item 改装电表校准电路要求 \quad 电源电动势应使改装表满偏
+\item 其他要求 \quad 应满足电压/电流调节范围
+\end{itemize}
+%%%END
+%%%BLOCK id=218-04 ch=10 sec=电学实验·实物图连线 kind=diagram exp=1 alt=none cont=none y=0.80-1.00
+\textbf{实物图}
+
+%FIG p218_a 0.03 0.80 0.82 1.0
+\notefig[0.85]{figures/p218_a.png}
+%%%END
+%%%BLOCK id=219-01 ch=10 sec=伏安法·内外接选择 kind=method exp=1 alt=none cont=none y=0.04-0.165
+\begin{itemize}
+\item \unclear{…}：$R_x\ \rule[0.5ex]{2.5em}{0.4pt}\ \sqrt{R_AR_V}$ \quad 大内偏大 \quad 小外偏小。
+% CHECK: 本行行首页边小字（约两字）无法辨认
+\item \unclear{试触}：变化大、相差大、接一块，$\dfrac{\Delta U}{U_0}\ \rule[0.5ex]{1.5em}{0.4pt}\ \dfrac{\Delta I}{I_0}$
+
+待测电阻和变化大的表接一块
+\end{itemize}
+%%%END
+%%%BLOCK id=219-02 ch=10 sec=小灯泡伏安特性·图像 kind=diagram exp=1 alt=none cont=none y=0.165-0.49
+灯泡
+
+%FIG p219_a 0.03 0.182 0.84 0.49
+\notefig[0.85]{figures/p219_a.png}
+% CHECK: 第三行左图纵轴标注形似 R（可能应为 P）
+
+（图右上侧文字）\unclear{导数函数} $y=f(x)x$，
+%%%END
+%%%BLOCK id=219-03 ch=10 sec=电学实验·电阻箱误差 kind=note exp=1 alt=none cont=none y=0.495-0.55
+电阻箱可能无法调到 4.nn$\,\Omega$，造成误差：电阻箱精确值\struck{\unclear{过}大}\red{不够}
+% CHECK: "4.nn" 原稿为字母 nn，疑为 4.00 之类；红笔在"过(?)大"处划线并在其后以红笔写"不够"，疑为改正
+%%%END
+%%%BLOCK id=226-04 ch=10 sec=电学实验·电表选择答题 kind=note exp=1 alt=none cont=none y=0.20-0.23
+电表选字母、还是选代号
+%%%END
+%%%BLOCK id=232-08 ch=10 sec=多用电表·欧姆表(旧电池) kind=note exp=1 alt=none cont=none y=0.60-0.66
+\textbf{8、}\unclear{旧}欧姆表用公式算 $R_{\text{测}}=R_{\text{真}}$\par
+（直接测 $R_{\text{测}}$偏大）
+%%%END
+%%%BLOCK id=244-03 ch=10 sec=测电源电动势和内阻·双电流表 kind=problem exp=1 alt=none cont=none y=0.34-0.46
+\begin{problem}
+%FIG p244_c 0.09 0.34 0.395 0.435
+\notefig[0.3]{figures/p244_c.png}
+\begin{solution}
+或\quad $E=I_1(R_x+R+r_{A_1})+(I_1+I_2)r$
+\[ E=I_2(r_{A_2}+R_0)+(I_1+I_2)r\qquad\text{不能重复加} \]
+忽略$A_2$分流\quad $E=I_2(r_{A_2}+R_0)+I_1r$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=274-04 ch=10 sec=滑动变阻器·分压接法 kind=note exp=1 alt=none cont=none y=0.47-0.50
+分压选\unclear{近}阻，不选大阻
+%%%END
+%%%BLOCK id=279-02 ch=10 sec=电表改装·欧姆表 kind=problem exp=1 alt=none cont=none y=0.40-0.78
+% 贴纸题（印刷体）+手写批注。原稿：题号19被圈；“×1”和“×10”的”处有红笔圈画并划线；“已知欧姆档的中央刻度为‘15’”下有下划线；“内阻”二字上有涂抹痕迹
+\begin{problem}[19]
+（12分）某同学用一节电动势为$1.50\unit{V}$的干电池，将量程为$0\sim1\unit{mA}$、内阻为$90\unit{\Omega}$的表头改装成倍率分别为“$\times1$”和“$\times10$”的双倍率欧姆表：\quad \textbf{手写：}原理：并联\unclear{…}分流% 手写，“并联”与“分”之间有一个涂改字
+
+（1）设计电路如图a所示，可知红表笔应为\underline{\quad B\quad}（填“A”或“B”\unclear{$\checkmark$}）；% 横线上手写B，“B”下有对勾
+
+（2）分析可知当K拨到\underline{\quad\struck{\unclear{1}}\,2\quad}（填“1”或“2”）时倍率为“$\times10$”；% 横线上先写的字被叉掉，改写2
+
+（3）改装后表盘的刻度如图b所示。已知欧姆档的中央刻度为“15”，则图a中定值电阻$R_1=$\underline{\quad\struck{\unclear{18}}\,1\quad}$\unit{\Omega}$、$R_2=$\underline{\quad\struck{\unclear{29}}\,9\quad}$\unit{\Omega}$；% 两处横线上原先所写的数被划去，在其上方改写1和9
+
+%FIG p279_b 0.14 0.615 0.36 0.79
+\notefig[0.3]{figures/p279_b.png}
+
+%FIG p279_c 0.35 0.655 0.66 0.785
+\notefig[0.4]{figures/p279_c.png}
+\end{problem}
+
+\textbf{手写批注：}图a中G旁：$90\unit{\Omega}$\quad $0\sim1\unit{mA}$
+
+$R_1+R_2=\unclear{12g}$
+
+$\dfrac{10}{3}\,\bigl(100+\unclear{x}$% 图b右下角，末尾被纸边切断
+
+左侧空白处手写：\unclear{改}欧姆\unclear{图}表\quad \unclear{V}
+%%%END
+%%%BLOCK id=281-03 ch=10 sec=电学实验·三句话 kind=knowledge exp=1 alt=none cont=none y=0.39-0.43
+电学实验三句话：串联分压\quad 并联分流，欧姆定律
+%%%END
+%%%BLOCK id=281-04 ch=10 sec=电阻定律·密度质量比 kind=note alt=none cont=none y=0.45-0.50
+$\rho_1=\rho_2$\quad $D_1=D_2$
+
+$L_1=L_2=2:1$\quad $R_1=R_2\Rightarrow S_2=\dfrac{1}{2}S_1$\quad $m_1:m_2=4:1$% CHECK: “L1=L2=2:1”疑为 L1:L2=2:1
+%%%END
+%%%BLOCK id=281-05 ch=10 sec=多用电表·改装 kind=knowledge exp=1 alt=none cont=none y=0.50-0.53
+用多用电表测电流量程\quad 测电表电阻\quad $U_{\text{量程}}=I_gR$\quad $E=I_g(R+r_{\text{内}})$% CHECK: I 的下标仅见一小撇，按语境读作 g
+%%%END
+%%%BLOCK id=285-09 ch=10 sec=多用电表·读数 kind=note exp=1 alt=18 cont=none y=0.49-0.52
+多用电表除欧姆表外也要估读
+%%%END
+%%%BLOCK id=288-02 ch=10 sec=闭合电路欧姆定律·灯泡并串联 kind=formula alt=none cont=none y=0.15-0.27
+并2灯\quad $E=U+2Ir$
+
+串2灯\quad $E=2U+\dfrac{U}{R_L}\,r$
+
+%FIG p288_b 0.38 0.175 0.56 0.262
+\notefig[0.25]{figures/p288_b.png}
+%%%END
+%%%BLOCK id=288-05 ch=10 sec=闭合电路欧姆定律·含滑变综合题 kind=problem alt=none cont=none y=0.79-1.00
+%FIG p288_d 0.01 0.79 0.27 0.925
+\notefig[0.3]{figures/p288_d.png}
+
+$8\,\Omega$\quad \unclear{是并联点}\quad $R_{\text{并}}=\dfrac{R}{2}$\ $\cdot$\ $R=16\,\Omega$% CHECK: “是并联点”四字不清；R/2 与 R=16Ω 之间是一个小圆点（可能是 $\therefore$）
+
+$E=9\,\mathrm{V}$
+
+\begin{align*}
+E&=4+0.25(R_2+R_1)\qquad R_1=4\,\Omega,\ I_{\max}\ \text{时}\\
+&=\text{\struck{$5+0.5\left(\tfrac{R_2}{2}+R_1\right)$}}\\
+&\phantom{=}\;4+0.25R_2+\text{\struck{$0.2$}}\,1\\
+&=5+0.25R_2+2\\
+20&=R_2+R_1\qquad R_2=16\,\Omega
+\end{align*}
+% CHECK: 倒数第二行“=5+0.25R_2+2”与上一行（4+0.25R_2+1）不一致，原样转录；第三行“+”后被划去的是“0.2”之类的小字
+%FIG p288_e 0.51 0.85 0.79 0.97
+\notefig[0.33]{figures/p288_e.png}
+
+$R_2=4\,\Omega$ 时\quad \unclear{各}左右有2次极值% CHECK: “各”字不清
+
+%FIG p288_f 0.79 0.882 0.995 0.985
+\notefig[0.25]{figures/p288_f.png}
+%%%END
+%%%BLOCK id=294-02 ch=10 sec=电表改装·电压表 kind=problem exp=1 alt=none cont=none y=0.46-0.65
+\begin{problem}[2]
+3V 精密电压表{\scriptsize（行上方小字：$1000\,\Omega$）}，改表后改装的电压表示数为精密电压表的 0.9 倍 $I_g$\unclear{测不准}）。内阻和 $R_0$ 可能误差，应将电阻调为 $R_0-\dfrac{1000}{11}\,\Omega$ % CHECK: 分母 11 与下方旁注 1000/9 不一致，原样转录
+
+（“应”字下方另有小字：9份）
+
+%FIG p294_b 0.105 0.514 0.265 0.592
+\notefig[0.3]{figures/p294_b.png}
+
+\begin{solution}
+（左侧独立算式）$\dfrac{1000}{9}$
+\begin{align*}
+I_g&=0.9I\\
+R&=\frac{10}{9}R_V
+\end{align*}
+去掉 $\frac{1}{9}$ 份 $R_V$ 即可。
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=295-01 ch=10 sec=电学实验·差值法测电阻 kind=method exp=1 alt=none cont=none y=0.04-0.31
+% 页眉线上另有一个被两条斜线划过的 G1 圆圈小图（疑为涂改）
+%FIG p295_a 0.11 0.05 0.235 0.085
+\notefig[0.25]{figures/p295_a.png}
+
+% 图中标注（已在图里）：4mA、Ig1、G1、150Ω、R大、使分压、0.6V（两处）、Ig2、G2、6mA
+%FIG p295_b 0.08 0.075 0.34 0.262
+\notefig[0.4]{figures/p295_b.png}
+
+$R_N$、使保护电路
+
+差值法\quad $+$ 偏转 $>\dfrac{1}{3}$ 满偏
+
+\[
+R_{g_1}=\frac{(I_{g_2}-I_{g_1})R_{\text{大}}}{I_{g_1}}
+\]
+%%%END
+%%%BLOCK id=296-03 ch=10 sec=多用电表·欧姆挡测元件 kind=knowledge exp=1 alt=none cont=none y=0.43-0.58
+黑接正极\quad 正向电阻
+
+\begin{tabular}{@{}l@{\hspace{2.5em}}l}
+R & 不变 \\
+C & 先向右后向左 \\
+L & 缓慢向右偏 \\
+D & 正负极电阻相差大
+\end{tabular}
 %%%END

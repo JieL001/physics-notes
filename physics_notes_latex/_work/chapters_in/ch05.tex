@@ -1529,6 +1529,395 @@ m_0g=\dfrac{GMm_0}{R^2}
 \end{solution}
 \end{problem}
 %%%END
+%%%BLOCK id=165-03 ch=05 sec=卫星变轨·椭圆轨道能量 kind=problem alt=07,06 cont=none y=0.72-0.995
+\begin{problem}
+% 剪贴印刷题干（右侧被黄色便签遮挡，行尾个别字可能被遮）；左缘（(2)问下方）有一手写小字，疑为“变”，辨认不清
+（18 分）我国的月球探测计划“嫦娥工程”分为“绕、落、回”三步。“嫦娥五号”的任务是“回”。“嫦娥五号”发射，经过中途轨道修正和近月制动之后，进入绕月圆轨道$\mathrm{I}$。“嫦娥五号”再次成功变轨进入远月点为 $P$、近月点为 $Q$ 的椭圆形轨道$\mathrm{II}$。如图所示，“嫦娥五号”探测器在 $Q$ 点附近，由大功率发动机制动、减速，以抛物线路径下落到距月面 100 m 高处进行 30 s 悬停避障，之后再缓慢竖直下降到距月面高度仅为数米处，为避免激起更多月尘，关闭发动机，做自由落体运动，落到月球表面。已知引力常量为 $G$，月球的质量为 $M$，月球的半径为 $R$，“嫦娥五号”在轨道$\mathrm{I}$上运动时的质量为 $m_0$，$P$、$Q$ 点与月球表面的距离分别为 $h_1$、$h_2$。
+%FIG p165_d 0.43 0.722 0.535 0.80
+\notefig[0.25]{figures/p165_d.png}
+\begin{enumerate}[label=(\arabic*),leftmargin=2.5em,itemsep=0pt]
+\item 求“嫦娥五号”在圆形轨道$\mathrm{I}$上运动的速度大小；
+\item 已知“嫦娥五号”与月心的距离为 $r$ 时，引力势能为 $E_p=-G\dfrac{Mm}{r}$（取无穷远处引力势能为零），其中 $m$ 为此时“嫦娥五号”的质量。若“嫦娥五号”在轨道$\mathrm{II}$上运动的过程中，动能和引力势能相互转换，它们的总量保持不变。已知“嫦娥五号”经过 $Q$ 点的速度大小为 $v$，请根据能量守恒定律求它经过 $P$ 点时的速度大小。
+\item “嫦娥五号”在 $P$ 点由轨道$\mathrm{I}$变为轨道$\mathrm{II}$的过程中，发动机沿轨道的切线方向瞬间一次性喷出一部分气体，已知喷出的气体相对喷气后“嫦娥五号”的速度大小为 $u$，求喷出的气体的质量。
+\end{enumerate}
+\begin{solution}
+(1) 万有引力提供向心力
+\[
+\frac{GMm_0}{(R+h_1)^2}=\frac{m_0v_1^2}{R+h_1}\qquad v_1=\sqrt{\frac{GM}{R+h_1}}
+\]
+(2) 机械能守恒
+\[
+\frac{1}{2}mv^2-\frac{GMm}{R+h_2}=\frac{1}{2}mv_{\mathrm{II}P}^2-\frac{GMm}{R+h_1}
+\]
+\[
+v_{\mathrm{II}P}=\sqrt{v^2+2GM\left(\frac{1}{R+h_1}-\frac{1}{R+h_2}\right)}
+\]
+(3) 设喷气质量 $\Delta m$，由动量守恒
+\[
+m_0v_1=(m_0-\Delta m)v_{\mathrm{II}P}+\Delta m\,(v_{\mathrm{II}P}+u)
+\]
+\[
+\Delta m=\frac{m_0}{u}\left[\sqrt{\frac{GM}{R+h_1}}-\sqrt{v^2+2GM\left(\frac{1}{R+h_1}-\frac{1}{R+h_2}\right)}\right]
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=188-03 ch=05 sec=卫星运行规律 kind=note alt=none cont=none y=0.13-0.16
+高轨低速大周期大机大势小引力% 原稿与上一条“释放光子．”同一行的右半部分
+%%%END
+%%%BLOCK id=188-05 ch=05 sec=开普勒定律与中心天体 kind=note alt=none cont=none y=0.19-0.28
+4、$\dfrac{r^3}{T^2}=\dfrac{GM}{4\pi^2}$ 与中心天体 $M$ 有关（绕的中心不同就不成立）
+
+%FIG p188_b 0.17 0.222 0.275 0.27
+\notefig[0.25]{figures/p188_b.png}
+
+地球\quad $v_P=\sqrt{g_{\mathrm{I}}r_{\mathrm{I}}}\neq\sqrt{g\,r_{\text{地球}}}$% 图中小圆旁标“地球”，圆下标 Ⅰ、P
+%%%END
+%%%BLOCK id=188-06 ch=05 sec=卫星运行规律 kind=note alt=none cont=none y=0.28-0.32
+5、同点同 $a$ 大圆大 $v$\quad 力用 $\dfrac{GMm}{r^2}$ 比．$a=\dfrac{GM}{r^2}$
+%%%END
+%%%BLOCK id=188-07 ch=05 sec=航天器·机械能守恒 kind=note alt=06 cont=none y=0.32-0.35
+6、无动力飞行机械能守恒% 原稿此行有下划线
+%%%END
+%%%BLOCK id=188-10 ch=05 sec=卫星变轨·圆轨道与椭圆轨道比较 kind=note alt=none cont=none y=0.46-0.61
+%FIG p188_c 0.05 0.458 0.27 0.568
+\notefig[0.25]{figures/p188_c.png}
+
+$r_{\text{甲}}=r_{\text{乙}}$% CHECK: “乙”手写近似“2”，图中椭圆右端亦有类似“乙”的标记
+
+近地点 $a_{\text{乙}}>a_{\text{甲}}$\quad\quad $a=\dfrac{\Delta v}{\Delta t}$ or $\dfrac Fm$\quad $a$ 与卫星质量无关．
+
+由开三 $T_{\text{甲}}=T_{\text{乙}}$
+
+相同时间内扫过面积不同
+
+构造的轨道．（其上方有一箭头指向图中椭圆下方）
+%%%END
+%%%BLOCK id=188-12 ch=05 sec=同步卫星 kind=note alt=none cont=none y=0.66-0.76
+9、$V_{\text{倾斜轨}}=V_{\text{同步}}$ 但动能 $\dfrac12mv^2$ 要比动能要有质量关系．% 原稿“要比动能要有质量关系”下有下划线
+
+$V_{\text{同步}}>V_{\text{月绕地}}$\quad 同步轨道 $3.6\times10^4\unit{km}$\quad 地球半径 $6.4\times10^3\unit{km}$
+
+$T_{\text{同步}}=30\unit{h}$\quad 高轨低速大周期大机大势小引力% CHECK: 同步卫星周期应为 24h，原稿疑写作 30（或 24 误辨）
+%%%END
+%%%BLOCK id=188-14 ch=05 sec=天体追及·未知行星B kind=problem alt=none cont=none y=0.84-1.00
+\begin{problem}[11]
+A 每 $t_0$ 发生一次最大偏离．（A 外有一颗未知行星 B），与 A 同方向绕行 求 B 参数．
+
+%FIG p188_d 0.02 0.83 0.21 0.925
+\notefig[0.25]{figures/p188_d.png}
+
+\begin{solution}
+$\dfrac{t_0}{T_A}-\dfrac{t_0}{T_B}=1$．\quad $T_B=\dfrac{T_At_0}{t_0-T_A}$\quad $\dfrac{GMm'}{R_B^{2}}=m'\left(\dfrac{2\pi}{T_B}\right)^{2}R_B$．
+
+$R_B=\sqrt[3]{\left(\dfrac{t_0}{t_0-T_A}\right)^{2}}$% CHECK: 根号前疑漏 R_0
+
+$V_B=\dfrac{2\pi R_B}{T_B}=\dfrac{2\pi R_0}{T_0}\sqrt[3]{\dfrac{t_0-T_A}{\text{\unclear{…}}}}$\quad $a_B=\dfrac{V_B^{2}}{R_B}=\dfrac{4\pi^{2}R_0}{T_0^{2}}\sqrt[3]{\dfrac{(t_0-T_A)^{4}}{t_0}}$% CHECK: 页底被截断，两处根号内分母不完整（第一处只见残笔，第二处只见 t_0，指数可能被截）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=189-02 ch=05 sec=卫星变轨·椭圆轨道与圆轨道比较 kind=note alt=none cont=none y=0.11-0.31
+% 本块的圆/椭圆图与上一行 1、 的文字在页面上有重叠（图中的大圆为较淡的“构造轨道”）；图中有两条细长斜线自页顶贯穿到图内
+2、
+
+%FIG p189_a 0.0 0.105 0.46 0.31 soft
+\notefig[0.5]{figures/p189_a.png}
+
+$S_2<S_3$（$T$ 同）
+
+$\mathrm{II}$ $\mathrm{III}$ 在 $P$ 点 $a$ 相同 但 $a_{\text{向}}$ 不同 ☆% CHECK: “a向”二字写得潦草，疑为 a_向（向心加速度）；原稿“a向不同”下有下划线
+
+$V_{2E}<V_4<V_3<V_1<V_{2B}$
+%%%END
+%%%BLOCK id=189-03 ch=05 sec=天体质量·绕火星运动半径 kind=problem alt=none cont=none y=0.31-0.47
+\begin{problem}[3]
+行星绕火星以 $v$ 匀圆周运动．$M_{\text{地}}=QM_{\text{火}}$．$R_{\text{地}}=R$．$g_{\text{地}}=g$．求绕火星运动半径？
+\begin{solution}
+$\dfrac{GMm}{R^2}=mg$\quad $GM=gR^2$
+
+$M_{\text{火}}=\dfrac{M_{\text{地}}}{Q}$
+
+$\dfrac{G\dfrac{M_{\text{地}}}{Q}m_1}{r^2}=m_1\dfrac{v^2}{r}$\quad $r=\dfrac{GM}{Qv^2}=\dfrac{gR^2}{Qv^2}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=189-05 ch=05 sec=卫星变轨·高轨与低轨 kind=note alt=none cont=none y=0.50-0.54
+5、高轨 $\to$ 低轨 要减速制动 向前喷气 $E_{\text{机}}\downarrow$% 原稿“减速制动 向前喷气 E机↓”下有下划线
+%%%END
+%%%BLOCK id=189-08 ch=05 sec=同步卫星·轨道半径与高度 kind=note alt=none cont=none y=0.57-0.66
+% 序号 6 被页边遮挡，据顺序补为 6
+6、$r=\sqrt[3]{\dfrac{GMT^2}{4\pi^2}}$\quad $\dfrac{r_{\text{火}}}{r_{\text{地}}}=\sqrt[3]{\dfrac{M_{\text{火}}T_{\text{火自}}^{2}}{M_{\text{地}}T_{\text{地自}}^{2}}}$\quad 但卫星高度 $h=r-R$．故卫星高度比不等于轨道半径之比 ☆% 原稿“h=r-R．故卫星高度比不等于轨道半径之比”下有下划线
+
+$V=\sqrt{\dfrac{GM}{R}}$\quad\quad $g=\dfrac{GM}{R^2}$
+%%%END
+%%%BLOCK id=189-09 ch=05 sec=天体质量·探测器激光测距 kind=problem alt=none cont=none y=0.66-0.78
+\begin{problem}[7]
+探测器向火星表面发射一束激光，经过时间 $t$，收到传回的信号．相邻两次看到日出的时间间隔为 $T$．测得探测器速度为 $V$．（其下一行右侧注：绕火星转的周期为 $T$）% 原稿“相邻两次看到日出的时间间隔为T”下有下划线
+\begin{solution}
+（行间小字：探测器质量，）算不了行星质量（消去了），% CHECK: 小字“探测器质量，”写在下一行行首之上，语义疑为“探测器质量算不了，……（消去了）”
+
+探测器到火星表面距离为 $h=\dfrac{ct}{2}$\quad $v=\dfrac{2\pi r}{T}$\quad $r=\dfrac{vT}{2\pi}$
+
+则火星半径 $R=r-h=\dfrac{vT}{2\pi}-\dfrac{ct}{2}$\quad $\dfrac{GMm}{r^2}=\dfrac{mv^2}{r}$\quad $M=\dfrac{v^3T}{2\pi G}$% CHECK: 末式分子处有涂黑的墨团，T 上方似有横线
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=189-12 ch=05 sec=天体密度·探测器绕火星 kind=problem alt=none cont=none y=0.86-1.00
+\begin{problem}[9]
+（行间小字：探测器绕火星）飞 $N$ 圈用时 $t$．
+\begin{solution}
+$T=\dfrac tN$\quad $V=\dfrac{2\pi r}{T}=\dfrac{2\pi Nr}{t}$\quad $a_{\text{向}}=\dfrac{v^2}{r}=\dfrac{4\pi^2N^2r}{t^2}$% CHECK: 末式分母 t^2 前似有一短横
+
+$M_{\text{地}}=M$\quad $R_{\text{地}}=R$\quad $r_{\text{火}}=r$\quad $g_{\text{地}}=g$．
+
+$\dfrac{GM_{\text{火}}m}{r^2}=\dfrac{mv^2}{r}$\quad $M_{\text{火}}=\rho\,\dfrac43\pi r^3$\quad $GM_{\text{火}}=gR^2$\quad $\therefore\rho_{\text{火星}}=\dfrac{3\pi MN^2}{gR^2t^2}$% CHECK: “GM_火=gR^2”中的下标似为“火”，按上文应为地球的 GM_地=gR^2
+
+（小字：探测器质量约去了）
+
+自转周期求不了\quad 求 $\rho$ 要有 $m$% CHECK: 末字可能是 M（地球质量）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=190-03 ch=05 sec=变轨·离心近心运动 kind=knowledge alt=none cont=none y=0.115-0.235
+3.
+%FIG p190_a 0.058 0.115 0.20 0.162
+\notefig[0.25]{figures/p190_a.png}
+\[
+a_2r_2>v_2^2\qquad a_1>a_2\qquad v_1>v_2\qquad a_1r_1<v_1^2
+\]
+离心运动\quad $\dfrac{GMm}{r_1^2}<m\dfrac{v_1^2}{r_1}$\quad $\dfrac{GMm}{r_1^2}=ma_1$
+
+近心运动\quad $\dfrac{GMm}{r_2^2}>\dfrac{mv_2^2}{r_2}$\quad $\dfrac{GMm}{r_2^2}=ma_2$
+%%%END
+%%%BLOCK id=190-05 ch=05 sec=星球表面平抛测g·近地卫星综合 kind=problem alt=03,04 cont=none y=0.285-0.74
+5.
+\begin{problem}
+研究人员在某星球表面，将小球以$v_0$平抛\red{求$g$}，落地点与抛出点水平距离为$x$，在该星球发卫星，在近地\unclear{处}以$a$匀加速运动\red{求$m$}。卫星对支持面压力为$F$，该星球近地卫星周期$T$，引力常量$G$，不考虑自转。 % 原稿“平抛”与“匀加速运”下有红线，红字“求g”写在“平抛”上方、“求m”写在“匀加速运动”下方 % CHECK: 题干未给出高度h，但解答中用到h
+\begin{solution}
+\[
+\frac{GMm}{R^2}=\frac{m4\pi^2}{T^2}R\qquad \rho=\frac{M}{V}\qquad V=\frac43\pi R^3\qquad \rho=\frac{3\pi}{GT^2}\qquad \text{设卫星质量}\,m
+\]
+\textit{向上匀加速}
+
+由牛二\quad $F-mg=ma$
+\[
+\begin{cases}
+h=\dfrac12gt^2\\[2mm]
+x=v_0t
+\end{cases}
+\]
+\[
+\therefore g=\frac{2v_0^2h}{x^2}\qquad m=\frac{Fx^2}{2v_0^2h+x^2a}
+\]
+\[
+\frac{Gm\rho\cdot\frac43\pi R^3}{R}=mg\ \Rightarrow\ R=\frac{v_0^2hT^2}{2\pi^2x^2} % CHECK: 左式分母原稿为R，物理上似应为R^2，照原样转录
+\]
+\[
+v_{\text{近地}}=\sqrt{gR}=\frac{v_0^2hT}{\pi x^2}
+\]
+高空环绕
+\begin{gather*}
+\frac{Gm\cdot M}{(R+H)^2}=F_{\text{向}}\qquad GM=gR^2\qquad g=\frac{2v_0^2h}{x^2}\\
+R=\frac{v_0^2hT^2}{2\pi^2x^2}\qquad m=\frac{Fx^2}{2v_0^2h+x^2a}\\
+F_{\text{向}}=\frac{2Fv_0^2h}{2v_0^2h+x^2a}\cdot\left(\frac{v_0^2hT^2}{v_0^2hT^2+2\pi^2x^2H}\right)^2
+\end{gather*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=190-08 ch=05 sec=天体表面·重力加速度与自转 kind=problem alt=none cont=none y=0.82-0.98
+6.
+\begin{problem}
+由于自转，赤道与两极的$g$不同，两极处为$g$，自转周期$T$，引力常量$G$，求赤道$g$？
+\begin{solution}
+两极处\quad $\dfrac{GMm}{R^2}=mg$
+
+赤道处\quad $\dfrac{GMm}{R^2}-mg_{\text{赤}}=m\left(\dfrac{2\pi}{T}\right)^2R$\quad $M=\dfrac43\pi R^3\rho$
+
+$\therefore g_{\text{赤}}=g\left(1-\dfrac{3\pi}{G\rho T^2}\right)$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=191-01 ch=05 sec=卫星运行规律·面积速率 kind=problem alt=none cont=none y=0.04-0.19
+% 页面右上角叠放着另一张纸(化学笔记)的边缘，其上文字(“n CO2 … 燃烧得CO和CO2混合气体 … CO为0.4·3/4×22.4=6.72L”等)属相邻页，未转录
+1.
+\begin{problem}
+卫星绕地球匀圆，地球半径$R$，表面重力加速度$g$，轨道半径$r$，则卫星与地心连线单位时间扫过的面积？ % 原稿“表面”二字为小字，插写在“重力”上方
+\begin{solution}
+\[
+\frac{GMm}{r^2}=\frac{mv^2}{r}\qquad \frac{GMm'}{R^2}=m'g\qquad S=\frac{vr}{2}=\frac{R}{2}\sqrt{gr}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=191-03 ch=05 sec=卫星离轨·能量 kind=knowledge alt=11,12 cont=none y=0.19-0.32
+3.
+%FIG p191_a 0.07 0.19 0.275 0.31
+\notefig[0.25]{figures/p191_a.png}
+
+\underline{安培力处处不等（地磁不均匀）} % 原稿此行下划线，并被一条弧线(自图中“空心导体”下方向右上延伸)斜穿
+
+离轨\quad 安培力做负功，万有引力做正功\quad 故动能不一定减小。
+%%%END
+%%%BLOCK id=191-05 ch=05 sec=天体质量变化·运行参量 kind=note alt=none cont=none y=0.44-0.51
+5.\ 若$M_{\text{地球}}\uparrow$，$M_{\text{月球}}$不变，\ $F_{\text{引}}=\dfrac{GMm}{R^2}\uparrow$\quad $v=\sqrt{\dfrac{GM}{R}}\uparrow$\quad $T=\dfrac{2\pi R}{v}\downarrow$，$R\downarrow$\ （月球做近心运动） % F的下标原稿形似“31”，按“引”转录
+%%%END
+%%%BLOCK id=191-07 ch=05 sec=天体质量密度·环绕天体 kind=note alt=none cont=none y=0.52-0.58
+7.\ 无法算环绕天体质量（及力、动量、功能）与$m$有关） % CHECK: 括号不配对(原稿共一个左括号、两个右括号)，照原样转录
+%%%END
+%%%BLOCK id=191-09 ch=05 sec=变轨·天问一号 kind=note alt=none cont=none y=0.65-0.72
+9.\ 天问一号到火星轨道\unclear{时}与地球间距\underline{不是}极值（不同$T$） % CHECK: “轨道”后一字(及其上方的小字)字迹缠绕难辨，按语义猜“时”
+
+匀圆\quad $\vec{a}\ \vec{v}\ \vec{F}\ \vec{p}$都变化，$E_k$不变
+%%%END
+%%%BLOCK id=191-10 ch=05 sec=月球着陆·反冲力 kind=note alt=02,03 cont=none y=0.72-0.80
+10.\ $g_{\text{月}}=1.7\unit{m/s^2}$\quad $v=\sqrt{2g_{\text{月}}h}$\quad 飞船
+%FIG p191_b 0.431 0.733 0.515 0.785
+\notefig[0.25]{figures/p191_b.png}
+
+$F_{\text{反冲力}}=mg_{\text{月}}$\quad 飞船着陆过程$E_{\text{机}}$不守恒
+%%%END
+%%%BLOCK id=191-11 ch=05 sec=天体质量变化·运行参量 kind=note alt=none cont=none y=0.80-0.87
+11.\ 把月\unclear{地}土运\unclear{回}地球，中心距离不变\quad $F=\dfrac{GMm}{r^2}\downarrow$\quad $M+m=C$\quad $M-m\uparrow$\quad $Mm\downarrow$ % CHECK: “月”后一字、“运”后一字难辨；意思应为把月球上的土运回地球
+
+\hspace{4em}$T=2\pi\sqrt{\dfrac{r^3}{GM}}\downarrow$\quad $M\uparrow$\quad $a_{\text{向}}=\dfrac{GM}{r^2}\uparrow$\quad $g=\dfrac43\pi\rho GR$\quad $R\downarrow\ g\downarrow$
+%%%END
+%%%BLOCK id=191-13 ch=05 sec=卫星变轨·椭圆轨道能量 kind=derivation alt=none cont=none y=0.885-1.00
+12.
+%FIG p191_c 0.055 0.886 0.285 0.957
+\notefig[0.25]{figures/p191_c.png}
+
+2\unclear{的椭圆}长轴为$a$
+
+两卫星到C时速率相等\quad $-\dfrac{GMm}{2a}=-\dfrac{GMm}{2R}$\quad $\therefore R=a$\quad 故$\unclear{OA}=\unclear{OC}=R=a$
+
+势能相同\qquad $E_{\text{机}}$也相同
+
+由$\dfrac{R^3}{T_1^2}=\dfrac{a^3}{T_2^2}$\quad $\therefore T_1=T_2$\qquad $E_{\text{机}}=-\dfrac{GMm}{2a}$\qquad 近地$v_3>v_2$\qquad $E_2<E_3$
+%%%END
+%%%BLOCK id=192-08 ch=05 sec=多星系统·四星 kind=problem alt=none cont=none y=0.50-0.70
+6.
+%FIG p192_b 0.05 0.515 0.18 0.592
+\notefig[0.25]{figures/p192_b.png}
+
+\begin{problem}
+$G$\ 四星系统
+\begin{solution}
+\[
+d=\frac{\sqrt3}{3}L
+\]
+做圆周运动的半径\ $r=d=\dfrac{\sqrt3}{3}L$
+
+顶点处\ $F_{\text{向}}=2\dfrac{Gm^2}{L^2}\cos30^\circ+\dfrac{Gm^2}{r^2}=\dfrac{(3+\sqrt3)Gm^2}{L^2}$
+
+由牛二\ $F_{\text{向}}=m\omega^2r$\quad $\omega=\sqrt{\dfrac{(3+3\sqrt3)Gm}{L^3}}$\quad $\checkmark$
+
+$T=\dfrac{2\pi}{\omega}=2\pi\sqrt{\dfrac{L^3}{(3+3\sqrt3)Gm}}$\quad $\checkmark$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=192-09 ch=05 sec=黑洞·恒星S2绕行 kind=problem alt=none cont=none y=0.70-0.99
+7.
+\begin{problem}
+恒星$S_2$绕黑洞一周16年，离黑洞中心的最近距离为120个天文单位，椭圆半长轴为970天文单位，（地球绕太阳圆周运动的轨迹半径为1天文单位）。恒星$S_2$最高运行速率为$7000\unit{km/s}$。 % 原稿“120”上方标有小字d_1；“120”首位的“1”笔画较细
+\begin{solution}
+\[
+v_{\text{近}}r_{\text{近}}=v_{\text{远}}r_{\text{远}}\qquad r_{\text{远}}=1820\text{天文单位}=(2a-d_1) % 原稿“r远=1820天文单位=(2a-d1)”被一个椭圆圈起
+\]
+算不了恒星$S_2$质量
+%FIG p192_e 0.325 0.812 0.612 0.925
+\notefig[0.3]{figures/p192_e.png}
+\[
+\frac{GM_{\text{黑}}m_{\text{恒}}}{r^2}=m_{\text{恒}}\frac{4\pi^2}{T^2}r
+\]
+\[
+\frac{GM_{\text{日}}M_{\text{地}}}{r_{\text{地}}^2}=m_{\text{地}}\frac{4\pi^2}{T^2}r_{\text{地}}
+\]
+\[
+\frac{M_{\text{黑}}}{M_{\text{日}}}=\frac{r^3T_{\text{地}}^2}{r_{\text{地}}^3T^2}=\frac{970^3\cdot1^2}{1^3\times16^2}=3.6\times10^6
+\]
+\[
+a_{\text{近}}=\frac{GM_{\text{黑}}}{r_{\text{近}}^2}\qquad a_{\text{地}}=\frac{GM_{\text{日}}}{r_{\text{地}}^2}\qquad \frac{a_{\text{近}}}{a_{\text{地}}}=248
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=193-01 ch=05 sec=卫星轨道·MEO_GTO_GEO kind=diagram alt=none cont=none y=0.0-0.115
+% 页面右上角叠放着另一张纸(化学笔记)的边缘，其上文字(“燃烧得CO和CO2混合气体 ρ=1.429g·L^-1 … CO为0.4·3/4×22.4=6.72L … 为ρ g/ml的密…”等)属相邻页，未转录；页面顶端被裁掉一截，最上一行文字残缺
+%FIG p193_a 0.04 0.0 0.39 0.112
+\notefig[0.4]{figures/p193_a.png}
+
+\unclear{MEO\ 4200\,km}\,/\,4200\,km\ （中圆轨道）。
+
+GTO\ 200\,km\,/\,36000\,km
+
+GEO\ 36000\,km\,/\,36000\,km
+
+$R_{\text{地}}=6400\,\mathrm{km}$。
+%%%END
+%%%BLOCK id=193-02 ch=05 sec=椭圆轨道·远近点速度比 kind=derivation alt=none cont=none y=0.115-0.40
+\[
+v_{\text{远}}r_{\text{远}}=v_{\text{近}}r_{\text{近}}
+\]
+由机械能守恒
+\[
+\frac12mv_{\text{近}}^2-\frac{GMm}{r_{\text{近}}}=\frac12mv_{\text{远}}^2-\frac{GMm}{r_{\text{远}}}
+\]
+\[
+v_{\text{远}}=\sqrt{\frac{2GMr_{\text{近}}}{r_{\text{远}}(r_{\text{远}}+r_{\text{近}})}}
+\]
+\[
+\frac{GMm}{r_{\mathrm{GEO}}^2}=m\frac{v_{\mathrm{GEO}}^2}{r_{\mathrm{GEO}}}\qquad v_{\mathrm{GEO}}=\frac{\sqrt{GM}}{\sqrt{r_{\mathrm{GEO}}}}\qquad \frac{v_{\text{远}}}{v_{\mathrm{GEO}}}=\sqrt{\frac{2r_{\text{近}}r_{\mathrm{GEO}}}{r_{\text{远}}(r_{\text{远}}+r_{\text{近}})}}
+\]
+\[
+r_{\mathrm{GEO}}=r_{\text{远}}\qquad \therefore\ \frac{v_{\text{远}}}{v_{\mathrm{GEO}}}=\sqrt{\frac{2r_{\text{近}}}{r_{\text{远}}+r_{\text{近}}}}\approx0.52
+\]
+%%%END
+%%%BLOCK id=193-03 ch=05 sec=同步卫星·MEO与GEO比较 kind=derivation alt=none cont=none y=0.15-0.46
+GEO是地球同步轨道\quad $T=24\,\mathrm{h}$
+\[
+\frac{T_{\mathrm{MEO}}^2}{r_{\mathrm{MEO}}^3}=\frac{T_{\mathrm{GEO}}^2}{r_{\mathrm{GEO}}^3}\qquad \omega=\frac{2\pi}{T}
+\]
+（\unclear{开三}） % 原稿此二字为写在上式等号上方的小字(疑指开普勒第三定律)
+\[
+\therefore\ \frac{\omega_{\mathrm{MEO}}}{\omega_{\mathrm{GEO}}}=\sqrt{\frac{r_{\mathrm{GEO}}^3}{r_{\mathrm{MEO}}^3}}
+\]
+地心与MEO、GEO的连线在\fbox{单位时间内}扫过\fbox{面积}比值 % 原稿“单位时间内”被方框圈起，“面积”被圆圈圈起并有箭头指向下方的S公式
+\[
+\frac{\frac12\omega_{\mathrm{MEO}}r_{\mathrm{MEO}}^2\Delta t}{\frac12\omega_{\mathrm{GEO}}r_{\mathrm{GEO}}^2\Delta t}=0.5
+\]
+\[
+S=\frac12v\cdot r\Delta t=\frac12\omega r^2\Delta t
+\]
+%%%END
+%%%BLOCK id=193-05 ch=05 sec=变轨·平轨变垂轨 kind=method alt=none cont=none y=0.44-0.62
+平轨变垂轨。
+%FIG p193_b 0.02 0.445 0.365 0.552
+\notefig[0.4]{figures/p193_b.png}
+
+\underline{向前下方}喷气可变垂轨\quad \unclear{移}平面 % “平面”前一字难辨
+%FIG p193_c 0.39 0.525 0.52 0.61
+\notefig[0.25]{figures/p193_c.png}
+%%%END
+%%%BLOCK id=193-06 ch=05 sec=变轨·返回器与椭圆轨道 kind=note alt=none cont=none y=0.58-0.68
+%FIG p193_d 0.045 0.592 0.232 0.655
+\notefig[0.25]{figures/p193_d.png}
+
+返回器在I上运动向$P$运动时\ 地球对它引力做正功，机械能守恒
+
+两次在$P$点\ 大圈大$v$
+%%%END
+%%%BLOCK id=193-08 ch=05 sec=卫星运行规律·天琴二号与静止轨道卫星 kind=derivation alt=none cont=none y=0.68-0.80
+天琴二号\ 高400$\mathrm{km}$轨道，\underline{$v_{\text{天琴}}<v_{\text{第一宇宙速度}}$}
+\[
+\left(\frac{T_2}{T_1}\right)^2=\left(\frac{r_2}{r_1}\right)^3\qquad T_1=24\,\mathrm{h}\qquad r_1=\unclear{6400}\,\mathrm{km}\qquad T_2=1.4\,\mathrm{h}
+\]
+地球静止轨道卫星离\underline{地面高度}约为\underline{地球半径}6倍。
+
+向心加速度\quad $\dfrac{a_{\text{天琴}}}{a_{\text{静轨}}}=\dfrac{112^2}{17^2}=\left(\dfrac{6\times6400}{6800}\right)^2$ % CHECK: 括号内首个数字形似6，但由112/17(=7×6400/6800)似应为7；照原样转录；r_1的数值也难辨
+%%%END
+%%%BLOCK id=193-09 ch=05 sec=开普勒定律·面积定律 kind=knowledge alt=none cont=none y=0.78-0.84
+越近$a$越大\quad \fbox{同一\underline{椭圆}}轨道才符合（\unclear{卫星}与中心天体连线）单位时间扫过面积相等 % 原稿“同一椭圆”被大圆圈圈起；小字“(卫星)与中心天体连线”插写在“符合”与“单位时间”之间，前两字难辨
+%%%END
 %%%BLOCK id=195-01 ch=05 sec=卫星相遇·周期问题 kind=problem alt=none cont=none y=0.03-0.26
 \begin{problem}
 火星同步卫星圆周轨道半径为$R$，火星自转一周为1个火星日。探测器在火星赤道正上方环绕火星匀圆，环绕方向与火星自转同向。每6个火星日经赤道上空同一位置。该火星环绕周期为$n$个火星日，轨道半径为$r$
@@ -1542,4 +1931,60 @@ n=\frac{6}{7}\ \text{or}\ \frac{6}{5}
 \]
 \end{solution}
 \end{problem}
+%%%END
+%%%BLOCK id=221-09 ch=05 sec=开普勒定律·椭圆轨道 kind=method alt=none cont=none y=0.78-0.83
+\textbf{8、}椭圆运动用 $v_1r_1=v_2r_2$\quad 椭圆周长$\pi a$。$\leftarrow$用动能定理\quad 时间用 $\dfrac{r_1^3}{T_1^2}=\dfrac{r_2^3}{T_2^2}$（$r_1^3$ 上方标“椭”，$r_2^3$ 上方标“圆”） % CHECK: “椭圆周长πa”难辨
+%%%END
+%%%BLOCK id=270-03 ch=05 sec=卫星·追及相遇 kind=method alt=04 cont=none y=0.125-0.20
+%FIG p270_a 0.12 0.125 0.29 0.17
+\notefig[0.25]{figures/p270_a.png}
+以$M$为参\ $N$做圆周运动 % 原稿“参”字后未写完（疑为“参考系”）
+%%%END
+%%%BLOCK id=271-03 ch=05 sec=万有引力·空腔（割补法） kind=knowledge alt=none cont=none y=0.44-0.53
+%FIG p271_b 0.06 0.45 0.175 0.54
+\notefig[0.2]{figures/p271_b.png}
+空腔中加速度恒定\ 指向地心
+%%%END
+%%%BLOCK id=271-05 ch=05 sec=天体质量·密度 kind=formula alt=none cont=none y=0.575-0.65
+%FIG p271_d 0.06 0.575 0.165 0.65
+\notefig[0.2]{figures/p271_d.png}
+\[
+M=\frac{\pi^2(2R+ct)^3}{2GT^2}
+\]
+图中标注$R$与$\dfrac{ct}{2}$。
+%%%END
+%%%BLOCK id=271-06 ch=05 sec=宇宙速度·黑洞 kind=derivation alt=none cont=none y=0.67-0.77
+太阳变成黑洞\ $\therefore V_{\mathrm{II}}=C$.
+\[
+\sqrt2\sqrt{\frac{GM}{R}}=C\qquad R=\left(\frac{3M}{4\rho\pi}\right)^{\frac13}\qquad\rho=\frac{3C^6}{32\pi G^3M^2}
+\] % 原稿：从$\sqrt{GM/R}$的分母R画弧线箭头指向$R=(\cdots)^{1/3}$
+%%%END
+%%%BLOCK id=285-07 ch=05 sec=开普勒定律·面积速度 kind=formula alt=none cont=none y=0.31-0.35
+天体转动面积\quad $S=\dfrac12\sqrt{GMr}=\dfrac12\sqrt{\dfrac{GM}{r}}\,v$% CHECK: 末项手写像 v（面积速度应为 S=½rv，可能是 r）
+%%%END
+%%%BLOCK id=287-01 ch=05 sec=同步卫星·太空电梯 kind=derivation alt=04 cont=none y=0.00-0.34
+\textbf{太空电梯}
+
+%FIG p287_a 0.09 0.032 0.30 0.13 soft
+\notefig[0.25]{figures/p287_a.png}
+
+A：地球引力对航天员加速度与 $r$ 反比
+
+B：地球自转产生向心加速度的 $r$ 反比% CHECK: B 行末手写与 A 行相同（像“反比”），但自转向心加速度应与 r 成正比
+
+$r$ 为航天员离地心距离。
+
+$R=6400\unit{km}$\quad $\omega_{\text{地自}}=7.3\times10^{-5}\unit{rad/s}$
+
+$r_0=6.6R$（同步卫星轨道半径）\quad 此时 $F_{\text{人地}}=0$。
+
+在 $r=R$ 处 $v$ 小于第一宇宙速度。
+
+\begin{gather*}
+\frac{GMm}{r^2}-F_N=m\omega^2r\\
+F_N=\frac{GMm}{r^2}-m\omega^2r\qquad r\uparrow\ F_N\downarrow\\
+r=r_0\ \text{时}\quad \frac{GMm}{r^2}=m\omega^2r\quad F_N=0\\
+r>r_0\ \text{时}\quad \frac{GMm}{r^2}+F_N=m\omega^2r\quad F_N\ \text{反向}\uparrow\\
+r\uparrow\quad F\ \text{先}\downarrow\text{到0后反向}\uparrow
+\end{gather*}
 %%%END

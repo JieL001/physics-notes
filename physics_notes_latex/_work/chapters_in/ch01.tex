@@ -178,7 +178,481 @@ $V^2=2ax$\quad $\dfrac{V^2}{2}=ax=$\ $a$-$x$图面积为$\dfrac{V^2}{2}$
 
 设 $S=v_0t+\tfrac12at^2$\quad 设标准式\ 防止有\unclear{±}方. % CHECK: “防止有±方”末几字不确定
 %%%END
+%%%BLOCK id=170-02 ch=01 sec=打点计时器·纸带处理 kind=method exp=1 alt=none cont=none y=0.20-0.67
+\fbox{测$a$：}\quad 纸带
+
+%FIG p170_a 0.29 0.225 0.48 0.28
+\notefig[0.3]{figures/p170_a.png}
+
+先接通电源再释放小车．
+
+① 不说间隔4次打一点，图上有\ $T=0.1\unit{s}$
+
+② 说间隔4次打一点．$T=0.1\unit{s}$
+
+③ 啥都\unclear{没}\quad $T=0.02\unit{s}$
+
+$T=\dfrac{1}{f}$\quad 灵活转换
+
+%FIG p170_b 0.36 0.365 0.63 0.393
+\notefig[0.3]{figures/p170_b.png}
+
+\[
+a=\frac{S_3+S_4-(S_1+S_2)}{4T^2}
+\]
+
+$a=\dfrac{S_3+S_4-S_1-S_2}{4}\,\unclear{(5f)^2}$ % CHECK: 此式笔画重叠，分子右侧疑有「(5f)^2」，且有一条斜线从分式穿过下一行的「若」字；形式不确定
+\quad 若 $f_{\text{实际}}>f_{\text{额}}=50\unit{Hz}$，则 $a$ 偏小\quad （用的$f$偏小）\quad $a$、$f$ 同大小 % CHECK: 第二个 f 的下标手写难辨，疑为「额」(额定) 或「标」
+
+\[
+a=\frac{S_6+S_5+S_4-S_3-S_2-S_1}{9T^2}\qquad\text{隔4点}\quad a=\frac{(S_6+S_5+S_4-S_3-S_2-S_1)}{9(5T)^2}
+\]
+
+若交流电源频率为$f$\quad $v=\dfrac{S_1+S_2}{2}f$\quad 隔4点\ $v=\dfrac{S_1+S_2}{10}f$\quad $=\dfrac{(S_6+S_5+S_4-S_3-S_2-S_1)}{225}f^2$
+
+\[
+\hspace{4em}=\frac{S_1+S_2}{2T}\hspace{6em}=\frac{S_1+S_2}{\text{\unclear{10}}T} % CHECK: 此处分母「10」被重写涂改（像 1、5、0 叠在一起），按上一行 v=(S1+S2)/10·f 取 10T
+\]
+
+\begin{center}
+一次性测$A$到$B\,C\,D\,E\,F\,G$距离可减小误差．
+\end{center}
+%%%END
+%%%BLOCK id=170-04 ch=01 sec=速度·光电门测速 kind=formula exp=1 alt=none cont=none y=0.80-0.88
+$d$或$\Delta x$为滤光板宽/两传感器间距离\quad $\Delta t$为经过时间\quad $v_{\text{瞬时}}=\dfrac{\Delta x}{\Delta t}$\quad 运动时间\ 长度$L$\quad $\bar v=\dfrac{L}{t}$ % 「运动时间」小字写在「长度L」上方，疑分别标注 t 与 L
+
+$1\unit{m/s}=3.6\unit{km/h}$
+%%%END
+%%%BLOCK id=173-01 ch=01 sec=打点计时器·基本 kind=knowledge exp=1 alt=none cont=none y=0.05-0.34
+\textbf{打点计时器}
+\begin{itemize}
+\item 电磁\quad $6\sim12\unit{V}$ % 「6」写在「~12V」左上方，近似上标；「6~12」数值较难确认
+\item 电火花\quad $220\unit{V}$\quad \unclear{驱机中}\quad 交流电 % 「交流电」写在右侧，疑指两种计时器均用交流电
+\end{itemize}
+
+%FIG p173_a 0.14 0.145 0.50 0.26
+\notefig[0.4]{figures/p173_a.png}
+
+\begin{itemize}
+\item 计数点\quad $\Delta t=0.02\unit{s}$ % 其右侧另有一个小字「隔」，位于下一行第二个「每」上方
+\item 选取点：每\unclear{2}个点（上方小字\unclear{2T}）\quad 每\unclear{5}个点（隔4个点）（右上方小字\unclear{5T}） % CHECK: 两处「每·个点」的数字手写重叠难辨（第一处上方似「3T」，第二处被一个粗十字叠住）；按下一行 Δt 推断为 2、5
+\end{itemize}
+
+\hspace{5em}$\Delta t=0.04\unit{s}$（隔一个点）$2T$\qquad\qquad $\Delta t=0.1\unit{s}$\quad 隔4个点
+%%%END
+%%%BLOCK id=173-02 ch=01 sec=纸带处理·求a与v kind=method exp=1 alt=none cont=none y=0.27-0.43
+做差求$a$\quad $a=\dfrac{S_3+S_4-(S_1+S_2)}{(2T)^2}$
+
+做和求$v$\quad $v_c=\dfrac{S_2+S_3}{2T}$\quad $\Bigl(\text{or}\ \dfrac{S_1+S_2+S_3+S_4}{4T}\Bigr)$\quad \unclear{取}用数据；有效数字；
+
+隔$n$个点\quad \struck{$t\doteq nT$}\quad $t\doteq(n+1)T$ % 「隔n个点」带下划线；等号处手写似「≐」（上方多一点）
+%%%END
+%%%BLOCK id=173-03 ch=01 sec=逐差法 kind=method exp=1 alt=02,18 cont=none y=0.36-0.57
+\textbf{逐差法}
+\[
+\begin{aligned}
+&S_2-S_1=aT^2\\
+&\ \ \vdots\\
+&S_n-S_{n-1}=aT^2
+\end{aligned}
+\qquad S_m-S_n=(m-n)aT^2
+\]
+
+\[
+\bar a=\frac{S_4+S_3-(S_1+S_2)}{(2T)^2}
+\]
+
+奇数段
+
+%FIG p173_b 0.31 0.502 0.71 0.554
+\notefig[0.4]{figures/p173_b.png}
+
+\[
+a=\frac{(S_4+S_5)-(S_1+S_2)}{6T^2}\qquad \text{\red{更好}}
+\]
+%%%END
+%%%BLOCK id=173-04 ch=01 sec=逐差法 kind=method exp=1 alt=02,18 cont=none y=0.56-0.79
+逐差本质\quad 整体法
+
+%FIG p173_c 0.11 0.595 0.455 0.79
+\notefig[0.4]{figures/p173_c.png}
+
+\red{忽略中间\unclear{其余}次}
+
+\begin{align*}
+&k(L_1-L_0)=m_0g % CHECK: 首行下标手写像 L_4 / L_d，按序列应为 L_1−L_0
+\\
+&k(L_2-L_1)=m_0g\\
+&\ \ \ \vdots\\
+&k(L_7-L_6)=m_0g % CHECK: 图中弹簧只画到 L_6，此处手写为 L_7−L_6
+\end{align*}
+
+\red{$\Delta\bar l=\dfrac{L_4+L_5+L_6-(L_0+L_1+L_2)}{12}$} % 红笔式中 L 手写似小写 l
+
+\red{$[4+5+6-(0+1+2)]$}
+%%%END
+%%%BLOCK id=174-03 ch=01 sec=验证匀变速直线运动·实验 kind=method exp=1 alt=none cont=none y=0.25-0.28
+③ 验证\underline{匀变速}\ \red{(不用$M\gg m$)}
+%%%END
+%%%BLOCK id=179-03 ch=01 sec=打点计时器·瞬时速度 kind=method exp=1 alt=03 cont=none y=0.365-0.44
+$f=50\unit{Hz}$
+
+%FIG p179_f 0.12 0.36 0.31 0.405
+\notefig[0.25]{figures/p179_f.png}
+
+求$V_0=\dfrac{7.21+7.72}{2\times0.04}\times10^{-2}=1.9\unit{m/s}$
+
+$\uparrow$ 每隔1个计时点取1个计数点。
+%%%END
+%%%BLOCK id=179-04 ch=01 sec=自由落体·光电门测g kind=method exp=1 alt=none cont=none y=0.44-0.52
+自由落体求$g$
+
+$V=\dfrac{d}{t}$（瞬时）\qquad $V^2=2gh$\qquad $\therefore g=\dfrac{d^2}{2ht^2}$
+
+\begin{itemize}
+\item 有空气阻力\quad $g-\dfrac{f}{m}=\dfrac{d^2}{2ht^2}$\quad $g=\dfrac{f}{m}+\dfrac{d^2}{2ht^2}$（偏大了）
+\item $h$误测为电磁铁和光电门中心点的位置\quad \fbox{$g$偏小}
+\end{itemize}
+
+球下落时经过光电门时偏离了中心位置（挡光长$<$直径，但代入了直径）\quad \fbox{$g$偏大}
+
+$\mathrm{ms}=10^{-3}\,\mathrm{s}$\quad 用更窄的光电门更准确\raisebox{1.2ex}{\scriptsize\ $d$越小\ }（$V$越接近$V_{\text{瞬}}$越准确）
+%%%END
+%%%BLOCK id=180-03 ch=01 sec=打点计时器·逐差法求加速度 kind=formula exp=1 alt=none cont=none y=0.335-0.42
+%FIG p180_c 0.11 0.332 0.62 0.372
+\notefig[0.6]{figures/p180_c.png}
+% 图中 O 与 A 之间画有一个叉
+
+求 $a$：
+\[ a=\frac{x_{DG}-x_{AD}}{(3T)^2}=\frac{x_{OG}-2x_{OD}+x_{OA}}{9T^2}=\frac{x_{OG}-x_{OD}-(x_{OD}-x_{OA})}{9T^2} \]
+%%%END
+%%%BLOCK id=182-05 ch=01 sec=照相法测足球速度 kind=problem exp=1 alt=06,18 cont=none y=0.60-0.82
+\begin{problem}
+（6 分）某研究小组利用照相方法测量足球的运动速度。研究小组恰好拍摄到一张运动员踢出足球瞬间的相片，如图所示，相片的曝光时间为 $\dfrac{1}{50}\,\mathrm{s}$。他们用刻度尺测量曝光时间内足球在相片中移动的长度 $l=$ \underline{\ 1.6\ }\ \red{1.6}\ \red{(2$-$\unclear{r})}\ $\mathrm{cm}$（只需读到 mm 位）。已知足球的直径 $d=22\,\mathrm{cm}$，质量 $m=450\,\mathrm{g}$，可算出足球的速度 $v=$ \underline{\ 44\ } $\mathrm{m/s}$（计算结果保留两位有效数字）；运动员踢球时对足球做的功 $W=$ \underline{\ $4.4\times10$\ } $\mathrm{J}$（计算结果保留两位有效数字）。
+% 以上为贴在笔记上的印刷题干，下划线处为手写填入；l 空格上方有红笔写的 1.6，其右有红笔圈住的 (2-r)；v、W 空格处另有红笔划痕；W 空格中指数 2 似漏写（下方推导为 4.4×10² J）
+
+%FIG p182_e 0.372 0.628 0.558 0.735
+\notefig[0.3]{figures/p182_e.png}
+% 相片上另有手画的双向箭头及零星笔迹
+
+\begin{solution}
+% 照片右侧手写：被大圆圈住的“比例尺”，其右为“球心\unclear{移动}位移”
+比例尺（大圈）\quad 球心\unclear{移动}位移
+
+球心移动距离 $l=2.1\,\mathrm{cm}-0.5\,\mathrm{cm}=1.6\,\mathrm{cm}$\qquad 比例尺
+
+球在照片中直径 $0.4\,\mathrm{cm}$，实际位移 $l'=\dfrac{22}{0.4}\times1.6\,\mathrm{cm}=88\,\mathrm{cm}$
+
+$\therefore v=\dfrac{l'}{t}=\dfrac{88\times10^{-2}}{0.02}\,\mathrm{m/s}=44\,\mathrm{m/s}$\qquad $W=\dfrac12mv^2=4.4\times10^2\,\mathrm{J}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=194-05 ch=01 sec=匀变速运动·图像法处理数据 kind=method exp=1 alt=none cont=none y=0.26-0.40
+$x=v_0t+\dfrac12at^2$\qquad $\dfrac{x}{t^2}=\dfrac{v_0}{t}+\dfrac12a$
+%FIG p194_a 0.465 0.268 0.735 0.39
+\notefig[0.3]{figures/p194_a.png}
+
+先求各物理量\ 再计算
+%%%END
 %%%BLOCK id=196-04 ch=01 sec=匀变速·平均速度-时间图像 kind=formula alt=none cont=none y=0.40-0.44
 $\bar v-t\ \Rightarrow\ \dfrac{x}{t}=v_0+\dfrac{1}{2}at$.
 % 原稿 $v_0$ 与 $+$ 之间有一处涂改的墨团，未录
+%%%END
+%%%BLOCK id=221-04 ch=01 sec=匀变速直线运动·往返运动 kind=method alt=none cont=none y=0.40-0.44
+\textbf{4、}$a$恒定往返运动 $\Leftrightarrow$ 类上抛运动
+
+↓带正负\quad $x=v_0t-\frac12at^2$ % 原稿："带正负"写在公式上方，箭头↓指向 x
+%%%END
+%%%BLOCK id=222-01 ch=01 sec=参考系·相对运动 kind=knowledge alt=none cont=none y=0.04-0.18
+\textbf{2、参考系}
+
+运动的相对性\quad $V_{\text{相}}=\vec V_{\text{甲乙}}=\vec V_{\text{甲}}-\vec V_{\text{乙}}$
+
+选参的任意性、同一性\quad 先方便后地面。
+
+定正方向用±号表示方向
+%%%END
+%%%BLOCK id=222-03 ch=01 sec=相对运动·错车时间 kind=problem alt=none cont=none y=0.29-0.43
+%FIG p222_b 0.08 0.295 0.395 0.38
+\notefig[0.4]{figures/p222_b.png}
+错开的时间
+\[
+t=\frac{x_{\text{甲乙}}}{V_{\text{甲乙}}}=\frac{14}{5}=2.8\unit{s}
+\] % CHECK: 分母首字被涂改（t 改 V？）
+%%%END
+%%%BLOCK id=222-04 ch=01 sec=参考系·相对运动 kind=knowledge alt=none cont=none y=0.44-0.49
+若 $a_1=a_2$，则 1、和 2 相对静止或相对匀速
+%%%END
+%%%BLOCK id=222-05 ch=01 sec=自由落体·相对运动 kind=method alt=none cont=none y=0.49-0.63
+%FIG p222_c 0.055 0.505 0.22 0.612
+\notefig[0.25]{figures/p222_c.png}
+管在球到\unclear{空}时放手
+
+$t_{\text{管中}}=\dfrac{x}{v}=\unclear{1}\unit{s}$
+%%%END
+%%%BLOCK id=223-01 ch=01 sec=质点·位移·速度·加速度 kind=knowledge alt=none cont=none y=0.03-0.14
+\textbf{运动的描述}
+
+\unclear{物理量}：位移 $\longrightarrow x$
+%FIG p223_a 0.195 0.035 0.44 0.105
+\notefig[0.3]{figures/p223_a.png}
+$\vec x$
+%%%END
+%%%BLOCK id=223-04 ch=01 sec=质点·位移·速度·加速度 kind=knowledge alt=none cont=none y=0.58-0.69
+速度\quad $\vec V=\dfrac{\text{位移}}{\text{时间}}=\dfrac{x}{t}$\quad $V_{\text{率}}=\dfrac{s}{t}$
+
+位置变化的快慢
+\[
+V_{\text{瞬}}=\lim_{\Delta t\to0}\frac{\Delta x}{\Delta t}\qquad V_{t/2}=\bar V=\frac{x}{t}
+\]
+%%%END
+%%%BLOCK id=223-05 ch=01 sec=打点计时器类实验 kind=method exp=1 alt=none cont=none y=0.69-0.78
+%FIG p223_e 0.115 0.69 0.26 0.77
+\notefig[0.25]{figures/p223_e.png}
+$V_B=\dfrac{x_1+x_2}{2t}$
+
+计数点$\ne$计时点
+
+（相邻两计数\unclear{点}间4个点）\quad 50Hz\quad 0.02s
+
+0.1s
+%%%END
+%%%BLOCK id=223-06 ch=01 sec=光电门测速 kind=method exp=1 alt=18 cont=none y=0.78-0.84
+$\swarrow$游标卡尺
+
+光电门\quad $V_{\text{瞬}}=\dfrac{d}{t}$\ $\leftarrow$很短
+%%%END
+%%%BLOCK id=223-07 ch=01 sec=质点·位移·速度·加速度 kind=knowledge alt=none cont=none y=0.84-1.00
+\textbf{3、}加速度\quad $a=\dfrac{\Delta V}{\Delta t}$\quad 速度变化快慢\quad $\vec a\parallel\Delta V\parallel F_{\text{合}}$ 与 $V$ 无关
+%FIG p223_f 0.04 0.89 0.66 1.0
+\notefig[0.6]{figures/p223_f.png}
+%%%END
+%%%BLOCK id=224-01 ch=01 sec=描述运动方法 kind=summary alt=04,08 cont=none y=0.05-0.25
+\textbf{描述运动方法}
+
+1）语言描述法
+\begin{itemize}
+\item 匀速运动
+\item 匀变速直线运动
+\item 匀变速曲线运动\quad 平抛/斜抛
+\item 匀速圆周运动
+\item 简谐运动
+\end{itemize}
+%%%END
+%%%BLOCK id=224-02 ch=01 sec=x-t、v-t、a-t图像 kind=knowledge alt=90 cont=none y=0.26-0.35
+2）图象描述
+
+斜率 $K=\dfrac{\Delta y}{\Delta x}$\quad 斜率正负不表示大小，表示方向
+
+面积 $S=\int xy$\quad 图象与横轴组成的面积\quad 不表正负，表方向 % CHECK: 原文“不表正负，表方向”，疑漏字（对照上一行“正负不表示大小，表示方向”）
+%%%END
+%%%BLOCK id=224-04 ch=01 sec=x-t、v-t、a-t图像 kind=note alt=none cont=none y=0.49-0.52
+$v$-$t$、$x$-$t$。
+%%%END
+%%%BLOCK id=224-05 ch=01 sec=匀变速直线运动公式 kind=formula alt=none cont=none y=0.52-0.63
+\textbf{3）}公式法\quad —匀变速直线运动 $V=V_0+at$
+%FIG p224_c 0.495 0.505 0.62 0.56
+\notefig[0.25]{figures/p224_c.png}
+$V_{t/2}=V_0+\dfrac12at$
+%FIG p224_d 0.595 0.585 0.745 0.625
+\notefig[0.25]{figures/p224_d.png}
+%%%END
+%%%BLOCK id=224-06 ch=01 sec=匀变速直线运动公式 kind=formula alt=none cont=none y=0.58-0.72
+匀变速直线运动\quad $a$ 恒定/恒力
+
+函数关系。系数涵义
+\begin{align*}
+x&=V_0t+\frac12at^2 &&\text{抛物线}\ \checkmark\\
+V&=V_0+at &&\checkmark\ \text{基本\unclear{短}试}\\
+V_t^2-V_0^2&=2ax &&\checkmark % CHECK: 首项 V 后似有 t 的笔画，可能为 V^2
+\end{align*}
+%%%END
+%%%BLOCK id=224-08 ch=01 sec=匀变速直线运动推论 kind=formula alt=none cont=none y=0.86-0.92
+平均速度\quad $V_{t/2}=\dfrac{V_0+V}{2}=V_0+\dfrac12at=\dfrac12(2V_0+at)=\dfrac12(V_0+V_0+at)$
+
+中时速
+%%%END
+%%%BLOCK id=224-09 ch=01 sec=匀变速直线运动推论 kind=formula alt=none cont=none y=0.92-1.00
+中位速\quad $V_{x/2}=\sqrt{\dfrac{V_0^2+V^2}{2}}$
+
+%FIG p224_g 0.185 0.937 0.315 1.0
+\notefig[0.25]{figures/p224_g.png}
+$V_{x/2}>V_{t/2}$
+\[
+V'^2-V_0^2=2a\cdot\frac12x\qquad V^2-V'^2=2a\cdot\frac12x
+\]
+%FIG p224_h 0.34 0.947 0.545 1.0
+\notefig[0.3]{figures/p224_h.png}
+%%%END
+%%%BLOCK id=225-01 ch=01 sec=匀变速直线运动推论 kind=formula alt=none cont=prev y=0.00-0.08
+3）位移差公式
+\[
+\Delta x=aT^2=x_{n+1}-x_n\qquad x_m-x_n=(m-n)aT^2
+\]
+%%%END
+%%%BLOCK id=225-02 ch=01 sec=打点计时器类实验·逐差法 kind=method exp=1 alt=none cont=none y=0.08-0.30
+\textbf{逐差法}
+%FIG p225_a 0.175 0.108 0.455 0.292
+\notefig[0.35]{figures/p225_a.png}
+\[
+a=\frac{x_6-2x_3}{9T^2}
+\]
+正\unclear{常}时 $a=\dfrac{S_6+S_5+S_4-(S_1+S_2+S_3\unclear{)}}{9T^2}$ % 原稿分子末尾被页边截断，右括号未见
+%%%END
+%%%BLOCK id=225-04 ch=01 sec=初速为零的匀变速比例关系 kind=formula alt=none cont=none y=0.37-0.45
+$1t$\quad $2t$\quad $\cdots$\quad $V$比为\quad 1\quad 2\quad 3\quad $\cdots$\quad $n$
+
+$1t$\quad $2t$\quad $\cdots$\quad $x$比为\quad 1\quad 3\quad 5\quad 7\quad $\cdots$\quad $2n-1$
+
+$x$\quad $2x$\quad $\cdots$\quad $t$比\quad $1:\sqrt2-1:\cdots:\sqrt n-\sqrt{n-1}$
+%%%END
+%%%BLOCK id=225-05 ch=01 sec=刹车·逆向思维 kind=note alt=none cont=none y=0.46-0.52
+刹车时间
+
+逆向思维。
+%%%END
+%%%BLOCK id=225-07 ch=01 sec=自由落体、竖直上抛 kind=knowledge alt=none cont=none y=0.55-0.70
+\textbf{4、}竖直上抛
+\begin{itemize}
+\item $v=v_0-gt$
+\item $x=v_0t-\frac12gt^2$
+\item $v^2-v_0^2=-2gx$
+\end{itemize}
+对称性
+\begin{itemize}
+\item 对称过程 $t$ 相等
+\item 对称位置 $V$ 大小相等方向相反
+\end{itemize}
+%%%END
+%%%BLOCK id=225-08 ch=01 sec=自由落体、竖直上抛 kind=problem alt=none cont=none y=0.60-0.72
+\begin{problem}
+5个球 $\Delta t=0.5\unit{s}$ 求 $h=?$
+%FIG p225_d 0.618 0.65 0.715 0.712
+\notefig[0.25]{figures/p225_d.png}
+\begin{solution}
+$h=\dfrac12gt^2=5\unit{m}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=226-02 ch=01 sec=易错·符号与矢量 kind=note alt=none cont=none y=0.13-0.22
+\textbf{2.} 标量、和 题上规定正方向了 要带正负号。
+
+矢量 注意 分方向 $\Delta v=\sqrt{\Delta v_x^{2}+\Delta v_y^{2}}$
+%%%END
+%%%BLOCK id=226-03 ch=01 sec=抛体·空气阻力与g kind=note alt=04 cont=none y=0.12-0.16
+抛物时 注空气阻力是否忽略及$g$的值 % CHECK: "注"后疑漏"意"
+%%%END
+%%%BLOCK id=227-08 ch=01 sec=易错·点数与间隔数 kind=note alt=08 cont=none y=0.87-0.95
+$n$个点，$n-1$个间隔
+
+\textbf{4.} 人听到1$\sim$16次撞击 有$10\unit{s}$ \qquad $\Delta t=\dfrac{10}{16-1}=\dfrac{2}{3}\unit{s}$ 每次撞击的时间（15个间隔）
+%%%END
+%%%BLOCK id=233-01 ch=01 sec=匀变速直线运动·首尾段位移比 kind=problem alt=03 cont=none y=0.00-0.19
+\begin{problem}
+%FIG p233_a 0.09 0.012 0.24 0.08
+\notefig[0.2]{figures/p233_a.png}
+第1个$5\unit{s}$ \unclear{与}最后$5\unit{s}$ \quad $x$比 $11:5$ \quad 求总$t$
+%FIG p233_b 0.30 0.045 0.44 0.115
+\notefig[0.2]{figures/p233_b.png}
+\begin{solution}
+\[ x_1=\frac{1}{2}a\times25 \]
+\[ x_2=a(t-2.5)\,5 \] % 原稿 (t-2.5) 与 5 之间无乘号
+\[ \frac{x_1}{x_2}=\frac{5}{11} \qquad t=8\unit{s} \]
+\end{solution}
+\end{problem}
+% 以下为页面右上角（紧靠页边、部分被页边截断）的小注
+若\unclear{$x$比}大于$1:3$则有交叉；小于$1:3$则有间隔；\unclear{等}于$1:3$\unclear{正好}
+%%%END
+%%%BLOCK id=233-02 ch=01 sec=追及相遇 kind=method alt=none cont=none y=0.19-0.40
+\textbf{追及相遇} \quad 前车已停\unclear{来}、先求前车\par
+临界条件：速度相同 \quad 追得上 / 追不上 / $x$最值临界
+\[ \left\{\begin{aligned} &\text{时间关系\quad 运动时间是否相等}\\ &\text{位移关系，}\ x_{\text{后}}\ge x_{\text{\unclear{相距}}}+x_{\text{前}} \end{aligned}\right. \]
+减速追加速
+%FIG p233_f 0.29 0.262 0.49 0.322
+\notefig[0.25]{figures/p233_f.png}
+方法 \ ① 条件法 \ ② 图象法 \ ③ 解析法 \quad 由$x_{\text{后}}=x_{\text{前}}+\Delta x$ 得 关于$t$的一元二次方程\par
+由判别式判断 \quad $\Delta=b^2-4ac$
+\[ \left\{\begin{aligned} &{<}0\quad \text{不相遇}\\ &{>}0\quad \text{相遇2次}\\ &{=}0\quad \text{相遇1次} \end{aligned}\right. \]
+%%%END
+%%%BLOCK id=234-02 ch=01 sec=运动图像·v-x图 kind=method alt=90,18 cont=none y=0.22-0.30
+$V$-$X$图，\quad $\left\{\begin{array}{l}\text{列式子对照\ 系数代入数据}\\ \text{微分方程}\end{array}\right.$
+%%%END
+%%%BLOCK id=234-03 ch=01 sec=刹车·时间交叠 kind=problem alt=none cont=none y=0.31-0.60
+\textbf{时间交叠}
+\begin{problem}
+一车突然刹车，第$1\unit{s}$位移$8\unit{m}$，第$3\unit{s}$位移$0.5\unit{m}$，求$12.5\unit{s}$内平均速度
+\begin{solution}
+\[ \begin{array}{ccc} 1&2&3\\ 1&3&5 \end{array} \]
+由 $\dfrac{5}{1}<\dfrac{8}{0.5}$ \ 故中间有时间间隔
+\[ \left\{\begin{aligned} &\frac{1}{2}at^2=0.5\\ &(at+2a)\,1-\frac{1}{2}a\,1=8 \end{aligned}\right. \]
+\[ t=0.5\unit{s} \]
+\[ a=4\unit{m/s^2} \]
+\[ V_0=10\unit{m/s} \]
+$2.5\unit{s}$停 \quad $S=\dfrac{V_0}{2}\,2.5=12.5\,\text{\unclear{s}}$ % CHECK: 末尾单位手写像 s（位移应为 m）
+\[ \overline{V}=\frac{S}{t}=1\unit{m/s} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=259-02 ch=01 sec=运动图像·x-t图像 kind=problem alt=none cont=none y=0.14-0.43
+\begin{problem}
+甲、乙两车在同一条直道上行驶，它们的位置坐标 $x$ 随时间 $t$ 变化的关系如图所示。已知乙车做匀变速直线运动，其图线最低点为 $P$，则下列说法正确的是（\quad）
+% 原稿：粘贴的印刷题；「位置坐标 x」被手画椭圆圈出；括号处画了一个圈，并有一条长弧线连到选项D（示意答案为D）
+%FIG p259_b 0.765 0.130 0.985 0.270
+\notefig[0.3]{figures/p259_b.png}
+\par A.\ \struck{甲车的初速度为$10\unit{m/s}$}
+\par B.\ \struck{两车第一次相遇时运动方向相同}
+\par C.\ 乙车的加速度大小\struck{为$1.2\unit{m/s^2}$}
+\par D.\ 乙车的初始位置坐标 $x_0=90\unit{m}$
+\begin{solution}
+\[ x=a(t-10)^2+10 \]
+代入 $(5,30)$\par
+$a=\cdots$\par
+$x_0=90$
+\end{solution}
+\end{problem}
+% 题下圈起来的字
+\fbox{坑}
+%%%END
+%%%BLOCK id=267-05 ch=01 sec=图像·x-t图像 kind=method alt=03 cont=none y=0.60-0.77
+%FIG p267_d 0.04 0.605 0.30 0.73
+\notefig[0.35]{figures/p267_d.png}
+（图中标注：$x_0$、$V_1$、$V_2$、$T$、$2T$，前段标“一次函数”，后段标“二次函数”）
+
+$0\sim T$\quad $F_{\text{合}}$ 为 $0$
+
+匀加速\quad \unclear{a}变了方向 故 $F$ 不为恒力
+% CHECK: “匀加速”后的单字手写不清（像 a/t/↑），“方向”前的主语待核
+\[ -V_1T=\dfrac{-V_1+V_2}{2}T\qquad\text{位移大小相等方向相反} \]
+% CHECK: 按“位移大小相等方向相反”及结论 V_2=3V_1，左边应为 V_1T（原稿左边多一个负号，或右边应取负）
+\[ \therefore\ V_2=3V_1 \]
+%%%END
+%%%BLOCK id=267-06 ch=01 sec=追及相遇·斜面与水平面 kind=problem alt=03 cont=none y=0.77-1.00
+\begin{problem}
+%FIG p267_e 0.04 0.78 0.405 0.885
+\notefig[0.45]{figures/p267_e.png}
+在 C 处甲刚好追上乙
+\begin{solution}
+$t_1=t_2\ \to\ 1:3:\cdots$\qquad $S_{\text{乙}}=\dfrac14BC$
+% CHECK: S 的下标手写像 D/2，按上下文取“乙”
+\[
+\begin{matrix}\text{甲：}\\ \text{乙：}\end{matrix}
+\left\{\begin{aligned}
+X_2&=Vt_2\\
+X_2&=\dfrac{V}{2}(t_1+t_2)\qquad t_1=t_2
+\end{aligned}\right.
+\]
+\[ \text{甲：}\ X_1=\dfrac{V}{2}t_1=\dfrac12Vt_2=\dfrac12X_2\qquad \therefore\ AB=\dfrac12BC \]
+\[ X_1=\dfrac12at_1^2\qquad X_2=\dfrac12\times\dfrac14g(t_1+t_2)^2=\dfrac12gt_1^2\qquad \therefore\ a=\dfrac12g\qquad(\theta=30^\circ) \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=285-10 ch=01 sec=打点计时器·纸带处理 kind=note exp=1 alt=18 cont=none y=0.52-0.60
+%FIG p285_c 0.09 0.52 0.31 0.60
+\notefig[0.25]{figures/p285_c.png}
+
+\unclear{读数}\ $x_1=33.7-27.6$
+
+有 $f_{\text{阻}}$，$g$ \unclear{代}大了，导致 \unclear{$t$} 偏大% CHECK: 手写“g代大了”，有阻力时 g（测量值）应偏小，字形不清
+
+看\unclear{疏密}，是左端连重锤。
 %%%END

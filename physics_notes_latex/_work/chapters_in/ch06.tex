@@ -946,3 +946,1083 @@ $P_{\text{绳}B}$先$\uparrow$后$\downarrow$　　$V$为0有0
 %FIG p164_h 0.42 0.875 0.63 0.985
 \notefig[0.3]{figures/p164_h.png}
 %%%END
+%%%BLOCK id=168-01 ch=06 sec=动能定理·多次往返(数列类) kind=problem alt=01,90 cont=none y=0.00-0.77
+\begin{problem}
+\textbf{数列类物理过程}
+
+小球从 $H$ 处静止下落 $\Leftarrow$ $f=kmg$ $(k<1)$\quad 每次碰地后 $v$ 不变\quad 求总路程\unclear{…} % 该行右端被照片边缘截断，末尾还有数字不可见
+\begin{solution}
+\textbf{法1}（原稿圈出）
+\[
+mgH-kmgS=0-0
+\]
+\[
+S=\frac{H}{k}
+\]
+\textbf{法2}（原稿圈出）
+
+step1
+\[
+mgH-kmgH=\frac{1}{2}mv^2
+\]
+\[
+-mgh_1-kmgh_1=0-\frac{1}{2}mv^2
+\]
+\[
+\therefore h_1=\frac{1-k}{1+k}H
+\]
+% 右侧另写：等比数列求和公式
+\[
+S_n=\frac{a_1}{1-q}\qquad (q<1,\ n\to+\infty)
+\]
+step2\quad 易得
+\[
+h_2=\frac{1-k}{1+k}h_1=\left(\frac{1-k}{1+k}\right)^2H
+\]
+step3\quad 综上
+\[
+h_n=\left(\frac{1-k}{1+k}\right)h_{n-1}=\left(\frac{1-k}{1+k}\right)^nH
+\]
+求和
+\[
+S=H+2(h_1+h_2+\cdots+h_n)=H+\frac{2h_1}{1-\frac{1-k}{1+k}}=\frac{H}{k}.
+\]
+\[
+a_{\text{下}}=\frac{mg-kmg}{m}=(1-k)g
+\]
+\[
+a_{\text{上}}=\frac{mg+kmg}{m}=(1+k)g
+\]
+\[
+H=\frac{1}{2}a_{\text{下}}t_0^2
+\]
+\[
+h_1=\frac{1}{2}a_{\text{上}}t_{1\text{上}}^2=\frac{1}{2}a_{\text{下}}t_{1\text{下}}^2
+\]
+\[
+t_{1\text{上}}=\sqrt{\frac{2h_1}{a_{\text{上}}}}=\sqrt{\frac{2(1-k)}{a_{\text{上}}(1+k)}}=\unclear{\dots}\cdot\sqrt{\frac{2qH}{a_{\text{上}}}}
+\]
+% 上式“=”后有一块涂改贴覆盖，其后为“·√(2qH/a_上)”
+\[
+t_{1\text{下}}=\sqrt{\frac{2qH}{a_{\text{下}}}}
+\]
+\[
+\text{易得}\quad t_{2\text{上}}=\sqrt{\frac{2qh_1}{a_{\text{上}}}}=\sqrt{\frac{2q^2H}{a_{\text{上}}}}
+\]
+\[
+t_{2\text{下}}=\sqrt{\frac{2q^2H}{a_{\text{下}}}}
+\]
+\[
+\text{综上}\quad t_{n\text{上}}=\sqrt{\frac{2q^nH}{a_{\text{上}}}}\qquad t_{n\text{下}}=\sqrt{\frac{2q^nH}{a_{\text{下}}}}
+\]
+\[
+t_{\text{上总}}=\sqrt{\frac{2H}{a_{\text{上}}}}\left(\sqrt{q}+\sqrt{q^2}+\cdots+\sqrt{q^n}\right)=\frac{\sqrt{q}}{1-\sqrt{q}}\qquad \text{设}\ \frac{1-k}{1+k}=q
+\]
+% 原稿 t_上总 一行中 √q^2、√q^n 的 2、n 写在字母右下（像下标），按上下文取为指数；分子 √q 上方有一笔多余划痕
+\[
+t_{\text{下总}}=\sqrt{\frac{2H}{a_{\text{下}}}}\left(\sqrt{q}+\sqrt{q^2}+\cdots+\sqrt{q^n}\right)=\frac{\sqrt{q}}{1-\sqrt{q}}
+\]
+\[
+t_{\text{总}}=t_0+t_{\text{上总}}+t_{\text{下总}}=\frac{2\sqrt{q}}{1-\sqrt{q}}+\sqrt{\frac{2H}{(1-k)g}}
+\]
+% CHECK: t_上总、t_下总 的结果与 t_总 中的 2√q/(1-√q) 均未带前置因子 √(2H/a)，原稿如此
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=168-02 ch=06 sec=动能定理·多次往返(数列类) kind=problem alt=90 cont=none y=0.77-0.97
+\begin{problem}
+改：反弹 $E_K'$ 为 $E_K$ 的 $k$ 倍，$f=0$，求总\unclear{…}路程 % “求总”与“路程”之间有涂改贴覆盖
+\begin{solution}
+\[
+mgH=E_K\qquad \therefore h_1=kH
+\]
+\[
+E_{K1}=kE_K\qquad h_2=kh_1
+\]
+\[
+-mgh_1=0-E_{K1}\qquad h_n=kh_{n-1}=k^nH
+\]
+\[
+S=H+2(h_1+h_2+\cdots h_n)=H+\frac{2kH}{1-k}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=174-04 ch=06 sec=验证动能定理·实验 kind=method exp=1 alt=none cont=none y=0.27-0.37
+④ \underline{验证动能定理}
+
+% 以下两行左侧有大括号
+整：$mgh=\dfrac{1}{2}(M+m)v^2$\quad \red{(不用$M\gg m$)}
+
+隔$M$：$mgh=\dfrac{1}{2}Mv^2$\quad \red{(用$M\gg m$)}
+
+%FIG p174_c 0.485 0.248 0.628 0.328
+\notefig[0.2]{figures/p174_c.png}
+%%%END
+%%%BLOCK id=174-05 ch=06 sec=验证机械能守恒·实验 kind=method exp=1 alt=none cont=none y=0.37-0.41
+\unclear{⑤} \underline{验$E_{\text{机}}$守恒} % 序号圈内字形近似「⑤」，不确定
+%%%END
+%%%BLOCK id=175-04 ch=06 sec=验证机械能守恒·实验 kind=method exp=1 alt=none cont=next y=0.73-0.97
+验机械能守恒；能量 $E_p=\frac{1}{2}kx^2$
+
+\hspace{2em}本质—式子函数
+
+\hspace{2em}验证$\to$图像$\to$直线
+
+$mgh=\frac{1}{2}mv^2$
+
+%FIG p175_f 0.53 0.725 0.71 0.83
+\notefig[0.25]{figures/p175_f.png}
+
+\begin{center}
+\begin{tabular}{|c|p{6cm}|}
+\hline
+$h$ & \\
+\hline
+$v$ & \\
+\hline
+$v^2$ & \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{装置1}
+
+%FIG p175_g 0.21 0.855 0.39 0.93
+\notefig[0.25]{figures/p175_g.png}
+
+$mgh=\frac{1}{2}mv^2$\quad 不用天平
+
+$\downarrow$ 光电门 $v=\dfrac{d}{\Delta t}$
+
+%FIG p175_h 0.73 0.825 0.98 0.945
+\notefig[0.25]{figures/p175_h.png}
+%%%END
+%%%BLOCK id=176-01 ch=06 sec=验证动能定理·实验 kind=method exp=1 alt=none cont=prev y=0.01-0.54
+\textbf{装置2}
+
+%FIG p176_a 0.04 0.045 0.33 0.15
+\notefig[0.29]{figures/p176_a.png}
+
+\begin{tabular}{@{}c@{\qquad}c@{}}
+$W$ & $V_1$ \\
+$2W$ & $V_2$ \\
+$\vdots$ & \\
+$nW$ & $V_n$
+\end{tabular}
+
+% 以下表格画在黄色便利贴上
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$W$ & $1W$ & $2W$ & $3W$ & $\cdots$ & $nW$ \\
+$V^2$ & $V_1^2$ & $V_2^2$ & $V_3^2$ & $\cdots$ & $V_n^2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+验证动定：$\downarrow$ 平衡$f$
+
+%FIG p176_b 0.03 0.186 0.325 0.36
+\notefig[0.3]{figures/p176_b.png}
+
+%FIG p176_c 0.09 0.36 0.64 0.445
+\notefig[0.55]{figures/p176_c.png}
+
+\red{先加速后减速}
+
+$V=\dfrac{9.40}{T}\,\mathrm{m/s}$（\unclear{瞬时}）\quad \red{\unclear{要}换单位}\quad \red{用最大段}\quad \red{$\dfrac{9.40\times10^{-2}}{T}\,\mathrm{m/s}$}
+
+\underline{两端\unclear{密}中间疏因未平衡$f$导致}\ $\checkmark$
+%%%END
+%%%BLOCK id=176-02 ch=06 sec=验证机械能守恒·实验 kind=method exp=1 alt=03 cont=none y=0.55-0.74
+\textbf{装置3}
+
+%FIG p176_d 0.04 0.585 0.25 0.74
+\notefig[0.25]{figures/p176_d.png}
+
+验1\quad $mgh=\frac{1}{2}Mv^2$\quad ($M\gg m$，平衡$f$)
+
+验2\quad $mgh=\frac{1}{2}(M+m)v^2$\quad (平衡$f$)
+
+验3\quad $mgh-\mu Mgh=\frac{1}{2}(M+m)v^2$
+%%%END
+%%%BLOCK id=176-03 ch=06 sec=验证机械能守恒·实验 kind=method exp=1 alt=03 cont=none y=0.74-0.88
+\textbf{装置4}
+
+%FIG p176_e 0.03 0.78 0.25 0.87
+\notefig[0.25]{figures/p176_e.png}
+
+$mgh-Mg\sin\theta\,h=\frac{1}{2}(M+m)v^2$
+%%%END
+%%%BLOCK id=179-07 ch=06 sec=测动摩擦因数·实验 kind=method exp=1 alt=03 cont=none y=0.66-0.74
+从$A$出发停在$C$处\ 处处同$\mu$\ 求$\mu$
+
+%FIG p179_i 0.09 0.665 0.27 0.725
+\notefig[0.25]{figures/p179_i.png}
+
+\[mgh-\mu mg\,l_{AB}\cos\theta-\mu mg\,S_{BC}\qquad\therefore\mu=\frac{h}{S}\] % CHECK: 第一式末尾未写 "=0"
+\[l_{AB}\cdot\cos\theta=S_{AB}\qquad S_{AB}+S_{BC}=S\]
+%%%END
+%%%BLOCK id=179-08 ch=06 sec=测动摩擦因数·实验 kind=method exp=1 alt=none cont=none y=0.73-0.88
+%FIG p179_j 0.09 0.735 0.30 0.79
+\notefig[0.25]{figures/p179_j.png}
+
+遮光时间为$t$
+
+\begin{align*}
+W_{\text{弹}}&=\frac{1}{2}m\frac{d^2}{t^2}+\mu mgx\\
+\frac{1}{t^2}&=\frac{2W_{\text{弹}}}{d^2}\cdot\frac{1}{m}-\frac{2\mu gx}{d^2}
+\end{align*}
+
+%FIG p179_k 0.685 0.76 0.87 0.86
+\notefig[0.25]{figures/p179_k.png}
+
+\[a=\frac{2\mu gx}{d^2}\qquad\therefore\mu=\frac{ad^2}{2gx}\]
+\[W_{\text{弹}}=\frac{ad^2}{2b}.\]
+%%%END
+%%%BLOCK id=179-09 ch=06 sec=测动摩擦因数·实验 kind=method exp=1 alt=none cont=none y=0.87-0.96
+%FIG p179_l 0.075 0.868 0.345 0.95
+\notefig[0.3]{figures/p179_l.png}
+
+\[mg\,l\sin\theta-\mu mg\,l\cos\theta=\frac{1}{2}m\left(V_B^2-V_A^2\right)\]
+\[\mu=\tan\theta-\frac{V_B^2-V_A^2}{2gl\cos\theta}\quad\text{（用}V_A\ V_B\ \theta\ l\ g\text{表示）}\]
+%%%END
+%%%BLOCK id=179-10 ch=06 sec=测动摩擦因数·实验 kind=method exp=1 alt=03 cont=none y=0.95-1.0
+%FIG p179_m 0.10 0.948 0.255 0.998
+\notefig[0.25]{figures/p179_m.png}
+
+\[\left(\frac{d}{t}\right)^2=2\mu gx\]
+%%%END
+%%%BLOCK id=180-05 ch=06 sec=弹性势能·实验 kind=method exp=1 alt=none cont=none y=0.60-0.95
+\textbf{能量类}
+
+%FIG p180_f 0.065 0.65 0.24 0.812
+\notefig[0.3]{figures/p180_f.png}
+
+\[ E_{\text{弹}}=mg(H-L) \]
+
+%FIG p180_g 0.265 0.687 0.505 0.797
+\notefig[0.4]{figures/p180_g.png}
+
+\[ E_{\text{弹}}=mgax^2 \]
+\[ a=\frac{H-L}{x^2} \]
+
+再做一次实验。\fbox{$H-L<x$} 说明小球上升到最高点，弹簧未恢复原长，处于压缩态（$x$为形变量）
+
+$\Delta E_{\text{弹}}=mg(H-L)<E_{\text{弹}}=mgax^2$ 故在原图象中描出的点在原直线下方 % “在”字原稿写在“故”与“原图象”之间的行间（带插入符）
+
+\fbox{$H-L>x$} 则描点在原直线上方，
+%%%END
+%%%BLOCK id=181-02 ch=06 sec=探究功与速度变化关系 kind=method exp=1 alt=04 cont=none y=0.04-0.31
+\textbf{探究功与速度变化关系}
+
+\[ E_K=\frac12 k(\Delta x)^2 \]
+% E_K 上方有一个小的“1”和短横线，疑为杂笔；下标 K 原稿如此（可能指弹性势能）
+
+不用测 $k$、$m$，轨道要水平
+
+%FIG p181_a 0.05 0.052 0.36 0.162
+\notefig[0.4]{figures/p181_a.png}
+
+\[
+\left\{\begin{aligned}
+\tfrac12 k(\Delta x)^2&=W\\
+W&=\tfrac12 mv^2\\
+h&=\tfrac12 gt^2\\
+x&=vt
+\end{aligned}\right.
+\]
+
+水平位移与形变量 $x-\Delta x$
+\[ x=\sqrt{\frac{2kh}{mg}}\cdot\Delta x \]
+所得图象是过坐标原点的倾斜直线，说明小球速度的平方与弹簧对球做的功成正比。
+
+\begin{align*}
+h&=\frac12 g\,\frac{x^2}{v^2}=\frac12 g\,\frac{x^2}{k\Delta x^2}\,m\\
+\frac12 mv^2&=\frac12 k\Delta x^2\\
+v^2&=\frac{k\Delta x^2}{m}
+\end{align*}
+% 第二行 ½mv²=½kΔx² 中左右两个 ½ 被一条斜线连着划去（约去）
+
+误差来源：①空气阻力、②\unclear{弹簧质量非零}的影响
+
+③确认落点 $P$ $Q$ $R$ 时的误差。 % 圈号字迹潦草：依次读作③④（也可能是②③）
+
+④$x_1$ $x_2$ $x_3$ 的测量误差。
+%%%END
+%%%BLOCK id=181-03 ch=06 sec=验证机械能守恒 kind=method exp=1 alt=04 cont=none y=0.30-0.50
+\textbf{验证机械能守恒}
+
+%FIG p181_b 0.05 0.318 0.228 0.41
+\notefig[0.28]{figures/p181_b.png}
+
+\unclear{摆}自由静止时示数为 $F_0$，最大示数 $F$。
+
+\[
+\left\{\begin{aligned}
+F-mg&=\frac{mv^2}{L}\\
+mg&=F_0\\
+mgh&=\tfrac12 mv^2
+\end{aligned}\right.
+\]
+\begin{align*}
+F&=mg+\frac{2mgh}{L}\\
+&=F_0+\frac{2F_0h}{L}\\
+&=F_0\left(1+\frac{2h}{L}\right)
+\end{align*}
+
+\begin{keybox}
+只需证 $F_0h=\frac12(F-F_0)L$ % 原稿此式被圈起；末尾的 L 写得像“√/V”，按推导应为 L
+\end{keybox}
+
+不能用弹簧测力计代替传感器（小球机械能不守恒了，\unclear{系}统守恒！）
+
+球选 $\rho$ 大的\quad 不用测 $m$
+%%%END
+%%%BLOCK id=181-04 ch=06 sec=验证机械能守恒 kind=method exp=1 alt=01 cont=none y=0.50-0.69
+%FIG p181_c 0.08 0.515 0.25 0.595
+\notefig[0.28]{figures/p181_c.png}
+
+打点时间间隔为 $T$
+
+到 $B$：
+\[ \Delta E_k=\frac12 mv_B^2=\frac{m(x_3-x_1)^2}{8T^2},\qquad v_B=\frac{x_3-x_1}{2T} \]
+
+%FIG p181_d 0.25 0.573 0.45 0.69
+\notefig[0.3]{figures/p181_d.png}
+
+\[ \Delta E_p=mgx_2 \]
+
+总是有 $\Delta E_k<\Delta E_p$，属于系统误差（多次测量取均值消除不\unclear{了误差时}）
+
+产生误差原因：空气阻力及纸带受到摩擦力
+%%%END
+%%%BLOCK id=181-06 ch=06 sec=验证机械能守恒·连接体系统 kind=problem exp=1 alt=none cont=none y=0.74-1.00
+\begin{problem}
+验机\unclear{守} % 小标题，疑为“验证机械能守恒”的简写
+
+%FIG p181_f 0.038 0.808 0.148 0.903
+\notefig[0.25]{figures/p181_f.png}
+% 图中标注 m_2=150g，m_1=50g
+
+%FIG p181_e 0.165 0.735 0.435 0.89
+\notefig[0.4]{figures/p181_e.png}
+% 纸带图右端写有 dm；图中另有 h_1～h_5 的尺寸标注
+
+$T=0.135\,\mathrm{s}$ % CHECK: 数值 0.135 s 请二次核对
+\[ v_3=\frac{h_5-h_1}{4T} \]
+
+\begin{solution}
+当到3处
+\begin{align*}
+\Delta E_k&=\frac12(m_2+m_1)v_3^2\\
+\Delta E_p&=(m_2-m_1)g(h_3-h_1)\\
+\frac{\Delta E_p-\Delta E_k}{\Delta E_p}&\approx 4.8\%
+\end{align*}
+由此可得：在误差允许的范围内，甲乙组成的系统在运动过程中机械能守恒。
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=182-02 ch=06 sec=验证机械能守恒·气垫导轨 kind=method exp=1 alt=none cont=none y=0.255-0.425
+%FIG p182_b 0.064 0.262 0.30 0.397
+\notefig[0.35]{figures/p182_b.png}
+% 图中标注 x_1、x_2、光电门、m_1、m_2、尺子（刻度0～5）
+
+遮光片 $d$，经过时用时 $\Delta t$ % 原稿如此（疑漏写“光电门”）
+
+光电门位置 $x_2$，释放时滑块位置 $x_1$，
+\[ m_1g(x_1-x_2)\approx\frac{m_1+m_2}{2}\cdot\frac{d^2}{(\Delta t)^2} \]
+\[ m_1g(x_1-x_2)=\frac12(m_1+m_2)v^2 \]
+\[ v^2=\frac{2m_1g}{m_1+m_2}(x_1-x_2)\qquad\text{过原点的直线} \]
+
+要天平测 $m$
+%%%END
+%%%BLOCK id=182-04 ch=06 sec=验证机械能守恒·气垫导轨 kind=method exp=1 alt=none cont=none y=0.485-0.60
+%FIG p182_c 0.015 0.495 0.34 0.592
+\notefig[0.4]{figures/p182_c.png}
+% 图左侧标注“下降 l ↓ / 用时 t”
+
+\[ mgl=\frac12(m+M)\left(\frac{d}{t}\right)^2 \]
+不用 $m\ll M$
+
+%FIG p182_d 0.52 0.495 0.78 0.602
+\notefig[0.3]{figures/p182_d.png}
+% 图象标题 l-1/t²，纵轴 l，横轴 1/t²，曲线从原点出发略有弯曲
+\[ l-\frac{1}{t^2} \]
+%%%END
+%%%BLOCK id=183-01 ch=06 sec=验证机械能守恒·纸带法 kind=method exp=1 alt=01 cont=none y=0.03-0.25
+% 页面右上角叠压着另一页（带 Date. NO. 页眉），其上的化学笔记（0.4mol CO CO2…混合气体 ρ=1.429 g/L…CO为0.4×3/4×22.4=6.72L…）与 181 页右上角相同，已在 181-01 转录，此处不重复
+%FIG p183_a 0.0 0.03 0.28 0.085
+\notefig[0.35]{figures/p183_a.png}
+% 纸带上的点，标有 D（残）、E、F、G
+
+若要验证机守还要测\unclear{起}点 $O$、$F$ 之间的距离 $L_{OF}$。
+
+\[ v_F=\frac{L_{EF}+L_{FG}}{4T}=\frac{f\,(L_{EF}+L_{FG})}{4} \]
+\[ E_K=\frac12 m\,\frac{(L_{EF}+L_{FG})^2f^2}{16} \]
+
+%FIG p183_b 0.0 0.085 0.19 0.232
+\notefig[0.28]{figures/p183_b.png}
+% 图中标注：纸带、打点计时器、重物
+
+重物 $M$ 越大 $V$ 越小，误差越小 % 原稿如此（$M$、$V$ 可能是质量/体积或 ρ、V）
+%%%END
+%%%BLOCK id=183-02 ch=06 sec=验证机械能守恒·光电门自由落体 kind=problem exp=1 alt=01 cont=none y=0.25-0.40
+\begin{problem}
+%FIG p183_c 0.01 0.238 0.2 0.347
+\notefig[0.28]{figures/p183_c.png}
+% 图中标注：光电门 计时器、h、d=8 mm
+
+$d=8\,\mathrm{mm}$
+
+挡光时间 $t=4.698\,\mathrm{ms}$\quad 释放时重力势能 $0.0110\,\mathrm{J}$\quad 最低点动能 $E_K=0.112\,\mathrm{J}$ % CHECK: 0.0110 J 与 0.112 J 数量级不同，疑为 0.110 J；“势能”二字写在“重力”下方行间
+
+求 $h$
+\begin{solution}
+\[ v=\frac{d}{t}=1.703\,\mathrm{m/s}\qquad mgh=\frac12mv^2\qquad h=\frac{v^2}{2g}=0.15\,\mathrm{m} \]
+该实验不能验证机械能守恒定律\quad 理由：只有初末位置的机械能近似相等，不能说明整个过程机械能始终守恒
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=183-04 ch=06 sec=验证机械能守恒·斜面双光电门 kind=method exp=1 alt=03 cont=none y=0.47-0.57
+%FIG p183_d 0.016 0.473 0.43 0.566
+\notefig[0.55]{figures/p183_d.png}
+% 图中标注：遮光片 d、小车、光电门1、光电门2、t_1、t_2、s、h、总长度 L
+
+\[ \Delta E_k=\frac12mv_2^2-\frac12mv_1^2\qquad v_2=\frac{d}{t_2}\quad v_1=\frac{d}{t_1} \]
+\[ \Delta E_p=mg\,\frac{s}{L}\,h=mg\,\frac{h}{L}\,s=mgs\sin\theta \]
+%%%END
+%%%BLOCK id=183-05 ch=06 sec=验证机械能守恒·转动杆光电门 kind=method exp=1 alt=04 cont=none y=0.57-0.72
+%FIG p183_e 0.055 0.578 0.34 0.697
+\notefig[0.4]{figures/p183_e.png}
+% 图中标注：O（光滑）、m 均匀杆、A、L、h
+
+过光电门用时 $t$
+
+\[ \Delta E_p=\frac{mgh}{2}\qquad\text{（重心下降 }\tfrac{h}{2}\text{）} \]
+\[ E_K=\frac12m\left(\frac{d}{t}\right)^2 \]
+若 $A$ 在任意时刻速度为 $V_A$，得到任意\unclear{瞬时}动能
+\[ E_K=\frac{mgaV_A^2}{2bd^2} \]
+% CHECK: 分母末尾字形像 L，按推导（1/t²=(b/a)h，E_K=mV_A²/6）应为 d²
+
+%FIG p183_f 0.70 0.575 0.915 0.70
+\notefig[0.3]{figures/p183_f.png}
+% 图象：纵轴 t^{-2}(s^{-2})，横轴 h/m，过原点直线，P 点对应纵坐标 b、横坐标 a
+
+\[ \frac{1}{t^2}=\frac{b}{a}\,h \]
+%%%END
+%%%BLOCK id=183-06 ch=06 sec=验证机械能守恒·误差分析 kind=note exp=1 alt=01 cont=none y=0.72-0.89
+相邻计数点间有 2 个计时点未标出\ldots\ldots
+\[ v=\frac{x_1+x_2}{2\cdot(3T)}=\frac{x_1+x_2}{6T}=\frac{(x_1+x_2)}{6}f \]
+
+\begin{itemize}
+\item 若 $\Delta E_k>\Delta E_p$\quad 桌面不水平，释放侧偏高 \\
+所用交流电 $f$ 低于电火花打点计时器的标称频率（$f$ 代大了） % “电火花”三字叠写，字迹较乱
+\item 若 $\Delta E_k<\Delta E_p$\quad 桌上有摩擦/不光滑 \\
+所用交流电 $f$ 高于电火花打点计时器标称频率（$f$ 代小了）
+\end{itemize}
+
+代入的是标称频率
+%%%END
+%%%BLOCK id=183-07 ch=06 sec=探究合外力做功与动能变化量·倍增法 kind=method exp=1 alt=03 cont=none y=0.85-1.00
+\textbf{倍增法探究合外力做功与动能变化量的关系。}
+
+%FIG p183_g 0.005 0.853 0.28 0.96
+\notefig[0.4]{figures/p183_g.png}
+% 图中标注：D、C、B、A、x（三段）、末端切线水平、O、L、P、A_3、A_2、A_1
+
+从 $A$ 静止释放小物块恰好运动到 $O$ 点
+
+从 $B$ 释放：
+\begin{align*}
+mgx\sin\theta-\mu mg\cos\theta&=\frac12mv_1^2\\
+v_1&=\frac{L}{\sqrt{\dfrac{2PA_1}{g}}}\\
+mgx\sin\theta-\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_1}
+\end{align*}
+% CHECK: 原稿第一行 mgx sinθ − μmg cosθ 的第二项似无 x（下面两行都有 x）
+
+从 $C$、$D$ 释放分别满足：
+\begin{align*}
+2mgx\sin\theta-2\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_2}\\
+3mgx\sin\theta-3\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_3}
+\end{align*}
+
+$1\quad\dfrac12\quad\dfrac13$
+
+当 $PA_1:PA_2:PA_3=6:3:2$ 时 说明 合外力做功与动能变化量成正比。
+%%%END
+%%%BLOCK id=186-02 ch=06 sec=探究动能定理·斜面装置 kind=note alt=none cont=none y=0.19-0.40 exp=1
+%FIG p186_b 0.04 0.19 0.30 0.29 soft
+\notefig[0.25]{figures/p186_b.png}
+
+测 $v$ 则不用平衡了 $f$
+
+$W_{\text{合}}=mgx=\dfrac12(M+m)v^2$，\quad $v^2=\dfrac{2}{M+m}W$ 是一条过原点的倾斜直线
+
+$x-v^2$ \\
+$W-v^2$ \\
+$v^2-W$
+
+还可由 $k$ 求出滑块质量 $M$
+%%%END
+%%%BLOCK id=186-03 ch=06 sec=验证机械能守恒定律 kind=note alt=none cont=none y=0.33-0.38 exp=1
+单体机守不用测 $m$\quad 理由：物体质量可约掉
+%%%END
+%%%BLOCK id=186-04 ch=06 sec=探究弹簧弹性势能·光电门 kind=note alt=none cont=none y=0.40-0.58 exp=1
+$\dfrac12k(\Delta x)^2=\dfrac12mv^2$，\quad $\Delta x\propto v$
+
+%FIG p186_c 0.46 0.413 0.74 0.463
+\notefig[0.28]{figures/p186_c.png}
+
+\begin{keybox}
+对同一根弹簧：弹性势能与弹簧的压缩量平方成正比。
+\end{keybox}
+
+弹簧弹性势能转化为滑块动能
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+砝码质量$/\unit{g}$ & 50 & 100 & 150 \\
+ & 8.62 & 7.63 & 6.66 \\
+\end{tabular}
+\end{center}
+% CHECK: 第二行数据（8.62、7.63、6.66）原稿无行名，疑为弹簧长度/cm
+（8.62 与 7.63 之间画有双向箭头，其下标 $\Delta x=0.99$；其后 $\Delta x=0.97$）\quad 取平均 $\Delta x=0.98$
+
+$k=\dfrac{\Delta f}{\Delta x}=\dfrac{50\times10^{-3}\times9.8}{0.98\times10^{-2}}=50\unit{N/m}$% CHECK: 分子可能是 ΔF
+%%%END
+%%%BLOCK id=186-05 ch=06 sec=探究动能定理·小车装置 kind=note alt=02 cont=none y=0.55-0.74 exp=1
+%FIG p186_d 0.03 0.555 0.46 0.66
+\notefig[0.43]{figures/p186_d.png}
+
+探究动能定理\quad $T=\dfrac{Mmg}{M+m}=\dfrac{mg}{1+\frac{m}{M}}\approx mg$
+
+（把\unclear{砂和砂}桶总重力当作小车受到的合外力.）\quad 要平衡摩擦，$m\ll M$
+
+%FIG p186_e 0.12 0.655 0.53 0.732
+\notefig[0.42]{figures/p186_e.png}
+
+（图下标注：↑ 间隔3个点）
+
+刻度尺（箭头指向 $x$）；天平（两箭头分别指向 $mg$ 与 $M$）
+
+$mgx=\dfrac12M\left[\left(\dfrac{x_2}{4T}\right)^2-\left(\dfrac{x_1}{4T}\right)^2\right]$
+
+间隔 $n$ 个点\quad $v=\dfrac{x_1+x_2}{2(n+1)T}$
+%%%END
+%%%BLOCK id=186-06 ch=06 sec=验证机械能守恒定律 kind=note alt=none cont=none y=0.74-0.97 exp=1
+% 页脚右侧有一小段涂鸦弧线，忽略
+自由落体验机守
+
+%FIG p186_f 0.02 0.77 0.22 0.85
+\notefig[0.25]{figures/p186_f.png}
+
+有两处不当：① 用交流电不用直流电；② 重物离打点计时器太远。
+
+利用第 $n$ 点与起始点计算：$v^2=2gh$，$\dfrac12v^2=gh$，图线斜率表示重力加速度 $g$
+%%%END
+%%%BLOCK id=228-03 ch=06 sec=机械能守恒·关联速度连接体 kind=problem alt=03,04 cont=none y=0.43-0.60
+\textbf{2.}
+%FIG p228_c 0.02 0.425 0.18 0.575
+\notefig[0.25]{figures/p228_c.png}
+
+$V_P=V_2=V_Q\cos\theta$ \qquad $\because 0<\theta\le90^\circ$ \quad $\therefore V_P<V_Q$
+
+P先失重 $T<mg$ 后超重 $T>mg$ % CHECK: P质量为4m，此处"mg"疑为4mg；"<"">"处笔迹重描
+
+故 $T\ne mg$ \quad 可等于 不恒等于
+
+Q到最低点 $E_{Q\text{机}}$最大 $E_{P\text{机}}$最小
+
+\[ 4mg\left(\frac{d}{\cos37^\circ}-d\right)=mgd\tan37^\circ+\frac12 mV_Q^{2}\qquad V_Q=\frac{\sqrt{2gd}}{2} \]
+%%%END
+%%%BLOCK id=232-01 ch=06 sec=动能定理·合力方向与动滑轮 kind=note alt=09,03 cont=none y=0.00-0.10
+\textbf{1、}
+%FIG p232_a 0.07 0.008 0.175 0.058
+\notefig[0.2]{figures/p232_a.png}
+$F_{\text{合}}$在\unclear{$F_{\text{合}}$}方向上用动能定理，动滑轮2倍力
+%%%END
+%%%BLOCK id=232-04 ch=06 sec=功·克服功的正负 kind=note alt=none cont=none y=0.335-0.375
+\textbf{4、}克服功为正、功可正负
+%%%END
+%%%BLOCK id=234-04 ch=06 sec=弹簧模型·滑轮连接体机械能 kind=problem alt=03,04 cont=none y=0.62-0.83
+\begin{problem}
+%FIG p234_a 0.03 0.628 0.184 0.748
+\notefig[0.2]{figures/p234_a.png}
+甲到这
+\begin{solution}
+\[ \left\{\begin{aligned} &T\sin\alpha=ma_{\text{甲}}\\ &4mg-T=4ma_{\text{乙}}\\ &a_{\text{乙}}=a_{\text{甲}}\sin37^\circ \end{aligned}\right. \] % CHECK: 由 a乙=64/89 g 反推，第3式似应为 cos37°（或 sin53°），原稿写 sin37°
+\[ a_{\text{乙}}=\frac{64}{89}g \]
+\[ 4mg\left(\frac{5}{3}d-d\right)-mg\frac{4}{3}d=\frac{1}{2}mv^2 \]
+\[ v=\sqrt{\frac{8}{3}gd} \]
+小球和乙机械能先$\uparrow$后$\downarrow$ \qquad \unclear{3}弹簧$E_p$先$\downarrow$后$\uparrow$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=235-03 ch=06 sec=轻杆连接体·系统机械能守恒 kind=problem alt=03,04 cont=none y=0.33-0.55
+\begin{problem}
+%FIG p235_g 0.04 0.33 0.29 0.43
+\notefig[0.25]{figures/p235_g.png}
+\begin{solution}
+\[ 2mg\,2l-mgl=\frac{1}{2}\,2m(2V)^2+\frac{1}{2}mV^2 \]
+\[ 3mgl=\frac{1}{2}\,2m\,4V^2+\frac{1}{2}mV^2 \]
+\[ =\frac{9mV^2}{2}=\text{\unclear{$\dfrac{6mg}{9}$}}\qquad V=\frac{\sqrt{6mg}}{3} \] % 此行字迹有涂改；CHECK: 根号内手写像 6mg，按推导似应为 6gl
+\par\smallskip
+\unclear{竖}直时对转轴作用力：对整体 $3mg-F=ma_1-2ma_2$
+\[ a_2=2a_1=\frac{2V^2}{l} \qquad a=\frac{v^2}{r} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=237-02 ch=06 sec=功能关系·摩擦生热 kind=derivation alt=03 cont=none y=0.18-0.31
+% 原稿 ΔE_k+Q 下、两处 E_PG 下有下划线
+\[
+W_{\text{额外}}=\Delta E_k+\overset{\scriptstyle fS_{\text{相}}}{Q}+\Delta E_{PG}+\cdots
+\]
+又 $S_{\text{传}}=2S_{\text{物}}$
+\[
+W_{\text{额}}=W_{f\text{对带}}+\unclear{\Delta}E_{PG}=2fS_{\text{物}}+\Delta E_{PG}
+\] % CHECK: 第一个 E_PG 前的"+"处笔迹像"+Δ"，不确定是否有 Δ
+%%%END
+%%%BLOCK id=243-02 ch=06 sec=动能·Ek-t图像(平抛) kind=problem alt=04 cont=none y=0.22-0.30
+\begin{problem}
+%FIG p243_b 0.095 0.215 0.30 0.295
+\notefig[0.3]{figures/p243_b.png}
+\begin{solution}
+\[ \frac{\Delta E_K}{\Delta t}=mgV_y\uparrow \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=244-02 ch=06 sec=动能定理·斜面平面滑动 kind=method alt=none cont=none y=0.165-0.28
+%FIG p244_b 0.04 0.165 0.425 0.235
+\notefig[0.4]{figures/p244_b.png}
+\[ \mu=\frac{h}{x_1+x_2} \]
+%%%END
+%%%BLOCK id=245-05 ch=06 sec=功能关系·弹簧与恒力做功 kind=problem alt=none cont=none y=0.64-0.88
+\begin{problem}
+%FIG p245_g 0.0 0.65 0.095 0.735
+\notefig[0.25]{figures/p245_g.png}
+\begin{solution}
+\[ mg=kx_0 \]
+从0开始到$F_1$断\quad $mg+F_1=k(x+x_0)$\quad $F_1=kx$\quad $\therefore W_{F_1}=\dfrac12kx^2=\dfrac12F_1x$
+
+恒力 到拉断\quad $W_{F_2}=F_2x$
+
+$F_2$作用 系统机械能$\uparrow$
+
+又 $W_{F_1}=W_{F_2}=\Delta E_{P\text{弹}}+\Delta E_{PG}$
+
+$\therefore F_1=2F_2$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=247-02 ch=06 sec=机械能守恒·关联速度系统 kind=problem alt=04 cont=none y=0.45-0.55
+%FIG p247_c 0.11 0.465 0.275 0.545
+\notefig[0.25]{figures/p247_c.png}
+\[
+\begin{cases}
+mgL(1-\cos37^\circ)=\dfrac12mv^2+\dfrac12M(0.8V)^2\\[4pt]
+mg\cos37^\circ=\dfrac{mv^2}{L}
+\end{cases}
+\]
+%%%END
+%%%BLOCK id=266-01 ch=06 sec=功能关系·传送带摩擦生热 kind=problem alt=03,01 cont=none y=0.00-0.40
+\begin{problem}
+%FIG p266_a 0.10 0.01 0.48 0.125
+\notefig[0.45]{figures/p266_a.png}
+（图中标注：$m=0.5\unit{kg}$，$L=10.25\unit{m}$，$V=10\unit{m/s}$，$\mu=0.5$，$37^\circ$）
+\begin{solution}
+\begin{tabular}{@{}ll@{}}
+$a_1=10\unit{m/s^2}$ & $a_2=2\unit{m/s^2}$\\
+$g\sin\theta+\mu g\cos\theta$ & $g\sin\theta-\mu g\cos\theta$
+\end{tabular}
+
+$t_1=\dfrac{V_0}{a_1}=1\unit{s}$\qquad $S_1=\dfrac12V_0t_1=5\unit{m}$
+
+$L-S_1=V_0t_2+\dfrac12a_2t_2^2$\qquad $t_2=0.5\unit{s}$
+
+$\Delta x_1=V_0t_1-x_1=5\unit{m}$ % CHECK: 首个“=”手写似“-”，按上下文取“=”
+
+$\Delta x_2=x_2-V_0t_2=0.25\unit{m}$
+
+$\Delta x_1>\Delta x_2$
+
+故痕迹长度为 $5\unit{m}$
+
+\[ W_{\text{带对块}}=fx_1-fx_2=\Delta E_{\text{机}}=\Delta E_K+\Delta E_p \]
+\[ W_{\text{电机对带}}=fV_0t_1-fV_0t_2=10\unit{J}=\Delta E_{\text{电}}=\Delta E_{\text{机}}+Q \]
+\[ Q=f\times\overset{L-S_1}{5.25\unit{m}}=10.5\unit{J} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=268-01 ch=06 sec=弹簧模型·连接体 kind=problem alt=03 cont=none y=0.02-0.80
+% 贴纸印刷题；原稿上有圈画：“系数为k”“固定斜面平行”“均为m”“正确”被圈出，“轻绳恰好拉直而无作用力。”“不计一切摩擦。”被划线
+\begin{problem}[14（贴纸印刷题）]
+如图所示，劲度系数为$k$的竖直轻弹簧的下端固定在水平面上，上端与物块A连接，物块B与物块A之间用一绕过定滑轮O的轻绳连接，B放在固定斜面的上端（用外力控制B）。OA绳竖直，OB绳与倾角为$53^\circ$的足够长的固定斜面平行，且\underline{轻绳恰好拉直而无作用力。}A、B的质量均为$m$，A、B均视为质点，重力加速度大小为$g$，取$\sin53^\circ=0.8$，$\cos53^\circ=0.6$，\underline{不计一切摩擦。}现将B由静止释放，B沿斜面下滑，弹簧始终处在弹性限度内。下列说法正确的是（A\struck{\unclear{B}}C）% 括号内手写答案，A与C之间有被叉掉的字（疑为B）
+
+\begin{itemize}
+\item[A.] 释放B后的瞬间，轻绳的弹力大小为$\dfrac{2}{5}mg$ % 原稿：A被圈住并有斜划线，分数上也有一道斜线
+\item[B.] 当A的速度最大时，弹簧处于拉伸状态 % 原稿：“拉伸”处有斜划线；状态上方手写“压缩”，其下手写并圈出“$a=0$”
+\item[C.] A的最大速度为$\sqrt{\dfrac{8mg^2}{25k}}$ % 原稿：C被圈住，根号式也被圈住
+\item[D.] 当B处于最低点时，弹簧处于压缩状态 % 原稿：“压”字上有斜划线
+\end{itemize}
+
+手写批注（选项B旁）：\textbf{压缩}；$a=0$（圈出）。
+
+%FIG p268_a 0.725 0.176 0.95 0.30
+\notefig[0.3]{figures/p268_a.png}
+
+手写批注（图旁/图下）：$0.8mg-T=\unclear{\ldots}$ % 原稿为“0-8mg·-T=”，右侧被贴纸边缘截断；图中A上方绳旁标有$\frac{4}{5}mg$
+
+%FIG p268_b 0.52 0.225 0.96 0.36
+\notefig[0.5]{figures/p268_b.png}
+
+\[
+kx=\frac{1}{5}mg\ \uparrow
+\]
+受力箭头：$\uparrow$；$\downarrow kx$、$\downarrow mg$；
+\[
+T=mg+kx
+\]
+\struck{$\dfrac{4}{5}mg-T$} % 此式被横线划去；其下纸边另有被截断的字迹“4…m”，无法辨认\unclear{4\ldots m}
+
+\begin{solution}
+A.\ 释放前 对A：$kx_1=mg$
+
+释放后 对A、B：$kx_1-mg+mg\sin53^\circ=2ma$，\quad $a=\dfrac{2}{5}g$
+
+对A：$T_1+kx_1-mg=ma$，\quad $T_1=\dfrac{2}{5}mg$
+
+B.\ $V_{A\max}$时 $a_A=a_B=0$，\quad $T_2=mg\sin53^\circ<mg$，故弹簧压缩
+
+C.\ $V_{A\max}$时 对A由平衡条件：$T_2+kx_2=mg$，\quad $x_2=\dfrac{mg}{5k}$
+
+由动能定理
+\[
+\frac{k}{2}\left(x_1^2-x_2^2\right)+mg(x_1-x_2)\sin53^\circ-mg(x_1-x_2)=\frac{1}{2}\,2mV_m^2-0
+\]
+\[
+V_m=\sqrt{\frac{8mg^2}{25k}}
+\]
+
+D.\ 设当B处于最低点时压缩，$x_3$
+\[
+\frac{k(x_1+x_3)}{2}(x_1-x_3)+mg(x_1-x_3)\sin53^\circ-mg(x_1-x_3)=0
+\]
+\[
+x_3=\frac{-3mg}{5k}<0\quad\text{不成立}
+\]
+故拉伸。
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=270-04 ch=06 sec=动能定理·图像法 kind=method alt=90 cont=none y=0.22-0.37
+\textbf{图象法}——面积
+\begin{itemize}
+\item $F$--$x$
+\item $a$--$x$
+\item $\mu$--$x$
+\item $p$--$\unclear{V}$
+\end{itemize}
+动能Th\ 多过程曲线运动
+%%%END
+%%%BLOCK id=270-05 ch=06 sec=功率·公式 kind=formula alt=none cont=none y=0.39-0.54
+$P$ 定义式\quad $P=\dfrac{W}{t}$
+\[
+P=F\cdot v\cos\alpha
+\]
+\[
+\bar P=F\bar v
+\]
+\[
+P_{\text{瞬}}=FV_{\text{瞬}}
+\]
+%%%END
+%%%BLOCK id=270-06 ch=06 sec=功率·E-t图像斜率 kind=knowledge alt=none cont=none y=0.38-0.57
+\textbf{$E$--$t$图斜率为对应功率}
+\begin{itemize}
+\item $E_k$--$t$\quad $P_{\text{合外力}}$
+\item $E_{P_G}$--$t$\quad $P_G$
+\item $E$--$t$\quad $P_{\text{其他}}$ 如 $P_f$ 等
+\end{itemize}
+%FIG p270_b 0.375 0.415 0.60 0.568
+\notefig[0.25]{figures/p270_b.png}
+图旁文字：受力水平；\ $P_{G\max}$
+%%%END
+%%%BLOCK id=270-09 ch=06 sec=功能关系·摩擦力做功与v-t图像 kind=method alt=none cont=none y=0.64-0.98
+%FIG p270_c 0.055 0.64 0.27 0.75
+\notefig[0.25]{figures/p270_c.png}
+\begin{align*}
+N&=mg\cos\alpha+F\sin\alpha\\
+f&=\mu mg\cos\alpha+\mu F\sin\alpha\\
+W_f&=-fS=-\mu mgS\cos\alpha-\mu F\sin\alpha=-\mu mgx-\mu Fy % 原稿此处等号写成“÷”形；CHECK: 第二项按x、y的换算应为μFS sinα，原稿似无S
+\end{align*}
+$\circ$\ $E_{k1}=E_{k2}$ % 原稿“=”与“Ek₂”之间有一小笔画，疑为连笔
+
+\quad $t_1>t_2$
+
+%FIG p270_d 0.30 0.84 0.53 0.98
+\notefig[0.25]{figures/p270_d.png}
+%%%END
+%%%BLOCK id=271-02 ch=06 sec=动能定理·变力做功（平均力法） kind=problem alt=03 cont=none y=0.19-0.44
+% 贴纸印刷题（上缘被撕边截断）；原稿圈出“正确”及“三块长木板恰能完全进入粗糙的PA段”，“PA段粗糙程度处处相同”处有铅笔划线
+\begin{problem}[贴纸印刷题]
+\unclear{如}图所示，一固定的足够长斜面体倾斜角为$\theta$，其中PB段光滑，PA段粗糙程度处处相同，三块完全相同且长度为$L$的质量分布均匀的木板123靠在一起，从N点静止释放。已知$PN=L$，三块长木板恰能完全进入粗糙的PA段，重力加速度为$g$，每块的质量为$m$，下列说法正确的是（\unclear{BD}） % 括号后手写答案，难辨，疑为BD
+
+\begin{itemize}
+\item[A.] PA段动摩擦因数$\mu=\dfrac{4}{3}\tan\theta$ % 原稿：式子被斜线划去
+\item[B.] \unclear{三}块长木板运动过程中的最大速度为$v_m=\dfrac{5\sqrt{2gL\sin\theta}}{4}$ % 原稿：式下有大“✓”形勾画；该行开头被铅笔字遮盖
+\item[C.] 第1块长木板恰完全进入粗糙的PA段时，第1、2块长木板之间的作用力为$F_{12}=2mg\sin\theta$ % 原稿：$2mg\sin\theta$被斜线划去，其后另有一笔“9”形
+\item[D.] 第2块长木板恰完全进入粗糙的PA段时，速度大小为$v_2=\dfrac{\sqrt{22gL\sin\theta}}{3}$ % 原稿：句下有大“✓”形勾画
+\end{itemize}
+
+%FIG p271_a 0.495 0.235 0.99 0.41
+\notefig[0.6]{figures/p271_a.png}
+
+\begin{solution}
+手写铅笔批注（分散在题面空白处，按位置照录）：
+\begin{itemize}
+\item 左侧页边：$W_{\text{合}}=0$
+\item $3mg\cdot4L\sin\theta=$ \quad 图左侧续写：$\dfrac{\mu\cdot3mg\cos\theta}{2}\cdot3L$
+\item 方框内：$\mu=\dfrac{8}{3}\tan\theta$
+\item 图右上：$9mgL=6\mu mgL\cos\theta$ % 原稿“6”写在μ的左下方；等式左侧疑漏$\sin\theta$
+\item 图右：\#\quad $\mu=\dfrac{3}{2\cos\theta}$
+\item 选项C右下：$\dfrac{16}{9}mg\sin\theta$；其右圈出：$\unclear{\dfrac{2m}{18}}$ % 难辨
+\item 选项C、D之间左侧另有难辨铅笔字迹：\unclear{T、3L}
+\item 右下：平均力法\ \unclear{（…）}
+\end{itemize}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=272-02 ch=06 sec=传送带·摩擦生热与电动机功率 kind=problem alt=03 cont=none y=0.30-0.79
+% 贴纸印刷题；原稿“电动机的平均输出”处有铅笔划线
+\begin{problem}[贴纸印刷题]
+（4+4+4）如图所示，生产车间有两个相互垂直且等高的水平传送带甲和乙，甲的速度为$2v_0$。小工件离开甲前与甲的速度相同，并平稳地传到乙上，工件与乙之间的动摩擦因数为$\mu$。乙的宽度足够大，重力加速度为$g$。
+\begin{itemize}
+\item[(1)] 若乙的速度为$2v_0$，求工件在乙上侧向（垂直于乙的运动方向）滑过的距离$s$；
+\item[(2)] 若乙的速度为$4v_0$，求工件在乙上刚停止侧向滑动时的速度大小$v$；
+\item[(3)] 保持乙的速度$4v_0$不变，当工件在乙上刚停止滑动时，下一只工件恰好传到乙上，如此反复。若每个工件的质量均为$m$，除工件与传送带之间摩擦外，其他能量损耗均不计，求驱动乙的电动机的平均输出功率$\overline{P}$。
+\end{itemize}
+
+%FIG p272_b 0.02 0.48 0.27 0.625
+\notefig[0.3]{figures/p272_b.png}
+
+手写铅笔答案：(1)旁（箭头指向“距离$s$”）：
+\[
+S=\frac{2\sqrt2\,V_0^2}{\mu g}
+\]
+(2)旁（写在“速度大小$v$”下方）：$4V_0$。图中乙带右缘另有铅笔小标注\unclear{$\theta_1$}。
+
+\begin{solution}
+\begin{align*}
+a_x&=\mu g\cos\theta\\
+a_y&=\mu g\sin\theta\\
+-2a_xS&=0-(2V_0)^2\\
+2a_yy&=(4V_0)^2-0
+\end{align*}
+\[
+t=\frac{4V_0}{a_y}\qquad y_1=4V_0t
+\]
+工件相对乙位移\ $L=\sqrt{x^2+(y_1-y)^2}$
+\[
+Q=\mu mgL\qquad W=\frac{1}{2}m(4V_0)^2-\frac{1}{2}mV_0^2+Q
+\] % CHECK: 初动能项原稿为½mV₀²，工件进入乙时速度为2v₀，应为½m(2V₀)²？
+\[
+P=\frac{W}{t}\qquad \overline{P}=\frac{8\sqrt5\,\mu mgV_0}{5}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=273-01 ch=06 sec=机械能守恒·链条 kind=derivation alt=none cont=none y=0.05-0.21
+%FIG p273_a 0.085 0.063 0.212 0.205 soft
+\notefig[0.25]{figures/p273_a.png}
+
+非质点\unclear{系}
+
+由机械能守恒
+\[
+\frac12 mg\frac L2=\frac12 mv^2
+\]
+\[
+v=\sqrt{\frac{gL}{2}}
+\]
+%%%END
+%%%BLOCK id=273-02 ch=06 sec=机械能守恒·条件辨析 kind=knowledge alt=none cont=none y=0.05-0.19
+\begin{itemize}
+\item 合外力为0 不是\textsuperscript{机守}守恒守恒 % CHECK: 此行“守恒”似连写两遍；“机守”为写在上方的插入小字
+\item 合外力做功为0 也不是机械能守恒\quad（匀速放\unclear{重}物） % 括号内为写在行末右下方的小字
+\item 只有重力、弹力做功\\
+  $\to$ 系统内的弹力
+\end{itemize}
+%%%END
+%%%BLOCK id=273-03 ch=06 sec=机械能守恒·连接体型 kind=method alt=04 cont=none y=0.22-0.35
+\textbf{机械能守恒}
+
+连接体型
+\begin{itemize}
+\item 速度关联不同
+\item $h_1$、$h_2$ 高度变化不同
+\end{itemize}
+%%%END
+%%%BLOCK id=273-04 ch=06 sec=功能关系·图像 kind=diagram alt=03 cont=none y=0.38-0.53
+% 四幅图自左至右：v-t；P_{E_p}/P_G-t；E_K-t(下方标 P_{合外力})；E-t(下方标 P_f)
+$f=kv$ 下落
+
+%FIG p273_b 0.07 0.385 0.82 0.525
+\notefig[0.85]{figures/p273_b.png}
+%%%END
+%%%BLOCK id=274-02 ch=06 sec=功能关系·摩擦生热 kind=knowledge alt=12 cont=none y=0.22-0.39
+系统中一对相互作用的滑动摩擦力对系统做总功必为负值
+\[
+\begin{aligned}
+W_1+W_2&=\Delta E_{\text{机}} % 右侧被页边截断，“机”后或有字
+\\
+&=Q\\
+&=f_{\text{滑}}x_{\text{相对}}\ \text{\unclear{路程}}
+\end{aligned}
+\]
+
+相互作用力做功无关 % CHECK: 原文如此，疑缺字(如“与…无关”)
+
+电磁感应中克服安培力做功对系统做总功必为负值
+\[
+\text{电能}=Q=\Delta E_K
+\]
+%%%END
+%%%BLOCK id=274-03 ch=06 sec=能量守恒·转动动能 kind=problem alt=none cont=none y=0.34-0.50
+%FIG p274_b 0.13 0.345 0.32 0.435
+\notefig[0.3]{figures/p274_b.png}
+
+\[
+v^2=\frac45 gL\qquad 2mgL\sin30^\circ=\frac12\,2mv^2+E_K\ \text{转动动能}
+\]
+\[
+E_K=\frac14 m\omega^2R^2
+\]
+%%%END
+%%%BLOCK id=274-05 ch=06 sec=功能关系·环与半圆 kind=problem alt=02 cont=none y=0.53-0.72
+%FIG p274_c 0.04 0.53 0.36 0.715
+\notefig[0.4]{figures/p274_c.png}
+
+缓慢拉动A环，B环\textsuperscript{相似}$\dfrac NG=\dfrac Rh$ 大小不变方向变
+
+若F为恒力，B环不会到D右边 % CHECK: “不会”二字手写偏草，与下列不等式的结论关系待核
+\[
+F\left(\sqrt{R^2+h^2}-(h-R)\right)>FR>mgR
+\]
+相切时 $\sin\angle OPB=\dfrac Rh$
+
+B到D B环机械能增量 $\Delta E=F\left(\sqrt{h^2+R^2}-h+R\right)$
+%%%END
+%%%BLOCK id=275-03 ch=06 sec=功·摩擦力做功 kind=method alt=03 cont=none y=0.33-0.47
+\textbf{连接体部分摩擦}
+
+%FIG p275_b 0.125 0.37 0.30 0.43
+\notefig[0.3]{figures/p275_b.png}
+\[
+W_f=\mu mg\,\frac L3
+\]
+%FIG p275_c 0.125 0.425 0.315 0.47
+\notefig[0.3]{figures/p275_c.png}
+\[
+W_f=\mu mg\left(L+\frac L3\right)+\mu mg\,\frac L3
+\]
+%%%END
+%%%BLOCK id=277-01 ch=06 sec=传送带·功能关系 kind=problem alt=03 cont=none y=0.01-0.41
+% 图1标注：m=1kg, V_0=2m/s, \mu=\sqrt3/2, L=16m, 30^\circ
+%FIG p277_a 0.09 0.008 0.33 0.112
+\notefig[0.3]{figures/p277_a.png}
+
+% 图2：传送带示意(斜线)，标注“第1个”“第n个”(疑为第11个)及两处0.8m
+%FIG p277_b 0.46 0.02 0.97 0.205
+\notefig[0.6]{figures/p277_b.png}
+
+加速上升\quad $a_1=2.5\unit{m/s^2}$
+
+$t=\dfrac{V_0}{a_1}=0.8\unit{s}$ 后匀速\quad $S_1$\quad $0.8\unit{m}$
+
+下一个也加速$0.8\unit{s}$\quad $S_2$
+
+$S_1-S_2=0$
+
+上个匀速$0.8\unit{s}$ 故两工件相距 $S=2\times0.8=1.6\unit{m}$
+
+$W_{f\text{对工件}}=\dfrac12 mV^2+mgh=82\unit{J}$
+
+传送带满载工件比空载时增加的功率
+
+10个匀速\quad 1个加速
+
+$P=10mg\sin\theta\,V+\mu mg\cos\theta\,V=115\unit{W}$
+%%%END
+%%%BLOCK id=278-10 ch=06 sec=功能关系·摩擦力做功 kind=derivation alt=04 cont=none y=0.52-0.76
+%FIG p278_f 0.53 0.535 0.69 0.64
+\notefig[0.25]{figures/p278_f.png}
+\[
+W_f=\frac{1}{2}mgR
+\]
+$\because f>\mu mg\cos\alpha$
+
+又$\because$ $fx=\dfrac{1}{2}mgR$
+
+$\therefore \mu<\dfrac{1}{2}$
+%%%END
+%%%BLOCK id=282-01 ch=06 sec=功能关系·弹射器与竖直圆轨道 kind=problem alt=04 cont=none y=0.00-0.49
+% 贴纸题（印刷体）+手写解答。照片上边缘切掉了题干的前一两行（题号与开头无法辨认）；原稿：m=0.01kg、R=0.8m、r=0.1m、μ=0.5、L=2m、E_pm=0.5J均被框出，“滑块”“其余各部分轨道均光滑”被圈，“滑块与弹性板作用后以等大速率弹回”处有一道横线穿过（疑为划线强调），“最终静止在轨道FG中点的左侧区域内”下有划线
+\begin{problem}
+\unclear{…}安装在水平\unclear{…}% 第一行被照片上边缘切断，仅见右端“安装在水平”几字
+
+\unclear{…}射器、水平直轨道$AB$、圆心为$O_1$的竖直半圆轨道$BCD$、圆心为$O_2$的竖直半圆管道$DEF$、水平直轨道$FG$及弹性板等组成，轨道各部分平滑连接。已知滑块（可视为质点）质量$m=0.01\unit{kg}$，轨道$BCD$的半径$R=0.8\unit{m}$，管道$DEF$的半径$r=0.1\unit{m}$，滑块与轨道$FG$间的动摩擦因数$\mu=0.5$，其余各部分轨道均光滑，轨道$FG$的长度$L=2\unit{m}$，弹射器中弹簧的弹性势能最大值$E_{pm}=0.5\unit{J}$，滑块与弹簧作用后，弹簧的弹性势能完全转化为滑块的动能，滑块与弹性板作用后以等大速率弹回，$g=10\unit{m/s^2}$。
+
+%FIG p282_a 0.68 0.03 0.99 0.185
+\notefig[0.3]{figures/p282_a.png}
+（1）若滑块被弹簧弹开后恰能沿轨道$BCD$到达$D$点，求弹簧的弹性势能$E_p$；
+
+（2）若滑块在运动过程中最终静止在轨道$FG$中点的左侧区域内，求弹簧的弹性势能$E_p$的范围
+\begin{solution}
+（1）$mg=\dfrac{mv_{\min}^2}{R}$
+
+$E_p=mg\,2R+\dfrac{1}{2}mv_{\min}^2$
+
+$E_p=0.2\unit{J}$
+
+（2）若滑块在运动过程中第一次恰运动到$F$点
+
+$E_{p\min}=mg(2R+2r)=0.18\unit{J}<0.2\unit{J}$\qquad $E_{p\min}=0.2\unit{J}$
+
+运动过程中\ 若恰好第一次运动到$FG$中点。\ $E_{p\max}=mg(2R+2r)+\mu mg\dfrac{L}{2}=0.23\unit{J}$% “运动过程中”为行首上方的小字（插入）
+
+第二次\quad $E_{p\min}=mg(2R+2r)+\mu mg\dfrac{3L}{2}=0.33\unit{J}$
+
+第三次\quad $E_{p\max}=mg(2R+2r)+\mu mg\dfrac{5}{2}L=0.43\unit{J}$
+
+第四次\quad $E_{p\max}=mg(2R+2r)+\mu mg\dfrac{7}{2}L=0.53\unit{J}$
+
+由$E_{p\max}=0.5\unit{J}$
+
+综上 弹性势能范围：$0.2\unit{J}\le E_p<0.23\unit{J}$ 或 $0.33\unit{J}<E_p<0.43\unit{J}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=286-03 ch=06 sec=功能关系·系统内力做功 kind=note alt=03 cont=none y=0.68-0.71
+对系统，内力对 A、B 做功，绝对值相等
+%%%END
+%%%BLOCK id=286-06 ch=06 sec=功·变力做功 kind=formula alt=none cont=none y=0.94-0.99
+有线性变力\quad $W_F=\dfrac{F_1+F_2}{2}x$
+%%%END
+%%%BLOCK id=294-03 ch=06 sec=机械能守恒·杆连接体 kind=problem alt=04,07 cont=none y=0.64-0.82
+\begin{problem}[3]
+%FIG p294_c 0.03 0.648 0.245 0.775
+\notefig[0.3]{figures/p294_c.png}
+
+\begin{solution}
+分离时 $mgl(1-\sin\alpha)=\dfrac{1}{2}mv^2+\dfrac{1}{2}m\left(\dfrac{v}{\tan\alpha}\right)^2$
+
+$v^2=gl(2-2\sin\alpha)\sin^2\alpha$\quad 当 $\sin\alpha=\dfrac{2}{3}$ 时 $v_A$ 最大，
+
+$I_{\text{墙}}=mv=\ldots$
+
+B 的最大动能为落地时。
+\end{solution}
+\end{problem}
+%%%END

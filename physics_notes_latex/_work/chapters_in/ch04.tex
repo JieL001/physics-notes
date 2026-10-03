@@ -1102,6 +1102,90 @@ $\omega$ 相同 $r$ 越大 $a$ 越大 · $F$\unclear{向}也越大。% CHECK: �
 
 $F_{\text{杆}m}=0$时\quad $N=Mg$\quad $f=0$
 %%%END
+%%%BLOCK id=165-01 ch=04 sec=平抛运动·反弹碰撞 kind=problem alt=06,07 cont=none y=0.07-0.41
+\begin{problem}
+% 剪贴印刷题干。左缘（第2、4行起首处）有红笔小字/记号，辨认不清；选项B、C左侧有手写记号；“正确”二字被圈出；题干与选项之间有铅笔手绘的折线（V形）划痕
+\red{\unclear{…}}甲、乙两同学在课外活动时进行乒乓球比赛，已知乒乓球的质量为 $m$ 且可视为质点，球桌的长度为 $L$，甲同学在球桌左边缘上方高 $H$ 处沿水平方向发球，在桌面上反弹后恰好过网，之后乒乓球落在球桌的右边缘上。乒乓球第一次落在桌面上时的水平位移为 $\frac{3}{8}L$，已知第一次与桌面接触的过程乒乓球与桌面相互作用的时间为 $t$，接触前后水平方向速度不变，重力加速度大小为 $g$，不计摩擦和空气阻力。下列说法正确的是
+\begin{enumerate}[label=\Alph*.,leftmargin=2em,itemsep=0pt]
+\item 乒乓球第一次与桌面接触过程中损失的能量为 \unclear{$\frac{2}{3}mgH$} % 分数上有一道斜划，分母看不清
+\item 乒乓球第一次与桌面接触后反弹上升的最大高度为 $\frac{25}{36}H$
+\item 第一次与桌面接触的过程中，乒乓球受到桌面提供的平均作用力为 $\dfrac{11m\sqrt{2gH}}{6t}+mg$
+\item 球网的高度为 \struck{$\frac{5}{9}H$} % 印刷选项D被斜线划去
+\end{enumerate}
+%FIG p165_a 0.36 0.205 0.545 0.30
+\notefig[0.3]{figures/p165_a.png}
+手写（淡铅笔，图右上方）：BC
+\begin{solution}
+$V_{y_1}=\sqrt{2gH}$
+
+$V_{y_2}=\sqrt{2gh}$
+
+由动量定理\quad $-\bar{F}t+mgt=-mV_{y_2}-mV_{y_1}$
+
+\[
+\bar{F}=\frac{11m\sqrt{2gH}}{6t}+mg
+\]
+
+由运动学公式 网高\unclear{$\frac{4}{9}H$} 可建\unclear{系}
+
+两次平抛
+\[
+\left\{\begin{aligned}
+v_0\sqrt{\frac{2H}{g}}&=\frac{3}{8}L\\
+2v_0\sqrt{\frac{2h}{g}}&=\frac{5}{8}L
+\end{aligned}\right.
+\qquad h=\frac{25}{36}L\qquad \Delta E_{\text{损}}=\frac{11}{36}mgH
+\]
+% CHECK: h=25/36 L 一处原稿末尾写作 L（据上下文应为 H）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=166-01 ch=04 sec=圆周运动·过弯最短时间 kind=problem alt=none cont=none y=0.00-0.30
+\begin{problem}
+\textbf{力学也有相切}
+
+车利用技术 用最短时间过 \unclear{路宽} $d=10\unit{m}$ % “d=”写在“路宽”二字上方；“路宽”二字潦草
+\red{$r_1=\unclear{70}\unit{m}$\quad $\mu=1.25$}
+% CHECK: 红字 r_1 之后的数值字形像“70”（有可能是 7.5 或 10；由后面 r'=12.5m、θ=53° 的 3-4-5 三角形反推 r_1 应为 10 或 7.5），照原样存疑
+%FIG p166_a 0.148 0.056 0.362 0.182 soft
+\notefig[0.3]{figures/p166_a.png}
+\begin{solution}
+\red{$r'^2=r_1^2+\left[r'-\left(r_1-\dfrac{d}{2}\right)\right]^2$}
+
+\red{$r'=12.5\unit{m}$}
+
+\red{$\mu mg=\dfrac{mv'^2}{r'}$}
+
+\red{$v'=12.5\unit{m/s}$}
+
+\red{$\theta=53^\circ$}
+
+\red{$t=\dfrac{2\theta}{360^\circ}\cdot\dfrac{2\pi r'}{v'}=1.85\unit{s}$}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=182-01 ch=04 sec=向心力·传感器实验 kind=method exp=1 alt=none cont=none y=0.00-0.255
+% 页顶一行被拍摄裁切，仅见下半截：大致为“拉(住)的力 T=mω…”，其下有分母 r、T² 等残迹，右侧另有零星残笔
+\unclear{拉住的力 $T=m\omega\cdots$}
+
+%FIG p182_a 0.065 0.01 0.305 0.118
+\notefig[0.3]{figures/p182_a.png}
+
+转 $n$ 圈用时 $t$
+
+$b$烧断前
+\[ F_a=mg\qquad \text{测 }m \]
+\[ T=\frac{t}{n} \]
+\[ r=l_b+\frac{d}{2} \]
+\[ F_{\text{向}}=\frac{4\pi^2n^2F_a}{gt^2}\left(l_b+\frac{d}{2}\right) \]
+\[ v=\frac{2\pi n}{t}\left(l_b+\frac{d}{2}\right) \]
+
+$b$烧断后\quad 瞬间传感器示数为 $F_0$
+\[ F_{\text{向}}=F_0-mg=\frac{F_a}{g}\cdot\frac{v^2}{l_a+\frac{d}{2}}\quad\Rightarrow\ \text{证}\ F_0=F_a\left[\frac{4\pi^2n^2\left(l_b+\frac{d}{2}\right)^2}{gt^2\left(l_a+\frac{d}{2}\right)}+1\right] \]
+% “证”字写在 ⇒ 的下方
+
+若$\uparrow$这个等式成立，则向心力公式得到验证
+%%%END
 %%%BLOCK id=195-03 ch=04 sec=竖直面圆周·平抛临界 kind=problem alt=none cont=none y=0.54-0.88
 % 原稿此块（及下方一行）被一条自右上向左下、末端回钩的大弧线划过，疑似划去，仍照录
 \notefig[0.4]{figures/p195_b.png}
@@ -1124,4 +1208,1038 @@ y&=\tfrac{1}{2}gt^2
 % 分子右侧有一个小星号标记；分母括号内手写形似“4”，CHECK: 按几何关系应为 $y$
 
 $\therefore\ t=0.3\unit{s}$
+%%%END
+%%%BLOCK id=207-01 ch=04 sec=水平圆周·转盘连接体临界 kind=method alt=02 cont=none y=0.04-0.26
+\textbf{单边型\unclear{水}平圆周}
+%FIG p207_a 0.09 0.085 0.285 0.21
+\notefig[0.28]{figures/p207_a.png}
+$\omega$从0开始$\uparrow$\quad 代入 $f_{\max}=\mu mg$
+\begin{itemize}
+\item $\omega\in\left[0,\sqrt{\dfrac{\mu g}{2r}}\right)$\quad 都静止\quad $T=0$\quad $f\uparrow$
+\item $\omega\in\left(\sqrt{\dfrac{\mu g}{2r}},\sqrt{\dfrac{2\mu g}{3r}}\right)$\quad $f_A$ $T_A$指向圆心，$T_B$\unclear{背}离圆心\quad $f_B$向圆心
+\item $\omega\in\left(\sqrt{\dfrac{2\mu g}{3r}},+\infty\right)$\quad $A$ $B$向外滑。（离心运动）
+\end{itemize}
+\textbf{红笔批注（右侧）：}
+\begin{itemize}
+\item \red{外侧先打滑。}
+\item \red{外侧打滑后，绳为\unclear{外}侧提供拉力与$f$合力充当向心力，对内侧\unclear{……}} % 原稿“绳为?侧”处字被涂改，“对内侧”后有涂抹的字迹
+\item \red{$f-T=m\omega^2r_{\text{内}}$}
+\item \red{$\omega\uparrow$ $T\uparrow$ $f\uparrow$到$f_{\max}$后，质心打滑}
+\end{itemize}
+%%%END
+%%%BLOCK id=207-02 ch=04 sec=水平圆周·转盘连接体临界 kind=method alt=02 cont=none y=0.26-0.49
+\textbf{双边型}
+%FIG p207_b 0.09 0.285 0.285 0.445
+\notefig[0.28]{figures/p207_b.png}
+\begin{itemize}
+\item $\omega\in\left[0,\sqrt{\dfrac{\mu g}{2r}}\right]$\quad $f_A$、$f_B$向里\quad $T=0$
+\item $\omega\in\left(\sqrt{\dfrac{\mu g}{2r}},\sqrt{\dfrac{\mu g}{r}}\right]$\quad $f_A$、$f_B$向里 有$T$\quad $T$向里
+\item $\omega\in\left(\sqrt{\dfrac{\mu g}{r}},\sqrt{\dfrac{2\mu g}{r}}\right]$\quad $f_B$向外，$f_A$向里
+\item $\omega\in\left(\sqrt{\dfrac{2\mu g}{r}},+\infty\right)$\quad 质心做离心运动 向左。
+\end{itemize}
+\textbf{红笔批注（右侧）：}
+\begin{itemize}
+\item \red{外侧先打滑}
+\item \red{\unclear{于是}外侧打滑后}
+\item \red{绳为外侧提供拉力}
+\item \red{与$f$的合力充当向心力}
+\item \red{随$\omega\uparrow$ $T\uparrow$}
+\item \red{$f_{\text{内}}\downarrow$到0后反向}
+\item \red{增大到$f_{\max}$后}
+\item \red{（质心）整体打滑。}
+\end{itemize}
+%%%END
+%%%BLOCK id=207-03 ch=04 sec=水平圆周·转盘连接体临界 kind=method alt=none cont=none y=0.43-0.57
+\begin{itemize}
+\item $m_Ar_A>m_Br_B$\quad 质心在$A$侧\quad 向$A$侧离心运动
+\item $m_Ar_A=m_Br_B$\quad 质心在$O$ 不会打滑，\unclear{张力}$T$一直$\uparrow$直到绳拉断
+\item $m_Ar_A<m_Br_B$\quad 质心在$B$侧\quad 向$B$侧离心运动
+\end{itemize}
+%FIG p207_c 0.49 0.435 0.69 0.56
+\notefig[0.3]{figures/p207_c.png}
+\[
+\mu\,2mg=2m\omega^2\,\frac{r}{2}
+\qquad
+\omega=\sqrt{\frac{\mu g}{r}}
+\]
+%%%END
+%%%BLOCK id=207-04 ch=04 sec=关联速度·滑轮 kind=method alt=none cont=none y=0.54-0.74
+\begin{minipage}[t]{0.40\linewidth}
+%FIG p207_d 0.09 0.545 0.205 0.685
+\notefig[0.95]{figures/p207_d.png}
+$V_B=\frac12V_A$
+\end{minipage}\hfill
+\begin{minipage}[t]{0.55\linewidth}
+%FIG p207_e 0.28 0.545 0.49 0.685
+\notefig[0.95]{figures/p207_e.png}
+$V_B=\frac12V_A\cos\alpha$
+\end{minipage}
+
+\red{竖直速度为2倍关系}\quad \fbox{$V_A\cos\alpha=2V_B$}
+%%%END
+%%%BLOCK id=208-02 ch=04 sec=平抛·斜面上的平抛与等时间间隔投弹 kind=diagram alt=none cont=none y=0.58-0.72
+\begin{minipage}[t]{0.47\linewidth}
+%FIG p208_b 0.04 0.585 0.35 0.72
+\notefig[0.95]{figures/p208_b.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.50\linewidth}
+等时间间隔投弹\quad $t_{ab}=2t_{bc}$
+%FIG p208_c 0.40 0.607 0.73 0.725
+\notefig[0.95]{figures/p208_c.png}
+\end{minipage}
+
+图中文字：左图“更早到”；右图“第3个在$bc$之间”，底线下方“第一个 第2个”。
+%%%END
+%%%BLOCK id=208-03 ch=04 sec=平抛·斜面上的平抛与等时间间隔投弹 kind=method alt=none cont=none y=0.73-0.95
+\begin{minipage}[t]{0.47\linewidth}
+%FIG p208_d 0.04 0.745 0.32 0.86
+\notefig[0.95]{figures/p208_d.png}
+由 $x_1=x_2$ $\therefore\Delta t_1=\Delta t_2$
+\end{minipage}\hfill
+\begin{minipage}[t]{0.50\linewidth}
+%FIG p208_e 0.45 0.745 0.75 0.86
+\notefig[0.95]{figures/p208_e.png}
+$x_2=2x_1$
+\end{minipage}
+
+右图中文字：飞机；以$V_0$射出；以$2V_0$射出。
+
+\unclear{定}同一地面\quad 水平\quad $x\propto v$
+%%%END
+%%%BLOCK id=209-01 ch=04 sec=曲线运动·曲率半径与法向力 kind=method alt=11 cont=none y=0.10-0.56
+洛伦兹力下 $R\uparrow$ $V\uparrow$
+
+变速曲线下 $R\uparrow$ $V\downarrow$\qquad $F_n=\dfrac{mV^2}{\rho}$
+%FIG p209_a 0.04 0.29 0.26 0.50
+\notefig[0.3]{figures/p209_a.png}
+$F_n=mg\cos\theta$
+\[
+\begin{cases}
+mg\cos\theta=\dfrac{mV^2}{\rho}\\[4pt]
+mgy=\dfrac12mV^2\\[4pt]
+\tan\theta=2\tan\alpha=\dfrac{2y}{x}
+\end{cases}
+\qquad
+y=\dfrac{g^2x^2}{2V_0^2}
+\]
+% CHECK: 右侧 y 的表达式分子写作 g²x²，与平抛轨迹 y=gx²/(2v0²) 不一致，请核对
+%%%END
+%%%BLOCK id=221-08 ch=04 sec=平抛运动·活用公式 kind=method alt=none cont=none y=0.62-0.77
+\textbf{7、}活用公式
+%FIG p221_e 0.04 0.64 0.25 0.765
+\notefig[0.25]{figures/p221_e.png}
+\begin{align*}
+t_1&=\sqrt{\frac{2(h_1+h)}{g}}\\
+t_2&=\sqrt{\frac{2(h_1+2h)}{g}}
+\end{align*}
+\[
+\frac{t_1}{t_2}=\frac{\sqrt{h_1+h}}{\sqrt{h_1+2h}}<\frac{\sqrt2}{2}\ \unclear{…}\quad\text{故}\ t_2<\sqrt2\,t_1
+\] % CHECK: 按算式 t1/t2 应不小于 √2/2，原稿不等号为“<”；“√2/2”后有一处涂改字迹
+%%%END
+%%%BLOCK id=222-06 ch=04 sec=圆周运动·向心力（相对速度） kind=method alt=07,06 cont=none y=0.64-0.83
+向心力。相对于圆心的速度\quad $F_n=\dfrac{mv^2}{r}$
+
+%FIG p222_d 0.0 0.705 0.15 0.785
+\notefig[0.25]{figures/p222_d.png}
+\begin{align*}
+mgR&=\frac12MV'^2+\frac12mV^2\\
+mV&=MV'\\
+N-mg&=\frac{m(V+V')^2}{r}
+\end{align*}
+%%%END
+%%%BLOCK id=225-03 ch=04 sec=平抛运动·频闪照片 kind=problem exp=1 alt=01 cont=none y=0.15-0.38
+\begin{problem}
+%FIG p225_b 0.462 0.165 0.74 0.274
+\notefig[0.3]{figures/p225_b.png}
+$T=0.1\unit{s}$
+\begin{solution}
+$\Delta y=y_2-y_1=gT^2$\quad $\therefore\ V_0=2\unit{m/s}$
+
+$V_{Ay}=1.5\unit{m/s}$\quad $t=0.15\unit{s}$
+
+$V_A=2.5\unit{m/s}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=225-06 ch=04 sec=平抛运动·动能与动量变化 kind=problem alt=06,07 cont=none y=0.37-0.50
+\begin{problem}
+%FIG p225_c 0.512 0.378 0.600 0.43
+\notefig[0.25]{figures/p225_c.png}
+\begin{solution}
+第3s内：第5s内\quad $E_k$变化\quad $5:9$ % 原稿：“E_k变化”写在第二行，并以括号与 5:9 相连
+
+动量变化之比\quad $1:1$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=226-09 ch=04 sec=平抛·相对位移 kind=note alt=03,06 cont=none y=0.69-0.78
+%FIG p226_g 0.095 0.69 0.165 0.75
+\notefig[0.25]{figures/p226_g.png}
+
+$m$ 掉后，同向平抛$x_{\text{相}}=x_M-x_m$
+
+$m$ 掉下后 车为保持匀速 $f=\mu Mg\downarrow$，$F_{\text{牵}}=f$ 也变小
+%%%END
+%%%BLOCK id=227-01 ch=04 sec=圆周运动·分离临界与关联速度 kind=problem alt=03,06 cont=none y=0.01-0.25
+\textbf{1.} 加速关联
+%FIG p227_a 0.19 0.005 0.505 0.08
+\notefig[0.31]{figures/p227_a.png}
+
+\unclear{将}要分离
+
+$a_{Ax}=a_{Bx}=0$ \qquad $V_A=V_B\sin30^\circ$ % CHECK: 与后面 V_B=√(gL/8) 对照，疑应为 V_B=V_A sin30°
+
+$\therefore a_{Ay}=g$ \qquad $mg\sin30^\circ=\dfrac{mV_A^{2}}{L}$ 重力分力提供向心力
+
+$V_A=\sqrt{\dfrac{3gL}{2}}$ \qquad $m_A:m_B=1:4$ % CHECK: 下标可能是"A末"（末速度）；与上式按 mg sin30°=mV_A^2/L 得 V_A=√(gL/2) 不同
+
+$m_Agl\sin30^\circ=\dfrac12 mV_{A\text{末}}^{2}-\dfrac12 mV_A^{2}$ % CHECK: 末 字辨认不确定
+
+$m_Agl(1-\sin30^\circ)=\dfrac12 m_AV_A^{2}+\dfrac12 m_BV_B^{2}$ \qquad $V_B=\sqrt{\dfrac{gL}{8}}$
+%%%END
+%%%BLOCK id=227-04 ch=04 sec=竖直面圆周·不脱轨条件 kind=note alt=06 cont=none y=0.30-0.46
+\textbf{2.} 不出轨道
+%FIG p227_b 0.04 0.35 0.20 0.45
+\notefig[0.25]{figures/p227_b.png}
+
+$V\ge V_2$ 或 $V\le V_1$ \qquad $\ast$ 反回或冲出后碰墙反弹回来。
+%%%END
+%%%BLOCK id=227-05 ch=04 sec=皮带轮·抛出临界 kind=note alt=06 cont=none y=0.46-0.54
+%FIG p227_c 0.05 0.47 0.205 0.52
+\notefig[0.3]{figures/p227_c.png}
+
+能在D抛出 \quad $mg\le\dfrac{mV_D^{2}}{R}$
+
+求$h$、$x$关系 分段讨论
+
+过了某个点/未过某个点
+%%%END
+%%%BLOCK id=227-06 ch=04 sec=圆周运动·脱离轨道 kind=derivation alt=06 cont=none y=0.52-0.67
+%FIG p227_d 0.04 0.52 0.225 0.64
+\notefig[0.3]{figures/p227_d.png}
+
+重力分力提供向心力
+
+在P点 $mg\cos\theta-N=\dfrac{mV_P^{2}}{R}$ \qquad 从B到P $mgR(1-\cos\theta)=\dfrac12 mV_P^{2}$
+
+在P脱离轨道则 $N=0$
+
+$\cos\theta=\dfrac{h}{R}$
+%%%END
+%%%BLOCK id=227-07 ch=04 sec=水平圆周·圆锥内物块 kind=problem alt=02 cont=none y=0.69-0.87
+\textbf{3.} 圆锥
+%FIG p227_e 0.04 0.729 0.19 0.84
+\notefig[0.25]{figures/p227_e.png}
+
+①A静止时求$f$、$N$ \quad 转动时求$\omega$（$\mu=0$）
+
+\[ f=mg\sin\theta=\frac{mgH}{\sqrt{H^{2}+R^{2}}}\qquad
+\begin{cases} mg\tan\theta=m\omega^{2}\dfrac{R}{2}\\[4pt] \tan\theta=\dfrac{H}{R}\end{cases} \]
+\[ N=mg\cos\theta=\frac{mgR}{\sqrt{H^{2}+R^{2}}}\qquad \therefore\omega=\frac{\sqrt{2gH}}{R} \]
+%%%END
+%%%BLOCK id=229-04 ch=04 sec=斜抛·斜面上的抛体 kind=derivation alt=03 cont=none y=0.82-1.00
+\textbf{3.}
+%FIG p229_c 0.00 0.82 0.195 0.965
+\notefig[0.25]{figures/p229_c.png}
+
+\[ t=\frac{2V_{0y}}{g_y}=\frac{2V_0\cos(\alpha-\theta)}{g\cos\theta} \]
+也可按斜抛水平竖直分解
+
+当 $\cos(\alpha-\theta)=1$ 时（$\alpha=\theta$）$t$最大
+
+\[ t=\frac{2V_0}{g\cos\theta}\qquad x=\frac12 g_xt^{2}=\frac{2V_0^{2}\sin\theta}{g\cos^{2}\theta} \]
+$g_x=g\sin\theta$
+%%%END
+%%%BLOCK id=235-01 ch=04 sec=竖直面圆周·最低点受力 kind=note alt=06 cont=none y=0.02-0.12
+%FIG p235_a 0.025 0.035 0.16 0.108 soft
+\notefig[0.2]{figures/p235_a.png}
+$1\to2$ 在$2$处 $N=3mg$\par
+%FIG p235_b 0.43 0.015 0.54 0.105 soft
+\notefig[0.2]{figures/p235_b.png}
+$T=3mg$
+%%%END
+%%%BLOCK id=240-08 ch=04 sec=圆周运动·圆锥摆 kind=knowledge alt=none cont=none y=0.80-0.95
+\textbf{圆锥摆}
+
+%FIG p240_i 0.15 0.822 0.275 0.91
+\notefig[0.2]{figures/p240_i.png}
+
+多体摆　顶点不重合，全在同一高度
+
+\[
+\left\{\begin{array}{l}
+T\cos\theta=m\omega^2R\\
+T\sin\theta=mg
+\end{array}\right.
+\qquad
+\omega=\sqrt{\frac{g}{h}}
+\]
+%%%END
+%%%BLOCK id=240-09 ch=04 sec=圆周运动·临界问题 kind=method alt=none cont=none y=0.78-0.95
+常规方法
+
+两绳上都有拉力。
+
+%FIG p240_j 0.685 0.843 0.828 0.945
+\notefig[0.25]{figures/p240_j.png}
+
+\[
+\omega_{\max}=\sqrt{\dfrac{g}{\dfrac{\sqrt3}{3}\,r}}
+\qquad
+\omega_{\min}=\sqrt{\dfrac{g}{\sqrt3\,r}}
+\]
+%%%END
+%%%BLOCK id=240-10 ch=04 sec=圆周运动·临界问题 kind=note alt=02 cont=none y=0.93-0.96
+结合$f$的两向性考查
+%%%END
+%%%BLOCK id=242-03 ch=04 sec=平抛·斜面上的平抛 kind=problem alt=none cont=none y=0.36-0.56
+\begin{problem}[3、平抛]
+%FIG p242_e 0.075 0.386 0.375 0.507
+\notefig[0.3]{figures/p242_e.png}
+速度反向延长线\\交于位移中点
+\begin{solution}
+\begin{align*}
+&t_A<t_B<t_C\\
+&x_A=x_B=x_C\\
+&\therefore V_{A0}>V_{B0}>V_{C0}
+\end{align*}
+\[ h=\frac{x}{2}\,\frac{1}{\tan\theta}\qquad t=\sqrt{\frac{2h}{g}}\qquad V_y=\sqrt{2gh}\qquad V_x=\tan\theta\sqrt{2gh} \]
+\[ \therefore V=\sqrt{V_x^2+V_y^2}=\sqrt{2gh\,(1+\tan^2\theta)}=\sqrt{xg\Bigl(\frac{1}{\tan\theta}+\frac{1}{\tan\theta}\Bigr)} \] % CHECK: 按推导括号内第二项应为 tanθ，原稿写作 1/tanθ
+代入 $60^\circ$ $45^\circ$ $30^\circ$ 得 $V_A=V_C>V_B$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=243-01 ch=04 sec=圆周运动·圆锥摆(双球共轴) kind=problem alt=02 cont=none y=0.03-0.22
+\begin{problem}
+%FIG p243_a 0.115 0.035 0.275 0.125
+\notefig[0.25]{figures/p243_a.png}
+\begin{solution}
+\begin{align*}
+F\cos\alpha&=m_Ag\\
+F\cos\beta&=m_Bg\\
+m_Ag\tan\alpha&=m_A\omega^2l_1\sin\alpha\\
+l_1\cos\unclear{\beta}&=l_2\cos\alpha\\ % CHECK: 第一个 cos 后的角度被涂改（β 与 α 叠写）；第二个像 α；按推导应为 l1cosα=l2cosβ
+\frac{m_A}{m_B}&=\frac{\cos\alpha}{\cos\beta}
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=243-03 ch=04 sec=圆周运动·洗衣机转筒 kind=problem alt=06 cont=none y=0.29-0.43
+\begin{problem}
+洗衣机转筒
+%FIG p243_c 0.09 0.32 0.265 0.405
+\notefig[0.25]{figures/p243_c.png}
+%FIG p243_d 0.78 0.285 0.925 0.39
+\notefig[0.25]{figures/p243_d.png}
+\begin{solution}
+\[ \begin{cases}
+\mu mg=m\omega^2r\\
+-\mu mgx=0-\frac12m(\omega x)^2 \\ % CHECK: 括号内字母形似 x（物理上应为 r）
+R=\sqrt{x^2+r^2}\qquad \unclear{F}_N>0 \\ % CHECK: 下标 N 前的字母形似 I（也可能是 F）
+Q=\mu mg\,\unclear{…}\,x % g 与 x 之间有一个被涂黑的符号
+\end{cases} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=243-04 ch=04 sec=圆周运动·合外力与向心力 kind=note alt=none cont=none y=0.44-0.47
+单摆秋千合外力不恒\unclear{指向}圆心
+%%%END
+%%%BLOCK id=243-05 ch=04 sec=平抛·斜面上的平抛(速度偏角) kind=problem alt=none cont=none y=0.48-0.60
+\begin{problem}
+%FIG p243_e 0.065 0.51 0.235 0.60
+\notefig[0.25]{figures/p243_e.png}
+\begin{solution}
+\[ \tan\theta=\tan(\alpha-\varphi)=\frac{\tan\alpha-\tan\varphi}{\tan\alpha\tan\varphi+1}\qquad\tan\alpha=2\tan\varphi \]
+\[ =\frac{1}{2\tan\varphi+\dfrac{1}{\tan\varphi}} \]
+%FIG p243_f 0.60 0.52 0.80 0.60
+\notefig[0.25]{figures/p243_f.png}
+图旁标注：不单调
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=243-06 ch=04 sec=斜抛·落点速度方向 kind=note alt=none cont=none y=0.60-0.64
+斜抛 则落点速度方向不同\quad $t\neq\dfrac{2V_0\tan\varphi}{g}$\quad $\Delta y\neq g\Delta t^2$
+%%%END
+%%%BLOCK id=247-03 ch=04 sec=运动合成与分解·关联速度 kind=derivation alt=none cont=none y=0.59-0.78
+%FIG p247_d 0.07 0.595 0.325 0.718
+\notefig[0.3]{figures/p247_d.png}
+\[
+V_{\perp}=V\cos\theta=\omega r\qquad r=\frac{h}{\cos\theta}
+\]
+% 原稿此式被划去
+\struck{$V_{\text{速}}=V_{\text{影}}\cos\theta$}
+\begin{keybox}
+\[
+\sin\text{光地}=\frac{V_{\text{\unclear{顶}}}}{V_{\text{影}}}
+\]
+\end{keybox}
+%%%END
+%%%BLOCK id=250-01 ch=04 sec=圆周运动·竖直面 kind=problem alt=06 cont=none y=0.00-0.17
+%FIG p250_a 0.05 0.0 0.15 0.052 soft
+\notefig[0.25]{figures/p250_a.png}
+\[
+mg(\sin37)^\circ=\frac{mV'^2}{R}
+\]
+\[
+V'^2=\frac35gR
+\]
+\[
+-mg\,\frac85R=\frac12m\left(\frac35gR-V_0^2\right)
+\]
+\[
+V_0^2=\frac{19}{5}gR\qquad V_0=\sqrt{\frac{19}{5}gR}
+\]
+%%%END
+%%%BLOCK id=250-02 ch=04 sec=圆周运动·竖直面 kind=knowledge alt=none cont=none y=0.01-0.12
+不脱轨\quad $V_0\le\sqrt{2gR}$\quad $V\ge\sqrt{5gR}$ \\
+脱轨\ \unclear{$\Rightarrow$}\ $V_0\in\left(\sqrt{2gR},\sqrt{5gR}\right)$
+%%%END
+%%%BLOCK id=250-03 ch=04 sec=圆周运动·竖直面 kind=problem alt=06 cont=none y=0.00-0.16
+%FIG p250_b 0.57 0.0 0.725 0.12
+\notefig[0.3]{figures/p250_b.png}
+$v=\sqrt{2gl}$
+
+使其绕 $P$ \unclear{的}完整\unclear{圆周}运动
+\[
+\sqrt{2gl}\ge\sqrt{5g(l-d)}
+\]
+%%%END
+%%%BLOCK id=250-05 ch=04 sec=圆周运动·水平面 kind=knowledge alt=none cont=none y=0.28-0.47
+\textbf{圆锥摆}
+%FIG p250_c 0.065 0.325 0.225 0.468
+\notefig[0.25]{figures/p250_c.png}
+\[
+F_n=mg\tan\theta=\frac{mv^2}{r}=m\omega^2r
+\]
+\[
+r=L\sin\theta\qquad v=\sqrt{gL\sin\theta\tan\theta}\qquad \omega=\sqrt{\frac{g}{L\cos\theta}}=\sqrt{\frac{g}{h}}
+\]
+若 $\theta\uparrow$ 则 $\omega\uparrow$ $v\uparrow$ $F_n\uparrow$ $T\uparrow$
+%%%END
+%%%BLOCK id=250-06 ch=04 sec=圆周运动·水平面 kind=knowledge alt=none cont=none y=0.50-0.65
+\textbf{圆锥筒}
+%FIG p250_d 0.08 0.52 0.30 0.655
+\notefig[0.25]{figures/p250_d.png}
+\[
+\frac{mg}{\tan\theta}=\frac{mv^2}{r}=m\omega^2r
+\]
+\[
+V=\sqrt{\frac{gr}{\tan\theta}}\qquad \omega=\sqrt{\frac{g}{r\tan\theta}}
+\]
+小球位置越高 $r\uparrow$ $\omega\downarrow$ $v\uparrow$
+%%%END
+%%%BLOCK id=250-07 ch=04 sec=平抛运动·斜面 kind=knowledge alt=none cont=none y=0.66-0.88
+\textbf{平抛斜面}
+%FIG p250_e 0.08 0.692 0.285 0.79
+\notefig[0.25]{figures/p250_e.png}
+位偏角 $\theta$\quad $t=\dfrac{2V_0\tan\theta}{g}$
+
+同角落在斜面 只与 $\theta$ 有关
+
+落回斜面上水平位移与初速度平方成正比
+
+最高点\quad $\dfrac{V_y}{V_x}=\tan\theta$\quad 该刻为全过程中间时刻\quad $t=\dfrac{V_0\tan\theta}{g}$
+
+该点到斜面的最远距离\ $d=\dfrac{V_0^2\sin\theta}{2g\cos\theta}$ % CHECK: 按推导分子似应为 V_0^2 sin^2θ，原稿写 sinθ
+%%%END
+%%%BLOCK id=250-08 ch=04 sec=斜抛运动 kind=formula alt=none cont=none y=0.88-1.00
+\textbf{斜抛运动}
+%FIG p250_f 0.05 0.897 0.262 0.97
+\notefig[0.25]{figures/p250_f.png}
+速度：$V_x=V_{0x}=V_0\cos\theta$\qquad $V_y=V_0\sin\theta=gt$。 % CHECK: 第二个等号原稿为“=”，按物理似应为 V_y=V_0\sin\theta-gt
+
+斜抛运动具有轨迹、速度、运动时间对称，加速度
+
+位移\ $x=V_0\cos\theta\,t$\qquad $y=V_0\sin\theta\,t-\dfrac12gt^2$
+
+射高\ $H=\dfrac{V_{0y}^2}{2g}=\dfrac{(V_0\sin\theta)^2}{2g}$\qquad $t=\dfrac{2V_0\sin\theta}{g}$
+
+水平射程\ $x=V_{0x}t=V_0\cos\theta\,\dfrac{\unclear{2}V_0\sin\theta}{g}$ % 原稿分子前为一小点，按推导应为 2
+\[
+=\frac{V_0^2\sin2\theta}{g}
+\]
+%%%END
+%%%BLOCK id=258-01 ch=04 sec=圆周运动·基本量 kind=formula alt=none cont=none y=0.07-0.22
+\begin{gather*}
+v=\frac{\Delta\widehat{l}}{\Delta t}\qquad \unit{m/s}\\
+\omega=\frac{\Delta\theta}{\Delta t}\ \ \text{矢量}\qquad \unit{rad/s}\\
+n=f=\frac{\omega}{2\pi}\qquad \unit{r/s}
+\end{gather*}
+匀圆\quad $a_{\text{合}}=a_n$\quad $F_{\text{合}}=F_n$
+\[ F_n=\frac{mv^2}{r}=m\omega^2 r=mv\omega=ma=m\frac{4\pi^2}{T^2}r \]
+%%%END
+%%%BLOCK id=258-02 ch=04 sec=皮带齿轮·传动装置 kind=knowledge alt=none cont=none y=0.17-0.40
+\textbf{传动装置}：线速度相等
+\begin{itemize}
+\item 皮带（静摩擦力）
+\item 齿轮传动\quad $T_{\text{分}}=60T_{\text{秒}}$\quad \unclear{$T_{\text{分}}=60\,r_{\text{秒}}$针$+$}
+\item $f_{B\text{带}}$\ 链条
+\end{itemize}
+自行车\ 主\struck{\unclear{…}}动轮\quad 受地\unclear{$f$}向前
+%FIG p258_a 0.565 0.225 0.762 0.295
+\notefig[0.3]{figures/p258_a.png}
+\[ r_A=\frac{1}{2}r_B,\qquad V_A=V_B,\qquad \frac{\omega_A}{\omega_B}=2 \]
+受主动轮\unclear{转}方向\par
+与主动轮转向一样
+%FIG p258_b 0.585 0.300 0.755 0.350
+\notefig[0.3]{figures/p258_b.png}
+%%%END
+%%%BLOCK id=258-03 ch=04 sec=皮带齿轮·传动装置 kind=knowledge alt=none cont=none y=0.37-0.52
+\textbf{角速度相等}\ —\ 同轴传动
+%FIG p258_c 0.12 0.405 0.285 0.472
+\notefig[0.25]{figures/p258_c.png}
+\[ r_B=3r_A,\qquad V_B=3V_A \]
+%%%END
+%%%BLOCK id=258-04 ch=04 sec=皮带齿轮·传动装置 kind=knowledge alt=none cont=none y=0.38-0.54
+%FIG p258_d 0.355 0.390 0.762 0.535
+\notefig[0.7]{figures/p258_d.png}
+\[ V_1=V_2,\qquad \omega r\ \text{相等},\qquad n_1D_1=n_2D_2 \]
+可动轴；主；越转越快
+\[ r_1\omega_1=r_2\omega_2 \]
+主；从；可变半径
+%%%END
+%%%BLOCK id=259-04 ch=04 sec=圆周运动·匀速圆周 kind=note alt=06 cont=none y=0.53-0.56
+匀圆不用动能定理
+%%%END
+%%%BLOCK id=259-05 ch=04 sec=平抛·斜抛 kind=knowledge alt=none cont=none y=0.60-0.77
+\textbf{斜抛结论}
+%FIG p259_d 0.075 0.617 0.230 0.770
+\notefig[0.25]{figures/p259_d.png}
+斜抛在 $\alpha$ 角平分线处\ 水平距离最大
+%%%END
+%%%BLOCK id=260-01 ch=04 sec=皮带齿轮·传动装置 kind=summary alt=none cont=none y=0.00-0.30
+\textbf{皮带传动}
+%FIG p260_a 0.110 0.026 0.255 0.095
+\notefig[0.25]{figures/p260_a.png}
+\[ V_A=V_C\neq V_B \]
+%FIG p260_b 0.430 0.005 0.690 0.115
+\notefig[0.3]{figures/p260_b.png}
+\[ V_A=V_B\neq V_P=V_Q \]
+\textbf{摩擦传动、齿轮传动}
+%FIG p260_c 0.090 0.126 0.225 0.166
+\notefig[0.25]{figures/p260_c.png}
+\[ V_A=V_B \]
+\textbf{同轴传动}
+%FIG p260_d 0.100 0.191 0.205 0.265
+\notefig[0.25]{figures/p260_d.png}
+%FIG p260_e 0.250 0.168 0.360 0.275
+\notefig[0.25]{figures/p260_e.png}
+\[ \omega_A=\omega_B,\qquad V\propto r \]
+%%%END
+%%%BLOCK id=260-02 ch=04 sec=水平面圆周·向心力来源 kind=diagram alt=none cont=none y=0.33-0.45
+水平飞机转弯
+%FIG p260_f 0.045 0.335 0.190 0.450
+\notefig[0.25]{figures/p260_f.png}
+火车转弯
+%FIG p260_g 0.200 0.335 0.480 0.445
+\notefig[0.4]{figures/p260_g.png}
+\[ F_n=mg\tan\theta \]
+%%%END
+%%%BLOCK id=260-03 ch=04 sec=水平面圆周·向心力来源 kind=diagram alt=none cont=none y=0.455-0.575
+%FIG p260_h 0.040 0.455 0.190 0.575
+\notefig[0.25]{figures/p260_h.png}
+\[ F_n=mg\tan\theta,\qquad r=l\sin\theta \]
+%FIG p260_i 0.325 0.485 0.520 0.570
+\notefig[0.3]{figures/p260_i.png}
+\[ F_n=mg\tan\theta \]
+%%%END
+%%%BLOCK id=260-04 ch=04 sec=水平面圆周·向心力来源 kind=diagram alt=none cont=none y=0.585-0.69
+%FIG p260_j 0.070 0.595 0.170 0.675
+\notefig[0.25]{figures/p260_j.png}
+\[ F_n=f \]
+%FIG p260_k 0.275 0.583 0.520 0.695
+\notefig[0.3]{figures/p260_k.png}
+（光滑杆\ 转台）、\par
+\[ F_n=m_Bg \]
+%%%END
+%%%BLOCK id=260-05 ch=04 sec=水平面圆周·圆锥摆 kind=derivation alt=none cont=none y=0.71-0.95
+\textbf{圆锥摆}
+%FIG p260_l 0.000 0.735 0.170 0.855
+\notefig[0.25]{figures/p260_l.png}
+\[ mg\tan\theta=m\omega^2L\sin\theta=m\frac{4\pi^2}{T^2}L\sin\theta \]
+\begin{align*}
+\omega&=\sqrt{\frac{g}{L\cos\theta}} & T&=2\pi\sqrt{\frac{L\cos\theta}{g}}\\
+&=\sqrt{\frac{g}{h}}
+\end{align*}
+\[ T=m\omega^2L \]
+%%%END
+%%%BLOCK id=260-06 ch=04 sec=水平面圆周·圆锥摆 kind=method alt=none cont=none y=0.65-1.00
+%FIG p260_m 0.486 0.650 0.880 0.847
+\notefig[0.45]{figures/p260_m.png}
+同高不同顶\par
+等效绳长。
+\[ \omega_1=\omega_2 \]
+\[ V\propto r,\qquad a\propto r \]
+竖直方向合力为0
+\[
+\left\{\begin{aligned}
+r'&=r+L\sin\alpha\quad\text{等效绳长}\\
+F\sin\alpha&=m\omega^2(r+L\sin\alpha)\\
+F&=m\left(\frac{r}{\sin\alpha}+L\right)\omega^2=\frac{mg}{\cos\alpha}\\
+\omega&=\sqrt{\frac{g}{r'\cos\alpha}}\qquad T=2\pi\sqrt{\frac{r'\cos\alpha}{g}}
+\end{aligned}\right.
+\] % CHECK: 末行 r' 的含义与首行不一致（由上式推得应为 ω^2=g tanα/r'），原样转录
+%%%END
+%%%BLOCK id=261-01 ch=04 sec=水平面圆周·飞行器综合题 kind=problem alt=02,06 cont=none y=0.00-0.93
+\begin{problem}
+% 原稿：粘贴的印刷题，首行从「到影响，」起（上文在粘贴时被裁掉）。印刷文字上有手画下划线/圈注：「飞行器的动力F始终与飞行方向相同」「空气升力F1与飞行方向垂直」「大小与速度的平方成正比，即F1=C1v^2」「大小与速度的平方成正比，即F2=C2v^2」「可由运动员调节」下划线；「总质量为90kg」被圈出；「（重力加速度取g=10m/s^2。）」上方有弧线。左页边有零星手写标记。
+到影响，同时通过控制动力的大小而改变飞行器的飞行状态。已知，飞行器的动力 $F$ 始终与飞行方向相同，空气升力 $F_1$ 与飞行方向垂直，大小与速度的平方成正比，即 $F_1=C_1v^2$；空气阻力 $F_2$ 与飞行方向相反，大小与速度的平方成正比，即 $F_2=C_2v^2$，其中 $C_1$、$C_2$ 相互影响，可由运动员调节，满足如图1所示的关系。飞行员和装备的总质量为 $90\unit{kg}$。（重力加速度取 $g=10\unit{m/s^2}$。）
+\begin{enumerate}[label=（\arabic*）]
+\item 若飞行员使飞行器以 $v_1=10\sqrt{3}\unit{m/s}$ 速度在空中沿水平方向匀速飞行，如图2所示，则飞行器受到的动力 $F$ 大小为多少？
+\item 若飞行员关闭飞行器的动力，使飞行器匀速滑行，且滑行速度 $v_2$ 与地平线的夹角 $\theta=30^\circ$，如图3所示，则速度 $v_2$ 的大小为多少？（结果可用根式表示）
+\item 若飞行员使飞行器在空中的某一水平面内做匀速圆周运动，如图4所示，在此过程中 $C_2$ 只能在 $1.75\sim2.5\unit{N\cdot s^2/m^2}$ 之间调节，且 $C_1$、$C_2$ 的大小与飞行器的倾斜程度无关。则飞行器绕行一周动力 $F$ 做功的最小值为多少？（结果可保留 $\pi$）
+\end{enumerate}
+%FIG p261_a 0.015 0.380 0.400 0.595
+\notefig[0.4]{figures/p261_a.png}
+% 图1上手画：从原点向右上的细斜线，与曲线交于 C_1=4 处，并由交点向下画竖线至横轴，横轴下方手写「2.3」
+\red{（$-7$）}\quad\red{$-2$} % 红笔批注：前者被红圈圈住，在图2~4左上方空白处；后者在图1右侧
+%FIG p261_b 0.405 0.355 1.000 0.580
+\notefig[0.8]{figures/p261_b.png}
+% 图3上手画受力箭头并标 F_2、F_1、mg；图4上手画上下箭头
+% 图4上方/右侧手写草算（右侧被页边截断）：
+\par $C_2$\,\struck{$v^2$}$\,=\dfrac{900}{r}$\quad\struck{$v^2$}\quad $C_2=\dfrac{\unclear{90}}{r}$
+\par $r=\dfrac{\unclear{90}}{C_2}$\quad $=\dfrac{\unclear{0}}{\unclear{\ldots}}$\quad $=\unclear{36}$
+\par 图4下方：$\dfrac{36}{\unclear{\ldots}\tan\unclear{\alpha}}$
+\begin{solution}
+(1)\quad $\overset{\text{平衡}}{mg=C_1v_1^2}$\quad $C_1=3\unit{N\cdot s^2/m^2}$
+\par $\therefore C_2=2.5\unit{N\cdot s^2/m^2}$
+\par 动力 $F=F_2=C_2v_1^2=750\unit{N}$
+\par (2)\quad $mg\cos\theta\overset{\text{平衡}}{=}C_1v_2^2$
+\par $mg\sin\theta=C_2v_2^2$
+\par $C_1=V_2\cot\theta$ % CHECK: 两式相除应得 C_1=C_2\cot\theta，原稿右端写作 V_2（或为 C_2 写得像 V）
+\par $C_2=2.3\unit{N\cdot s^2/m^2}$\quad $C_1=4\unit{N\cdot s^2/m^2}$
+\par $V_2=\sqrt{\dfrac{225\sqrt{3}}{2}}\unit{m/s}$
+\par (3)\quad 非平衡
+\par 设 $F_1$ 与竖直方向夹角 $\alpha$
+\par $mg=C_1v^2\cos\alpha$
+\par 水平合力 提供向心力\quad $C_1v^2\sin\alpha=\dfrac{mv^2}{R}$
+\par 动力\quad $F=F_2=C_2v^2$
+\par $W=F\cdot 2\pi R=\dfrac{2\pi C_2m^2g}{C_1^2\sin\alpha\cos\alpha}$
+\par $\alpha=45^\circ$\unclear{，}\ $C_1=6\unit{N\cdot s^2/m^2}$，$C_2=1.75\unit{N\cdot s^2/m^2}$\ 时 $W$ 最小， % 原稿折行：「C_2=1.75…」写在右侧，「时 W最小，」写在左侧下一行；「45°」后有一个难辨的小字
+\par $W_{\min}=15750\pi\unit{J}$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=262-01 ch=04 sec=圆周运动·解题步骤 kind=summary alt=none cont=none y=0.04-0.20
+\textbf{圆周运动}
+\par 一、确定轨道平面、圆心位置、轨迹圆半径
+\par 二、受力分析、找向心力、正交分解、指向圆心减背离圆心的力
+\par 三、列方程求解
+\begin{itemize}
+\item 点、牛二
+\item 过程、动能定理
+\end{itemize}
+%%%END
+%%%BLOCK id=262-02 ch=04 sec=竖直面圆周·绳模型 kind=knowledge alt=none cont=none y=0.21-0.47
+\textbf{绳模型}
+\par 绳只能拉不能推，圆心以上\ 速度一定不为0
+%FIG p262_a 0.185 0.272 0.253 0.325
+\notefig[0.25]{figures/p262_a.png}
+\par 最高点\quad $F+G=\dfrac{mv^2}{L}$\qquad $F\ge0$\quad $\therefore V\ge\sqrt{gL}$
+\par 最低点\quad $\left\{\begin{aligned}F-G&=\dfrac{mv^2}{L}\\ mg\cdot2L&=\dfrac{1}{2}m(v_0^2-v^2)\end{aligned}\right.$\qquad $\begin{aligned}V^2&=V_0^2-4gl\ge gl\\ \unclear{\therefore}\,V_0&\ge\sqrt{5gL}\end{aligned}$
+\par 拉力差\quad $\Delta F=6mg$
+\begin{align*}
+mg+F_1&=\frac{mv^2}{L}\\
+F_2-mg&=\frac{mv'^2}{L}\\
+2mgl&=\frac{1}{2}m(v'^2-v^2)
+\end{align*}
+%%%END
+%%%BLOCK id=262-03 ch=04 sec=竖直面圆周·绳模型 kind=derivation alt=none cont=none y=0.46-0.67
+不满足 $V\ge\sqrt{gL}$ 时，
+%FIG p262_b 0.040 0.495 0.274 0.660
+\notefig[0.3]{figures/p262_b.png}
+图中标注：做平抛；$V$ 损失$=0$
+\[ V_0=\sqrt{\frac{gL}{2}}<\sqrt{gL} \]
+\begin{align*}
+V_0^2t^2&=L^2\sin^2\alpha\\
+\frac{1}{2}gt^2&=L(1+\cos\alpha)
+\end{align*}
+$\Rightarrow\ \alpha=90^\circ$\ 圆心等高处\ 绷直
+\[ mgl=\frac{1}{2}(V^2-V_y^2)\qquad V^2=V_y^2+2gl=4gl \] % CHECK: 「½」与括号之间似缺 m（原稿有一小撇）
+\[ F-mg=\frac{mV^2}{L}\ \Rightarrow\ F=5mg \]
+%%%END
+%%%BLOCK id=262-04 ch=04 sec=竖直面圆周·等效重力加速度 kind=derivation alt=none cont=none y=0.69-0.92
+\textbf{等效重力加速度}
+%FIG p262_c 0.010 0.705 0.255 0.815
+\notefig[0.3]{figures/p262_c.png}
+\[ \left\{\begin{aligned}F+mg\sin\alpha&=\frac{mV_{\text{上}}^2}{L}\\ F&\ge0\end{aligned}\right. \qquad \begin{aligned}V_{\text{上}}&\ge\sqrt{gL\sin\alpha}\\ V_{\text{下}}&\ge\sqrt{5gL\sin\alpha}\end{aligned} \]
+\[ mg\cdot2L\sin\alpha=\frac{1}{2}m(V_{\text{下}}^2-V_{\text{上}}^2)\qquad V_{\text{上}}^2=V_{\text{下}}^2-4gL\sin\alpha>gL\sin\alpha \] % CHECK: 末尾符号写作「>」，其下另起一行写 gLsinα；按前文类比应为「≥」
+\[ \Delta F_{\text{上下}}=6mg\sin\alpha \]
+%%%END
+%%%BLOCK id=263-01 ch=04 sec=竖直面圆周运动·等效重力场 kind=method alt=09 cont=prev y=0.00-0.31
+%FIG p263_a 0.06 0.005 0.18 0.115
+\notefig[0.25]{figures/p263_a.png}
+$\downarrow$ $E=\dfrac{2mg}{q}$
+\[
+\left\{\begin{aligned}
+&mg+qE+F=\dfrac{mv^2}{L}\\
+&T\ge 0\qquad V_{\text{上}}\ge\sqrt{3gL}
+\end{aligned}\right.
+\]
+% CHECK: 第一式写 F、条件写 T≥0，应为同一个量（绳的拉力）
+\[ G'=3mg,\qquad g'=3g,\qquad V_{\text{下}}\ge\sqrt{15gL} \]
+% CHECK: g'=3g 中“3”前有涂改痕迹
+
+（图注：等效最高点）
+%FIG p263_b 0.03 0.108 0.205 0.215
+\notefig[0.3]{figures/p263_b.png}
+\[ \sqrt2\,mg+F=\dfrac{mv^2}{L}\qquad F\ge 0 \]
+\[ V\ge\sqrt{\sqrt2\,gL} \]
+%FIG p263_c 0.09 0.22 0.22 0.315
+\notefig[0.25]{figures/p263_c.png}
+\[ mg\left(L+\dfrac{\sqrt2}{2}L\right)+qE\,\dfrac{\sqrt2}{2}L=\dfrac12m\left(V_0^2-V^2\right) \]
+%%%END
+%%%BLOCK id=263-02 ch=04 sec=水平面圆周运动·转弯 kind=method alt=02 cont=none y=0.32-0.59
+\textbf{水平面圆周运动}\quad 必有侧\textsuperscript{向外}向滑动趋势
+% CHECK: “向外”为行上方的插入小字，插入位置约在“侧”“向”之间，语义待核（可能想表达“必有向外侧滑的趋势”）
+
+\textbf{汽车转弯}\quad 水平路面上：
+%FIG p263_d 0.17 0.388 0.285 0.466
+\notefig[0.25]{figures/p263_d.png}
+\[ f=\dfrac{mv^2}{r}\le\mu mg\qquad v\le\sqrt{\mu gR} \]
+
+\textbf{倾斜路面上}\quad 无侧滑趋势\quad $V_0$.
+%FIG p263_e 0.335 0.485 0.495 0.59
+\notefig[0.3]{figures/p263_e.png}
+\begin{align*}
+N\sin\alpha&=\dfrac{mv_0^2}{R}\\
+N\cos\alpha&=mg
+\end{align*}
+\[ V_0=\sqrt{gR\tan\alpha}\qquad\text{与 }\mu\text{ 无关} \]
+%%%END
+%%%BLOCK id=263-03 ch=04 sec=竖直面圆周运动·杆模型 kind=method alt=none cont=none y=0.60-0.78
+\textbf{杆模型}
+%FIG p263_f 0.06 0.635 0.285 0.72
+\notefig[0.3]{figures/p263_f.png}
+以向下为正
+\[ mg+F=\dfrac{mv^2}{R}\qquad F\text{向下} \]
+\[ mg-(-F)=\dfrac{mv^2}{R}\qquad F\text{向上} \]
+\[
+\left\{\begin{aligned}
+&0\le v<\sqrt{gR}\quad\text{推力}\quad v\uparrow\ \text{推力}\downarrow\\
+&v>\sqrt{gR}\quad\ \ v\uparrow\ F_{\text{拉}}\downarrow
+\end{aligned}\right.
+\]
+% CHECK: v>√(gR) 时 F拉 随 v 增大应增大，原稿箭头画的是 ↓
+%FIG p263_g 0.70 0.615 0.885 0.72
+\notefig[0.3]{figures/p263_g.png}
+\[ F=\dfrac{mv^2}{R}-mg \]
+%%%END
+%%%BLOCK id=263-04 ch=04 sec=竖直面圆周运动·绳模型临界 kind=method alt=none cont=none y=0.80-0.92
+\textbf{绳不松弛}\quad $N=0$ 临界.
+%FIG p263_h 0.07 0.86 0.155 0.92
+\notefig[0.25]{figures/p263_h.png}
+\[ V_0\le\sqrt{2gL} \]
+\[ V_0\ge\sqrt{5gL} \]
+%%%END
+%%%BLOCK id=263-05 ch=04 sec=竖直面圆周运动·脱离临界 kind=method alt=06 cont=none y=0.92-1.00
+%FIG p263_i 0.09 0.93 0.285 1.0
+\notefig[0.3]{figures/p263_i.png}
+\[ V_0=\sqrt{\dfrac{7}{2}gR} \]
+\begin{align*}
+mg\sin\alpha&=\dfrac{mv^2}{R}\\
+-mgR(1+\sin\alpha)&=\dfrac12m\left(gR\sin\alpha-\dfrac{7}{2}gR\right)
+\end{align*}
+% CHECK: 第二式 mg 后的 R 与左括号重叠，按能量关系取 R
+\[ \Rightarrow\ \alpha=30^\circ \]
+%%%END
+%%%BLOCK id=264-01 ch=04 sec=竖直面圆周运动·综合例题 kind=problem alt=none cont=none y=0.02-0.34
+\begin{problem}[例]
+%FIG p264_a 0.15 0.02 0.28 0.115
+\notefig[0.25]{figures/p264_a.png}
+\begin{solution}
+%FIG p264_b 0.125 0.14 0.25 0.215
+\notefig[0.25]{figures/p264_b.png}
+\begin{align*}
+&T+mg\cos\theta=\dfrac{mv^2}{R}\\
+&mg(1-\cos\theta)=\dfrac12mv^2-\dfrac12m(gR)
+\end{align*}
+\[ T=3mg(1-\cos\theta) \]
+对人\ $N=Mg-T\cos\theta=Mg-3mg(1-\cos\theta)\cos\theta$
+
+$\ge Mg-3mg\cdot\dfrac14=Mg-\dfrac34mg$
+
+$T_{\max}-mg=\dfrac{mV_{\text{下}}^2}{R}$\qquad $V_{\text{下}}=\sqrt{5gR}$
+
+对人、$N=Mg+\dfrac{mv^2}{R}=Mg+5mg$
+
+故人对地压力 $N\in\left[Mg-\dfrac34mg,\ Mg+5mg\right]$
+% CHECK: 两处“5mg”的“5”字形有涂改/重叠（第二处尤其明显，可能是 6）；按 T_max=mg+5mg=6mg 推算，N 或应为 Mg+6mg
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=264-02 ch=04 sec=竖直面圆周运动·脱离临界 kind=method alt=none cont=none y=0.34-0.47
+是否可以沿圆弧到 $N$ 点？
+%FIG p264_c 0.10 0.358 0.34 0.412
+\notefig[0.4]{figures/p264_c.png}
+\begin{itemize}
+\item $V_0=\sqrt{gR}$ 时平抛
+\item $V_0=0$ 时
+\end{itemize}
+\[
+\left\{\begin{aligned}
+&mg\sin\alpha=\dfrac{mv^2}{R}\\
+&mg(1-\sin\alpha)\,\unclear{R}=\dfrac12mv^2
+\end{aligned}\right.
+\qquad \sin\alpha=\dfrac23
+\]
+% CHECK: 第二式 ")" 后的符号像 F，应为 R（mgR(1-sinα)=½mv²）
+\unclear{处}脱离.
+%%%END
+%%%BLOCK id=264-03 ch=04 sec=水平面圆周运动·双绳 kind=method alt=none cont=none y=0.49-1.00
+\textbf{双绳竖直平面内做水平圆周运动}
+%FIG p264_d 0.07 0.526 0.22 0.64
+\notefig[0.25]{figures/p264_d.png}
+① OA绷紧 OB恰好松弛无张力
+\[ mg\tan37^\circ=m\omega_1^2d\qquad d=L\sin37^\circ\qquad \omega_1=\sqrt{\dfrac{5g}{4L}} \]
+② OB绷紧 OA恰好伸直无张力
+\[ mg\tan\unclear{53}^\circ=m\omega_2^2d\qquad \omega_2=\sqrt{\dfrac{20g}{9L}} \]
+% CHECK: 手写像 tan57°，按图中 53° 及 ω_2=√(20g/9L) 取 53
+OA紧 OB松 $\xrightarrow{\ \omega_1\ }$ OA OB都紧 $\xrightarrow{\ \omega_2\ }$ OB紧 OA松.（图中以弧线分段，分界点标 $\omega_1$、$\omega_2$）
+
+%FIG p264_e 0.04 0.745 0.175 0.86
+\notefig[0.25]{figures/p264_e.png}
+\[ mg\tan\alpha=m\omega_1^2d\qquad \omega_1=\sqrt{\dfrac{3g}{4d}} \]
+OA紧 OB松 $\xrightarrow{\ \omega_1\ }$ $F_A$ 不变，$F_B\uparrow$
+
+%FIG p264_f 0.02 0.865 0.19 0.995
+\notefig[0.25]{figures/p264_f.png}
+\[
+\left\{\begin{aligned}
+&T_1\sin\alpha+T_2\sin\beta=m\omega^2d\\
+&T_1\cos\alpha=T_2\cos\beta+mg
+\end{aligned}\right.
+\qquad \omega\uparrow\quad T_1\uparrow\quad T_2\uparrow
+\]
+%%%END
+%%%BLOCK id=265-01 ch=04 sec=平抛运动·斜面问题 kind=method alt=none cont=none y=0.00-0.09
+\textbf{垂直落至斜面}
+%FIG p265_a 0.00 0.00 0.21 0.085
+\notefig[0.25]{figures/p265_a.png}
+\begin{align*}
+&V_x=V_0\\
+&V_y=gt\\
+&V=\sqrt{V_x^2+V_y^2}
+\end{align*}
+\[ \tan\theta=\dfrac{V_0}{V_y}=\dfrac{V_0}{gt}\qquad t=\dfrac{V_0}{g\tan\theta} \]
+%%%END
+%%%BLOCK id=265-02 ch=04 sec=平抛运动·斜面问题 kind=method alt=none cont=none y=0.09-0.21
+\textbf{切入斜面}
+%FIG p265_b 0.00 0.085 0.19 0.145
+\notefig[0.25]{figures/p265_b.png}
+%FIG p265_c 0.085 0.12 0.27 0.215
+\notefig[0.3]{figures/p265_c.png}
+\begin{align*}
+&t=\dfrac{V_1}{a_1}\qquad V_1^2=2a_1d\qquad t=\dfrac{V_0\tan\theta}{g}\qquad d=\dfrac{V_0^2\sin\theta\tan\theta}{2g}\\
+&V_y=gt=\dfrac{V_0\tan\theta}{g}
+\end{align*}
+% CHECK: V_y=gt=V_0 tanθ/g 末尾分母多一个 g（应为 V_y=gt=V_0 tanθ）；t=V_1/a_1 中的 V_1、a_1 字迹偏小
+%%%END
+%%%BLOCK id=265-03 ch=04 sec=平抛运动·斜面问题 kind=method alt=none cont=none y=0.21-0.33
+\textbf{抛上斜面}
+%FIG p265_d 0.00 0.21 0.26 0.285
+\notefig[0.3]{figures/p265_d.png}
+\[
+\left\{\begin{aligned}
+x&=V_0t\\
+y&=\dfrac12gt^2\\
+x_{\text{合}}&=\sqrt{x^2+y^2}
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+\tan\theta&=\dfrac{y}{x}=\dfrac{gt}{2V_0}\\
+t&=\dfrac{2V_0\tan\theta}{g}
+\end{aligned}
+\]
+%%%END
+%%%BLOCK id=265-04 ch=04 sec=平抛运动·抛入圆弧面 kind=method alt=none cont=none y=0.33-0.47
+\textbf{抛入圆弧面}
+%FIG p265_e 0.03 0.358 0.238 0.465
+\notefig[0.3]{figures/p265_e.png}
+\[
+\left\{\begin{aligned}
+h&=\dfrac12gt^2\\
+R\pm\sqrt{R^2-h^2}&=V_0t
+\end{aligned}\right.
+\]
+%%%END
+%%%BLOCK id=265-05 ch=04 sec=平抛运动·圆心角与速偏角 kind=method alt=none cont=none y=0.49-0.74
+%FIG p265_f 0.05 0.49 0.33 0.60
+\notefig[0.4]{figures/p265_f.png}
+\textbf{圆心角 $=$ 速偏角}
+%FIG p265_g 0.09 0.595 0.29 0.745 soft
+\notefig[0.3]{figures/p265_g.png}
+%%%END
+%%%BLOCK id=266-04 ch=04 sec=竖直面圆周运动·脱离临界 kind=derivation alt=06 cont=none y=0.82-1.00
+%FIG p266_d 0.04 0.81 0.215 0.905
+\notefig[0.3]{figures/p266_d.png}
+\[
+\left\{\begin{aligned}
+&-mgR\sin\alpha=\dfrac12m\left(v^2-v_0^2\right)\\
+&mg\sin\alpha=\dfrac{mv^2}{\unclear{R}}\\
+&v\sin\alpha\,t=R\cos\alpha\\
+&R\sin\alpha=v\cos\alpha\,t-\dfrac12gt^2
+\end{aligned}\right.
+\]
+% CHECK: 第二式分母手写像 v，应为 R；最后一行紧贴页面底边，可能被裁切，其后或还有内容
+%%%END
+%%%BLOCK id=267-01 ch=04 sec=竖直面圆周运动·等效重力场 kind=problem alt=09 cont=none y=0.00-0.25
+\begin{problem}
+%FIG p267_a 0.07 0.02 0.36 0.18
+\notefig[0.4]{figures/p267_a.png}
+（图注：等效最低点）\quad $E=\dfrac{mg}{q}$\qquad 求 $F_{\max}$
+\begin{solution}
+\[
+\left\{\begin{aligned}
+&\sqrt2\,mg\sqrt2\,R=\dfrac12mv^2\\
+&F-\sqrt2\,mg=\dfrac{mv^2}{R}\\
+&\sqrt2\,mgR\left(1-\dfrac{\sqrt2}{2}\right)=\dfrac12m\left(v'^2-v_x^2\right)
+\end{aligned}\right.
+\]
+% CHECK: 第三式括号内 v'^2 的撇号/指数手写不清
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=269-04 ch=04 sec=圆周运动·圆锥摆 kind=method alt=none cont=none y=0.73-0.87
+%FIG p269_c 0.64 0.725 0.86 0.87
+\notefig[0.25]{figures/p269_c.png}
+等效绳长$L$：
+\[
+\cos\alpha=\frac{g}{L\omega^2}
+\]
+其下方画有箭头$\downarrow$，再下方写$\alpha\uparrow$。图中转轴处标$\omega'$（带转向弧线），竖直虚线为转轴，斜绳与竖直方向夹角处标$\alpha$。
+%%%END
+%%%BLOCK id=269-06 ch=04 sec=圆周运动·离心现象 kind=note alt=05 cont=none y=0.93-0.96
+太空中圆周问\unclear{题}\quad $V$越大\ 油水越易分离
+%%%END
+%%%BLOCK id=270-02 ch=04 sec=平抛运动·空间极值 kind=note alt=none cont=none y=0.09-0.12
+平抛在空间中对角线处最远
+%%%END
+%%%BLOCK id=271-01 ch=04 sec=水平面圆周·摩擦力提供向心力 kind=problem alt=02 cont=none y=0.00-0.19
+% 贴纸印刷题（上缘被截断）；原稿上有铅笔划线：“力支撑冰面才能保证”处有划线，“过弯道滑行时的运动员”处有划线
+\begin{problem}[贴纸印刷题]
+\unclear{…}2022年\unclear{…}威、曲春雨、范可新、武大靖和张雨婷组成的中国队夺得北京冬奥会短道速滑男女2000米混合接力冠军，为中国体育代表团收获了北京冬奥会的首枚金牌。短道速滑运动员过水平弯道时常用手支撑冰面以防侧滑，某运动员质量为$75\unit{kg}$，某次过弯道时的半径为$25\unit{m}$，速率为$36\unit{km/h}$，冰刀与冰面间的动摩擦因数为$0.2$，手套与冰面间的动摩擦因数为$0.8$，重力加速度$g=10\unit{m/s^2}$。过弯道滑行时的运动员手脚距离相对半径可忽略，弯道滑行的过程视为一段圆周运动，则该运动员至少用多大的力支撑冰面才能保证不发生侧滑（\struck{B}C） % 括号内手写答案：“B”被斜线划去，旁写C
+
+A.\ $150\unit{N}$\qquad B.\ $200\unit{N}$\qquad C.\ $250\unit{N}$\qquad D.\ $300\unit{N}$
+
+手写铅笔批注（部分被印刷图片遮挡，数字难辨）：
+\begin{itemize}
+\item 第2行右端圈出：$10\unit{m/s}$
+\item $0.2+0.8(\unclear{780}+N)=75\cdot\dfrac{\unclear{100}}{\unclear{30}}$，\ 其下一行写$0.8(\unclear{780}+N)$（括号部分划有下划线），再下一行$=300$ % CHECK: “780”疑为750；式子本身（0.2、0.8的组合）按原稿照录
+\item 印刷图片上写有：$0.6$
+\item 右缘：$7.5$（下有横线）；圈出的$300$；其下$\unclear{1000}$（被页边截断）
+\end{itemize}
+\end{problem}
+%%%END
+%%%BLOCK id=272-01 ch=04 sec=竖直面圆周·斜抛综合 kind=problem alt=06 cont=none y=0.03-0.30
+%FIG p272_a 0.04 0.03 0.42 0.13 soft
+\notefig[0.5]{figures/p272_a.png}
+图中标注：$m=0.02\unit{kg}$，$V_0$（箭头），$R=0.4\unit{m}$，粗糙段$\mu=0.25$，斜坡端有$\alpha$。
+\begin{problem}
+(1) 滑块始终在轨道上运动，求$V_0$范围
+
+(2) 滑块恰过D，求$E_{k\min}$时$X$与$\alpha$的关系，并求$X$最大值。
+\begin{solution}
+从\unclear{…}到A时速度为0
+\[
+mg(h-R)-\mu mgR=0-0\qquad h=0.5\unit{m}
+\]
+\[
+mg(R-h)-\mu mgR=0-\frac{1}{2}mV_{01}^2 % 原稿“μ”写得像“4”
+\]
+\[
+\therefore V_{01}=2\unit{m/s}\qquad 0\le V_{01}\le2\unit{m/s}
+\]
+\[
+mg\,2R\cos\alpha=\frac{1}{2}mV_F^2
+\]
+\[
+X=V_F\cos\alpha\cdot\frac{V_F\sin\alpha}{g}=\frac{V_F^2}{g}\sin\alpha\cos\alpha=1.6\cos^2\alpha\sin\alpha\le\frac{16\sqrt3}{45}\ \Rightarrow\ \tan\alpha=\frac{\sqrt2}{2}\ \text{时取等}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=277-02 ch=04 sec=类斜抛·恒力 kind=problem alt=03 cont=none y=0.42-0.79
+% 图：直线ab，a处速度 V_a=3V(水平向右)，b处速度 V_b=4V；图中另标 \alpha、53^\circ、\theta、\beta、37^\circ，以及竖直向下的“设F风”
+%FIG p277_c 0.055 0.425 0.28 0.61
+\notefig[0.3]{figures/p277_c.png}
+
+\[
+V_a\sin(\alpha+\theta)=V_b\sin(\theta-\beta)
+\]
+$\therefore\theta=74^\circ$
+
+从$a\to b$ 平均 $\bar V=\dfrac{3V\cos53^\circ+4V\cos37^\circ}{2}=2.5V$
+
+$t=\dfrac{d}{V}=\dfrac{2d}{5V}$ % CHECK: 手写第一个分母无上横线，按上下文应为平均速度 \bar V
+
+$a\to b$\quad $a=\dfrac{V_b\cos37^\circ-(-V_a\cos53^\circ)}{t}=\dfrac{25V^2}{2d}$ % CHECK: 分子“25”手写偏草，按推算为 25
+
+$a\to b$ 风力 $F=ma=\dfrac{25mV^2}{2d}$
+
+小球沿风力方向速度最小时 $V$最小 % 原稿“球”字写成“王求”
+
+$V_{\min}=V_a\sin53^\circ=2.4V$
+%%%END
+%%%BLOCK id=285-11 ch=04 sec=平抛运动·竖直方向匀加速 kind=note exp=1 alt=01 cont=none y=0.62-0.79
+平抛的竖直方向为匀加\unclear{速}
+
+%FIG p285_d 0.10 0.665 0.27 0.785
+\notefig[0.25]{figures/p285_d.png}
+
+\begin{gather*}
+h_1-h_2=h_2-h_3\\
+h_2-h_3=h_3-h_4
+\end{gather*}
+\[ h_1+3H_3=3H_2+h_4 \]% CHECK: 手写 H_3、H_2 为大写，应为 h_3、h_2
+%%%END
+%%%BLOCK id=285-12 ch=04 sec=平抛运动·轨迹与曲杆 kind=note alt=none cont=none y=0.82-0.88
+% 左下角被折页遮挡，“后 E⃗”之后到“y=”之前的内容被遮住
+后 $\vec{E}$\unclear{…}\quad $y=\dfrac{gx^2}{2v_0^2}$ 当符合曲杆轨迹时，$N=0$，是平抛。$mg=\dfrac{mv_0^2}{\rho}$ 曲率半径。
+%%%END
+%%%BLOCK id=286-05 ch=04 sec=竖直面圆周·临界 kind=note alt=06 cont=none y=0.85-0.96
+% 图中标注：顶部小球 V1=√(gr)，底部小球 V2=√(5gr)
+%FIG p286_d 0.04 0.855 0.215 0.96
+\notefig[0.25]{figures/p286_d.png}
+
+不可能同时位于水平直径两端
+
+\unclear{系统 $E_{p\text{低}}>2mgr$}\quad 不会碰撞
+%%%END
+%%%BLOCK id=289-01 ch=04 sec=斜面上的圆周运动·重力功率 kind=note alt=06 cont=none y=0.00-0.13
+%FIG p289_a 0.095 0.0 0.43 0.125
+\notefig[0.3]{figures/p289_a.png}
+
+$P_G$ 先↑后↓
+
+$P_{G\max}$ 时 $F_{\text{合}}$ 与 $OA$ 平行
+%%%END
+%%%BLOCK id=289-02 ch=04 sec=运动的合成与分解·关联速度 kind=problem alt=none cont=none y=0.13-0.27
+%FIG p289_b 0.105 0.135 0.29 0.26
+\notefig[0.3]{figures/p289_b.png}
+
+%FIG p289_c 0.325 0.115 0.65 0.258
+\notefig[0.4]{figures/p289_c.png}
+
+$V_A\sin\theta=V_B\cos\dfrac{\theta}{2}$
+
+两球速度大小相等时 $B$ 在 $O$ 点正上方% CHECK: “O点”手写像 O（图中对应点标注像 D/O）
+%%%END
+%%%BLOCK id=294-01 ch=04 sec=平抛·落在曲面上 kind=problem alt=06 cont=none y=0.03-0.40
+\begin{problem}[1]
+%FIG p294_a 0.07 0.06 0.27 0.15
+\notefig[0.3]{figures/p294_a.png}
+
+\begin{solution}
+$v_0$ 越小 $h$ 越高 飞行时间越长
+\begin{align*}
+R\cos\theta&=v_0t\\
+R\sin\theta&=\frac{1}{2}gt^2\\
+mgR\sin\theta&=E_K-\frac{1}{2}mv_0^2\\
+E_K&=mgR\left(\frac{3}{4}\sin\theta+\frac{1}{4\sin\theta}\right)\\
+&>\frac{\sqrt{3}}{2}mgR % CHECK: 原稿为“>”，应为 $\ge$
+\end{align*}
+$P_{\min}=\sqrt{2mE_{k\min}}$\quad 此时 $x=\dfrac{\sqrt{6}}{3}R$\quad $v_0=\sqrt{\dfrac{\sqrt{3}}{3}gR}$
+\end{solution}
+\end{problem}
 %%%END

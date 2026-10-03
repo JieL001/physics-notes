@@ -125,3 +125,645 @@ $F=\rho SV^2\sin^2\theta$\quad 求 $V_{\min}$
 \notefig[0.25]{figures/p163_c.png}
 $M$为$m$\ 作用力\quad $F=\sqrt{N^2+f^2}$ % CHECK: “为”字疑为“对”（M对m作用力）；m 后有涂改液痕迹
 %%%END
+%%%BLOCK id=171-01 ch=02 sec=验证力的平行四边形定则·实验 kind=method exp=1 alt=none cont=none y=0.02-0.22
+\textbf{力的平行四边形}
+
+①
+
+%FIG p171_a 0.14 0.043 0.47 0.185
+\notefig[0.4]{figures/p171_a.png}
+
+记录$F$大小与方向
+
+$F_3$合力：橡皮/测力计
+%%%END
+%%%BLOCK id=171-02 ch=02 sec=验证力的平行四边形定则·实验 kind=method exp=1 alt=none cont=none y=0.23-0.43
+② 橡皮筋
+
+%FIG p171_b 0.235 0.258 0.49 0.402
+\notefig[0.35]{figures/p171_b.png}
+
+在力的方向上画伸长量
+
+%FIG p171_c 0.49 0.35 0.63 0.41
+\notefig[0.2]{figures/p171_c.png}
+
+\uwave{不用让$O$在同一位置了}
+%%%END
+%%%BLOCK id=171-03 ch=02 sec=验证力的平行四边形定则·实验 kind=method exp=1 alt=none cont=none y=0.43-0.68
+③ 三力 $\to$ 转$+$相似$+$做圆
+
+%FIG p171_d 0.14 0.44 0.51 0.64
+\notefig[0.4]{figures/p171_d.png}
+
+% 红笔批改：A 行末有红勾；B 行末红×并补写「和方向」；C 行末有红勾/红线并旁注「用细绳标方向」；D「大一些」下有红线+红勾
+A：$O$点不能动；同次\ \red{$\checkmark$}
+
+B：记下测力计读数，$O$点位置\red{$\times$和方向} % 「记下」为行间小字插入
+
+C：拉橡皮筋的细绳长一些，效果好\ \red{$\checkmark$}\quad \red{用细绳标方向}
+
+D：拉力要适当大一些\ \red{$\checkmark$}
+%%%END
+%%%BLOCK id=171-04 ch=02 sec=弹簧·胡克定律实验 kind=note exp=1 alt=none cont=none y=0.68-0.73
+结点$D$偏高没有影响，直$R$斜\unclear{放}$k$偏小 % CHECK: 「D」疑为「O」；「直R」疑为「直尺」；该句疑指弹簧(k)实验中直尺斜放读数偏大 → k偏小
+%%%END
+%%%BLOCK id=178-01 ch=02 sec=胡克定律·实验 kind=method exp=1 alt=none cont=none y=0.05-0.34
+\textbf{胡克定律}
+
+但凡验证必用图象(图象\unclear{，}必为直线)
+
+\[
+F=k\cdot\Delta X\qquad
+\left\{
+\begin{aligned}
+F_1&=kX_1\to\text{形}\\
+F_2&=kX_2\to\text{形}
+\end{aligned}
+\right.
+\]
+
+\[
+\Delta F=k\cdot\Delta X=k\left[X_1'-X_0-(X_2'-X_0)\right]=k\Delta X
+\]
+
+$\downarrow$ 现在$K$\unclear{…} % CHECK: 此行有箭头自 kΔX 指下；字迹被涂黑，只辨出「现在K」
+
+2011\ 拉$F_1,X_1$\ 压$F_2,X_2$\ 求$k$\qquad $k=\dfrac{\overset{\text{力换方向}}{F_1-(-F_2)}}{X_1-X_2}$
+
+操作\quad $F_1\Rightarrow\overset{\text{形变}}{\Delta X_1}$\qquad $k_1=\dfrac{F_1}{\Delta X_1}$
+
+法一：\ $F_2\to\Delta X_2$\qquad $k_2=\dfrac{F_2}{\Delta X_2}$\qquad 求平均$\overline{k}=\dfrac{k_1+k_2+\cdots+k_n}{n}$
+
+$\vdots$
+%%%END
+%%%BLOCK id=178-02 ch=02 sec=胡克定律·实验 kind=method exp=1 alt=none cont=none y=0.34-0.72
+法二：图象
+\begin{keybox}
+\[F=k(X-X_0)\]
+\end{keybox}
+
+%FIG p178_b 0.37 0.335 0.80 0.495
+\notefig[0.43]{figures/p178_b.png}
+
+\begin{keybox}
+\[F=k(X_0-X)\]
+\end{keybox}
+
+%FIG p178_c 0.40 0.497 0.76 0.65
+\notefig[0.36]{figures/p178_c.png}
+
+\begin{center}
+\begin{tabular}{c|c|c|}
+$F$ & $F_1$ & $F_2$ \\
+\hline
+$X$ & $X_1$ & $X_2$ \\
+\end{tabular}
+\end{center}
+%%%END
+%%%BLOCK id=178-03 ch=02 sec=胡克定律·实验 kind=method exp=1 alt=none cont=none y=0.72-0.83
+法三：逐差
+
+\[
+\Delta\overline{X}=\frac{X_7+X_6+X_5+X_4-(X_3+X_2+X_1+X_0)}{16}\quad;\quad F=k\Delta\overline{X}\quad k=\frac{F}{\Delta\overline{X}}
+\]
+%%%END
+%%%BLOCK id=178-04 ch=02 sec=弹簧串并联 kind=formula alt=none cont=none y=0.82-0.94
+\begin{keybox}
+串联\quad $\dfrac{1}{k'}=\dfrac{1}{k_1}+\dfrac{1}{k_2}$\qquad 串$n$个\quad $k'=\dfrac{k_0}{n}$
+
+并联\quad $k'=nk_0$\quad 并$n$个
+\end{keybox}
+%%%END
+%%%BLOCK id=179-05 ch=02 sec=测动摩擦因数·实验 kind=method exp=1 alt=03 cont=none y=0.51-0.60
+\fbox{测$\mu$}
+
+%FIG p179_g 0.01 0.536 0.235 0.598
+\notefig[0.25]{figures/p179_g.png}
+
+能测出$A$与$B$间$\mu=\dfrac{F}{m}$ % CHECK: 手写为 F/m（疑漏 g，应为 F/mg）
+%%%END
+%%%BLOCK id=181-05 ch=02 sec=弹力·测杨氏模量 kind=knowledge exp=1 alt=18 cont=none y=0.69-0.78
+\textbf{测杨氏模量}\quad $F=kx$\quad $k=Y\dfrac{S}{L}$\quad $Y$单位是 $\mathrm{Pa}$。
+
+$L$为未受拉力时长度，$S$为横截面积。$\leftarrow$ 测直径 $D$ 用螺旋测微器 % “D”写在“测直径”上方行间
+
+\[ Y=\frac{kL}{\pi\dfrac{D^2}{4}} \]
+%%%END
+%%%BLOCK id=184-07 ch=02 sec=验证力的平行四边形定则 kind=method exp=1 alt=none cont=none y=0.82-1.00
+\textbf{验\unclear{证力的}平行四边形定则} % “证力的”为标题上方小字插入
+
+%FIG p184_g 0.045 0.87 0.20 0.998
+\notefig[0.25]{figures/p184_g.png}
+% 图中标注：F_1、F_2、F、F_3，底部写有“F理 F真(测?)”
+
+比较 $F$ 与 $F_3$ 的大小与方向，得出结论：在误差允许范围内，力的平行四边形\unclear{法}则成立
+%%%END
+%%%BLOCK id=186-01 ch=02 sec=验证力的平行四边形定则 kind=note alt=none cont=none y=0.03-0.21 exp=1
+%FIG p186_a 0.04 0.027 0.22 0.165 soft
+\notefig[0.25]{figures/p186_a.png}
+
+要记录结点 $O$ 的位置、每条绳上所挂钩码的个数，$OA$、$OB$、$OC$\unclear{…}（行间小字：大小方向）
+% 此行右侧为淡铅笔字迹、对焦模糊：
+（右侧淡字：\unclear{分力的大小、方向作用……}；\unclear{$F_B$ 沿绳的方向}）
+
+不用让 $OA\perp OB$，不用让 $O$ 点不变，可以换成弹性绳
+
+（只需稳定即可）\quad（分力和合力可在同一个图示中表示出来）\quad（不影响受力的方向和\unclear{钩码}个数）
+%%%END
+%%%BLOCK id=221-02 ch=02 sec=受力分析·平衡解题方法 kind=method alt=none cont=none y=0.28-0.38
+\textbf{2、}
+\begin{itemize}
+\item 正交分解
+\item 4力\quad 先合成2定力\quad 后三力汇交 \quad 等效替代
+\item 定角\quad 画力\quad 辅助圆
+\end{itemize}
+%%%END
+%%%BLOCK id=221-07 ch=02 sec=弹力·图像 kind=method alt=90 cont=none y=0.52-0.63
+\textbf{6、}图象分段、曲线、轴点线斜截面
+%FIG p221_d 0.055 0.55 0.20 0.62
+\notefig[0.25]{figures/p221_d.png}
+两个劲度系数（描点时分段了）。
+%%%END
+%%%BLOCK id=235-04 ch=02 sec=重力·弹力 kind=knowledge alt=03 cont=none y=0.535-0.67
+\textbf{重力、弹力}\par
+万有引力指向地心，重力竖直向下（无条件）\par
+太空完全失重，不能用弹簧测力计测$G$，可以测拉力．天平不能用 \unclear{摆钟}、压强计\par
+\unclear{接触}因弹性形变而产生的力\par
+力学两确定：\begin{tabular}[t]{@{}l@{}}研究对象\\运动状态\end{tabular}
+%FIG p235_h 0.05 0.588 0.225 0.668
+\notefig[0.2]{figures/p235_h.png}
+无$T$无$N$
+%%%END
+%%%BLOCK id=236-01 ch=02 sec=滑动摩擦力 kind=knowledge alt=none cont=none y=0.05-0.33
+\textbf{滑动摩擦}　产生条件有弹力　$\mu N$
+
+阻碍相对运动
+
+方向与相对运动方向相反，与运动方向不一定相同
+
+$f_{\text{滑}}$不一定是阻力
+
+%FIG p236_a 0.145 0.158 0.275 0.225
+\notefig[0.25]{figures/p236_a.png}
+
+%FIG p236_b 0.21 0.208 0.615 0.325
+\notefig[0.4]{figures/p236_b.png}
+%%%END
+%%%BLOCK id=236-02 ch=02 sec=静摩擦力 kind=knowledge alt=none cont=none y=0.34-0.54
+\textbf{静摩擦}　$0<f\le f_{\max}$ % CHECK: 手写左端像 "<"（物理上应为 $\le$），照录
+
+$\left\{\begin{array}{l}N\\ \mu\end{array}\right.$
+
+阻碍　相对运动趋势
+
+与运动方向无关
+
+与相对运动趋势方向相反
+
+%FIG p236_c 0.372 0.36 0.68 0.424
+\notefig[0.3]{figures/p236_c.png}
+
+\[
+\left\{\begin{array}{ll}
+F>mg\sin\alpha & \text{下}\\
+F=mg\sin\alpha & \text{无}\\
+F<mg\sin\alpha & \text{上}
+\end{array}\right.
+\]
+
+$f_{\text{静}}$方向：
+\[
+a\left\{\begin{array}{ll}
+>g\sin\theta & \text{沿下}\\
+=g\sin\theta & \text{无}\\
+<g\sin\theta & \text{沿上}
+\end{array}\right.
+\]
+%%%END
+%%%BLOCK id=236-03 ch=02 sec=摩擦力突变 kind=method alt=none cont=none y=0.55-0.68
+%FIG p236_d 0.10 0.558 0.2445 0.622
+\notefig[0.25]{figures/p236_d.png}
+
+$f_{\text{静}}=mg\sin\omega t$　　$f_{\text{滑}}=\mu mg\cos\omega t$
+
+%FIG p236_e 0.225 0.612 0.44 0.675
+\notefig[0.25]{figures/p236_e.png}
+%%%END
+%%%BLOCK id=236-04 ch=02 sec=摩擦力突变 kind=method alt=03 cont=none y=0.69-0.88
+% 图中标注：F=kt，μ，f，G，f=μkt，向下减速，静止，向下加速，t
+%FIG p236_f 0.045 0.695 0.34 0.875
+\notefig[0.3]{figures/p236_f.png}
+%%%END
+%%%BLOCK id=236-05 ch=02 sec=摩擦力突变 kind=problem alt=03 cont=none y=0.88-1.0
+%FIG p236_g 0.11 0.885 0.265 0.995
+\notefig[0.25]{figures/p236_g.png}
+
+$F_{\text{拉}}=5\unit{N}$　　$m=5\unit{kg}$　均静止　右加速 $a$ 从 $0\to 2\unit{m/s^2}$ % CHECK: "5" 与 F拉=5N 的手写数字同形，由 $a_1=F/m=1\unit{m/s^2}$ 判断 m=5kg；"均"为插入字
+
+$F+f_{\max}=ma_2$　　$a_2\ge 2\unit{m/s^2}$　　$\therefore F_{\text{拉}}$不变，$f$先向左$\downarrow$ 再向右$\uparrow$
+
+$f=F=5\unit{N}\le f_{\max}$　　$a_1=1\unit{m/s^2}$
+%%%END
+%%%BLOCK id=238-01 ch=02 sec=力的合成 kind=knowledge alt=none cont=none y=0.04-0.27
+\textbf{力的合成}
+
+求合力　正弦定理　余弦定理
+
+\[
+F=\sqrt{F_1^2+F_2^2+2F_1F_2\cos\theta}
+\]
+随$\theta\uparrow$而$\downarrow$　　$\theta=180^\circ$ 最小 $F_1-F_2$　　$\theta=0^\circ$ 最大 $F_1+F_2$
+
+%FIG p238_a 0.25 0.168 0.535 0.24
+\notefig[0.3]{figures/p238_a.png}
+
+首尾相连成闭合图形　$F_{\text{合}}=0$
+%%%END
+%%%BLOCK id=238-02 ch=02 sec=力的分解·动态平衡 kind=method alt=none cont=none y=0.27-0.45
+力的分解、画动态图求力　　按实际作用效果正交分解
+
+%FIG p238_b 0.10 0.39 0.205 0.45
+\notefig[0.25]{figures/p238_b.png}
+
+$N_{\text{地B}}$不变　　$T\uparrow$
+%%%END
+%%%BLOCK id=238-03 ch=02 sec=力的分解·动态平衡 kind=method alt=none cont=none y=0.42-0.57
+%FIG p238_c 0.09 0.46 0.335 0.562
+\notefig[0.3]{figures/p238_c.png}
+
+%FIG p238_d 0.395 0.415 0.70 0.54
+\notefig[0.3]{figures/p238_d.png}
+
+$N_{OA}\uparrow$
+
+$N_{OB}$先$\uparrow$后$\downarrow$
+%%%END
+%%%BLOCK id=238-04 ch=02 sec=共点力平衡·摩擦临界 kind=derivation alt=none cont=none y=0.59-0.70
+%FIG p238_e 0.055 0.598 0.225 0.688
+\notefig[0.25]{figures/p238_e.png}
+
+\[
+2\mu N\cos\theta=mg+2N\sin\theta
+\]
+\[
+N=\frac{mg}{2(\mu\cos\theta-\sin\theta)}
+\]
+想\unclear{卡住}则 $N>0$　　$\theta\uparrow\ N\uparrow$ % CHECK: "想?则"中间一字被涂改，无法辨认
+
+$\mu>\tan\theta$
+%%%END
+%%%BLOCK id=238-05 ch=02 sec=共点力平衡·斜面受力分析 kind=note alt=03 cont=none y=0.71-0.80
+%FIG p238_f 0.07 0.74 0.255 0.81
+\notefig[0.25]{figures/p238_f.png}
+
+加$F$　$f_{\text{斜物}}\uparrow$　$N_{\text{斜物}}\uparrow$　$f_{\text{地斜}}=0$　$N_{\text{地斜}}\uparrow$
+%%%END
+%%%BLOCK id=238-06 ch=02 sec=共点力平衡·临界极值 kind=problem alt=none cont=none y=0.82-0.98
+\begin{problem}
+使\unclear{球}重力加$\Delta G$ 还使$C$静止　$\Delta G_{\max}=?$ % CHECK: "球"字手写像"挂"，按语义转录
+
+%FIG p238_g 0.06 0.84 0.235 0.918
+\notefig[0.2]{figures/p238_g.png}
+
+\begin{solution}
+\begin{align*}
+F_N&=\sqrt2\,(G+\Delta G_m) & \Delta G&=\frac{2\mu-1}{1-\mu}\,G\\
+F_N\sin45^\circ&=\mu(G+F\cos45^\circ)
+\end{align*}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=240-01 ch=02 sec=共点力平衡·活结与死结 kind=knowledge alt=none cont=none y=0.01-0.15
+% 左上角淡铅笔小字标题
+\textbf{活结}
+
+%FIG p240_a 0.06 0.03 0.17 0.108
+\notefig[0.2]{figures/p240_a.png}
+
+活结两侧拉力相等
+
+%FIG p240_b 0.222 0.046 0.318 0.102
+\notefig[0.2]{figures/p240_b.png}
+
+$T\cos\theta=\frac12 mg$　　$T=\dfrac{mg}{2\cos\theta}$　　$2T\cos\theta=mg$　　$d\uparrow\ \cos\alpha\downarrow\ T\uparrow$ % CHECK: 末式中的角手写像 α（前式为 θ），照录
+
+$\sin\theta=\dfrac{d}{L}$
+
+%FIG p240_c 0.555 0.108 0.645 0.15
+\notefig[0.2]{figures/p240_c.png}
+
+引体向上　\unclear{竖}手力小
+%%%END
+%%%BLOCK id=240-02 ch=02 sec=共点力平衡·活结与死结 kind=knowledge alt=none cont=none y=0.16-0.25
+%FIG p240_d 0.075 0.158 0.205 0.25
+\notefig[0.25]{figures/p240_d.png}
+
+$d$先$\uparrow$后$\downarrow$
+
+$T$先$\uparrow$后$\downarrow$
+%%%END
+%%%BLOCK id=240-03 ch=02 sec=共点力平衡·活结与死结 kind=knowledge alt=none cont=none y=0.25-0.37
+死结　结不沿绳移动，为两根绳
+
+活杆　沿杆
+
+死杆　任意
+
+%FIG p240_e 0.52 0.255 0.68 0.368
+\notefig[0.2]{figures/p240_e.png}
+%%%END
+%%%BLOCK id=240-04 ch=02 sec=共点力平衡·条件与方法 kind=knowledge alt=none cont=none y=0.38-0.46
+共点力（延长线交于1点）平衡 $\Leftrightarrow$ 缓慢　匀速、静止、$F_{\text{合}}=0$ % 原稿"1点"写在括号内第二行
+
+方法：二力平衡条件　等效
+%%%END
+%%%BLOCK id=240-05 ch=02 sec=共点力平衡·条件与方法 kind=method alt=03 cont=none y=0.47-0.57
+%FIG p240_f 0.10 0.488 0.245 0.568
+\notefig[0.2]{figures/p240_f.png}
+
+平衡后剪断绳子，$F_B=mg$
+
+%FIG p240_g 0.575 0.462 0.835 0.55
+\notefig[0.3]{figures/p240_g.png}
+% 斜面简图旁手写：α t_1, t_2 α（斜面上方），t_1（块旁）；弯箭头自"验证"处指向左侧 F_B=mg
+$\alpha\ \checkmark$　验证
+%%%END
+%%%BLOCK id=240-06 ch=02 sec=共点力平衡·条件与方法 kind=method alt=none cont=none y=0.57-0.66
+三力平衡　力三角形
+
+多力平衡　正交分解
+
+相似，力辅助圆，正弦定理、余弦定理　勾股定理　　$\sin(\pi-\alpha)=\sin\alpha$
+%%%END
+%%%BLOCK id=240-07 ch=02 sec=共点力平衡·摩擦角 kind=derivation alt=none cont=none y=0.67-0.78
+$4\to3$
+
+%FIG p240_h 0.14 0.683 0.44 0.78
+\notefig[0.3]{figures/p240_h.png}
+
+\[
+F=mg\sin\varphi=\frac{\mu mg}{\sqrt{1+\mu^2}}
+\]
+%%%END
+%%%BLOCK id=241-01 ch=02 sec=页眉·力 kind=note alt=none cont=none y=0.06-0.12
+\textbf{力}\quad（页面左上角手写的大字标题）
+%%%END
+%%%BLOCK id=241-03 ch=02 sec=整体法隔离法·楔形体与球 kind=diagram alt=none cont=none y=0.16-0.34
+\begin{problem}
+%FIG p241_b 0.13 0.16 0.60 0.255
+\notefig[0.47]{figures/p241_b.png}
+%FIG p241_c 0.135 0.255 0.23 0.34
+\notefig[0.25]{figures/p241_c.png}
+\begin{solution}
+\[ F\downarrow\qquad F'\downarrow\qquad E\downarrow \] % CHECK: 第三个符号为“E”（可能是 F'' 或 N）
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-04 ch=02 sec=静摩擦力·方向讨论 kind=problem alt=none cont=none y=0.38-0.49
+\begin{problem}
+%FIG p241_d 0.10 0.415 0.25 0.485
+\notefig[0.25]{figures/p241_d.png}
+\begin{solution}
+\[ mg\sin\theta=F\cos\theta\pm f_{12} \]
+\[ f_{BA}\text{不定}\ \begin{cases}\text{先}\uparrow\text{后}\downarrow\\ \uparrow\end{cases}\qquad\qquad f_{\text{地}}=F\uparrow \]
+\unclear{静摩擦力}永远\unclear{要方}向讨论 % CHECK: 此句在 f_地=F↑ 上方，前半句笔迹潦草（静?止?摩擦…力），整句大意“静摩擦力方向永远要讨论”
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-05 ch=02 sec=动态平衡·绳与杆 kind=problem alt=none cont=none y=0.50-0.62
+\begin{problem}
+%FIG p241_e 0.08 0.50 0.23 0.62
+\notefig[0.25]{figures/p241_e.png}
+\begin{solution}
+\[ 2F\cos\theta=mg\qquad F_1=F_2=mg\quad\text{又绳力不变}\therefore\text{杆力}\uparrow \] % CHECK: “∴”原稿像“心”
+\[ A\text{向下}\quad\theta\uparrow\quad F\uparrow \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-06 ch=02 sec=摩擦力·圆柱放在斜轨上 kind=problem alt=none cont=none y=0.62-0.76
+\begin{problem}
+%FIG p241_f 0.08 0.606 0.26 0.745
+\notefig[0.3]{figures/p241_f.png}
+\begin{solution}
+\[ 2\mu mg\cos\theta=mg\sin\theta\qquad \mu=2\tan\theta \] % CHECK: 按上式应得 μ=½tanθ，原稿写作“2tanθ”
+\[ N_{\text{左}}=N_{\text{右}}=mg\cos\theta\qquad f_{\text{左}}=f_{\text{右}}=\ \tfrac12 mg\sin\theta \] % 等号与 1/2 之间原稿有一块被涂白/遮盖的空白区（可能盖住了字）
+\[ \theta\uparrow\quad N\downarrow\quad f\uparrow \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-07 ch=02 sec=动态平衡·结点与绳OA kind=problem alt=none cont=none y=0.76-0.88
+\begin{problem}
+%FIG p241_g 0.06 0.765 0.265 0.885
+\notefig[0.25]{figures/p241_g.png}
+$O$从$A$到$B$ 求$F_{OA}$ % CHECK: 首字为“O”（也可能是①）
+\begin{solution}
+$OA$在$\angle BOC$\unclear{平}分线上\qquad $F_{OA}=2F\cos\theta$\qquad $\theta\uparrow$\quad $F_{OA}\downarrow$
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=241-08 ch=02 sec=共点力平衡·双绳与质量比 kind=problem alt=none cont=none y=0.88-1.00
+\begin{problem}
+%FIG p241_h 0.05 0.885 0.205 0.995
+\notefig[0.25]{figures/p241_h.png}
+\begin{solution}
+\begin{align*}
+T\sin\alpha&=m_Ag\\
+T\sin\beta&=m_Bg
+\end{align*}
+\[ \frac{m_A}{m_B}=\frac{\sin\alpha}{\sin\beta} \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=242-01 ch=02 sec=动态平衡·两绳夹角不变 kind=problem alt=none cont=none y=0.00-0.24
+\begin{problem}[1]
+%FIG p242_a 0.07 0.00 0.235 0.072
+\notefig[0.25]{figures/p242_a.png}
+%FIG p242_b 0.30 0.00 0.40 0.05
+\notefig[0.25]{figures/p242_b.png}
+%FIG p242_c 0.12 0.075 0.29 0.15
+\notefig[0.25]{figures/p242_c.png}
+\begin{solution}
+\[ \begin{cases} F_1\sin\alpha=F_2\sin(\theta-\alpha)\\ F_1\cos\alpha+F_2\cos(\theta-\alpha)=G \end{cases} \]
+\[ F_1=G\,\frac{\sin(\theta-\alpha)}{\sin\theta}\qquad F_2=G\,\frac{\sin\alpha}{\sin\theta}\qquad\theta\text{不变} \]
+\begin{itemize}
+\item $\alpha$从$90^\circ\to0^\circ$
+\item $\theta-\alpha$\unclear{在}\ $120^\circ$\ 从$30^\circ\sim120^\circ$ % CHECK: 此处三行斜排：“θ−α ?”“120°”“从30°~120°”，120°应指θ=120°
+\item $F_1$先$\uparrow$后$\downarrow$
+\item $F_2\downarrow\to0$
+\end{itemize}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=242-05 ch=02 sec=共点力平衡·相似三角形 kind=problem alt=none cont=none y=0.70-0.865
+\begin{problem}[5]
+%FIG p242_g 0.07 0.70 0.225 0.865
+\notefig[0.25]{figures/p242_g.png}
+\begin{solution}
+\[ \frac{T}{l_1}=\frac{m_1g}{h}\qquad\frac{T}{l_2}=\frac{m_2g}{h} \]
+\[ \therefore m_1l_1=m_2l_2 \]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=242-06 ch=02 sec=共点力平衡·靠墙杆的受力 kind=problem alt=none cont=none y=0.865-1.00
+\begin{problem}[6]
+%FIG p242_h 0.11 0.865 0.245 0.985
+\notefig[0.25]{figures/p242_h.png}
+\begin{solution}
+法1\ 用杆\unclear{力矩}平衡 % CHECK: “力矩”二字笔迹潦草，仅辨认出大意
+\[ \underset{\uparrow}{F_1}\,OA=G\,O\underset{\uparrow}{B} \] % 原稿 F_1 与 B 的下方各有一个向上的小箭头
+\[ N_2=G\qquad f=F_1 \]
+地对木杆力\unclear{即}$\uparrow$ $\vec N+\vec f$
+
+%FIG p242_i 0.46 0.88 0.585 0.96
+\notefig[0.25]{figures/p242_i.png}
+
+法2\ \unclear{竖水平分} % CHECK: 末字不清（也可能是“衡”），大意应为竖直/水平方向分解
+%FIG p242_j 0.72 0.915 0.885 0.98
+\notefig[0.25]{figures/p242_j.png}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=246-01 ch=02 sec=共点力平衡·动态平衡 kind=diagram alt=none cont=none y=0.00-0.14
+%FIG p246_a 0.02 0.00 0.24 0.145
+\notefig[0.25]{figures/p246_a.png}
+$A$先$\downarrow$后$\uparrow$，$B\uparrow$\quad $A\uparrow$ % 末尾“A”旁的箭头为弯曲向上的箭头
+%%%END
+%%%BLOCK id=246-02 ch=02 sec=共点力平衡·受力分析 kind=problem alt=none cont=none y=0.02-0.24
+\begin{problem}
+现在平衡，求 $\tan\theta$。
+%FIG p246_b 0.34 0.03 0.73 0.14
+\notefig[0.4]{figures/p246_b.png}
+\begin{solution}
+\[
+\begin{cases}
+N\sin37^\circ=F\cos\theta\\
+N\cos37^\circ=m_1g+F\cos\theta\\
+2F\sin\theta=m_1g
+\end{cases}
+\qquad \tan\theta=\dfrac{16}{27}
+\]
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=247-04 ch=02 sec=受力分析 kind=summary alt=03 cont=none y=0.76-0.83
+\textbf{力学两确定}
+\begin{itemize}
+\item 平衡非平衡
+\item 研究对象
+\end{itemize}
+%%%END
+%%%BLOCK id=247-05 ch=02 sec=受力分析 kind=summary alt=none cont=none y=0.86-1.00
+\textbf{受力分析}
+\begin{itemize}
+\item 力三角形（旋转、延长）
+\item 非特殊三角形\quad 相似、正余弦定理
+\item 多力正交分解
+\item 定角定边画力辅助圆
+\end{itemize}
+%%%END
+%%%BLOCK id=249-03 ch=02 sec=共点力平衡·动态平衡 kind=problem alt=none cont=none y=0.69-0.81
+%FIG p249_d 0.04 0.685 0.256 0.81
+\notefig[0.25]{figures/p249_d.png}
+%FIG p249_e 0.44 0.715 0.56 0.795
+\notefig[0.25]{figures/p249_e.png}
+恒力 $F$ 从 $OM$ 转到 $ON$ \\
+$T_{OA}$ 先$\uparrow$后$\downarrow$ \\
+$T_{OB}\uparrow$
+%%%END
+%%%BLOCK id=258-05 ch=02 sec=受力分析·力学两确定 kind=method alt=03 cont=none y=0.55-0.62
+\textbf{力学两确定}
+\begin{itemize}
+\item 状态
+  \begin{itemize}
+  \item 平衡
+  \item 非平衡
+  \end{itemize}
+\item 研究对象
+\end{itemize}
+%%%END
+%%%BLOCK id=258-06 ch=02 sec=共点力平衡·动态平衡 kind=summary alt=none cont=none y=0.62-0.88
+\textbf{动态平衡}
+% 原稿：前三项另有一小括号相连，七项再由一个大括号统领
+\begin{itemize}
+\item 力三角形、平移、延长\ 旋转
+\item 正弦、余弦定理、\unclear{余力}勾股定理\ 三角函数
+\item 非特殊三角形\ 用相似
+\item 定角画圆
+\item 晾衣\unclear{架}模型\ $+$\ 转动 % 「架」处原稿字迹有叠写
+\item 正交分解
+\item 摩擦角、全反力
+\end{itemize}
+%%%END
+%%%BLOCK id=259-01 ch=02 sec=受力分析·摩擦力 kind=diagram alt=none cont=none y=0.00-0.15
+\textbf{人撑在两面垂直的墙}
+%FIG p259_a 0.07 0.00 0.25 0.15
+\notefig[0.3]{figures/p259_a.png}
+%%%END
+%%%BLOCK id=259-06 ch=02 sec=受力分析·多物体 kind=method alt=03 cont=none y=0.76-0.83
+多物体复杂受力分析\quad 质量分块、受力均摊，分析节点（重力可能不是 $mg$，是\unclear{等效}结果 % 此行写到页边被截断，括号未闭合
+\par 几何、三角函数关系 % 原稿写在上一行「分析节点」上方
+%%%END
+%%%BLOCK id=267-03 ch=02 sec=共点力平衡·摩擦角法 kind=method alt=none cont=none y=0.31-0.48
+\textbf{使用摩擦角}
+%FIG p267_b 0.02 0.305 0.33 0.485
+\notefig[0.45]{figures/p267_b.png}
+$f\downarrow$\quad $F$ 先 $\downarrow$ 后 $\uparrow$.
+%%%END
+%%%BLOCK id=269-05 ch=02 sec=力的合成·验证平行四边形定则 kind=note exp=1 alt=none cont=none y=0.90-0.93
+\unclear{验}力的平行四边形定则时\ 不在平行四边形中的是理想的
+%%%END
+%%%BLOCK id=271-04 ch=02 sec=弹力·等效劲度系数 kind=knowledge alt=06 cont=none y=0.47-0.61
+%FIG p271_c 0.555 0.485 0.725 0.61
+\notefig[0.25]{figures/p271_c.png}
+求系统等效劲度系数。图中标注：$2x\downarrow$，$2kx$；$\downarrow4kx$；$x\downarrow$。
+\[
+K_{\text{等效}}=4K
+\]
+%%%END
+%%%BLOCK id=280-02 ch=02 sec=全反力·匀速运动 kind=method alt=03 cont=none y=0.24-0.46
+%FIG p280_b 0.09 0.24 0.36 0.385
+\notefig[0.3]{figures/p280_b.png}
+$\mu=\dfrac{\sqrt{3}}{3}$\quad 匀速运动
+
+%FIG p280_c 0.38 0.28 0.65 0.45
+\notefig[0.3]{figures/p280_c.png}
+图中标注：$mg$，$R$ 全\unclear{反}力
+
+$F\uparrow\qquad N\uparrow\qquad f\uparrow$
+%%%END
+%%%BLOCK id=280-04 ch=02 sec=三力汇交·杆与球形碗 kind=problem alt=none cont=none y=0.69-0.87
+支持力$N$与接触面垂直
+
+%FIG p280_e 0.18 0.725 0.52 0.865
+\notefig[0.4]{figures/p280_e.png}
+\unclear{多}力交汇% CHECK: 首字疑为“三”（三力汇交）
+\[
+2R\cos\theta-2R\sin\theta\tan\theta=\frac{L}{2}\qquad \therefore L=\frac{4R\cos2\theta}{\cos\theta}
+\]
+%%%END
+%%%BLOCK id=285-08 ch=02 sec=叠放物体·静摩擦与做功 kind=derivation alt=06 cont=none y=0.36-0.49
+%FIG p285_b 0.15 0.365 0.335 0.45
+\notefig[0.25]{figures/p285_b.png}
+
+\begin{gather*}
+2F_m\cos60^\circ=mg\qquad F_m=mg\\
+f_m=F_m\cos30^\circ=\frac{\sqrt{3}}{2}mg\\
+\text{B对地压力}\ F_N=m_Bg+\tfrac12 m_Cg=mg\\
+f_{\text{地B}}=f_m\qquad \mu=\frac{\sqrt{3}}{2}
+\end{gather*}
+% CHECK: F_N 一行中 m 的下标手写不清（读作 B、C）
+% 以下三式写在上述各式右侧
+\begin{gather*}
+W-fx+mgh=0\\
+fx=2(\sqrt{3}-1)\mu mgR\\
+W=(2\mu-1)(\unclear{\sqrt{3}}-1)mgR
+\end{gather*}
+% 第二式中 x 右下有一个实心小点（可能是下标0）；第三式根号内手写像 2，按上下文读作 3
+%%%END
+%%%BLOCK id=286-02 ch=02 sec=叠放物体·受力分析 kind=note alt=none cont=none y=0.63-0.71
+%FIG p286_b 0.09 0.635 0.205 0.71
+\notefig[0.25]{figures/p286_b.png}
+
+$F_{2\text{地}}=2.5G$\quad 两边不算
+%%%END

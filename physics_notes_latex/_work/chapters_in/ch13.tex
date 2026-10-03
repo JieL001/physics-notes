@@ -363,3 +363,57 @@ P_1=P_2+P_3+\cdots
 测用手掌黑纸遮光时的电阻值并记录
 % 末行位于页面最下缘，被裁切，字迹较模糊
 %%%END
+%%%BLOCK id=165-02 ch=13 sec=变压器·自耦变压器 kind=problem alt=10 cont=none y=0.41-0.72
+\begin{problem}
+% 剪贴印刷题干。“可以在滑动变阻器中点以下范围内滑动”处有铅笔波浪线；“正确”二字被圈出；选项C右侧有铅笔勾；题干右侧有一笔手写“C”形弧线（疑为答案C）；图中~u 旁手写 220V，环形线圈上有红笔绕线
+如图所示为一自耦变压器，输入端 $a$、$b$ 间接有 $u=220\sqrt{2}\sin 100\pi t\ \mathrm{V}$ 的交流电压，自耦变压器的总匝数为 1 100，$N$ 为中点，$MN$ 间的匝数为 50，$P_1$ 可以在 $MN$ 间滑动改变副线圈的匝数，$P_2$ 为负载滑动变阻器上的滑动触头，可以在滑动变阻器中点以下范围内滑动，滑动变阻器的总阻值为 $R=20\ \Omega$，原、副线圈分别接有理想交流电流表和理想交流电压表，则在允许调节的范围内，下列说法正确的是
+\begin{enumerate}[label=\Alph*.,leftmargin=2em,itemsep=0pt]
+\item 电压表示数的最小值为 110\struck{$\sqrt{2}$} V % 印刷为 110√2 V，√2 处被笔叉掉
+\item 电流表示数的最大值为 5.5 A
+\item $P_1$ 接 $M$、$P_2$ 移到中点时，滑动变阻器消耗的功率有最大值为 1 440 W
+\item 输入变压器的功率值为 1 440 W % 印刷行下缘被剪边截去一部分，“功率”与“值”之间有笔划
+\end{enumerate}
+%FIG p165_b 0.32 0.4855 0.545 0.552
+\notefig[0.35]{figures/p165_b.png}
+\begin{solution}
+A．$\dfrac{U_1}{U_2}=\dfrac{n_1}{n_2}$\qquad $U_2=\dfrac{1}{2}U_1=110\unit{V}$
+
+B．$\dfrac{U}{U_2'}=\dfrac{n_2}{n_2'}$\qquad $U_2'=\dfrac{\frac{1}{2}n+\Delta n}{n}U_1=120\unit{V}$
+% CHECK: B 式左端分子 U 的下标看不清（疑为 U_2）；各 n 的下标、撇号也较潦草
+
+$I_2=\dfrac{U_2'}{\frac{1}{2}R}=12\unit{A}$\qquad $\dfrac{I_1}{I_2}=\dfrac{\frac{1}{2}n+\Delta n}{n}$\qquad $\therefore I_1=6.54\unit{A}$
+
+C．$P_1$ 接到 $M$　$P_2$ 位于中点时\quad $P_{\text{滑}\,\mathrm{max}}=120\unit{V}\times12\unit{A}=1440\unit{W}$
+
+D．$P_{\text{输入}}=P_{\text{输出}}$\quad 随负载消耗变化而变化
+
+\red{匝数看法}
+%FIG p165_c 0.57 0.49 0.705 0.555
+\notefig[0.25]{figures/p165_c.png}
+\end{solution}
+\end{problem}
+%%%END
+%%%BLOCK id=220-01 ch=13 sec=交变电流·有效值计算 kind=method alt=none cont=none y=0.06-0.33
+半波 $I_{\text{有}}=\dfrac{1}{2}I_m$
+
+%FIG p220_a 0.05 0.125 0.34 0.21
+\notefig[0.3]{figures/p220_a.png}
+
+%FIG p220_b 0.05 0.222 0.34 0.328
+\notefig[0.3]{figures/p220_b.png}
+%%%END
+%%%BLOCK id=220-02 ch=13 sec=交变电流·有效值计算 kind=method alt=none cont=none y=0.33-0.50
+不同波峰 $I_{\text{有}}=\dfrac{1}{2}\sqrt{I_{m1}^{2}+I_{m2}^{2}}$
+
+%FIG p220_c 0.01 0.364 0.34 0.497
+\notefig[0.3]{figures/p220_c.png}
+%%%END
+%%%BLOCK id=232-05 ch=13 sec=变压器·含变压器电路 kind=note alt=10 cont=none y=0.38-0.44
+\textbf{5、}
+%FIG p232_c 0.075 0.372 0.215 0.442
+\notefig[0.2]{figures/p232_c.png}
+$U_1=U_2+U_{\text{变}}$ （变压器电压） \qquad 电容器上$4$\unclear{V}为额定电压 % CHECK: 4 后的字母手写像 N，应为 V？
+%%%END
+%%%BLOCK id=239-01 ch=13 sec=电动机功率·非纯电阻 kind=note alt=10 cont=none y=0.05-0.16
+交流电中电动机也不能用 $P=\dfrac{U^2}{R}$　$Q=I^2Rt$　只能用 $P=UI-I^2r$ % CHECK: Q 式字形像 L²Rt，按 I²Rt 转录；若它属于"不能用"之列则物理上存疑（电热仍可用 I²Rt），原稿也可能是 U²t/R
+%%%END
