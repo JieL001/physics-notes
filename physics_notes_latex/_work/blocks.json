@@ -8946,7 +8946,7 @@
  {
   "id": "119-03",
   "page": 119,
-  "ch": "06",
+  "ch": "07",
   "sec": "杆绳连接体·机械能与动量",
   "kind": "problem",
   "exp": "0",
@@ -8954,7 +8954,7 @@
   "cont": "none",
   "y": "0.29-0.62",
   "body": "\\begin{problem}[1.]\n%FIG p119_c 0.065 0.30 0.255 0.405\n\\notefig[0.25]{figures/p119_c.png}\n% 图中标注：m、L、m（上方）；A、B；L、L；m、C\n\n① 求AB相碰瞬间速度\n\n② AB速度与C到细杆距离的关系\n\\begin{solution}\n动能定理\n\n① \\[ mg\\left(L-\\frac{\\sqrt{3}}{2}L\\right)=\\frac{1}{2}\\cdot 2mv^2 \\qquad v=\\sqrt{\\left(1-\\frac{\\sqrt{3}}{2}\\right)gL} \\]\n\n水平方向动量守恒\\quad $mv_A+mv_B=0$\n\n%FIG p119_d 0.052 0.445 0.15 0.535\n\\notefig[0.25]{figures/p119_d.png}\n% 图中标注：$\\theta$、$L$、$h$\n\n② \\[ mg\\left(h-\\frac{\\sqrt{3}}{2}L\\right)=\\frac{1}{2}\\cdot 2mv^2+\\frac{1}{2}mv_C^2 \\]\n\\[ v\\cos\\theta=v_C\\sin\\theta \\]\n\\[ \\tan\\theta=\\frac{h}{\\sqrt{L^2-h^2}}\\qquad\\therefore\\ v=\\sqrt{\\frac{gh^2\\left(2h-\\sqrt{3}L\\right)}{L^2+h^2}} \\]\n\\end{solution}\n\\end{problem}\n",
-  "raw_header": "id=119-03 ch=06 sec=杆绳连接体·机械能与动量 kind=problem alt=04,07 cont=none y=0.29-0.62"
+  "raw_header": "id=119-03 ch=07 sec=杆绳连接体·机械能与动量 kind=problem alt=04,07 cont=none y=0.29-0.62"
  },
  {
   "id": "119-04",
@@ -8972,7 +8972,7 @@
  {
   "id": "119-05",
   "page": 119,
-  "ch": "06",
+  "ch": "07",
   "sec": "杆连三球·V形模型",
   "kind": "problem",
   "exp": "0",
@@ -8980,7 +8980,7 @@
   "cont": "none",
   "y": "0.80-1.00",
   "body": "同\n%FIG p119_g 0.535 0.795 0.945 0.86\n\\notefig[0.4]{figures/p119_g.png}\n% 图中为四幅小示意图（竖直两球杆、倒V形、水平三球带向上箭头、斜靠直角装置），“同”字在其左侧\n\n%FIG p119_f 0.005 0.805 0.215 0.962\n\\notefig[0.25]{figures/p119_f.png}\n% 图中标注：A、m（顶点）；L、L；B、C 各 m\n\nbc：$v$\\ 0\\ 有\\ 0\\quad $W_{\\text{正}}$\\ $W_{\\text{负}}$\n\n$F_{\\text{杆}}=0$时\\ $a_A=g$\\ 其余时刻小于$g$\n\n$v_{A\\text{地}}=\\sqrt{2gL}$\\quad $mgL=\\frac{1}{2}mv^2$\\quad $v_B=v_C=0$\\ 水平动量抵消\n\nA机械能最小时\\quad $v_A=0$\\quad $F_{\\text{杆}}=0$\\quad $v_b=v_c=\\dfrac{\\sqrt{2gL}}{2}$\\quad bc对地压力为$mg$\n\n\\unclear{有超\\ 失重} % 页面底边被截断，字迹不全\n",
-  "raw_header": "id=119-05 ch=06 sec=杆连三球·V形模型 kind=problem alt=07,03 cont=none y=0.80-1.00"
+  "raw_header": "id=119-05 ch=07 sec=杆连三球·V形模型 kind=problem alt=07,03 cont=none y=0.80-1.00"
  },
  {
   "id": "120-01",
@@ -12950,7 +12950,7 @@
  {
   "id": "189-10",
   "page": 189,
-  "ch": "17",
+  "ch": "05",
   "sec": "光子能量与轨道能量",
   "kind": "note",
   "exp": "0",
@@ -12958,7 +12958,7 @@
   "cont": "none",
   "y": "0.78-0.81",
   "body": "% 原稿此块被划去：一条横线穿过“E=hc/λ=hν”并延伸到“低轨”二字，“E小”未被划\n\\struck{$E=\\dfrac{hc}{\\lambda}=h\\nu$}\\quad 低轨 $E$ 小\n",
-  "raw_header": "id=189-10 ch=17 sec=光子能量与轨道能量 kind=note alt=05 cont=none y=0.78-0.81"
+  "raw_header": "id=189-10 ch=05 sec=光子能量与轨道能量 kind=note alt=05 cont=none y=0.78-0.81"
  },
  {
   "id": "189-11",
@@ -13600,15 +13600,15 @@
  {
   "id": "194-07",
   "page": 194,
-  "ch": "10",
+  "ch": "06",
   "sec": "电学实验·其它",
   "kind": "note",
   "exp": "1",
   "alt": "none",
   "cont": "none",
   "y": "0.43-0.47",
-  "body": "\\unclear{倍功法}\\ $S$不变，改\\unclear{筋}数$n$变 % CHECK: “倍功法”“筋数”字迹难辨、含义不明，归章也不确定(紧邻电学实验内容，暂归10)\n",
-  "raw_header": "id=194-07 ch=10 sec=电学实验·其它 kind=note exp=1 alt=none cont=none y=0.43-0.47"
+  "body": "\\unclear{倍功法}\\ $S$不变，改\\unclear{筋}数$n$变 % CHECK: “倍功法”“筋数”字迹难辨、含义不明，归章：大纲阶段判断为橡皮筋做功实验（探究功与速度变化的关系），已从 10 改归 06\n",
+  "raw_header": "id=194-07 ch=06 sec=电学实验·其它 kind=note exp=1 alt=none cont=none y=0.43-0.47"
  },
  {
   "id": "194-08",
@@ -16408,7 +16408,7 @@
  {
   "id": "239-01",
   "page": 239,
-  "ch": "13",
+  "ch": "10",
   "sec": "电动机功率·非纯电阻",
   "kind": "note",
   "exp": "0",
@@ -16416,7 +16416,7 @@
   "cont": "none",
   "y": "0.05-0.16",
   "body": "交流电中电动机也不能用 $P=\\dfrac{U^2}{R}$　$Q=I^2Rt$　只能用 $P=UI-I^2r$ % CHECK: Q 式字形像 L²Rt，按 I²Rt 转录；若它属于\"不能用\"之列则物理上存疑（电热仍可用 I²Rt），原稿也可能是 U²t/R\n",
-  "raw_header": "id=239-01 ch=13 sec=电动机功率·非纯电阻 kind=note alt=10 cont=none y=0.05-0.16"
+  "raw_header": "id=239-01 ch=10 sec=电动机功率·非纯电阻 kind=note alt=10 cont=none y=0.05-0.16"
  },
  {
   "id": "239-02",
@@ -18358,7 +18358,7 @@
  {
   "id": "273-06",
   "page": 273,
-  "ch": "18",
+  "ch": "01",
   "sec": "读数·易错",
   "kind": "note",
   "exp": "0",
@@ -18366,7 +18366,7 @@
   "cont": "none",
   "y": "0.72-0.85",
   "body": "\\textbf{读数坑}\n\n%FIG p273_d 0.03 0.745 0.25 0.815\n\\notefig[0.3]{figures/p273_d.png}\n\n$\\Delta x=x_2-2x_1$\n",
-  "raw_header": "id=273-06 ch=18 sec=读数·易错 kind=note alt=none cont=none y=0.72-0.85"
+  "raw_header": "id=273-06 ch=01 sec=读数·易错 kind=note alt=none cont=none y=0.72-0.85"
  },
  {
   "id": "273-07",

@@ -52,6 +52,9 @@ for b in sorted(blocks, key=lambda b: (b["page"], b["id"])):
             items.append("CHECK：" + short(com.split("CHECK", 1)[1].lstrip(":：　 "), 160)
                          + (f"　← `{short(code, 60)}`" if code.strip() else ""))
             n_check += 1
+        elif com and "DUP" in com:
+            items.append("疑似重复：" + short(com.split("DUP", 1)[1].lstrip("?？:：　 "), 160))
+            n_check += 1
         for u in unclear_args(code):
             items.append(f"看不清：`{short(u, 40) or '…'}`　← `{short(code, 60)}`")
             n_unclear += 1
@@ -61,7 +64,7 @@ for b in sorted(blocks, key=lambda b: (b["page"], b["id"])):
 L = ["# 待核对清单", "",
      f"自动生成（`python3 _work/tools/review_list.py`，数据来自 `_work/blocks.json`）。共 **{n_check}** 处 CHECK、**{n_unclear}** 处“看不清”，分布在 **{len(by_page)}** 页。",
      "",
-     "- **CHECK**：转录员认为原稿疑似笔误、前后矛盾或字形拿不准，已**照原样**转录并加注的地方。",
+     "- **CHECK**：转录员认为原稿疑似笔误、前后矛盾或字形拿不准，已**照原样**转录并加注的地方（“疑似重复”也计入此类）。",
      "- **看不清**：手写字迹辨认不清，反引号里是最佳猜测；PDF 里排成橙色的 `[… ?]`。",
      "- 每条后面的 `← …` 是该处所在的 LaTeX 源码片段，方便在 `_work/blocks/pNNN.tex` 里搜索修改；改完重新运行 collect.py → assemble.py → 编译。",
      "- 转录员自报的“最需二次核对”重点（p165 以后）另见 `_work/agent_reports.md`。", ""]
