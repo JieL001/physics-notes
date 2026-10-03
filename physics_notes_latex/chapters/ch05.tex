@@ -2,7 +2,53 @@
 \chapter{万有引力与航天}
 \label{ch:05}
 
-\section{开普勒定律与万有引力定律}
+\section{本章提纲与解题总纲}
+% ---- block 070-07 (原稿第70页) kind=summary ----
+% 本页散见的各专题标题（版面上与上述公式块穿插排列），此处只列没有其它内容的标题行
+\begin{itemize}
+  \item 开、万定律的理解与运用
+  \item 填补法求万有引力
+  \item 宇宙速度的理解与计算
+  \item 卫星运动参量的比较
+  \item 卫星变轨、飞船对接问题
+  \item 双星、多星模型、天体的追及相遇 % 页面底边，字迹下半部被截断
+\end{itemize}
+
+% ---- block 131-01 (原稿第131页) kind=summary ----
+\textbf{天体物理}
+
+比值类\quad \fbox{先表达，后正比，常量都当1}\quad 注意 $4{:}3$ 和 $3{:}4$ \underline{反应\ 一下}\quad （其上方小字：先看清后下笔）
+
+\textbf{一、体系分类}
+
+1.\ 题型：
+\begin{tabular}[t]{@{}c@{\ ；}c@{\ ；}c@{\ ；}c@{\ ；}c@{}}
+比值(比大小) & 轨道 & 多星 & 能量 & 引力\\
+90\% & 5\% & 1\% & 0.1\% & 4.9\%
+\end{tabular}
+% 百分数分别写在 比值、轨道、多星、能量、引力 的下方
+
+2.\ 旋转；表面
+
+% ---- block 132-03 (原稿第132页) kind=method ----
+4. 先表达后正比\quad 常量都当 1\ $\propto$
+\[
+\begin{array}{cl}
+\text{\unclear{O}} & \propto\ \dfrac{a}{b}\\ \cline{1-1}
+\text{\unclear{O}} & \propto\ \dfrac{a'}{b'}
+\end{array}
+\qquad
+\frac{a}{b}\div\frac{a'}{b'}=\frac{a\div a'}{b\div b'}
+\qquad
+\frac{\dfrac{b}{a}}{\dfrac{d}{c}}=\frac{bc}{ad}
+\]
+\[
+\frac{\dfrac{\text{①}}{\text{②}}}{\dfrac{\text{③}}{\text{④}}}=\frac{\text{①④}}{\text{②③}}
+\qquad \text{中沉两头合}
+\]
+
+
+\section{开普勒定律}
 % ---- block 070-03 (原稿第70页) kind=knowledge ----
 % 版面：左侧标题“开普勒行星运动定律”，其右大括号括入以下四条
 \textbf{开普勒行星运动定律}
@@ -13,8 +59,366 @@
   \item 万有引力定律\quad $F=\dfrac{GMm}{r^2}$\quad $G=6.67\times10^{-11}\unit{N\cdot m^2/kg^2}$
 \end{itemize}
 
+% ---- block 123-03 (原稿第123页) kind=knowledge ----
+\textbf{开一}\ 太阳系所有行星轨道均为椭圆，太阳位于椭圆1个焦点上% 原稿“1个”以插入符写在“椭圆”与“焦点”之间的上方
 
-\section{天体质量与密度计算}
+\textbf{开二}
+\begin{itemize}
+\item 同一轨道、相同时间，连线扫过的面积相等
+\item 不同轨道：相同时间，大轨道扫过面积更大\quad $S=\dfrac{1}{2}rv\Delta t=\dfrac{1}{2}\sqrt{GMr}\,\Delta t$
+\item $v_1r_1=v_2r_2$\quad $\dfrac{1}{2}r_1v_1\Delta t=\dfrac{1}{2}r_2v_2\Delta t$\ 远／近地点.\ 其他点：$\dfrac{v_3}{v_4}\approx\dfrac{r_4}{r_3}$
+\end{itemize}
+
+\notefig[0.3]{figures/p123_b.png}
+% 图：椭圆轨道，中心天体在焦点，若干扇形面积 S1~S4，图下方标注 S1=S2<S3=S4
+
+% ---- block 123-04 (原稿第123页) kind=knowledge ----
+\textbf{开三}\quad $\dfrac{r^{3}}{T^{2}}=K$
+\begin{itemize}
+\item $r$：椭圆\unclear{半长}轴、圆半径
+\item $K$：$K=\dfrac{GM}{4\pi^{2}}$\quad $\dfrac{GMm}{r^{2}}=m\dfrac{4\pi^{2}}{T^{2}}r$\quad $\dfrac{r^{3}}{T^{2}}=\dfrac{GM}{4\pi^{2}}$\quad 涉及不同中心天体的椭圆计算
+\item $T$：比较正圆的椭圆周期
+\end{itemize}
+
+% ---- block 133-02 (原稿第133页) kind=knowledge ----
+\textbf{椭圆轨道}
+
+开1\quad 轨椭圆轨道定律 % 其中“椭圆轨道定律”被手绘椭圆圈起
+
+开2
+\notefig[0.3]{figures/p133_a.png}
+\[ V_{\text{远}}\,r_{\text{远}}=V_{\text{近}}\,r_{\text{近}} \] % 原稿此式被手绘椭圆圈起
+\notefig[0.3]{figures/p133_b.png}
+
+% ---- block 134-01 (原稿第134页) kind=knowledge ----
+\textbf{椭圆}
+
+\fbox{\parbox{0.9\linewidth}{高轨低\unclear{速大周期}\unclear{大}机大势小引力\\ \unclear{$t$}不按几何分\quad 机$<0$且守恒}} % 第一行字迹重叠模糊：“低”与“机”之间有淡色重叠字（约为“速大周期”），其后一字形似“等”（据 p133 同句应为“大”）；第二行首字形似 t / 七
+
+开3：\quad $\dfrac{r^{3}}{T^{2}}=C=\dfrac{GM}{4\pi^{2}}$\quad $r$指半长轴$\left(\dfrac{a}{2}\right)$ % 开3 后的式子被一个对话气泡形的线圈住，气泡尖角指向下方的图
+\notefig[0.35]{figures/p134_a.png}
+\[ \frac{r_2^{3}}{T_2^{2}}=\frac{\left(\dfrac{r_1+r_2}{2}\right)^{3}}{T_1^{2}} \]
+\fbox{椭圆半长当半径\quad 高轨大机大周期}
+
+% ---- block 193-09 (原稿第193页) kind=knowledge ----
+越近$a$越大\quad \fbox{同一\underline{椭圆}}轨道才符合（\unclear{卫星}与中心天体连线）单位时间扫过面积相等 % 原稿“同一椭圆”被大圆圈圈起；小字“(卫星)与中心天体连线”插写在“符合”与“单位时间”之间，前两字难辨
+
+% ---- block 285-07 (原稿第285页) kind=formula ----
+天体转动面积\quad $S=\dfrac12\sqrt{GMr}=\dfrac12\sqrt{\dfrac{GM}{r}}\,v$% CHECK: 末项手写像 v（面积速度应为 S=½rv，可能是 r）
+
+% ---- block 188-05 (原稿第188页) kind=note ----
+4、$\dfrac{r^3}{T^2}=\dfrac{GM}{4\pi^2}$ 与中心天体 $M$ 有关（绕的中心不同就不成立）
+
+\notefig[0.25]{figures/p188_b.png}
+
+地球\quad $v_P=\sqrt{g_{\mathrm{I}}r_{\mathrm{I}}}\neq\sqrt{g\,r_{\text{地球}}}$% 图中小圆旁标“地球”，圆下标 Ⅰ、P
+
+% ---- block 221-09 (原稿第221页) kind=method ----
+\textbf{8、}椭圆运动用 $v_1r_1=v_2r_2$\quad 椭圆周长$\pi a$。$\leftarrow$用动能定理\quad 时间用 $\dfrac{r_1^3}{T_1^2}=\dfrac{r_2^3}{T_2^2}$（$r_1^3$ 上方标“椭”，$r_2^3$ 上方标“圆”） % CHECK: “椭圆周长πa”难辨
+
+% ---- block 191-01 (原稿第191页) kind=problem ----
+% 页面右上角叠放着另一张纸(化学笔记)的边缘，其上文字(“n CO2 … 燃烧得CO和CO2混合气体 … CO为0.4·3/4×22.4=6.72L”等)属相邻页，未转录
+1.
+\begin{problem}
+卫星绕地球匀圆，地球半径$R$，表面重力加速度$g$，轨道半径$r$，则卫星与地心连线单位时间扫过的面积？ % 原稿“表面”二字为小字，插写在“重力”上方
+\begin{solution}
+\[
+\frac{GMm}{r^2}=\frac{mv^2}{r}\qquad \frac{GMm'}{R^2}=m'g\qquad S=\frac{vr}{2}=\frac{R}{2}\sqrt{gr}
+\]
+\end{solution}
+\end{problem}
+
+
+\section{万有引力定律}
+\subsection{万有引力定律的内容与发现}
+% ---- block 121-01 (原稿第121页) kind=knowledge ----
+% 页面右上角露出邻页(化学)内容“ρ=1.429g·L^-1”，不属于本页，已忽略
+\textbf{天体物理}
+
+托勒密\ 地心说\quad／\quad 哥白尼\ 日心说\quad／\quad 第谷\ 观测\quad／\quad 开普勒在第谷基础上总结开三\quad／\quad 伽利略发现木卫
+
+胡克、笛卡尔、牛顿 $\to$ 万有引力定律
+
+$F_{\text{万}}=G\dfrac{m_1m_2}{r^2}$\quad（\unclear{天体}球心距）
+
+$G=6.67\times10^{-11}\ \unit{N\cdot m^2/kg^2}$\quad 卡文迪许扭称实验测出（放大法） % CHECK: 原稿“扭称”，应为“扭秤”
+
+% ---- block 131-03 (原稿第131页) kind=knowledge ----
+\textbf{二、万有引力}
+
+1.\ $F=\dfrac{GMm}{r^{2}}$\qquad $G_{\text{\unclear{大}}}$：$6.67\times10^{-11}\unit{N\cdot m^{2}/kg^{2}}$\quad ——\ 铅球；扭秤
+
+\hspace{6em}卡文迪许\qquad\qquad 放大形变
+% 右侧图：扭秤示意——上方一根竖线下挂一个小圆，其下另有一个小圆连一条水平横线（右端有一短竖线）
+\notefig[0.25]{figures/p131_a.png}
+
+2.\ $\left\{\begin{array}{l} r\to\infty\ \ F\to0\\ r\to0\ \ F\to\infty\ \ (\times)\ \text{质点} \end{array}\right.$
+
+% ---- block 083-04 (原稿第83页) kind=note ----
+% 原稿：g的箭头向下指向小圆圈“○”
+$\downarrow g$\quad $\circ$\quad 重力场\qquad $g=\dfrac{G}{m}$
+
+线与负电荷一样
+
+% ---- block 121-02 (原稿第121页) kind=derivation ----
+第谷 $\to$ 开普勒三大定律 $\to$ 胡克：平方反比.（引力与$r^2$成反比）$\to$ 牛顿\quad 由牛一.\ 行星必受力
+
+由牛二\quad $F_{\text{万}}=\dfrac{mv^2}{r}$
+
+\[
+\begin{aligned}
+&\text{由圆周}\ v=\frac{2\pi r}{T}\\
+&\text{由开三}\ \frac{r^3}{T^2}=\text{定值}
+\end{aligned}
+\qquad
+\left.\begin{aligned}
+F_{\text{万}}&=m\frac{4\pi^2}{T^2}r\\
+T^2&=\frac{r^3}{\text{定值}}
+\end{aligned}\right\}
+\ \to\ F_{\text{万}}=\frac{m\,4\pi^2}{r^2}\cdot\text{定值}
+\]
+
+\[ F_{\text{万}}\propto\frac{1}{r^2},\ \propto m\ \ \propto M \]
+
+$\downarrow$
+
+\[ F_{\text{万}}=\frac{GMm}{r^2}\qquad \text{\unclear{对}月地检验}\ \to\ \text{正确}\qquad \frac{g}{g}=\frac{1}{60^2} \]% CHECK: “月地检验”前一字难辨(疑为“对”)，原稿此处有带箭头的下划线指向“正确”；g/g 的分子分母疑带撇或下标，原稿难辨
+
+% ---- block 099-06 (原稿第99页) kind=problem ----
+⑥
+\[ F=\frac{GmM}{(R+h)^2} \]
+\notefig[0.25]{figures/p099_h.png}
+
+\subsection{割补法与空腔问题}
+% ---- block 271-03 (原稿第271页) kind=knowledge ----
+\notefig[0.2]{figures/p271_b.png}
+空腔中加速度恒定\ 指向地心
+
+% ---- block 121-03 (原稿第121页) kind=method ----
+\textbf{非球体万有引力计算}
+
+割补法、对称填补法、负质量法
+
+对剩余部分对$m$万有引力
+
+\notefig[0.58]{figures/p121_a.png}
+% 图中标注：大球 M、半径 R，挖去部分(红色斜线小球)“挖 1/8 M”；红字“补”；F_1(红色箭头)、F_2；d-R/2、d、d-1/2R 等尺寸线；中间小圆圈为质点 m
+% 图外：右侧小球右上方另有红字“补”
+\red{补}
+
+\notefig[0.3]{figures/p121_b.png}
+% 图中标注：余弦/正弦定理、(合力)F_2、质点 m、d、R、斜边 $\sqrt{d^2+(R/2)^2}$；红色箭头；红色斜线为挖去的小球
+
+\begin{align*}
+F_1&=\frac{G\frac{1}{8}Mm}{\left(d-\frac{1}{2}R\right)^2}\\
+F_1+F_2&=\frac{GMm}{d^2}\\
+F_{\text{万}}&=F_r+F_2-F_1 \\
+&=\frac{GMm}{d^2}-\frac{G\frac{1}{8}Mm}{\left(d-\frac{1}{2}R\right)^2}
+\end{align*}% CHECK: F_万=F_r+F_2-F_1 中第一项下标原稿像 r，疑为 1
+
+% ---- block 126-02 (原稿第126页) kind=method ----
+\notefig[0.3]{figures/p126_c.png}
+% 图：大圆(半径 $2R$，圆心 $O_1$，竖直半径线旁标“2R”)，内含与大圆内切的小圆空腔(圆心 $O_2$，半径 $R$)，$m$ 位于 $O_2$；红色虚线圆为红笔所添
+
+挖空$O_2$\ 在$O_2$的$m$受剩下部分的引力
+
+$F_{\text{剩}}=\dfrac{G\,\frac{1}{8}\,Mm}{R^{2}}+\begin{matrix}F_{\text{补}}\\ \|\\ 0\end{matrix}$% 原稿 F补 正下方竖写“‖”与“0”，即 F补=0；CHECK: F 的下标像“剩”(也像“31”)
+
+% ---- block 127-04 (原稿第127页) kind=derivation ----
+% 标题“g 反常”写在图 p127_i 的左上角（已含在图内）
+(1)
+\notefig[0.45]{figures/p127_i.png}
+% 下式被手绘椭圆圈起；ρV 上方标注 M
+\[ \boxed{\,g_{\text{球}}=\dfrac{G\overset{M}{(\rho V)}}{x^{2}+d^{2}}\,} \]
+\[ \Delta g=\dfrac{G\rho Vd}{(x^{2}+d^{2})^{3/2}}= \text{\struck{$\delta$}} \]
+% “=δ”被涂划掉
+(2)
+\notefig[0.45]{figures/p127_j.png}
+\[ \left\{\begin{aligned} \dfrac{G\rho Vd}{(L^{2}+d^{2})^{3/2}}&=\delta\\[4pt] \dfrac{G\rho Vd}{(d^{2})^{3/2}}&=k\delta \end{aligned}\right. \]
+解出 $V$、$d$
+
+\subsection{球壳定理与地球内部的引力}
+% ---- block 126-01 (原稿第126页) kind=knowledge ----
+% 页面左缘/上缘露出邻页边缘(“No”“变”等)，下半页透出背面淡淡的反字，均已忽略
+\textbf{球壳内部引力为0}
+
+\notefig[0.2]{figures/p126_a.png}
+% 图：同心圆(外圆为球壳，内圆半径 $r$)，一条细通道自外圆通到内圆，质点 $m$ 与距离 $d$，另标 $R$、$r$ 等
+
+$\dfrac{G\rho\,\frac{4}{3}\,r^{3}m}{d^{2}}=mg'$% CHECK: 分子原稿未见 $\pi$
+
+$g=\dfrac{4}{3}\pi\rho g\,\textcircled{$r$}\propto r$% CHECK: 原稿 ρ 后写作小写 g(应为万有引力常量 G)；r 外有一圆圈
+
+\notefig[0.3]{figures/p126_b.png}
+% 图：g-r 图像，纵轴 $g$、横轴 $r$；0 至虚线处为直线上升(旁注“正比”)，虚线处为最大值(横轴下注“$R_{\text{星球}}$.”)，之后曲线下降(旁注“平方反比”，写在白色修正贴上)
+
+% ---- block 127-03 (原稿第127页) kind=knowledge ----
+\textbf{深度/井}
+% 手写左侧有一个大括号，并列下面两项
+\begin{itemize}
+\item 球\quad $\dfrac{GMm}{r^2}$\quad 质点
+\notefig[0.25]{figures/p127_c.png}
+\item 球壳\quad $\left\{\begin{array}{l}\text{内：}\Sigma F_{\text{引}}=0\\ \text{外：质点}\end{array}\right.$
+\notefig[0.25]{figures/p127_d.png}
+\end{itemize}
+% 以下两图分别为 F-r 图（纵轴F）与 E-r 图（纵轴E），横轴 r，虚线标 R
+\notefig[0.3]{figures/p127_e.png}
+\notefig[0.3]{figures/p127_f.png}
+% 下图：大圆内套小圆（小圆内写“实心”，辨认不全）
+\notefig[0.25]{figures/p127_g.png}
+\begin{align*}
+\Sigma F &= F_{\text{芯}}+\fbox{$F_{\text{壳}}$}= \\
+&=\dfrac{GM'm}{r^{2}}=\dfrac{G\rho\cdot\frac{4}{3}\pi r^{3}m}{r^{2}}= {\propto}\rho r
+\end{align*}
+% CHECK: 第二行分子里的字母可能是 m'（内部球质量）而非 M'；末尾“=∝ρr”原样；F_壳 被圈出
+% 右侧图：F-r 图，原点起线性上升至 R 处峰值（竖线标 R），之后曲线下降；横轴 r
+\notefig[0.3]{figures/p127_h.png}
+
+
+\section{天体表面的重力加速度}
+% ---- block 070-05 (原稿第70页) kind=formula ----
+\textbf{天体表面的重力加速度问题}
+
+赤道 $\dfrac{GMm}{R^2}=mg+m\omega^2R$\quad 两极\,\unclear{$\therefore$}\,$\dfrac{GMm}{R^2}=mg$
+
+地球表面 $g=\dfrac{GM}{R^2}$，$h$高度处 $g'=\dfrac{GM}{(R+h)^2}$\quad 地底 $g=\dfrac{4}{3}\pi\rho Gx$。
+
+% ---- block 122-02 (原稿第122页) kind=knowledge ----
+\textbf{测重力加速度}$\,g$
+
+在某星球表面.\ 平抛／斜抛／上抛／下抛／落体／斜面／单摆／测重力
+
+% ---- block 131-05 (原稿第131页) kind=formula ----
+2.\ “表面”\,——\,$g$\ 表面重力加速度\qquad\qquad $g\ \ g$
+% 图：圆(地)，圆心处写“地”，半径线标 R；圆外右上有一个小圆圈符号；圆下方右侧有“(a)”样标记（其前有一个难辨的字）
+\notefig[0.25]{figures/p131_c.png}
+\[ \dfrac{GMm}{R^{2}}=\fbox{$mg$} \]
+此时重力为“效果”
+\[ \underline{GM=gR^{2}} \]
+$\llcorner$\,黄金代换（给了 $g$ 才能用）
+
+% ---- block 131-07 (原稿第131页) kind=formula ----
+3.\ \underline{表面转}\,/\,\underline{近地卫星}\,/\,\underline{第一宇宙速度}\,/\,\underline{完全失重}
+% 左下图：浅灰色大圆内有一个深色扁椭圆，椭圆右端有一个小圆圈（近地卫星轨道示意）
+\notefig[0.25]{figures/p131_d.png}
+\[ \dfrac{GMm}{R}=m\dfrac{v^{2}}{R}=m\omega^{2}R=m\dfrac{4\pi^{2}}{T^{2}}R=ma \]
+% CHECK: 第一个分式分母写的是 R（应为 R^2），原样转录
+% 右上有两个被圈出的符号（左圈内像“40”，右圈内像“日”），圈旁有大量波浪线涂划
+（圈出：\unclear{40}、\unclear{日}）
+\[ F_{\text{引}}=F_{\text{重}}+F_{\text{向}} \]
+% F_重 下方有向下箭头，F_向 下方有向上箭头
+$G=0$ 时 \unclear{万$\ldots$} 完全失重
+赤道\quad $\struck{F_{\text{引}}}=F_{\text{\unclear{万}}}=F_{\text{向}}+mg_{\text{赤}}$
+
+两极\quad $F=mg$\quad \unclear{$\dfrac{120}{100}\ \dfrac{220}{370}\ 420$}
+% 以下两行被手绘多边形(菱形)圈住，周围有大片涂划
+\begin{keybox}
+越高 $g$ 越小
+
+越往两极 $g$ 越大
+\end{keybox}
+
+% ---- block 122-03 (原稿第122页) kind=method ----
+\textbf{黄金代换}
+
+1、\red{稳定自转的中心天体（$\omega$、$T$）}\quad 1天（$24\,\mathrm{h}\times3600\,\mathrm{s}$）
+
+\notefig[0.3]{figures/p122_a.png}
+% 图中：圆(地球)、虚线椭圆(赤道面)、竖直虚线(自转轴)，标注 $m\frac{4\pi^2}{T^2}r$、$F_{\text{向}}$、$F_{\text{万}}$、mg 等矢量
+
+$\vec{F}_{\text{万}}=m\vec{g}+\vec{F}_{\text{向}}$
+
+\red{人间}
+\[
+\begin{aligned}
+\text{两极}\quad & \frac{GMm}{R^{2}}=mg_{\text{极}} & & \quad\text{（自转轨道半径 $r=0$）}\\[4pt]
+\text{赤道}\quad & \frac{GMm}{R^{2}}=mg_{\text{赤}}+m\frac{4\pi^{2}}{T^{2}}R & & \quad\text{（自转轨道半径 $r=R$）}\\[4pt]
+\text{其他}\quad & \frac{GMm}{R^{2}}>mg_{\text{其他}} & & \quad\text{（自转轨道半径 $r<R$）}
+\end{aligned}
+\]
+
+$g$\quad $g_{\text{两极}}>g_{\text{其他}}>g_{\text{赤道}}$\hfill\red{考察}
+% 红色弧形括号(上端带箭头，起于“其他”行右端，向下括住“g”行与“天上”行)，旁注红字“考察”
+
+\red{天上}：对地外卫星而言，重力$mg$就是$F_{\text{万}}$
+
+% ---- block 122-04 (原稿第122页) kind=method ----
+2、忽略自转的中心天体：天上、人间重力$mg$就是$F_{\text{万}}$\quad\red{题中出现“两极／赤\unclear{道}”}% 右端被页边截断，后文不可见
+
+$M$为中心天体内部质量\quad $gR$需匹配
+
+\[
+\begin{aligned}
+&\text{地表式}\quad GM=gR^{2}\\
+&\text{地内式}\quad GM_{\text{内}}=g_{\text{内}}(R-d)^{2}\\
+&\text{地外式}\quad GM=g_{\text{外}}(R+h)^{2}
+\end{aligned}
+\qquad\to\qquad
+\frac{g_{\text{外}}}{g}=\frac{R^{2}}{(R+h)^{2}}\quad\quad
+\frac{g_{\text{内}}}{g}=\frac{R-d}{R}\quad\text{（用 $\rho$ 代换）}
+\]
+% 地外式中 M 右下角有一小笔迹，疑为笔点，已忽略
+
+\notefig[0.28]{figures/p122_b.png}
+% 图：纵轴 g，横轴 r；曲线先线性上升至竖直虚线处，之后随 r 增大逐渐下降
+
+% ---- block 191-10 (原稿第191页) kind=note ----
+10.\ $g_{\text{月}}=1.7\unit{m/s^2}$\quad $v=\sqrt{2g_{\text{月}}h}$\quad 飞船
+\notefig[0.25]{figures/p191_b.png}
+
+$F_{\text{反冲力}}=mg_{\text{月}}$\quad 飞船着陆过程$E_{\text{机}}$不守恒
+
+% ---- block 190-05 (原稿第190页) kind=problem ----
+5.
+\begin{problem}
+研究人员在某星球表面，将小球以$v_0$平抛\red{求$g$}，落地点与抛出点水平距离为$x$，在该星球发卫星，在近地\unclear{处}以$a$匀加速运动\red{求$m$}。卫星对支持面压力为$F$，该星球近地卫星周期$T$，引力常量$G$，不考虑自转。 % 原稿“平抛”与“匀加速运”下有红线，红字“求g”写在“平抛”上方、“求m”写在“匀加速运动”下方 % CHECK: 题干未给出高度h，但解答中用到h
+\begin{solution}
+\[
+\frac{GMm}{R^2}=\frac{m4\pi^2}{T^2}R\qquad \rho=\frac{M}{V}\qquad V=\frac43\pi R^3\qquad \rho=\frac{3\pi}{GT^2}\qquad \text{设卫星质量}\,m
+\]
+\textit{向上匀加速}
+
+由牛二\quad $F-mg=ma$
+\[
+\begin{cases}
+h=\dfrac12gt^2\\[2mm]
+x=v_0t
+\end{cases}
+\]
+\[
+\therefore g=\frac{2v_0^2h}{x^2}\qquad m=\frac{Fx^2}{2v_0^2h+x^2a}
+\]
+\[
+\frac{Gm\rho\cdot\frac43\pi R^3}{R}=mg\ \Rightarrow\ R=\frac{v_0^2hT^2}{2\pi^2x^2} % CHECK: 左式分母原稿为R，物理上似应为R^2，照原样转录
+\]
+\[
+v_{\text{近地}}=\sqrt{gR}=\frac{v_0^2hT}{\pi x^2}
+\]
+高空环绕
+\begin{gather*}
+\frac{Gm\cdot M}{(R+H)^2}=F_{\text{向}}\qquad GM=gR^2\qquad g=\frac{2v_0^2h}{x^2}\\
+R=\frac{v_0^2hT^2}{2\pi^2x^2}\qquad m=\frac{Fx^2}{2v_0^2h+x^2a}\\
+F_{\text{向}}=\frac{2Fv_0^2h}{2v_0^2h+x^2a}\cdot\left(\frac{v_0^2hT^2}{v_0^2hT^2+2\pi^2x^2H}\right)^2
+\end{gather*}
+\end{solution}
+\end{problem}
+
+% ---- block 190-08 (原稿第190页) kind=problem ----
+6.
+\begin{problem}
+由于自转，赤道与两极的$g$不同，两极处为$g$，自转周期$T$，引力常量$G$，求赤道$g$？
+\begin{solution}
+两极处\quad $\dfrac{GMm}{R^2}=mg$
+
+赤道处\quad $\dfrac{GMm}{R^2}-mg_{\text{赤}}=m\left(\dfrac{2\pi}{T}\right)^2R$\quad $M=\dfrac43\pi R^3\rho$
+
+$\therefore g_{\text{赤}}=g\left(1-\dfrac{3\pi}{G\rho T^2}\right)$
+\end{solution}
+\end{problem}
+
+
+\section{天体质量与密度的计算}
+\subsection{质量与密度的求法}
 % ---- block 070-04 (原稿第70页) kind=formula ----
 自转 $T_{\text{地}}=24\unit{h}$\quad $V=\dfrac{4}{3}\pi R^3$
 
@@ -32,17 +436,251 @@
 \textbf{自力更生}\quad 已知表面$g$和天体半径$R$
 \[ M=\dfrac{gR^2}{G}\qquad \rho=\dfrac{M}{V}=\dfrac{M}{\frac{4}{3}\pi R^3}=\dfrac{3g}{4\pi GR} \]
 
+% ---- block 130-03 (原稿第130页) kind=formula ----
+\[ g=\dfrac{4}{3}\pi\rho GR \]
+\[ M=\dfrac{4\pi^{2}R^{3}}{GT^{2}}=\dfrac{gR^{2}}{G} \]
 
-\section{天体表面重力加速度}
-% ---- block 070-05 (原稿第70页) kind=formula ----
-\textbf{天体表面的重力加速度问题}
+% ---- block 132-01 (原稿第132页) kind=formula ----
+\textbf{4. 密度}
+\[ \rho=\frac{M}{\frac{4}{3}\pi R^{3}} \]
 
-赤道 $\dfrac{GMm}{R^2}=mg+m\omega^2R$\quad 两极\,\unclear{$\therefore$}\,$\dfrac{GMm}{R^2}=mg$
+1. 重要\quad $V_1=\sqrt{\dfrac{gM}{R}}=\sqrt{gR}$ % CHECK: 原稿根号内分子字母形似小写 g（物理上应为 G）
 
-地球表面 $g=\dfrac{GM}{R^2}$，$h$高度处 $g'=\dfrac{GM}{(R+h)^2}$\quad 地底 $g=\dfrac{4}{3}\pi\rho Gx$。
+\[
+\text{推导}\
+\left\{\begin{aligned}
+\frac{GMm}{R^{2}}&=\frac{mv^{2}}{R}\ \text{(行星)}\\
+\frac{GMm'}{R^{2}}&=m'g\ \text{(表面)}
+\end{aligned}\right.
+\qquad \therefore\ mg=\frac{mv^{2}}{R}\qquad V=\sqrt{gR}
+\]
+
+% ---- block 132-02 (原稿第132页) kind=formula ----
+2. 合并
+\[
+\left\{\begin{aligned}
+\frac{GMm}{R^{2}}&=\frac{m\,4\pi^{2}R}{T^{2}}\\
+\rho&=\frac{M}{\frac{4}{3}\pi R^{3}}
+\end{aligned}\right.
+\qquad
+T=\sqrt{\frac{4\pi R^{3}}{GM}}=\sqrt{\frac{4\pi^{2}R^{3}}{G\rho\,\frac{4}{3}\pi R^{3}}}=\sqrt{\frac{3\pi}{G\rho}}
+\] % CHECK: 第一个根号内分子原稿为 4πR^3（缺 π 的平方，应为 4π^2R^3）
+
+有3没4\quad $\rho$\,1\;$T$\,2\;(次方)
+
+3. 表面
+\[
+g=\frac{GM}{R^{2}}=\frac{G\rho\,\frac{4}{3}\pi R^{3}}{R^{2}}=\frac{4}{3}\pi G\rho R\propto\rho R
+\]
+\[ \rho=\frac{M}{\frac{4}{3}\pi R^{3}} \]
+
+% ---- block 271-05 (原稿第271页) kind=formula ----
+\notefig[0.2]{figures/p271_d.png}
+\[
+M=\frac{\pi^2(2R+ct)^3}{2GT^2}
+\]
+图中标注$R$与$\dfrac{ct}{2}$。
+
+% ---- block 122-05 (原稿第122页) kind=method ----
+\textbf{中心天体质量计算}
+
+排除点：绕行天体质量$m$不可求\quad\red{天文\unclear{题许}\,称用地球质量}% CHECK: 红字第3-4字难辨
+
+\begin{itemize}
+\item 知己（知道中心天体参数求$M_{\text{中心天体}}$）
+\[
+\begin{aligned}GM&=g_{\text{表}}R^{2}\\ GM&=g_{\text{外}}(R+h)^{2}\end{aligned}
+\quad\Rightarrow\quad
+\begin{aligned}M&=\frac{g_{\text{表}}R^{2}}{G}\\ M&=\frac{g_{\text{外}}(R+h)^{2}}{G}\end{aligned}
+\]
+\item 知彼（知道绕行天体参数求$M_{\text{中心天体}}$）\quad [$v$、$\omega/T$、$r$、$a$]\ 知二求$M$
+  \begin{itemize}
+  \item \red{已知$T$、$r$：\ $M=\dfrac{4\pi^{2}r^{3}}{GT^{2}}$\quad $v$、$a$、$\omega/T$.}
+  \item \red{已知$v$、$\omega$：\ \unclear{$M=\dfrac{v^{2}}{G}\cdot\dfrac{v}{\omega}$}\quad 知二求$M$\quad $\omega$、$T$等效}% CHECK: 第二个红色公式潦草(像 M=v^2/G · v/ω，即 v^3/(Gω))
+  \end{itemize}
+\end{itemize}
+
+% ---- block 123-01 (原稿第123页) kind=method ----
+% 页面右上角露出邻页(化学)内容“…429g·L^-1”及“No./Date”页眉，不属于本页，已忽略
+\textbf{\unclear{中}心天体密度计算}% 首字“中”被页边截去大半
+
+\red{（页面上方空白处的红色圆圈内，红笔字）\unclear{$\rho$、$r$、$T$}}% CHECK: 红圈内笔画为：小圈(疑ρ)＋斜线与短竖(疑r)＋圈外右上角一个T，难以确认
+
+排除项：绕行天体密度不可求
+
+\begin{itemize}
+\item 知己（知中心天体参数求$\rho_{\text{中心天体}}$）\quad
+$GM=g_{\text{表}}R^{2}$\quad $M=\dfrac{g_{\text{表}}R^{2}}{G}$\quad $\rho=\dfrac{M}{\frac{4}{3}\pi R^{3}}\ \Rightarrow\ \rho=\dfrac{3g_{\text{表}}}{4\pi GR}$
+
+\quad $GM=g_{\text{外}}(R+h)^{2}$\quad $M=\dfrac{g_{\text{外}}(R+h)^{2}}{G}$% CHECK: 原稿“g外”与“(R+h)²”之间似有一个多余的“=”，疑为乘号/笔误
+\item 知彼（知$T$求$\rho$）\red{（表面运行）}\quad $\rho=\dfrac{3\pi}{GT^{2}}$\quad \red{$\rho=\dfrac{3\pi}{GT^{2}}\cdot\dfrac{r^{3}}{R^{3}}$}\quad \red{$\rho=\dfrac{3\pi r^{3}}{GT^{2}R^{3}}$}
+
+$T$：
+\begin{itemize}
+\item 近地卫星周期：$\dfrac{GMm}{R_{\text{地球}}^{2}}=m\dfrac{4\pi^{2}}{T^{2}}R\ \Rightarrow\ M=\dfrac{4\pi^{2}R^{3}}{GT^{2}}$% CHECK: 分母 R² 下方有小字，疑为“地球”
+\item 甩出周期：（赤道物体恰好被甩出时中心天体自转周期）
+\item 分解周期：（中心天体恰好分解时中心天体自转周期）
+\end{itemize}
+\end{itemize}
+
+% ---- block 123-02 (原稿第123页) kind=method ----
+\textbf{牛顿法测$M_{\text{地球}}$}
+
+\notefig[0.3]{figures/p123_a.png}
+% 图中：左侧一段弧线(山)，铅垂线(铅锤)受水平向左的山引力与竖直向下的地球引力，标注 $\frac{GM_{\text{山}}m_{\text{铅}}}{d^2}$、$\frac{GM_{\text{地}}m_{\text{铅}}}{R^2}$ 与偏角 $\theta$ 等
+
+$\tan\theta=\dfrac{M_{\text{山}}R_{\text{地}}^{2}}{M_{\text{地}}d^{2}}$\qquad 无大气层的天体可以用
+
+% ---- block 132-04 (原稿第132页) kind=derivation ----
+\[
+\begin{aligned}
+\text{两极}\quad mg_0&=\frac{GMm}{R^{2}}=\frac{4}{3}\pi\rho mGR\\
+\text{赤\struck{极}道}\quad mg+\frac{m\,4\pi^{2}R}{T^{2}}&=\frac{GMm}{R^{2}}=\frac{4}{3}\pi\rho mGR\qquad \rho=\frac{3\pi}{GT^{2}}\cdot\frac{g_0}{g_0-g}
+\end{aligned}
+\] % 原稿“赤”后多写了一个被涂改的“极”字，“道”字换行写在下方
+% 页面左侧边缘 y≈0.77 处另有一小段红笔痕迹（疑为背面透字或涂鸦），未转录
+
+% ---- block 191-07 (原稿第191页) kind=note ----
+7.\ 无法算环绕天体质量（及力、动量、功能）与$m$有关） % CHECK: 括号不配对(原稿共一个左括号、两个右括号)，照原样转录
+
+\subsection{质量与密度计算例题}
+% ---- block 143-03 (原稿第143页) kind=problem ----
+\begin{problem}
+求地球密度
+\notefig[0.25]{figures/p143_c.png}
+\begin{solution}
+\[ \rho=\dfrac{3\pi}{GT^2} \]
+\[ \left(\dfrac{R_{\text{地}}}{r}\right)^3=\left(\dfrac{T_{\text{地}}}{T}\right)^2 \]
+% 以下两项为原稿右侧划去的草算
+\struck{$R_{\text{地}}$}　\struck{\unclear{$\left(\dfrac{R_{\text{地}}}{r}\right)^3=\dfrac{T_{\text{地}}^2}{T_{\text{地}}^2}$}}
+\[ \dfrac{R_{\text{地}}}{r}=\sin\dfrac{\theta}{2} \]
+\[ \therefore\ \left(\sin\dfrac{\theta}{2}\right)^{\frac{3}{2}}T=T_{\text{地}} \] % 原稿 T 处有涂改
+\[ \rho_{\text{地}}=\dfrac{3\pi}{G\sin^{3}\dfrac{\theta}{2}\,T^2} \]
+\end{solution}
+\end{problem}
+
+% ---- block 144-02 (原稿第144页) kind=problem ----
+\begin{problem}[11]
+\textbf{11、}
+\notefig[0.25]{figures/p144_b.png}
+\begin{solution}
+\[ R=r\sin\dfrac{\theta}{2}\qquad T=\sqrt{\dfrac{4\pi^2r^3}{GM}}\propto r^{\frac{3}{2}}\qquad r\uparrow\ T\uparrow \] % 根号内 r 处有涂改
+\[ \rho=\dfrac{3\pi}{GT^2\left(\sin\dfrac{\theta}{2}\right)^3} \]
+算密度要用周期和张角
+\end{solution}
+\end{problem}
+
+% ---- block 189-03 (原稿第189页) kind=problem ----
+\begin{problem}[3]
+行星绕火星以 $v$ 匀圆周运动．$M_{\text{地}}=QM_{\text{火}}$．$R_{\text{地}}=R$．$g_{\text{地}}=g$．求绕火星运动半径？
+\begin{solution}
+$\dfrac{GMm}{R^2}=mg$\quad $GM=gR^2$
+
+$M_{\text{火}}=\dfrac{M_{\text{地}}}{Q}$
+
+$\dfrac{G\dfrac{M_{\text{地}}}{Q}m_1}{r^2}=m_1\dfrac{v^2}{r}$\quad $r=\dfrac{GM}{Qv^2}=\dfrac{gR^2}{Qv^2}$
+\end{solution}
+\end{problem}
+
+% ---- block 189-09 (原稿第189页) kind=problem ----
+\begin{problem}[7]
+探测器向火星表面发射一束激光，经过时间 $t$，收到传回的信号．相邻两次看到日出的时间间隔为 $T$．测得探测器速度为 $V$．（其下一行右侧注：绕火星转的周期为 $T$）% 原稿“相邻两次看到日出的时间间隔为T”下有下划线
+\begin{solution}
+（行间小字：探测器质量，）算不了行星质量（消去了），% CHECK: 小字“探测器质量，”写在下一行行首之上，语义疑为“探测器质量算不了，……（消去了）”
+
+探测器到火星表面距离为 $h=\dfrac{ct}{2}$\quad $v=\dfrac{2\pi r}{T}$\quad $r=\dfrac{vT}{2\pi}$
+
+则火星半径 $R=r-h=\dfrac{vT}{2\pi}-\dfrac{ct}{2}$\quad $\dfrac{GMm}{r^2}=\dfrac{mv^2}{r}$\quad $M=\dfrac{v^3T}{2\pi G}$% CHECK: 末式分子处有涂黑的墨团，T 上方似有横线
+\end{solution}
+\end{problem}
+
+% ---- block 189-12 (原稿第189页) kind=problem ----
+\begin{problem}[9]
+（行间小字：探测器绕火星）飞 $N$ 圈用时 $t$．
+\begin{solution}
+$T=\dfrac tN$\quad $V=\dfrac{2\pi r}{T}=\dfrac{2\pi Nr}{t}$\quad $a_{\text{向}}=\dfrac{v^2}{r}=\dfrac{4\pi^2N^2r}{t^2}$% CHECK: 末式分母 t^2 前似有一短横
+
+$M_{\text{地}}=M$\quad $R_{\text{地}}=R$\quad $r_{\text{火}}=r$\quad $g_{\text{地}}=g$．
+
+$\dfrac{GM_{\text{火}}m}{r^2}=\dfrac{mv^2}{r}$\quad $M_{\text{火}}=\rho\,\dfrac43\pi r^3$\quad $GM_{\text{火}}=gR^2$\quad $\therefore\rho_{\text{火星}}=\dfrac{3\pi MN^2}{gR^2t^2}$% CHECK: “GM_火=gR^2”中的下标似为“火”，按上文应为地球的 GM_地=gR^2
+
+（小字：探测器质量约去了）
+
+自转周期求不了\quad 求 $\rho$ 要有 $m$% CHECK: 末字可能是 M（地球质量）
+\end{solution}
+\end{problem}
 
 
-\section{宇宙速度与人造卫星}
+\section{卫星运行规律}
+% ---- block 122-01 (原稿第122页) kind=knowledge ----
+\textbf{近圆环绕公转模型}
+
+条件.\ 圆周／匀速圆周／圆轨道\hfill 公转5参数
+
+\[
+v=\sqrt{\frac{GM}{r}}\qquad
+\omega=\sqrt{\frac{GM}{r^{3}}}\qquad
+T=\sqrt{\frac{4\pi^{2}r^{3}}{GM}}\qquad
+a=\frac{GM}{r^{2}}
+\]
+
+\[
+M\text{、}\omega/T\text{、}v\text{、}a\text{、}r\quad
+\left(\begin{array}{l}\text{一中心四环绕}\\ \text{知二求其他}\end{array}\right)
+\]
+
+\textbf{同心不同轨}
+\begin{itemize}
+\item 同一中心天体：高轨\red{\textsuperscript{$r$}}\ 低速\red{\textsuperscript{$v\omega a$}}\ 大周期\red{\textsuperscript{$T$}}
+% 红字 r / vωa / T 分别写在“高轨 / 低速 / 大周期”的正上方
+\item 同一中心天体且绕行天体质量$m$相同：大机\red{\textsuperscript{机械能}}\ 大势\red{\textsubscript{\unclear{引}力势能}}\ 大能量\red{\textsuperscript{发射卫星消耗能量}}
+% 红字“机械能”在“大机”上方，“引力势能”(首字难辨)在“大势”下方，“发射卫星消耗能量”在“大能量”右上方
+\end{itemize}
+
+\textbf{近地卫星}
+\begin{itemize}
+\item 普通卫星\ $r=R+h$
+\item 近地卫星\ $h=0$、$r=R$
+\end{itemize}
+
+% ---- block 131-04 (原稿第131页) kind=formula ----
+\textbf{三、：关键词}
+
+1.\ “\unclear{公}转”
+% 图：日(圆圈)与地(圆圈)用线相连，线上标 r；另有一段弧线(轨道)穿过“地”
+\notefig[0.25]{figures/p131_b.png}
+% 右侧一个手绘大圈(云状)圈住下面这行，圈内上方写“认为圆周”
+\begin{keybox}[认为圆周]
+\[ \dfrac{GMm}{r^{2}}=m\dfrac{v^{2}}{r}=m\omega^{2}r=m\dfrac{4\pi^{2}}{T^{2}}r=ma=m\omega v \]
+\end{keybox}
+\[ v=\sqrt{\dfrac{GM}{r}}\qquad \omega=\sqrt{\dfrac{GM}{r^{3}}}\qquad T=\sqrt{\dfrac{4\pi^{2}r^{3}}{GM}}\qquad a=\dfrac{GM}{r^{2}} \]
+
+% ---- block 188-03 (原稿第188页) kind=note ----
+高轨低速大周期大机大势小引力% 原稿与上一条“释放光子．”同一行的右半部分
+
+% ---- block 188-06 (原稿第188页) kind=note ----
+5、同点同 $a$ 大圆大 $v$\quad 力用 $\dfrac{GMm}{r^2}$ 比．$a=\dfrac{GM}{r^2}$
+
+% ---- block 191-05 (原稿第191页) kind=note ----
+5.\ 若$M_{\text{地球}}\uparrow$，$M_{\text{月球}}$不变，\ $F_{\text{引}}=\dfrac{GMm}{R^2}\uparrow$\quad $v=\sqrt{\dfrac{GM}{R}}\uparrow$\quad $T=\dfrac{2\pi R}{v}\downarrow$，$R\downarrow$\ （月球做近心运动） % F的下标原稿形似“31”，按“引”转录
+
+% ---- block 191-11 (原稿第191页) kind=note ----
+11.\ 把月\unclear{地}土运\unclear{回}地球，中心距离不变\quad $F=\dfrac{GMm}{r^2}\downarrow$\quad $M+m=C$\quad $M-m\uparrow$\quad $Mm\downarrow$ % CHECK: “月”后一字、“运”后一字难辨；意思应为把月球上的土运回地球
+
+\hspace{4em}$T=2\pi\sqrt{\dfrac{r^3}{GM}}\downarrow$\quad $M\uparrow$\quad $a_{\text{向}}=\dfrac{GM}{r^2}\uparrow$\quad $g=\dfrac43\pi\rho GR$\quad $R\downarrow\ g\downarrow$
+
+% ---- block 193-08 (原稿第193页) kind=derivation ----
+天琴二号\ 高400$\mathrm{km}$轨道，\underline{$v_{\text{天琴}}<v_{\text{第一宇宙速度}}$}
+\[
+\left(\frac{T_2}{T_1}\right)^2=\left(\frac{r_2}{r_1}\right)^3\qquad T_1=24\,\mathrm{h}\qquad r_1=\unclear{6400}\,\mathrm{km}\qquad T_2=1.4\,\mathrm{h}
+\]
+地球静止轨道卫星离\underline{地面高度}约为\underline{地球半径}6倍。
+
+向心加速度\quad $\dfrac{a_{\text{天琴}}}{a_{\text{静轨}}}=\dfrac{112^2}{17^2}=\left(\dfrac{6\times6400}{6800}\right)^2$ % CHECK: 括号内首个数字形似6，但由112/17(=7×6400/6800)似应为7；照原样转录；r_1的数值也难辨
+
+
+\section{宇宙速度与黑洞}
+\subsection{宇宙速度}
 % ---- block 070-06 (原稿第70页) kind=knowledge ----
 % 版面：左侧标题“天体运动与人造卫星”，其右大括号括入“三种宇宙速度”“地球同步卫星特点”“极地卫星和近地卫星”三项；“三种宇宙速度”右侧另有大括号括入三个宇宙速度。sd=速度（原稿缩写）
 \textbf{天体运动与人造卫星}
@@ -68,21 +706,6 @@
 
 \notefig[0.25]{figures/p070_d.png}
 
-
-\section{章节提纲}
-% ---- block 070-07 (原稿第70页) kind=summary ----
-% 本页散见的各专题标题（版面上与上述公式块穿插排列），此处只列没有其它内容的标题行
-\begin{itemize}
-  \item 开、万定律的理解与运用
-  \item 填补法求万有引力
-  \item 宇宙速度的理解与计算
-  \item 卫星运动参量的比较
-  \item 卫星变轨、飞船对接问题
-  \item 双星、多星模型、天体的追及相遇 % 页面底边，字迹下半部被截断
-\end{itemize}
-
-
-\section{宇宙速度}
 % ---- block 073-04 (原稿第73页) kind=knowledge ----
 \textbf{第一宇宙速度}\quad $V_1=\sqrt{\dfrac{GM}{R}}$
 
@@ -96,8 +719,215 @@ $V_2<V_{\text{发}}<V_3$ & 卫星绕太阳做椭圆运动 \\
 $V_{\text{发}}\ge V_3$ & 卫星飞离太阳系 \\
 \end{tabular}
 
+% ---- block 123-05 (原稿第123页) kind=knowledge ----
+\textbf{宇宙速度}
+\begin{itemize}
+\item 第一宇宙速度\ 最大环绕速度，最小发射速度，近地卫星线速度
+\item 第二宇宙速度\ $v_2=\sqrt{2}\,v_1$，逃逸速度
+\item 第三宇宙速度\ \unclear{脱离}速度
+\end{itemize}
 
-\section{卫星变轨}
+% ---- block 128-01 (原稿第128页) kind=formula ----
+\textbf{第二宇宙速度}
+\[ \dfrac{1}{2}mv_2^{2}+\left(-\dfrac{GMm}{R}\right)=0 \]
+\[ v_2=\sqrt{2}\,v_1=11.\unclear{2}\unit{km/s} \]
+
+\subsection{黑洞与逃逸速度}
+% ---- block 128-02 (原稿第128页) kind=derivation ----
+\textbf{黑洞}\quad $v_2\ge c$
+
+地球：塌缩：半径不超过多少
+
+% 以下一行被红笔横线划去，行首写有“错”字；根号上方有“→gR^2”标注（GM 换成 gR^2）
+错\ \struck{$\sqrt{\dfrac{2GM}{R}}^{\,\to gR^{2}}\ge c$}\quad \struck{$\sqrt{2gR}\ge c$}\quad \struck{$R\ge\dfrac{c^{2}}{2g}$}
+
+% 下式第二、三行的 ↓ 分别从 g 与 R_地^2 指向 9.8 与 (6400)^2
+\[
+\begin{array}{l}
+R\le\dfrac{2GM}{c^{2}}\ \to\ g\,R_{\text{地}}^{2}\\
+\hphantom{R\le\dfrac{2GM}{c^{2}}\ \to\ }\ \downarrow\quad\ \downarrow\\
+\hphantom{R\le\dfrac{2GM}{c^{2}}\ \to\ }\ 9.8\quad (6400)^{2}
+\end{array}
+\qquad R\le 9\times10^{-8}\unit{km}=9\times10^{-5}\unit{m}
+\]
+% CHECK: 数值指数疑似笔误（按 g=9.8、R=6400 km、c=3e8 m/s 估算应约为 9e-3 m 量级），原样转录
+
+% ---- block 271-06 (原稿第271页) kind=derivation ----
+太阳变成黑洞\ $\therefore V_{\mathrm{II}}=C$.
+\[
+\sqrt2\sqrt{\frac{GM}{R}}=C\qquad R=\left(\frac{3M}{4\rho\pi}\right)^{\frac13}\qquad\rho=\frac{3C^6}{32\pi G^3M^2}
+\] % 原稿：从$\sqrt{GM/R}$的分母R画弧线箭头指向$R=(\cdots)^{1/3}$
+
+% ---- block 192-09 (原稿第192页) kind=problem ----
+7.
+\begin{problem}
+恒星$S_2$绕黑洞一周16年，离黑洞中心的最近距离为120个天文单位，椭圆半长轴为970天文单位，（地球绕太阳圆周运动的轨迹半径为1天文单位）。恒星$S_2$最高运行速率为$7000\unit{km/s}$。 % 原稿“120”上方标有小字d_1；“120”首位的“1”笔画较细
+\begin{solution}
+\[
+v_{\text{近}}r_{\text{近}}=v_{\text{远}}r_{\text{远}}\qquad r_{\text{远}}=1820\text{天文单位}=(2a-d_1) % 原稿“r远=1820天文单位=(2a-d1)”被一个椭圆圈起
+\]
+算不了恒星$S_2$质量
+\notefig[0.3]{figures/p192_e.png}
+\[
+\frac{GM_{\text{黑}}m_{\text{恒}}}{r^2}=m_{\text{恒}}\frac{4\pi^2}{T^2}r
+\]
+\[
+\frac{GM_{\text{日}}M_{\text{地}}}{r_{\text{地}}^2}=m_{\text{地}}\frac{4\pi^2}{T^2}r_{\text{地}}
+\]
+\[
+\frac{M_{\text{黑}}}{M_{\text{日}}}=\frac{r^3T_{\text{地}}^2}{r_{\text{地}}^3T^2}=\frac{970^3\cdot1^2}{1^3\times16^2}=3.6\times10^6
+\]
+\[
+a_{\text{近}}=\frac{GM_{\text{黑}}}{r_{\text{近}}^2}\qquad a_{\text{地}}=\frac{GM_{\text{日}}}{r_{\text{地}}^2}\qquad \frac{a_{\text{近}}}{a_{\text{地}}}=248
+\]
+\end{solution}
+\end{problem}
+
+
+\section{同步卫星}
+% ---- block 123-07 (原稿第123页) kind=knowledge ----
+\textbf{同步卫星}／\textbf{静止轨道卫星}\textsubscript{（角度上看）}
+
+三个条件：
+\begin{itemize}
+\item 和中心天体自转周期相同
+\item 赤道卫星
+\item 顺行轨道
+\end{itemize}
+
+已知地球自转周期$T_{\text{自转}}$，\struck{十有八九都是}暗示$T_{\text{同步}}$% CHECK: 被划去的字依笔迹读作“十有八九都是”，不太确定
+
+已知中心天体自转周期\quad 考$\left\{\begin{array}{l}
+\Rightarrow\text{同步卫星}\\
+\Rightarrow F_{\text{万}}\text{与}mg\text{关系}\quad\text{极赤之差为向心力，}\\
+\Rightarrow\rho=\dfrac{3\pi}{GT^{2}}
+\end{array}\right.$
+
+% ---- block 124-01 (原稿第124页) kind=knowledge ----
+% 页面右缘(x>0.93)露出邻页的文字边缘，已忽略
+\textbf{同步卫星参数比较}
+
+同一中心天体的多个同步卫星比较\hfill $r=42000\unit{km}\approx7R_{\text{地}}$
+
+\hspace*{2em}仅卫星质量$m$和卫星位置不同\hfill $h=6$倍$R_{\text{地}}$
+
+同一中心天体的同步卫星和非同步卫星比较
+
+\hspace*{4em}高轨低速大周期，大机大势大能量
+
+% ---- block 124-02 (原稿第124页) kind=knowledge ----
+\textbf{卫星与地表物体进行比较}
+
+①\ 同步卫星比静止物体.\ 同步转动\ 同$\omega$
+
+同轴转体.% 原稿此处为贴在纸上的白色修正贴，字写在贴纸上
+
+\notefig[0.28]{figures/p124_a.png}
+% 图：地球，赤道上的A点以及两个纬度圈上的B、C点(同轴转动)，图中标有字母 A、B、C
+
+\[
+\begin{aligned}
+&\omega_A=\omega_B=\omega_C\\
+&T_A=T_B=T_C\\
+&r_A>r_B>r_C\\
+&v_A>v_B>v_C\\
+&a_A>a_B>a_C\\
+&g_A<g_B<g_C\quad\text{（两极大）}
+\end{aligned}
+\]
+
+% ---- block 124-03 (原稿第124页) kind=knowledge ----
+②\ 非同步卫星与静止物体：用同卫做桥梁\quad $D$为近地卫星% 原稿“②”带圈，与“非”字相叠
+
+% 以下两行原稿为横向排列：第一行四组关系式，第二行为各自的表达式(v、ω、a 下各三项；T 下无)，此处整理为表格，信息不变
+\[
+\begin{array}{llll}
+v_D>v_A>v_B & =\sqrt{\dfrac{GM}{R}} & =\sqrt{\dfrac{GM}{R+h}} & =\omega_BR\\[8pt]
+\omega_D>\omega_A=\omega_B & =\sqrt{\dfrac{GM}{R^{3}}} & =\sqrt{\dfrac{GM}{(R+h)^{3}}} & =\omega_{\text{自}}\\[8pt]
+T_D<T_A=T_B & & & \\[4pt]
+a_D>a_A>a_B & =\dfrac{GM}{R^{2}} & =\dfrac{GM}{(R+h)^{2}} & =\omega_B^{2}R
+\end{array}
+\]
+
+\notefig[0.28]{figures/p124_b.png}
+% 图：地球(浅灰圆)与赤道附近两条轨道环，图中标有 B(表面)、D 等字母
+
+赤道上的物体（或待发射的卫星）不是卫星\quad $\dfrac{GMm}{r^{2}}\pm\dfrac{mv^{2}}{r}$
+
+A\,$\times$\ 速度／加速度
+
+\fbox{近$>$同$>$赤}% 原稿为圈起来的椭圆圈
+
+% ---- block 193-01 (原稿第193页) kind=diagram ----
+% 页面右上角叠放着另一张纸(化学笔记)的边缘，其上文字(“燃烧得CO和CO2混合气体 ρ=1.429g·L^-1 … CO为0.4·3/4×22.4=6.72L … 为ρ g/ml的密…”等)属相邻页，未转录；页面顶端被裁掉一截，最上一行文字残缺
+\notefig[0.4]{figures/p193_a.png}
+
+\unclear{MEO\ 4200\,km}\,/\,4200\,km\ （中圆轨道）。
+
+GTO\ 200\,km\,/\,36000\,km
+
+GEO\ 36000\,km\,/\,36000\,km
+
+$R_{\text{地}}=6400\,\mathrm{km}$。
+
+% ---- block 188-12 (原稿第188页) kind=note ----
+9、$V_{\text{倾斜轨}}=V_{\text{同步}}$ 但动能 $\dfrac12mv^2$ 要比动能要有质量关系．% 原稿“要比动能要有质量关系”下有下划线
+
+$V_{\text{同步}}>V_{\text{月绕地}}$\quad 同步轨道 $3.6\times10^4\unit{km}$\quad 地球半径 $6.4\times10^3\unit{km}$
+
+$T_{\text{同步}}=30\unit{h}$\quad 高轨低速大周期大机大势小引力% CHECK: 同步卫星周期应为 24h，原稿疑写作 30（或 24 误辨）
+
+% ---- block 189-08 (原稿第189页) kind=note ----
+% 序号 6 被页边遮挡，据顺序补为 6
+6、$r=\sqrt[3]{\dfrac{GMT^2}{4\pi^2}}$\quad $\dfrac{r_{\text{火}}}{r_{\text{地}}}=\sqrt[3]{\dfrac{M_{\text{火}}T_{\text{火自}}^{2}}{M_{\text{地}}T_{\text{地自}}^{2}}}$\quad 但卫星高度 $h=r-R$．故卫星高度比不等于轨道半径之比 ☆% 原稿“h=r-R．故卫星高度比不等于轨道半径之比”下有下划线
+
+$V=\sqrt{\dfrac{GM}{R}}$\quad\quad $g=\dfrac{GM}{R^2}$
+
+% ---- block 193-03 (原稿第193页) kind=derivation ----
+GEO是地球同步轨道\quad $T=24\,\mathrm{h}$
+\[
+\frac{T_{\mathrm{MEO}}^2}{r_{\mathrm{MEO}}^3}=\frac{T_{\mathrm{GEO}}^2}{r_{\mathrm{GEO}}^3}\qquad \omega=\frac{2\pi}{T}
+\]
+（\unclear{开三}） % 原稿此二字为写在上式等号上方的小字(疑指开普勒第三定律)
+\[
+\therefore\ \frac{\omega_{\mathrm{MEO}}}{\omega_{\mathrm{GEO}}}=\sqrt{\frac{r_{\mathrm{GEO}}^3}{r_{\mathrm{MEO}}^3}}
+\]
+地心与MEO、GEO的连线在\fbox{单位时间内}扫过\fbox{面积}比值 % 原稿“单位时间内”被方框圈起，“面积”被圆圈圈起并有箭头指向下方的S公式
+\[
+\frac{\frac12\omega_{\mathrm{MEO}}r_{\mathrm{MEO}}^2\Delta t}{\frac12\omega_{\mathrm{GEO}}r_{\mathrm{GEO}}^2\Delta t}=0.5
+\]
+\[
+S=\frac12v\cdot r\Delta t=\frac12\omega r^2\Delta t
+\]
+
+% ---- block 287-01 (原稿第287页) kind=derivation ----
+\textbf{太空电梯}
+
+\notefig[0.25]{figures/p287_a.png}
+
+A：地球引力对航天员加速度与 $r$ 反比
+
+B：地球自转产生向心加速度的 $r$ 反比% CHECK: B 行末手写与 A 行相同（像“反比”），但自转向心加速度应与 r 成正比
+
+$r$ 为航天员离地心距离。
+
+$R=6400\unit{km}$\quad $\omega_{\text{地自}}=7.3\times10^{-5}\unit{rad/s}$
+
+$r_0=6.6R$（同步卫星轨道半径）\quad 此时 $F_{\text{人地}}=0$。
+
+在 $r=R$ 处 $v$ 小于第一宇宙速度。
+
+\begin{gather*}
+\frac{GMm}{r^2}-F_N=m\omega^2r\\
+F_N=\frac{GMm}{r^2}-m\omega^2r\qquad r\uparrow\ F_N\downarrow\\
+r=r_0\ \text{时}\quad \frac{GMm}{r^2}=m\omega^2r\quad F_N=0\\
+r>r_0\ \text{时}\quad \frac{GMm}{r^2}+F_N=m\omega^2r\quad F_N\ \text{反向}\uparrow\\
+r\uparrow\quad F\ \text{先}\downarrow\text{到0后反向}\uparrow
+\end{gather*}
+
+
+\section{卫星变轨与飞船对接}
+\subsection{变轨原理与双圆轨道比较}
 % ---- block 073-05 (原稿第73页) kind=knowledge ----
 赤道上的物体、待发射的卫星不是卫星\quad $\dfrac{GMm}{r^{2}}\neq\dfrac{mv^{2}}{r}$
 
@@ -108,30 +938,228 @@ $v\uparrow$ & $\dfrac{GMm}{r^{2}}<\dfrac{mv^{2}}{r}$ & 离心运动，变为椭�
 $v\downarrow$ & $\dfrac{GMm}{r^{2}}>\dfrac{mv^{2}}{r}$ & 向心运动\quad 变为椭圆轨道运动或在较小半径的圆轨道上运动 \\
 \end{tabular}
 
+% ---- block 125-01 (原稿第125页) kind=knowledge ----
+% 页面右上角露出邻页(化学)内容“…体 ρ=1.429 g·L^-1”及“No./Date”页眉，不属于本页，已忽略
+\textbf{飞船对接}
 
-\section{重力场·场强}
-% ---- block 083-04 (原稿第83页) kind=note ----
-% 原稿：g的箭头向下指向小圆圈“○”
-$\downarrow g$\quad $\circ$\quad 重力场\qquad $g=\dfrac{G}{m}$
+飞船在低轨道加速\ $v\uparrow$\ $\to$\ 所需向心力$\uparrow$\ $\to$\ 做离心运动\ $\to$\ $r_{\text{轨道}}\uparrow$\ $\to$\ 升轨\ 变速对接.
 
-线与负电荷一样
+\textbf{变轨}
+\begin{itemize}
+\item 离心运动\quad $\dfrac{GMm}{r^{2}}<\dfrac{mv^{2}}{r}$\quad 飞行器突然加速\quad 变为椭圆运动或在较大半径圆轨道运动
+\item 近心运动\quad $\dfrac{GMm}{r^{2}}>\dfrac{mv^{2}}{r}$\quad 飞行器突然减速\quad 变为椭圆运动或在较小半径圆轨道运动
+\end{itemize}
+
+% ---- block 133-01 (原稿第133页) kind=formula ----
+\textbf{变轨}\quad\textbf{双圆比较}
+\[
+V=\sqrt{\frac{GM}{r}}\qquad \omega=\sqrt{\frac{GM}{r^{3}}}\qquad T=\sqrt{\frac{4\pi^{2}r^{3}}{GM}}\qquad a=\frac{GM}{r^{2}}
+\]
+\[ \left\langle\, E=\frac{1}{2}mv^{2}=\frac{GMm}{2r}\,\right\rangle \] % CHECK: 原稿 E 未写下标（应为 E_k）
+\[ \left\langle\, E_p=-\frac{GMm}{r}\,\right\rangle \]
+\[ \left\langle\, W_{\text{引}}=\int_{\infty}^{r}\frac{GMm}{r^{2}}\,\dd r=-\frac{GMm}{r}\,\right\rangle \] % 下标原稿写作形似“31”的“引”字（同页“小引力”的“引”也写成此形）
+\[ E_{\text{机}}=E_k+\text{\unclear{$E_{\text{引}}$}}=-\frac{GMm}{2r} \] % 第三项原稿先写 E_p 后被涂改，其上方有小字“E31”(即 E引)
+
+\fbox{高轨低速大周期}\quad\fbox{大机大势小引力}\quad\fbox{有$m$才求力功能}
+
+(没$m$两个行星比不了) % 原稿位于第二个框（大机大势小引力）下方
+
+% ---- block 190-03 (原稿第190页) kind=knowledge ----
+3.
+\notefig[0.25]{figures/p190_a.png}
+\[
+a_2r_2>v_2^2\qquad a_1>a_2\qquad v_1>v_2\qquad a_1r_1<v_1^2
+\]
+离心运动\quad $\dfrac{GMm}{r_1^2}<m\dfrac{v_1^2}{r_1}$\quad $\dfrac{GMm}{r_1^2}=ma_1$
+
+近心运动\quad $\dfrac{GMm}{r_2^2}>\dfrac{mv_2^2}{r_2}$\quad $\dfrac{GMm}{r_2^2}=ma_2$
+
+% ---- block 123-06 (原稿第123页) kind=note ----
+变速即变轨
+
+向后喷气、抛物 = 向前加速
+
+% ---- block 124-04 (原稿第124页) kind=method ----
+\textbf{变轨}
+
+\notefig[0.3]{figures/p124_c.png}
+% 图：大浅灰圆为圆轨道III(旁标 $v_3$)，椭圆轨道II 两端为 A、B(标 $v_A$、$v_B$)，内小圆为圆轨道I(标 $v_1$)，中心为地球；图中标有 I、II、III 等
+
+在赤道上顺地球自转方向发射卫星到圆轨道$\mathrm{I}$
+
+在圆轨$\mathrm{I}$ A点，点火加速\ $v\uparrow$\ $F_{\text{万}}<F_{\text{向}}$\ 离心运动\ 进入椭圆轨道$\mathrm{II}$
+
+在$\mathrm{II}$上B点（近地点）再次点火加速进入圆形轨道$\mathrm{III}$% CHECK: B 为椭圆轨道II 的远端(应为远地点)，原稿写作“近地点”
+
+$v_A>v_1$\qquad $v_3>v_B$\qquad $v_1>v_3$
+
+故\ $v_A>v_1>v_3>v_B$
+
+$a_1=a_A$\qquad $a_B=a_3$
+
+$\dfrac{r^{3}}{T^{2}}=k^{2}$\qquad $T_1<T_2<T_3$% CHECK: 原稿右边像 k²(可能应为 k)
+
+同点同$a$\ 大圆大$v$、高轨大周期
+
+\fbox{\begin{tabular}{l}速度排序\\ 近低\unclear{和}高轨远\end{tabular}}% 原稿为圈起来的椭圆圈；第3字难辨(像 知/和/加)
+
+% ---- block 134-03 (原稿第134页) kind=method ----
+\textbf{变轨}\ (往后喷气往前进)
+\notefig[0.3]{figures/p134_c.png}
+% 图中切点处有向上箭头，旁注“切”（手写形如“七刀”）
+% 以下两行左侧有一个大括号括住“急速”“缓慢”；“大G大M大f,”与“r↓M无关”下方各有一条波浪线
+\noindent 急速 $\leftarrow$ 切点. 外圆速度大 加速度相等\\
+缓慢 $\leftarrow$ 大$G$大$M$大$f$, $r\downarrow$ $M$无关
+
+\[ \left\langle\ \text{同点同}a\ \ \text{大圈大}V\ \right\rangle \]
+
+% ---- block 134-04 (原稿第134页) kind=method ----
+% 原稿 GMm 的左侧与上方各有一个向上的小箭头（↑），分母 r^2 与 r 处各有向下的小箭头（↓）
+\[ \left\langle\ \underset{\text{供}}{\frac{GMm}{r^{2}}}=\underset{\text{求}}{\frac{mv^{2}}{r}}\ \right\rangle \]
+\notefig[0.35]{figures/p134_d.png}
+% 图中文字：圆内“多”（带箭头）与“近心”；圆外“少”（带箭头）、“出轨”与“离心”
+
+% ---- block 189-05 (原稿第189页) kind=note ----
+5、高轨 $\to$ 低轨 要减速制动 向前喷气 $E_{\text{机}}\downarrow$% 原稿“减速制动 向前喷气 E机↓”下有下划线
+
+% ---- block 193-05 (原稿第193页) kind=method ----
+平轨变垂轨。
+\notefig[0.4]{figures/p193_b.png}
+
+\underline{向前下方}喷气可变垂轨\quad \unclear{移}平面 % “平面”前一字难辨
+\notefig[0.25]{figures/p193_c.png}
+
+\subsection{圆轨道与椭圆轨道的比较}
+% ---- block 188-10 (原稿第188页) kind=note ----
+\notefig[0.25]{figures/p188_c.png}
+
+$r_{\text{甲}}=r_{\text{乙}}$% CHECK: “乙”手写近似“2”，图中椭圆右端亦有类似“乙”的标记
+
+近地点 $a_{\text{乙}}>a_{\text{甲}}$\quad\quad $a=\dfrac{\Delta v}{\Delta t}$ or $\dfrac Fm$\quad $a$ 与卫星质量无关．
+
+由开三 $T_{\text{甲}}=T_{\text{乙}}$
+
+相同时间内扫过面积不同
+
+构造的轨道．（其上方有一箭头指向图中椭圆下方）
+
+% ---- block 189-02 (原稿第189页) kind=note ----
+% 本块的圆/椭圆图与上一行 1、 的文字在页面上有重叠（图中的大圆为较淡的“构造轨道”）；图中有两条细长斜线自页顶贯穿到图内
+2、
+
+\notefig[0.5]{figures/p189_a.png}
+
+$S_2<S_3$（$T$ 同）
+
+$\mathrm{II}$ $\mathrm{III}$ 在 $P$ 点 $a$ 相同 但 $a_{\text{向}}$ 不同 ☆% CHECK: “a向”二字写得潦草，疑为 a_向（向心加速度）；原稿“a向不同”下有下划线
+
+$V_{2E}<V_4<V_3<V_1<V_{2B}$
+
+% ---- block 191-09 (原稿第191页) kind=note ----
+9.\ 天问一号到火星轨道\unclear{时}与地球间距\underline{不是}极值（不同$T$） % CHECK: “轨道”后一字(及其上方的小字)字迹缠绕难辨，按语义猜“时”
+
+匀圆\quad $\vec{a}\ \vec{v}\ \vec{F}\ \vec{p}$都变化，$E_k$不变
+
+% ---- block 191-13 (原稿第191页) kind=derivation ----
+12.
+\notefig[0.25]{figures/p191_c.png}
+
+2\unclear{的椭圆}长轴为$a$
+
+两卫星到C时速率相等\quad $-\dfrac{GMm}{2a}=-\dfrac{GMm}{2R}$\quad $\therefore R=a$\quad 故$\unclear{OA}=\unclear{OC}=R=a$
+
+势能相同\qquad $E_{\text{机}}$也相同
+
+由$\dfrac{R^3}{T_1^2}=\dfrac{a^3}{T_2^2}$\quad $\therefore T_1=T_2$\qquad $E_{\text{机}}=-\dfrac{GMm}{2a}$\qquad 近地$v_3>v_2$\qquad $E_2<E_3$
+
+% ---- block 193-06 (原稿第193页) kind=note ----
+\notefig[0.25]{figures/p193_d.png}
+
+返回器在I上运动向$P$运动时\ 地球对它引力做正功，机械能守恒
+
+两次在$P$点\ 大圈大$v$
+
+% ---- block 165-03 (原稿第165页) kind=problem ----
+\begin{problem}
+% 剪贴印刷题干（右侧被黄色便签遮挡，行尾个别字可能被遮）；左缘（(2)问下方）有一手写小字，疑为“变”，辨认不清
+（18 分）我国的月球探测计划“嫦娥工程”分为“绕、落、回”三步。“嫦娥五号”的任务是“回”。“嫦娥五号”发射，经过中途轨道修正和近月制动之后，进入绕月圆轨道$\mathrm{I}$。“嫦娥五号”再次成功变轨进入远月点为 $P$、近月点为 $Q$ 的椭圆形轨道$\mathrm{II}$。如图所示，“嫦娥五号”探测器在 $Q$ 点附近，由大功率发动机制动、减速，以抛物线路径下落到距月面 100 m 高处进行 30 s 悬停避障，之后再缓慢竖直下降到距月面高度仅为数米处，为避免激起更多月尘，关闭发动机，做自由落体运动，落到月球表面。已知引力常量为 $G$，月球的质量为 $M$，月球的半径为 $R$，“嫦娥五号”在轨道$\mathrm{I}$上运动时的质量为 $m_0$，$P$、$Q$ 点与月球表面的距离分别为 $h_1$、$h_2$。
+\notefig[0.25]{figures/p165_d.png}
+\begin{enumerate}[label=(\arabic*),leftmargin=2.5em,itemsep=0pt]
+\item 求“嫦娥五号”在圆形轨道$\mathrm{I}$上运动的速度大小；
+\item 已知“嫦娥五号”与月心的距离为 $r$ 时，引力势能为 $E_p=-G\dfrac{Mm}{r}$（取无穷远处引力势能为零），其中 $m$ 为此时“嫦娥五号”的质量。若“嫦娥五号”在轨道$\mathrm{II}$上运动的过程中，动能和引力势能相互转换，它们的总量保持不变。已知“嫦娥五号”经过 $Q$ 点的速度大小为 $v$，请根据能量守恒定律求它经过 $P$ 点时的速度大小。
+\item “嫦娥五号”在 $P$ 点由轨道$\mathrm{I}$变为轨道$\mathrm{II}$的过程中，发动机沿轨道的切线方向瞬间一次性喷出一部分气体，已知喷出的气体相对喷气后“嫦娥五号”的速度大小为 $u$，求喷出的气体的质量。
+\end{enumerate}
+\begin{solution}
+(1) 万有引力提供向心力
+\[
+\frac{GMm_0}{(R+h_1)^2}=\frac{m_0v_1^2}{R+h_1}\qquad v_1=\sqrt{\frac{GM}{R+h_1}}
+\]
+(2) 机械能守恒
+\[
+\frac{1}{2}mv^2-\frac{GMm}{R+h_2}=\frac{1}{2}mv_{\mathrm{II}P}^2-\frac{GMm}{R+h_1}
+\]
+\[
+v_{\mathrm{II}P}=\sqrt{v^2+2GM\left(\frac{1}{R+h_1}-\frac{1}{R+h_2}\right)}
+\]
+(3) 设喷气质量 $\Delta m$，由动量守恒
+\[
+m_0v_1=(m_0-\Delta m)v_{\mathrm{II}P}+\Delta m\,(v_{\mathrm{II}P}+u)
+\]
+\[
+\Delta m=\frac{m_0}{u}\left[\sqrt{\frac{GM}{R+h_1}}-\sqrt{v^2+2GM\left(\frac{1}{R+h_1}-\frac{1}{R+h_2}\right)}\right]
+\]
+\end{solution}
+\end{problem}
 
 
-\section{万有引力·F-h图像}
-% ---- block 099-06 (原稿第99页) kind=problem ----
-⑥
-\[ F=\frac{GmM}{(R+h)^2} \]
-\notefig[0.25]{figures/p099_h.png}
-
-
-\section{天体能量·引力势能与机械能}
+\section{天体运动中的能量}
+\subsection{引力势能与机械能}
 % ---- block 117-03 (原稿第117页) kind=formula ----
 \begin{keybox}[天体功能]
 \[ E_{\mathrm{p}\text{引}}=-\frac{GMm}{r}\qquad E_K=\frac{GMm}{2r}\qquad E_{\text{机}}=-\frac{GMm}{2r} \]
 \end{keybox}
 
+% ---- block 129-01 (原稿第129页) kind=formula ----
+天体动能定理
 
-\section{变轨·椭圆轨道能量}
+能量\ $\left\{\begin{array}{l}\text{动力}\\ \text{动能}\\ \text{动量}\end{array}\right.$
+% 以上：左侧两行字，右侧一个大括号括起“动力、动能、动量”
+\[ v=\sqrt{\dfrac{GMm}{r}}\qquad E_k=\dfrac{GMm}{2r}\qquad E_p=-\dfrac{GMm}{r}\ \ (E_{p\infty}=0) \]
+% CHECK: 根号内为 GMm/r（多了 m），原样转录
+\[ E_{\text{机}}=-\dfrac{GMm}{2r} \]
+
+% ---- block 191-03 (原稿第191页) kind=knowledge ----
+3.
+\notefig[0.25]{figures/p191_a.png}
+
+\underline{安培力处处不等（地磁不均匀）} % 原稿此行下划线，并被一条弧线(自图中“空心导体”下方向右上延伸)斜穿
+
+离轨\quad 安培力做负功，万有引力做正功\quad 故动能不一定减小。
+
+% ---- block 188-07 (原稿第188页) kind=note ----
+6、无动力飞行机械能守恒% 原稿此行有下划线
+
+% ---- block 129-03 (原稿第129页) kind=problem ----
+\underline{用动能定理}
+
+卫星从 $R_1$ 轨\unclear{由}$f$到 $R_2$ 轨，热量为？
+\[ W_f=-Q=\Delta E_{\text{机}}=-\left[\unclear{\left(-\dfrac{GMm}{2R_2}\right)-\left(-\dfrac{GMm}{2R_1}\right)}\right] \]
+（方括号上方标注：末动能$-$初动能）
+% 方括号内有较多涂改痕迹（第一个分式前有一个大括号状的粗线，第二个括号内分式前有划掉的符号）
+\[ =\dfrac{GMm}{2}\left(\dfrac{1}{R_1}-\dfrac{1}{R_2}\right)\qquad Q>0\ \ \text{再反一下} \]
+
+% ---- block 129-04 (原稿第129页) kind=problem ----
+% 左图：月球(小圆，内写“月球”及M)外套一个大圆，两圆之间用双向箭头标 h
+\notefig[0.25]{figures/p129_a.png}
+\[ E_p=\dfrac{GMmh}{R(R+h)} \]
+从发射时所需能量为？
+\[ E_{\text{机}}=\dfrac{GMm}{2(R+h)}+\dfrac{GMmh}{(R+h)R}=\dfrac{mgR^{2}}{R+h}\left(\dfrac{R}{2}+h\right) \]
+
+% ---- block 129-05 (原稿第129页) kind=problem ----
+某\unclear{星}在 $r_1$ 上圆时 $E_k$，在轨$_2$上后动能少了 $\Delta E$，求 $r_2$
+\[ \Delta E=\underbrace{\dfrac{GMm}{2r}}_{E_k}-\underbrace{\dfrac{GMm}{2r'}}_{E_k'}\ \downarrow\ \dfrac{E_kr}{r'}\qquad\qquad r_2=\dfrac{E_k}{E_k-\Delta E}\,r \]
+
+\subsection{椭圆轨道的速度与能量}
 % ---- block 117-04 (原稿第117页) kind=derivation ----
 \notefig[0.25]{figures/p117_d.png}
 % 图中标注：椭圆轨道上 $r_1$、$r_2$（近、远点距离），$M$
@@ -144,8 +1172,95 @@ $\downarrow g$\quad $\circ$\quad 重力场\qquad $g=\dfrac{G}{m}$
 & \frac{1}{2}m\left(\frac{v_2 r_2}{r_1}\right)^2-\frac{GMm}{r_1}=\frac{1}{2}mv_2^2-\frac{GMm}{r_2}
 \end{aligned}\right. \]
 
+% ---- block 133-03 (原稿第133页) kind=method ----
+% 整块被一对大括号“(  )”括起
+\textbf{曲率半径}
+\notefig[0.3]{figures/p133_c.png}
+\[
+\red{\left\{\begin{aligned}
+\frac{GMm}{\rho_{\text{近}}^{2}}&=\frac{mV_{\text{近}}^{2}}{\rho_{\text{近}}}\\[4pt]
+\frac{GMm}{\rho_{\text{远}}^{2}}&=\frac{mV_{\text{远}}^{2}}{\rho_{\text{远}}}
+\end{aligned}\right.}
+\] % CHECK: 红笔式左边分母原稿写作 ρ（物理上应为到中心距离 r_近^2、r_远^2）
 
-\section{天体追及·冲日}
+% ---- block 134-02 (原稿第134页) kind=derivation ----
+\notefig[0.35]{figures/p134_b.png}
+$E_{\text{机}}=?$\quad (势能为负的直接\unclear{加}) % 右侧文字被一对大圆括号括住
+
+由机械能守恒：
+\[
+\left\{\begin{aligned}
+\frac{1}{2}mV_1^{2}+\left(-\frac{GMm}{r_1}\right)&=\frac{1}{2}mV_2^{2}+\left(-\frac{GMm}{r_2}\right)\\
+V_1r_1&=V_2r_2
+\end{aligned}\right.
+\]
+\[ E_{\text{机}}=-\frac{GMm}{2r} \]
+
+% ---- block 193-02 (原稿第193页) kind=derivation ----
+\[
+v_{\text{远}}r_{\text{远}}=v_{\text{近}}r_{\text{近}}
+\]
+由机械能守恒
+\[
+\frac12mv_{\text{近}}^2-\frac{GMm}{r_{\text{近}}}=\frac12mv_{\text{远}}^2-\frac{GMm}{r_{\text{远}}}
+\]
+\[
+v_{\text{远}}=\sqrt{\frac{2GMr_{\text{近}}}{r_{\text{远}}(r_{\text{远}}+r_{\text{近}})}}
+\]
+\[
+\frac{GMm}{r_{\mathrm{GEO}}^2}=m\frac{v_{\mathrm{GEO}}^2}{r_{\mathrm{GEO}}}\qquad v_{\mathrm{GEO}}=\frac{\sqrt{GM}}{\sqrt{r_{\mathrm{GEO}}}}\qquad \frac{v_{\text{远}}}{v_{\mathrm{GEO}}}=\sqrt{\frac{2r_{\text{近}}r_{\mathrm{GEO}}}{r_{\text{远}}(r_{\text{远}}+r_{\text{近}})}}
+\]
+\[
+r_{\mathrm{GEO}}=r_{\text{远}}\qquad \therefore\ \frac{v_{\text{远}}}{v_{\mathrm{GEO}}}=\sqrt{\frac{2r_{\text{近}}}{r_{\text{远}}+r_{\text{近}}}}\approx0.52
+\]
+
+\subsection{卫星能否到达对面}
+% ---- block 128-04 (原稿第128页) kind=method ----
+\textbf{卫星能否到对面}
+
+\red{①}
+% 图内文字：红字“过线即可到”（在红色竖线上方）；左端“地”，右端“月”；红色竖线处标 F合=0；竖线左段下方 W负功、E_k↓；竖线右段下方 W正功、E_k↑
+\notefig[0.5]{figures/p128_b.png}
+\[ \dfrac{M_{\text{地}}}{M_{\text{月}}}=\dfrac{81}{1}\qquad \dfrac{r_{\text{地}}}{r_{\text{月}}}=\dfrac{9}{1} \]
+\[ =\left(\dfrac{r_{\text{地}}}{r_{\text{月}}}\right)^{2} \]
+路径面积
+
+% ---- block 128-05 (原稿第128页) kind=derivation ----
+\red{②}
+% 图内：地(圆圈)—r—月(圆圈)，线上两个小方块处各标 Δr（左块下方箭头向下标 Δr，右块旁标 Δr）；红色曲线从左块连到月
+\notefig[0.3]{figures/p128_c.png}
+\begin{align*}
+\Delta W_{\text{地}}&=\dfrac{GM_{\text{地}}m}{r^{2}}\Delta r\\
+\Delta W_{\text{月}}&=\dfrac{GM_{\text{月}}m}{r^{2}}\Delta r
+\end{align*}
+\[ \dfrac{\sum\Delta W_{\text{地}}}{\sum\Delta W_{\text{月}}}=\dfrac{81}{1}\qquad \therefore\ \dfrac{W_{\text{地}}}{W_{\text{月}}}=\dfrac{81}{1} \]
+
+% ---- block 128-06 (原稿第128页) kind=derivation ----
+% 以下两行被手绘大括号“〈 〉”括起
+\textbf{$W\propto M_{\text{天体}}$}
+
+\textbf{用动能定理}
+% 图内：地(圆圈，下方标 E_k0)——月(圆圈，下方标“到这 E_k”)，线上方有箭头 →
+\notefig[0.5]{figures/p128_d.png}
+\begin{align*}
+E_k-E_{k0}&=-W_{\text{地}}+W_{\text{月}}\\
+E_k&=E_{k0}-\dfrac{80}{81}W_{\text{地}}\ge 0\\
+E_{k0}&\ge\dfrac{80}{81}W_{\text{地}}\qquad \therefore\ E_k\ge\dfrac{80}{81}W_{\text{地}}\ \text{才能到对面}
+\end{align*}
+% CHECK: “∴”之后的 E_k 或应为 E_k0；W_月 末尾有一个小黑点
+
+% ---- block 128-07 (原稿第128页) kind=problem ----
+% 图内文字：M_1:M_2=1:9（“探测器”写在竖线处）；左小圆下标 1，右大圆下标 9；竖线为 F合=0 的位置；右段花括号下标 3，旁标 L；左段花括号；图下一行：负功　L/4 处 F合=0　正功
+\notefig[0.6]{figures/p128_e.png}
+\[ \dfrac{W_A}{W_B}=\dfrac{1}{9} \]
+\begin{align*}
+E_k-E_{k0}&=-W_A+W_B=8W_A\\
+E_k&=8W_A+E_{k0}>0
+\end{align*}
+
+
+\section{天体的追及相遇}
+\subsection{行星冲日与追及规律}
 % ---- block 117-05 (原稿第117页) kind=method ----
 冲日（追逐）、
 \[ \left(\underset{\text{近}}{\frac{2\pi}{T_1}}-\underset{\text{远}}{\frac{2\pi}{T_2}}\right)t=2\pi\quad\therefore\ t=\frac{T_1T_2}{T_2-T_1} \]
@@ -155,77 +1270,166 @@ $\downarrow g$\quad $\circ$\quad 重力场\qquad $g=\dfrac{G}{m}$
 \item 反向运行 $\swarrow$ 为减号 % 此处另有一弯箭头 $\searrow$；CHECK: 原稿“反向运行”，物理上追及(同向运行)才为减号；“为”字不太清晰
 \end{itemize}
 
+% ---- block 125-02 (原稿第125页) kind=method ----
+\textbf{天体追及相遇}
 
-\section{拉格朗日点}
-% ---- block 117-06 (原稿第117页) kind=note ----
-拉格朗日点\quad 同轴转体\quad 不会失重\quad \unclear{地月动}.
-
-
-\section{万有引力定律·发现史}
-% ---- block 121-01 (原稿第121页) kind=knowledge ----
-% 页面右上角露出邻页(化学)内容“ρ=1.429g·L^-1”，不属于本页，已忽略
-\textbf{天体物理}
-
-托勒密\ 地心说\quad／\quad 哥白尼\ 日心说\quad／\quad 第谷\ 观测\quad／\quad 开普勒在第谷基础上总结开三\quad／\quad 伽利略发现木卫
-
-胡克、笛卡尔、牛顿 $\to$ 万有引力定律
-
-$F_{\text{万}}=G\dfrac{m_1m_2}{r^2}$\quad（\unclear{天体}球心距）
-
-$G=6.67\times10^{-11}\ \unit{N\cdot m^2/kg^2}$\quad 卡文迪许扭称实验测出（放大法） % CHECK: 原稿“扭称”，应为“扭秤”
-
-
-\section{万有引力定律·推导与月地检验}
-% ---- block 121-02 (原稿第121页) kind=derivation ----
-第谷 $\to$ 开普勒三大定律 $\to$ 胡克：平方反比.（引力与$r^2$成反比）$\to$ 牛顿\quad 由牛一.\ 行星必受力
-
-由牛二\quad $F_{\text{万}}=\dfrac{mv^2}{r}$
-
+\textbf{从共线时同向运行}\quad $\omega_1>\omega_2$\quad $T_2>T_1$
 \[
-\begin{aligned}
-&\text{由圆周}\ v=\frac{2\pi r}{T}\\
-&\text{由开三}\ \frac{r^3}{T^2}=\text{定值}
-\end{aligned}
-\qquad
-\left.\begin{aligned}
-F_{\text{万}}&=m\frac{4\pi^2}{T^2}r\\
-T^2&=\frac{r^3}{\text{定值}}
-\end{aligned}\right\}
-\ \to\ F_{\text{万}}=\frac{m\,4\pi^2}{r^2}\cdot\text{定值}
+\begin{array}{lll}
+\text{相距最近} & \omega_1t-\omega_2t=n\cdot2\pi\ (n=1,2,3,\ldots) & \dfrac{t}{T_1}-\dfrac{t}{T_2}=n\ (n=1,2,3,\ldots)\\[10pt]
+\text{相距最远} & \omega_1t-\omega_2t=(2n-1)\pi\ (n=1,2,3,\ldots) & \dfrac{t}{T_1}-\dfrac{t}{T_2}=n-\dfrac{1}{2}\ (n=1,2,3,\ldots)
+\end{array}
 \]
 
-\[ F_{\text{万}}\propto\frac{1}{r^2},\ \propto m\ \ \propto M \]
+\textbf{从共线时反向运行}
+\[
+\begin{array}{lll}
+\text{相距最近} & \omega_1t+\omega_2t=n\cdot2\pi\ (n=1,2,3,\ldots) & \dfrac{t}{T_1}+\dfrac{t}{T_2}=n\ (n=1,2,3,\ldots)\\[10pt]
+\text{相距最远} & \omega_1t+\omega_2t=(2n-1)\cdot\pi\ (n=1,2,3,\ldots) & \dfrac{t}{T_1}+\dfrac{t}{T_2}=n-\dfrac{1}{2}\ (n=1,2,3,\ldots)
+\end{array}
+\]
 
-$\downarrow$
+\textbf{从有夹角开始同向运行}
+\[
+\begin{array}{lll}
+\text{相距最近} & \omega_1t-\omega_2t=2\pi-\theta+2n\pi\ (n=0,1,2,\ldots) & \dfrac{t}{T_1}-\dfrac{t}{T_2}=(n+1)-\dfrac{\theta}{2\pi}\\[10pt]
+\text{相距最远} & \omega_1t-\omega_2t=\pi-\theta+2n\pi\ (n=0,1,2,\ldots) & \dfrac{t}{T_1}-\dfrac{t}{T_2}=\left(n+\dfrac{1}{2}\right)-\dfrac{\theta}{2\pi}
+\end{array}
+\]
 
-\[ F_{\text{万}}=\frac{GMm}{r^2}\qquad \text{\unclear{对}月地检验}\ \to\ \text{正确}\qquad \frac{g}{g}=\frac{1}{60^2} \]% CHECK: “月地检验”前一字难辨(疑为“对”)，原稿此处有带箭头的下划线指向“正确”；g/g 的分子分母疑带撇或下标，原稿难辨
+\textbf{从有夹角开始反向运行}% 原稿“反”字外画有一个圆圈
+\[
+\begin{array}{lll}
+\text{相距最近} & \omega_1t+\omega_2t=\theta+2n\pi\ (n=0,1,2,\ldots) & \dfrac{t}{T_1}+\dfrac{t}{T_2}=n+\dfrac{\theta}{2\pi}\\[10pt]
+\text{相距最远} & \omega_1t+\omega_2t=\pi+\theta+2n\pi\ (n=0,1,2,\ldots) & \dfrac{t}{T_1}+\dfrac{t}{T_2}=\left(n+\dfrac{1}{2}\right)+\dfrac{\theta}{2\pi}
+\end{array}
+\]
 
+% ---- block 129-06 (原稿第129页) kind=derivation ----
+% 手绘大括号“〈 〉”括起以下两行标题
+\textbf{追及相遇}
 
-\section{非球体万有引力计算}
-% ---- block 121-03 (原稿第121页) kind=method ----
-\textbf{非球体万有引力计算}
+\unclear{直}冲\unclear{星}日
+% 图：两个同心圆（内圆标1、外圆标2），圆心处有点；内圆上一点与外圆上一点同圆心用虚线连成一条直线；标注 ω_1、1、ω_2、2
+\notefig[0.3]{figures/p129_b.png}
+\[ \omega_1t-\omega_2t=2n\pi\ \ \text{整圈}\qquad n\pi\ \ \text{半圈} \]
+\[ \dfrac{2\pi}{T_1}t-\dfrac{2\pi}{T_2}t=2\pi \]
+\[ \dfrac{1}{T_1}-\dfrac{1}{T_2}=\dfrac{1}{t}\qquad\qquad \dfrac{T_2-T_1}{T_1T_2}=\dfrac{1}{t} \]
+\[ t=\dfrac{T_1T_2}{T_2-T_1} \]
 
-割补法、对称填补法、负质量法
+% ---- block 129-07 (原稿第129页) kind=derivation ----
+% 图：日、地、行（行星）三个小圆圈排成一条直线（名称写在圆圈上方），从地、行处各引一条斜向下的箭头
+\notefig[0.35]{figures/p129_c.png}
+% 下式中 T_地 与 1/t 下方各有一个向下箭头指向“1年”
+\[
+\begin{array}{ccccc}
+\dfrac{1}{T_{\text{地}}} & - & \dfrac{1}{T_{\text{行}}} & = & \dfrac{1}{t}\\[6pt]
+\downarrow & & & & \downarrow\\
+1\text{年} & & & & 1\text{年}
+\end{array}
+\]
+\[ T_{\text{行}}=\unclear{\infty}\propto R^{3/2} \]
+$\therefore$ 不会\unclear{每年}都冲日
 
-对剩余部分对$m$万有引力
+越远越易冲
 
-\notefig[0.58]{figures/p121_a.png}
-% 图中标注：大球 M、半径 R，挖去部分(红色斜线小球)“挖 1/8 M”；红字“补”；F_1(红色箭头)、F_2；d-R/2、d、d-1/2R 等尺寸线；中间小圆圈为质点 m
-% 图外：右侧小球右上方另有红字“补”
-\red{补}
+% ---- block 129-08 (原稿第129页) kind=problem ----
+\[ \dfrac{1}{T_{\text{地}}}-\dfrac{1}{T_{\text{木}}}=\dfrac{1}{t}\qquad \text{木冲不会是一\unclear{年}} \]
+\[ T_{\text{木}}\propto r^{3/2}\qquad \dfrac{T_{\text{木}}}{T_{\text{地}}}=(5.2)^{3/2}=1\unclear{1}\text{年} \]
+% CHECK: 年数前面一位被涂黑，(5.2)^{3/2}≈11.9
+$\therefore$ 代入 $t=\dfrac{10}{9}=1.\unclear{2}$年
+% CHECK: 10/9≈1.1，与“1.2年”及上式不一致
+上次 2014\unclear{年}1月6
 
-\notefig[0.3]{figures/p121_b.png}
-% 图中标注：余弦/正弦定理、(合力)F_2、质点 m、d、R、斜边 $\sqrt{d^2+(R/2)^2}$；红色箭头；红色斜线为挖去的小球
+$\therefore$ 2015年内可冲日
 
-\begin{align*}
-F_1&=\frac{G\frac{1}{8}Mm}{\left(d-\frac{1}{2}R\right)^2}\\
-F_1+F_2&=\frac{GMm}{d^2}\\
-F_{\text{万}}&=F_r+F_2-F_1 \\
-&=\frac{GMm}{d^2}-\frac{G\frac{1}{8}Mm}{\left(d-\frac{1}{2}R\right)^2}
-\end{align*}% CHECK: F_万=F_r+F_2-F_1 中第一项下标原稿像 r，疑为 1
+(2014.1.6$\sim$2015.12.\unclear{31})
 
+% ---- block 145-01 (原稿第145页) kind=problem ----
+% 本页贴有印刷题条，题干为印刷体，其上叠有手写批注；页面上边缘处另有他页露出的字迹“ρ=1.429 g·L^-1”，不属于本页，忽略
+\begin{problem}[B7]
+\textbf{B7、}地球和某行星在同一轨道平面内同向绕太阳做匀速圆周运动。地球的轨道半径为$r$，运转周期为$T$。地球和太阳中心的连线与地球和行星的连线所夹的角叫地球对该行星的观察视角（简称视角）。当行星处于最大视角$\theta$处时（如图所示），是地球上天文爱好者观察该行星的最佳时期。
 
-\section{卫星相遇·周期问题}
+求：(1)该行星的公转周期$T_2$；
+
+(2)若某时刻该行星正处于最佳观察期，则该行星下一次处于最佳观察期需要多长时间$t$？
+\notefig[0.4]{figures/p145_a.png}
+\begin{solution}
+(1)　$\sin\theta=\dfrac{R}{r}$　由开普勒第三定律　$\left(\dfrac{T_2}{\struck{T}}\right)^{2}=\sin\theta^{\frac{3}{2}}\,T$ % CHECK: 分母 T 被划去；括号外指数手写似 2；3/2 写在 θ 右上（应指 sin^{3/2}θ）
+\medskip
+
+(2)　\struck{$t=$}再次相遇
+\[ t=\dfrac{T_1T_2}{T_1-T_2} \]
+但添加\unclear{乘}数　$\dfrac{\pi+2\theta}{2\pi}$　　$\dfrac{\text{外围角}}{2\pi}$
+\[ t=\dfrac{(\pi+2\theta)\sqrt{\sin^3\theta}}{2\pi\left(1-\sqrt{\sin^3\theta}\right)}T \]
+\end{solution}
+\end{problem}
+
+% ---- block 188-14 (原稿第188页) kind=problem ----
+\begin{problem}[11]
+A 每 $t_0$ 发生一次最大偏离．（A 外有一颗未知行星 B），与 A 同方向绕行 求 B 参数．
+
+\notefig[0.25]{figures/p188_d.png}
+
+\begin{solution}
+$\dfrac{t_0}{T_A}-\dfrac{t_0}{T_B}=1$．\quad $T_B=\dfrac{T_At_0}{t_0-T_A}$\quad $\dfrac{GMm'}{R_B^{2}}=m'\left(\dfrac{2\pi}{T_B}\right)^{2}R_B$．
+
+$R_B=\sqrt[3]{\left(\dfrac{t_0}{t_0-T_A}\right)^{2}}$% CHECK: 根号前疑漏 R_0
+
+$V_B=\dfrac{2\pi R_B}{T_B}=\dfrac{2\pi R_0}{T_0}\sqrt[3]{\dfrac{t_0-T_A}{\text{\unclear{…}}}}$\quad $a_B=\dfrac{V_B^{2}}{R_B}=\dfrac{4\pi^{2}R_0}{T_0^{2}}\sqrt[3]{\dfrac{(t_0-T_A)^{4}}{t_0}}$% CHECK: 页底被截断，两处根号内分母不完整（第一处只见残笔，第二处只见 t_0，指数可能被截）
+\end{solution}
+\end{problem}
+
+\subsection{卫星相遇与过顶}
+% ---- block 270-03 (原稿第270页) kind=method ----
+\notefig[0.25]{figures/p270_a.png}
+以$M$为参\ $N$做圆周运动 % 原稿“参”字后未写完（疑为“参考系”）
+
+% ---- block 130-01 (原稿第130页) kind=problem ----
+% 题干上方有旁注“第一次不算”（黑笔小字）
+\begin{problem}
+赤道上人每\,\fbox{$3$天见$5$次}\,卫星在正\unclear{上}方（旁注：第一次不算）
+
+从 A$\to$B 用\unclear{时}\quad 地球自转周期 $T_0$
+% 右上图：大圆（轨道）内套一个较小的闭合曲线，标 A、B(B 被圈)、r 与箭头、1、T、卫星
+\notefig[0.3]{figures/p130_a.png}
+% 左图：小圆，顶端标 A，箭头标 T_0；圆上方有“\unclear{同}卫”二字
+\notefig[0.25]{figures/p130_b.png}
+\begin{solution}
+\struck{3天5次}\quad 实际用4次算
+
+4次\quad 8圈\quad $\Longrightarrow$\quad 3天见了4次\quad 8圈
+
+% 从“3天5次”处引一条箭头向左下，箭头旁有“81”（也可能是 8T）
+\unclear{81}\quad \struck{$8T=3T_0$}
+
+\struck{1次\unclear{=}0.6天\quad $=0.6T_0$}
+\[ \dfrac{1}{T}-\dfrac{1}{T_0}=\dfrac{1}{t}\ \to\ \dfrac{1}{0.6T_0} \]
+\[ T=\dfrac{3}{8}T_0 \]
+% 页面右侧，上一式被一条斜线划掉
+\struck{$t=\dfrac{T_{\text{大}}-T_{\text{小}}}{T_{\text{大}}T_{\text{小}}}$}
+
+\[ t=\dfrac{T_{\text{大}}T_{\text{小}}}{T_{\text{大}}-T_{\text{小}}} \]
+\end{solution}
+\end{problem}
+
+% ---- block 142-02 (原稿第142页) kind=problem ----
+\begin{problem}[7]
+\textbf{7、}地球自转周期$T_0$，在赤道上一点的人能连续看到该卫星的时间是多少？（在$B_1$的人刚看到$A$卫星）
+\notefig[0.3]{figures/p142_b.png}
+\begin{solution}
+\[ \omega t-\omega_0 t=\dfrac{2\pi}{3} \]
+\[ \left(\dfrac{2\pi}{T}-\dfrac{2\pi}{T_0}\right)t=\dfrac{2\pi}{3} \]
+\[ \begin{cases}
+\text{\struck{$R+$}}\,r\,\text{\struck{\unclear{$\ast h$}}}=2R\\[4pt]
+\dfrac{GMm}{r^2}=m\dfrac{4\pi^2}{T^2}r
+\end{cases} \] % 第一式左侧有划去的字迹，划去后读作 r=2R
+\[ T_{\text{卫}}=2\pi\sqrt{\dfrac{r^3}{GM}}=2\pi\sqrt{\dfrac{8R^3}{gR^2}}=4\pi\sqrt{\dfrac{2R}{g}} \] % CHECK: T 的下标手写似“工”，应为“卫”
+\noindent\struck{$=2\pi\sqrt{\dfrac{r}{g}}=2\pi\sqrt{\dfrac{2R}{g}}$} % 原稿此行被划去
+\[ \therefore\ t=\dfrac{4\pi\sqrt{\dfrac{2R}{g}}\,T}{3\left(T_0-4\pi\sqrt{\dfrac{2R}{g}}\right)} \] % CHECK: 分子末尾的 T 手写无下标，按推导应为 T_0
+\end{solution}
+\end{problem}
+
 % ---- block 195-01 (原稿第195页) kind=problem ----
 \begin{problem}
 火星同步卫星圆周轨道半径为$R$，火星自转一周为1个火星日。探测器在火星赤道正上方环绕火星匀圆，环绕方向与火星自转同向。每6个火星日经赤道上空同一位置。该火星环绕周期为$n$个火星日，轨道半径为$r$
@@ -239,4 +1443,499 @@ n=\frac{6}{7}\ \text{or}\ \frac{6}{5}
 \]
 \end{solution}
 \end{problem}
+
+
+\section{卫星运行中的几何问题}
+\subsection{遮光与遮挡时间}
+% ---- block 140-01 (原稿第140页) kind=summary ----
+$\langle$\textbf{遮光类}$\rangle$\quad $t=\dfrac{2\theta}{2\pi}T$% 标题被手绘尖括号括起；θ 右上角有一小笔画
+
+% ---- block 138-01 (原稿第138页) kind=method ----
+\notefig[0.3]{figures/p138_a.png}
+
+反向转
+
+\[ \left(\frac{2\pi}{T}+\frac{2\pi}{T_0}\right)t_{\max}=\underline{\frac{\pi}{3}+\theta} \]
+% 箭头从下面的“相对角速度.”指向上面括号内的 2π/T+2π/T_0
+
+先作切线\quad 求追及角（遮挡角）
+\[ (\omega_1+\omega_2)\,t=\underline{\unclear{\varphi}} \]% CHECK: 等号右侧为黑笔“α”形字符，上面又被红笔叠写成“φ”
+
+相对角速度.
+
+同向是 $\omega_1-(-\omega_2)=\omega_1+\omega_2$% CHECK: “同向/反向”与结果似乎对调（同向相对角速度应为 ω1-ω2），按原稿转录
+
+反向是 $\omega_1-\omega_2=\omega_1-\omega_2$
+
+% ---- block 138-02 (原稿第138页) kind=method ----
+\notefig[0.3]{figures/p138_b.png}
+
+\fbox{圆心角}\quad \red{$2\varphi=2\alpha+2\beta$}
+
+挡光时间 \red{$t=\dfrac{2\varphi}{2\pi}\,T$}
+
+\red{遮挡角 $=2\varphi$}
+
+% ---- block 140-02 (原稿第140页) kind=problem ----
+\begin{problem}[1.]
+月球绕地球周期为 $T$。若卫星绕月运行一个周期内卫\unclear{星}轨道平面与地月连心线共面，求卫\unclear{星}发射的微波信号因月球遮挡\unclear{而不能}到达地球的时间% 原稿这几行右端被页边切断
+\notefig[0.75]{figures/p140_a.png}
+\begin{solution}
+\[ t=\frac{2\theta}{2\pi}T_x \]
+\[ \theta+\beta=\alpha \]
+\[ \cos\alpha=\frac{R-R_1}{r} \]
+\[ \cos\beta=\frac{R_1}{r_1} \]
+\[ T=2\pi\sqrt{\frac{r^3}{GM}}\qquad T_x=2\pi\sqrt{\frac{r_1^3}{Gm}} \]
+\begin{center}
+\struck{$T_x=2\pi\sqrt{\dfrac{r_1^3}{Gm}}$}% 原稿此式被划掉
+\end{center}
+\[ \therefore T_x=T\sqrt{\frac{Mr_1^3}{mr^3}} \]
+\[ t=\frac{\left(\arccos\dfrac{R-R_1}{r}-\arccos\dfrac{R_1}{r_1}\right)T\sqrt{Mr_1^3}}{\pi\sqrt{mr^3}} \]
+\end{solution}
+\end{problem}
+
+% ---- block 140-03 (原稿第140页) kind=problem ----
+\begin{problem}[2.]
+一架飞机在高度 $h=10\,\mathrm{km}$ 上空看到太阳正升起，估算飞机正下方地面观察者还要经多久才可以看见太阳。$R_{\text{地}}=6400\,\mathrm{km}$\quad $|x|\ll1$ 时 $\cos x\approx1-\dfrac{x^2}{2}$
+\notefig[0.55]{figures/p140_b.png}
+\begin{solution}
+俯视
+
+\[ \cos\theta=\frac{R}{h+R}=0.998\approx1-\frac{\theta^2}{2} \]
+\[ \theta=0.06 \]
+\[ t=\frac{\theta}{2\pi}T \]
+\[ t=13\,\mathrm{min} \]
+\end{solution}
+\end{problem}
+
+% ---- block 141-01 (原稿第141页) kind=problem ----
+\begin{problem}[3.]
+飞船 $h=340\,\mathrm{km}$\quad 绕地球一圈 $90\,\mathrm{min}$\quad $R_{\text{地}}=6400\,\mathrm{km}$。飞船沿赤道平面自东向西飞行。
+\notefig[0.4]{figures/p141_a.png}
+
+飞行\unclear{员看}到西边日出
+
+若太阳直射赤道，飞行员每天看 $n$ 次日落\quad $n=\dfrac{24\,\mathrm{h}}{1.5\,\mathrm{h}}=16$次\quad \unclear{$T$}$=90\,\mathrm{min}=1.5\,\mathrm{h}$
+
+一圈中飞船看不见太阳的时间有多长？\quad $\cos18^\circ=0.95$\quad $\tan18^\circ=0.32$
+\begin{solution}
+\[ \sin\theta=\frac{R}{R+h}=0.95 \]
+\[ \therefore\theta=72^\circ \]
+\[ t=\frac{2\theta}{360^\circ}T=\frac{2}{5}T \]
+\struck{$T=24\,\mathrm{h}$}\quad $\therefore t=36\,\mathrm{min}$% CHECK: “T=24h”上似有一横线（疑被划去）
+
+$T=90\,\mathrm{min}$
+\end{solution}
+\end{problem}
+
+% ---- block 141-03 (原稿第141页) kind=problem ----
+\begin{problem}[5.]
+\notefig[0.35]{figures/p141_c.png}
+
+人在地上看到（行上方插入：赤道上方飞(行的)）明亮的卫星，日落 $2\mathrm{h}$ 以后赤道附近的人们能\unclear{看见}它。求它最低高度。
+\begin{solution}
+$\theta=\dfrac{360^\circ}{12}=30^\circ$\quad $h=\dfrac{24}{2}=12$
+
+$\cos\theta=\dfrac{R}{R+h}$\quad $\therefore h=\left(\dfrac{2\sqrt{3}-3}{3}\right)R$
+\end{solution}
+\end{problem}
+
+% ---- block 141-04 (原稿第141页) kind=problem ----
+\begin{problem}
+\notefig[0.35]{figures/p141_d.png}
+
+某地球同步卫星正下方的地球表面有一观察者，他用天文望远镜观察\unclear{被}太阳光照射的此卫星。太阳直射赤道(春分)日落后有 $12\mathrm{h}$ 看不见卫星内有几个\unclear{…}小时看不见卫星。(地表重力加速度 $g$，地球自转周期 $T$。)% CHECK: 原稿语句似有错乱（应为“日落后12h内有几个小时看不见卫星”）；“几个”与“小时”之间有一黑色墨团，似涂掉一字；第一行右端被页边切断
+\begin{solution}
+$\sin\theta=\dfrac{R}{r}$\quad \struck{$\theta$}% 其后有一处涂掉的字迹，似为 θ…
+
+$\theta=\arcsin\dfrac{R}{r}$\quad $t=\dfrac{2\theta}{2\pi}T$
+
+对同步卫星\quad $\dfrac{GMm}{r^2}=m\dfrac{4\pi^2}{T^2}r$
+
+由 $GM=gR^2$\quad $r=\sqrt[3]{\dfrac{GMT^2}{4\pi^2}}=\sqrt[3]{\dfrac{gR^2T^2}{4\pi^2}}$
+
+$t=\dfrac{\arcsin\sqrt[3]{\dfrac{4\pi^2R}{gT^2}}}{\pi}\,T$% 页面下边缘被拍摄裁切，最后一行公式下半部分缺失
+\end{solution}
+\end{problem}
+
+\subsection{信号传播与通讯盲区}
+% ---- block 145-02 (原稿第145页) kind=method ----
+% 写在页面右上空白处的公式（与下方 B8 盲区时间的解法同形）
+\[ t_{\text{盲区}}=\dfrac{\text{外围角}}{2\pi}\,t_{\text{遇}} \]
+
+% ---- block 141-02 (原稿第141页) kind=problem ----
+\begin{problem}[4.]
+\notefig[0.75]{figures/p141_b.png}
+
+月绕地周期 $T_0$。半径为 $r$
+
+卫星向地球发送照片的时间？光速 $C$
+\begin{solution}
+\[ M=\frac{4\pi^2\,r^3}{G\,T^2} \]% 原稿 r^3 与 T^2 被手绘椭圈圈住
+\[ \frac{M_{\text{月}}}{M_{\text{地}}}=\frac{(h+R_2)^3\,T_0^2}{r^3\,T^2} \]
+\[ d=\sqrt{r^2+(R_2+h)^2}-R_1 \]
+\[ t=\frac{d}{c}=\frac{\sqrt{r^2+(R_2+h)^2}-R_1}{C} \]
+\end{solution}
+\end{problem}
+
+% ---- block 142-01 (原稿第142页) kind=problem ----
+\begin{problem}[6]
+\textbf{6、}我国同步卫星、定点位置与东经98$^\circ$经线在同一平面内。把甘肃省嘉峪关处的经度和纬度近似为东经98$^\circ$和北纬$\alpha=40^\circ$，地球半径$R$，自转周期$T$，地表重力加速度$g$，光速$c$，求该同步卫星发出微波信号传到嘉峪关所需时间。% 原稿中“北纬α=40°”被圈出
+\notefig[0.3]{figures/p142_a.png}
+\begin{solution}
+\[ l=\sqrt{r^2+R^2-2rR\cos\alpha} \]
+由$\dfrac{GMm}{r^2}=m\dfrac{4\pi^2}{T^2}r$　和$gR^2=GM$
+\[ \therefore\ r=\sqrt[3]{\dfrac{gR^2T^2}{4\pi^2}} \]
+\[ t=\dfrac{l}{c} \]
+解出
+\[ t=\dfrac{\sqrt{\left(\dfrac{gR^2T^2}{4\pi^2}\right)^{\frac{3}{2}}+R^2-2R\left(\dfrac{gR^2T^2}{4\pi^2}\right)^{\frac{1}{3}}\cos 40^\circ}}{c} \] % CHECK: 第一项指数手写为 3/2，按 r^2 应为 2/3（照抄）
+\end{solution}
+\end{problem}
+
+% ---- block 142-03 (原稿第142页) kind=problem ----
+\begin{problem}[8]
+\textbf{8、}自转方向与地球自转方向一样\\
+地球自转周期$T$和$R$，(1)求$B$的周期　(2)$A$、$B$不能直接通讯的时间% “直接”为行上插入（有脱字符）
+\notefig[0.3]{figures/p142_c.png}
+\begin{solution}
+(1)　由开三　$\dfrac{r^3}{T_B^2}=\dfrac{h^3}{T^2}$
+\[ T_B=T\sqrt{\dfrac{r^3}{h^3}} \]
+\unclear{sin}% 此处(1)与(2)之间有零星字迹“sin”
+(2)　$\omega_B t-\omega t=2\theta$
+\[ \sin\beta=\dfrac{R}{r},\qquad \sin\alpha=\dfrac{R}{h},\qquad \theta=\alpha+\beta \]
+\[ \therefore\ t= \]
+\end{solution}
+\end{problem}
+
+% ---- block 143-01 (原稿第143页) kind=problem ----
+% 页面右上角另一页露出的字迹“-1.429 g·L^-1”不属于本页，忽略
+\textbf{作切线\unclear{求}}
+
+\begin{problem}
+$A$、$B$两卫星某时刻相距最近，若该时刻开始至两卫星再次相距最近的时间为$T$，在这段时间$T$内两卫星可直接利用微波通信的时间为% 行末贴近页边，后面可能还有字
+\notefig[0.3]{figures/p143_a.png}
+\begin{solution}
+\[ \omega_A t-\omega_B t=2\theta\ \text{①}\qquad \omega_A T-\omega_B T=2\pi\ \text{②}\qquad \dfrac{\text{①}}{\text{②}}\text{得}\ \dfrac{t}{T}=\dfrac{67}{180^\circ} \]
+\[ \sin\alpha=\dfrac{R}{R+\frac{2}{3}R}=\dfrac{3}{5}\qquad \alpha=37^\circ \]
+\[ \sin\beta=\dfrac{R}{R+R}=\dfrac{1}{2}\qquad \beta=30^\circ \]
+时间$t$应大于$\dfrac{67}{180}T$　（不能等于）
+\end{solution}
+\end{problem}
+
+% ---- block 145-03 (原稿第145页) kind=problem ----
+% 印刷题条（B8），题干与 A、B、C 选项为印刷体；括号内“BC”、D 选项及各处标记为手写
+\begin{problem}[B8]
+\textbf{B8、}我国的“天链一号”卫星是地球同步卫星，可为中低轨道卫星提供数据通讯，如图所示为“天链一号”卫星$a$、赤道平面内的低轨道卫星$b$、地球的位置关系示意图，$O$为地心，地球相对卫星$a$、$b$的张角分别为$\theta_1$弧度和$\theta_2$弧度（$\theta_2$图中未标出），卫星$a$的轨道半径是$b$的4倍，已知卫星$a$、$b$绕地球同向运行，卫星$a$的周期为$T$，在运行过程中由于地球的遮挡，卫星$b$会进入卫星$a$通讯的盲区，卫星间的通讯信号视为沿直线传播，信号传输时间可忽略。下列分析正确的是（\textbf{BC}）
+
+\noindent A．卫星$a$、$b$的速度之比为\struck{2}：1% “2”被一条斜线划去
+
+\noindent B．卫星$b$的周期为$\dfrac{T}{8}$% 此项旁有一条手绘的长弧线
+
+\noindent C．卫星$b$每次在盲区运行的时间$\dfrac{\theta_1+\theta_2}{14\pi}T$% 分式处有斜线划过
+
+\noindent D、$\dfrac{\theta_1+\theta_2}{16\pi}T$　$\times$% D 项为手写，后跟“×”
+\notefig[0.25]{figures/p145_b.png}
+\begin{solution}
+外围角为$\theta_1+\theta_2$
+\[ \dfrac{\theta_1+\theta_2}{2\pi} \]
+\[ t=\dfrac{\theta_1+\theta_2}{2\pi}\,\dfrac{T}{7}=\dfrac{\theta_1+\theta_2}{14\pi}T \]
+\[ \dfrac{T_a}{T_b}=\left(\dfrac{r_a}{r_b}\right)^{\frac{3}{2}}=8 \]
+\[ t_{\text{遇}}=\dfrac{T\,\dfrac{T}{8}}{T-\dfrac{T}{8}}=\dfrac{T}{7} \]
+\[ 2\pi-(\pi-\theta_1)-(\pi-\theta_2)=\theta_1+\theta_2 \]
+\end{solution}
+\end{problem}
+
+\subsection{张角与拍摄范围}
+% ---- block 143-02 (原稿第143页) kind=problem ----
+\begin{problem}[9]
+\textbf{9、}卫星$t$ s绕木星$N$圈，速率为$V$，求轨道半径和木星第一宇宙速度
+\notefig[0.3]{figures/p143_b.png}
+\begin{solution}
+由$t=\dfrac{N\,2\pi r}{V}$　$\therefore\ r=\dfrac{Vt}{2\pi N}$
+
+\unclear{表面}$\dfrac{GMm}{R^2}=\dfrac{mV_1^2}{R}$，　$V_1=\sqrt{\dfrac{GM}{R}}$
+\[ \begin{cases}
+\text{卫星}\ \dfrac{GMm'}{r^2}=\dfrac{m'V^2}{r}\\[4pt]
+R=r\sin\dfrac{\theta}{2}
+\end{cases} \]
+\[ GM=V_1^2R \]
+\[ \therefore\ V_1=\dfrac{V}{\sqrt{\sin\dfrac{\theta}{2}}} \]
+\end{solution}
+\end{problem}
+
+% ---- block 144-01 (原稿第144页) kind=problem ----
+\begin{problem}[10]
+\textbf{10、}求卫星$V_A:V_B$　　$A,B$与$A,O$间连线间夹角最大为$\theta$
+\notefig[0.2]{figures/p144_a.png}
+\begin{solution}
+\[ V=\sqrt{\dfrac{GM}{r}}\qquad T=\sqrt{\dfrac{4\pi r^3}{GM}}\qquad \omega=\sqrt{\dfrac{GM}{r^3}} \] % CHECK: T 式根号内 π 无平方（手写如此，其余处为 4π^2）
+\[ V\propto\dfrac{1}{\sqrt{r}}\qquad \sin\theta=\dfrac{r_B}{r_A} \]
+\[ \dfrac{V_A}{V_B}=\sqrt{\dfrac{r_B}{r_A}}=\sqrt{\sin\theta} \]
+\[ \dfrac{T_A}{T_B}\propto\sqrt{\dfrac{R_B^3}{R_B^3}}=\sqrt{\sin^3\theta}\qquad \dfrac{\omega_A}{\omega_B}\propto\dfrac{\sqrt{R_B^3}}{\sqrt{R_A^3}}=\sqrt{\dfrac{1}{\sin^3\theta}} \] % CHECK: 左式分子下标 A/B 难辨(似 B 涂改自 A)，分母为 R_B^3；且两式结果与 sinθ=r_B/r_A 的推导似互换
+\end{solution}
+\end{problem}
+
+% ---- block 144-03 (原稿第144页) kind=problem ----
+\begin{problem}[12]
+\textbf{12、}某卫星速度\unclear{和}1天内将地面上赤道各处在日照条件下的情况拍下来，卫星在每次通过赤道上空时，卫星上的摄像机应拍摄地面上赤道的\uline{弧长}$S$是多少？% “摄”与“像”之间有一处小的涂改/叠写
+\notefig[0.2]{figures/p144_c.png}
+\begin{solution}
+\[ \begin{cases}
+\text{由}\ \dfrac{GMm}{(R+h)^2}=\dfrac{mV^2}{R+h}\\[4pt]
+m_0g=\dfrac{GMm_0}{R^2}
+\end{cases} \]
+\[ \dfrac{GMm}{(R+h)^2}=m\dfrac{4\pi^2}{T'^2}(R+h) \]
+\[ T'=\dfrac{2\pi}{R}\sqrt{\dfrac{(R+h)^3}{g}} \]
+\[ V=\dfrac{R}{R+h}\sqrt{g(R+h)}, \]
+\[ N=\dfrac{T}{T'} \]
+\[ S=\dfrac{2\pi R}{N}=\dfrac{4\pi^2}{T^2}\sqrt{\dfrac{(R+h)^3}{g}} \] % CHECK: 由 S=2πR·T'/T 推得应为 4π^2/T(一次方)，手写为 T^2
+\unclear{…}$\to N$% N 下方有一处小字批注并有箭头指向 N，辨认不清
+\end{solution}
+\end{problem}
+
+% ---- block 144-04 (原稿第144页) kind=problem ----
+\begin{problem}[13]
+\textbf{13、}求摄像机所能拍摄总面积、与地球表面积之比。　$V_{\text{球}}=\dfrac{4}{3}\pi R^3$　$S_{\text{球冠}}=2\pi Rh$
+\notefig[0.3]{figures/p144_d.png}
+\begin{solution}
+\[ \cos\alpha=\dfrac{\sqrt{R^2-r^2}}{R} \]
+\[ h=r(1-\cos\alpha) \]
+\[ \text{则}=\dfrac{S-S_0}{S}=\dfrac{4\pi R^2-2\cdot2\pi Rh}{4\pi R^2}=\dfrac{R-h}{R}=1-(1-\cos\alpha)=\cos\alpha \]
+\[ \cos\alpha=\sqrt{1-\left(\dfrac{r}{R}\right)^2}=\sqrt{1-\left(\dfrac{3\pi}{G\rho T^2}\right)^{\frac{2}{3}}} \]
+\end{solution}
+\end{problem}
+
+
+\section{双星与多星模型}
+\subsection{双星模型}
+% ---- block 135-01 (原稿第135页) kind=formula ----
+\textbf{双星结论.}\quad 双星及三星
+\[
+T=2\pi\sqrt{\frac{L^{3}_{\text{距离}}}{Gm_{\text{和}}}}\qquad
+\omega=\sqrt{\frac{GM_{\text{和}}}{L_{\text{距离}}^{3}}}
+\] % ω 式分子的质量符号形似大写 M
+\[ m_1r_1=m_2r_2 \]
+
+\textbf{一、双星}
+\notefig[0.3]{figures/p135_a.png}
+\[
+\left\{\begin{aligned}
+\frac{Gm_1m_2}{(r_1+r_2)^{2}}&=\frac{m_{1}4\pi^{2}}{T^{2}}r_1\\[4pt]
+\frac{Gm_1m_2}{(r_1+r_2)^{2}}&=\frac{m_{2}4\pi^{2}}{T^{2}}r_2
+\end{aligned}\right.
+\ \longrightarrow\
+\left\{\begin{aligned}
+&\text{质心\ 杆杠平衡}\\
+&m_1r_1=m_2r_2\\[4pt]
+&T=\sqrt{\frac{4\pi^{2}(r_1+r_2)^{3}}{G(m_1+m_2)}}
+\end{aligned}\right.
+\] % 原稿字序为“杆杠平衡”（通常说“杠杆”）；“衡”字后另有一个形如“]”的笔画
+
+\[ m_1\gg m_2\qquad r_1\ll r_2\qquad m_1+m_2=m_1\ \to\ \text{中心天体\unclear{型}} \]
+
+% ---- block 125-03 (原稿第125页) kind=method ----
+\textbf{双星模型.}
+
+\notefig[0.28]{figures/p125_a.png}
+% 图：两同心圆轨道，$m_1$、$m_2$ 在圆心 O 两侧，$r_1$、$r_2$，受力 $F_1$、$F_2$(指向 O)，角速度 $\omega_1$、$\omega_2$，两星间距 $L$(双向箭头)
+
+\begin{align*}
+\frac{Gm_1m_2}{L^{2}}&=m_1\omega^{2}r_1=m_1a_1 &&\text{①}\\
+\frac{Gm_1m_2}{L^{2}}&=m_2\omega^{2}r_2=m_2a_2 &&\text{②}
+\end{align*}
+% 原稿圈号“①”写在 m_1a_1 前、“②”写在“=m_2a_2”前，此处统一放在式末
+
+\[
+m_1r_1=m_2r_2\qquad \text{①+②}\quad \omega=\sqrt{\frac{Gm_1m_2}{(m_1+m_2)L^{3}}}\qquad v_1+v_2=\omega L
+\]
+\[
+r_1+r_2=L\qquad T=2\pi\sqrt{\frac{(m_1+m_2)L^{3}}{Gm_1m_2}}
+\]
+% CHECK: 原稿有一条斜线自 ω 式上沿贯穿至 T 式下沿，疑为划去标记；且这两式与标准结果 ω^2=G(m_1+m_2)/L^3 不符(原稿分子像 Gm_1m_2)。页面底边处 T 式分母可能略被截
+
+% ---- block 135-02 (原稿第135页) kind=derivation ----
+\textbf{等效质量}
+\notefig[0.3]{figures/p135_b.png}
+周期为$T$
+\notefig[0.35]{figures/p135_c.png}
+\[
+\left\{\begin{array}{l}
+\dfrac{Gm_1m_2}{(r_1+r_2)^{2}}=\dfrac{Gm_1\text{\unclear{$M$}}}{r_1^{2}}\\[10pt]
+m_1r_1=m_2r_2
+\end{array}\right.
+\qquad \frac{m_2}{m_1+m_2}=\frac{r_1}{r_1+r_2}
+\] % 右式分子的 M 原稿形似小写 m
+\[ \therefore\ M=\left(\frac{r_1}{r_1+r_2}\right)^{3}m_2=\frac{m_2^{3}}{(m_1+m_2)^{2}} \] % CHECK: 括号外指数原稿为 3，按推导（与末式 m_2^3/(m_1+m_2)^2 一致）应为 2
+等效质量
+
+\subsection{三星模型}
+% ---- block 125-04 (原稿第125页) kind=method ----
+\textbf{三星模型}
+
+\notefig[0.3]{figures/p125_b.png}
+% 图：圆周上三星共线(左、中、右)，两端星绕中心星转动，间距均为 $r$，箭头表示运动方向；图左侧有算式尾部
+
+$\dfrac{Gm^{2}}{r^{2}}+\dfrac{Gm^{2}}{(2r)^{2}}=ma_{\text{向}}$
+
+\notefig[0.28]{figures/p125_c.png}
+% 图：圆周上三星构成边长 $L$ 的等边三角形，标注 $m$、$L$，虚线为半径；算式尾部叠在图左上
+
+$\dfrac{Gm^{2}}{L^{2}}\cos30^{\circ}\times2=ma_{\text{向}}$\qquad $r=\dfrac{L}{2\cos30^{\circ}}$
+
+% ---- block 128-03 (原稿第128页) kind=derivation ----
+% 页面右上角
+\[ \text{三星}\quad F_{\text{合}}=\dfrac{mv^{2}}{R}=m\dfrac{4\pi^{2}}{T^{2}}R=\dfrac{4m^{2}\pi^{2}\sqrt{3}\,L}{3T^{2}} \]
+% CHECK: 末项分子 m 右上角似有“2”（量纲上多余），原样转录
+\[ F_{n}=\dfrac{Gm^{2}}{L^{2}} \]
+% CHECK: F 的下标字形像 n（也可能是 2），下同
+\[ \dfrac{F_{3}/2}{F_{n}}=\cos30^\circ \]
+\[ m=\dfrac{4\pi^{2}L^{3}}{3GT^{2}}\,\unclear{F_{3}} \]
+% CHECK: 分式右侧多出一个像 F_3 的小字
+\[ =\unclear{\dfrac{16\pi^{4}L^{6}}{9G^{2}T^{4}}} \]
+\[ v=\dfrac{2\sqrt{3}\,\pi L}{3T} \]
+% 下图：三个星体(小圆圈)构成三角形，左边标 L，右上标 T(或 7)，三角形内有一个“2”样的符号
+\notefig[0.25]{figures/p128_a.png}
+
+% ---- block 135-03 (原稿第135页) kind=derivation ----
+\textbf{二、三星}
+
+(1)
+\notefig[0.3]{figures/p135_d.png}
+\[
+\begin{aligned}
+\text{对}m_1:&\quad \frac{Gm_1m_2}{(r_1+r_2)^{2}}+\frac{Gm_1m_0}{r_1^{2}}=\frac{m_{1}4\pi^{2}r_1}{T^{2}}\\[6pt]
+\text{对}m_2:&\quad \frac{Gm_1m_2}{(r_1+r_2)^{2}}+\frac{Gm_2m_0}{r_2^{2}}=\frac{m_{2}4\pi^{2}r_2}{T^{2}}
+\end{aligned}
+\] % 原稿两式共用左侧一个大括号；第二式右端 r_2 右上有一小撇（疑为笔迹）
+
+% ---- block 135-04 (原稿第135页) kind=derivation ----
+(2)\quad 找对称\unclear{类}
+\notefig[0.3]{figures/p135_e.png}
+\[ \sqrt{3}\,\frac{Gmm}{a^{2}}=\frac{m4\pi^{2}}{T^{2}}\cdot\frac{\sqrt{3}}{3}\,a \]
+\[ T=\sqrt{\frac{4\pi^{2}a^{3}}{3GM}} \] % CHECK: 分母质量符号原稿形似大写 M（上式为 m）
+
+% ---- block 135-05 (原稿第135页) kind=derivation ----
+(3)\quad 余弦定理法
+\notefig[0.35]{figures/p135_f.png}
+\[ r=\sqrt{\left(\frac{a}{2}\right)^{2}+\left(\frac{3}{5}\sqrt{3}\,a\right)^{2}}=\frac{\sqrt{13}}{\sqrt{25}}\,a \] % CHECK: 第二项括号内疑漏 1/2 因子（几何上应为 (3/5)(√3/2)a）
+
+质心位：两两一组找质心\qquad 三星周期相等
+
+令 $\dfrac{Gmm}{a^{2}}=F$ % 此式右侧另有一条斜线(分隔符)
+\notefig[0.2]{figures/p135_g.png}
+\red{余弦Th算合力}
+\[ F_{\text{合}}=\sqrt{(3F)^{2}+F^{2}\,\text{\unclear{$-$}}\,2F\cdot3F\cos120^\circ}=\sqrt{13}\,F \] % 根号内 F^2 与 2F·3F 之间的符号被红字覆盖（按余弦定理应为 −）
+\red{由 $F_{\text{合}}=\dfrac{m4\pi^{2}}{T^{2}}\,\text{\unclear{$r$}}$} % 红字压在上一式下方，末尾的 r 不清
+\[ \sqrt{13}\,\frac{Gmm}{a^{2}}=\frac{m4\pi^{2}}{T^{2}}\underbrace{\sqrt{\frac{13}{25}}\,a}_{\red{r_{\text{质心}}}}\qquad T=\sqrt{\frac{4\pi^{2}a^{3}}{5Gm}} \] % 根式下方有红笔标注“r质心”；T 式分母的质量符号形似 m/M
+
+% ---- block 130-05 (原稿第130页) kind=problem ----
+% 左图（红笔批注为主）：三角形，顶点 3m，底边左端 2m、右端 m；底边上一点（距左端 a/3、距右端 2a/3）标 3m，该点与顶点连线中点标“6m 质心”；左上“质心”被圈；另有 L/2 与箭头、60°、120°
+\notefig[0.3]{figures/p130_d.png}
+% 右图：同一三角形，顶点 3m 处受两个力（红色箭头）；图内红字：6F_0=G6m^2/a^2（左上）、G3m^2/a^2=3F_0（右上）；标 60°、120°
+\notefig[0.4]{figures/p130_e.png}
+\[ F=\dfrac{G\cdot18m^{2}}{\dfrac{7a^{2}}{9}}=\unclear{\ldots} \]
+% 页面右边缘截断，等号右边的式子看不全（分母处可见“7a…”）
+\textbf{用余弦定理算}\struck{\unclear{$\ldots$}}\textbf{合力}
+\[ F_A=\sqrt{(6F)^{2}+(3F)^{2}-2\cdot6F\cdot3F\cos120^\circ} \]
+\[ =\sqrt{36F^{2}+9F^{2}+\unclear{36}F^{2}\cdot\dfrac{1}{2}}=\sqrt{63F^{2}}=\unclear{\ldots} \]
+% 末项“36”被改写，其右侧有小字 1/2；行末被页边截断，仅见“=√6…”
+\[ =3\sqrt{7}\,\dfrac{Gm^{2}}{a^{2}} \]
+\red{三星环绕半径}
+\[ \red{L=\sqrt{a^{2}+\left(\dfrac{a}{3}\right)^{2}-2a\dfrac{a}{3}\cos60^\circ}} \]
+% 页面最左边缘，等号前面的字母被页边遮住：
+\[ =\sqrt{\dfrac{4\pi^{2}\unclear{r^{3}}}{GM}} \]
+\[ =\sqrt{a^{2}+\dfrac{a^{2}}{9}-\dfrac{\unclear{3}}{9}a^{2}}=\sqrt{\dfrac{\unclear{7}}{9}a^{2}}=\dfrac{\sqrt{7}\,a}{3} \]
+
+\subsection{四星模型}
+% ---- block 125-05 (原稿第125页) kind=method ----
+\textbf{四星模型}
+
+\notefig[0.3]{figures/p125_d.png}
+% 图：圆周上四星构成边长 $L$ 的正方形，中心 O，标注 $m$、$L$
+
+$\dfrac{Gm^{2}}{L^{2}}\times2\cos45^{\circ}+\dfrac{Gm^{2}}{(\sqrt{2}L)^{2}}=ma_{\text{向}}$\qquad $r=\dfrac{\sqrt{2}}{2}L$
+
+\notefig[0.3]{figures/p125_e.png}
+% 图：圆周上三个质量 $m$ 构成边长 $L$ 的等边三角形，中心为质量 $M$，标注 $m$、$M$、$L$
+
+$\dfrac{Gm^{2}}{L^{2}}\times2\times\cos30^{\circ}+\dfrac{GMm}{r^{2}}=ma_{\text{向}}$\qquad $r=\dfrac{L}{2\cos30^{\circ}}$
+
+% ---- block 192-08 (原稿第192页) kind=problem ----
+6.
+\notefig[0.25]{figures/p192_b.png}
+
+\begin{problem}
+$G$\ 四星系统
+\begin{solution}
+\[
+d=\frac{\sqrt3}{3}L
+\]
+做圆周运动的半径\ $r=d=\dfrac{\sqrt3}{3}L$
+
+顶点处\ $F_{\text{向}}=2\dfrac{Gm^2}{L^2}\cos30^\circ+\dfrac{Gm^2}{r^2}=\dfrac{(3+\sqrt3)Gm^2}{L^2}$
+
+由牛二\ $F_{\text{向}}=m\omega^2r$\quad $\omega=\sqrt{\dfrac{(3+3\sqrt3)Gm}{L^3}}$\quad $\checkmark$
+
+$T=\dfrac{2\pi}{\omega}=2\pi\sqrt{\dfrac{L^3}{(3+3\sqrt3)Gm}}$\quad $\checkmark$
+\end{solution}
+\end{problem}
+
+
+\section{拉格朗日点}
+% ---- block 136-01 (原稿第136页) kind=knowledge ----
+\textbf{拉格朗日点}
+\notefig[0.55]{figures/p136_a.png}
+周期一样\qquad 受到 2 个引力 % “引力”的“引”手写成“31”；上方两条箭头分别指向图中月球附近与卫星处
+
+$R$大\ $V$大
+
+$L_2$比$L_3$离地球远
+
+$L_2$合力比·$L_1$ $L_3$大
+
+对称点 % 原稿写在图中圆弧下方
+
+受力不平衡
+
+卫星与月球同步转\quad \fbox{大$R$ 大$V$ 大$a$} % 后者被手绘椭圆圈起
+
+$\omega$一样\quad $T$一样\quad 同轴转 % “ω一样 T一样”下方有一条波浪线，“同轴转”写在波浪线下方
+
+$a_3>a_1$\qquad $a=\omega^{2}r$
+
+% ---- block 117-06 (原稿第117页) kind=note ----
+拉格朗日点\quad 同轴转体\quad 不会失重\quad \unclear{地月动}.
+
+% ---- block 130-02 (原稿第130页) kind=method ----
+% 手绘大括号“〈 〉”括起以下标题；“拉日点”三字被圈
+\textbf{拉日点}\quad\textbf{同轴转体}
+
+$T_{\text{月}}=31$天\ (28$\sim$31天)
+% 图：大圆（轨道），圆心偏左处标 M_地，近右侧标 M_月，水平虚线上自左至右标 L_1、L_2、L_3，圆上标 L_4（上）、L_5（下），另有 r、v_0 及弧线箭头
+\notefig[0.3]{figures/p130_c.png}
+\[ T_{\text{月}}=T_{\text{卫}}=31\text{天} \]
+\[ \left\{\begin{aligned}
+&\dfrac{GMm_0}{(r+r_0)^{2}}+\dfrac{G\unclear{M}m_0}{r_0^{2}}=\dfrac{m_0 4\pi^{2}}{T^{2}}(r+r_0)\\[4pt]
+&\dfrac{GMm}{r^{2}}=\dfrac{m4\pi^{2}}{T_{\text{月}}^{2}}\,r
+\end{aligned}\right.\qquad T=T_{\text{月}} \]
+% CHECK: 第一式第二项分子的 M 也可能是小写 m（月球质量）
+
+% ---- block 130-04 (原稿第130页) kind=derivation ----
+\[ T_{\text{卫}}=T_{\text{双星}} \]
+\[ \left\{\begin{aligned}
+T_{\text{双}}&=\sqrt{\dfrac{4\pi^{2}\unclear{a^{3}}}{\unclear{G}\,2m}}\\[4pt]
+\sqrt{3}\,\dfrac{Gmm}{a^{2}}&=\dfrac{m4\pi^{2}}{T_{\text{卫}}^{2}}\cdot\dfrac{\sqrt{3}}{2}\,a
+\end{aligned}\right.\qquad T_{\text{卫}}=T_{\text{双星}} \]
+% 第一式根号内分子有涂改（4π^2 后的 a^3 被涂黑加粗），分母“G·2m”的 G 写得像 a
+
+% ---- block 136-02 (原稿第136页) kind=derivation ----
+\notefig[0.55]{figures/p136_b.png}
+\[
+\begin{aligned}
+\text{对卫星}:\quad F_{\text{向}}&=\frac{GMm_0}{L_2^{2}}+\frac{GM_0m}{(L_2-L)^{2}}=M_0\omega^{2}L_2\\[8pt]
+\text{对月球}:\quad \frac{GMm}{L^{2}}&=m\omega^{2}L
+\end{aligned}
+\] % 原稿两式共用左侧一个大括号；CHECK: 第一式第一项分子原稿写作 GMm_0（卫星质量在图中及其它项中为 M_0）
+\[ L_2\left(R\left(1+\sqrt[3]{\frac{m}{3M+m}}\right),0\right) \]
+\[ L_1\left(R\left(1-\sqrt[3]{\frac{m}{3M+m}}\right),0\right) \] % CHECK: 根号内分母原稿为 3M+m（常见结果为 3(M+m) 或 3M），照原稿转录
 
