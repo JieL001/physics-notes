@@ -1,6 +1,15 @@
-# 高中物理笔记 → LaTeX：进度与续跑说明（最后更新 2026-10-03 02:50，+08）
+# 高中物理笔记 → LaTeX：进度与续跑说明（最后更新 2026-10-03 15:10，+08）
 
-## 云端续跑（2026-10-03 04:40 +08 起，Claude Code 云会话；这一节最新，优先看）
+## 完成状态（2026-10-03，云会话；最新）
+- **全部 278 个不重复页已转录**（1522 块、1303 张配图），`collect.py` 无格式问题，所有页文件 texcheck 通过。
+- **20 章大纲已重做**（`_work/plans/chNN.json`，每章 1–15 个小节 + 二级小节；`_work/plan_prompts/` 是给大纲 agent 的提示词），`assemble.py` 全部 OK（每块恰好出现一次）。大纲 agent 报告的疑似归错章/重复块及处理决定见 `_work/plan_reports.md`（移动了 6 块：273-06→01、194-07→06、119-03/05→07、189-10→05、239-01→10；其余保留）。
+- **成书**：`main.pdf` 537 页（目录 + 18 个物理章 + 数学方法章 + 附录“其他学科”），XeLaTeX 0 错误、0 缺字。
+- **待核对清单**：`待核对清单.md`（551 处 CHECK/疑似重复 + 837 处看不清，271 页），由 `tools/review_list.py` 生成；p165 以后各转录员自报的重点在 `_work/agent_reports.md`。
+- **一个必须知道的修复**：XeLaTeX + 可跨页 tcolorbox 会让后文正文变成白字（第 34 页起大片“消失”，PDF 里文字在、但白色）。原因：框被拆页时盒内残留的颜色 push 打乱了 pgf 的 xdvipdfmx 颜色重置技巧，颜色栈里留下白色。`preamble.tex` 里对 `\tcb@vbox` 打了补丁（仅 XeTeX 生效）；修后全书白色文字只剩框标题。本地 MiKTeX 编译同样受益。
+- 另外两处排版：p233 一行过长公式拆两行、p045 七列表格缩放到版心宽（内容不变）。
+- 重新生成全书：`python tools/collect.py` → `python tools/assemble.py 01 02 … 18 90 99` → `python tools/build_main.py` → 在 `physics_notes_latex/` 下 `xelatex main.tex` 跑 2–3 遍（Linux 上加 `"\PassOptionsToClass{fontset=ubuntu}{ctexbook}\input{main.tex}"`）。
+
+## 云端续跑（2026-10-03 04:40 +08 起，Claude Code 云会话）
 - 仓库：GitHub 私有仓库 `JieL001/physics-notes`。`main` = 用户 10-03 凌晨上传的快照（整个项目 + 原件 + 本地 scratchpad 工具副本 `local_tools/`）；工作分支 `claude/serene-meitner-3p3st7`，每验收完一个单元提交并推送一次。容器里的克隆在 `/home/user/physics-notes`。
 - 原件：`source/p001-010.pdf … p291-300.pdf`（从 `Desktop\高中物理笔记.pdf` 每 10 页切一份）。和本地 split 逐像素一致：12 张已有配图用同样坐标重裁，max_diff=0。
 - 工具：PROJ 改为按脚本所在位置定位（Windows/Linux 通用；本地 scratchpad 里的旧副本不受影响）。Linux 上读 `source/`，编译用 TeX Live + ctex `fontset=ubuntu`（Noto CJK；默认 Fandol 缺 ⑪–⑳），看图/编译的临时文件在会话 scratchpad 的 `pn/`。
