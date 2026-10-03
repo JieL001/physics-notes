@@ -984,7 +984,7 @@ $a\to b$ 风力 $F=ma=\dfrac{25mV^2}{2d}$
 $V_{\min}=V_a\sin53^\circ=2.4V$
 
 
-\section{圆周运动的描述与传动}
+\section{圆周运动的基本量与传动}
 % ---- block 258-01 (原稿第258页) kind=formula ----
 \begin{gather*}
 v=\frac{\Delta\widehat{l}}{\Delta t}\qquad \unit{m/s}\\
@@ -1232,6 +1232,22 @@ r=L\sin\theta\qquad v=\sqrt{gL\sin\theta\tan\theta}\qquad \omega=\sqrt{\frac{g}{
 \]
 若 $\theta\uparrow$ 则 $\omega\uparrow$ $v\uparrow$ $F_n\uparrow$ $T\uparrow$
 
+% ---- block 240-08 (原稿第240页) kind=knowledge ----
+\textbf{圆锥摆}
+
+\notefig[0.2]{figures/p240_i.png}
+
+多体摆　顶点不重合，全在同一高度
+
+\[
+\left\{\begin{array}{l}
+T\cos\theta=m\omega^2R\\
+T\sin\theta=mg
+\end{array}\right.
+\qquad
+\omega=\sqrt{\frac{g}{h}}
+\]
+
 % ---- block 069-07 (原稿第69页) kind=method ----
 \textbf{圆锥摆}
 
@@ -1264,22 +1280,6 @@ T&=mL\omega^2=\dfrac{mg}{\cos\theta} & a_{\text{向}}&=g\tan\theta=\omega^2r=\df
 &=\sqrt{\frac{g}{h}}
 \end{align*}
 \[ T=m\omega^2L \]
-
-% ---- block 240-08 (原稿第240页) kind=knowledge ----
-\textbf{圆锥摆}
-
-\notefig[0.2]{figures/p240_i.png}
-
-多体摆　顶点不重合，全在同一高度
-
-\[
-\left\{\begin{array}{l}
-T\cos\theta=m\omega^2R\\
-T\sin\theta=mg
-\end{array}\right.
-\qquad
-\omega=\sqrt{\frac{g}{h}}
-\]
 
 % ---- block 069-09 (原稿第69页) kind=method ----
 \textbf{双圆锥摆}
@@ -1945,6 +1945,26 @@ $v=\sqrt{2gl}$
 洗衣机
 
 \subsection{圆周运动与抛体运动的综合}
+% ---- block 227-05 (原稿第227页) kind=note ----
+\notefig[0.3]{figures/p227_c.png}
+
+能在D抛出 \quad $mg\le\dfrac{mV_D^{2}}{R}$
+
+求$h$、$x$关系 分段讨论
+
+过了某个点/未过某个点
+
+% ---- block 090-03 (原稿第90页) kind=problem ----
+\begin{problem}
+\notefig[0.35]{figures/p090_c.png}
+求飞得最远的 $R$
+\begin{solution}
+\[ \begin{cases} S=V_0t\\ 2R=\dfrac12gt^2\\ \dfrac12mV^2-\dfrac12mV_0^2=-mg\,2R\end{cases}\qquad S=\sqrt{4R\left(\dfrac{V_0^2}{g}-4R\right)} \]
+% CHECK: 第一式手写形似 S=V_0 t（按物理应为出口速度 V：S=Vt）
+均值不等式\quad $R=\dfrac{V_0^2}{8g}$ 时取等
+\end{solution}
+\end{problem}
+
 % ---- block 195-03 (原稿第195页) kind=problem ----
 % 原稿此块（及下方一行）被一条自右上向左下、末端回钩的大弧线划过，疑似划去，仍照录
 \notefig[0.4]{figures/p195_b.png}
@@ -1992,26 +2012,6 @@ mg\,2R\cos\alpha=\frac{1}{2}mV_F^2
 \[
 X=V_F\cos\alpha\cdot\frac{V_F\sin\alpha}{g}=\frac{V_F^2}{g}\sin\alpha\cos\alpha=1.6\cos^2\alpha\sin\alpha\le\frac{16\sqrt3}{45}\ \Rightarrow\ \tan\alpha=\frac{\sqrt2}{2}\ \text{时取等}
 \]
-\end{solution}
-\end{problem}
-
-% ---- block 227-05 (原稿第227页) kind=note ----
-\notefig[0.3]{figures/p227_c.png}
-
-能在D抛出 \quad $mg\le\dfrac{mV_D^{2}}{R}$
-
-求$h$、$x$关系 分段讨论
-
-过了某个点/未过某个点
-
-% ---- block 090-03 (原稿第90页) kind=problem ----
-\begin{problem}
-\notefig[0.35]{figures/p090_c.png}
-求飞得最远的 $R$
-\begin{solution}
-\[ \begin{cases} S=V_0t\\ 2R=\dfrac12gt^2\\ \dfrac12mV^2-\dfrac12mV_0^2=-mg\,2R\end{cases}\qquad S=\sqrt{4R\left(\dfrac{V_0^2}{g}-4R\right)} \]
-% CHECK: 第一式手写形似 S=V_0 t（按物理应为出口速度 V：S=Vt）
-均值不等式\quad $R=\dfrac{V_0^2}{8g}$ 时取等
 \end{solution}
 \end{problem}
 
