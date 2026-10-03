@@ -1,0 +1,10 @@
+% p005_f 的电脑重画（U_c-ν 图像：自 ν_0 起的斜直线，虚线延长到纵轴截距 -W_0/e，斜率 k=h/e）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \draw[->] (0,-1.0) -- (0,1.9) node[above] {$U_c$};
+  \draw[->] (0,0) -- (3.0,0) node[right] {$\nu$};
+  \draw[dashed] (0,-1.0) -- (1.1,0);
+  \draw (1.1,0) -- (2.55,1.32);
+  \node[right] at (2.65,1.8) {$k=\dfrac{h}{e}$};
+  \node[anchor=north west] at (1.12,-0.08) {$\nu_0$};
+  \node[left, yshift=-2.5mm] at (0,-1.0) {$\dfrac{-W_0}{e}$};
+\end{tikzpicture}

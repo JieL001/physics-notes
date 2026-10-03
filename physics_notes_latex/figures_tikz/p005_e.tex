@@ -1,0 +1,11 @@
+% p005_e 的电脑重画（E_k-ν 图像：自 ν_0 起的斜直线，虚线延长到纵轴截距 -W_0，斜率 k=h）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \draw[->] (0,-1.1) -- (0,2.3) node[above left] {$E_k$};
+  \draw[->] (0,0) -- (3.3,0) node[right] {$\nu$};
+  \draw[dashed] (0,-1.1) -- (1,0);
+  \draw (1,0) -- (2.3,1.43);
+  \fill (1,0) circle (1.4pt);
+  \node[right] at (2.35,1.3) {$k=h$};
+  \node[anchor=north west] at (0.95,-0.12) {$\nu_0=\dfrac{W_0}{h}$};
+  \node[left, yshift=-1.5mm] at (0,-1.1) {$-W_0$};
+\end{tikzpicture}

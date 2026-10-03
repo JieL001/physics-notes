@@ -1,0 +1,15 @@
+% p005_a 的电脑重画（黑体辐射：强度-λ 曲线，T大 的峰高且靠左，T小 的峰矮且靠右）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \draw[->] (0,0) -- (0,2.4) node[above] {强度};
+  \draw[->] (0,0) -- (4.9,0) node[right] {$\lambda$};
+  % T大
+  \draw (0.4,0.6) .. controls (1.6,0.7) and (1.2,2.0) .. (1.9,2.0)
+                  .. controls (2.35,2.0) and (2.05,0.7) .. (2.9,0.7)
+                  .. controls (3.55,0.7) and (3.5,0.75) .. (4.0,0.8);
+  % T小
+  \draw (0.65,0.25) .. controls (2.2,0.25) and (2.1,0.65) .. (2.35,0.65)
+                    .. controls (2.55,0.65) and (2.5,0.35) .. (2.95,0.35)
+                    .. controls (3.05,0.35) and (3.8,0.45) .. (3.95,0.5);
+  \node at (3.0,1.5) {$T_{\text{大}}$};
+  \node at (4.5,0.4) {$T_{\text{小}}$};
+\end{tikzpicture}
