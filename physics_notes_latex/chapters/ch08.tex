@@ -2,22 +2,8 @@
 \chapter{机械振动与机械波}
 \label{ch:08}
 
-\section{简谐运动·判断（小量近似）}
-% ---- block 092-02 (原稿第92页) kind=derivation ----
-扰动后做简谐运动
-\notefig[0.25]{figures/p092_b.png}
-\begin{align*}
-F_{\text{回}}&=\frac{kQq}{(L-x)^{2}}-\frac{kQq}{(L+x)^{2}}
-=\frac{kQq}{L^{2}\left(1-\dfrac{2x}{L}+\underset{\approx0}{\left(\dfrac{x}{L}\right)^{2}}\right)}\\
-&=\frac{kQq}{L^{2}}\cdot\frac{\dfrac{4x}{L}}{1-\underset{\approx0}{\dfrac{4x^{2}}{L^{2}}}}=\frac{4kQqx}{L^{3}}\ \propto x
-\end{align*}
-% CHECK: 中间两个等号处的式子手写较乱（第二项 -kQq/(L+x)^2 似乎未体现），原样照录
-故为简谐运动
-
-or\quad $F=\dfrac{4kQqLx}{\left[L^{2}\left(1-\underset{\approx0}{\dfrac{x^{2}}{L^{2}}}\right)\right]^{2}}=\dfrac{4kQq}{L^{3}}\,x$
-
-
-\section{简谐运动·两种模型}
+\section{简谐运动}
+\subsection{简谐运动的规律与图像}
 % ---- block 100-01 (原稿第100页) kind=summary ----
 % 原稿：左侧一个大括号并列“简谐运动”与“简谐运动的两种模型”；“两种模型”右侧再用大括号括出下面两项
 \begin{itemize}
@@ -31,8 +17,6 @@ or\quad $F=\dfrac{4kQqLx}{\left[L^{2}\left(1-\underset{\approx0}{\dfrac{x^{2}}{L
 自由振动\quad $f=f_{\text{固有}}$\quad $T=T_{\text{固有}}$
 % “自由振动”一行位于右大括号内、“弹簧振子（水平）”与“单摆”之间偏右处
 
-
-\section{简谐运动·公式与图像}
 % ---- block 100-02 (原稿第100页) kind=summary ----
 % 以下各项（至“单摆及周期公式”）在原稿中被一个大括号归并在左侧“机械振动”之下
 \textbf{机械振动。}
@@ -44,34 +28,11 @@ or\quad $F=\dfrac{4kQqLx}{\left[L^{2}\left(1-\underset{\approx0}{\dfrac{x^{2}}{L
 \end{itemize}
 % “正余弦曲线”上方有向上箭头指向“图像”
 
+% ---- block 109-01 (原稿第109页) kind=knowledge ----
+\fbox{简谐运动}\quad $F_{\text{回}}=-kx$　判别式\\[0.8ex]
+$a=-\dfrac{kx}{m}=\dfrac{\dd v}{\dd t}$　　$v=\dfrac{\dd x}{\dd t}$　　　振幅与机械能正相关\\[0.8ex]
+回复力指向平衡位置（可变方向的\unclear{力}　　变力　不是不变、
 
-\section{受迫振动与共振}
-% ---- block 100-03 (原稿第100页) kind=summary ----
-\begin{itemize}
-\item 受迫振动与共振\quad 机械能不守恒
-  \begin{itemize}
-  \item 系统在驱动力下的振动。
-  \item 受迫振动频率等于驱动力频率，当驱动力频率等于系统固有频率时，发生共振。
-  \end{itemize}
-\end{itemize}
-% 原稿：“机械能不守恒”写在“受迫振动与共振”上方偏右处；其左侧另有两行小字如下
-机械工作底座振动\\
-共振筛、\unclear{声呐}
-
-（共振曲线：纵轴$A$（受迫振动振幅），横轴$f_{\text{驱}}$，峰值对应$f_{\text{固}}$。）
-\notefig[0.28]{figures/p100_a.png}
-
-% ---- block 107-08 (原稿第107页) kind=knowledge ----
-\[
-\left\{\begin{aligned}
-&\text{受迫振动}\quad f=f_{\text{力}}\quad\text{共振}\ \bigl(f_{\text{力}}=f_{\text{固有}}\text{时，能量最大}\bigr)\\
-&\text{自由振动}\quad f=f_{\text{固有}}
-\end{aligned}\right.
-\]
-\notefig[0.3]{figures/p107_d.png}
-
-
-\section{简谐运动·规律与特征}
 % ---- block 100-04 (原稿第100页) kind=summary ----
 \begin{itemize}
 \item 简谐运动的规律。
@@ -98,317 +59,20 @@ or\quad $F=\dfrac{4kQqLx}{\left[L^{2}\left(1-\underset{\approx0}{\dfrac{x^{2}}{L
   \end{itemize}
 \end{itemize}
 
+% ---- block 111-01 (原稿第111页) kind=diagram ----
+\unclear{手段大子}　% 页面顶端被裁切，字迹不全
+\notefig[0.85]{figures/p111_a.png}
+% 图中标注：四幅图依次为(纵轴记号不清)、v、a、E(Ek、Ep)对t的曲线，图上标有T/2、T、t（图中已含）
 
-\section{单摆·周期公式}
-% ---- block 100-05 (原稿第100页) kind=formula ----
-\begin{itemize}
-\item 单摆及周期公式。\quad $F_{\text{回}}$\ $F_{\text{向}}$\ 大小方向时刻变。\quad $T=2\pi\sqrt{\dfrac{L_{\text{等效摆长}}}{g_{\text{等效重力加速度}}}}$
-\end{itemize}
-\[ F_{\text{回}}=-mg\sin\theta=-mg\frac{x}{L}=-kx\qquad F_{\text{向}}=T-mg\cos\theta \]
+% ---- block 109-05 (原稿第109页) kind=note ----
+对称　\fbox{等位移}\ \fbox{等速度}\ \fbox{等加速度}
 
+% ---- block 289-03 (原稿第289页) kind=note ----
+\unclear{无搅3算}\quad $x^2=g$% CHECK: 首行第2、4字不清（第4字被反复涂写）；“x”也可能是 $\omega$
 
-\section{机械波·基本概念}
-% ---- block 100-06 (原稿第100页) kind=summary ----
-% 以下各项在原稿中被一个大括号归并在左侧“机械波”之下；左侧三行标注如下
-机械波\\
-传播形式和能量\\
-不传播质点。
-\begin{itemize}
-\item 机械波。横波和纵波\ $\leftarrow$\ 振动方向与传播方向平行，有密部和疏部。
-\item 波源$+$介质\quad $\hookrightarrow$\ 振动方向与传播方向垂直
-\item 横波的图像。波长、波速和频率的关系。\quad $v=\lambda f$\quad 同介质，$v$ 相同。
-\item 介质中各点 $T$、$A$、$f$ 都与波源相同。一个周期路程 $4A$，位移为0。\quad $\lambda=vT$
-\item 波的干涉和衍射，多普勒效应\ 波源与观察者间有相对运动，波源与波\unclear{频}率不变，观察者接收到的频率\unclear{增大}
-  \begin{itemize}
-  \item $\hookrightarrow$\ 两波频率必须相等。
-  \item $\hookrightarrow$\ 波长与障碍物或孔的尺寸差不多或大。
-  \end{itemize}
-\end{itemize}
+每隔 $t$ 两\unclear{个}质点位移相同一次\quad $2t=nT$
 
-
-\section{波的图像与多解问题}
-% ---- block 100-07 (原稿第100页) kind=summary ----
-\begin{itemize}
-\item 机械波的传播与波的图像。
-  \begin{itemize}
-  \item $y$-$x$ 图
-  \end{itemize}
-\item 振动图像与波的图像综合应用
-  \begin{itemize}
-  \item 用时间联系
-  \end{itemize}
-\item 波的多解问题。
-  \begin{itemize}
-  \item 双向性
-    \begin{itemize}
-    \item 传播方向双向性
-    \item 振动方向双向性
-    \end{itemize}
-  \item 周期性
-    \begin{itemize}
-    \item $\Delta t$ 与 $T$ 关系不确定
-    \item $\Delta x$ 与波长关系不确定。
-    \end{itemize}
-  \item 隐含性\quad 是只给出波形的一部分或只给出几个特殊点。
-  \end{itemize}
-\item 波的干涉、衍射和多普勒效应
-\end{itemize}
-
-
-\section{用单摆测重力加速度}
-% ---- block 102-01 (原稿第102页) kind=method ----
-\textbf{探究单摆的运动\quad 用单摆测定重力加速度}
-
-\textbf{实验原理与操作}
-\[ T=2\pi\sqrt{\frac{L}{g}}\qquad\qquad g=\frac{4\pi^{2}L}{T^{2}} \]
-
-\textbf{数据处理}
-\begin{itemize}
-\item 公式法
-\item 图像法.
-\end{itemize}
-
-\textbf{误差分析}
-\begin{itemize}
-\item 偶然误差.
- \begin{itemize}
- \item 测量时间及摆长时产生的误差
- \item 减小方法：多次测量求平均值/从单摆经过平衡位置时开始计时
- \end{itemize}
-\item 系统误差
- \begin{itemize}
- \item 单摆自身
- \item 摆球选体积小，密度大的
- \item 最大摆角要小于$5^\circ$.
- \end{itemize}
-\end{itemize}
-
-\textbf{注意事项}
-\begin{itemize}
-\item 用$1\unit{m}$左右细线
-\item 悬线顶端不能晃动用夹子夹住，保证顶点固定
-\item 在同一竖直面内摆动，摆角小于$5^\circ$. 从摆球摆到平衡位置开始计时，并数准全振动的次数.
-\end{itemize}
-
-
-\section{振动图像与波动图像}
-% ---- block 107-01 (原稿第107页) kind=summary ----
-\textbf{振动}　$y$-$t$　单个质点不同时刻\\
-\hspace*{1em}矢量　周期均为$T$.　能量　周期 $\dfrac{T}{2}$\\
-\hspace*{1em}$v$和$E_k$看斜率　斜率为正速度正　$a\ v\ x$ 图像\\
-\hspace*{1em}势能和$a$看位移　位移为正加速度\unclear{负}　用求导法画\\
-\hspace*{1em}应代入\unclear{数据}建立\unclear{方程}
-\[
-\left\{\begin{aligned}
-y&=A\sin(\omega x+\varphi)\\
-y&=A\sin(\omega t+\varphi)
-\end{aligned}\right.
-\qquad
-\begin{aligned}
-&y\text{-}x\\
-&y\text{-}t
-\end{aligned}
-\]
-\textbf{波动}　$y$-$x$　整体一刻图象
-\notefig[0.25]{figures/p107_c.png}
-
-\hspace*{1em}振动方向看传播：同侧法　　起振方向看最后质点起振方\unclear{向}\\
-\hspace*{1em}加速度方向看位移　　两点状态看$y$-$t$
-
-\medskip
-\textbf{①}　$y$-$x$的某质点对应$y$-$t$某时刻
-\notefig[0.4]{figures/p107_a.png}
-
-峰对峰　谷对谷　平衡对平衡　　$y$-$t$向右看　$y$-$x$顺\unclear{传播}\\
-上升对下降　下降对上升　　　1对$b$
-
-
-\section{波的多解问题}
-% ---- block 107-02 (原稿第107页) kind=summary ----
-\textbf{②}　多解.　左右两种可能\\
-空间多解（方向）　时间多解（$n$的选取）
-\notefig[0.3]{figures/p107_b.png}
-\[
-\Delta X=\left(n+\dfrac{3}{4}\right)\lambda\quad\text{or}\quad \Delta X=\left(n+\dfrac{1}{4}\right)\lambda
-\]
-\textbf{③}　先传到后振动.
-
-
-\section{振动与波动解题要点}
-% ---- block 107-03 (原稿第107页) kind=formula ----
-路程　$S=\dfrac{t}{T}\cdot 4A$　$\big|$　\underline{位移}用三角对应法　$\big|$　三角函数找　$\big|$　考虑相长相消（同频波）（波的干涉）$\big|$\\[0.8ex]
-同向　$t=\dfrac{S}{v_1+v_2}$　　反向　$t=\dfrac{S}{|v_1-v_2|}$ % CHECK: 原稿“同向”用v1+v2、“反向”用|v1-v2|，与常识(相向相加、同向相减)相反，照原样转录
-
-
-\section{波速与频率·机械波与电磁波}
-% ---- block 107-04 (原稿第107页) kind=knowledge ----
-\fbox{机械波}　\underline{$V$只与介质有关}　$\big|$　本子中波速全为$V$（不管任何机械波）\\[1ex]
-\fbox{电磁波}　$f$不变　$\big|$　$V=\dfrac{c}{n}$、颜色不变
-
-
-\section{波动方程}
-% ---- block 107-05 (原稿第107页) kind=formula ----
-\[
-\text{波动方程}\ \left\{\begin{aligned}
-\text{向右}\quad y&=A\sin\left[\omega\left(t-\dfrac{x}{v}\right)+\varphi\right]\\
-\text{向左}\quad y&=A\sin\left[\omega\left(t+\dfrac{x}{v}\right)+\varphi\right]
-\end{aligned}\right.
-\qquad
-\begin{aligned}
-&y\text{-}t:\ x\text{定}\\
-&y\text{-}x:\ t\text{定}
-\end{aligned}
-\]
-
-
-\section{波的干涉}
-% ---- block 107-06 (原稿第107页) kind=knowledge ----
-\fbox{波的干涉}　波程差为
-\[
-\left\{\begin{aligned}
-2n\cdot\dfrac{\lambda}{2}&\quad\text{相长}\quad A_1+A_2\\
-(2n+1)\cdot\dfrac{\lambda}{2}&\quad\text{相消}\quad |A_1-A_2|
-\end{aligned}\right.
-\]
-前提同频波　$f_1=f_2$\\
-看起振　振动方向，步调始终相反\\
-若为反相波则　规律相反　　半波损失$\to$反相波\\[1ex]
-$\Delta X=2n\cdot\dfrac{\lambda}{2}$　$n=0$为最亮纹　$n=1$为第一亮纹…\\[1ex]
-$\Delta X=(2n+1)\dfrac{\lambda}{2}$　第零\unclear{亮}纹 % CHECK: (2n+1)λ/2 应对应暗纹，此处字迹像“亮”，存疑
-
-
-\section{波的衍射}
-% ---- block 107-07 (原稿第107页) kind=knowledge ----
-\fbox{波的衍射}　$\lambda\ge$ 或 \unclear{$\approx$} 障碍物尺寸，出现\underline{明暗相间亮条纹}
-
-
-\section{单摆实验}
-% ---- block 108-01 (原稿第108页) kind=knowledge ----
-\textbf{单摆}\quad\textbf{①}\ 器材
-\begin{itemize}
-\item 球：\unclear{密度大}，体积小\quad（$f$小且$m$不太大）
-\item 线：轻/\unclear{刚}/\unclear{优}/\unclear{平}/长、（超过$1\unit{m}$）
-\item 夹子：固定悬点，调节摆长
-\item 秒表：教材实验中\ \fbox{仅有的使用秒表实验}
-\end{itemize}
-
-% ---- block 108-02 (原稿第108页) kind=knowledge ----
-\textbf{②}\ 摆长\quad $l=\dfrac{d}{2}+l_0$
-\notefig[0.25]{figures/p108_a.png}
-摆长$=$半径$+$绳长.
-
-% ---- block 108-04 (原稿第108页) kind=method ----
-\textbf{④}\ 周期：
-\begin{itemize}
-\item $n$次全振动用时$t$　$T=\dfrac{t}{n}$　\underline{从通过平衡位移开始计次数} % CHECK: 原稿此处写“位移”，疑为“位置”
-\item $n$次过平衡位置　$T=\dfrac{2t}{n-1}$　　坑：从$0$开始数　$T=\dfrac{2t}{n}$
-\end{itemize}
-
-% ---- block 108-08 (原稿第108页) kind=method ----
-\textbf{图像变换，}
-\notefig[0.3]{figures/p108_h.png}
-\[
-T^2=\dfrac{4\pi^2}{g}L
-\]
-$\pi^2=9.86$\\
-改变摆长求$g$　$\big|$　用斜率求$g$
-\notefig[0.3]{figures/p108_i.png}
-\[
-T=2\pi\sqrt{\dfrac{L+R}{g}}
-\]
-\[
-T^2=\dfrac{4\pi^2L}{g}+\dfrac{4\pi^2R}{g}
-\]
-\notefig[0.35]{figures/p108_j.png}
-\[
-T=2\pi\sqrt{\dfrac{L+2R}{g}-\dfrac{R}{g}}
-\]
-\[
-T^2=\dfrac{4\pi^2}{g}(L+2R)-\dfrac{4\pi^2}{g}R
-\]
-用纵截距求$k$ % CHECK: 末字像小写k，疑为R（由纵截距求球半径R），存疑
-
-% ---- block 108-09 (原稿第108页) kind=method ----
-\fbox{两摆法}，剪$\Delta L$，不用测摆长
-\notefig[0.25]{figures/p108_k.png}
-\[
-T_1=2\pi\sqrt{\dfrac{L+\Delta L}{g}}\quad\text{①}
-\]
-\[
-T_2=2\pi\sqrt{\dfrac{L}{g}}\quad\text{②}
-\]
-\[
-\text{①}^2-\text{②}^2\qquad g=\dfrac{4\pi^2\Delta L}{T_1^2-T_2^2}
-\]
-
-% ---- block 108-10 (原稿第108页) kind=method ----
-单摆作打点计时器
-\notefig[0.25]{figures/p108_l.png}
-\notefig[0.3]{figures/p108_m.png}
-相邻两点　时间间隔\\
-$t=\pi\sqrt{\dfrac{L}{g}}=\dfrac{T}{2}$
-
-
-\section{等效单摆}
-% ---- block 108-03 (原稿第108页) kind=knowledge ----
-\textbf{③}\ 等效单摆
-\notefig[0.25]{figures/p108_b.png}
-$l=R\sin\theta$
-\notefig[0.25]{figures/p108_c.png}
-$l=R-r$
-
-
-\section{等效重力加速度}
-% ---- block 108-05 (原稿第108页) kind=formula ----
-\textbf{⑤}\ $g$（是等效$g$）
-\notefig[0.25]{figures/p108_d.png}
-\[
-\Rightarrow\ g'=\sqrt{g^2+a^2}
-\]
-\notefig[0.25]{figures/p108_e.png}
-\[
-a=\sqrt{a_1^2+a_2^2+2a_1a_2}
-\] % CHECK: 图中a1、a2之间标有夹角θ，式中疑缺cosθ，照原样转录
-
-
-\section{单摆周期公式}
-% ---- block 108-06 (原稿第108页) kind=formula ----
-\textbf{⑥}
-\[
-T=2\pi\sqrt{\dfrac{L}{g}}\qquad T^2=\dfrac{4\pi^2L}{g}\qquad \boxed{g=\dfrac{4\pi^2L}{T^2}}
-\]
-在圆弧运动时间$=$单摆周期　、弹簧\unclear{弹}的时间用$T=2\pi\sqrt{\dfrac{m}{k}}$　、LC电路充放电时间$T=2\pi\sqrt{LC}$
-
-
-\section{单摆}
-% ---- block 108-07 (原稿第108页) kind=knowledge ----
-\notefig[0.25]{figures/p108_f.png}
-同时放会相遇在平衡处\\
-$L$　$g$一样　与释放角度无关，
-\notefig[0.25]{figures/p108_g.png}
-单摆合力不为$0$　力变加速运动（“加速”二字上方另写有“减速”）\\
-单摆运动没有平衡点.
-
-% ---- block 109-08 (原稿第109页) kind=derivation ----
-\textbf{④}　单摆的力　功　能　位移　加速度、周期分析.
-\notefig[0.3]{figures/p109_h.png}
-% 图中标注：θ、a径、Ep max / Ek min、Ek max / Ep min（图中已含）
-\[
-F_{\text{回}}=mg\sin\theta=mg\dfrac{\widehat{l}}{r}=mg\dfrac{x}{r}=\dfrac{mg}{r}x=kx
-\]
-$\theta$很小时　$\theta\approx\tan\theta\approx\sin\theta$\\[0.8ex]
-振幅$A$与$\bar v_{\text{下}}$，和$T$成正比　　$A=\bar v\dfrac{T}{4}$　　$T=mg\cos\theta+\dfrac{mv^2}{L}$\\[0.8ex]
-机械能守恒　　$a_{\text{切}}=g\sin\theta$　　$a_{\text{径}}=\dfrac{V_{\unclear{\mathrm{max}}}^2}{L}=\dfrac{v^2}{L}$
-
-
-\section{简谐运动·回复力}
-% ---- block 109-01 (原稿第109页) kind=knowledge ----
-\fbox{简谐运动}\quad $F_{\text{回}}=-kx$　判别式\\[0.8ex]
-$a=-\dfrac{kx}{m}=\dfrac{\dd v}{\dd t}$　　$v=\dfrac{\dd x}{\dd t}$　　　振幅与机械能正相关\\[0.8ex]
-回复力指向平衡位置（可变方向的\unclear{力}　　变力　不是不变、
-
-
-\section{简谐运动·弹簧振子}
+\subsection{回复力与简谐运动的判定}
 % ---- block 109-02 (原稿第109页) kind=diagram ----
 \textbf{①}
 \notefig[0.4]{figures/p109_a.png}
@@ -418,17 +82,6 @@ T=2\pi\sqrt{\dfrac{m}{k}}
 \]
 \notefig[0.25]{figures/p109_b.png}
 
-% ---- block 109-06 (原稿第109页) kind=derivation ----
-\notefig[0.25]{figures/p109_f.png}
-\begin{align*}
-mgh&=\tfrac{1}{2}kh^2\\
-mg&=k\Delta x\\
-\therefore\Delta x&=\dfrac{h}{2}\\
-\therefore h&=2\Delta x
-\end{align*}
-
-
-\section{简谐运动·回复力证明}
 % ---- block 109-03 (原稿第109页) kind=derivation ----
 \textbf{证明}
 \notefig[0.3]{figures/p109_c.png}
@@ -456,13 +109,6 @@ mg&=k_1(x-\Delta x_1)+k_2(x-\Delta x_1)\\
 \underline{又因为$F_{\text{回}}$与$x$方向相反}\\
 \struck{又反向}　故$F_{\text{回}}=-(k_1+k_2)x$
 
-
-\section{简谐运动·对称性}
-% ---- block 109-05 (原稿第109页) kind=note ----
-对称　\fbox{等位移}\ \fbox{等速度}\ \fbox{等加速度}
-
-
-\section{简谐运动·浮体振动}
 % ---- block 109-07 (原稿第109页) kind=derivation ----
 \textbf{③}
 \notefig[0.25]{figures/p109_g.png}
@@ -473,8 +119,29 @@ F_{\text{回}}=G-F_{\text{浮}}=\rho gS(\Delta x+x)-\rho gS\Delta x=\rho gSx=kx\
 F=-kx
 \]
 
+% ---- block 092-02 (原稿第92页) kind=derivation ----
+扰动后做简谐运动
+\notefig[0.25]{figures/p092_b.png}
+\begin{align*}
+F_{\text{回}}&=\frac{kQq}{(L-x)^{2}}-\frac{kQq}{(L+x)^{2}}
+=\frac{kQq}{L^{2}\left(1-\dfrac{2x}{L}+\underset{\approx0}{\left(\dfrac{x}{L}\right)^{2}}\right)}\\
+&=\frac{kQq}{L^{2}}\cdot\frac{\dfrac{4x}{L}}{1-\underset{\approx0}{\dfrac{4x^{2}}{L^{2}}}}=\frac{4kQqx}{L^{3}}\ \propto x
+\end{align*}
+% CHECK: 中间两个等号处的式子手写较乱（第二项 -kQq/(L+x)^2 似乎未体现），原样照录
+故为简谐运动
 
-\section{弹簧振子·弹簧模型题}
+or\quad $F=\dfrac{4kQqLx}{\left[L^{2}\left(1-\underset{\approx0}{\dfrac{x^{2}}{L^{2}}}\right)\right]^{2}}=\dfrac{4kQq}{L^{3}}\,x$
+
+\subsection{弹簧振子模型题}
+% ---- block 109-06 (原稿第109页) kind=derivation ----
+\notefig[0.25]{figures/p109_f.png}
+\begin{align*}
+mgh&=\tfrac{1}{2}kh^2\\
+mg&=k\Delta x\\
+\therefore\Delta x&=\dfrac{h}{2}\\
+\therefore h&=2\Delta x
+\end{align*}
+
 % ---- block 110-01 (原稿第110页) kind=problem ----
 \begin{problem}[①]
 \notefig[0.25]{figures/p110_a.png}
@@ -558,10 +225,466 @@ $AC$在最高点时
 \end{solution}
 \end{problem}
 
+% ---- block 229-02 (原稿第229页) kind=problem ----
+\textbf{2.}
+\notefig[0.3]{figures/p229_b.png}
 
-\section{简谐运动·图像}
-% ---- block 111-01 (原稿第111页) kind=diagram ----
-\unclear{手段大子}　% 页面顶端被裁切，字迹不全
-\notefig[0.85]{figures/p111_a.png}
-% 图中标注：四幅图依次为(纵轴记号不清)、v、a、E(Ek、Ep)对t的曲线，图上标有T/2、T、t（图中已含）
+\begin{problem}
+将C下压后释放，C作简谐运动，当C在最高点时，B压地
+
+$k=100\unit{N/m}$ \quad 压力为0。求C到最低点时，C的加速度及$N_{\text{地}B}$
+\begin{solution}
+刚开始 \quad $kx_0=mg$ \quad $x_0=0.02\unit{m}$
+
+C向下$x_1$，振幅 $A=x_1$
+
+C在最高处 \quad $Mg=k(A-x_0)$ \quad $\therefore A=0.07\unit{m}$
+
+C在最低处 \quad $k(A+x_0)-mg=ma$ \quad $a=35\unit{m/s^2}$
+
+对B \quad $F=mg+k(A+x_0)=14\unit{N}$ % CHECK: 按数值(5+9=14)此处应为Mg
+\end{solution}
+\end{problem}
+
+
+\section{单摆}
+\subsection{单摆的回复力与周期}
+% ---- block 100-05 (原稿第100页) kind=formula ----
+\begin{itemize}
+\item 单摆及周期公式。\quad $F_{\text{回}}$\ $F_{\text{向}}$\ 大小方向时刻变。\quad $T=2\pi\sqrt{\dfrac{L_{\text{等效摆长}}}{g_{\text{等效重力加速度}}}}$
+\end{itemize}
+\[ F_{\text{回}}=-mg\sin\theta=-mg\frac{x}{L}=-kx\qquad F_{\text{向}}=T-mg\cos\theta \]
+
+% ---- block 108-06 (原稿第108页) kind=formula ----
+\textbf{⑥}
+\[
+T=2\pi\sqrt{\dfrac{L}{g}}\qquad T^2=\dfrac{4\pi^2L}{g}\qquad \boxed{g=\dfrac{4\pi^2L}{T^2}}
+\]
+在圆弧运动时间$=$单摆周期　、弹簧\unclear{弹}的时间用$T=2\pi\sqrt{\dfrac{m}{k}}$　、LC电路充放电时间$T=2\pi\sqrt{LC}$
+
+% ---- block 108-07 (原稿第108页) kind=knowledge ----
+\notefig[0.25]{figures/p108_f.png}
+同时放会相遇在平衡处\\
+$L$　$g$一样　与释放角度无关，
+\notefig[0.25]{figures/p108_g.png}
+单摆合力不为$0$　力变加速运动（“加速”二字上方另写有“减速”）\\
+单摆运动没有平衡点.
+
+% ---- block 109-08 (原稿第109页) kind=derivation ----
+\textbf{④}　单摆的力　功　能　位移　加速度、周期分析.
+\notefig[0.3]{figures/p109_h.png}
+% 图中标注：θ、a径、Ep max / Ek min、Ek max / Ep min（图中已含）
+\[
+F_{\text{回}}=mg\sin\theta=mg\dfrac{\widehat{l}}{r}=mg\dfrac{x}{r}=\dfrac{mg}{r}x=kx
+\]
+$\theta$很小时　$\theta\approx\tan\theta\approx\sin\theta$\\[0.8ex]
+振幅$A$与$\bar v_{\text{下}}$，和$T$成正比　　$A=\bar v\dfrac{T}{4}$　　$T=mg\cos\theta+\dfrac{mv^2}{L}$\\[0.8ex]
+机械能守恒　　$a_{\text{切}}=g\sin\theta$　　$a_{\text{径}}=\dfrac{V_{\unclear{\mathrm{max}}}^2}{L}=\dfrac{v^2}{L}$
+
+\subsection{等效单摆与等效重力加速度}
+% ---- block 108-03 (原稿第108页) kind=knowledge ----
+\textbf{③}\ 等效单摆
+\notefig[0.25]{figures/p108_b.png}
+$l=R\sin\theta$
+\notefig[0.25]{figures/p108_c.png}
+$l=R-r$
+
+% ---- block 108-05 (原稿第108页) kind=formula ----
+\textbf{⑤}\ $g$（是等效$g$）
+\notefig[0.25]{figures/p108_d.png}
+\[
+\Rightarrow\ g'=\sqrt{g^2+a^2}
+\]
+\notefig[0.25]{figures/p108_e.png}
+\[
+a=\sqrt{a_1^2+a_2^2+2a_1a_2}
+\] % CHECK: 图中a1、a2之间标有夹角θ，式中疑缺cosθ，照原样转录
+
+
+\section{受迫振动与共振}
+% ---- block 100-03 (原稿第100页) kind=summary ----
+\begin{itemize}
+\item 受迫振动与共振\quad 机械能不守恒
+  \begin{itemize}
+  \item 系统在驱动力下的振动。
+  \item 受迫振动频率等于驱动力频率，当驱动力频率等于系统固有频率时，发生共振。
+  \end{itemize}
+\end{itemize}
+% 原稿：“机械能不守恒”写在“受迫振动与共振”上方偏右处；其左侧另有两行小字如下
+机械工作底座振动\\
+共振筛、\unclear{声呐}
+
+（共振曲线：纵轴$A$（受迫振动振幅），横轴$f_{\text{驱}}$，峰值对应$f_{\text{固}}$。）
+\notefig[0.28]{figures/p100_a.png}
+
+% ---- block 107-08 (原稿第107页) kind=knowledge ----
+\[
+\left\{\begin{aligned}
+&\text{受迫振动}\quad f=f_{\text{力}}\quad\text{共振}\ \bigl(f_{\text{力}}=f_{\text{固有}}\text{时，能量最大}\bigr)\\
+&\text{自由振动}\quad f=f_{\text{固有}}
+\end{aligned}\right.
+\]
+\notefig[0.3]{figures/p107_d.png}
+
+
+\section{波的形成与传播}
+% ---- block 100-06 (原稿第100页) kind=summary ----
+% 以下各项在原稿中被一个大括号归并在左侧“机械波”之下；左侧三行标注如下
+机械波\\
+传播形式和能量\\
+不传播质点。
+\begin{itemize}
+\item 机械波。横波和纵波\ $\leftarrow$\ 振动方向与传播方向平行，有密部和疏部。
+\item 波源$+$介质\quad $\hookrightarrow$\ 振动方向与传播方向垂直
+\item 横波的图像。波长、波速和频率的关系。\quad $v=\lambda f$\quad 同介质，$v$ 相同。
+\item 介质中各点 $T$、$A$、$f$ 都与波源相同。一个周期路程 $4A$，位移为0。\quad $\lambda=vT$
+\item 波的干涉和衍射，多普勒效应\ 波源与观察者间有相对运动，波源与波\unclear{频}率不变，观察者接收到的频率\unclear{增大}
+  \begin{itemize}
+  \item $\hookrightarrow$\ 两波频率必须相等。
+  \item $\hookrightarrow$\ 波长与障碍物或孔的尺寸差不多或大。
+  \end{itemize}
+\end{itemize}
+
+% ---- block 100-07 (原稿第100页) kind=summary ----
+\begin{itemize}
+\item 机械波的传播与波的图像。
+  \begin{itemize}
+  \item $y$-$x$ 图
+  \end{itemize}
+\item 振动图像与波的图像综合应用
+  \begin{itemize}
+  \item 用时间联系
+  \end{itemize}
+\item 波的多解问题。
+  \begin{itemize}
+  \item 双向性
+    \begin{itemize}
+    \item 传播方向双向性
+    \item 振动方向双向性
+    \end{itemize}
+  \item 周期性
+    \begin{itemize}
+    \item $\Delta t$ 与 $T$ 关系不确定
+    \item $\Delta x$ 与波长关系不确定。
+    \end{itemize}
+  \item 隐含性\quad 是只给出波形的一部分或只给出几个特殊点。
+  \end{itemize}
+\item 波的干涉、衍射和多普勒效应
+\end{itemize}
+
+% ---- block 107-04 (原稿第107页) kind=knowledge ----
+\fbox{机械波}　\underline{$V$只与介质有关}　$\big|$　本子中波速全为$V$（不管任何机械波）\\[1ex]
+\fbox{电磁波}　$f$不变　$\big|$　$V=\dfrac{c}{n}$、颜色不变
+
+% ---- block 107-05 (原稿第107页) kind=formula ----
+\[
+\text{波动方程}\ \left\{\begin{aligned}
+\text{向右}\quad y&=A\sin\left[\omega\left(t-\dfrac{x}{v}\right)+\varphi\right]\\
+\text{向左}\quad y&=A\sin\left[\omega\left(t+\dfrac{x}{v}\right)+\varphi\right]
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+&y\text{-}t:\ x\text{定}\\
+&y\text{-}x:\ t\text{定}
+\end{aligned}
+\]
+
+
+\section{波动图像与多解问题}
+% ---- block 107-01 (原稿第107页) kind=summary ----
+\textbf{振动}　$y$-$t$　单个质点不同时刻\\
+\hspace*{1em}矢量　周期均为$T$.　能量　周期 $\dfrac{T}{2}$\\
+\hspace*{1em}$v$和$E_k$看斜率　斜率为正速度正　$a\ v\ x$ 图像\\
+\hspace*{1em}势能和$a$看位移　位移为正加速度\unclear{负}　用求导法画\\
+\hspace*{1em}应代入\unclear{数据}建立\unclear{方程}
+\[
+\left\{\begin{aligned}
+y&=A\sin(\omega x+\varphi)\\
+y&=A\sin(\omega t+\varphi)
+\end{aligned}\right.
+\qquad
+\begin{aligned}
+&y\text{-}x\\
+&y\text{-}t
+\end{aligned}
+\]
+\textbf{波动}　$y$-$x$　整体一刻图象
+\notefig[0.25]{figures/p107_c.png}
+
+\hspace*{1em}振动方向看传播：同侧法　　起振方向看最后质点起振方\unclear{向}\\
+\hspace*{1em}加速度方向看位移　　两点状态看$y$-$t$
+
+\medskip
+\textbf{①}　$y$-$x$的某质点对应$y$-$t$某时刻
+\notefig[0.4]{figures/p107_a.png}
+
+峰对峰　谷对谷　平衡对平衡　　$y$-$t$向右看　$y$-$x$顺\unclear{传播}\\
+上升对下降　下降对上升　　　1对$b$
+
+% ---- block 107-02 (原稿第107页) kind=summary ----
+\textbf{②}　多解.　左右两种可能\\
+空间多解（方向）　时间多解（$n$的选取）
+\notefig[0.3]{figures/p107_b.png}
+\[
+\Delta X=\left(n+\dfrac{3}{4}\right)\lambda\quad\text{or}\quad \Delta X=\left(n+\dfrac{1}{4}\right)\lambda
+\]
+\textbf{③}　先传到后振动.
+
+% ---- block 107-03 (原稿第107页) kind=formula ----
+路程　$S=\dfrac{t}{T}\cdot 4A$　$\big|$　\underline{位移}用三角对应法　$\big|$　三角函数找　$\big|$　考虑相长相消（同频波）（波的干涉）$\big|$\\[0.8ex]
+同向　$t=\dfrac{S}{v_1+v_2}$　　反向　$t=\dfrac{S}{|v_1-v_2|}$ % CHECK: 原稿“同向”用v1+v2、“反向”用|v1-v2|，与常识(相向相加、同向相减)相反，照原样转录
+
+% ---- block 274-01 (原稿第274页) kind=problem ----
+% 页首为贴上的印刷体题目(页顶/页右被截断，仅见部分题干)，图上与图旁有手写批注
+\begin{problem}
+\unclear{…}简谐运动，$t_1=3\unit{s}$ 时，波刚传到 $x=6\unit{m}$ 处，波形如图中实\unclear{线所}示，经过时间 $t_2$ 形成的部分波形如图虚线所示，则波源的起振方向为\underline{\ 沿$y$轴\unclear{正}向\ }\unclear{…}$t_2$ 的最短时间为\underline{\ 5.5\ }s。 % 两处下划线内为手写填空
+
+\notefig[0.5]{figures/p274_a.png}
+\begin{solution}
+$\lambda=4\unit{m}$
+
+$v=\dfrac{6}{3}=2\unit{m/s}$
+
+到这才是起振方向。 % 手写箭头由此句指向图中 $x$ 轴右端的波前处
+
+$t_2=\dfrac{11}{2}=5.5\unit{s}$
+\end{solution}
+\end{problem}
+
+% ---- block 281-06 (原稿第281页) kind=problem ----
+% 贴纸题（印刷体）+手写解答。原稿：“（10分）”处有一道斜划线；“波长大于9cm，”与“1cm，”被圈出，“且传播时无衰减”下有横线；“运动，”与“t=2s”之间有一道斜划线；①中“B”下有弧线
+\begin{problem}[10分]
+均匀介质中质点$A$、$B$的平衡位置位于$x$轴上，坐标分别为$x_A=-1\unit{cm}$和$x_B=8\unit{cm}$。某简谐横波沿$x$轴正方向传播，波长大于$9\unit{cm}$，振幅为$1\unit{cm}$，且传播时无衰减。$t=0$时刻开始计时，质点$A$位于$x$轴上方$0.5\unit{cm}$处，质点$B$位于平衡位置且向$x$轴下方运动，$t=2\unit{s}$质点$A$第一次回到它$t=0$时刻的位置。求：
+
+①从$t=0$时刻开始，质点$B$经过多长时间第一次位于波峰；
+
+②该简谐波的波速。
+\begin{solution}
+设$A$质点振动方程\quad $y_A=A\sin\Bigl(\dfrac{2\pi}{T}t+\varphi\Bigr)$
+
+$t=0$时$A$对应初相为$\dfrac{\pi}{6}$，or $\dfrac{5\pi}{6}$
+
+\notefig[0.3]{figures/p281_d.png}
+②\ $t=2$时\quad $\dfrac{2\pi}{T_2}t+\dfrac{5\pi}{6}=\dfrac{13\pi}{6}$
+
+$T_2=3\unit{s}$
+
+经$\dfrac{3}{4}T_2=2.25$第一次位于波峰
+
+①\ $t=2\unit{s}$时\quad $\dfrac{2\pi}{T_1}t+\dfrac{\pi}{6}=\dfrac{5\pi}{6}$
+
+$T_1=6\unit{s}$
+
+经$\dfrac{3}{4}T=4.15\unit{s}$第一次位于波峰% CHECK: 手写为“4.15”（按 3/4×6=4.5 应为 4.5s，疑多写了“1”）；此处 T 未见下标
+
+②\ [①]\ $\Delta x=x_B-x_A=\dfrac{7}{12}\lambda$
+
+$\lambda_1=\dfrac{108}{7}\unit{cm}$
+
+[②]\ $\Delta x=x_B-x_A=\dfrac{11}{12}\lambda$
+
+$\lambda_2=\dfrac{108}{11}\unit{cm}$
+
+$v=\dfrac{\lambda}{T}$
+
+$v_1=\dfrac{18}{7}\unit{cm/s}$
+
+or $v_2=\dfrac{36}{11}\unit{cm/s}$
+\end{solution}
+\end{problem}
+
+
+\section{波的衍射、干涉与叠加}
+\subsection{波的衍射与干涉}
+% ---- block 107-07 (原稿第107页) kind=knowledge ----
+\fbox{波的衍射}　$\lambda\ge$ 或 \unclear{$\approx$} 障碍物尺寸，出现\underline{明暗相间亮条纹}
+
+% ---- block 107-06 (原稿第107页) kind=knowledge ----
+\fbox{波的干涉}　波程差为
+\[
+\left\{\begin{aligned}
+2n\cdot\dfrac{\lambda}{2}&\quad\text{相长}\quad A_1+A_2\\
+(2n+1)\cdot\dfrac{\lambda}{2}&\quad\text{相消}\quad |A_1-A_2|
+\end{aligned}\right.
+\]
+前提同频波　$f_1=f_2$\\
+看起振　振动方向，步调始终相反\\
+若为反相波则　规律相反　　半波损失$\to$反相波\\[1ex]
+$\Delta X=2n\cdot\dfrac{\lambda}{2}$　$n=0$为最亮纹　$n=1$为第一亮纹…\\[1ex]
+$\Delta X=(2n+1)\dfrac{\lambda}{2}$　第零\unclear{亮}纹 % CHECK: (2n+1)λ/2 应对应暗纹，此处字迹像“亮”，存疑
+
+% ---- block 192-10 (原稿第192页) kind=derivation ----
+% 页面右侧空白处的草算/草图(无题干；疑为两波源干涉：λ=20、T=1.5，“减”疑指减弱)；另在左下角(四星系统下方)有一幅无标注的曲线草图，疑与之有关
+\notefig[0.3]{figures/p192_d.png}
+\notefig[0.25]{figures/p192_c.png}
+
+$\lambda=20$ % 写在上图下方偏右
+
+$60-2x=10$\ \unclear{20m}
+
+$2x-60=0$
+
+\begin{itemize}
+\item 竖排一列(左侧标\unclear{$L$})：10，20，40
+\item 竖排一列(右侧)：10，20，40，60
+\item 大括号内：$x=30$，$x=10$，$x=0$
+\item 另有零散：$x=\unclear{10}$，$x=20$，$x=\unclear{25}$ % CHECK: 页边草算，排布及数字难以还原
+\end{itemize}
+
+% ---- block 232-03 (原稿第232页) kind=problem ----
+\begin{problem}[3]
+\notefig[0.2]{figures/p232_b.png}
+\begin{solution}
+设$x$为\unclear{减弱}点
+\[ x-(2-x)=(2n+1)\frac{\lambda}{2} \qquad x=\frac{1}{2}n+\frac{5}{4} \qquad x\in[0,2] \]
+故 $n=-2,-1,0,1$
+\end{solution}
+\end{problem}
+
+\subsection{波的叠加与波峰重合}
+% ---- block 232-02 (原稿第232页) kind=problem ----
+\begin{problem}[2]
+\begin{solution}
+$x_{\text{甲}}=50+50n_1$ \qquad $V_{\text{甲}}=V_{\text{乙}}=25\unit{cm/s}$\par
+$x_{\text{乙}}=50+60n_2$ $\;\to\;$ $x=50+300n$ \quad 找最小公倍数\par
+波程差 $\Delta x=160n_2-50n_{\text{甲}}+5\ge 5$ % CHECK: 160 的首位"1"疑为多余笔画（按 x 乙 的式子似应为 60n_2）
+\qquad $t_{\min}=\dfrac{\Delta x}{\text{\unclear{$\blacksquare$}}V_{\text{相}}}=0.15$
+\end{solution}
+\end{problem}
+
+% ---- block 283-01 (原稿第283页) kind=problem ----
+% 题干为粘贴的印刷题条（粘贴条上下行有错位，此处按语义顺序转录）；手写在“中沿x轴传播”“轴正向”“乙沿x轴负向传播”“二者振动方向一致”下画了线
+（图上方手写标题）\unclear{常规解法}
+
+\notefig[0.5]{figures/p283_a.png}
+
+\begin{problem}[19.（6分）]
+甲、乙两列简谐横波在同一介质中传播的波速均为 $v=2\unit{m/s}$。当甲单独传播时，在空间中某质点引起的振动位移随时间变化关系如图（a）所示，当乙单独传播时，在空间中某质点引起的振动位移随时间化关系如图（b）所示。% 印刷原文此处漏“变”字
+现使两列波同时在该介质中沿 $x$ 轴传播，甲沿 $x$ 轴正向、乙沿 $x$ 轴负向传播，二者振动方向一致，在 $t=0$ 时刻，平衡位置坐标 $x=8\unit{cm}$ 的点正好位于偏离平衡位置 $+8\unit{cm}$ 处。
+
+（1）$t=0$ 时，求介质中偏离平衡位置位移为 $+8\unit{cm}$ 的所有质点的 $x$ 坐标
+
+（2）求 $x=8\unit{cm}$ 的点下一次出现偏离平衡位置 $+8\unit{cm}$ 的时间 $t_1$ 及之后介质中有质点出现偏离平衡位置 $+8\unit{cm}$ 的最短时间 $t_2$
+
+\begin{solution}
+[\unclear{找公倍数}]
+
+（1）甲\quad $T_1=0.4\unit{s}$\quad $\lambda_1=vT_1=80\unit{cm}$\quad 甲波峰 $x=8+80m\ (\unit{cm})$\quad $(m=0,\pm1,\pm2,\cdots)$
+
+\hspace{1.6em}乙\quad $T_2=0.5\unit{s}$\quad $\lambda_2=vT_2=100\unit{cm}$\quad 乙波峰 $x=8+100n\ (\unit{cm})$\quad $(n=0,\pm1,\pm2,\cdots)$
+
+\hspace{1.6em}$\therefore$ 甲乙同时波峰对应 $x=8+400k\ (\unit{cm})$\quad $(k=0,\pm1,\pm2,\cdots)$
+
+（2）甲波峰每隔 $0.4\unit{s}$ 到达 $x=8\unit{cm}$，乙波峰每隔 $0.5\unit{s}$ 到该处
+
+\hspace{1.6em}故 $x=8\unit{cm}$ 点下一次出现同时波峰用时 $t_1=2\unit{s}$
+
+\hspace{1.6em}$t=0$ 时甲乙波峰除了重叠处以外，最近的波峰相距 $20\unit{cm}$
+
+\hspace{1.6em}$\therefore$ 下一次有质点出现偏离平衡位置 $+8\unit{cm}$ 的时间为 $t_2=\dfrac{\Delta x}{2v}=0.05\unit{s}$
+\end{solution}
+\end{problem}
+
+
+\section{实验：用单摆测重力加速度}
+\subsection{实验器材与测量}
+% ---- block 108-01 (原稿第108页) kind=knowledge ----
+\textbf{单摆}\quad\textbf{①}\ 器材
+\begin{itemize}
+\item 球：\unclear{密度大}，体积小\quad（$f$小且$m$不太大）
+\item 线：轻/\unclear{刚}/\unclear{优}/\unclear{平}/长、（超过$1\unit{m}$）
+\item 夹子：固定悬点，调节摆长
+\item 秒表：教材实验中\ \fbox{仅有的使用秒表实验}
+\end{itemize}
+
+% ---- block 108-02 (原稿第108页) kind=knowledge ----
+\textbf{②}\ 摆长\quad $l=\dfrac{d}{2}+l_0$
+\notefig[0.25]{figures/p108_a.png}
+摆长$=$半径$+$绳长.
+
+% ---- block 108-04 (原稿第108页) kind=method ----
+\textbf{④}\ 周期：
+\begin{itemize}
+\item $n$次全振动用时$t$　$T=\dfrac{t}{n}$　\underline{从通过平衡位移开始计次数} % CHECK: 原稿此处写“位移”，疑为“位置”
+\item $n$次过平衡位置　$T=\dfrac{2t}{n-1}$　　坑：从$0$开始数　$T=\dfrac{2t}{n}$
+\end{itemize}
+
+\subsection{实验原理、数据处理与拓展}
+% ---- block 102-01 (原稿第102页) kind=method ----
+\textbf{探究单摆的运动\quad 用单摆测定重力加速度}
+
+\textbf{实验原理与操作}
+\[ T=2\pi\sqrt{\frac{L}{g}}\qquad\qquad g=\frac{4\pi^{2}L}{T^{2}} \]
+
+\textbf{数据处理}
+\begin{itemize}
+\item 公式法
+\item 图像法.
+\end{itemize}
+
+\textbf{误差分析}
+\begin{itemize}
+\item 偶然误差.
+ \begin{itemize}
+ \item 测量时间及摆长时产生的误差
+ \item 减小方法：多次测量求平均值/从单摆经过平衡位置时开始计时
+ \end{itemize}
+\item 系统误差
+ \begin{itemize}
+ \item 单摆自身
+ \item 摆球选体积小，密度大的
+ \item 最大摆角要小于$5^\circ$.
+ \end{itemize}
+\end{itemize}
+
+\textbf{注意事项}
+\begin{itemize}
+\item 用$1\unit{m}$左右细线
+\item 悬线顶端不能晃动用夹子夹住，保证顶点固定
+\item 在同一竖直面内摆动，摆角小于$5^\circ$. 从摆球摆到平衡位置开始计时，并数准全振动的次数.
+\end{itemize}
+
+% ---- block 108-08 (原稿第108页) kind=method ----
+\textbf{图像变换，}
+\notefig[0.3]{figures/p108_h.png}
+\[
+T^2=\dfrac{4\pi^2}{g}L
+\]
+$\pi^2=9.86$\\
+改变摆长求$g$　$\big|$　用斜率求$g$
+\notefig[0.3]{figures/p108_i.png}
+\[
+T=2\pi\sqrt{\dfrac{L+R}{g}}
+\]
+\[
+T^2=\dfrac{4\pi^2L}{g}+\dfrac{4\pi^2R}{g}
+\]
+\notefig[0.35]{figures/p108_j.png}
+\[
+T=2\pi\sqrt{\dfrac{L+2R}{g}-\dfrac{R}{g}}
+\]
+\[
+T^2=\dfrac{4\pi^2}{g}(L+2R)-\dfrac{4\pi^2}{g}R
+\]
+用纵截距求$k$ % CHECK: 末字像小写k，疑为R（由纵截距求球半径R），存疑
+
+% ---- block 108-09 (原稿第108页) kind=method ----
+\fbox{两摆法}，剪$\Delta L$，不用测摆长
+\notefig[0.25]{figures/p108_k.png}
+\[
+T_1=2\pi\sqrt{\dfrac{L+\Delta L}{g}}\quad\text{①}
+\]
+\[
+T_2=2\pi\sqrt{\dfrac{L}{g}}\quad\text{②}
+\]
+\[
+\text{①}^2-\text{②}^2\qquad g=\dfrac{4\pi^2\Delta L}{T_1^2-T_2^2}
+\]
+
+% ---- block 108-10 (原稿第108页) kind=method ----
+单摆作打点计时器
+\notefig[0.25]{figures/p108_l.png}
+\notefig[0.3]{figures/p108_m.png}
+相邻两点　时间间隔\\
+$t=\pi\sqrt{\dfrac{L}{g}}=\dfrac{T}{2}$
 
