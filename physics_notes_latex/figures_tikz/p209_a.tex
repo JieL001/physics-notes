@@ -1,0 +1,22 @@
+% p209_a 的电脑重画（对照 figures/p209_a.png）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \coordinate (O) at (0,0);
+  \coordinate (P) at (4,-1.76);
+  \coordinate (C) at ($(P)+(-0.53,-0.60)$);   % 曲率中心（法线方向，凹侧）
+  \coordinate (G) at ($(P)+(0,-1.15)$);
+  \coordinate (L) at ($(P)+(-1,0)$);
+  \coordinate (T) at ($(P)+(-1,0.88)$);       % 切线反向
+  \draw[gray!60] (-0.6,0) -- (6.6,0);
+  \draw[gray!60] (-0.6,-1.76) -- (6.6,-1.76);
+  \draw[->] (O) -- (1.6,0);
+  \draw[thick, domain=0:5.3, samples=60] plot (\x, {-0.11*\x*\x});
+  \draw[decorate, decoration={brace, amplitude=4pt, mirror}] (-0.2,0) -- (-0.2,-1.76) node[midway, left=4pt] {$y$};
+  \draw[->] (P) -- ($(P)+(1.15,-1.01)$) node[right] {$V$};
+  \draw (C) circle (0.8);
+  \draw[->, thick] (P) -- ($(P)!0.97!(C)$);
+  \node at ($(C)+(-1.0,-0.45)$) {$F_n$};
+  \draw[->, thick] (P) -- (G) node[below] {$mg$};
+  \pic[draw, angle radius=0.38cm, "$\theta$", angle eccentricity=1.7] {angle = C--P--G};
+  \pic[draw, angle radius=0.55cm, "$\alpha$", angle eccentricity=1.45] {angle = T--P--L};
+  \fill (P) circle (1.3pt);
+\end{tikzpicture}

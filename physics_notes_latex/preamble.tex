@@ -3,7 +3,9 @@
 \usepackage{graphicx,xcolor,enumitem,booktabs,multirow,makecell,array,colortbl,diagbox,extarrows}
 \usepackage[normalem]{ulem}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta,calc,positioning,shapes.geometric,decorations.pathmorphing}
+\usetikzlibrary{arrows.meta,calc,positioning,shapes.geometric,decorations.pathmorphing,
+  angles,quotes,decorations.pathreplacing,decorations.markings,patterns,intersections,through,backgrounds}
+\usepackage[europeanresistors,americaninductors]{circuitikz}  % 电路图（电阻画成矩形、电感画成线圈，与国内教材一致）
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
 % XeLaTeX：可跨页框被拆开时，盒子里残留的颜色 push 会打乱 pgf 的颜色栈技巧，在栈里留下白色，导致后文正文变成白字。
@@ -59,8 +61,27 @@
   boxrule=0.6pt,arc=2pt,left=6pt,right=6pt,top=4pt,bottom=4pt,title={例题\ #1},fonttitle=\bfseries}
 \newenvironment{solution}{\par\smallskip\noindent\textbf{解：}\ }{\par\smallskip}
 
-% ---- 手写图片（从原稿裁剪）：\notefig[宽度占行宽比例]{figures/文件名.png} ----
-\newcommand{\notefig}[2][0.6]{\begin{center}\includegraphics[width=#1\linewidth,height=0.45\textheight,keepaspectratio]{#2}\end{center}}
+% ---- 配图：\notefig[宽度占行宽比例]{figures/文件名.png} ----
+% 若 figures_tikz/文件名.tex 存在（电脑重画的 TikZ 图），默认用它（按自然大小排，超宽/超高才缩小）；否则用原稿裁出的照片。
+% 想全部换回原稿照片：在导言区之后写 \notefigtikzfalse 。
+\providecommand\notefigroot{}   % 编译目录不是项目根目录时（如 texcheck）由外部定义为项目路径
+\newif\ifnotefigtikz \notefigtikztrue
+\makeatletter
+\newsavebox\notefig@box
+\def\notefig@name figures/#1.png\@nil{#1}
+\newcommand{\notefig}[2][0.6]{\begin{center}\notefig@do{#1}{#2}\end{center}}
+\def\notefig@do#1#2{%
+  \edef\notefig@base{\notefig@name#2\@nil}%
+  \ifnotefigtikz
+    \IfFileExists{\notefigroot figures_tikz/\notefig@base.tex}{\notefig@tikz}{\notefig@png{#1}{#2}}%
+  \else\notefig@png{#1}{#2}\fi}
+\def\notefig@png#1#2{\includegraphics[width=#1\linewidth,height=0.45\textheight,keepaspectratio]{#2}}
+\def\notefig@tikz{%
+  \sbox\notefig@box{\small\input{\notefigroot figures_tikz/\notefig@base.tex}}%
+  \ifdim\wd\notefig@box>\linewidth\relax\resizebox{\linewidth}{!}{\usebox\notefig@box}%
+  \else\ifdim\ht\notefig@box>0.5\textheight\relax\resizebox{!}{0.5\textheight}{\usebox\notefig@box}%
+  \else\usebox\notefig@box\fi\fi}
+\makeatother
 
 % ---- 文本模式下的特殊符号交给中文字体（①②… ★☆○●■□△）----
 \xeCJKsetcharclass{"2460}{"2473}{1}

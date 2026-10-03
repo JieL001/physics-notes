@@ -1,0 +1,22 @@
+% p111_g 的电脑重画（对照 figures/p111_g.png）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \def\d{1.6}
+  \coordinate (A) at (1.2,0);
+  \coordinate (B) at (2.0,-\d);
+  \coordinate (I) at (0.45,0.85);
+  \coordinate (E) at ($(B)+(0.75,-0.85)$);
+  \coordinate (N1) at (1.2,0.75);  \coordinate (N1b) at (1.2,-0.75);
+  \coordinate (N2) at (2.0,-\d+0.75); \coordinate (N2b) at (2.0,-\d-0.75);
+  \draw (0,0) -- (3.6,0);
+  \draw (0,-\d) -- (3.6,-\d);
+  \draw[|<->|] (-0.25,0) -- (-0.25,-\d) node[midway, left] {$d$};
+  \draw[dashed] (N1) -- (N1b);
+  \draw[dashed] (N2) -- (N2b);
+  \draw[->] (I) -- (A);
+  \draw (A) -- (B);
+  \draw[->] (B) -- (E);
+  \pic[draw, angle radius=0.45cm, "$\theta_1$", angle eccentricity=1.6] {angle = N1--A--I};
+  \pic[draw, angle radius=0.5cm, "$\alpha$", angle eccentricity=1.45] {angle = N1b--A--B};
+  \pic[draw, angle radius=0.5cm, "$\alpha$", angle eccentricity=1.45] {angle = N2--B--A};
+  \pic[draw, angle radius=0.45cm, "$\theta_1$", angle eccentricity=1.6] {angle = N2b--B--E};
+\end{tikzpicture}

@@ -41,6 +41,7 @@ else:
     pre = PROJ.replace(chr(92), "/")
     src = NL.join([
         r"\documentclass[UTF8,a4paper,11pt]{ctexbook}",
+        r"\def\notefigroot{" + pre + "/}",
         r"\input{" + pre + r"/preamble.tex}",
         r"\graphicspath{{" + pre + "/}}",
         r"\begin{document}",
