@@ -101,7 +101,7 @@ else:
 tw = target_widths()
 todo = [n for n in names if os.path.exists(os.path.join(TIKZ, n + ".tex"))]
 skipped = [n for n in names if n not in todo]
-with cf.ThreadPoolExecutor(max_workers=4) as ex:
+with cf.ThreadPoolExecutor(max_workers=2) as ex:
     results = list(ex.map(build, todo))
 bad = 0
 rows = []

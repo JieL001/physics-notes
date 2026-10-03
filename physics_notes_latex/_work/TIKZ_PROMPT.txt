@@ -1,9 +1,9 @@
-【TikZ 重画 agent 的提示词模板；把 {PAGES}（如 2、4、5）、{PAGE_ARGS}（如 2 4 5）、{N}、{FIGS}（图名空格分隔）换成单元内容（见 _work/tikz_units.json）；Agent 工具，subagent_type=general-purpose，model=sonnet】
+【TikZ 重画 agent 的提示词模板；把 {PAGES}（如 2、4、5）、{PAGE_ARGS}（如 2 4 5）、{N}、{FIGS}（图名空格分隔）换成单元内容（见 _work/tikz_units.json）；Agent 工具，subagent_type=general-purpose，model=sonnet，后台运行】
 
-你是“手绘配图 → TikZ 电脑重画”的绘图员，负责笔记本第 {PAGES} 页上的 {N} 张配图：{FIGS}（以 tikzcheck.py --pages {PAGE_ARGS} 列出的为准；若名单与实际不符，以页文件里 \notefig 引用的图为准）。
+你是“手绘配图 → TikZ 电脑重画”的绘图员，负责笔记本第 {PAGES} 页上的 {N} 张配图：{FIGS}
 
-第一步：用 Read 完整读完规范 /home/user/physics-notes/physics_notes_latex/_work/TIKZ_GUIDE.md（保真要求、文件格式、各类图画法、跳过规则、流程都在里面，必须遵守）。
+第一步：用 Read 完整读完规范 /home/user/physics-notes/physics_notes_latex/_work/TIKZ_GUIDE.md（保真要求、规整要求、文件格式、各类图画法、跳过规则、流程都在里面，必须遵守），并按规范 Read 两个风格样例。
 
-然后按规范 §5 的流程做：逐页并行 Read 页文件 /home/user/physics-notes/physics_notes_latex/_work/blocks/pNNN.tex 和该页原图 /home/user/physics-notes/physics_notes_latex/figures/pNNN_*.png → 逐张写 /home/user/physics-notes/physics_notes_latex/figures_tikz/名字.tex → 全部写完后一次运行 python3 /home/user/physics-notes/physics_notes_latex/_work/tools/tikzcheck.py --pages {PAGE_ARGS} → 改到全部 OK，并 Read 每张对照表（SHEET）逐项核对、修正 → 最后 python3 /home/user/physics-notes/physics_notes_latex/_work/tools/texcheck_all.py 本单元的页文件，必须 ALL OK。
+然后按规范 §5 的流程做：逐页并行 Read 页文件 /home/user/physics-notes/physics_notes_latex/_work/blocks/pNNN.tex 和该页的原图 /home/user/physics-notes/physics_notes_latex/figures/名字.png → 逐张写 /home/user/physics-notes/physics_notes_latex/figures_tikz/名字.tex → 全部写完后一次运行 python3 /home/user/physics-notes/physics_notes_latex/_work/tools/tikzcheck.py {FIGS} → 改到全部 OK，并 Read 每张对照表（SHEET）逐项核对、修正 → 最后 python3 /home/user/physics-notes/physics_notes_latex/_work/tools/texcheck_all.py 本单元的页文件，必须 ALL OK。
 
-要点：保真第一，元素和标注一个不漏、不添加、不纠正；画不准的图宁可跳过（保留照片）。推理要简练，不要长篇推导物理。只写 figures_tikz/ 里本单元的文件，不要改动别的文件，不要运行 git。最终回复 ≤5 行（格式见规范 §5 第 6 条）。
+要点：保真（元素和标注一个不漏、不添加、不纠正物理）+ 规整（像印刷插图：坐标用 cm，轴和水平线严格水平竖直，圆是正圆，导线横平竖直，曲线光滑；禁止按像素描手迹）。画不准的图宁可跳过（保留照片）。推理要简练，不要长篇推导物理。只写上面名单里的 figures_tikz 文件，别的文件（包括 figures_tikz 里已有的其他文件）一律不动，不要运行 git。最终回复 ≤5 行（格式见规范 §5 第 6 条）。
