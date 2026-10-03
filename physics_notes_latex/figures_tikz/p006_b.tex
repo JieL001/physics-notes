@@ -1,0 +1,12 @@
+% p006_b 的电脑重画（半径示意图：三个同心圆，圆心引出半径 r1、r2；上有标题、下有“间隙越来越大”）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \draw (0,0) circle (2.0);
+  \draw (0,0) circle (0.8);
+  \draw (0,0) circle (0.55);
+  \draw[->] (0,0) -- (10:0.8);
+  \draw[->] (0,0) -- (-60:2.0);
+  \node at (1.2,0.42) {$r_1$};
+  \node at (1.1,-0.9) {$r_2$};
+  \node[above] at (0.4,2.0) {半径示意图};
+  \node at (0.5,-2.6) {间隙越来越大};
+\end{tikzpicture}
