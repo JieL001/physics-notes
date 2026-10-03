@@ -1,0 +1,23 @@
+% p016_h 的电脑重画（径入径出：轨迹圆心 O1、场圆心 O2，入射点 A 速度 V0 指向 O2，出射点 B 沿 O2B 射出）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \coordinate (A) at (0,0);
+  \coordinate (O1) at (0,3.8);
+  \coordinate (O2) at (2.85,0);
+  \coordinate (B) at (3.65,2.74);
+  % 粗线：竖直线 O1A（向上略延伸）、弦 O1B、轨迹圆弧 AB（以 O1 为心）
+  \draw[thick] (A) -- (0,4.5);
+  \draw[thick] (O1) -- (B);
+  \draw[thick] (A) arc (270:343.7:3.8);
+  % 虚线
+  \draw[dashed] (1.0,0) -- (O2);
+  \draw[dashed] (O1) -- (O2);
+  \draw[dashed] (O2) -- (B);
+  % 速度
+  \draw[->, thick] (A) -- (1.0,0);
+  \draw[->, thick] (B) -- ++(73.7:1.2);
+  % 点与标注
+  \fill (O1) circle (1.6pt) (B) circle (1.6pt);
+  \node at (-0.75,3.85) {$O_1$};
+  \node at (3.35,-0.4) {$O_2$};
+  \node at (0.9,-0.6) {$V_0$};
+\end{tikzpicture}

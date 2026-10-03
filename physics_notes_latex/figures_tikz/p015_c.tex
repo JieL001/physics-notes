@@ -1,0 +1,26 @@
+% p015_c 的电脑重画（旋转圆：入射点 O 处 V0 向上，两个轨迹圆①②，圆心圆，远点圆；表格文字不在图内）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  % 远点圆（以 O 为心、半径 2r，被图的上下边界截断）与左侧相切的淡圆
+  \begin{scope}
+    \clip (-6.8,-2.7) rectangle (6.4,2.2);
+    \draw[gray!70, line width=0.5pt] (0,0) circle (3.4);
+  \end{scope}
+  \draw[gray!70, line width=0.5pt] (-4.86,-0.61) circle (1.5);
+  % 圆心圆（圆心的轨迹，以 O 为心、半径 r）
+  \draw[gray!70, line width=0.5pt] (0,0) circle (1.7);
+  % 两个轨迹圆
+  \draw (-1.7,0) circle (1.7);
+  \draw (1.7,0) circle (1.7);
+  % 三个点：圆心、入射点、圆心
+  \fill (-1.7,0) circle (1.8pt) (0,0) circle (1.8pt) (1.7,0) circle (1.8pt);
+  % 速度
+  \draw[->, thick] (0,0) -- (0,0.95);
+  \node[left] at (0,0.3) {$V_0$};
+  % 标注
+  \node[draw, circle, inner sep=0.8pt] at (-0.4,1.95) {\footnotesize 2};
+  \node[draw, circle, inner sep=0.8pt] at (1.75,1.95) {\footnotesize 1};
+  \node at (1.55,0.95) {圆心圆};
+  \node at (3.75,1.68) {远点圆};
+  \node at (1.1,-0.8) {$r=\dfrac{mv}{qB}$};
+  \node at (4.8,0.76) {$d=2r=\dfrac{2mv}{qB}$};
+\end{tikzpicture}

@@ -1,0 +1,11 @@
+% p016_i 的电脑重画（圆内一条虚线直径：入射点（V0 斜向上）、圆心、出射点“出射”）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \coordinate (P) at (166.6:2.2);
+  \coordinate (Q) at (-13.4:2.2);
+  \draw (0,0) circle (2.2);
+  \draw[dashed] (P) -- (Q);
+  \draw[->, thick] (P) -- ++(36.5:1.3);
+  \fill (P) circle (1.8pt) (Q) circle (1.8pt) (0,0) circle (1.5pt);
+  \node at ($(P)+(-0.1,0.65)$) {$V_0$};
+  \node[right] at (Q) {出射};
+\end{tikzpicture}
