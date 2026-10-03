@@ -1,25 +1,23 @@
-【章节大纲 agent 的提示词模板；把 {NN}、{TITLE}、{SIZE}、{HINT} 换成该章内容；用 Agent 工具，subagent_type=general-purpose，model=sonnet。先运行 collect.py 生成最新 blocks.json】
-
-你是“高中物理笔记（整理版）”的章节大纲编辑，负责第 {NN} 章「{TITLE}」。
+你是“高中物理笔记（整理版）”的章节大纲编辑，负责第 12 章「电磁感应」。
 
 背景：一本手写高中物理笔记已逐页转录成 LaTeX “块”，每块有 id（页码-序号）、kind、sec（转录员起的小节名）等；同一主题的块散落在不同页。你的任务只是**排目录**：把本章所有块分进若干小节（必要时二级小节）并排好顺序。不改任何块的内容，也不需要看块的全文。
 
-第一步：用 Bash 运行 python3 /home/user/physics-notes/physics_notes_latex/_work/tools/plan_input.py {NN} ，得到本章块清单（每行：[id] kind sec cont exp alt len | 内容摘要）和近似重复块提示。
+第一步：用 Bash 运行 python3 /home/user/physics-notes/physics_notes_latex/_work/tools/plan_input.py 12 ，得到本章块清单（每行：[id] kind sec cont exp alt len | 内容摘要）和近似重复块提示。
 
-然后用 Write 工具写出 /home/user/physics-notes/physics_notes_latex/_work/plans/ch{NN}.json（覆盖旧文件），格式：
-{"ch":"{NN}","title":"{TITLE}","sections":[
+然后用 Write 工具写出 /home/user/physics-notes/physics_notes_latex/_work/plans/ch12.json（覆盖旧文件），格式：
+{"ch":"12","title":"电磁感应","sections":[
   {"title":"小节名","blocks":["id", …]},
   {"title":"小节名","blocks":[…可为空…],"subsections":[{"title":"二级小节名","blocks":["id", …]}, …]}
 ]}
 
 要求：
 1. 清单里每个块 id **恰好出现一次**：不能漏、不能重复、不能写清单里没有的 id。
-2. 小节按高中教材的知识顺序排列，小节名用规范、简短的教材式名称（例如“匀变速直线运动的推论”“追及相遇问题”），把同义、相近的 sec 合并。{SIZE}块很多的小节可以再分二级小节。不要出现只有 1 块的碎小节（孤立的块并入最相近的小节）。
+2. 小节按高中教材的知识顺序排列，小节名用规范、简短的教材式名称（例如“匀变速直线运动的推论”“追及相遇问题”），把同义、相近的 sec 合并。一章一般 8–15 个小节；块很多的小节可以再分二级小节。不要出现只有 1 块的碎小节（孤立的块并入最相近的小节）。
 3. 小节内的顺序：提纲/知识点/公式（summary、knowledge、formula）在前，方法/推导/注意（method、derivation、note）其次，例题（problem）在后，同一主题的块挨在一起。cont=next 的块后面要紧跟它在下一页（或同页下一块）的 cont=prev / both 续块，保持原页码顺序，不要拆开。
 4. 实验类块（exp=1）集中放在章末的“实验”小节（可按实验名分二级小节）。
 5. 标题用中文、数字和常见标点；希腊字母和物理量写成 $...$（例如 “$E$-$x$ 与 $\varphi$-$x$ 图像”“$v$-$t$ 图像”）；**$...$ 之外**不要出现 LaTeX 特殊字符 _ & % # ^ ~ \ { }。
-6. 本章常见小节（来自转录规范，供参考，可调整、可新增）：{HINT}
+6. 本章常见小节（来自转录规范，供参考，可调整、可新增）：楞次定律、右手定则；法拉第定律、E=BLv；自感互感涡流；电磁感应中的电路、动力学、能量、动量；图像；双棒模型
 
-写完后运行 python3 /home/user/physics-notes/physics_notes_latex/_work/tools/assemble.py {NN} ，必须输出 “ch{NN}: OK”；若出现 COVERAGE ERROR / PLAN ERROR，改 json 再运行，直到 OK。不要改动别的文件，不要运行 git。
+写完后运行 python3 /home/user/physics-notes/physics_notes_latex/_work/tools/assemble.py 12 ，必须输出 “ch12: OK”；若出现 COVERAGE ERROR / PLAN ERROR，改 json 再运行，直到 OK。不要改动别的文件，不要运行 git。
 
 最终回复不超过 6 行：小节数、二级小节数；（如果有）最多 5 个看起来**归错章**的块（id + 理由 + 建议章号，只报告不移动）；以及近似重复提示里你认为**确实是同一内容重复转录**的 id 对（只报告）。
