@@ -6,6 +6,13 @@
 \usetikzlibrary{arrows.meta,calc,positioning,shapes.geometric,decorations.pathmorphing}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
+% XeLaTeX：可跨页框被拆开时，盒子里残留的颜色 push 会打乱 pgf 的颜色栈技巧，在栈里留下白色，导致后文正文变成白字。
+% 去掉盒子内部的颜色设置即可（正文、标题颜色在绘制时另行设置，不受影响）。pdfTeX/LuaTeX 有独立颜色栈，不需要。
+\ifdefined\XeTeXrevision
+\makeatletter
+\patchcmd{\tcb@vbox}{\color{#3}}{}{}{\PackageWarning{preamble}{could not patch tcb@vbox}}
+\makeatother
+\fi
 \usepackage{geometry}
 \geometry{a4paper,left=2.2cm,right=2.2cm,top=2.4cm,bottom=2.4cm}
 \usepackage{fancyhdr}

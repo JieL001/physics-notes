@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 physics_notes_latex/_work/plan_in/
+physics_notes_latex/*.aux
+physics_notes_latex/*.log
+physics_notes_latex/*.out
+physics_notes_latex/*.toc
+physics_notes_latex/*.xdv
+physics_notes_latex/*.synctex.gz
