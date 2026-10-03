@@ -1,9 +1,10 @@
-% p002_a 的电脑重画（E_k-ν 坐标图：斜虚线交 ν 轴于 ν_c、交纵轴负半轴于 -E）
-\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
-  \draw[->] (0,-0.75) -- (0,1.95);
-  \draw[->] (0,0) -- (3.2,0) node[right] {$\nu$};
-  \node[left] at (-0.1,1.6) {$E_k$};
-  \draw[dashed] (0,-0.45) -- (2.3,1.38);
-  \node[below] at (1.4,0) {$\nu_c$};
-  \node at (-0.85,-0.45) {$-E$};
+% p002_a 的电脑重画（E_k-ν 坐标图：斜虚线交 ν 轴于 ν_c、交纵轴负半轴于 -E）；坐标取原图像素，1px=0.125mm
+\begin{tikzpicture}[x=0.125mm, y=-0.125mm, line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \node at (45,22) {$E_k$};
+  \draw[->] (96,152) -- (92,9);
+  \draw[->] (95,116) -- (277,102);
+  \node at (294,95) {$\nu$};
+  \draw[dashed] (95,157) -- (227,35);
+  \node[anchor=north] at (183,118) {$\nu_c$};
+  \node at (45,132) {$-E$};
 \end{tikzpicture}

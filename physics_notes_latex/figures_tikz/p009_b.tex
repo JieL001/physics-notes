@@ -1,0 +1,152 @@
+% p009_b 的电脑重画（机车启动：左半“恒P”、右半“恒a”，各有 P-t、v-t、F牵-1/v、a-1/v 四图及标注；坐标直接取原图像素，1px=0.1mm）
+\begin{tikzpicture}[x=0.1mm, y=-0.1mm, line width=0.7pt, >={Stealth[length=2.2mm]}, every node/.append style={inner sep=1pt}]
+  % ================= 左半：恒P =================
+  \node at (68,116) {恒$P$};
+  % --- P-t ---
+  \node at (166,64) {$P$};
+  \draw[->] (193,157) -- (196,61);
+  \draw[->] (191,155) -- (380,154);
+  \node at (407,152) {$t$};
+  \draw (194,114) -- (267,114);
+  \draw (277,113) -- (335,112);
+  \draw[dash pattern=on 3pt off 2pt on 1pt off 2pt] (269,97) -- (269,182);
+  % --- v-t ---
+  \node at (170,207) {$V$};
+  \draw[->] (192,317) -- (192,221);
+  \draw[->] (192,316) -- (428,316);
+  \node at (444,320) {$t$};
+  \draw plot[smooth] coordinates {(192,316) (198,304) (207,291) (220,282) (235,277) (250,275) (268,274.5)};
+  \draw (277,275.5) -- (327,275.5);
+  \draw[dash pattern=on 3pt off 2pt on 1pt off 2pt] (270,190) -- (270,325);
+  \node at (265,350) {$t_1$};
+  % P_0/f = V_m
+  \node at (35,262) {$P_0$};
+  \draw (7,295) -- (44,295);
+  \node at (25,312) {$f$};
+  \node at (80,285) {$=$};
+  \node at (133,281) {$V_m$};
+  % --- F牵-1/v ---
+  \node at (563,28) {$F_{\text{牵}}$};
+  \node at (602,22) {$=$};
+  \node at (624,25) {$P$};
+  \node at (647,26) {$\cdot$};
+  \draw (658,11) -- (688,11);
+  \node[anchor=south] at (675,9) {$1$};
+  \node[anchor=north] at (672,13) {$v$};
+  \node at (452,48) {$F_{\text{牵}}$};
+  \draw[->] (485,170) -- (487,47);
+  \draw[->] (484,154) -- (676,149);
+  \node at (466,128) {$f$};
+  \draw[dashed] (487,122) -- (526,126);
+  \draw[dashed] (531,131) -- (531,152);
+  \draw[dashed] (486,153) -- (526,127);
+  \draw (526,127) -- (593,77);
+  \draw (532,150) -- (532,160);
+  \node[font=\scriptsize] at (551,166) {$1$};
+  \draw (517,179) -- (580,179);
+  \node[anchor=north, font=\scriptsize] at (553,181) {$V_{\mathrm{max}}$};
+  \node[anchor=south] at (709,133) {$1$};
+  \draw (691,135) -- (726,135);
+  \node[anchor=north] at (706,137) {$v$};
+  % --- a-1/v ---
+  \node at (447,197) {$a$};
+  \draw[->] (484,325) -- (484,200);
+  \draw[->] (484,315) -- (656,308);
+  \draw (522,284) -- (587,224);
+  \draw[dashed] (522,285) -- (485,352);
+  \node at (469,325) {$f$};
+  \node at (468,351) {$m$};
+  \node[anchor=south] at (581,264) {$P$};
+  \draw (569,266) -- (596,266);
+  \node[anchor=north] at (582,268) {$m$};
+  \draw (533,316) -- (533,329);
+  \draw (506,334) -- (553,334);
+  \node[anchor=north, font=\scriptsize] at (532,336) {$V_{\mathrm{max}}$};
+  \node[anchor=south] at (704,291) {$1$};
+  \draw (683,293) -- (712,293);
+  \node[anchor=north] at (697,296) {$v$};
+  % --- 图下方两条公式 ---
+  \node[anchor=south] at (448,411) {$P_0$};
+  \draw (424,413) -- (474,413);
+  \node[anchor=north] at (452,415) {$v$};
+  \node at (505,419) {$-$};
+  \node at (530,412) {$f$};
+  \node at (573,407) {$=$};
+  \node at (630,410) {$ma$};
+  \node[font=\scriptsize] at (683,458) {$V_1$};
+  \node[font=\scriptsize] at (714,457) {$=$};
+  \node[anchor=south, font=\scriptsize] at (770,435) {$P_0$};
+  \draw (735,440) -- (805,440);
+  \node[anchor=north, font=\scriptsize] at (770,442) {$ma+f$};
+
+  % ================= 右半：恒a =================
+  \node at (873,124) {恒$a$};
+  % --- P-t ---
+  \node at (771,165) {$P$};
+  \draw[->] (813,262) -- (815,157);
+  \draw (813,262) -- (812,310);
+  \draw[->] (813,262) -- (995,258);
+  \node at (1021,251) {$t$};
+  \draw (814,261) -- (869,213) -- (977,212);
+  \draw[dashed] (870,218) -- (870,248);
+  \node at (857,276) {$t_1$};
+  % --- v-t ---
+  \node at (783,305) {$V$};
+  \draw[->] (812,410) -- (812,309);
+  \draw[->] (812,408) -- (1005,411);
+  \node at (1021,407) {$t$};
+  \draw plot[smooth] coordinates {(814,406) (837,380) (860,352) (868,341) (878,330) (888,323) (900,320) (940,319) (976,318)};
+  \draw[dashed] (818,316) -- (898,316);
+  \draw[dashed] (816,350) -- (858,350);
+  \draw (865,306) -- (866,320);
+  \draw (861,371) -- (861,385);
+  \draw (856,409) -- (856,423);
+  \node at (845,452) {$t_1$};
+  \node[font=\scriptsize] at (777,366) {$V_1$};
+  % P_0/f = V_max
+  \node[font=\scriptsize] at (746,307) {$P_0$};
+  \draw (722,336) -- (739,336);
+  \node[font=\scriptsize] at (732,353) {$f$};
+  \node[font=\scriptsize] at (749,341) {$=$};
+  \node[font=\scriptsize, scale=0.85] at (785,336) {$V_{\mathrm{max}}$};
+  % --- F牵-1/v ---
+  \node at (1162,127) {$F_{\text{牵}}$};
+  \node at (1292,120) {$ma+f$};
+  \draw[->] (1199,268) -- (1204,134);
+  \draw[->] (1200,262) -- (1412,263);
+  \node at (1444,236) {$1$};
+  \draw (1430,247) -- (1456,246);
+  \node at (1442,265) {$v$};
+  \draw[dashed] (1214,149) -- (1287,144);
+  \draw[dashed] (1201,260) -- (1231,221);
+  \draw (1231,221) -- (1289,144);
+  \draw[postaction={decorate}, decoration={markings, mark=at position 0.46 with {\arrow{Stealth}}}] (1406,141) -- (1289,142);
+  \draw[dashed] (1201,220) -- (1232,222);
+  \draw[dashed] (1234,226) -- (1232,258);
+  \draw[dash pattern=on 3pt off 2pt on 1pt off 2pt] (1289,158) -- (1285,268);
+  \node at (1169,222) {$f$};
+  \draw (1243,262) -- (1241,277);
+  \draw (1219,277) -- (1258,278);
+  \node[anchor=north, font=\scriptsize] at (1242,279) {$V_{\mathrm{max}}$};
+  \draw (1303,238) -- (1301,262);
+  \draw (1291,272) -- (1311,270);
+  \node[anchor=north, font=\scriptsize] at (1302,273) {$V_1$};
+  % --- a-1/v ---
+  \draw[->] (1186,476) -- (1203,273);
+  \draw[->] (1194,420) -- (1414,421);
+  \draw (1227,398) -- (1290,300) -- (1388,298);
+  \draw[dashed] plot[smooth] coordinates {(1227,398) (1216,411) (1206,430) (1195,452)};
+  \draw[dashed] (1292,322) -- (1286,420);
+  \draw (1209,313) -- (1216,312);
+  \node[scale=0.8] at (1131,360) {$\dfrac{P}{m}\dfrac{1}{V_1}-\dfrac{f}{m}$};
+  \node[scale=0.8] at (1152,458) {$\dfrac{f}{m}$};
+  \draw (1243,421) -- (1242,437);
+  \draw (1219,439) -- (1259,439);
+  \node[anchor=north, font=\scriptsize] at (1241,441) {$V_{\mathrm{max}}$};
+  \draw (1308,412) .. controls (1302,418) .. (1298,432);
+  \draw (1281,438) -- (1313,440);
+  \node[anchor=north, font=\scriptsize] at (1297,442) {$V_1$};
+  \node at (1447,376) {$1$};
+  \draw (1431,396) -- (1462,394);
+  \node at (1444,425) {$v$};
+\end{tikzpicture}
