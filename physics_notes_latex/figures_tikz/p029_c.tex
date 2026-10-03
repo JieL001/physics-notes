@@ -1,0 +1,24 @@
+% p029_c 的电脑重画（变压器：口字形铁芯，左为原线圈 n1（两端各接空心端子），右为副线圈 n2（一端空心端子、一端实心端子）；标“原”“副”）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  % 铁芯
+  \draw (0,0) rectangle (2.6,3.0);
+  \draw (0.3,0.3) rectangle (2.3,2.7);
+  % 线圈
+  \draw[decorate, decoration={coil, aspect=0.5, segment length=2.6mm, amplitude=3mm}] (0.15,0.95) -- (0.15,2.25);
+  \draw[decorate, decoration={coil, aspect=0.5, segment length=2.6mm, amplitude=3mm}] (2.45,1.1) -- (2.45,2.15);
+  % 左侧引线与端子
+  \draw (-1.1,2.25) -- (0.15,2.25);
+  \draw (-1.2,2.25) circle (0.1);
+  \draw (-1.1,0.95) -- (0.15,0.95);
+  \draw (-1.2,0.95) circle (0.1);
+  % 右侧引线与端子
+  \draw (2.45,2.15) -- (3.4,2.15);
+  \draw (3.5,2.15) circle (0.1);
+  \draw (2.45,1.1) -- (3.5,1.1);
+  \fill (3.5,1.1) circle (0.1);
+  % 标注
+  \node at (-0.2,3.3) {$n_1$};
+  \node at (2.65,3.35) {$n_2$};
+  \node at (-1.6,-0.75) {原};
+  \node at (3.1,-0.75) {副};
+\end{tikzpicture}

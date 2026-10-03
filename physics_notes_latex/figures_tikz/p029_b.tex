@@ -1,0 +1,13 @@
+% p029_b 的电脑重画（交变电流 I-t 图像：正弦曲线，零点两侧标 + / − 号）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  \draw[->] (-0.2,0) -- (6.2,0) node[right] {$t$};
+  \draw[->] (0,-1.8) -- (0,2.6) node[left] {$I$};
+  \draw[domain=0:5.7, samples=80, smooth] plot (\x, {1.6*sin(\x*180/1.9)});
+  \node at (-0.4,-0.35) {$-$};
+  \node at (0.55,0.25) {$+$};
+  \node at (1.5,0.25) {$+$};
+  \node at (1.7,-0.32) {$-$};
+  \node at (3.5,0.22) {$+$};
+  \node at (3.2,-0.38) {$-$};
+  \node at (5.2,-0.4) {$-$};
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+% p022_f 的电脑重画（感动·切变化 B：B=kt，线框长度 v_0 t_1，棒以 v_0 向右运动）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  % 线框（左边封闭，上下导轨向右伸出）
+  \draw (3.5,2.0) -- (0,2.0) -- (0,0) -- (3.5,0);
+  % 导体棒
+  \draw (2.3,-0.65) -- (2.3,3.0);
+  % 磁场 ×（框内 2×2，棒右侧两个）
+  \foreach \x in {0.85,1.6} \foreach \y in {0.6,1.25} \node at (\x,\y) {$\times$};
+  \node at (2.7,1.25) {$\times$};
+  \node at (2.7,0.6) {$\times$};
+  % 磁场随时间变化
+  \node[anchor=west] at (3.0,0.95) {$B=kt\ (\mathrm{T})$};
+  % 下方大括号：v_0 t_1
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}] (0,-0.1) -- (2.3,-0.1);
+  \node at (1.15,-0.65) {$v_0t_1$};
+  % 棒的速度
+  \draw[->, thick] (2.3,-0.55) -- (3.1,-0.55) node[right=2pt] {$v_0$};
+\end{tikzpicture}

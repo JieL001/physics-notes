@@ -1,0 +1,25 @@
+% p019_a 的电脑重画（反向磁场：边界上方 B1 向里(×)，下方 B2 向外(·)；粒子在边界上下交替走半圆，弦长 2R1、2R2）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]},
+    mk/.style={postaction={decorate}, decoration={markings, mark=at position #1 with {\arrow{>}}}}]
+  % 边界线
+  \draw (0,0) -- (7.1,0);
+  \node at (-1.1,0.3) {$B_1$};
+  \node at (-1.0,-1.2) {$B_2$};
+  % 磁场：上方向里，下方向外
+  \foreach \x in {0.6,2.4,4.2,6.0}{
+    \node at (\x,1.05) {$\times$};
+    \fill (\x,-1.2) circle (1.2pt);
+  }
+  % 轨迹：从边界出发，初速度向上；上方小半圆(2R1)、下方大半圆(2R2)
+  \draw[->] (1.2,0) -- (1.2,0.7);
+  \draw (1.2,0) arc[start angle=180, end angle=0, radius=0.45];
+  \draw[mk=0.1] (2.1,0) arc[start angle=180, end angle=360, radius=0.975];
+  \draw[mk=0.22] (4.05,0) arc[start angle=180, end angle=0, radius=0.45];
+  \draw[postaction={decorate}, decoration={markings, mark=at position 0.1 with {\arrow{>}}, mark=at position 0.97 with {\arrow{>}}}]
+    (4.95,0) arc[start angle=180, end angle=360, radius=0.975];
+  % 弦长标注
+  \node at (1.65,-1.9) {$2R_1$};
+  \node at (3.08,-1.9) {$2R_2$};
+  \node at (4.5,-1.9) {$2R_1$};
+  \node at (5.93,-1.9) {$2R_2$};
+\end{tikzpicture}

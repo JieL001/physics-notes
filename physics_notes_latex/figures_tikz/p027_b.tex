@@ -1,0 +1,21 @@
+% p027_b 的电脑重画（电动机 M 等效为 纯电阻 R丝 与 非纯电阻 R转 串联）
+\begin{tikzpicture}[line width=0.7pt, >={Stealth[length=2.2mm]}]
+  % 左：电动机
+  \draw (0,0) -- (0.67,0);
+  \draw (1.0,0) circle (0.33);
+  \node at (1.0,0) {$M$};
+  \draw (1.33,0) -- (2.0,0);
+  \node at (1.2,0.8) {（非纯电阻）};
+  \node at (2.8,0) {$=$};
+  % 右：R丝 与 R转 串联
+  \draw (3.5,0) -- (4.15,0);
+  \draw (4.15,-0.19) rectangle (5.15,0.19);
+  \draw (5.15,0) -- (5.87,0);
+  \draw (6.2,0) circle (0.33);
+  \node at (6.2,0) {转};
+  \draw (6.53,0) -- (7.5,0);
+  \node at (4.65,0.7) {$R_{\text{丝}}$};
+  \node at (4.65,1.6) {（纯电阻）};
+  \node[anchor=west] at (5.9,0.8) {$R_{\text{转}}$（不可知，若不转，则$R_{\text{转}}=0$）};
+  \node at (8.0,1.6) {（非纯电阻）};
+\end{tikzpicture}
