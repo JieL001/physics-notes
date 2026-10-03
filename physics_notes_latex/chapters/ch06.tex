@@ -2,7 +2,22 @@
 \chapter{机械能}
 \label{ch:06}
 
-\section{功·功的计算}
+\section{功的概念与计算}
+% ---- block 062-02 (原稿第62页) kind=summary ----
+\textbf{功和功率}
+\begin{itemize}
+\item 功的正负判断和恒力做功的计算.
+  \begin{itemize}
+  \item 力与位移夹角、力与速度夹角
+  \end{itemize}
+\item 变力做功的五种计算方法.
+  \begin{itemize}
+  \item 微元法(拉磨)\quad 平均力法(线性变力 $kx$)\quad 等效代换法\quad $F$-$x$图像\unclear{法}\quad 动能定理求变力做功 % CHECK: “图像法”的末字形似“波”，按语义读作“法”
+  \end{itemize}
+\item 功率的分析与计算
+\item 机车启动问题.\quad 方程.
+\end{itemize}
+
 % ---- block 009-01 (原稿第9页) kind=knowledge ----
 $W=Fs\cos\theta$\quad $s$为对地位移 % 公式下方有红笔下划线
 
@@ -14,15 +29,156 @@ $W=Fs\cos\theta$\quad $s$为对地位移 % 公式下方有红笔下划线
 
 变力做功\quad 动能定理
 
+% ---- block 062-01 (原稿第62页) kind=formula ----
+\textbf{机械能}
+\begin{itemize}
+\item 功\quad $W=Fs\cos\alpha$
+  \begin{itemize}
+  \item $0\le\alpha<90^\circ$\quad 正功
+  \item $90^\circ<\alpha\le180^\circ$\quad 负功
+  \item $\alpha=90^\circ$\quad 不做功
+  \item $W=W_1+W_2+\cdots+\cdots$ % 原稿末尾为省略号
+  \end{itemize}
+\item 功率\quad $P=Fv\cos\alpha$\qquad $\bar{P}=\dfrac{W}{t}$\qquad $P_{\text{瞬}}=Fv_{\text{瞬}}\cos\alpha$.
+\end{itemize}
 
-\section{功率}
-% ---- block 009-02 (原稿第9页) kind=formula ----
-平均功率\quad $\bar{P}=\dfrac{W}{t}$
+\subsection{功的正负与合力做功}
+% ---- block 041-09 (原稿第41页) kind=derivation ----
+\notefig[0.25]{figures/p041_i.png}
+% 图内标注：左侧方块，经绳连到小圆(滑轮/动点)，力 $F$ 斜向上，两侧夹角各标 $\theta/2$，虚线延长，竖直线为边界
+\[
+F_{\text{合}}=2F\cos\frac{\theta}{2}\qquad
+W=2F\cos\frac{\theta}{2}\cdot S\cdot\cos\frac{\theta}{2}=\red{\underline{2FS\cos^{2}\frac{\theta}{2}}}=\red{\underline{FS(1+\sin\theta)}}
+\]% 后两项下方各有红色下划线；CHECK: 2cos^2(θ/2)=1+cosθ，原稿末项写作 1+sinθ(笔误或误读)，照原样转录；“cos”后上标写作“2θ”分母“2”，按 cos^2(θ/2) 转录
 
-瞬时功率\quad $P=Fv\cos\alpha$
+% ---- block 232-01 (原稿第232页) kind=note ----
+\textbf{1、}
+\notefig[0.2]{figures/p232_a.png}
+$F_{\text{合}}$在\unclear{$F_{\text{合}}$}方向上用动能定理，动滑轮2倍力
 
+% ---- block 232-04 (原稿第232页) kind=note ----
+\textbf{4、}克服功为正、功可正负
 
-\section{功·人对自己做功}
+\subsection{变力做功与非质点对象做功}
+% ---- block 286-06 (原稿第286页) kind=formula ----
+有线性变力\quad $W_F=\dfrac{F_1+F_2}{2}x$
+
+% ---- block 009-04 (原稿第9页) kind=method ----
+非质点对象做功，有质量的绳/杆
+
+\hspace{4em}分段$+$找重心，$W=m_1g\Delta h_1+m_2g\Delta h_2$
+
+\notefig[0.25]{figures/p009_a.png}
+
+% ---- block 117-01 (原稿第117页) kind=method ----
+\textbf{变质量功能}
+
+① 重心位移法\quad／\quad ② 图象法\quad／\quad ③ 线密度法
+
+\notefig[0.25]{figures/p117_a.png}
+
+\notefig[0.3]{figures/p117_b.png}
+
+③
+\[ -a m g\,\frac{a}{2} = -L m_0\,\frac{L}{2}\,g + \frac{1}{2}m_0 L v^2 \]% CHECK: 左边 m 疑漏写下标 0（应为 m_0）
+
+② 图像法.
+\[ W=\frac{1}{2}\left(mg+\frac{a}{L}ma\right)(L-a)=\frac{1}{2}mv^2 \quad\therefore\ v=\sqrt{\frac{L^2-a^2}{L}\,g} \]% CHECK: 括号内最后一项原稿像 ma（应为 mg）；L^2 与 a^2 之间的减号不够清晰
+
+（法3）加摩擦
+\[ -a m_0 g\,\frac{a}{2} = -m_0 L\cdot\frac{L}{2}\,g + \frac{1}{2}m_0 L v^2 + Q \]
+
+有$\mu$
+\notefig[0.28]{figures/p117_c.png}
+% 图中标注：纵轴 f；起点处 $\mu\frac{L-a}{L}mg$，或 $\mu m_0 (L-a) g$；横轴终点 $L-a$
+
+\[ W_f=\frac{1}{2}(L-a)\,\mu\, m_0 (L-a) g \]
+
+% ---- block 271-02 (原稿第271页) kind=problem ----
+% 贴纸印刷题（上缘被撕边截断）；原稿圈出“正确”及“三块长木板恰能完全进入粗糙的PA段”，“PA段粗糙程度处处相同”处有铅笔划线
+\begin{problem}[贴纸印刷题]
+\unclear{如}图所示，一固定的足够长斜面体倾斜角为$\theta$，其中PB段光滑，PA段粗糙程度处处相同，三块完全相同且长度为$L$的质量分布均匀的木板123靠在一起，从N点静止释放。已知$PN=L$，三块长木板恰能完全进入粗糙的PA段，重力加速度为$g$，每块的质量为$m$，下列说法正确的是（\unclear{BD}） % 括号后手写答案，难辨，疑为BD
+
+\begin{itemize}
+\item[A.] PA段动摩擦因数$\mu=\dfrac{4}{3}\tan\theta$ % 原稿：式子被斜线划去
+\item[B.] \unclear{三}块长木板运动过程中的最大速度为$v_m=\dfrac{5\sqrt{2gL\sin\theta}}{4}$ % 原稿：式下有大“✓”形勾画；该行开头被铅笔字遮盖
+\item[C.] 第1块长木板恰完全进入粗糙的PA段时，第1、2块长木板之间的作用力为$F_{12}=2mg\sin\theta$ % 原稿：$2mg\sin\theta$被斜线划去，其后另有一笔“9”形
+\item[D.] 第2块长木板恰完全进入粗糙的PA段时，速度大小为$v_2=\dfrac{\sqrt{22gL\sin\theta}}{3}$ % 原稿：句下有大“✓”形勾画
+\end{itemize}
+
+\notefig[0.6]{figures/p271_a.png}
+
+\begin{solution}
+手写铅笔批注（分散在题面空白处，按位置照录）：
+\begin{itemize}
+\item 左侧页边：$W_{\text{合}}=0$
+\item $3mg\cdot4L\sin\theta=$ \quad 图左侧续写：$\dfrac{\mu\cdot3mg\cos\theta}{2}\cdot3L$
+\item 方框内：$\mu=\dfrac{8}{3}\tan\theta$
+\item 图右上：$9mgL=6\mu mgL\cos\theta$ % 原稿“6”写在μ的左下方；等式左侧疑漏$\sin\theta$
+\item 图右：\#\quad $\mu=\dfrac{3}{2\cos\theta}$
+\item 选项C右下：$\dfrac{16}{9}mg\sin\theta$；其右圈出：$\unclear{\dfrac{2m}{18}}$ % 难辨
+\item 选项C、D之间左侧另有难辨铅笔字迹：\unclear{T、3L}
+\item 右下：平均力法\ \unclear{（…）}
+\end{itemize}
+\end{solution}
+\end{problem}
+
+\subsection{摩擦力做功}
+% ---- block 089-06 (原稿第89页) kind=knowledge ----
+\begin{itemize}
+\item 相互作用力的功是无关的
+\item 斜面摩擦 如走平地
+\end{itemize}
+% 以上两行左侧有大括号
+\begin{keybox}
+曲面摩擦\quad 槽$\overset{V}{\text{大}}$拱$\overset{V}{\text{小}}$消耗多
+\end{keybox}
+% 原稿此行被红笔圈出；“大”“小”二字上方各有一个 V（疑为速度）
+
+% ---- block 010-05 (原稿第10页) kind=knowledge ----
+圆弧摩擦：槽大\ 拱小\quad 摩擦多
+
+凹凸轨：\ $t_{\text{槽}}<t_{\text{平}}<t_{\text{拱}}$
+
+\notefig[0.25]{figures/p010_d.png}
+
+% ---- block 275-03 (原稿第275页) kind=method ----
+\textbf{连接体部分摩擦}
+
+\notefig[0.3]{figures/p275_b.png}
+\[
+W_f=\mu mg\,\frac L3
+\]
+\notefig[0.3]{figures/p275_c.png}
+\[
+W_f=\mu mg\left(L+\frac L3\right)+\mu mg\,\frac L3
+\]
+
+% ---- block 270-09 (原稿第270页) kind=method ----
+\notefig[0.25]{figures/p270_c.png}
+\begin{align*}
+N&=mg\cos\alpha+F\sin\alpha\\
+f&=\mu mg\cos\alpha+\mu F\sin\alpha\\
+W_f&=-fS=-\mu mgS\cos\alpha-\mu F\sin\alpha=-\mu mgx-\mu Fy % 原稿此处等号写成“÷”形；CHECK: 第二项按x、y的换算应为μFS sinα，原稿似无S
+\end{align*}
+$\circ$\ $E_{k1}=E_{k2}$ % 原稿“=”与“Ek₂”之间有一小笔画，疑为连笔
+
+\quad $t_1>t_2$
+
+\notefig[0.25]{figures/p270_d.png}
+
+% ---- block 278-10 (原稿第278页) kind=derivation ----
+\notefig[0.25]{figures/p278_f.png}
+\[
+W_f=\frac{1}{2}mgR
+\]
+$\because f>\mu mg\cos\alpha$
+
+又$\because$ $fx=\dfrac{1}{2}mgR$
+
+$\therefore \mu<\dfrac{1}{2}$
+
+\subsection{人对自己做功}
 % ---- block 009-03 (原稿第9页) kind=knowledge ----
 人对自己做功（外界不对人做功）
 
@@ -35,26 +191,62 @@ $W=Fs\cos\theta$\quad $s$为对地位移 % 公式下方有红笔下划线
 \end{tabular}
 % 原稿此表位于页面右侧；“加速/匀速/减速”三词带下划线；“匀速”行“生物质能”下方有一行小字（形似“（原地起跳）”）；末行箭头后的字被页边截断
 
-
-\section{功·非质点对象做功}
-% ---- block 009-04 (原稿第9页) kind=method ----
-非质点对象做功，有质量的绳/杆
-
-\hspace{4em}分段$+$找重心，$W=m_1g\Delta h_1+m_2g\Delta h_2$
-
-\notefig[0.25]{figures/p009_a.png}
+% ---- block 117-02 (原稿第117页) kind=note ----
+人站起来\underline{做功了}\quad \underline{人原地走}\quad $\underline{W_{\text{内}}=W_f}$
 
 
-\section{弹簧模型·能量守恒}
-% ---- block 009-05 (原稿第9页) kind=method ----
-过程写动能\qquad 过程写动量
+\section{功率}
+% ---- block 009-02 (原稿第9页) kind=formula ----
+平均功率\quad $\bar{P}=\dfrac{W}{t}$
 
-弹簧\quad $\left\{\begin{array}{l}\pm W_{\text{弹}}=E_{p\text{初}}-E_{p\text{末}}\Rightarrow\text{过程写动能/能量}\\[4pt] F=k\Delta x\to\text{状态写牛二}\end{array}\right.$
+瞬时功率\quad $P=Fv\cos\alpha$
 
-能量守恒\quad $\Delta E_{\text{增}}=\Delta E_{\text{减}}$（定量）\quad $E_1+\cdots E_n=$定值（定性）
+% ---- block 270-05 (原稿第270页) kind=formula ----
+$P$ 定义式\quad $P=\dfrac{W}{t}$
+\[
+P=F\cdot v\cos\alpha
+\]
+\[
+\bar P=F\bar v
+\]
+\[
+P_{\text{瞬}}=FV_{\text{瞬}}
+\]
+
+% ---- block 089-07 (原稿第89页) kind=formula ----
+\notefig[0.25]{figures/p089_f.png}
+\[ \bar P_G=\frac Wt\qquad P_{G\,\text{瞬}}=FV\cos\alpha \]
+% CHECK: 下标 G 手写形似 G，疑为“功/合”
+\noindent 对匀变速\quad $P_{t/2}=\dfrac{P_0+P_t}{2}=\bar P$\qquad $W=\dfrac{(P_0+P)t}{2}=\bar Pt$
+
+% ---- block 091-02 (原稿第91页) kind=method ----
+\notefig[0.25]{figures/p091_b.png}
+
+$P_{G}\ \max$
+\[
+P_{G}=mgv\cos\theta=mg\sqrt{2gL\sin\theta}\,\cos\theta
+\]
+当 $\tan\theta=\dfrac{\sqrt{2}}{2}$ 时取最大
+
+% ---- block 040-07 (原稿第40页) kind=derivation ----
+\textbf{风力发电机}
+\notefig[0.25]{figures/p040_d.png}
+\[
+P=\frac{\frac12\rho\,\Delta l\,\pi r^2V^2}{\Delta t}=\frac12\rho\pi r^2V^3 % 原稿分子中的 Δl 与分母 Δt 各被圈出(Δl/Δt=V)
+\]
 
 
 \section{机车启动}
+% ---- block 010-01 (原稿第10页) kind=formula ----
+$t$\ $S$\ 互求\quad 动能定理
+
+\[
+Pt-fS=\Delta E_k=\frac{1}{2}mV_m^2-0
+\]
+\[
+P_0t-fS=\frac{1}{2}mV_m^2-\frac{1}{2}mV_1^2
+\]
+
 % ---- block 009-06 (原稿第9页) kind=method ----
 状态写牛二\quad $F_{\text{牵}}-f=ma$
 
@@ -87,6 +279,32 @@ P=ma+f\cdot\unclear{at}
 % CHECK: 末行被页面下缘截断，仅见“P=ma+f·?t”，原稿似无括号
 \notefig[0.3]{figures/p083_i.png}
 
+% ---- block 084-03 (原稿第84页) kind=method ----
+\notefig[0.3]{figures/p084_c.png}
+\notefig[0.28]{figures/p084_d.png}
+\begin{align*}
+&\frac{P}{v}-f=ma\\
+&a=\frac{P}{m}\cdot\frac1v-\frac{f}{m}
+\end{align*}
+
+% ---- block 084-02 (原稿第84页) kind=method ----
+\notefig[0.35]{figures/p084_b.png}
+A$\to$B\quad 恒$a$
+
+B$\to$C\quad 恒$P$
+
+\[
+F=\frac{P}{V}-f
+\]
+
+% ---- block 010-02 (原稿第10页) kind=method ----
+\textbf{突变问题}
+
+加速\quad $\overset{\downarrow}{a}=\dfrac{F-f}{m}=\dfrac{\frac{P}{v}-f}{m}$\quad $\left\{\begin{array}{l}\text{功率突变}\\ \text{阻力突变}\end{array}\right.$\ $v$\ $\left\{\begin{array}{l}\text{加速}\\ \text{减速}\end{array}\right.$
+
+减速\quad $\overset{\downarrow}{a}=\dfrac{f-\frac{P}{v}}{m}$
+% “a”上方有一个小符号（形似“↓”或“v”）；“减速”行分子第二项手写形似“P/v”；两行右侧各有一条短弧线
+
 % ---- block 084-01 (原稿第84页) kind=derivation ----
 \textbf{机车启动方程}
 
@@ -101,24 +319,6 @@ P=ma+f\cdot\unclear{at}
 \]
 \notefig[0.3]{figures/p084_a.png}
 $F_{\text{恒定}}$\qquad $F\downarrow\to F=f$
-
-% ---- block 084-02 (原稿第84页) kind=method ----
-\notefig[0.35]{figures/p084_b.png}
-A$\to$B\quad 恒$a$
-
-B$\to$C\quad 恒$P$
-
-\[
-F=\frac{P}{V}-f
-\]
-
-% ---- block 084-03 (原稿第84页) kind=method ----
-\notefig[0.3]{figures/p084_c.png}
-\notefig[0.28]{figures/p084_d.png}
-\begin{align*}
-&\frac{P}{v}-f=ma\\
-&a=\frac{P}{m}\cdot\frac1v-\frac{f}{m}
-\end{align*}
 
 % ---- block 084-04 (原稿第84页) kind=derivation ----
 \notefig[0.3]{figures/p084_e.png}
@@ -139,87 +339,7 @@ F_1V_1=\frac{F_1}{2}V_2\qquad\therefore V_2=2V_1\qquad\text{反比例函数性�
 恒$P$比恒$a$走得远\qquad 故走相同距离\ 恒$P$快
 
 
-\section{机车启动·动能定理}
-% ---- block 010-01 (原稿第10页) kind=formula ----
-$t$\ $S$\ 互求\quad 动能定理
-
-\[
-Pt-fS=\Delta E_k=\frac{1}{2}mV_m^2-0
-\]
-\[
-P_0t-fS=\frac{1}{2}mV_m^2-\frac{1}{2}mV_1^2
-\]
-
-
-\section{机车启动·突变问题}
-% ---- block 010-02 (原稿第10页) kind=method ----
-\textbf{突变问题}
-
-加速\quad $\overset{\downarrow}{a}=\dfrac{F-f}{m}=\dfrac{\frac{P}{v}-f}{m}$\quad $\left\{\begin{array}{l}\text{功率突变}\\ \text{阻力突变}\end{array}\right.$\ $v$\ $\left\{\begin{array}{l}\text{加速}\\ \text{减速}\end{array}\right.$
-
-减速\quad $\overset{\downarrow}{a}=\dfrac{f-\frac{P}{v}}{m}$
-% “a”上方有一个小符号（形似“↓”或“v”）；“减速”行分子第二项手写形似“P/v”；两行右侧各有一条短弧线
-
-
-\section{圆弧摩擦·凹凸轨}
-% ---- block 010-05 (原稿第10页) kind=knowledge ----
-圆弧摩擦：槽大\ 拱小\quad 摩擦多
-
-凹凸轨：\ $t_{\text{槽}}<t_{\text{平}}<t_{\text{拱}}$
-
-\notefig[0.25]{figures/p010_d.png}
-
-
-\section{连续体功率·风力发电机}
-% ---- block 040-07 (原稿第40页) kind=derivation ----
-\textbf{风力发电机}
-\notefig[0.25]{figures/p040_d.png}
-\[
-P=\frac{\frac12\rho\,\Delta l\,\pi r^2V^2}{\Delta t}=\frac12\rho\pi r^2V^3 % 原稿分子中的 Δl 与分母 Δt 各被圈出(Δl/Δt=V)
-\]
-
-
-\section{功·合力做功}
-% ---- block 041-09 (原稿第41页) kind=derivation ----
-\notefig[0.25]{figures/p041_i.png}
-% 图内标注：左侧方块，经绳连到小圆(滑轮/动点)，力 $F$ 斜向上，两侧夹角各标 $\theta/2$，虚线延长，竖直线为边界
-\[
-F_{\text{合}}=2F\cos\frac{\theta}{2}\qquad
-W=2F\cos\frac{\theta}{2}\cdot S\cdot\cos\frac{\theta}{2}=\red{\underline{2FS\cos^{2}\frac{\theta}{2}}}=\red{\underline{FS(1+\sin\theta)}}
-\]% 后两项下方各有红色下划线；CHECK: 2cos^2(θ/2)=1+cosθ，原稿末项写作 1+sinθ(笔误或误读)，照原样转录；“cos”后上标写作“2θ”分母“2”，按 cos^2(θ/2) 转录
-
-
-\section{功和功率}
-% ---- block 062-01 (原稿第62页) kind=formula ----
-\textbf{机械能}
-\begin{itemize}
-\item 功\quad $W=Fs\cos\alpha$
-  \begin{itemize}
-  \item $0\le\alpha<90^\circ$\quad 正功
-  \item $90^\circ<\alpha\le180^\circ$\quad 负功
-  \item $\alpha=90^\circ$\quad 不做功
-  \item $W=W_1+W_2+\cdots+\cdots$ % 原稿末尾为省略号
-  \end{itemize}
-\item 功率\quad $P=Fv\cos\alpha$\qquad $\bar{P}=\dfrac{W}{t}$\qquad $P_{\text{瞬}}=Fv_{\text{瞬}}\cos\alpha$.
-\end{itemize}
-
-% ---- block 062-02 (原稿第62页) kind=summary ----
-\textbf{功和功率}
-\begin{itemize}
-\item 功的正负判断和恒力做功的计算.
-  \begin{itemize}
-  \item 力与位移夹角、力与速度夹角
-  \end{itemize}
-\item 变力做功的五种计算方法.
-  \begin{itemize}
-  \item 微元法(拉磨)\quad 平均力法(线性变力 $kx$)\quad 等效代换法\quad $F$-$x$图像\unclear{法}\quad 动能定理求变力做功 % CHECK: “图像法”的末字形似“波”，按语义读作“法”
-  \end{itemize}
-\item 功率的分析与计算
-\item 机车启动问题.\quad 方程.
-\end{itemize}
-
-
-\section{动能定理}
+\section{动能定理及其应用}
 % ---- block 062-03 (原稿第62页) kind=summary ----
 \textbf{动能定理及应用}
 \begin{itemize}
@@ -234,8 +354,210 @@ W=2F\cos\frac{\theta}{2}\cdot S\cdot\cos\frac{\theta}{2}=\red{\underline{2FS\cos
 \item 动能定理解决多过程问题\quad 只管功和两点速度
 \end{itemize}
 
+% ---- block 077-03 (原稿第77页) kind=summary ----
+不以模型分过程而以方程分过程．
+\[
+\begin{cases}
+\text{全过程类}\\
+\text{上抛下落类}\\
+\text{绳杆连接体类．}
+\end{cases}
+\]
 
-\section{机械能守恒}
+\subsection{全过程类（多过程与往返路程）}
+% ---- block 244-02 (原稿第244页) kind=method ----
+\notefig[0.4]{figures/p244_b.png}
+\[ \mu=\frac{h}{x_1+x_2} \]
+
+% ---- block 090-04 (原稿第90页) kind=problem ----
+\begin{problem}
+\notefig[0.3]{figures/p090_d.png}
+\begin{solution}
+\[ \begin{cases} \dfrac12mV_0^2=mg(H-h)-\mu mg\cos\theta\,\dfrac{L}{\cos\theta}\\[6pt] h=\dfrac{g}{2V_0^2}S^2\end{cases} \]
+\[ S^2=2h\left[2(H-h)-2\mu L\right] \]
+\[ y=hH-h^2-h\mu L=-h^2+(H-\mu L)h \]
+% “−hμL” 写在 “hH−h²” 的下方；“(H−h)”中的 h 笔画加粗
+\noindent $h=\dfrac{H-\mu L}{2}$ 时取\unclear{最}大值
+\end{solution}
+\end{problem}
+
+% ---- block 168-01 (原稿第168页) kind=problem ----
+\begin{problem}
+\textbf{数列类物理过程}
+
+小球从 $H$ 处静止下落 $\Leftarrow$ $f=kmg$ $(k<1)$\quad 每次碰地后 $v$ 不变\quad 求总路程\unclear{…} % 该行右端被照片边缘截断，末尾还有数字不可见
+\begin{solution}
+\textbf{法1}（原稿圈出）
+\[
+mgH-kmgS=0-0
+\]
+\[
+S=\frac{H}{k}
+\]
+\textbf{法2}（原稿圈出）
+
+step1
+\[
+mgH-kmgH=\frac{1}{2}mv^2
+\]
+\[
+-mgh_1-kmgh_1=0-\frac{1}{2}mv^2
+\]
+\[
+\therefore h_1=\frac{1-k}{1+k}H
+\]
+% 右侧另写：等比数列求和公式
+\[
+S_n=\frac{a_1}{1-q}\qquad (q<1,\ n\to+\infty)
+\]
+step2\quad 易得
+\[
+h_2=\frac{1-k}{1+k}h_1=\left(\frac{1-k}{1+k}\right)^2H
+\]
+step3\quad 综上
+\[
+h_n=\left(\frac{1-k}{1+k}\right)h_{n-1}=\left(\frac{1-k}{1+k}\right)^nH
+\]
+求和
+\[
+S=H+2(h_1+h_2+\cdots+h_n)=H+\frac{2h_1}{1-\frac{1-k}{1+k}}=\frac{H}{k}.
+\]
+\[
+a_{\text{下}}=\frac{mg-kmg}{m}=(1-k)g
+\]
+\[
+a_{\text{上}}=\frac{mg+kmg}{m}=(1+k)g
+\]
+\[
+H=\frac{1}{2}a_{\text{下}}t_0^2
+\]
+\[
+h_1=\frac{1}{2}a_{\text{上}}t_{1\text{上}}^2=\frac{1}{2}a_{\text{下}}t_{1\text{下}}^2
+\]
+\[
+t_{1\text{上}}=\sqrt{\frac{2h_1}{a_{\text{上}}}}=\sqrt{\frac{2(1-k)}{a_{\text{上}}(1+k)}}=\unclear{\dots}\cdot\sqrt{\frac{2qH}{a_{\text{上}}}}
+\]
+% 上式“=”后有一块涂改贴覆盖，其后为“·√(2qH/a_上)”
+\[
+t_{1\text{下}}=\sqrt{\frac{2qH}{a_{\text{下}}}}
+\]
+\[
+\text{易得}\quad t_{2\text{上}}=\sqrt{\frac{2qh_1}{a_{\text{上}}}}=\sqrt{\frac{2q^2H}{a_{\text{上}}}}
+\]
+\[
+t_{2\text{下}}=\sqrt{\frac{2q^2H}{a_{\text{下}}}}
+\]
+\[
+\text{综上}\quad t_{n\text{上}}=\sqrt{\frac{2q^nH}{a_{\text{上}}}}\qquad t_{n\text{下}}=\sqrt{\frac{2q^nH}{a_{\text{下}}}}
+\]
+\[
+t_{\text{上总}}=\sqrt{\frac{2H}{a_{\text{上}}}}\left(\sqrt{q}+\sqrt{q^2}+\cdots+\sqrt{q^n}\right)=\frac{\sqrt{q}}{1-\sqrt{q}}\qquad \text{设}\ \frac{1-k}{1+k}=q
+\]
+% 原稿 t_上总 一行中 √q^2、√q^n 的 2、n 写在字母右下（像下标），按上下文取为指数；分子 √q 上方有一笔多余划痕
+\[
+t_{\text{下总}}=\sqrt{\frac{2H}{a_{\text{下}}}}\left(\sqrt{q}+\sqrt{q^2}+\cdots+\sqrt{q^n}\right)=\frac{\sqrt{q}}{1-\sqrt{q}}
+\]
+\[
+t_{\text{总}}=t_0+t_{\text{上总}}+t_{\text{下总}}=\frac{2\sqrt{q}}{1-\sqrt{q}}+\sqrt{\frac{2H}{(1-k)g}}
+\]
+% CHECK: t_上总、t_下总 的结果与 t_总 中的 2√q/(1-√q) 均未带前置因子 √(2H/a)，原稿如此
+\end{solution}
+\end{problem}
+
+% ---- block 168-02 (原稿第168页) kind=problem ----
+\begin{problem}
+改：反弹 $E_K'$ 为 $E_K$ 的 $k$ 倍，$f=0$，求总\unclear{…}路程 % “求总”与“路程”之间有涂改贴覆盖
+\begin{solution}
+\[
+mgH=E_K\qquad \therefore h_1=kH
+\]
+\[
+E_{K1}=kE_K\qquad h_2=kh_1
+\]
+\[
+-mgh_1=0-E_{K1}\qquad h_n=kh_{n-1}=k^nH
+\]
+\[
+S=H+2(h_1+h_2+\cdots h_n)=H+\frac{2kH}{1-k}
+\]
+\end{solution}
+\end{problem}
+
+% ---- block 091-07 (原稿第91页) kind=problem ----
+\notefig[0.25]{figures/p091_e.png}
+
+每次过\unclear{O}动能损失 $5\%$\quad 求总路程
+\[
+H=H+2H(0.95+0.95^{2}+\cdots+0.95^{n})\xrightarrow[n\to\infty]{}39H
+\qquad l_{\text{总}}=\frac{H_{\text{总}}}{\sin\theta}=\frac{39H}{\sin\theta}
+\]
+% CHECK: 第一个式子左边手写为 H（应为 H总？），原样照录
+
+\subsection{上抛下落类}
+% ---- block 077-04 (原稿第77页) kind=method ----
+\textbf{上抛下落类}\quad （有双向性）．
+\begin{keybox}
+结论\quad 无论 $f$ 是否存在
+\end{keybox}
+\red{能量 $\times n$\quad 速度 $\times\sqrt{n}$}
+% 以下两行为原稿右侧的黑字小注
+\[
+E_{k0}\times n\quad h\times n\quad E_{k\text{返}}\times n\quad W_f\times n\quad W_G\times n
+\]
+\[
+V_{n\text{返}}\times\sqrt{n}
+\]
+% CHECK: “返”字辨认存疑（E_k返、V_n返）
+\begin{align*}
+\text{上}\quad & 0-\tfrac12 mV_0^2=-mgh-fh \quad\text{①}\\
+\text{下}\quad & \tfrac12 mV^2-0=mgh-fh \quad\text{②}\\
+& \frac{\text{①}}{\text{②}}=\frac{V_0^2}{V^2}=\frac{f+mg}{mg-f}\\
+& \tfrac12 mv^2-\tfrac12 mv_0^2=-2hf
+\end{align*}
+
+% ---- block 077-05 (原稿第77页) kind=method ----
+\red{$0-V_{\text{上}}^2=-g\sin\theta-\mu g\cos\theta$}\\
+\red{$V_{\text{下}}^2=g\sin\theta-\mu g\cos\theta$}
+% CHECK: 红字 V 的下标手写像 E/F，按上下文取 上/下
+\notefig[0.25]{figures/p077_a.png}
+\[
+\begin{cases}
+W_G = mg\sin\theta\,S\\
+W_f = \mu mg\cos\theta\,S
+\end{cases}
+\qquad
+\frac{W_G}{W_f}=\frac{\tan\theta}{\mu}\ \text{为定值}
+\qquad
+W_f\propto W_G
+\]
+
+% ---- block 077-06 (原稿第77页) kind=problem ----
+\begin{problem}
+\unclear{小}球竖直上抛，最高 $H$，$f$ 恒定，上升至 $h$ 处，$E_k=2E_p$，下落至离地 $h$ 处，$E_p=2E_k$，求 $h$。
+\begin{solution}
+\notefig[0.3]{figures/p077_b.png}
+\[
+\left\{
+\begin{array}{l}
+\uparrow\ E_k=2mgh\qquad \downarrow\ E_k'=\tfrac12 mgh\\[6pt]
+h\ \left\{
+\begin{array}{l}
+-\tfrac32 mgh=-W_f\times 2\\
+W_f=-\tfrac34 mgh\\
+0-2mgh=-\tfrac34 mgh-mg(H-h)\\
+\therefore h=\tfrac49 H
+\end{array}
+\right.
+\end{array}
+\right.
+\]
+% 原稿左侧示意：顶部一条横线，↑自小圆圈向上、↓向下止于小圆圈（上升/下落经过 h 处）
+% CHECK: −(3/2)mgh=−W_f×2 与 W_f=−(3/4)mgh 符号不一致（原稿如此）
+\end{solution}
+\end{problem}
+
+
+\section{势能与机械能守恒}
 % ---- block 062-04 (原稿第62页) kind=summary ----
 \textbf{机械能的守恒及应用}
 \begin{itemize}
@@ -246,156 +568,73 @@ W=2F\cos\frac{\theta}{2}\cdot S\cdot\cos\frac{\theta}{2}=\red{\underline{2FS\cos
 \item \unclear{多}个物体的机械能守恒\quad (单体不守恒) % CHECK: 照片底边裁切，最后一行只露出上半，字迹据残笔辨认
 \end{itemize}
 
+% ---- block 083-06 (原稿第83页) kind=formula ----
+$Q=E_2-E_1$\qquad $E_k=\dfrac12mv^2$
 
-\section{功能关系}
-% ---- block 063-01 (原稿第63页) kind=summary ----
-\textbf{功能关系\quad 能量守恒定律}
+$E_{\text{机}}=E_k+E_p$
+
+\subsection{重力势能与弹性势能}
+% ---- block 083-09 (原稿第83页) kind=knowledge ----
+$m$与地球系统重力势能$=E_{pm}$
+
+% ---- block 110-06 (原稿第110页) kind=derivation ----
+\textbf{用弹性势能的动能定理}
+\[
+E_{p\text{弹}}=\dfrac{1}{2}k\Delta x^2
+\]
+\notefig[0.3]{figures/p110_f.png}
+\[
+W=\dfrac{k(x_1+x_2)(x_2-x_1)}{2}
+\]
+
+\subsection{机械能守恒的判断与应用}
+% ---- block 273-02 (原稿第273页) kind=knowledge ----
 \begin{itemize}
-\item 功能关系
-\item 能量守恒定律.
+\item 合外力为0 不是\textsuperscript{机守}守恒守恒 % CHECK: 此行“守恒”似连写两遍；“机守”为写在上方的插入小字
+\item 合外力做功为0 也不是机械能守恒\quad（匀速放\unclear{重}物） % 括号内为写在行末右下方的小字
+\item 只有重力、弹力做功\\
+  $\to$ 系统内的弹力
 \end{itemize}
 
-% ---- block 063-02 (原稿第63页) kind=formula ----
-\begin{itemize}
-\item 功能关系的理解与应用
-  \begin{align*}
-  W_{G}&=-\Delta E_p \\ % CHECK: 下标字形似 a/G，按重力功 G 转录
-  W_{\text{弹}}&=-\Delta E_p \\
-  W_{\text{合}}&=\Delta E_k \\
-  W_{\text{其他}}&=\Delta E_{\text{机}} \\
-  W_{\text{电}}&=-\Delta E_p
-  \end{align*}
-\item 摩擦力做功与能量变化的关系\quad 耗散力
-  \begin{itemize}
-  \item $Q=fs_{\text{相对路程}}$.\quad $W_{\text{克安}}=W_{\text{电}}$.
-  \end{itemize}
-\end{itemize}
+% ---- block 273-01 (原稿第273页) kind=derivation ----
+\notefig[0.25]{figures/p273_a.png}
 
-% ---- block 083-12 (原稿第83页) kind=formula ----
-\textbf{功能关系}
+非质点\unclear{系}
 
-% 原稿左侧红笔大括号；“=−mgΔh”“=−kQq/r”写在W_G、W_电式的上方右侧
+由机械能守恒
 \[
-\left\{\begin{aligned}
-&W_{\text{合}}=\Delta E_k\qquad W_G=-\Delta E_{pG}=-mg\Delta h\qquad W_{\text{电}}=-\Delta E_{p\text{电}}=-\frac{kQq}{r}\\[6pt]
-&W_{\text{弹}}=-\Delta E_{p\text{弹}}=-\frac12k\Delta x^2\\[6pt]
-&W_{\text{引}}=-\Delta E_{p\text{引}}=\frac{GMm}{r} % CHECK: 下标笔迹似“31”，按“引”(万有引力)转录
-\\[6pt]
-&W_f=-Q_f\\[6pt]
-&W_{\text{安}}=-Q_{\text{电}}\\[6pt]
-&W_{\text{其他}}=\Delta E_{\text{机}}
-\end{aligned}\right.
-\]
-
-\[
-W_F+W_G+W_{\text{电}}+W_{\text{弹}}+W_f=\Delta E_k
-\]
-
-
-\section{能量守恒定律}
-% ---- block 063-03 (原稿第63页) kind=knowledge ----
-\textbf{能量守恒定律}
-\begin{itemize}
-\item $\Delta E_{\text{减}}=\Delta E_{\text{增}}$\quad 分段、分模型、分过程
-\end{itemize}
-
-
-\section{功能极值·杆连接体}
-% ---- block 075-01 (原稿第75页) kind=problem ----
-% 页面上方露出的封面及右上角相邻页的倾斜小字（「ρ=1.429 g·L^-1」「…5.72」）属杂物/相邻页，未转录
-\textbf{功能极值}
-
-\begin{problem}[1、]
-\notefig[0.4]{figures/p075_a.png}
-\begin{solution}
-\[
-2mg\cdot 2L\sin\theta-3mgL(1-\cos\theta)=\frac{1}{2}\cdot 2m(2V)^{2}+\frac{1}{2}\cdot 3mV^{2}
+\frac12 mg\frac L2=\frac12 mv^2
 \]
 \[
-4\sin\theta+3\cos\theta=5\sin(\theta+37^\circ)\qquad \text{当 }\theta=53^\circ\text{ 时}
+v=\sqrt{\frac{gL}{2}}
 \]
-此时 $V_B=\sqrt{\dfrac{4}{11}gL}$
+
+% ---- block 098-02 (原稿第98页) kind=note ----
+天体\ 大气阻力\quad /\quad 空气阻力\quad /\quad \uline{\unclear{找到…不能…的实例}}
+
+要考虑阻力
+% 原稿“阻”字上方有一处很小的批注字，疑为“空气”，未能辨清；上面三项之间以长斜线“/”隔开，最后一项下有横线
+
+
+\section{连接体的能量问题}
+\subsection{系统的动能定理与机械能守恒}
+% ---- block 147-02 (原稿第147页) kind=knowledge ----
+% 原稿“区别”部分与左侧①②③之间有一条竖线；“系统”原稿写作“孑统”
+\textbf{绳杆连接体}
+
+\noindent ①　系统牛二律　$\sum F=\sum(ma)$
+
+\noindent ②　系统　动量定理　$\sum I_{\text{外}}=\Delta\bigl(\sum p_{\text{系}}\bigr)$
+
+\noindent ③　系统　动能定理　$\sum W_{\text{外}}+\sum W_{\text{内}}=\Delta\bigl(E_{\mathrm{k}\text{系}}\bigr)$% CHECK: “=Δ”处被引线笔迹盖住，按上下文读作 =Δ；E_k 的下标读作“系”
 
 \medskip
-$V=\omega L$ % CHECK: 手写像「V=WL」，按 ω 转录
-\\
-$h_B=L(1-\cos\theta)$.
-\end{solution}
-\end{problem}
+\noindent \textbf{区别}　①　不考虑内力　\struck{\unclear{②}}% ①下方有一个被涂划掉的带圈符号，辨认不清(疑为②)
 
-% ---- block 075-02 (原稿第75页) kind=problem ----
-\begin{problem}[2、]
-\notefig[0.35]{figures/p075_b.png}
-起始 $AB$ 与地成 $60^\circ$ 角，$\theta$ 为何值时 $A$ 脱离墙.
+\noindent \hspace*{3.2em}②　要考虑内力　不能忽略电场力
 
-$B$ 速度最大时 $A$ 脱离墙
-\begin{solution}
-\[
-mgL(\sin60^\circ-\sin\theta)=\frac{1}{2}m(V_A^{2}+V_B^{2})
-\]
-\[
-V_A\sin\theta=V_B\cos\theta
-\]
-\begin{align*}
-V_B^{2}&=2gL(\sin60^\circ-\sin\theta)\,\frac{1}{1+\cot^{2}\theta}\\
-&=2gL(\sin60^\circ-\sin\theta)\sin^{2}\theta\\
-&=gL(2\sin60^\circ-2\sin\theta)\sin\theta\,\sin\theta
-\end{align*}
-当 $\sin\theta=\dfrac{\sqrt{3}}{3}$ 时 $V_B=\dfrac{\sqrt{\sqrt{3}\,gL}}{3}$ 最大.
-\end{solution}
-\end{problem}
+\noindent \hspace*{6em}内力$\times$相对距离 $\left\{\begin{tabular}{@{}l@{}}安培力\\摩擦力\\弹簧\end{tabular}\right.$
 
-% ---- block 075-03 (原稿第75页) kind=problem ----
-\begin{problem}[3、]
-\notefig[0.2]{figures/p075_c.png}
-$A$ 在管内 $B$ 在管外\quad 扰动后.
-\begin{itemize}
-\item[(1)] 求$A$落地速度
-\item[(2)] $A$机械能最小时，地对$B$支持力
-\item[(3)] 若$m_A=m_B$，$A$机械能最小时 杆与竖直方向夹角的余弦值为
-\end{itemize}
-\begin{solution}
-\textbf{(1)}\quad $m_AgL=\dfrac{1}{2}m_AV_A^{2}$\quad $V_A=\sqrt{2gL}$\quad $V_B=0$
-
-\textbf{(2)}\quad $E_{A\text{机}}+E_{B\text{机}}=m_AgL$
-
-$F_{\text{杆}}=0$ 时 $E_{B\text{机}}$ 最大
-
-$F_{\text{地}}=m_Bg$
-
-\notefig[0.18]{figures/p075_d.png}
-
-\textbf{(3)}
-\begin{align*}
-&mgL(1-\cos\theta)=\frac{1}{2}m(V_A^{2}+V_B^{2})\\
-&V_A\cos\theta=V_B\sin\theta\\
-&V_B^{2}=2gL(1-\cos\theta)\cos^{2}\theta\\
-&\phantom{V_B^{2}}=gL(2-2\cos\theta)\cos^{2}\theta
-\end{align*}
-$\cos\theta=\dfrac{2}{3}$ 时 $V_B^{2}=\dfrac{8}{27}gL$ 最大
-
-$E_{A\text{机}}=mgL-\dfrac{1}{2}mV_B^{2}=\dfrac{23}{27}mgL$
-\end{solution}
-\end{problem}
-
-% ---- block 075-04 (原稿第75页) kind=problem ----
-\begin{problem}[4、]
-\notefig[0.25]{figures/p075_e.png}
-\begin{solution}
-杆对$b$先做正功后做负功.
-
-对$a$先做负功再做正功.
-
-$a$落地时 $V=\sqrt{2gh}$
-
-$E_{B\text{机}}\,\max=\dfrac{4}{27}mgh$\quad 此时，$a$的加速度为$g$，$F_{\text{杆}}=0$.
-
-$E_{A\text{机}}\,\min=\dfrac{23}{27}mgh$
-\end{solution}
-\end{problem}
-
-
-\section{动能定理与机械能守恒·系统}
 % ---- block 077-01 (原稿第77页) kind=formula ----
 \textbf{系统动能定理．}
 \[
@@ -419,8 +658,6 @@ W_{\text{其}}=\Delta E_{k}+\Delta E_{pG}+\Delta E_{p\text{弹}}=\Delta E_{\text
 W_{\text{其}}=0\ \text{时 机械能守恒}
 \]
 
-
-\section{连接体·能量}
 % ---- block 077-02 (原稿第77页) kind=method ----
 \textbf{连接体}
 \[
@@ -441,6 +678,37 @@ W_{\text{其}}=0\ \text{时 机械能守恒}
 % 小字“正功/负功”写在对应符号上方；第一行正功在第一个0上、负功在最后的0上；第二行负功在“有”“0”之间偏0、正功在最后的“有”上
 弹簧速度不能分解
 
+% ---- block 147-04 (原稿第147页) kind=method ----
+\textbf{绳杆\unclear{双}动能定理}% “杆”与“动能定理”之间的字笔迹难辨，疑为“双”
+
+\noindent $\left\{\begin{tabular}{@{}l@{}}1：物1　动能定理\\2：物2　动能定理\\关联速度　$V_1$与$V_2$关系（沿绳/杆速度都相等）\end{tabular}\right.$
+
+% ---- block 273-03 (原稿第273页) kind=method ----
+\textbf{机械能守恒}
+
+连接体型
+\begin{itemize}
+\item 速度关联不同
+\item $h_1$、$h_2$ 高度变化不同
+\end{itemize}
+
+% ---- block 078-05 (原稿第78页) kind=method ----
+\notefig[0.25]{figures/p078_e.png}
+\[
+\begin{cases}
+W_{G\text{物}}-W_T=\Delta E_{k\text{物}}\\
+W_T+W_f+W_{G\text{绳}}=\Delta E_{k\text{绳}}.
+\end{cases}
+\]
+
+% ---- block 147-03 (原稿第147页) kind=note ----
+% “C”形符号按“⊂”转录；机守=机械能守恒，能守=能量守恒(原稿缩写)
+机守$\subset$能守$\subset$动能定理
+
+% ---- block 286-03 (原稿第286页) kind=note ----
+对系统，内力对 A、B 做功，绝对值相等
+
+\subsection{绳连接体}
 % ---- block 078-01 (原稿第78页) kind=problem ----
 \textbf{连接体}
 \begin{problem}[①]
@@ -521,93 +789,275 @@ A:\ W_T'-m_1gh-E_{p2\text{弹}}=\tfrac12 m_1V^2
 \end{solution}
 \end{problem}
 
-% ---- block 078-05 (原稿第78页) kind=method ----
-\notefig[0.25]{figures/p078_e.png}
-\[
-\begin{cases}
-W_{G\text{物}}-W_T=\Delta E_{k\text{物}}\\
-W_T+W_f+W_{G\text{绳}}=\Delta E_{k\text{绳}}.
-\end{cases}
-\]
+% ---- block 228-03 (原稿第228页) kind=problem ----
+\textbf{2.}
+\notefig[0.25]{figures/p228_c.png}
 
+$V_P=V_2=V_Q\cos\theta$ \qquad $\because 0<\theta\le90^\circ$ \quad $\therefore V_P<V_Q$
 
-\section{解题分类·过程与方程}
-% ---- block 077-03 (原稿第77页) kind=summary ----
-不以模型分过程而以方程分过程．
-\[
-\begin{cases}
-\text{全过程类}\\
-\text{上抛下落类}\\
-\text{绳杆连接体类．}
-\end{cases}
-\]
+P先失重 $T<mg$ 后超重 $T>mg$ % CHECK: P质量为4m，此处"mg"疑为4mg；"<"">"处笔迹重描
 
+故 $T\ne mg$ \quad 可等于 不恒等于
 
-\section{上抛下落类·双向性}
-% ---- block 077-04 (原稿第77页) kind=method ----
-\textbf{上抛下落类}\quad （有双向性）．
-\begin{keybox}
-结论\quad 无论 $f$ 是否存在
-\end{keybox}
-\red{能量 $\times n$\quad 速度 $\times\sqrt{n}$}
-% 以下两行为原稿右侧的黑字小注
-\[
-E_{k0}\times n\quad h\times n\quad E_{k\text{返}}\times n\quad W_f\times n\quad W_G\times n
-\]
-\[
-V_{n\text{返}}\times\sqrt{n}
-\]
-% CHECK: “返”字辨认存疑（E_k返、V_n返）
-\begin{align*}
-\text{上}\quad & 0-\tfrac12 mV_0^2=-mgh-fh \quad\text{①}\\
-\text{下}\quad & \tfrac12 mV^2-0=mgh-fh \quad\text{②}\\
-& \frac{\text{①}}{\text{②}}=\frac{V_0^2}{V^2}=\frac{f+mg}{mg-f}\\
-& \tfrac12 mv^2-\tfrac12 mv_0^2=-2hf
-\end{align*}
+Q到最低点 $E_{Q\text{机}}$最大 $E_{P\text{机}}$最小
 
-% ---- block 077-05 (原稿第77页) kind=method ----
-\red{$0-V_{\text{上}}^2=-g\sin\theta-\mu g\cos\theta$}\\
-\red{$V_{\text{下}}^2=g\sin\theta-\mu g\cos\theta$}
-% CHECK: 红字 V 的下标手写像 E/F，按上下文取 上/下
-\notefig[0.25]{figures/p077_a.png}
-\[
-\begin{cases}
-W_G = mg\sin\theta\,S\\
-W_f = \mu mg\cos\theta\,S
-\end{cases}
-\qquad
-\frac{W_G}{W_f}=\frac{\tan\theta}{\mu}\ \text{为定值}
-\qquad
-W_f\propto W_G
-\]
+\[ 4mg\left(\frac{d}{\cos37^\circ}-d\right)=mgd\tan37^\circ+\frac12 mV_Q^{2}\qquad V_Q=\frac{\sqrt{2gd}}{2} \]
 
-% ---- block 077-06 (原稿第77页) kind=problem ----
+% ---- block 234-04 (原稿第234页) kind=problem ----
 \begin{problem}
-\unclear{小}球竖直上抛，最高 $H$，$f$ 恒定，上升至 $h$ 处，$E_k=2E_p$，下落至离地 $h$ 处，$E_p=2E_k$，求 $h$。
+\notefig[0.2]{figures/p234_a.png}
+甲到这
 \begin{solution}
-\notefig[0.3]{figures/p077_b.png}
-\[
-\left\{
-\begin{array}{l}
-\uparrow\ E_k=2mgh\qquad \downarrow\ E_k'=\tfrac12 mgh\\[6pt]
-h\ \left\{
-\begin{array}{l}
--\tfrac32 mgh=-W_f\times 2\\
-W_f=-\tfrac34 mgh\\
-0-2mgh=-\tfrac34 mgh-mg(H-h)\\
-\therefore h=\tfrac49 H
-\end{array}
-\right.
-\end{array}
-\right.
-\]
-% 原稿左侧示意：顶部一条横线，↑自小圆圈向上、↓向下止于小圆圈（上升/下落经过 h 处）
-% CHECK: −(3/2)mgh=−W_f×2 与 W_f=−(3/4)mgh 符号不一致（原稿如此）
+\[ \left\{\begin{aligned} &T\sin\alpha=ma_{\text{甲}}\\ &4mg-T=4ma_{\text{乙}}\\ &a_{\text{乙}}=a_{\text{甲}}\sin37^\circ \end{aligned}\right. \] % CHECK: 由 a乙=64/89 g 反推，第3式似应为 cos37°（或 sin53°），原稿写 sin37°
+\[ a_{\text{乙}}=\frac{64}{89}g \]
+\[ 4mg\left(\frac{5}{3}d-d\right)-mg\frac{4}{3}d=\frac{1}{2}mv^2 \]
+\[ v=\sqrt{\frac{8}{3}gd} \]
+小球和乙机械能先$\uparrow$后$\downarrow$ \qquad \unclear{3}弹簧$E_p$先$\downarrow$后$\uparrow$
 \end{solution}
 \end{problem}
 
+\subsection{杆连接体}
+% ---- block 075-01 (原稿第75页) kind=problem ----
+% 页面上方露出的封面及右上角相邻页的倾斜小字（「ρ=1.429 g·L^-1」「…5.72」）属杂物/相邻页，未转录
+\textbf{功能极值}
 
-\section{功能关系·系统与单体机械能}
+\begin{problem}[1、]
+\notefig[0.4]{figures/p075_a.png}
+\begin{solution}
+\[
+2mg\cdot 2L\sin\theta-3mgL(1-\cos\theta)=\frac{1}{2}\cdot 2m(2V)^{2}+\frac{1}{2}\cdot 3mV^{2}
+\]
+\[
+4\sin\theta+3\cos\theta=5\sin(\theta+37^\circ)\qquad \text{当 }\theta=53^\circ\text{ 时}
+\]
+此时 $V_B=\sqrt{\dfrac{4}{11}gL}$
+
+\medskip
+$V=\omega L$ % CHECK: 手写像「V=WL」，按 ω 转录
+\\
+$h_B=L(1-\cos\theta)$.
+\end{solution}
+\end{problem}
+
+% ---- block 235-03 (原稿第235页) kind=problem ----
+\begin{problem}
+\notefig[0.25]{figures/p235_g.png}
+\begin{solution}
+\[ 2mg\,2l-mgl=\frac{1}{2}\,2m(2V)^2+\frac{1}{2}mV^2 \]
+\[ 3mgl=\frac{1}{2}\,2m\,4V^2+\frac{1}{2}mV^2 \]
+\[ =\frac{9mV^2}{2}=\text{\unclear{$\dfrac{6mg}{9}$}}\qquad V=\frac{\sqrt{6mg}}{3} \] % 此行字迹有涂改；CHECK: 根号内手写像 6mg，按推导似应为 6gl
+\par\smallskip
+\unclear{竖}直时对转轴作用力：对整体 $3mg-F=ma_1-2ma_2$
+\[ a_2=2a_1=\frac{2V^2}{l} \qquad a=\frac{v^2}{r} \]
+\end{solution}
+\end{problem}
+
+% ---- block 075-02 (原稿第75页) kind=problem ----
+\begin{problem}[2、]
+\notefig[0.35]{figures/p075_b.png}
+起始 $AB$ 与地成 $60^\circ$ 角，$\theta$ 为何值时 $A$ 脱离墙.
+
+$B$ 速度最大时 $A$ 脱离墙
+\begin{solution}
+\[
+mgL(\sin60^\circ-\sin\theta)=\frac{1}{2}m(V_A^{2}+V_B^{2})
+\]
+\[
+V_A\sin\theta=V_B\cos\theta
+\]
+\begin{align*}
+V_B^{2}&=2gL(\sin60^\circ-\sin\theta)\,\frac{1}{1+\cot^{2}\theta}\\
+&=2gL(\sin60^\circ-\sin\theta)\sin^{2}\theta\\
+&=gL(2\sin60^\circ-2\sin\theta)\sin\theta\,\sin\theta
+\end{align*}
+当 $\sin\theta=\dfrac{\sqrt{3}}{3}$ 时 $V_B=\dfrac{\sqrt{\sqrt{3}\,gL}}{3}$ 最大.
+\end{solution}
+\end{problem}
+
+% ---- block 075-04 (原稿第75页) kind=problem ----
+\begin{problem}[4、]
+\notefig[0.25]{figures/p075_e.png}
+\begin{solution}
+杆对$b$先做正功后做负功.
+
+对$a$先做负功再做正功.
+
+$a$落地时 $V=\sqrt{2gh}$
+
+$E_{B\text{机}}\,\max=\dfrac{4}{27}mgh$\quad 此时，$a$的加速度为$g$，$F_{\text{杆}}=0$.
+
+$E_{A\text{机}}\,\min=\dfrac{23}{27}mgh$
+\end{solution}
+\end{problem}
+
+% ---- block 075-03 (原稿第75页) kind=problem ----
+\begin{problem}[3、]
+\notefig[0.2]{figures/p075_c.png}
+$A$ 在管内 $B$ 在管外\quad 扰动后.
+\begin{itemize}
+\item[(1)] 求$A$落地速度
+\item[(2)] $A$机械能最小时，地对$B$支持力
+\item[(3)] 若$m_A=m_B$，$A$机械能最小时 杆与竖直方向夹角的余弦值为
+\end{itemize}
+\begin{solution}
+\textbf{(1)}\quad $m_AgL=\dfrac{1}{2}m_AV_A^{2}$\quad $V_A=\sqrt{2gL}$\quad $V_B=0$
+
+\textbf{(2)}\quad $E_{A\text{机}}+E_{B\text{机}}=m_AgL$
+
+$F_{\text{杆}}=0$ 时 $E_{B\text{机}}$ 最大
+
+$F_{\text{地}}=m_Bg$
+
+\notefig[0.18]{figures/p075_d.png}
+
+\textbf{(3)}
+\begin{align*}
+&mgL(1-\cos\theta)=\frac{1}{2}m(V_A^{2}+V_B^{2})\\
+&V_A\cos\theta=V_B\sin\theta\\
+&V_B^{2}=2gL(1-\cos\theta)\cos^{2}\theta\\
+&\phantom{V_B^{2}}=gL(2-2\cos\theta)\cos^{2}\theta
+\end{align*}
+$\cos\theta=\dfrac{2}{3}$ 时 $V_B^{2}=\dfrac{8}{27}gL$ 最大
+
+$E_{A\text{机}}=mgL-\dfrac{1}{2}mV_B^{2}=\dfrac{23}{27}mgL$
+\end{solution}
+\end{problem}
+
+% ---- block 294-03 (原稿第294页) kind=problem ----
+\begin{problem}[3]
+\notefig[0.3]{figures/p294_c.png}
+
+\begin{solution}
+分离时 $mgl(1-\sin\alpha)=\dfrac{1}{2}mv^2+\dfrac{1}{2}m\left(\dfrac{v}{\tan\alpha}\right)^2$
+
+$v^2=gl(2-2\sin\alpha)\sin^2\alpha$\quad 当 $\sin\alpha=\dfrac{2}{3}$ 时 $v_A$ 最大，
+
+$I_{\text{墙}}=mv=\ldots$
+
+B 的最大动能为落地时。
+\end{solution}
+\end{problem}
+
+% ---- block 119-03 (原稿第119页) kind=problem ----
+\begin{problem}[1.]
+\notefig[0.25]{figures/p119_c.png}
+% 图中标注：m、L、m（上方）；A、B；L、L；m、C
+
+① 求AB相碰瞬间速度
+
+② AB速度与C到细杆距离的关系
+\begin{solution}
+动能定理
+
+① \[ mg\left(L-\frac{\sqrt{3}}{2}L\right)=\frac{1}{2}\cdot 2mv^2 \qquad v=\sqrt{\left(1-\frac{\sqrt{3}}{2}\right)gL} \]
+
+水平方向动量守恒\quad $mv_A+mv_B=0$
+
+\notefig[0.25]{figures/p119_d.png}
+% 图中标注：$\theta$、$L$、$h$
+
+② \[ mg\left(h-\frac{\sqrt{3}}{2}L\right)=\frac{1}{2}\cdot 2mv^2+\frac{1}{2}mv_C^2 \]
+\[ v\cos\theta=v_C\sin\theta \]
+\[ \tan\theta=\frac{h}{\sqrt{L^2-h^2}}\qquad\therefore\ v=\sqrt{\frac{gh^2\left(2h-\sqrt{3}L\right)}{L^2+h^2}} \]
+\end{solution}
+\end{problem}
+
+% ---- block 119-05 (原稿第119页) kind=problem ----
+同
+\notefig[0.4]{figures/p119_g.png}
+% 图中为四幅小示意图（竖直两球杆、倒V形、水平三球带向上箭头、斜靠直角装置），“同”字在其左侧
+
+\notefig[0.25]{figures/p119_f.png}
+% 图中标注：A、m（顶点）；L、L；B、C 各 m
+
+bc：$v$\ 0\ 有\ 0\quad $W_{\text{正}}$\ $W_{\text{负}}$
+
+$F_{\text{杆}}=0$时\ $a_A=g$\ 其余时刻小于$g$
+
+$v_{A\text{地}}=\sqrt{2gL}$\quad $mgL=\frac{1}{2}mv^2$\quad $v_B=v_C=0$\ 水平动量抵消
+
+A机械能最小时\quad $v_A=0$\quad $F_{\text{杆}}=0$\quad $v_b=v_c=\dfrac{\sqrt{2gL}}{2}$\quad bc对地压力为$mg$
+
+\unclear{有超\ 失重} % 页面底边被截断，字迹不全
+
+\subsection{接触物体的关联速度}
+% ---- block 146-02 (原稿第146页) kind=problem ----
+\begin{problem}[1]
+\textbf{1、}①对斜面施加\unclear{力}$F_1$使之平衡，求$F_1$。②用$F$使斜劈缓慢右移，$m$上升$h$，求斜劈位移$S_1$及$F$做的功。% h 后的“,”按文意应为逗号；下文记作 h_1
+\notefig[0.25]{figures/p146_b.png}
+\begin{solution}
+\[ \begin{cases}
+N\cos\theta=mg\\
+F_1=N'\sin\theta\\
+N'=N
+\end{cases} \]
+\[ F_1=mg\tan\theta \]
+\[ V_{\text{杆}}=V_{\text{斜}}=0 \]
+\[ W=mgh_1\qquad S_1=\dfrac{h_1}{\tan\theta} \]
+③初始时$B$点高$h_2$，由静止释放$m$、$M$，求$m$着地时$M$速度
+\[ mgh_2=\dfrac{1}{2}mV_1^2+\dfrac{1}{2}MV_2^2 \]
+\[ V_1=V_2\tan\theta \]
+\[ V_2=\sqrt{\dfrac{2mgh_2}{m\tan^2\theta+M}} \]
+\notefig[0.15]{figures/p146_c.png}
+\[ \tan\theta=\dfrac{S_{\text{杆}}}{S_{\text{斜面}}} \]
+\end{solution}
+\end{problem}
+
+% ---- block 247-02 (原稿第247页) kind=problem ----
+\notefig[0.25]{figures/p247_c.png}
+\[
+\begin{cases}
+mgL(1-\cos37^\circ)=\dfrac12mv^2+\dfrac12M(0.8V)^2\\[4pt]
+mg\cos37^\circ=\dfrac{mv^2}{L}
+\end{cases}
+\]
+
+
+\section{功能关系与能量守恒}
+% ---- block 063-01 (原稿第63页) kind=summary ----
+\textbf{功能关系\quad 能量守恒定律}
+\begin{itemize}
+\item 功能关系
+\item 能量守恒定律.
+\end{itemize}
+
+\subsection{功能关系的理解与应用}
+% ---- block 063-02 (原稿第63页) kind=formula ----
+\begin{itemize}
+\item 功能关系的理解与应用
+  \begin{align*}
+  W_{G}&=-\Delta E_p \\ % CHECK: 下标字形似 a/G，按重力功 G 转录
+  W_{\text{弹}}&=-\Delta E_p \\
+  W_{\text{合}}&=\Delta E_k \\
+  W_{\text{其他}}&=\Delta E_{\text{机}} \\
+  W_{\text{电}}&=-\Delta E_p
+  \end{align*}
+\item 摩擦力做功与能量变化的关系\quad 耗散力
+  \begin{itemize}
+  \item $Q=fs_{\text{相对路程}}$.\quad $W_{\text{克安}}=W_{\text{电}}$.
+  \end{itemize}
+\end{itemize}
+
+% ---- block 083-12 (原稿第83页) kind=formula ----
+\textbf{功能关系}
+
+% 原稿左侧红笔大括号；“=−mgΔh”“=−kQq/r”写在W_G、W_电式的上方右侧
+\[
+\left\{\begin{aligned}
+&W_{\text{合}}=\Delta E_k\qquad W_G=-\Delta E_{pG}=-mg\Delta h\qquad W_{\text{电}}=-\Delta E_{p\text{电}}=-\frac{kQq}{r}\\[6pt]
+&W_{\text{弹}}=-\Delta E_{p\text{弹}}=-\frac12k\Delta x^2\\[6pt]
+&W_{\text{引}}=-\Delta E_{p\text{引}}=\frac{GMm}{r} % CHECK: 下标笔迹似“31”，按“引”(万有引力)转录
+\\[6pt]
+&W_f=-Q_f\\[6pt]
+&W_{\text{安}}=-Q_{\text{电}}\\[6pt]
+&W_{\text{其他}}=\Delta E_{\text{机}}
+\end{aligned}\right.
+\]
+
+\[
+W_F+W_G+W_{\text{电}}+W_{\text{弹}}+W_f=\Delta E_k
+\]
+
 % ---- block 078-06 (原稿第78页) kind=problem ----
 \begin{problem}
 \notefig[0.28]{figures/p078_f.png}
@@ -638,102 +1088,257 @@ W_f=-\tfrac34 mgh\\
 \end{solution}
 \end{problem}
 
-
-\section{机械能·能量关系}
-% ---- block 083-06 (原稿第83页) kind=formula ----
-$Q=E_2-E_1$\qquad $E_k=\dfrac12mv^2$
-
-$E_{\text{机}}=E_k+E_p$
-
-
-\section{重力势能·系统}
-% ---- block 083-09 (原稿第83页) kind=knowledge ----
-$m$与地球系统重力势能$=E_{pm}$
-
-
-\section{能量图象·有无阻力}
-% ---- block 083-13 (原稿第83页) kind=method ----
-% 左上一小图：“O”(小球)，下方“↓ ↑”箭头与横线
-\notefig[0.25]{figures/p083_b.png}
-\notefig[0.55]{figures/p083_c.png}
-无$f$时
-
-$E_{k1}=mgh$\qquad\qquad 有$f$时\quad 斜率变化
-
-
-\section{能量图象·斜面上滑下滑}
-% ---- block 083-14 (原稿第83页) kind=method ----
-\notefig[0.85]{figures/p083_d.png}
-先\unclear{加}后减速\unclear{来}\qquad $E_k$开口全向上，$E_p$开口全向下。$E_{\text{机}}$-$X$不分段 % CHECK: 首句字迹潦草，“先加(口)后减速来”照录
-
-
-\section{功·摩擦力做功}
-% ---- block 089-06 (原稿第89页) kind=knowledge ----
-\begin{itemize}
-\item 相互作用力的功是无关的
-\item 斜面摩擦 如走平地
-\end{itemize}
-% 以上两行左侧有大括号
-\begin{keybox}
-曲面摩擦\quad 槽$\overset{V}{\text{大}}$拱$\overset{V}{\text{小}}$消耗多
-\end{keybox}
-% 原稿此行被红笔圈出；“大”“小”二字上方各有一个 V（疑为速度）
-
-
-\section{功率·平均功率}
-% ---- block 089-07 (原稿第89页) kind=formula ----
-\notefig[0.25]{figures/p089_f.png}
-\[ \bar P_G=\frac Wt\qquad P_{G\,\text{瞬}}=FV\cos\alpha \]
-% CHECK: 下标 G 手写形似 G，疑为“功/合”
-\noindent 对匀变速\quad $P_{t/2}=\dfrac{P_0+P_t}{2}=\bar P$\qquad $W=\dfrac{(P_0+P)t}{2}=\bar Pt$
-
-
-\section{动能定理·斜面平抛综合}
-% ---- block 090-04 (原稿第90页) kind=problem ----
+% ---- block 147-01 (原稿第147页) kind=problem ----
+% 原稿无题干文字，仅有图和 A、B、C 三行(疑为选择题选项)，B、C 行右侧各有红色勾号
 \begin{problem}
-\notefig[0.3]{figures/p090_d.png}
+\notefig[0.25]{figures/p147_a.png}
+\noindent A：B动能增加量$=$斜面支持力和弹簧弹力做功之和　\red{$W_{\text{合}}=W_{G}+W_{\text{弹}}+W_{N}$}% CHECK: A行按原稿读作“斜面支持力和弹簧弹力做功之和”(未见重力项)，其右侧红笔另批 W合=W_G+W_弹+W_N(下标 G、弹 笔迹较糊)
+
+\noindent B：B机械能增量等于斜面支持力和弹簧弹力做功之和　\red{$\checkmark$}
+
+\noindent C：B和弹组系机增$=$斜面支持力和弹簧弹力做功之和　\red{$\checkmark$}% CHECK: C行左半为缩写，疑为“B和弹簧组成系统机械能增量”；“系”字原稿写成与“系统(孑统)”相同的字形
+\end{problem}
+
+% ---- block 274-05 (原稿第274页) kind=problem ----
+\notefig[0.4]{figures/p274_c.png}
+
+缓慢拉动A环，B环\textsuperscript{相似}$\dfrac NG=\dfrac Rh$ 大小不变方向变
+
+若F为恒力，B环不会到D右边 % CHECK: “不会”二字手写偏草，与下列不等式的结论关系待核
+\[
+F\left(\sqrt{R^2+h^2}-(h-R)\right)>FR>mgR
+\]
+相切时 $\sin\angle OPB=\dfrac Rh$
+
+B到D B环机械能增量 $\Delta E=F\left(\sqrt{h^2+R^2}-h+R\right)$
+
+\subsection{摩擦生热与传送带}
+% ---- block 274-02 (原稿第274页) kind=knowledge ----
+系统中一对相互作用的滑动摩擦力对系统做总功必为负值
+\[
+\begin{aligned}
+W_1+W_2&=\Delta E_{\text{机}} % 右侧被页边截断，“机”后或有字
+\\
+&=Q\\
+&=f_{\text{滑}}x_{\text{相对}}\ \text{\unclear{路程}}
+\end{aligned}
+\]
+
+相互作用力做功无关 % CHECK: 原文如此，疑缺字(如“与…无关”)
+
+电磁感应中克服安培力做功对系统做总功必为负值
+\[
+\text{电能}=Q=\Delta E_K
+\]
+
+% ---- block 237-02 (原稿第237页) kind=derivation ----
+% 原稿 ΔE_k+Q 下、两处 E_PG 下有下划线
+\[
+W_{\text{额外}}=\Delta E_k+\overset{\scriptstyle fS_{\text{相}}}{Q}+\Delta E_{PG}+\cdots
+\]
+又 $S_{\text{传}}=2S_{\text{物}}$
+\[
+W_{\text{额}}=W_{f\text{对带}}+\unclear{\Delta}E_{PG}=2fS_{\text{物}}+\Delta E_{PG}
+\] % CHECK: 第一个 E_PG 前的"+"处笔迹像"+Δ"，不确定是否有 Δ
+
+% ---- block 266-01 (原稿第266页) kind=problem ----
+\begin{problem}
+\notefig[0.45]{figures/p266_a.png}
+（图中标注：$m=0.5\unit{kg}$，$L=10.25\unit{m}$，$V=10\unit{m/s}$，$\mu=0.5$，$37^\circ$）
 \begin{solution}
-\[ \begin{cases} \dfrac12mV_0^2=mg(H-h)-\mu mg\cos\theta\,\dfrac{L}{\cos\theta}\\[6pt] h=\dfrac{g}{2V_0^2}S^2\end{cases} \]
-\[ S^2=2h\left[2(H-h)-2\mu L\right] \]
-\[ y=hH-h^2-h\mu L=-h^2+(H-\mu L)h \]
-% “−hμL” 写在 “hH−h²” 的下方；“(H−h)”中的 h 笔画加粗
-\noindent $h=\dfrac{H-\mu L}{2}$ 时取\unclear{最}大值
+\begin{tabular}{@{}ll@{}}
+$a_1=10\unit{m/s^2}$ & $a_2=2\unit{m/s^2}$\\
+$g\sin\theta+\mu g\cos\theta$ & $g\sin\theta-\mu g\cos\theta$
+\end{tabular}
+
+$t_1=\dfrac{V_0}{a_1}=1\unit{s}$\qquad $S_1=\dfrac12V_0t_1=5\unit{m}$
+
+$L-S_1=V_0t_2+\dfrac12a_2t_2^2$\qquad $t_2=0.5\unit{s}$
+
+$\Delta x_1=V_0t_1-x_1=5\unit{m}$ % CHECK: 首个“=”手写似“-”，按上下文取“=”
+
+$\Delta x_2=x_2-V_0t_2=0.25\unit{m}$
+
+$\Delta x_1>\Delta x_2$
+
+故痕迹长度为 $5\unit{m}$
+
+\[ W_{\text{带对块}}=fx_1-fx_2=\Delta E_{\text{机}}=\Delta E_K+\Delta E_p \]
+\[ W_{\text{电机对带}}=fV_0t_1-fV_0t_2=10\unit{J}=\Delta E_{\text{电}}=\Delta E_{\text{机}}+Q \]
+\[ Q=f\times\overset{L-S_1}{5.25\unit{m}}=10.5\unit{J} \]
+\end{solution}
+\end{problem}
+
+% ---- block 272-02 (原稿第272页) kind=problem ----
+% 贴纸印刷题；原稿“电动机的平均输出”处有铅笔划线
+\begin{problem}[贴纸印刷题]
+（4+4+4）如图所示，生产车间有两个相互垂直且等高的水平传送带甲和乙，甲的速度为$2v_0$。小工件离开甲前与甲的速度相同，并平稳地传到乙上，工件与乙之间的动摩擦因数为$\mu$。乙的宽度足够大，重力加速度为$g$。
+\begin{itemize}
+\item[(1)] 若乙的速度为$2v_0$，求工件在乙上侧向（垂直于乙的运动方向）滑过的距离$s$；
+\item[(2)] 若乙的速度为$4v_0$，求工件在乙上刚停止侧向滑动时的速度大小$v$；
+\item[(3)] 保持乙的速度$4v_0$不变，当工件在乙上刚停止滑动时，下一只工件恰好传到乙上，如此反复。若每个工件的质量均为$m$，除工件与传送带之间摩擦外，其他能量损耗均不计，求驱动乙的电动机的平均输出功率$\overline{P}$。
+\end{itemize}
+
+\notefig[0.3]{figures/p272_b.png}
+
+手写铅笔答案：(1)旁（箭头指向“距离$s$”）：
+\[
+S=\frac{2\sqrt2\,V_0^2}{\mu g}
+\]
+(2)旁（写在“速度大小$v$”下方）：$4V_0$。图中乙带右缘另有铅笔小标注\unclear{$\theta_1$}。
+
+\begin{solution}
+\begin{align*}
+a_x&=\mu g\cos\theta\\
+a_y&=\mu g\sin\theta\\
+-2a_xS&=0-(2V_0)^2\\
+2a_yy&=(4V_0)^2-0
+\end{align*}
+\[
+t=\frac{4V_0}{a_y}\qquad y_1=4V_0t
+\]
+工件相对乙位移\ $L=\sqrt{x^2+(y_1-y)^2}$
+\[
+Q=\mu mgL\qquad W=\frac{1}{2}m(4V_0)^2-\frac{1}{2}mV_0^2+Q
+\] % CHECK: 初动能项原稿为½mV₀²，工件进入乙时速度为2v₀，应为½m(2V₀)²？
+\[
+P=\frac{W}{t}\qquad \overline{P}=\frac{8\sqrt5\,\mu mgV_0}{5}
+\]
+\end{solution}
+\end{problem}
+
+% ---- block 277-01 (原稿第277页) kind=problem ----
+% 图1标注：m=1kg, V_0=2m/s, \mu=\sqrt3/2, L=16m, 30^\circ
+\notefig[0.3]{figures/p277_a.png}
+
+% 图2：传送带示意(斜线)，标注“第1个”“第n个”(疑为第11个)及两处0.8m
+\notefig[0.6]{figures/p277_b.png}
+
+加速上升\quad $a_1=2.5\unit{m/s^2}$
+
+$t=\dfrac{V_0}{a_1}=0.8\unit{s}$ 后匀速\quad $S_1$\quad $0.8\unit{m}$
+
+下一个也加速$0.8\unit{s}$\quad $S_2$
+
+$S_1-S_2=0$
+
+上个匀速$0.8\unit{s}$ 故两工件相距 $S=2\times0.8=1.6\unit{m}$
+
+$W_{f\text{对工件}}=\dfrac12 mV^2+mgh=82\unit{J}$
+
+传送带满载工件比空载时增加的功率
+
+10个匀速\quad 1个加速
+
+$P=10mg\sin\theta\,V+\mu mg\cos\theta\,V=115\unit{W}$
+
+\subsection{能量守恒定律}
+% ---- block 063-03 (原稿第63页) kind=knowledge ----
+\textbf{能量守恒定律}
+\begin{itemize}
+\item $\Delta E_{\text{减}}=\Delta E_{\text{增}}$\quad 分段、分模型、分过程
+\end{itemize}
+
+% ---- block 274-03 (原稿第274页) kind=problem ----
+\notefig[0.3]{figures/p274_b.png}
+
+\[
+v^2=\frac45 gL\qquad 2mgL\sin30^\circ=\frac12\,2mv^2+E_K\ \text{转动动能}
+\]
+\[
+E_K=\frac14 m\omega^2R^2
+\]
+
+% ---- block 282-01 (原稿第282页) kind=problem ----
+% 贴纸题（印刷体）+手写解答。照片上边缘切掉了题干的前一两行（题号与开头无法辨认）；原稿：m=0.01kg、R=0.8m、r=0.1m、μ=0.5、L=2m、E_pm=0.5J均被框出，“滑块”“其余各部分轨道均光滑”被圈，“滑块与弹性板作用后以等大速率弹回”处有一道横线穿过（疑为划线强调），“最终静止在轨道FG中点的左侧区域内”下有划线
+\begin{problem}
+\unclear{…}安装在水平\unclear{…}% 第一行被照片上边缘切断，仅见右端“安装在水平”几字
+
+\unclear{…}射器、水平直轨道$AB$、圆心为$O_1$的竖直半圆轨道$BCD$、圆心为$O_2$的竖直半圆管道$DEF$、水平直轨道$FG$及弹性板等组成，轨道各部分平滑连接。已知滑块（可视为质点）质量$m=0.01\unit{kg}$，轨道$BCD$的半径$R=0.8\unit{m}$，管道$DEF$的半径$r=0.1\unit{m}$，滑块与轨道$FG$间的动摩擦因数$\mu=0.5$，其余各部分轨道均光滑，轨道$FG$的长度$L=2\unit{m}$，弹射器中弹簧的弹性势能最大值$E_{pm}=0.5\unit{J}$，滑块与弹簧作用后，弹簧的弹性势能完全转化为滑块的动能，滑块与弹性板作用后以等大速率弹回，$g=10\unit{m/s^2}$。
+
+\notefig[0.3]{figures/p282_a.png}
+（1）若滑块被弹簧弹开后恰能沿轨道$BCD$到达$D$点，求弹簧的弹性势能$E_p$；
+
+（2）若滑块在运动过程中最终静止在轨道$FG$中点的左侧区域内，求弹簧的弹性势能$E_p$的范围
+\begin{solution}
+（1）$mg=\dfrac{mv_{\min}^2}{R}$
+
+$E_p=mg\,2R+\dfrac{1}{2}mv_{\min}^2$
+
+$E_p=0.2\unit{J}$
+
+（2）若滑块在运动过程中第一次恰运动到$F$点
+
+$E_{p\min}=mg(2R+2r)=0.18\unit{J}<0.2\unit{J}$\qquad $E_{p\min}=0.2\unit{J}$
+
+运动过程中\ 若恰好第一次运动到$FG$中点。\ $E_{p\max}=mg(2R+2r)+\mu mg\dfrac{L}{2}=0.23\unit{J}$% “运动过程中”为行首上方的小字（插入）
+
+第二次\quad $E_{p\min}=mg(2R+2r)+\mu mg\dfrac{3L}{2}=0.33\unit{J}$
+
+第三次\quad $E_{p\max}=mg(2R+2r)+\mu mg\dfrac{5}{2}L=0.43\unit{J}$
+
+第四次\quad $E_{p\max}=mg(2R+2r)+\mu mg\dfrac{7}{2}L=0.53\unit{J}$
+
+由$E_{p\max}=0.5\unit{J}$
+
+综上 弹性势能范围：$0.2\unit{J}\le E_p<0.23\unit{J}$ 或 $0.33\unit{J}<E_p<0.43\unit{J}$
 \end{solution}
 \end{problem}
 
 
-\section{功率·重力瞬时功率极值}
-% ---- block 091-02 (原稿第91页) kind=method ----
-\notefig[0.25]{figures/p091_b.png}
+\section{弹簧模型}
+% ---- block 009-05 (原稿第9页) kind=method ----
+过程写动能\qquad 过程写动量
 
-$P_{G}\ \max$
-\[
-P_{G}=mgv\cos\theta=mg\sqrt{2gL\sin\theta}\,\cos\theta
-\]
-当 $\tan\theta=\dfrac{\sqrt{2}}{2}$ 时取最大
+弹簧\quad $\left\{\begin{array}{l}\pm W_{\text{弹}}=E_{p\text{初}}-E_{p\text{末}}\Rightarrow\text{过程写动能/能量}\\[4pt] F=k\Delta x\to\text{状态写牛二}\end{array}\right.$
 
+能量守恒\quad $\Delta E_{\text{增}}=\Delta E_{\text{减}}$（定量）\quad $E_1+\cdots E_n=$定值（定性）
 
-\section{功能关系·多次往返路程}
-% ---- block 091-07 (原稿第91页) kind=problem ----
-\notefig[0.25]{figures/p091_e.png}
+% ---- block 139-02 (原稿第139页) kind=problem ----
+\begin{problem}[剪贴印刷题]
+在星球 $M$ 上将一轻弹簧竖直固定在水平桌面上，把物体 $P$ 轻放在弹簧上端，$P$ 由静止向下运动，物体的加速度 $a$ 与弹簧的压缩量 $x$ 间的关系如图中实线所示。在另一星球 $N$ 上用完全相同的弹簧，改用物体 $Q$ 完成同样的过程，其 $a$—$x$ 关系如图中虚线所示。假设两星球均为质量均匀分布的球体。\underline{已知星球 $M$ 的半径是星球 $N$ 的 $3$ 倍，则}% 原稿此处有手画下划线
+\notefig[0.4]{figures/p139_c.png}
 
-每次过\unclear{O}动能损失 $5\%$\quad 求总路程
-\[
-H=H+2H(0.95+0.95^{2}+\cdots+0.95^{n})\xrightarrow[n\to\infty]{}39H
-\qquad l_{\text{总}}=\frac{H_{\text{总}}}{\sin\theta}=\frac{39H}{\sin\theta}
-\]
-% CHECK: 第一个式子左边手写为 H（应为 H总？），原样照录
+A. $M$ 与 $N$ 的密度相等
 
+B. $Q$ 的质量是 $P$ 的 $3$ 倍\quad $M_Q=6M_P$% 手写（大写 M）
 
-\section{阻力·需考虑的情形}
-% ---- block 098-02 (原稿第98页) kind=note ----
-天体\ 大气阻力\quad /\quad 空气阻力\quad /\quad \uline{\unclear{找到…不能…的实例}}
+C. $Q$ 下落过程中的最大动能是 $P$ 的 $4$ 倍
 
-要考虑阻力
-% 原稿“阻”字上方有一处很小的批注字，疑为“空气”，未能辨清；上面三项之间以长斜线“/”隔开，最后一项下有横线
+D. $Q$ 下落过程中弹簧的最大压缩量是 $P$ 的 $4$ 倍\quad 对称性 \unclear{$\checkmark$}% 手写
 
+\textbf{手写批注：}A\,\struck{B}\,C% CHECK: 大字手写 A B C，B 上有一竖线疑为划去（标准答案 AC）
 
-\section{弹簧模型·机械能守恒}
+$E_{pQ}=\dfrac{2a_0x_0}{2}$，\quad $E_{pP}=\dfrac{3a_0x_0}{2}$% CHECK: 下标原稿形似 pQ、pP，可能是 kQ、kP；图中纵轴 a 前被手写加了 m；图上另有一条红色手绘曲线
+
+面积是能量
+
+$E=max$
+
+\begin{solution}
+\textbf{21. AC}\quad 【命题意图】本题考查万有引力定律、牛顿第二定律和功能关系，意在考查考生的推理能力和分析综合能力。
+
+【解题思路】设 $P$、$Q$ 的质量分别为 $m_P$、$m_Q$；$M$、$N$ 的质量分别为 $M_1$、$M_2$，半径分别为 $R_1$、$R_2$，密度分别为 $\rho_1$、$\rho_2$；$M$、$N$ 表面的重力加速度分别为 $g_1$、$g_2$。在星球 $M$ 上，弹簧压缩量为 $0$ 时有 $m_Pg_1=3m_Pa_0$，所以 $g_1=3a_0=G\dfrac{M_1}{R_1^2}$，密度 $\rho_1=\dfrac{M_1}{\frac{4}{3}\pi R_1^3}=\dfrac{9a_0}{4\pi GR_1}$；在星球 $N$ 上，弹簧压缩量为 $0$ 时有 $m_Qg_2=m_Qa_0$，所以 $g_2=a_0=G\dfrac{M_2}{R_2^2}$，密度 $\rho_2=\dfrac{M_2}{\frac{4}{3}\pi R_2^3}=\dfrac{3a_0}{4\pi GR_2}$；因为 $R_1=3R_2$，所以有 $\rho_1=\rho_2$，选项 A 正确。当物体的加速度为 $0$ 时有 $m_Pg_1=3m_Pa_0=kx_0$，$m_Qg_2=m_Qa_0=2kx_0$，解得 $m_Q=6m_P$，选项 B 错误。根据 $a$—$x$ 图线与坐标轴围成图形的面积和质量的乘积表示合外力做的功可知，$E_{\mathrm{km}P}=\dfrac{3}{2}m_Pa_0x_0$，$E_{\mathrm{km}Q}=m_Qa_0x_0$，所以 $E_{\mathrm{km}Q}=4E_{\mathrm{km}P}$，选项 C 正确。根据运动的对称性可知，$Q$ 下落时弹簧的最大压缩量为 $4x_0$，$P$ 下落时弹簧的最大压缩量为 $2x_0$，选项 D 错误。
+\end{solution}
+\end{problem}
+
+% ---- block 245-05 (原稿第245页) kind=problem ----
+\begin{problem}
+\notefig[0.25]{figures/p245_g.png}
+\begin{solution}
+\[ mg=kx_0 \]
+从0开始到$F_1$断\quad $mg+F_1=k(x+x_0)$\quad $F_1=kx$\quad $\therefore W_{F_1}=\dfrac12kx^2=\dfrac12F_1x$
+
+恒力 到拉断\quad $W_{F_2}=F_2x$
+
+$F_2$作用 系统机械能$\uparrow$
+
+又 $W_{F_1}=W_{F_2}=\Delta E_{P\text{弹}}+\Delta E_{PG}$
+
+$\therefore F_1=2F_2$
+\end{solution}
+\end{problem}
+
 % ---- block 098-03 (原稿第98页) kind=problem ----
 ②\ 弹簧振子（简谐运动）\unclear{静放}的从$60^\circ\to120^\circ$ A到最低点，$\mu=0$，\quad $E_{p\text{弹}}\max$\quad $V$从最大$\to0$\quad $a_A$竖直向上
 % 原稿此行横贯整页宽度；“竖”字上方有一小处笔迹无法辨认；其下分左右两栏
@@ -761,8 +1366,139 @@ $V_A=0$时 下降至最低点，$\therefore E_{p\text{弹}}$最大\unclear{的}
 
 $\dfrac{\sqrt{3}-1}{2}\,mgl$
 
+% ---- block 146-03 (原稿第146页) kind=problem ----
+\begin{problem}[2]
+\textbf{2、}$\because$简谐运动对称性　$\angle A$从$120^\circ\to60^\circ$过程
+\notefig[0.2]{figures/p146_d.png}
+\begin{solution}
+$A$刚开始的$a_A=g$向下。
 
-\section{弹性绳·E-h图像}
+故$A$在最低点时$a_A=g$向上
+
+$\therefore N_{\text{杆}A}=2mg$
+\[ 2T\cos30^\circ-mg=ma\qquad T=\dfrac{2\sqrt{3}}{3}mg \]
+\[ E_p=mg(h_1-h_2)=\dfrac{\sqrt{3}-1}{2}mgL \]
+\[ W_{\text{轻绳}B}=\dfrac{\sqrt{3}-1}{4}mgL\qquad W_{\text{轻绳}A}=\dfrac{\sqrt{3}-1}{4}mgL \]
+$P_{\text{绳}B}$先$\uparrow$后$\downarrow$　　$V$为0有0
+\end{solution}
+\end{problem}
+
+% ---- block 268-01 (原稿第268页) kind=problem ----
+% 贴纸印刷题；原稿上有圈画：“系数为k”“固定斜面平行”“均为m”“正确”被圈出，“轻绳恰好拉直而无作用力。”“不计一切摩擦。”被划线
+\begin{problem}[14（贴纸印刷题）]
+如图所示，劲度系数为$k$的竖直轻弹簧的下端固定在水平面上，上端与物块A连接，物块B与物块A之间用一绕过定滑轮O的轻绳连接，B放在固定斜面的上端（用外力控制B）。OA绳竖直，OB绳与倾角为$53^\circ$的足够长的固定斜面平行，且\underline{轻绳恰好拉直而无作用力。}A、B的质量均为$m$，A、B均视为质点，重力加速度大小为$g$，取$\sin53^\circ=0.8$，$\cos53^\circ=0.6$，\underline{不计一切摩擦。}现将B由静止释放，B沿斜面下滑，弹簧始终处在弹性限度内。下列说法正确的是（A\struck{\unclear{B}}C）% 括号内手写答案，A与C之间有被叉掉的字（疑为B）
+
+\begin{itemize}
+\item[A.] 释放B后的瞬间，轻绳的弹力大小为$\dfrac{2}{5}mg$ % 原稿：A被圈住并有斜划线，分数上也有一道斜线
+\item[B.] 当A的速度最大时，弹簧处于拉伸状态 % 原稿：“拉伸”处有斜划线；状态上方手写“压缩”，其下手写并圈出“$a=0$”
+\item[C.] A的最大速度为$\sqrt{\dfrac{8mg^2}{25k}}$ % 原稿：C被圈住，根号式也被圈住
+\item[D.] 当B处于最低点时，弹簧处于压缩状态 % 原稿：“压”字上有斜划线
+\end{itemize}
+
+手写批注（选项B旁）：\textbf{压缩}；$a=0$（圈出）。
+
+\notefig[0.3]{figures/p268_a.png}
+
+手写批注（图旁/图下）：$0.8mg-T=\unclear{\ldots}$ % 原稿为“0-8mg·-T=”，右侧被贴纸边缘截断；图中A上方绳旁标有$\frac{4}{5}mg$
+
+\notefig[0.5]{figures/p268_b.png}
+
+\[
+kx=\frac{1}{5}mg\ \uparrow
+\]
+受力箭头：$\uparrow$；$\downarrow kx$、$\downarrow mg$；
+\[
+T=mg+kx
+\]
+\struck{$\dfrac{4}{5}mg-T$} % 此式被横线划去；其下纸边另有被截断的字迹“4…m”，无法辨认\unclear{4\ldots m}
+
+\begin{solution}
+A.\ 释放前 对A：$kx_1=mg$
+
+释放后 对A、B：$kx_1-mg+mg\sin53^\circ=2ma$，\quad $a=\dfrac{2}{5}g$
+
+对A：$T_1+kx_1-mg=ma$，\quad $T_1=\dfrac{2}{5}mg$
+
+B.\ $V_{A\max}$时 $a_A=a_B=0$，\quad $T_2=mg\sin53^\circ<mg$，故弹簧压缩
+
+C.\ $V_{A\max}$时 对A由平衡条件：$T_2+kx_2=mg$，\quad $x_2=\dfrac{mg}{5k}$
+
+由动能定理
+\[
+\frac{k}{2}\left(x_1^2-x_2^2\right)+mg(x_1-x_2)\sin53^\circ-mg(x_1-x_2)=\frac{1}{2}\,2mV_m^2-0
+\]
+\[
+V_m=\sqrt{\frac{8mg^2}{25k}}
+\]
+
+D.\ 设当B处于最低点时压缩，$x_3$
+\[
+\frac{k(x_1+x_3)}{2}(x_1-x_3)+mg(x_1-x_3)\sin53^\circ-mg(x_1-x_3)=0
+\]
+\[
+x_3=\frac{-3mg}{5k}<0\quad\text{不成立}
+\]
+故拉伸。
+\end{solution}
+\end{problem}
+
+
+\section{能量图像问题}
+\subsection{$E$-$t$ 图像与功率}
+% ---- block 270-06 (原稿第270页) kind=knowledge ----
+\textbf{$E$--$t$图斜率为对应功率}
+\begin{itemize}
+\item $E_k$--$t$\quad $P_{\text{合外力}}$
+\item $E_{P_G}$--$t$\quad $P_G$
+\item $E$--$t$\quad $P_{\text{其他}}$ 如 $P_f$ 等
+\end{itemize}
+\notefig[0.25]{figures/p270_b.png}
+图旁文字：受力水平；\ $P_{G\max}$
+
+% ---- block 273-04 (原稿第273页) kind=diagram ----
+% 四幅图自左至右：v-t；P_{E_p}/P_G-t；E_K-t(下方标 P_{合外力})；E-t(下方标 P_f)
+$f=kv$ 下落
+
+\notefig[0.85]{figures/p273_b.png}
+
+% ---- block 243-02 (原稿第243页) kind=problem ----
+\begin{problem}
+\notefig[0.3]{figures/p243_b.png}
+\begin{solution}
+\[ \frac{\Delta E_K}{\Delta t}=mgV_y\uparrow \]
+\end{solution}
+\end{problem}
+
+\subsection{$F$-$x$、$E$-$x$ 与 $E$-$h$ 图像}
+% ---- block 270-04 (原稿第270页) kind=method ----
+\textbf{图象法}——面积
+\begin{itemize}
+\item $F$--$x$
+\item $a$--$x$
+\item $\mu$--$x$
+\item $p$--$\unclear{V}$
+\end{itemize}
+动能Th\ 多过程曲线运动
+
+% ---- block 083-13 (原稿第83页) kind=method ----
+% 左上一小图：“O”(小球)，下方“↓ ↑”箭头与横线
+\notefig[0.25]{figures/p083_b.png}
+\notefig[0.55]{figures/p083_c.png}
+无$f$时
+
+$E_{k1}=mgh$\qquad\qquad 有$f$时\quad 斜率变化
+
+% ---- block 083-14 (原稿第83页) kind=method ----
+\notefig[0.85]{figures/p083_d.png}
+先\unclear{加}后减速\unclear{来}\qquad $E_k$开口全向上，$E_p$开口全向下。$E_{\text{机}}$-$X$不分段 % CHECK: 首句字迹潦草，“先加(口)后减速来”照录
+
+% ---- block 164-06 (原稿第164页) kind=method ----
+\notefig[0.2]{figures/p164_g.png}
+\[ mgh=E_K \]
+\[ h^2=R^2-(R-x)^2 \]
+\[ h=\sqrt{R^2-(R-x)^2}\qquad\text{椭圆} \]
+\notefig[0.3]{figures/p164_h.png}
+
 % ---- block 099-03 (原稿第99页) kind=problem ----
 ③
 \notefig[0.25]{figures/p099_c.png}
@@ -775,91 +1511,447 @@ $\dfrac{\sqrt{3}-1}{2}\,mgl$
 % 原稿红笔所写，被红线划去；首字母 F/T 看不清（疑为 F）
 
 
-\section{弹性势能}
-% ---- block 110-06 (原稿第110页) kind=derivation ----
-\textbf{用弹性势能的动能定理}
+\section{实验}
+\subsection{动能定理与机械能守恒的实验装置}
+% ---- block 174-04 (原稿第174页) kind=method ----
+④ \underline{验证动能定理}
+
+% 以下两行左侧有大括号
+整：$mgh=\dfrac{1}{2}(M+m)v^2$\quad \red{(不用$M\gg m$)}
+
+隔$M$：$mgh=\dfrac{1}{2}Mv^2$\quad \red{(用$M\gg m$)}
+
+\notefig[0.2]{figures/p174_c.png}
+
+% ---- block 174-05 (原稿第174页) kind=method ----
+\unclear{⑤} \underline{验$E_{\text{机}}$守恒} % 序号圈内字形近似「⑤」，不确定
+
+% ---- block 175-04 (原稿第175页) kind=method ----
+验机械能守恒；能量 $E_p=\frac{1}{2}kx^2$
+
+\hspace{2em}本质—式子函数
+
+\hspace{2em}验证$\to$图像$\to$直线
+
+$mgh=\frac{1}{2}mv^2$
+
+\notefig[0.25]{figures/p175_f.png}
+
+\begin{center}
+\begin{tabular}{|c|p{6cm}|}
+\hline
+$h$ & \\
+\hline
+$v$ & \\
+\hline
+$v^2$ & \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{装置1}
+
+\notefig[0.25]{figures/p175_g.png}
+
+$mgh=\frac{1}{2}mv^2$\quad 不用天平
+
+$\downarrow$ 光电门 $v=\dfrac{d}{\Delta t}$
+
+\notefig[0.25]{figures/p175_h.png}
+
+% ---- block 176-01 (原稿第176页) kind=method ----
+\textbf{装置2}
+
+\notefig[0.29]{figures/p176_a.png}
+
+\begin{tabular}{@{}c@{\qquad}c@{}}
+$W$ & $V_1$ \\
+$2W$ & $V_2$ \\
+$\vdots$ & \\
+$nW$ & $V_n$
+\end{tabular}
+
+% 以下表格画在黄色便利贴上
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$W$ & $1W$ & $2W$ & $3W$ & $\cdots$ & $nW$ \\
+$V^2$ & $V_1^2$ & $V_2^2$ & $V_3^2$ & $\cdots$ & $V_n^2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+验证动定：$\downarrow$ 平衡$f$
+
+\notefig[0.3]{figures/p176_b.png}
+
+\notefig[0.55]{figures/p176_c.png}
+
+\red{先加速后减速}
+
+$V=\dfrac{9.40}{T}\,\mathrm{m/s}$（\unclear{瞬时}）\quad \red{\unclear{要}换单位}\quad \red{用最大段}\quad \red{$\dfrac{9.40\times10^{-2}}{T}\,\mathrm{m/s}$}
+
+\underline{两端\unclear{密}中间疏因未平衡$f$导致}\ $\checkmark$
+
+% ---- block 176-02 (原稿第176页) kind=method ----
+\textbf{装置3}
+
+\notefig[0.25]{figures/p176_d.png}
+
+验1\quad $mgh=\frac{1}{2}Mv^2$\quad ($M\gg m$，平衡$f$)
+
+验2\quad $mgh=\frac{1}{2}(M+m)v^2$\quad (平衡$f$)
+
+验3\quad $mgh-\mu Mgh=\frac{1}{2}(M+m)v^2$
+
+% ---- block 176-03 (原稿第176页) kind=method ----
+\textbf{装置4}
+
+\notefig[0.25]{figures/p176_e.png}
+
+$mgh-Mg\sin\theta\,h=\frac{1}{2}(M+m)v^2$
+
+\subsection{探究功与速度变化的关系}
+% ---- block 186-05 (原稿第186页) kind=note ----
+\notefig[0.43]{figures/p186_d.png}
+
+探究动能定理\quad $T=\dfrac{Mmg}{M+m}=\dfrac{mg}{1+\frac{m}{M}}\approx mg$
+
+（把\unclear{砂和砂}桶总重力当作小车受到的合外力.）\quad 要平衡摩擦，$m\ll M$
+
+\notefig[0.42]{figures/p186_e.png}
+
+（图下标注：↑ 间隔3个点）
+
+刻度尺（箭头指向 $x$）；天平（两箭头分别指向 $mg$ 与 $M$）
+
+$mgx=\dfrac12M\left[\left(\dfrac{x_2}{4T}\right)^2-\left(\dfrac{x_1}{4T}\right)^2\right]$
+
+间隔 $n$ 个点\quad $v=\dfrac{x_1+x_2}{2(n+1)T}$
+
+% ---- block 186-02 (原稿第186页) kind=note ----
+\notefig[0.25]{figures/p186_b.png}
+
+测 $v$ 则不用平衡了 $f$
+
+$W_{\text{合}}=mgx=\dfrac12(M+m)v^2$，\quad $v^2=\dfrac{2}{M+m}W$ 是一条过原点的倾斜直线
+
+$x-v^2$ \\
+$W-v^2$ \\
+$v^2-W$
+
+还可由 $k$ 求出滑块质量 $M$
+
+% ---- block 183-07 (原稿第183页) kind=method ----
+\textbf{倍增法探究合外力做功与动能变化量的关系。}
+
+\notefig[0.4]{figures/p183_g.png}
+% 图中标注：D、C、B、A、x（三段）、末端切线水平、O、L、P、A_3、A_2、A_1
+
+从 $A$ 静止释放小物块恰好运动到 $O$ 点
+
+从 $B$ 释放：
+\begin{align*}
+mgx\sin\theta-\mu mg\cos\theta&=\frac12mv_1^2\\
+v_1&=\frac{L}{\sqrt{\dfrac{2PA_1}{g}}}\\
+mgx\sin\theta-\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_1}
+\end{align*}
+% CHECK: 原稿第一行 mgx sinθ − μmg cosθ 的第二项似无 x（下面两行都有 x）
+
+从 $C$、$D$ 释放分别满足：
+\begin{align*}
+2mgx\sin\theta-2\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_2}\\
+3mgx\sin\theta-3\mu mgx\cos\theta&=\frac12m\,\frac{gL^2}{2PA_3}
+\end{align*}
+
+$1\quad\dfrac12\quad\dfrac13$
+
+当 $PA_1:PA_2:PA_3=6:3:2$ 时 说明 合外力做功与动能变化量成正比。
+
+% ---- block 181-02 (原稿第181页) kind=method ----
+\textbf{探究功与速度变化关系}
+
+\[ E_K=\frac12 k(\Delta x)^2 \]
+% E_K 上方有一个小的“1”和短横线，疑为杂笔；下标 K 原稿如此（可能指弹性势能）
+
+不用测 $k$、$m$，轨道要水平
+
+\notefig[0.4]{figures/p181_a.png}
+
 \[
-E_{p\text{弹}}=\dfrac{1}{2}k\Delta x^2
+\left\{\begin{aligned}
+\tfrac12 k(\Delta x)^2&=W\\
+W&=\tfrac12 mv^2\\
+h&=\tfrac12 gt^2\\
+x&=vt
+\end{aligned}\right.
 \]
-\notefig[0.3]{figures/p110_f.png}
-\[
-W=\dfrac{k(x_1+x_2)(x_2-x_1)}{2}
-\]
 
+水平位移与形变量 $x-\Delta x$
+\[ x=\sqrt{\frac{2kh}{mg}}\cdot\Delta x \]
+所得图象是过坐标原点的倾斜直线，说明小球速度的平方与弹簧对球做的功成正比。
 
-\section{变质量功能}
-% ---- block 117-01 (原稿第117页) kind=method ----
-\textbf{变质量功能}
+\begin{align*}
+h&=\frac12 g\,\frac{x^2}{v^2}=\frac12 g\,\frac{x^2}{k\Delta x^2}\,m\\
+\frac12 mv^2&=\frac12 k\Delta x^2\\
+v^2&=\frac{k\Delta x^2}{m}
+\end{align*}
+% 第二行 ½mv²=½kΔx² 中左右两个 ½ 被一条斜线连着划去（约去）
 
-① 重心位移法\quad／\quad ② 图象法\quad／\quad ③ 线密度法
+误差来源：①空气阻力、②\unclear{弹簧质量非零}的影响
 
-\notefig[0.25]{figures/p117_a.png}
+③确认落点 $P$ $Q$ $R$ 时的误差。 % 圈号字迹潦草：依次读作③④（也可能是②③）
 
-\notefig[0.3]{figures/p117_b.png}
+④$x_1$ $x_2$ $x_3$ 的测量误差。
 
-③
-\[ -a m g\,\frac{a}{2} = -L m_0\,\frac{L}{2}\,g + \frac{1}{2}m_0 L v^2 \]% CHECK: 左边 m 疑漏写下标 0（应为 m_0）
+\subsection{验证机械能守恒：纸带法}
+% ---- block 186-03 (原稿第186页) kind=note ----
+单体机守不用测 $m$\quad 理由：物体质量可约掉
 
-② 图像法.
-\[ W=\frac{1}{2}\left(mg+\frac{a}{L}ma\right)(L-a)=\frac{1}{2}mv^2 \quad\therefore\ v=\sqrt{\frac{L^2-a^2}{L}\,g} \]% CHECK: 括号内最后一项原稿像 ma（应为 mg）；L^2 与 a^2 之间的减号不够清晰
+% ---- block 181-04 (原稿第181页) kind=method ----
+\notefig[0.28]{figures/p181_c.png}
 
-（法3）加摩擦
-\[ -a m_0 g\,\frac{a}{2} = -m_0 L\cdot\frac{L}{2}\,g + \frac{1}{2}m_0 L v^2 + Q \]
+打点时间间隔为 $T$
 
-有$\mu$
-\notefig[0.28]{figures/p117_c.png}
-% 图中标注：纵轴 f；起点处 $\mu\frac{L-a}{L}mg$，或 $\mu m_0 (L-a) g$；横轴终点 $L-a$
+到 $B$：
+\[ \Delta E_k=\frac12 mv_B^2=\frac{m(x_3-x_1)^2}{8T^2},\qquad v_B=\frac{x_3-x_1}{2T} \]
 
-\[ W_f=\frac{1}{2}(L-a)\,\mu\, m_0 (L-a) g \]
+\notefig[0.3]{figures/p181_d.png}
 
+\[ \Delta E_p=mgx_2 \]
 
-\section{功能关系·人做功}
-% ---- block 117-02 (原稿第117页) kind=note ----
-人站起来\underline{做功了}\quad \underline{人原地走}\quad $\underline{W_{\text{内}}=W_f}$
+总是有 $\Delta E_k<\Delta E_p$，属于系统误差（多次测量取均值消除不\unclear{了误差时}）
 
+产生误差原因：空气阻力及纸带受到摩擦力
 
-\section{杆绳连接体·机械能与动量}
-% ---- block 119-03 (原稿第119页) kind=problem ----
-\begin{problem}[1.]
-\notefig[0.25]{figures/p119_c.png}
-% 图中标注：m、L、m（上方）；A、B；L、L；m、C
+% ---- block 183-01 (原稿第183页) kind=method ----
+% 页面右上角叠压着另一页（带 Date. NO. 页眉），其上的化学笔记（0.4mol CO CO2…混合气体 ρ=1.429 g/L…CO为0.4×3/4×22.4=6.72L…）与 181 页右上角相同，已在 181-01 转录，此处不重复
+\notefig[0.35]{figures/p183_a.png}
+% 纸带上的点，标有 D（残）、E、F、G
 
-① 求AB相碰瞬间速度
+若要验证机守还要测\unclear{起}点 $O$、$F$ 之间的距离 $L_{OF}$。
 
-② AB速度与C到细杆距离的关系
+\[ v_F=\frac{L_{EF}+L_{FG}}{4T}=\frac{f\,(L_{EF}+L_{FG})}{4} \]
+\[ E_K=\frac12 m\,\frac{(L_{EF}+L_{FG})^2f^2}{16} \]
+
+\notefig[0.28]{figures/p183_b.png}
+% 图中标注：纸带、打点计时器、重物
+
+重物 $M$ 越大 $V$ 越小，误差越小 % 原稿如此（$M$、$V$ 可能是质量/体积或 ρ、V）
+
+% ---- block 186-06 (原稿第186页) kind=note ----
+% 页脚右侧有一小段涂鸦弧线，忽略
+自由落体验机守
+
+\notefig[0.25]{figures/p186_f.png}
+
+有两处不当：① 用交流电不用直流电；② 重物离打点计时器太远。
+
+利用第 $n$ 点与起始点计算：$v^2=2gh$，$\dfrac12v^2=gh$，图线斜率表示重力加速度 $g$
+
+% ---- block 183-06 (原稿第183页) kind=note ----
+相邻计数点间有 2 个计时点未标出\ldots\ldots
+\[ v=\frac{x_1+x_2}{2\cdot(3T)}=\frac{x_1+x_2}{6T}=\frac{(x_1+x_2)}{6}f \]
+
+\begin{itemize}
+\item 若 $\Delta E_k>\Delta E_p$\quad 桌面不水平，释放侧偏高 \\
+所用交流电 $f$ 低于电火花打点计时器的标称频率（$f$ 代大了） % “电火花”三字叠写，字迹较乱
+\item 若 $\Delta E_k<\Delta E_p$\quad 桌上有摩擦/不光滑 \\
+所用交流电 $f$ 高于电火花打点计时器标称频率（$f$ 代小了）
+\end{itemize}
+
+代入的是标称频率
+
+% ---- block 181-06 (原稿第181页) kind=problem ----
+\begin{problem}
+验机\unclear{守} % 小标题，疑为“验证机械能守恒”的简写
+
+\notefig[0.25]{figures/p181_f.png}
+% 图中标注 m_2=150g，m_1=50g
+
+\notefig[0.4]{figures/p181_e.png}
+% 纸带图右端写有 dm；图中另有 h_1～h_5 的尺寸标注
+
+$T=0.135\,\mathrm{s}$ % CHECK: 数值 0.135 s 请二次核对
+\[ v_3=\frac{h_5-h_1}{4T} \]
+
 \begin{solution}
-动能定理
-
-① \[ mg\left(L-\frac{\sqrt{3}}{2}L\right)=\frac{1}{2}\cdot 2mv^2 \qquad v=\sqrt{\left(1-\frac{\sqrt{3}}{2}\right)gL} \]
-
-水平方向动量守恒\quad $mv_A+mv_B=0$
-
-\notefig[0.25]{figures/p119_d.png}
-% 图中标注：$\theta$、$L$、$h$
-
-② \[ mg\left(h-\frac{\sqrt{3}}{2}L\right)=\frac{1}{2}\cdot 2mv^2+\frac{1}{2}mv_C^2 \]
-\[ v\cos\theta=v_C\sin\theta \]
-\[ \tan\theta=\frac{h}{\sqrt{L^2-h^2}}\qquad\therefore\ v=\sqrt{\frac{gh^2\left(2h-\sqrt{3}L\right)}{L^2+h^2}} \]
+当到3处
+\begin{align*}
+\Delta E_k&=\frac12(m_2+m_1)v_3^2\\
+\Delta E_p&=(m_2-m_1)g(h_3-h_1)\\
+\frac{\Delta E_p-\Delta E_k}{\Delta E_p}&\approx 4.8\%
+\end{align*}
+由此可得：在误差允许的范围内，甲乙组成的系统在运动过程中机械能守恒。
 \end{solution}
 \end{problem}
 
+\subsection{验证机械能守恒：光电门、气垫导轨与传感器}
+% ---- block 182-02 (原稿第182页) kind=method ----
+\notefig[0.35]{figures/p182_b.png}
+% 图中标注 x_1、x_2、光电门、m_1、m_2、尺子（刻度0～5）
 
-\section{杆连三球·V形模型}
-% ---- block 119-05 (原稿第119页) kind=problem ----
-同
-\notefig[0.4]{figures/p119_g.png}
-% 图中为四幅小示意图（竖直两球杆、倒V形、水平三球带向上箭头、斜靠直角装置），“同”字在其左侧
+遮光片 $d$，经过时用时 $\Delta t$ % 原稿如此（疑漏写“光电门”）
 
-\notefig[0.25]{figures/p119_f.png}
-% 图中标注：A、m（顶点）；L、L；B、C 各 m
+光电门位置 $x_2$，释放时滑块位置 $x_1$，
+\[ m_1g(x_1-x_2)\approx\frac{m_1+m_2}{2}\cdot\frac{d^2}{(\Delta t)^2} \]
+\[ m_1g(x_1-x_2)=\frac12(m_1+m_2)v^2 \]
+\[ v^2=\frac{2m_1g}{m_1+m_2}(x_1-x_2)\qquad\text{过原点的直线} \]
 
-bc：$v$\ 0\ 有\ 0\quad $W_{\text{正}}$\ $W_{\text{负}}$
+要天平测 $m$
 
-$F_{\text{杆}}=0$时\ $a_A=g$\ 其余时刻小于$g$
+% ---- block 182-04 (原稿第182页) kind=method ----
+\notefig[0.4]{figures/p182_c.png}
+% 图左侧标注“下降 l ↓ / 用时 t”
 
-$v_{A\text{地}}=\sqrt{2gL}$\quad $mgL=\frac{1}{2}mv^2$\quad $v_B=v_C=0$\ 水平动量抵消
+\[ mgl=\frac12(m+M)\left(\frac{d}{t}\right)^2 \]
+不用 $m\ll M$
 
-A机械能最小时\quad $v_A=0$\quad $F_{\text{杆}}=0$\quad $v_b=v_c=\dfrac{\sqrt{2gL}}{2}$\quad bc对地压力为$mg$
+\notefig[0.3]{figures/p182_d.png}
+% 图象标题 l-1/t²，纵轴 l，横轴 1/t²，曲线从原点出发略有弯曲
+\[ l-\frac{1}{t^2} \]
 
-\unclear{有超\ 失重} % 页面底边被截断，字迹不全
+% ---- block 183-04 (原稿第183页) kind=method ----
+\notefig[0.55]{figures/p183_d.png}
+% 图中标注：遮光片 d、小车、光电门1、光电门2、t_1、t_2、s、h、总长度 L
+
+\[ \Delta E_k=\frac12mv_2^2-\frac12mv_1^2\qquad v_2=\frac{d}{t_2}\quad v_1=\frac{d}{t_1} \]
+\[ \Delta E_p=mg\,\frac{s}{L}\,h=mg\,\frac{h}{L}\,s=mgs\sin\theta \]
+
+% ---- block 183-05 (原稿第183页) kind=method ----
+\notefig[0.4]{figures/p183_e.png}
+% 图中标注：O（光滑）、m 均匀杆、A、L、h
+
+过光电门用时 $t$
+
+\[ \Delta E_p=\frac{mgh}{2}\qquad\text{（重心下降 }\tfrac{h}{2}\text{）} \]
+\[ E_K=\frac12m\left(\frac{d}{t}\right)^2 \]
+若 $A$ 在任意时刻速度为 $V_A$，得到任意\unclear{瞬时}动能
+\[ E_K=\frac{mgaV_A^2}{2bd^2} \]
+% CHECK: 分母末尾字形像 L，按推导（1/t²=(b/a)h，E_K=mV_A²/6）应为 d²
+
+\notefig[0.3]{figures/p183_f.png}
+% 图象：纵轴 t^{-2}(s^{-2})，横轴 h/m，过原点直线，P 点对应纵坐标 b、横坐标 a
+
+\[ \frac{1}{t^2}=\frac{b}{a}\,h \]
+
+% ---- block 181-03 (原稿第181页) kind=method ----
+\textbf{验证机械能守恒}
+
+\notefig[0.28]{figures/p181_b.png}
+
+\unclear{摆}自由静止时示数为 $F_0$，最大示数 $F$。
+
+\[
+\left\{\begin{aligned}
+F-mg&=\frac{mv^2}{L}\\
+mg&=F_0\\
+mgh&=\tfrac12 mv^2
+\end{aligned}\right.
+\]
+\begin{align*}
+F&=mg+\frac{2mgh}{L}\\
+&=F_0+\frac{2F_0h}{L}\\
+&=F_0\left(1+\frac{2h}{L}\right)
+\end{align*}
+
+\begin{keybox}
+只需证 $F_0h=\frac12(F-F_0)L$ % 原稿此式被圈起；末尾的 L 写得像“√/V”，按推导应为 L
+\end{keybox}
+
+不能用弹簧测力计代替传感器（小球机械能不守恒了，\unclear{系}统守恒！）
+
+球选 $\rho$ 大的\quad 不用测 $m$
+
+% ---- block 183-02 (原稿第183页) kind=problem ----
+\begin{problem}
+\notefig[0.28]{figures/p183_c.png}
+% 图中标注：光电门 计时器、h、d=8 mm
+
+$d=8\,\mathrm{mm}$
+
+挡光时间 $t=4.698\,\mathrm{ms}$\quad 释放时重力势能 $0.0110\,\mathrm{J}$\quad 最低点动能 $E_K=0.112\,\mathrm{J}$ % CHECK: 0.0110 J 与 0.112 J 数量级不同，疑为 0.110 J；“势能”二字写在“重力”下方行间
+
+求 $h$
+\begin{solution}
+\[ v=\frac{d}{t}=1.703\,\mathrm{m/s}\qquad mgh=\frac12mv^2\qquad h=\frac{v^2}{2g}=0.15\,\mathrm{m} \]
+该实验不能验证机械能守恒定律\quad 理由：只有初末位置的机械能近似相等，不能说明整个过程机械能始终守恒
+\end{solution}
+\end{problem}
+
+\subsection{探究弹簧的弹性势能}
+% ---- block 180-05 (原稿第180页) kind=method ----
+\textbf{能量类}
+
+\notefig[0.3]{figures/p180_f.png}
+
+\[ E_{\text{弹}}=mg(H-L) \]
+
+\notefig[0.4]{figures/p180_g.png}
+
+\[ E_{\text{弹}}=mgax^2 \]
+\[ a=\frac{H-L}{x^2} \]
+
+再做一次实验。\fbox{$H-L<x$} 说明小球上升到最高点，弹簧未恢复原长，处于压缩态（$x$为形变量）
+
+$\Delta E_{\text{弹}}=mg(H-L)<E_{\text{弹}}=mgax^2$ 故在原图象中描出的点在原直线下方 % “在”字原稿写在“故”与“原图象”之间的行间（带插入符）
+
+\fbox{$H-L>x$} 则描点在原直线上方，
+
+% ---- block 186-04 (原稿第186页) kind=note ----
+$\dfrac12k(\Delta x)^2=\dfrac12mv^2$，\quad $\Delta x\propto v$
+
+\notefig[0.28]{figures/p186_c.png}
+
+\begin{keybox}
+对同一根弹簧：弹性势能与弹簧的压缩量平方成正比。
+\end{keybox}
+
+弹簧弹性势能转化为滑块动能
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+砝码质量$/\unit{g}$ & 50 & 100 & 150 \\
+ & 8.62 & 7.63 & 6.66 \\
+\end{tabular}
+\end{center}
+% CHECK: 第二行数据（8.62、7.63、6.66）原稿无行名，疑为弹簧长度/cm
+（8.62 与 7.63 之间画有双向箭头，其下标 $\Delta x=0.99$；其后 $\Delta x=0.97$）\quad 取平均 $\Delta x=0.98$
+
+$k=\dfrac{\Delta f}{\Delta x}=\dfrac{50\times10^{-3}\times9.8}{0.98\times10^{-2}}=50\unit{N/m}$% CHECK: 分子可能是 ΔF
+
+\subsection{测动摩擦因数}
+% ---- block 179-07 (原稿第179页) kind=method ----
+从$A$出发停在$C$处\ 处处同$\mu$\ 求$\mu$
+
+\notefig[0.25]{figures/p179_i.png}
+
+\[mgh-\mu mg\,l_{AB}\cos\theta-\mu mg\,S_{BC}\qquad\therefore\mu=\frac{h}{S}\] % CHECK: 第一式末尾未写 "=0"
+\[l_{AB}\cdot\cos\theta=S_{AB}\qquad S_{AB}+S_{BC}=S\]
+
+% ---- block 179-08 (原稿第179页) kind=method ----
+\notefig[0.25]{figures/p179_j.png}
+
+遮光时间为$t$
+
+\begin{align*}
+W_{\text{弹}}&=\frac{1}{2}m\frac{d^2}{t^2}+\mu mgx\\
+\frac{1}{t^2}&=\frac{2W_{\text{弹}}}{d^2}\cdot\frac{1}{m}-\frac{2\mu gx}{d^2}
+\end{align*}
+
+\notefig[0.25]{figures/p179_k.png}
+
+\[a=\frac{2\mu gx}{d^2}\qquad\therefore\mu=\frac{ad^2}{2gx}\]
+\[W_{\text{弹}}=\frac{ad^2}{2b}.\]
+
+% ---- block 179-09 (原稿第179页) kind=method ----
+\notefig[0.3]{figures/p179_l.png}
+
+\[mg\,l\sin\theta-\mu mg\,l\cos\theta=\frac{1}{2}m\left(V_B^2-V_A^2\right)\]
+\[\mu=\tan\theta-\frac{V_B^2-V_A^2}{2gl\cos\theta}\quad\text{（用}V_A\ V_B\ \theta\ l\ g\text{表示）}\]
+
+% ---- block 179-10 (原稿第179页) kind=method ----
+\notefig[0.25]{figures/p179_m.png}
+
+\[\left(\frac{d}{t}\right)^2=2\mu gx\]
 
