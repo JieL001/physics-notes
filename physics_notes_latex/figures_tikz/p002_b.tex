@@ -1,9 +1,9 @@
-% p002_b 的电脑重画（U-ν 坐标图：ν_c 以前沿 ν 轴，之后斜线上升）；坐标取原图像素，1px=0.14mm
-\begin{tikzpicture}[x=0.14mm, y=-0.14mm, line width=0.7pt, >={Stealth[length=2.2mm]}]
+% p002_b 的电脑重画（U-ν 坐标图：ν_c 以前沿 ν 轴，之后斜线上升）；坐标取原图像素，1px=0.168mm
+\begin{tikzpicture}[x=0.168mm, y=-0.168mm, line width=0.7pt, >={Stealth[length=2.2mm]}]
   \node at (30,28) {$U$};
   \draw[->] (69,125) -- (76,7);
   \draw[->] (70,114) -- (218,109);
   \node at (248,124) {$\nu$};
-  \draw plot[smooth] coordinates {(112,112) (130,100) (150,82) (170,62) (185,48) (203,35)};
+  \draw plot[smooth] coordinates {(112,112) (122,105) (133,96) (146,85) (160,72) (175,58) (190,46) (203,35)};
   \node at (115,148) {$\nu_c$};
 \end{tikzpicture}
